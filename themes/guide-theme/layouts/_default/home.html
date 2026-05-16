@@ -1,0 +1,70 @@
+﻿{{ define "main" }}
+<div class="home-page">
+  <section class="hero-section">
+    {{/* <-- REPLACE: hero background image */}}
+    <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo">
+        {{/* <-- REPLACE: game logo image */}}
+        <img src="{{ `images/game-logo.png` | relURL }}" alt="Game Logo" class="game-logo">
+      </div>
+      {{/* <-- REPLACE: Hero heading and tagline */}}
+      <h1>{{ .Site.Title }} <span class="hero-tagline">No Fluff, Just Fixes</span></h1>
+      <p class="hero-sub">Real answers to the problems that actually stop your progress.<br>Written by players, for players.</p>
+      <div class="hero-cta">
+        {{/* <-- REPLACE: CTA buttons - point to your top guides */}}
+        <a href="{{ `guide-one/` | relURL }}" class="btn-primary">Start Here</a>
+        <a href="{{ `guide-two/` | relURL }}" class="btn-secondary">Popular Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-content">
+    <section class="featured-guides">
+      <h2 class="section-title">Latest Guides</h2>
+      <div class="guide-grid">
+        {{ range where .Pages "RelPermalink" "ne" "/" }}
+        <a href="{{ .RelPermalink }}" class="guide-card">
+          <div class="card-body">
+            <h3>{{ .Title }}</h3>
+            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Updated {{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="topic-clusters">
+      <h2 class="section-title">By Topic</h2>
+      <div class="topic-grid">
+        {{/* <-- REPLACE: Topic cards - match your game's categories */}}
+        <a href="{{ `guide-one/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Category One</h3>
+            <p>Description of this topic area</p>
+            <span class="topic-count">1 guide</span>
+          </div>
+        </a>
+        <a href="{{ `guide-two/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Category Two</h3>
+            <p>Description of this topic area</p>
+            <span class="topic-count">1 guide</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="newsletter-cta">
+      <p><strong>New guides dropping weekly.</strong> Bookmark the page, no email list, no spam.</p>
+    </section>
+
+    <section class="site-disclaimer">
+      <p><strong>Disclaimer:</strong> This is an unofficial fan-made guide site. All trademarks and copyrights belong to their respective owners.</p>
+    </section>
+  </div>
+</div>
+{{ end }}

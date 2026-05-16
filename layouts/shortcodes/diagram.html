@@ -1,0 +1,4 @@
+{{- $src := .Get 0 -}}
+{{- $alt := .Get 1 | default "" -}}
+{{- $width := .Get 2 | default "760" -}}
+<img src="/images/{{ $src }}" alt="{{ $alt }}" class="schema-diagram" loading="lazy" width="{{ $width }}">

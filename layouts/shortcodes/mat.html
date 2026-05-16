@@ -1,0 +1,7 @@
+<div class="mat-card">
+  <div class="mat-qty">1x</div>
+  {{ $img := .Get "img" }}
+  {{ $name := .Get "name" }}
+  {{ if $img }}<img src="{{ $img }}" alt="{{ $name }}" class="mat-card-img">{{ end }}
+  <div class="mat-name">{{ $name }}</div>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <base href="{{ .Site.BaseURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ `css/main.css` | relURL }}">
+
+{{- with .Site.Params.google_analytics }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}
+
+{{- with .Site.Params.adsense_client }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{ end }}
+</head>
+<body>
+<div class="site-header">
+  <a href="{{ `` | relURL }}" class="site-logo">
+    <span class="logo-icon">&#9881;</span> {{ .Site.Title }}
+  </a>
+  <div class="nav-links">
+    <a href="{{ `getting-started/` | relURL }}" class="nav-btn">Getting Started</a>
+    <a href="{{ `science-packs/` | relURL }}" class="nav-btn">Science Packs</a>
+    <a href="{{ `production-chains/` | relURL }}" class="nav-btn">Production Chains</a>
+  </div>
+</div>
+
+  <div class="page-wrap">
+    {{ block "main" . }}{{ end }}
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="{{ `` | relURL }}">Guides</a>
+      <a href="{{ `privacy/` | relURL }}">Privacy Policy</a>
+      <a href="{{ `contact/` | relURL }}">Contact</a>
+    </div>
+    <p><strong>{{ .Site.Title }}</strong> - Unofficial community guides.</p>
+    <p>&copy; {{ now.Year }} {{ .Site.Title }} - Factorio is a trademark of Wube Software.</p>
+  </footer>
+<script src="{{ `js/main.js` | relURL }}"></script>
+</body>
+</html>

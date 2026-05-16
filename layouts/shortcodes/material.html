@@ -1,0 +1,12 @@
+{{- $name := .Get 0 | default "" | lower -}}
+{{- $qty := .Get 1 | default "" -}}
+{{- $result := .Get "result" | default false -}}
+{{- $class := cond $result " result" "" -}}
+{{- $file := index .Site.Data.materials $name -}}
+{{- if not $file }}{{ $file = printf "%s.png" $name }}{{ end -}}
+{{- $label := $name | humanize | truncate 12 "" -}}
+<div class="game-slot{{ $class }}">
+  {{- with $qty }}<span class="game-qty">{{ . }}</span>{{ end -}}
+  <img src="/images/game-icons/{{ $file }}" alt="{{ $name }}" class="game-img" loading="lazy">
+  <span class="game-name">{{ $label }}</span>
+</div>

@@ -1,0 +1,4 @@
+{{- $type := .Get 0 | default "tip" -}}
+{{- $types := dict "tip" "pro-tip" "warning" "callout" "info" "callout" -}}
+{{- $class := index $types $type | default "callout" -}}
+<div class="{{ $class }}">{{ .Inner | markdownify }}</div>

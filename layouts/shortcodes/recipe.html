@@ -1,0 +1,25 @@
+{{- $s := `{"ITEM_NAME":"item-file.png"}` -}}
+{{- $m := $s | transform.Unmarshal -}}
+
+{{- $out := `<div class="game-row">` -}}
+{{- range $i := seq 1 4 -}}
+  {{- $n := $.Get (printf "name%d" $i) | lower -}}
+  {{- if $n -}}
+    {{- if gt $i 1 }}{{ $out = printf `%s<span class="game-plus">+</span>` $out }}{{ end -}}
+    {{- $q := $.Get (printf "qty%d" $i) | default "1x" -}}
+    {{- $f := index $m $n | default (printf "%s.png" $n) -}}
+    {{- $url := (printf "/images/game-icons/%s" $f)  -}}
+    {{- $out = printf `%s<div class="game-slot"><span class="game-qty">%s</span><img src="%s" alt="%s" class="game-img" loading="lazy"><span class="game-name">%s</span></div>` $out $q $url $n ($n | humanize) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $rN := .Get "result" | lower -}}
+{{- if $rN -}}
+  {{- $rQ := .Get "rqty" | default "1x" -}}
+  {{- $rF := index $m $rN | default (printf "%s.png" $rN) -}}
+  {{- $rU := (printf "/images/game-icons/%s" $rF)  -}}
+  {{- $out = printf `%s<span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">%s</span><img src="%s" alt="%s" class="game-img" loading="lazy"><span class="game-name">%s</span></div>` $out $rQ $rU $rN ($rN | humanize) -}}
+{{- end -}}
+
+{{- $out = printf `%s</div>` $out -}}
+{{- safeHTML $out -}}

@@ -1,0 +1,33 @@
+baseURL = 'https://leolifan007.github.io/factorio-guide/'
+theme = 'guide-theme'
+title = 'Factorio Guide'
+publishDir = 'docs'
+enableRobotsTXT = true
+buildFuture = true
+buildDrafts = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+    [markup.goldmark.extensions]
+      typographer = false
+      linkify = false
+      footnote = false
+      table = false
+      strikethrough = false
+      taskList = false
+      definitionList = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[params]
+  description = 'Factorio guide: tips, strategies, and solutions for building your factory.'
+  keywords = 'Factorio, guide, tips, walkthrough, strategy, factory, automation'
+  steam_url = 'https://store.steampowered.com/app/427520/Factorio/'
+  google_analytics = ''
+  adsense_client = ''

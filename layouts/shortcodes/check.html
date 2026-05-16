@@ -1,0 +1,12 @@
+{{- $name := .Get 0 | lower -}}
+{{- $count := .Get 1 | default "?" -}}
+{{- $desc := .Get 2 | default "" -}}
+{{- $file := index .Site.Data.materials $name -}}
+{{- if not $file }}{{ $file = printf "%s.png" $name }}{{ end -}}
+<div class="check-row">
+  <div class="check-item">
+    <img src="/images/game-icons/{{ $file }}" alt="{{ $name }}" class="check-icon">
+    <span class="check-count">{{ $count }}x</span>
+    {{- with $desc }}<span class="check-desc">{{ . }}</span>{{ end -}}
+  </div>
+</div>
