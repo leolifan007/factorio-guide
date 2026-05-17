@@ -1,65 +1,293 @@
 {{ define "main" }}
 <div class="home-page">
+  <!-- ═══════════════════════════════════════════
+       MODULE 1: HERO SECTION
+       ═══════════════════════════════════════════ -->
   <section class="hero-section">
     <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.svg` | relURL }}');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-logo">
-        <img src="{{ `images/game-logo.svg` | relURL }}" alt="XXXXX XXXXX" class="game-logo">
+        <img src="{{ `images/game-logo.svg` | relURL }}" alt="Factorio" class="game-logo">
       </div>
-      <h1><span class="hero-tagline">XXXXX XXXXX XXXXX</span></h1>
-      <p class="hero-sub">XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.</p>
+      <h1>
+        <span class="hero-tagline">Automate Everything. Launch the Rocket.</span>
+      </h1>
+      <p class="hero-sub">
+        The definitive Factorio strategy guide hub. Production ratios, base layouts, train networks,
+        defense blueprints, and Space Age expansion walkthroughs — all in one place.
+      </p>
       <div class="hero-cta">
-        <a href="{{ `getting-started/` | relURL }}" class="btn-primary">XXXXX</a>
-        <a href="{{ `science-packs/` | relURL }}" class="btn-secondary">XXXXX</a>
+        <a href="{{ `getting-started/` | relURL }}" class="btn-primary">Start Your Factory</a>
+        <a href="{{ `production-ratios/` | relURL }}" class="btn-secondary">View Production Ratios</a>
       </div>
     </div>
   </section>
 
   <div class="home-content">
+
+    <!-- ═══════════════════════════════════════════
+         MODULE 2: TRENDING QUESTIONS
+         ═══════════════════════════════════════════ -->
     <section class="featured-guides">
-      <h2 class="section-title">XXXXX XXXXX</h2>
+      <h2 class="section-title">Trending Questions</h2>
       <div class="guide-grid">
-        {{ range where .Pages "RelPermalink" "ne" "/" }}
-        <a href="{{ .RelPermalink }}" class="guide-card">
+
+        <a href="{{ `getting-started/factorio-beginner-guide/` | relURL }}" class="guide-card">
           <div class="card-body">
-            <h3>{{ .Title }}</h3>
-            {{ with .Description }}<p>{{ . }}</p>{{ end }}
-            <span class="card-read">XXXXX XXXXX</span>
-            <span class="card-date">XXXXX {{ .Date.Format "Jan 2, 2006" }}</span>
+            <h3>Factorio Beginner Guide</h3>
+            <p>Everything you need to survive your first 10 hours in the factory. From handcrafting to your first automated assemblers.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Getting Started</span>
           </div>
         </a>
-        {{ end }}
+
+        <a href="{{ `getting-started/factorio-science-progression-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Science Pack Progression</h3>
+            <p>Red, green, blue, purple, yellow, white — every science pack unlocked in order, with exact setups for each tier.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Getting Started</span>
+          </div>
+        </a>
+
+        <a href="{{ `production-ratios/factorio-green-circuit-ratio/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Green Circuit Ratio Explained</h3>
+            <p>The most demanded item in Factorio. Learn the exact ratio: 3 copper cables per green circuit, and how to scale it.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Production Ratios</span>
+          </div>
+        </a>
+
+        <a href="{{ `base-design/factorio-main-bus-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Main Bus Guide</h3>
+            <p>The standard mid-game base architecture. Learn how to build, feed, and expand a main bus without bottlenecks.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Base Design</span>
+          </div>
+        </a>
+
+        <a href="{{ `trains-logistics/factorio-train-signals-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Train Signals Guide</h3>
+            <p>Chain signals vs. rail signals — the most confusing mechanic in Factorio, explained with diagrams and real examples.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Trains &amp; Logistics</span>
+          </div>
+        </a>
+
+        <a href="{{ `defense/factorio-early-defense-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Early Defense Guide</h3>
+            <p>Stop losing your factory to biters. Gun turrets, walls, and pollution management — the essentials before laser turrets.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Defense</span>
+          </div>
+        </a>
+
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════
+         MODULE 3: BROWSE BY TOPIC
+         ═══════════════════════════════════════════ -->
     <section class="topic-clusters">
-      <h2 class="section-title">XXXXX XXXXX</h2>
+      <h2 class="section-title">Browse by Topic</h2>
       <div class="topic-grid">
+
         <a href="{{ `getting-started/` | relURL }}" class="topic-card">
           <div class="topic-body">
-            <h3>XXXXX XXXXX</h3>
-            <p>XXXXX XXXXX XXXXX XXXXX XXXXX</p>
-            <span class="topic-count">XXXXX XXXXX</span>
+            <h3>Getting Started</h3>
+            <p>Beginner guides, first hour tips, science progression, starter base layouts.</p>
+            <span class="topic-count">15 articles</span>
           </div>
         </a>
-        <a href="{{ `science-packs/` | relURL }}" class="topic-card">
+
+        <a href="{{ `production-ratios/` | relURL }}" class="topic-card">
           <div class="topic-body">
-            <h3>XXXXX XXXXX</h3>
-            <p>XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX</p>
-            <span class="topic-count">XXXXX XXXXX</span>
+            <h3>Production Ratios</h3>
+            <p>Exact ratios for every product: circuits, science packs, modules, and rocket parts.</p>
+            <span class="topic-count">15 articles</span>
           </div>
         </a>
+
+        <a href="{{ `base-design/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Base Design</h3>
+            <p>Main bus, city blocks, beacon setups, nuclear reactors, and megabase layouts.</p>
+            <span class="topic-count">15 articles</span>
+          </div>
+        </a>
+
+        <a href="{{ `trains-logistics/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Trains &amp; Logistics</h3>
+            <p>Train signals, deadlock prevention, LTN, logistic bots, and requester/provider chests.</p>
+            <span class="topic-count">15 articles</span>
+          </div>
+        </a>
+
+        <a href="{{ `defense/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Defense</h3>
+            <p>Turret setups, wall designs, flamethrowers, artillery, and pollution control.</p>
+            <span class="topic-count">10 articles</span>
+          </div>
+        </a>
+
+        <a href="{{ `blueprints/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Blueprints</h3>
+            <p>Starter base, smelting, mall, train intersections, nuclear, and megabase blueprints.</p>
+            <span class="topic-count">10 articles</span>
+          </div>
+        </a>
+
+        <a href="{{ `space-age/` | relURL }}" class="topic-card">
+          <div class="topic-body">
+            <h3>Space Age</h3>
+            <p>Gleba, Fulgora, Vulcanus, Aquilo, quality chains, and interplanetary logistics.</p>
+            <span class="topic-count">20 articles</span>
+          </div>
+        </a>
+
       </div>
     </section>
 
-    <section class="newsletter-cta">
-      <p><strong>XXXXX XXXXX XXXXX XXXXX.</strong> XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.</p>
+    <!-- ═══════════════════════════════════════════
+         MODULE 4: POPULAR GUIDES
+         ═══════════════════════════════════════════ -->
+    <section class="featured-guides">
+      <h2 class="section-title">Popular Guides</h2>
+      <div class="guide-grid">
+
+        <a href="{{ `getting-started/factorio-mall-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Factorio Mall Guide</h3>
+            <p>Build a self-contained mall that produces every intermediate product you need, on demand. The heart of any serious base.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Getting Started</span>
+          </div>
+        </a>
+
+        <a href="{{ `base-design/factorio-city-block-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>City Block Guide</h3>
+            <p>The scalable base architecture used by megabase builders. Uniform blocks connected by train network — explained from scratch.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Base Design</span>
+          </div>
+        </a>
+
+        <a href="{{ `production-ratios/factorio-furnace-ratio/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Furnace Ratio Explained</h3>
+            <p>The foundation of smelting. Stone furnaces vs. steel furnaces, and the correct ratio for plates-per-second at any scale.</p>
+            <span class="card-read">Read Guide</span>
+            <span class="card-date">Production Ratios</span>
+          </div>
+        </a>
+
+      </div>
     </section>
 
-    <section class="site-disclaimer">
-      <p><strong>XXXXX:</strong> XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.</p>
+    <!-- ═══════════════════════════════════════════
+         MODULE 5: FAQ
+         ═══════════════════════════════════════════ -->
+    <section>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="guide-grid">
+
+        <a href="{{ `getting-started/factorio-bots-vs-belts/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>Bots vs. Belts — Which is Better?</h3>
+            <p>Logistic bots and belts both move items. Here's when to use each, and why megabase builders prefer one over the other.</p>
+            <span class="card-read">Read Answer</span>
+            <span class="card-date">Logistics</span>
+          </div>
+        </a>
+
+        <a href="{{ `base-design/factorio-beacon-setup/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>How Many Beacons Per Assembler?</h3>
+            <p>Module and beacon math, simplified. The optimal beacon density for speed modules, productivity modules, and mixed setups.</p>
+            <span class="card-read">Read Answer</span>
+            <span class="card-date">Base Design</span>
+          </div>
+        </a>
+
+        <a href="{{ `space-age/factorio-gleba-guide/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>How Do I Survive on Gleba?</h3>
+            <p>Gleba's organic products rot. This guide covers the jelly, nutrient, and spoiler-free production chains that keep you alive.</p>
+            <span class="card-read">Read Answer</span>
+            <span class="card-date">Space Age</span>
+          </div>
+        </a>
+
+        <a href="{{ `trains-logistics/factorio-train-deadlock-fix/` | relURL }}" class="guide-card">
+          <div class="card-body">
+            <h3>How to Prevent Train Deadlocks</h3>
+            <p>The #1 cause of ruined factory days. Train limits, path signals, and the one rule that prevents all deadlocks.</p>
+            <span class="card-read">Read Answer</span>
+            <span class="card-date">Trains &amp; Logistics</span>
+          </div>
+        </a>
+
+      </div>
     </section>
+
+    <!-- ═══════════════════════════════════════════
+         MODULE 6: ABOUT FACTORIO
+         ═══════════════════════════════════════════ -->
+    <section>
+      <h2 class="section-title">About Factorio</h2>
+      <div class="guide-card" style="border-radius:3px; overflow:hidden; margin-bottom:2rem;">
+        <div class="card-body">
+          <h3>Automate Everything. Launch to Space.</h3>
+          <p>
+            <strong>Factorio</strong> is a factory-building simulation game by
+            <a href="https://www.factorio.com" target="_blank" rel="noopener">Wube Software</a>.
+            Players design and manage production chains across mining, smelting, manufacturing,
+            and research — all while defending against hostile alien biters.
+          </p>
+          <p>
+            The game offers two major expansion campaigns:
+            <strong>Dyson Sphere Program</strong> (not related to this site) and the official
+            <strong>Space Age</strong> expansion, which adds five unique planets with different
+            resources and mechanics.
+          </p>
+          <p>
+            This guide covers both the base game and Space Age expansion, from first-hour survival
+            to launching a megabase capable of 1,000+ SPM (science per minute).
+          </p>
+          <div class="hero-cta" style="justify-content:flex-start; margin-top:1.2rem;">
+            <a href="{{ `getting-started/` | relURL }}" class="btn-primary">Beginner Guide</a>
+            <a href="{{ `space-age/` | relURL }}" class="btn-secondary">Space Age Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-cta">
+      <p>
+        <strong>New guides every week.</strong>
+        Bookmark this site or follow on GitHub for the latest Factorio strategy content.
+      </p>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="site-disclaimer">
+      <p>
+        <strong>Disclaimer:</strong> This is an unofficial community resource. Factorio and
+        Wube Software are registered trademarks. All game mechanics are based on Factorio version 2.0
+        / Space Age expansion.
+      </p>
+    </section>
+
   </div>
 </div>
 {{ end }}
