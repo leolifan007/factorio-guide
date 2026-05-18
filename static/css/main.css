@@ -309,7 +309,6 @@ blockquote::before {
   overflow: hidden;
   border-bottom: 3px solid var(--f-orange-dk);
   background: var(--bg-void);
-  margin-top: var(--nav-h);
 }
 
 .hero-bg {
