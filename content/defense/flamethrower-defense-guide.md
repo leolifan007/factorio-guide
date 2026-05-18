@@ -1,6 +1,6 @@
 ---
-title: "Flamethrower Defense — Advanced Wall & Turret Guide"
-description: "Complete guide to flamethrower and gun turret defense in Factorio: wall patterns, ammo supply, and biter-proof layouts."
+title: "Flamethrower Defense — Advanced Wall & Turret Layout"
+description: "Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon's teeth patterns, and biter-proof designs for early to endgame."
 date: 2026-05-18
 tags: ["defense", "base-design"]
 draft: false
@@ -11,85 +11,150 @@ draft: false
 <span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#ff6622;">FLAMETHROWER DEFENSE</span>
 </div>
 
-## Why Flamethrower Turrets?
+I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don't care about biter armor.
 
-Gun turrets are cheap but chew through ammo. Laser turrets are clean but draw massive power. Flamethrower turrets sit in the middle:
+{{< callout "tip" >}}
+**TL;DR:** Build a wall with flamethrower turrets every 4 tiles, gun turrets every 2 tiles, and a single crude oil pipe behind them. One pumpjack at minimum speed supplies 30+ turrets. Add repair bots and you're set for the entire game.
+{{< /callout >}}
 
-- **Highest raw DPS** of any turret type (direct damage + fire-on-ground)
-- **Cheapest to feed** — one pipe of crude oil supplies dozens of turrets
-- **Damage over time** — biters keep burning even after leaving the flame area
-- **Ignores biter armor** — no damage type resistance early on
+{{< section "Why Flamethrower Turrets?" >}}
 
-## Essential Wall Layout
+Each turret type has trade-offs:
 
-The classic "dragon's teeth" wall stopped being effective after the combat overhaul. Modern defensive walls use a **kill corridor**:
+| Turret | DPS | Ammo cost | Power draw | Biter armor |
+|--------|:---:|:---------:|:----------:|:-----------:|
+| Gun turret (piercing) | Medium | High (iron/copper) | Negligible | Resist 20% |
+| Laser turret | Medium | None | Massive (2.4 MW each) | Full damage |
+| Flamethrower | Highest | Minimal (crude oil) | Very low | Ignores armor |
 
-<div class="depiction-box" style="background:#1a0a0a;padding:1rem;border-radius:8px;border:1px solid #ff6622;font-family:'JetBrains Mono',monospace;font-size:0.7rem;line-height:1.5;">
-<pre>
-  ← BITER APPROACH →
-╔═══════════════════╗  ← Outer wall (2-thick)
-║ F  F  F  F  F  F ║  ← Flamethrowers, spaced every 4 tiles
-║ G  G  G  G  G  G ║  ← Gun turrets (mix with flamethrowers)
-╚═══════════════════╝  ← Inner wall (optional)
-     [Wall]              ← Bot repair zone
-     [Piercing ammo]     ← Belt-fed from behind
-     [Crude oil pipe]    ← Underground pipes to each turret
+Flamethrower turrets deal both direct impact damage and fire-on-ground damage over time. Biters keep burning even after running past the flame. This area denial makes them dramatically more efficient than any other turret for the same resource cost.
+
+{{< section "The Kill Corridor — Wall Layout" >}}
+
+Dragon's teeth walls (zigzag patterns) are outdated since the combat overhaul. Modern defense uses a **kill corridor**:
+
+{{< diagram "diagrams/flamethrower-wall.svg" "Kill corridor wall layout with flamethrower and gun turret spacing, ammo belt, and oil pipe" "760" >}}
+
+**Layer breakdown (from outside in):**
+
+1. **Outer wall:** 2-thick stone wall. Biters will damage this regardless.
+2. **Kill corridor:** 3-4 tile gap. Biters funnel through here, getting hit from both sides.
+3. **Inner wall:** Single-thick stone wall. Protects turrets from spitter acid.
+4. **Flamethrower turrets:** Every 4 tiles. Primary DPS.
+5. **Gun turrets:** Between flamethrowers. Cleanup crew for fast biters.
+6. **Ammo belt:** Express belt of piercing rounds feeding gun turrets.
+7. **Oil pipe:** Underground pipes for crude oil to flamethrower turrets.
+8. **Roboport:** Behind the wall for repairs.
+
+{{< section "Turret Spacing and Pattern" >}}
+
+The standard alternating pattern:
+
+<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
+Wall → F _ G _ F _ G _ F _ G _ F _ G _ F ← Wall
+       │   │   │   │   │   │   │   │   │
+       Oil Pipe ─────────────────────────
+       Ammo Belt ────────────────────────
+       Power pole ───────────────────────
 </pre>
-</div>
 
-## Turret Spacing & Circuit Control
+**Pattern:** F(lame), gap (2 tiles), G(un), gap (2 tiles), repeat.
 
-| Turret Type | Spacing | Purpose |
-|-------------|---------|---------|
-| Flamethrower | Every 4 tiles | Primary DPS, area denial |
-| Gun turret (piercing) | Every 2-3 tiles | Cleanup, fast biters |
-| Laser turret | Behind gun line | Overflow/backup (no ammo needed) |
+This gives you:
+- Flame coverage overlapping across the entire wall
+- Gun turrets catching any biter that survives the fire
+- No gaps in the damage field
 
-> **Pro tip:** Add a **red circuit wire** from a storage tank to an inserter to auto-shut off flamethrower supply when the buffer is low. This prevents dry pipes during attacks.
+{{< section "Oil Supply — More Efficient Than You Think" >}}
 
-## Oil Supply for Flamethrowers
+This is what surprised me most: flamethrower turrets barely use oil.
 
-One pumpjack producing at minimum speed (~2/s) can supply **over 30 flamethrower turrets**:
+- One turret consumes **3 crude oil per shot**
+- One shot creates a flame that burns for ~3 seconds
+- At 1 attack wave per minute, each turret needs < 2 oil/s average
+- A minimum-speed pumpjack (~2/s) supplies **30+ flamethrower turrets**
 
-- 1 turret consumes 3 crude oil per shot
-- 1 shot covers ~3 seconds of flame
-- At 1 attack per minute, each turret needs <2/s average
-- Buffer: 1 tank of crude oil per 20 turrets — enough for sustained fighting
+**Oil logistics:**
+1. Run a single pipe line from your refinery or a dedicated pumpjack
+2. Use underground pipes every 2 tiles to keep the path clear
+3. Buffer: 1 storage tank per 20 turrets — provides 3+ minutes of sustained fire
+4. Circuit condition: connect a tank to your refinery. If crude < 500, send a warning
 
-**Belt-fed ammo is a concern** — gun turrets eat piercing ammo fast under sustained assault. Use a **parallel belt circuit** to keep ammo flowing:
+{{< callout "warning" >}}
+**Don't use heavy or light oil for flamethrowers.** They work on any oil type, but crude is the cheapest you'll find. Save light oil for solid fuel and cracking.
+{{< /callout >}}
 
-1. One express belt of piercing rounds
-2. Red inserters from belt into each turret
-3. Circuit-conditioned belt only runs when ammo < 100 in turret buffer
+{{< section "Ammo Supply — Belt-Fed Gun Turrets" >}}
 
-## Repair & Logistics Setup
+Gun turrets chew through ammo during big attacks. Here's a reliable setup:
 
-A proper defensive wall needs:
+1. Run an express belt of piercing rounds behind the entire wall
+2. Use red inserters from belt into each gun turret
+3. Set a circuit condition: belt runs only when turret ammo < 100 rounds
 
-- **Construction bots** in a roboport network behind the wall
-- **Repair packs** in a requester chest feeding passive provider chests
-- **Spare walls and turrets** in a logistics storage chest
-- **Power poles** inside the wall line (large poles to skip gaps)
+{{< callout "tip" >}}
+**Ammo production:** One assembler making piercing rounds runs fast enough for a full perimeter. Place it near your wall and feed directly onto the ammo belt loop.
+{{< /callout >}}
 
-## Artillery + Flame Combo
+{{< section "Repair and Maintenance" >}}
 
-Late game, pair flamethrower defense with **artillery**:
+A defensive wall needs ongoing maintenance. Here's the logistics setup:
 
-1. Artillery shells trigger biter attacks
-2. Biters charge toward the loudest thing (your wall)
-3. Flamethrowers roast the entire wave
-4. Gun turrets clean up survivors
-5. Rinse and repeat
+- **Construction bots** in a roboport network (overlapping coverage along the entire wall)
+- **Repair packs** in a requester chest near each roboport section
+- **Spare walls and turrets** in logistics storage (bots automatically replace destroyed ones)
+- **Power poles** inside the wall (large poles to skip gaps)
 
-**Artillery range tip:** Overlap your artillery range with neighboring artillery to create safe zones. One artillery train outpost per ~4 map chunks.
+Build repair stations every 30-40 tiles along the wall. Each station: 1 roboport, 1 storage chest with replacement walls/turrets, 1 requester chest with repair packs.
 
-## Troubleshooting
+{{< section "Artillery and Flamethrower Combo" >}}
 
-| Problem | Likely Cause | Solution |
-|---------|-------------|----------|
-| Walls breached | Too few flamethrower turrets | Add 1 flamethrower every 4 tiles |
-| Oil pipe empty | Undersized pipe network | Use underground pipes, upgrade to steel pipe |
-| Turret ammo < 50 | Insufficient belt supply | Build an ammo assembler dedicated to the wall |
-| Behemoth biters breakthrough | Not enough damage upgrades | Research physical + fire damage upgrades simultaneously |
+Late game, artillery triggers attack waves. Flamethrowers handle the cleanup:
 
-**Related:** [Early Game Defense]({{< ref "/defense/early-game-defense" >}}) — setting up your first walls.
+1. Artillery shell lands in biter base
+2. Biters aggro and charge toward the loudest sound (artillery)
+3. They funnel into your kill corridor
+4. Flamethrowers torch the entire wave
+5. Gun turrets finish survivors
+6. Repeat until biter base is gone
+
+**Artillery range tip:** Overlap your artillery wagon range with neighboring outposts. One artillery train stop per ~4 map chunks creates safe zones.
+
+{{< callout "tip" >}}
+Use a circuit network around your artillery to detect incoming attacks. Wire a radar to the artillery — when the outpost gets attacked, the circuit flips an alarm. Works better than listening for distant gunfire.
+{{< /callout >}}
+
+{{< section "Troubleshooting" >}}
+
+| Problem | Likely Cause | Fix |
+|---------|--------------|-----|
+| Walls breached | Not enough flamethrowers | Add one every 4 tiles |
+| Oil pipe empty | Pipe throughput limit | Use underground pipes throughout |
+| Gun turrets out of ammo | Belt supply too slow | Upgrade to express belt, check assembler |
+| Behemoth breakthrough | Need more damage upgrades | Research physical + fire damage together |
+| Bots not repairing | Roboport too far | Add roboports every 30 tiles |
+| Biters path around wall | Wall not sealed | Check for gaps — water, cliffs, ore patches |
+
+{{< section "Scaling for Megabase" >}}
+
+For a full perimeter around a megabase:
+
+1. Build wall modules in blueprint form (50-tile segments)
+2. Each segment: 2 walls, 6 flamethrowers, 6 gun turrets, 1 roboport
+3. Connect with a crude oil pipe ring around your entire base
+4. Add artillery outposts at chokepoints (bottleneck areas between water/lakes)
+5. Train-deliver replacement walls and ammo from central production
+
+A full perimeter using this design handles 99% of attacks autonomously. The only intervention needed is the occasional behemoth wave after artillery expansion.
+
+{{< section "Bottom Line" >}}
+
+Flamethrower defense is the most resource-efficient way to protect your factory. One oil pipe, one ammo belt, and a well-designed kill corridor handle everything from early-game small biters to late-game behemoths.
+
+**Numbers to remember:**
+- Flamethrowers every 4 tiles, gun turrets every 2 tiles
+- One minimum-speed pumpjack supplies 30+ turrets
+- Kill corridor: outer wall → 3-4 tile gap → inner wall → turrets
+- Roboports every 30 tiles for full repair coverage
+
+**Related:** [Early Game Defense]({{< ref "/defense/early-game-defense" >}}) — setting up your first walls before flamethrowers.

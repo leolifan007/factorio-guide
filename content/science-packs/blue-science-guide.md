@@ -1,6 +1,6 @@
 ---
 title: "Chemical Science Pack — Blue Science Guide"
-description: "Everything about blue science in Factorio: oil processing, recipe ratios, sulfur, and automation setup."
+description: "Complete blue science guide for Factorio: oil processing, recipe ratios, sulfur production, and plastic automation for chemical science packs."
 date: 2026-05-18
 tags: ["science-packs", "production-ratios"]
 draft: false
@@ -11,101 +11,118 @@ draft: false
 <span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#88ccff;">CHEMICAL SCIENCE</span>
 </div>
 
-## Recipe
+Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
 
-Blue science is the first science that requires **fluids**:
+{{< callout "tip" >}}
+**TL;DR:** Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.
+{{< /callout >}}
 
-<div class="recipe-grid">
+{{< section "Recipe and Requirements" >}}
 
-<div class="recipe-slot">
-<div class="slot-label">Engine Unit</div>
-<div class="slot-icon" style="background:#3a3a3a;">
-<svg viewBox="0 0 48 48" width="48" height="48"><rect x="10" y="14" width="28" height="20" rx="3" fill="#888" stroke="#ccc" stroke-width="1.5"/><rect x="16" y="8" width="16" height="6" rx="2" fill="#666"/></svg>
-</div>
-<div class="slot-recipe">2 × Steel<br>1 × Gear<br>1 × Pipe</div>
-</div>
+Each chemical science pack needs three components:
 
-<div class="recipe-arrow">+</div>
+{{< recipe name1="engine" qty1="1x" name2="circuit_red" qty2="1x" name3="sulfur" qty3="1x" result="chemical_science" rqty="1x" >}}
 
-<div class="recipe-slot">
-<div class="slot-label">Sulfur</div>
-<div class="slot-icon" style="background:#3a3a3a;">
-<svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="16" fill="#d4a017" stroke="#f0c040" stroke-width="2"/></svg>
-</div>
-<div class="slot-recipe">Petroleum + 30 Water<br>→ 2 Sulfur / 1s</div>
-</div>
+Two of these three require oil products. Red circuits need plastic (petroleum + coal). Sulfur needs petroleum gas and water. That means you can't automate blue science until you have a working oil refinery setup.
 
-<div class="recipe-arrow">→</div>
+{{< section "Oil Refining — The Hard Part" >}}
 
-<div class="recipe-slot">
-<div class="slot-label">Chemical Science Pack</div>
-<div class="slot-icon" style="background:#1a3a5c;border:2px solid #3778c8;">
-<svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="10" width="32" height="28" rx="4" fill="#1a3a5c" stroke="#3778c8" stroke-width="2"/><rect x="14" y="16" width="20" height="16" rx="2" fill="#5599ee"/></svg>
-</div>
-</div>
+Here's the chain from well to blue science:
 
-</div>
+| Step | Input | Output | Machine |
+|------|-------|--------|---------|
+| Oil extraction | Crude oil | Crude oil | Pumpjack |
+| Basic refining | Crude oil | Heavy, Light, Petroleum | Refinery |
+| Sulfur | Petroleum + Water | Sulfur | Chemical plant |
+| Plastic | Coal + Petroleum | Plastic bar | Chemical plant |
+| Red circuits | Plastic + Copper + Green | Red circuit | Assembler |
+| Engine | Steel + Gear + Pipe | Engine unit | Assembler |
+| Blue science | Engine + Red circuit + Sulfur | Blue pack | Assembler |
 
-## Oil Refining — The Foundation
+The critical path is petroleum. You need enough refineries producing petroleum gas to feed both plastic and sulfur production.
 
-Blue science requires **plastic** (coal + petroleum), which means you need oil refining first.
+{{< diagram "diagrams/blue-science-flow.svg" "Blue science production chain from oil wells through refineries to chemical science packs" "760" >}}
 
-<div class="recipe-grid" style="margin-top:1rem;">
+{{< section "Optimal Ratios for 5 SPM" >}}
 
-<div class="recipe-slot">
-<div class="slot-label">Basic Oil Refining</div>
-<div class="slot-icon" style="background:#2a2a2a;">
-<svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="12" width="32" height="24" rx="4" fill="#444" stroke="#888" stroke-width="1.5"/><line x1="14" y1="24" x2="34" y2="24" stroke="#888"/><circle cx="24" cy="24" r="6" fill="#d4a017"/></svg>
-</div>
-<div class="slot-recipe">Crude Oil → Petroleum<br>Heavy Oil<br>Light Oil</div>
-</div>
-
-<div class="recipe-arrow">+</div>
-
-<div class="recipe-slot">
-<div class="slot-label">Chemical Plant</div>
-<div class="slot-icon" style="background:#2a2a2a;">
-<svg viewBox="0 0 48 48" width="48" height="48"><rect x="10" y="12" width="28" height="24" rx="3" fill="#555" stroke="#888" stroke-width="1.5"/><circle cx="24" cy="24" r="8" fill="#3778c8" opacity="0.7"/></svg>
-</div>
-<div class="slot-recipe">Coal + Petroleum<br>→ Plastic Bar<br>2s craft time</div>
-</div>
-
-</div>
-
-## Optimal Ratios
+Here's the ratio that works for a stable 5 blue science per minute setup:
 
 | Component | Machines | Notes |
-|-----------|----------|-------|
-| Blue science assemblers | 5 | Target: 5 SPM |
-| Engine unit assemblers | 2 | Each feeds ~2.5 science assemblers |
-| Sulfur chemical plants | 1 | 1 plant supplies ~10 science assemblers |
-| Plastic bar chemical plants | 2 | 2 plants for steady supply |
-| Refineries (basic) | 1-2 | 1 refinery provides enough petroleum |
-| Copper wire assemblers | 1 | For red circuits (if not on bus) |
+|-----------|:--------:|-------|
+| Blue science assemblers | 5 | Target output rate |
+| Engine unit assemblers | 2 | Each feeds about 2.5 science assemblers |
+| Sulfur chemical plants | 1 | One plant supplies ~10 science assemblers |
+| Plastic chemical plants | 2 | Steady supply for red circuits |
+| Refineries (basic) | 1-2 | One refinery provides enough petroleum for this scale |
 | Red circuit assemblers | 1 | For blue science modules |
+| Copper wire assemblers | 1 | Feeds red circuits (if not already on bus) |
 
-> **Pro tip:** Blue science is the bottleneck for most first-time players. The issue is almost always **oil throughput** — not enough refineries, or imbalanced heavy/light oil storage.
+{{< callout "warning" >}}
+The most common mistake is not enough refineries. With basic processing, one refinery outputs 40 petroleum gas per second. Plastic uses 20/s, sulfur uses 30/s. One refinery can't keep up with both. Build two refineries early.
+{{< /callout >}}
 
-## Blueprint: Compact Blue Science Cell
+{{< section "Layout — Compact Blue Science Cell" >}}
 
-A single 5-assembler blue science array needs:
+A compact blue science array fits in roughly 15×30 tiles. Here's the layout pattern:
 
-<div class="warning-box">
-<strong>Warning:</strong> Don't forget to pipe lubricant away from heavy oil! If you don't use it, heavy oil backs up and your refineries stall.
-</div>
+<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
+Materials bus (top to bottom):
+  Belt 1: Iron + Steel
+  Belt 2: Copper + Coal
+  Belt 3: Red circuits + Gears
+  Pipe 1: Petroleum
+  Pipe 2: Lubricant (for future electric engine units)
 
-**Materials bus (top to bottom):**
-- Belt 1: Iron + Steel
-- Belt 2: Copper + Coal
-- Belt 3: Red circuits + Gears
-- Pipe 1: Petroleum (sulfuric acid if using modules)
-- Pipe 2: Lubricant (for later electric engine units)
+  [Engine × 2] → [Sulfur × 1]
+        ↓              ↓
+    Blue science assemblers × 5
+        ↓
+    Output belt → Labs
+</pre>
 
-## Research Order After Blue Science
+The engine assemblers sit next to the bus, pulling steel, iron, gears, and pipes. The sulfur plant takes petroleum from the pipe and outputs to a belt. Red circuits come from an existing production line.
 
-1. **Advanced oil processing** — cracking for heavy → light → petroleum
-2. **Production science pack** — purple science
-3. **Utility science pack** — yellow science
-4. **Modules 2 & 3** — massive efficiency gains
+{{< section "Transitioning to Advanced Oil Processing" >}}
+
+Once you research advanced oil processing, your refinery setup changes significantly:
+
+| Aspect | Basic | Advanced |
+|--------|-------|----------|
+| Crude per cycle | 100 | 100 + 50 Water |
+| Heavy oil output | 30/s | 50/s |
+| Light oil output | 30/s | 50/s |
+| Petroleum output | 40/s | 30/s |
+| Cracking needed | No | Yes |
+
+The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Without cracking, your refineries stall from heavy oil backup.
+
+{{< section "Common Pitfalls" >}}
+
+**Heavy oil backup.** Advanced refining without cracking. The refineries fill up with heavy oil, stop producing, and suddenly your entire base runs out of plastic. Solution: crack heavy oil to light, and light to petroleum. Use a circuit condition to only crack when heavy > 1k.
+
+**Running out of water.** Sulfur and advanced refining both consume water. A single offshore pump feeds about 10 chemical plants. If your sulfur production stalls, check water first.
+
+**Petroleum vs. plastic balance.** One plastic bar needs 20 petroleum gas. At 5 SPM, you need roughly 10 plastic per minute. That's one chemical plant running full time. If red circuit production backs up, plastic is the bottleneck — not copper.
+
+{{< section "Scaling Blue Science" >}}
+
+To go from 5 SPM to 30 SPM:
+
+- Add more refineries (6-8 with advanced + cracking)
+- Scale up to 30 blue science assemblers
+- Add more engine and sulfur production
+- Upgrade belt tiers to keep up with throughput
+
+The refinery setup scales linearly. With advanced processing and cracking, 8 refineries plus 1 heavy→light and 7 light→petroleum crackers provide perfect balance for large-scale production.
+
+{{< section "Bottom Line" >}}
+
+Blue science is the first multi-fluid production chain in Factorio. The key takeaway: petroleum is always the constraint. Build more refineries than you think you need, set up cracking before your tanks fill with heavy oil, and keep water flowing.
+
+**Numbers to remember:**
+- 2 refineries minimum for 5 SPM
+- 1 engine assembler per 2.5 science assemblers
+- Petroleum demand = plastic (20/s) + sulfur (30/s) per chemical plant
 
 **Previous:** [Green Science Guide]({{< ref "/getting-started/green-science-guide" >}})
+**Next:** [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}})

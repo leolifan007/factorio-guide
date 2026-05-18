@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="820" height="420" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="60" x2="820" y2="60" stroke="#333"/>
+  <text x="410" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#3778c8">BLUE SCIENCE — OIL TO CHEMICIAL SCIENCE</text>
+  <!-- Oil Wells → Refinery -->
+  <rect x="30" y="90" width="120" height="65" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="90" y="112" text-anchor="middle" font-size="10" fill="#888">Oil Well × 4+</text>
+  <text x="90" y="130" text-anchor="middle" font-size="9" fill="#666">Crude Oil</text>
+  <line x1="150" y1="122" x2="180" y2="122" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="180,118 188,122 180,126" fill="#3778c8"/>
+  <!-- Refinery -->
+  <rect x="190" y="85" width="120" height="75" rx="4" fill="#2a2a2a" stroke="#555"/>
+  <text x="250" y="108" text-anchor="middle" font-size="10" fill="#888">Refinery × 2</text>
+  <text x="250" y="126" text-anchor="middle" font-size="9" fill="#666">Basic Processing</text>
+  <text x="250" y="142" text-anchor="middle" font-size="8" fill="#555">Crude → 3 outputs</text>
+  <!-- Three outputs -->
+  <line x1="310" y1="95" x2="340" y2="95" stroke="#8b4513" stroke-width="1.5"/>
+  <rect x="340" y="80" width="100" height="30" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
+  <text x="390" y="99" text-anchor="middle" font-size="9" fill="#d4a017">Heavy → Lube</text>
+  <line x1="310" y1="122" x2="340" y2="122" stroke="#d4a017" stroke-width="1.5"/>
+  <rect x="340" y="107" width="100" height="30" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
+  <text x="390" y="126" text-anchor="middle" font-size="9" fill="#f0c040">Light → Solid Fuel</text>
+  <line x1="310" y1="150" x2="340" y2="150" stroke="#5599ee" stroke-width="2"/>
+  <rect x="340" y="135" width="100" height="30" rx="3" fill="#2a2a2a" stroke="#5599ee"/>
+  <text x="390" y="154" text-anchor="middle" font-size="9" fill="#88bbff">Petroleum → Plastic</text>
+  <!-- Plastic → Blue Science -->
+  <line x1="440" y1="150" x2="480" y2="150" stroke="#5599ee" stroke-width="2"/>
+  <polygon points="480,146 488,150 480,154" fill="#5599ee"/>
+  <rect x="490" y="130" width="120" height="40" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="550" y="148" text-anchor="middle" font-size="9" fill="#888">Chemical Plant × 2</text>
+  <text x="550" y="162" text-anchor="middle" font-size="8" fill="#666">Plastic</text>
+  <!-- Coal branch -->
+  <rect x="490" y="80" width="80" height="35" rx="3" fill="#2a2a2a" stroke="#444"/>
+  <text x="530" y="102" text-anchor="middle" font-size="10" fill="#888">Coal</text>
+  <line x1="530" y1="115" x2="550" y2="130" stroke="#444"/>
+  <!-- Steel + Gear + Pipe → Engine -->
+  <rect x="30" y="200" width="120" height="55" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="90" y="222" text-anchor="middle" font-size="10" fill="#888">Engine Assembly</text>
+  <text x="90" y="240" text-anchor="middle" font-size="8" fill="#666">2 Steel + 1 Gear + 1 Pipe</text>
+  <line x1="150" y1="228" x2="200" y2="228" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="200,224 208,228 200,232" fill="#3778c8"/>
+  <!-- Sulfur branch -->
+  <rect x="30" y="280" width="120" height="55" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="90" y="302" text-anchor="middle" font-size="10" fill="#888">Sulfur Production</text>
+  <text x="90" y="320" text-anchor="middle" font-size="8" fill="#666">Petro + Water → 2 Sulfur</text>
+  <line x1="150" y1="308" x2="200" y2="308" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="200,304 208,308 200,312" fill="#3778c8"/>
+  <!-- Blue Science Assembly -->
+  <rect x="210" y="200" width="200" height="130" rx="4" fill="#1a3a5c" stroke="#3778c8" stroke-width="1.5"/>
+  <text x="310" y="228" text-anchor="middle" font-size="12" fill="#3778c8" font-weight="700">Chemical Science Pack</text>
+  <text x="310" y="248" text-anchor="middle" font-size="10" fill="#88ccff">Assembler × 5</text>
+  <text x="310" y="270" text-anchor="middle" font-size="9" fill="#888">×1 Red Circuit</text>
+  <text x="310" y="286" text-anchor="middle" font-size="9" fill="#888">×1 Engine Unit</text>
+  <text x="310" y="302" text-anchor="middle" font-size="9" fill="#888">×1 Sulfur</text>
+  <text x="310" y="318" text-anchor="middle" font-size="8" fill="#555">12s craft time</text>
+  <!-- Output -->
+  <line x1="410" y1="265" x2="460" y2="265" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="460,261 468,265 460,269" fill="#3778c8"/>
+  <rect x="470" y="240" width="100" height="50" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="520" y="268" text-anchor="middle" font-size="10" fill="#999">Labs</text>
+  <text x="520" y="284" text-anchor="middle" font-size="8" fill="#666">Tier 3 science</text>
+  <!-- Note -->
+  <text x="410" y="400" text-anchor="middle" font-size="9" fill="#555">Tip: 1 Sulfur plant supplies ~10 blue science assemblers</text>
+</svg>

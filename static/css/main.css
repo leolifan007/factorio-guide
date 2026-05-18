@@ -1259,3 +1259,209 @@ blockquote::before {
 .related-card:hover .related-body h4 {
   color: var(--f-orange);
 }
+
+/* ========================================
+   SHORTCODE: Game Recipe Row
+   ======================================== */
+.game-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--bg-card-inner);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+}
+.game-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-dk);
+  border-radius: var(--radius);
+  min-width: 64px;
+}
+.game-slot.result {
+  border-color: var(--f-orange);
+  background: var(--f-orange-faint);
+}
+.game-qty {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+.game-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.game-name {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.2;
+  max-width: 64px;
+  word-break: break-word;
+}
+.game-plus {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  font-weight: 700;
+}
+
+/* ========================================
+   SHORTCODE: Check List Row
+   ======================================== */
+.check-row {
+  margin: 0.5rem 0;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius);
+}
+.check-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.check-count {
+  font-size: 0.82rem;
+  color: var(--f-orange);
+  font-weight: 700;
+  min-width: 1.8em;
+}
+.check-desc {
+  font-size: 0.82rem;
+  color: var(--text-body);
+  margin-left: 0.25rem;
+}
+
+/* ========================================
+   SHORTCODE: Section Head
+   ======================================== */
+.section-head {
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--f-orange-mid);
+}
+.section-head h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--f-orange);
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+/* ========================================
+   SHORTCODE: Callout
+   ======================================== */
+.pro-tip, .callout {
+  position: relative;
+  padding: 0.85rem 1rem 0.85rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-md);
+  background: var(--bg-card);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.pro-tip::before {
+  content: "💡";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.85rem;
+  font-size: 1rem;
+}
+.callout::before {
+  content: "⚠️";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.85rem;
+  font-size: 1rem;
+}
+
+/* ========================================
+   SHORTCODE: Schema Diagram
+   ======================================== */
+.schema-diagram {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+}
+
+/* ========================================
+   SHORTCODE: Content Box
+   ======================================== */
+.content-box {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--bg-card);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+}
+.content-box > :first-child { margin-top: 0; }
+.content-box > :last-child { margin-bottom: 0; }
+
+/* ========================================
+   SHORTCODE: Mat Card
+   ======================================== */
+.mat-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-dk);
+  border-radius: var(--radius);
+  min-width: 60px;
+}
+.mat-qty {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.mat-card-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.mat-name {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ========================================
+   SHORTCODE: Ingredient Row
+   ======================================== */
+.ingredient-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+/* ========================================
+   SHORTCODE: Mat Plus
+   ======================================== */
+.mat-plus {
+  font-size: 1rem;
+  color: var(--text-dim);
+  font-weight: 700;
+  padding: 0 0.25rem;
+}
