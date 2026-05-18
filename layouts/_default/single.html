@@ -62,7 +62,57 @@
         <div class="toc-title">Contents</div>
       </aside>
       <div class="article-content" id="article-content">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="{{ `/` | relURL }}">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          {{ with .Parent }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">{{ .Title }}</span>
+        </nav>
+
         {{ .Content | safeHTML }}
+
+        <!-- Back to Section -->
+        {{ with .Parent }}
+        <div class="back-to-section">
+          <a href="{{ .RelPermalink }}" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to {{ .Title }}
+          </a>
+        </div>
+        {{ end }}
+
+        <!-- Related Articles -->
+        {{ $currentPage := . }}
+        {{ with .Parent }}
+        {{ $siblings := where .Pages ".RelPermalink" "ne" $currentPage.RelPermalink }}
+        {{ if $siblings }}
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            {{ range first 4 $siblings }}
+            <a href="{{ .RelPermalink }}" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">{{ substr .Title 0 1 }}</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>{{ .Title }}</h4>
+                <p>{{ .Description | default (truncate 60 .Summary) }}</p>
+              </div>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
       </div>
     </div>
 

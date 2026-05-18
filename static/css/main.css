@@ -1165,3 +1165,97 @@ blockquote::before {
 .guide-card:nth-child(4) { animation-delay: 0.20s; }
 .guide-card:nth-child(5) { animation-delay: 0.25s; }
 .guide-card:nth-child(6) { animation-delay: 0.30s; }
+
+/* ========================================
+   BREADCRUMB & RELATED ARTICLES
+   ======================================== */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.82rem;
+}
+.breadcrumb a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.breadcrumb a:hover {
+  color: var(--f-orange);
+}
+.breadcrumb-sep {
+  color: var(--text-faint);
+  margin: 0 0.15rem;
+}
+.breadcrumb-current {
+  color: var(--text-hd);
+  font-weight: 500;
+}
+
+/* Back to Section Button */
+.back-to-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-md);
+}
+.back-to-section .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Related Articles Section */
+.related-articles {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-md);
+}
+.related-articles h3 {
+  font-size: 1.1rem;
+  color: var(--text-hd);
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.related-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.related-card:hover {
+  border-color: var(--f-orange);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+.related-icon {
+  flex-shrink: 0;
+}
+.related-body h4 {
+  font-size: 0.88rem;
+  color: var(--text-hd);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.related-body p {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+  margin: 0;
+}
+.related-card:hover .related-body h4 {
+  color: var(--f-orange);
+}
