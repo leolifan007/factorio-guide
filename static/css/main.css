@@ -314,7 +314,7 @@ blockquote::before {
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  filter: brightness(0.2) saturate(0.5) contrast(1.15);
+  filter: brightness(0.25) saturate(0.6) contrast(1.1);
   background-color: #0a0a0a;
 }
 
@@ -656,7 +656,7 @@ blockquote::before {
 }
 .article-hero-bg {
   position: absolute; inset: 0;
-  background-size: cover; background-position: center;
+  background-size: cover; background-position: center top;
   filter: brightness(0.2) saturate(0.4) contrast(1.2);
 }
 .article-hero-fade {
