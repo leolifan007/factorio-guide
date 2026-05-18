@@ -314,16 +314,16 @@ blockquote::before {
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  filter: brightness(0.55) saturate(0.9) contrast(1.05);
-  background-color: #0a0a0a;
+  /* filter: brightness(0.55) saturate(0.9) contrast(1.05); */
+  background-color: #000;
 }
 
-.hero-overlay {
+/* .hero-overlay {
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse at 50% 0%, rgba(232,148,28,0.06) 0%, transparent 60%),
     linear-gradient(180deg, rgba(17,17,17,0.0) 0%, rgba(31,31,31,0.35) 50%, var(--bg-body) 100%);
-}
+} */
 
 .hero-content {
   position: relative; z-index: 2;
@@ -657,7 +657,7 @@ blockquote::before {
 .article-hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center top;
-  filter: brightness(0.5) saturate(0.8) contrast(1.05);
+  /* filter: brightness(0.5) saturate(0.8) contrast(1.05); */
 }
 .article-hero-fade {
   position: absolute; inset: 0;
