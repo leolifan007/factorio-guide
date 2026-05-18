@@ -1,140 +1,42 @@
 ---
-title: "Defense — Factorio Turret & Wall Guide"
-description: "Gun turrets, laser turrets, walls, flamethrowers, artillery, and pollution management. Keep your factory alive against biter attacks."
-date: "2026-05-17"
+title: "Defense Guide"
+description: "Turrets, walls, pollution management, artillery, and biter evolution — everything you need to defend your factory."
+date: 2026-05-18
 ---
 
-## Defense in Factorio
+<!-- Section: Defense Overview -->
+<div class="section-card red">
+<p>Your factory will be attacked. Biters evolve and grow stronger as pollution spreads. A good defense keeps your science flowing and your factory intact.</p>
+<blockquote><p><strong>Key principle:</strong> Defense is not optional. Even on peaceful mode, cliffs and spawners can block expansion.</p></blockquote>
+</div>
 
-Biters will attack your factory. As your factory expands and produces more pollution, biter nests generate more and more enemies. A solid defense strategy is essential to keeping your factory running.
+## Defense Layers
 
----
+A strong defense uses multiple layers:
 
-## The Defense Philosophy
+<div class="check-row">
+<div class="check-item"><span class="check-icon"></span><div><strong>Walls</strong> — First physical barrier. Upgrade to stone, then steel.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Gun turrets</strong> — Early game. Cheap, but need constant ammo replenishment.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Laser turrets</strong> — Mid game. Powered by electricity, no ammo needed.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Flame turrets</strong> — Area damage. Devastating against biter waves.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Artillery</strong> — Long range. Strikes biter nests before they reach you.</div></div>
+</div>
 
-Factorio's defense is built on **three pillars**:
+## Pollution and Evolution
 
-1. **Offense** — Kill biters before they reach your walls
-2. **Walls** — Stop any biters that get past your turrets
-3. **Pollution management** — Reduce attacks by reducing pollution
+| Factor | Effect on biters |
+|--------|-------------------|
+| Pollution | Plus-plus aggression, faster evolution |
+| Destroyed nests | Plus resentment, occasional retaliation |
+| Time | Plus slow natural evolution |
+| Killing spawners | Minus reduces evolution factor |
 
-Most beginners focus only on walls and turrets. The key to a stress-free factory is managing pollution first.
+> **Tip:** Use efficiency modules in miners and labs to reduce pollution. Fewer biters equals less defense needed.
 
----
+## Quick Start Build
 
-## Turret Types
-
-### Gun Turrets — Early Defense
-
-- Fires regular ammo (1 iron plate + 1 coal = 10 rounds)
-- Damage: 5 per bullet
-- Fire rate: 10 rounds/second
-- Range: 18 tiles
-- **DPS:** 50
-
-**Ammo upgrade path:**
-- Regular Ammo (base damage 5)
-- Piercing Rounds (damage 8, requires red science)
-- Uranium Rounds (damage 16, very late game)
-
-### Laser Turrets — Mid Game
-
-- Requires electricity — very high power draw
-- Damage: 15 per shot (with 100kJ energy buffer)
-- Fire rate: variable based on power supply
-- Range: 18 tiles
-- **Best use:** Late-game static defense on nuclear power
-
-**Drawback:** Laser turrets consume enormous amounts of power. A wall of 50 laser turrets can drain a 40 MW nuclear plant.
-
-### Flamethrower Turrets — Crowd Control
-
-- Only effective at close range (9 tiles)
-- Extremely high damage against groups
-- Requires light oil or crude oil as fuel
-- **Best use:** Choke points and worm-heavy areas
-
-### Artillery Turrets — Long Range
-
-- Range: 560 tiles (can be extended with range research)
-- Fires artillery shells
-- Automatically targets biter nests within range
-- **Best use:** Destroying distant biter bases before they become a problem
-
----
-
-## Wall Designs
-
-### Stone Wall — Basic Defense
-- HP: 600
-- Dirt cheap to produce
-- Sufficient for early-mid game walls
-
-### Concrete — Late Game
-- HP: 450 (less than stone wall, but cleaner)
-- Unlocks at Steel Processing
-- Used for large-scale wall lines due to aesthetic
-
-### Fortified Wall (Biter Extensions)
-- Stone walls backed by laser turrets + roboports for automatic repair
-- The gold standard for long-perimeter megabase defense
-
----
-
-## Pollution Management
-
-This is the most important and most overlooked defense mechanic:
-
-**How it works:**
-1. Your factory generates **pollution** based on production activity
-2. Pollution spreads to nearby tiles (radius ~20 tiles per minute)
-3. Biter nests within the pollution cloud **absorb pollution**
-4. When a nest absorbs enough pollution, it spawns an **attack wave**
-
-**Reducing pollution:**
-- Turn off unneeded assemblers (nuclear reactor power — turn off the excess boilers)
-- Research **energy efficiency** modules early
-- Use **production modules** (reduce pollution per item)
-- Clear biter nests within your pollution radius
-
-**Pollution tip:** The first sign you need better defense isn't biters at your walls — it's seeing a red cloud spreading from your factory. Reduce production or clear nests.
-
----
-
-## Early Game Defense Checklist
-
-1. **Build a stone wall** around your main factory before you go past red science
-2. **Place gun turrets** every 3-4 wall segments, backed by inserters
-3. **Set up ammo production** for gun turrets (1 assembler making regular ammo)
-4. **Add flamer turrets** at natural chokepoints (cliffs, water edges)
-5. **Clear nearby biter nests** with grenades and hand-held guns before they attack
-
----
-
-## Late Game Defense
-
-- **Replace gun turrets** with laser turrets backed by nuclear power
-- **Add artillery** to systematically destroy distant nests
-- **Install robot ports** for automatic wall and turret repair
-- **Use the map** (Ctrl+M) to track biter nest locations and plan artillery targeting
-- **Spam efficiency modules** in assemblers — 1 efficiency module 1 reduces pollution by 30% with almost no production cost
-
----
-
-## Defense Blueprint Books
-
-Standard blueprints every player should have:
-
-1. **Wall + Gun Turret** combo (for perimeter)
-2. **Laser Turret + Wall** (nuclear-powered late game wall)
-3. **Flame Turret** chokepoint design
-4. **Artillery + Radar** outpost (for map exploration and biter base destruction)
-5. **Repair pack** supply depot
-
----
-
-## Related Guides
-
-- **[Early Defense Guide](/defense/factorio-early-defense-guide/)** — Step-by-step starter defense
-- **[Pollution Management](/defense/factorio-pollution-management/)** — Reduce biter aggression naturally
-- **[Artillery Setup Guide](/defense/factorio-artillery-setup/)** — Range, targeting, and shell production
+1. Place **stone walls** 2 tiles thick around your base perimeter
+2. Add **gun turrets** every 5-8 tiles along the wall
+3. Set up **ammo inserters** feeding from steel chests
+4. Upgrade to **laser turrets** as electricity becomes abundant
+5. Place **artillery turrets** at the map edge for long-range strike
