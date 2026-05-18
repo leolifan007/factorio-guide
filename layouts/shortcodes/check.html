@@ -3,7 +3,7 @@
 {{- $desc := .Get 2 | default "" -}}
 <div class="check-row">
   <div class="check-item">
-    <img src="{{ printf "images/game-icons/%s.svg" $name | relURL }}" alt="{{ $name }}" class="check-icon">
+    <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="check-icon">
     <span class="check-count">{{ $count }}x</span>
     {{- with $desc }}<span class="check-desc">{{ . }}</span>{{ end -}}
   </div>

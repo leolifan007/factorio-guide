@@ -5,6 +5,6 @@
 {{- $label := $name | humanize | truncate 12 "" -}}
 <div class="game-slot{{ $class }}">
   {{- with $qty }}<span class="game-qty">{{ . }}</span>{{ end -}}
-  <img src="{{ printf "images/game-icons/%s.svg" $name | relURL }}" alt="{{ $name }}" class="game-img" loading="lazy">
+  <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="game-img" loading="lazy">
   <span class="game-name">{{ $label }}</span>
 </div>
