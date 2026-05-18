@@ -4,7 +4,7 @@
   <line x1="0" y1="50" x2="820" y2="50" stroke="#333"/>
   <text x="410" y="32" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="13" font-weight="900" fill="#d4a017">OIL REFINERY — PIPE MANIFOLD LAYOUT</text>
   <!-- Water pipe from above -->
-  <rect x="30" y="65" width="798" height="3" rx="1" fill="#44aaff"/>
+  <rect x="30" y="65" width="760" height="3" rx="1" fill="#44aaff"/>
   <text x="790" y="68" text-anchor="end" font-size="11" fill="#44aaff">Water Supply</text>
   <!-- Refinery row -->
   <rect x="30" y="80" width="92" height="62" rx="3" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
@@ -48,7 +48,7 @@
   <rect x="50" y="210" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
   <text x="110" y="228" text-anchor="middle" font-size="12" fill="#d4a017">H→L Cracker × 1</text>
   <text x="110" y="240" text-anchor="middle" font-size="10" fill="#666">Heavy→Light</text>
-  <line x1="176" y1="228" x2="190" y2="228" stroke="#8b4513" stroke-width="1.5"/>
+  <line x1="170" y1="228" x2="190" y2="228" stroke="#8b4513" stroke-width="1.5"/>
   <rect x="190" y="210" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
   <text x="250" y="228" text-anchor="middle" font-size="12" fill="#f0c040">L→P Cracker × 7</text>
   <text x="250" y="240" text-anchor="middle" font-size="10" fill="#666">Light→Petro</text>

@@ -27,14 +27,14 @@ for fname in sorted(os.listdir(DIR)):
     new_vbh = int(vbh * 1.15)
 
     # --- Phase 1: Collect old data ---
-    # Rectangles: (old_x, old_w, old_h, is_bg, line_index)
+    # Rectangles: (old_x, old_w, old_h, is_bg)
     rects = []
     for m in re.finditer(r'<rect [^>]*?x="(\d+)"[^>]*?width="(\d+)"[^>]*?height="(\d+)"', src):
         x, w, h = int(m.group(1)), int(m.group(2)), int(m.group(3))
-        is_bg = (w >= vbw - 2)
+        # Background = fills full canvas width OR very wide (>80% canvas)
+        is_bg = (w >= vbw - 2) or (w >= vbw * 0.8 and x <= 50)
         rects.append({'ox': x, 'ow': w, 'oh': h, 'bg': is_bg,
-                       'or': x + w, 'nx': x, 'nw': w, 'nh': h, 'nr': x + w,
-                       'pos': m.start(1), 'fwidth': m.start(2), 'fheight': m.start(3)})
+                       'or': x + w, 'nx': x, 'nw': w, 'nh': h, 'nr': x + w})
 
     # Lines: extract all tag positions, then parse attrs individually
     # Handle any attribute order: x1, x2, y1 can appear in any sequence

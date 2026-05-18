@@ -4,23 +4,23 @@
   <line x1="0" y1="50" x2="820" y2="50" stroke="#333"/>
   <text x="641" y="32" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="13" font-weight="900" fill="#3778c8">BLUE SCIENCE — COMPACT PRODUCTION CELL</text>
   <!-- Main bus (4 belts + 1 pipe) -->
-  <rect x="30" y="65" width="126" height="37" rx="2" fill="#777" opacity="0.3"/>
+  <rect x="30" y="65" width="126" height="30" rx="2" fill="#777" opacity="0.3"/>
   <text x="129" y="82" text-anchor="middle" font-size="11" fill="#777">Main Bus (4 belts)</text>
-  <rect x="30" y="93" width="126" height="37" rx="2" fill="#5599ee" opacity="0.2" stroke="#5599ee" stroke-width="0.5"/>
+  <rect x="30" y="93" width="126" height="30" rx="2" fill="#5599ee" opacity="0.2" stroke="#5599ee" stroke-width="0.5"/>
   <text x="129" y="112" text-anchor="middle" font-size="10" fill="#5599ee">Petroleum Pipe</text>
   <!-- Pull off lanes -->
   <line x1="129" y1="117" x2="129" y2="135" stroke="#555" stroke-width="1.5"/>
   <line x1="129" y1="135" x2="261" y2="135" stroke="#555" stroke-width="1.5"/>
   <!-- Engine assembly -->
-  <rect x="261" y="115" width="105" height="50" rx="3" fill="#2a2a2a" stroke="#3778c8" stroke-width="1"/>
+  <rect x="261" y="115" width="105" height="50" rx="3" fill="#2a2a2a" stroke="#3778c8" stroke-width="105"/>
   <text x="343" y="132" text-anchor="middle" font-size="12" fill="#888">Engine Units</text>
   <text x="343" y="144" text-anchor="middle" font-size="10" fill="#666">Assembler × 2</text>
   <!-- Sulfur -->
-  <rect x="459" y="115" width="105" height="50" rx="3" fill="#2a2a2a" stroke="#3778c8" stroke-width="1"/>
+  <rect x="459" y="115" width="105" height="50" rx="3" fill="#2a2a2a" stroke="#3778c8" stroke-width="105"/>
   <text x="542" y="132" text-anchor="middle" font-size="12" fill="#888">Sulfur</text>
   <text x="542" y="144" text-anchor="middle" font-size="10" fill="#666">Chem Plant × 1</text>
   <line x1="261" y1="155" x2="343" y2="175" stroke="#555" stroke-width="1"/>
-  <line x1="564" y1="135" x2="674" y2="175" stroke="#555" stroke-width="1"/>
+  <line x1="624" y1="135" x2="674" y2="175" stroke="#555" stroke-width="1"/>
   <!-- Engine and sulfur belts feeding science assemblers -->
   <rect x="46" y="175" width="63" height="25" rx="2" fill="#444"/>
   <text x="96" y="189" text-anchor="middle" font-size="11" fill="#888">Iron Belt</text>
@@ -39,13 +39,13 @@
   <text x="558" y="222" text-anchor="middle" font-size="10" fill="#88ccff">Science 5</text>
   <!-- Output belt -->
   <rect x="46" y="250" width="357" height="5" rx="1" fill="#3778c8"/>
-  <line x1="403" y1="252" x2="674" y2="252" stroke="#3778c8" stroke-width="2"/>
+  <line x1="608" y1="252" x2="674" y2="252" stroke="#3778c8" stroke-width="2"/>
   <polygon points="674,248 687,252 674,256" fill="#3778c8"/>
   <rect x="690" y="237" width="63" height="37" rx="3" fill="#2a2a2a" stroke="#555"/>
   <text x="740" y="253" text-anchor="middle" font-size="11" fill="#888">Labs</text>
   <text x="740" y="263" text-anchor="middle" font-size="10" fill="#666">Input</text>
   <!-- Layout dimensions -->
   <line x1="46" y1="270" x2="46" y2="282" stroke="#444" stroke-width="1"/>
-  <line x1="403" y1="270" x2="403" y2="282" stroke="#444" stroke-width="1"/>
+  <line x1="608" y1="270" x2="608" y2="282" stroke="#444" stroke-width="1"/>
   <text x="327" y="280" text-anchor="middle" font-size="11" fill="#555">Total width: ~15 tiles (usable with underground belts)</text>
 </svg>

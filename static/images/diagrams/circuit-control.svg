@@ -4,7 +4,7 @@
   <rect x="30" y="15" width="63" height="50" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
   <text x="68" y="32" text-anchor="middle" font-size="11" fill="#d4a017">Heavy</text>
   <text x="68" y="44" text-anchor="middle" font-size="10" fill="#666">Tank</text>
-  <line x1="93" y1="35" x2="126" y2="35" stroke="#555" stroke-width="1.5"/>
+  <line x1="107" y1="35" x2="126" y2="35" stroke="#555" stroke-width="1.5"/>
   <polygon points="126,30 139,35 126,40" fill="#555"/>
   <text x="152" y="29" text-anchor="middle" font-size="9" fill="#666">if &gt;20k</text>
   <rect x="158" y="15" width="84" height="50" rx="3" fill="#2a2a2a" stroke="#444"/>
@@ -12,7 +12,7 @@
   <!-- Light oil tank + pump -->
   <rect x="30" y="65" width="63" height="37" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
   <text x="68" y="84" text-anchor="middle" font-size="11" fill="#f0c040">Light Tank</text>
-  <line x1="93" y1="80" x2="126" y2="80" stroke="#555" stroke-width="1.5"/>
+  <line x1="107" y1="80" x2="126" y2="80" stroke="#555" stroke-width="1.5"/>
   <polygon points="126,75 139,80 126,85" fill="#555"/>
   <text x="152" y="74" text-anchor="middle" font-size="9" fill="#666">if &gt;20k</text>
   <rect x="158" y="65" width="84" height="37" rx="3" fill="#2a2a2a" stroke="#444"/>
