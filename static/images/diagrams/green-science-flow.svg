@@ -4,18 +4,18 @@
   <line x1="0" y1="60" x2="820" y2="60" stroke="#333" stroke-width="1"/>
   <text x="564" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#6abe30">GREEN SCIENCE — PRODUCTION FLOW</text>
   <!-- Inserter Assembly -->
-  <rect x="30" y="90" width="147" height="112" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="128" y="112" text-anchor="middle" font-size="12" fill="#888">Assembler 1</text>
-  <text x="128" y="130" text-anchor="middle" font-size="12" fill="#999">Inserter</text>
-  <text x="128" y="148" text-anchor="middle" font-size="11" fill="#666">1 Gear + 1 Circuit + 1 Iron</text>
+  <rect x="30" y="90" width="147" height="103" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="128" y="112" text-anchor="middle" font-size="10" fill="#888">Assembler 1</text>
+  <text x="128" y="130" text-anchor="middle" font-size="10" fill="#999">Inserter</text>
+  <text x="128" y="148" text-anchor="middle" font-size="8" fill="#666">1 Gear + 1 Circuit + 1 Iron</text>
   <!-- Arrow -->
   <line x1="227" y1="135" x2="269" y2="135" stroke="#6abe30" stroke-width="2"/>
   <polygon points="269,131 280,135 269,139" fill="#6abe30"/>
   <!-- Belt Assembly -->
-  <rect x="297" y="90" width="147" height="112" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="395" y="112" text-anchor="middle" font-size="12" fill="#888">Assembler 1</text>
-  <text x="395" y="130" text-anchor="middle" font-size="12" fill="#999">Transport Belt</text>
-  <text x="395" y="148" text-anchor="middle" font-size="11" fill="#666">1 Iron Plate</text>
+  <rect x="297" y="90" width="147" height="103" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="395" y="112" text-anchor="middle" font-size="10" fill="#888">Assembler 1</text>
+  <text x="395" y="130" text-anchor="middle" font-size="10" fill="#999">Transport Belt</text>
+  <text x="395" y="148" text-anchor="middle" font-size="8" fill="#666">1 Iron Plate</text>
   <!-- Arrow -->
   <line x1="494" y1="135" x2="536" y2="135" stroke="#6abe30" stroke-width="2"/>
   <polygon points="536,131 547,135 536,139" fill="#6abe30"/>
@@ -28,16 +28,16 @@
   <line x1="414" y1="240" x2="414" y2="255" stroke="#6abe30" stroke-width="2"/>
   <polygon points="414,251 425,255 414,259" fill="#6abe30"/>
   <!-- Green Science Array -->
-  <rect x="283" y="260" width="210" height="75" rx="4" fill="#2a2a2a" stroke="#6abe30" stroke-width="1.5"/>
-  <text x="424" y="284" text-anchor="middle" font-size="13" fill="#6abe30" font-weight="700">Green Science Assemblers × 10</text>
-  <text x="424" y="302" text-anchor="middle" font-size="12" fill="#888">1 Inserter + 1 Belt → 1 Green Science</text>
+  <rect x="283" y="260" width="210" height="69" rx="4" fill="#2a2a2a" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="424" y="284" text-anchor="middle" font-size="11" fill="#6abe30" font-weight="700">Green Science Assemblers × 10</text>
+  <text x="424" y="302" text-anchor="middle" font-size="9" fill="#888">1 Inserter + 1 Belt → 1 Green Science</text>
   <!-- Output -->
   <line x1="564" y1="290" x2="635" y2="290" stroke="#6abe30" stroke-width="2"/>
   <polygon points="635,286 646,290 635,294" fill="#6abe30"/>
   <!-- Labs -->
-  <rect x="649" y="260" width="105" height="75" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="719" y="288" text-anchor="middle" font-size="13" fill="#999">Labs</text>
-  <text x="719" y="304" text-anchor="middle" font-size="12" fill="#666">Both sciences</text>
+  <rect x="649" y="260" width="105" height="69" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="719" y="288" text-anchor="middle" font-size="11" fill="#999">Labs</text>
+  <text x="719" y="304" text-anchor="middle" font-size="9" fill="#666">Both sciences</text>
   <!-- Bottom note -->
-  <text x="564" y="330" text-anchor="middle" font-size="12" fill="#555">Ratio: 1 Inserter + 1 Belt assembler → 10 Green Science assemblers</text>
+  <text x="564" y="330" text-anchor="middle" font-size="9" fill="#555">Ratio: 1 Inserter + 1 Belt assembler → 10 Green Science assemblers</text>
 </svg>

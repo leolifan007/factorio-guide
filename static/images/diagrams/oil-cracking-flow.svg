@@ -4,51 +4,51 @@
   <line x1="0" y1="60" x2="820" y2="60" stroke="#333"/>
   <text x="500" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#d4a017">OIL PROCESSING — CRACKING BALANCE</text>
   <!-- Refinery Row -->
-  <rect x="30" y="90" width="136" height="81" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
-  <text x="108" y="112" text-anchor="middle" font-size="13" fill="#d4a017" font-weight="700">Refinery × 8</text>
-  <text x="108" y="130" text-anchor="middle" font-size="12" fill="#888">Advanced Processing</text>
-  <text x="108" y="146" text-anchor="middle" font-size="11" fill="#666">Crude + Water → 3 outputs</text>
+  <rect x="30" y="90" width="136" height="74" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="108" y="112" text-anchor="middle" font-size="11" fill="#d4a017" font-weight="700">Refinery × 8</text>
+  <text x="108" y="130" text-anchor="middle" font-size="9" fill="#888">Advanced Processing</text>
+  <text x="108" y="146" text-anchor="middle" font-size="8" fill="#666">Crude + Water → 3 outputs</text>
   <!-- Three output pipes -->
   <line x1="186" y1="105" x2="210" y2="105" stroke="#8b4513" stroke-width="2"/>
   <line x1="186" y1="123" x2="210" y2="123" stroke="#d4a017" stroke-width="2"/>
   <line x1="186" y1="142" x2="210" y2="142" stroke="#5599ee" stroke-width="2"/>
   <!-- Heavy Oil -->
-  <rect x="210" y="88" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
-  <text x="283" y="105" text-anchor="middle" font-size="12" fill="#d4a017">Heavy Oil (50/s)</text>
-  <text x="283" y="116" text-anchor="middle" font-size="10" fill="#666">→ 1 Cracker (Heavy→Light)</text>
+  <rect x="210" y="88" width="126" height="40" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
+  <text x="283" y="105" text-anchor="middle" font-size="9" fill="#d4a017">Heavy Oil (50/s)</text>
+  <text x="283" y="116" text-anchor="middle" font-size="7" fill="#666">→ 1 Cracker (Heavy→Light)</text>
   <line x1="355" y1="105" x2="397" y2="105" stroke="#8b4513" stroke-width="1.5"/>
   <polygon points="397,101 407,105 397,109" fill="#8b4513"/>
   <!-- Light Oil -->
-  <rect x="210" y="140" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
-  <text x="283" y="155" text-anchor="middle" font-size="12" fill="#f0c040">Light Oil (50/s)</text>
+  <rect x="210" y="140" width="126" height="40" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
+  <text x="283" y="155" text-anchor="middle" font-size="9" fill="#f0c040">Light Oil (50/s)</text>
   <line x1="355" y1="158" x2="397" y2="158" stroke="#d4a017" stroke-width="1.5"/>
   <polygon points="397,154 407,158 397,162" fill="#d4a017"/>
   <!-- Petroleum -->
-  <rect x="210" y="190" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#5599ee"/>
-  <text x="283" y="205" text-anchor="middle" font-size="12" fill="#88bbff">Petroleum (30/s)</text>
+  <rect x="210" y="190" width="126" height="40" rx="3" fill="#2a2a2a" stroke="#5599ee"/>
+  <text x="283" y="205" text-anchor="middle" font-size="9" fill="#88bbff">Petroleum (30/s)</text>
   <line x1="355" y1="208" x2="397" y2="208" stroke="#5599ee" stroke-width="1.5"/>
   <polygon points="397,204 407,208 397,212" fill="#5599ee"/>
   <!-- Lubricant branch -->
-  <rect x="210" y="240" width="126" height="37" rx="3" fill="#2a2a2a" stroke="#44aa77"/>
-  <text x="283" y="259" text-anchor="middle" font-size="12" fill="#66cc99">→ Lubricant</text>
+  <rect x="210" y="240" width="126" height="34" rx="3" fill="#2a2a2a" stroke="#44aa77"/>
+  <text x="283" y="259" text-anchor="middle" font-size="9" fill="#66cc99">→ Lubricant</text>
   <!-- Cracking Plants -->
-  <rect x="416" y="90" width="136" height="137" rx="4" fill="#2a2a2a" stroke="#d4a017"/>
-  <text x="494" y="110" text-anchor="middle" font-size="12" fill="#d4a017" font-weight="700">Cracking Plants</text>
+  <rect x="416" y="90" width="136" height="126" rx="4" fill="#2a2a2a" stroke="#d4a017"/>
+  <text x="494" y="110" text-anchor="middle" font-size="10" fill="#d4a017" font-weight="700">Cracking Plants</text>
   <line x1="428" y1="118" x2="560" y2="118" stroke="#444" stroke-width="1"/>
-  <text x="494" y="134" text-anchor="middle" font-size="12" fill="#888">Heavy→Light: 1 plant</text>
-  <text x="494" y="150" text-anchor="middle" font-size="12" fill="#888">Light→Petro: 7 plants</text>
-  <text x="494" y="166" text-anchor="middle" font-size="12" fill="#888">40 Heavy → 30 Light (2s)</text>
-  <text x="494" y="182" text-anchor="middle" font-size="12" fill="#888">30 Light → 20 Petro (2s)</text>
+  <text x="494" y="134" text-anchor="middle" font-size="9" fill="#888">Heavy→Light: 1 plant</text>
+  <text x="494" y="150" text-anchor="middle" font-size="9" fill="#888">Light→Petro: 7 plants</text>
+  <text x="494" y="166" text-anchor="middle" font-size="9" fill="#888">40 Heavy → 30 Light (2s)</text>
+  <text x="494" y="182" text-anchor="middle" font-size="9" fill="#888">30 Light → 20 Petro (2s)</text>
   <!-- Outputs -->
   <line x1="572" y1="145" x2="621" y2="145" stroke="#5599ee" stroke-width="2"/>
   <polygon points="621,141 630,145 621,149" fill="#5599ee"/>
-  <rect x="633" y="125" width="136" height="50" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="711" y="142" text-anchor="middle" font-size="12" fill="#888">Plastic × N</text>
-  <text x="711" y="157" text-anchor="middle" font-size="12" fill="#666">Sulfur production</text>
+  <rect x="633" y="125" width="136" height="46" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="711" y="142" text-anchor="middle" font-size="10" fill="#888">Plastic × N</text>
+  <text x="711" y="157" text-anchor="middle" font-size="9" fill="#666">Sulfur production</text>
   <!-- Balance note -->
-  <rect x="416" y="220" width="325" height="43" rx="4" fill="#1a1a0a" stroke="#444" stroke-width="325"/>
-  <text x="603" y="238" text-anchor="middle" font-size="12" fill="#d4a017">8:1:7 — Perfect cracking ratio</text>
-  <text x="603" y="250" text-anchor="middle" font-size="11" fill="#666">= no output backlog, maximum plastic throughput</text>
+  <rect x="416" y="220" width="325" height="40" rx="4" fill="#1a1a0a" stroke="#444" stroke-width="325"/>
+  <text x="603" y="238" text-anchor="middle" font-size="9" fill="#d4a017">8:1:7 — Perfect cracking ratio</text>
+  <text x="603" y="250" text-anchor="middle" font-size="8" fill="#666">= no output backlog, maximum plastic throughput</text>
   <!-- Bottom -->
-  <text x="500" y="360" text-anchor="middle" font-size="12" fill="#555">Critical: Petroleum is consumed fastest — prioritize light→petroleum cracking</text>
+  <text x="500" y="360" text-anchor="middle" font-size="9" fill="#555">Critical: Petroleum is consumed fastest — prioritize light→petroleum cracking</text>
 </svg>

@@ -81,37 +81,37 @@ The diagram above shows the 6 major phases of a standard Factorio playthrough. E
 
 <div class="item-row">
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/red-science.svg" alt="Red Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/automation_science.png" alt="Red Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e8941c"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5aa2e"/></svg>
   <span class="item-icon-name">Red Science</span>
   <span class="item-icon-label">Iron + Copper</span>
 </div>
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/green-science.svg" alt="Green Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/logistic_science.png" alt="Green Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#6abe30"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#8ad44a"/></svg>
   <span class="item-icon-name">Green Science</span>
   <span class="item-icon-label">Belt + Inserter</span>
 </div>
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/furnace.svg" alt="Stone Furnace" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/stone_furnace.png" alt="Stone Furnace">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="8" width="18" height="20" rx="2" fill="#888"/><rect x="11" y="10" width="14" height="16" rx="1" fill="#9a9a9a"/></svg>
   <span class="item-icon-name">Furnace</span>
   <span class="item-icon-label">Smelting</span>
 </div>
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/assembler.svg" alt="Assembler" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/assembling_machine_1.png" alt="Assembler">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="8" y="8" width="20" height="20" rx="2" fill="#555"/><circle cx="18" cy="18" r="6" fill="#777"/></svg>
   <span class="item-icon-name">Assembler</span>
   <span class="item-icon-label">Crafting</span>
 </div>
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/inserter.svg" alt="Inserter" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/inserter.png" alt="Inserter">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><circle cx="18" cy="22" r="6" fill="#888"/><rect x="15" y="10" width="6" height="12" rx="1" fill="#aaa" transform="rotate(45 18 18)"/></svg>
   <span class="item-icon-name">Inserter</span>
   <span class="item-icon-label">Item movement</span>
 </div>
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/transport-belt.svg" alt="Transport Belt" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/transport_belt.png" alt="Transport Belt">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="4" y="14" width="28" height="8" rx="1" fill="#8b6914"/><rect x="8" y="17" width="4" height="2" fill="#6b4c10"/><rect x="16" y="17" width="4" height="2" fill="#6b4c10"/><rect x="24" y="17" width="4" height="2" fill="#6b4c10"/></svg>
   <span class="item-icon-name">Belt</span>
   <span class="item-icon-label">Transport</span>

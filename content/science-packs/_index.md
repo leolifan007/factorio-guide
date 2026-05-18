@@ -17,49 +17,49 @@ date: "2026-05-18"
 <div class="item-row">
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/red-science.svg" alt="Red Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/automation_science.png" alt="Red Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e8941c"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5aa2e"/></svg>
   <span class="item-icon-name">Red</span>
   <span class="item-icon-label">Automation</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/green-science.svg" alt="Green Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/logistic_science.png" alt="Green Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#6abe30"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#8ad44a"/></svg>
   <span class="item-icon-name">Green</span>
   <span class="item-icon-label">Logistics</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/military-science.svg" alt="Military Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/military_science.png" alt="Military Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#d7b940"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#e8cc55"/></svg>
   <span class="item-icon-name">Yellow</span>
   <span class="item-icon-label">Military</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/blue-science.svg" alt="Blue Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/chemical_science.png" alt="Blue Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#3778c8"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#5599ee"/></svg>
   <span class="item-icon-name">Blue</span>
   <span class="item-icon-label">Chemical</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/purple-science.svg" alt="Purple Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/production_science.png" alt="Purple Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#9d4edd"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#b366ff"/></svg>
   <span class="item-icon-name">Purple</span>
   <span class="item-icon-label">Production</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/yellow-science.svg" alt="Yellow Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/utility_science.png" alt="Yellow Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#ff7700"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#ff9922"/></svg>
   <span class="item-icon-name">Yellow</span>
   <span class="item-icon-label">Usage</span>
 </div>
 
 <div class="item-icon">
-  <img src="/factorio-guide/images/icons/space-science.svg" alt="Space Science Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <img src="/factorio-guide/images/icon/space_science.png" alt="Space Science Pack">
   <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e0e0e0"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5f5f5"/></svg>
   <span class="item-icon-name">Space</span>
   <span class="item-icon-label">Rocket</span>

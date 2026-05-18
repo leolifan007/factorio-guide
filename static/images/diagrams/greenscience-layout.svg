@@ -1,60 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 390" width="820" height="390">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 374" width="820" height="374">
   <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect width="820" height="390" fill="#1f1f1f" rx="6"/>
+  <rect width="820" height="374" fill="#1f1f1f" rx="6"/>
   <line x1="0" y1="60" x2="820" y2="60" stroke="#333"/>
   <text x="410" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#6abe30">GREEN SCIENCE — PHYSICAL LAYOUT</text>
   <!-- Bus belts (horizontal lines) -->
   <rect x="30" y="78" width="760" height="4" rx="1" fill="#777"/>
-  <text x="20" y="82" text-anchor="end" font-size="10" fill="#777">Iron belt</text>
+  <text x="20" y="82" text-anchor="end" font-size="7" fill="#777">Iron belt</text>
   <rect x="30" y="86" width="760" height="4" rx="1" fill="#777"/>
-  <text x="20" y="90" text-anchor="end" font-size="10" fill="#777">Circuit belt</text>
+  <text x="20" y="90" text-anchor="end" font-size="7" fill="#777">Circuit belt</text>
   <!-- Sub-assembler row -->
-  <rect x="50" y="105" width="73" height="62" rx="3" fill="#2a2a2a" stroke="#888"/>
-  <text x="85" y="122" text-anchor="middle" font-size="11" fill="#888">Inserter</text>
-  <text x="85" y="134" text-anchor="middle" font-size="10" fill="#666">Asm</text>
+  <rect x="50" y="105" width="70" height="50" rx="3" fill="#2a2a2a" stroke="#888"/>
+  <text x="85" y="122" text-anchor="middle" font-size="8" fill="#888">Inserter</text>
+  <text x="85" y="134" text-anchor="middle" font-size="7" fill="#666">Asm</text>
   <line x1="120" y1="130" x2="130" y2="130" stroke="#444" stroke-width="1.5"/>
-  <rect x="130" y="105" width="73" height="62" rx="3" fill="#2a2a2a" stroke="#888"/>
-  <text x="165" y="122" text-anchor="middle" font-size="11" fill="#888">Belt</text>
-  <text x="165" y="134" text-anchor="middle" font-size="10" fill="#666">Asm</text>
+  <rect x="130" y="105" width="70" height="50" rx="3" fill="#2a2a2a" stroke="#888"/>
+  <text x="165" y="122" text-anchor="middle" font-size="8" fill="#888">Belt</text>
+  <text x="165" y="134" text-anchor="middle" font-size="7" fill="#666">Asm</text>
   <line x1="200" y1="130" x2="210" y2="130" stroke="#444" stroke-width="1.5"/>
-  <rect x="210" y="105" width="73" height="62" rx="3" fill="#2a2a2a" stroke="#888"/>
-  <text x="245" y="122" text-anchor="middle" font-size="11" fill="#888">Inserter</text>
+  <rect x="210" y="105" width="70" height="50" rx="3" fill="#2a2a2a" stroke="#888"/>
+  <text x="245" y="122" text-anchor="middle" font-size="8" fill="#888">Inserter</text>
   <line x1="280" y1="130" x2="290" y2="130" stroke="#444" stroke-width="1.5"/>
-  <rect x="290" y="105" width="73" height="62" rx="3" fill="#2a2a2a" stroke="#888"/>
-  <text x="325" y="122" text-anchor="middle" font-size="11" fill="#888">Belt</text>
+  <rect x="290" y="105" width="70" height="50" rx="3" fill="#2a2a2a" stroke="#888"/>
+  <text x="325" y="122" text-anchor="middle" font-size="8" fill="#888">Belt</text>
   <line x1="360" y1="130" x2="370" y2="130" stroke="#444" stroke-width="1.5"/>
-  <text x="550" y="135" text-anchor="middle" font-size="12" fill="#555">Sub-assembler row: alternating inserter/belt</text>
+  <text x="550" y="135" text-anchor="middle" font-size="9" fill="#555">Sub-assembler row: alternating inserter/belt</text>
   <!-- Vertical belt connections -->
-  <rect x="80" y="155" width="10" height="25" rx="2" fill="#444" stroke="#555" stroke-width="10"/>
-  <rect x="160" y="155" width="10" height="25" rx="2" fill="#444" stroke="#555" stroke-width="10"/>
-  <rect x="240" y="155" width="10" height="25" rx="2" fill="#444" stroke="#555" stroke-width="10"/>
-  <rect x="320" y="155" width="10" height="25" rx="2" fill="#444" stroke="#555" stroke-width="10"/>
+  <rect x="80" y="155" width="10" height="20" rx="2" fill="#444" stroke="#555" stroke-width="1"/>
+  <rect x="160" y="155" width="10" height="20" rx="2" fill="#444" stroke="#555" stroke-width="1"/>
+  <rect x="240" y="155" width="10" height="20" rx="2" fill="#444" stroke="#555" stroke-width="1"/>
+  <rect x="320" y="155" width="10" height="20" rx="2" fill="#444" stroke="#555" stroke-width="1"/>
   <!-- Science assembler row -->
-  <rect x="50" y="180" width="73" height="62" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
-  <text x="85" y="200" text-anchor="middle" font-size="11" fill="#6abe30">Science</text>
-  <text x="85" y="214" text-anchor="middle" font-size="10" fill="#888">Asm 1</text>
-  <rect x="130" y="180" width="73" height="62" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
-  <text x="165" y="200" text-anchor="middle" font-size="11" fill="#6abe30">Science</text>
-  <text x="165" y="214" text-anchor="middle" font-size="10" fill="#888">Asm 2</text>
-  <rect x="210" y="180" width="73" height="62" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
-  <text x="245" y="200" text-anchor="middle" font-size="11" fill="#6abe30">Science</text>
-  <text x="245" y="214" text-anchor="middle" font-size="10" fill="#888">Asm 3</text>
-  <rect x="290" y="180" width="73" height="62" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
-  <text x="325" y="200" text-anchor="middle" font-size="11" fill="#6abe30">Science</text>
-  <text x="325" y="214" text-anchor="middle" font-size="10" fill="#888">Asm 4</text>
+  <rect x="50" y="180" width="70" height="50" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
+  <text x="85" y="200" text-anchor="middle" font-size="8" fill="#6abe30">Science</text>
+  <text x="85" y="214" text-anchor="middle" font-size="7" fill="#888">Asm 1</text>
+  <rect x="130" y="180" width="70" height="50" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
+  <text x="165" y="200" text-anchor="middle" font-size="8" fill="#6abe30">Science</text>
+  <text x="165" y="214" text-anchor="middle" font-size="7" fill="#888">Asm 2</text>
+  <rect x="210" y="180" width="70" height="50" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
+  <text x="245" y="200" text-anchor="middle" font-size="8" fill="#6abe30">Science</text>
+  <text x="245" y="214" text-anchor="middle" font-size="7" fill="#888">Asm 3</text>
+  <rect x="290" y="180" width="70" height="50" rx="3" fill="#1a3a1a" stroke="#6abe30"/>
+  <text x="325" y="200" text-anchor="middle" font-size="8" fill="#6abe30">Science</text>
+  <text x="325" y="214" text-anchor="middle" font-size="7" fill="#888">Asm 4</text>
   <!-- Output belt -->
-  <rect x="30" y="248" width="336" height="5" rx="1" fill="#6abe30"/>
-  <text x="200" y="260" text-anchor="middle" font-size="10" fill="#6abe30">Science output belt → Labs</text>
+  <rect x="30" y="248" width="320" height="4" rx="1" fill="#6abe30"/>
+  <text x="200" y="260" text-anchor="middle" font-size="7" fill="#6abe30">Science output belt → Labs</text>
   <!-- Arrow -->
   <line x1="350" y1="250" x2="380" y2="250" stroke="#6abe30" stroke-width="2"/>
   <polygon points="380,246 388,250 380,254" fill="#6abe30"/>
-  <rect x="390" y="232" width="63" height="45" rx="3" fill="#2a2a2a" stroke="#555"/>
-  <text x="420" y="250" text-anchor="middle" font-size="12" fill="#888">Labs</text>
-  <text x="420" y="262" text-anchor="middle" font-size="10" fill="#666">Input</text>
+  <rect x="390" y="232" width="60" height="36" rx="3" fill="#2a2a2a" stroke="#555"/>
+  <text x="420" y="250" text-anchor="middle" font-size="9" fill="#888">Labs</text>
+  <text x="420" y="262" text-anchor="middle" font-size="7" fill="#666">Input</text>
   <!-- Side labels -->
-  <text x="410" y="295" text-anchor="middle" font-size="12" fill="#555">Scale: 4 science assemblers shown → repeat pattern for 10 total</text>
-  <text x="410" y="310" text-anchor="middle" font-size="12" fill="#555">Material belts run parallel above, science belt collects below</text>
+  <text x="410" y="295" text-anchor="middle" font-size="9" fill="#555">Scale: 4 science assemblers shown → repeat pattern for 10 total</text>
+  <text x="410" y="310" text-anchor="middle" font-size="9" fill="#555">Material belts run parallel above, science belt collects below</text>
   <!-- Legend -->
-  <rect x="280" y="318" width="273" height="22" rx="2" fill="#1a1a1a" stroke="#333"/>
-  <text x="410" y="330" text-anchor="middle" font-size="11" fill="#555">Green = active production | Gray = sub-components</text>
+  <rect x="280" y="318" width="260" height="18" rx="2" fill="#1a1a1a" stroke="#333"/>
+  <text x="410" y="330" text-anchor="middle" font-size="8" fill="#555">Green = active production | Gray = sub-components</text>
 </svg>
