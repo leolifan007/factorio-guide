@@ -62,9 +62,9 @@
   <text x="237" y="235" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Copper Cable</text>
 
   <!-- Gear from iron plate -->
-  <line x1="237" y1="150" x2="237" y2="170" stroke="#e8941c" stroke-width="2"/>
-  <line x1="237" y1="170" x2="202" y2="212" stroke="#e8941c" stroke-width="2"/>
-  <polygon points="202,212 207,207 198,207" fill="#e8941c" transform="rotate(45 202 212)"/>
+  <line x1="237" y1="150" x2="237" y2="175" stroke="#e8941c" stroke-width="2"/>
+  <line x1="237" y1="175" x2="310" y2="175" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="310,172 316,175 310,178" fill="#e8941c"/>
 
   <rect x="310" y="133" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
   <circle cx="345" cy="158" r="14" fill="#888"/>
