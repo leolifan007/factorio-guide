@@ -48,7 +48,7 @@
   <rect x="50" y="210" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
   <text x="110" y="228" text-anchor="middle" font-size="12" fill="#d4a017">H→L Cracker × 1</text>
   <text x="110" y="240" text-anchor="middle" font-size="10" fill="#666">Heavy→Light</text>
-  <line x1="170" y1="228" x2="190" y2="228" stroke="#8b4513" stroke-width="1.5"/>
+  <line x1="176" y1="228" x2="190" y2="228" stroke="#8b4513" stroke-width="1.5"/>
   <rect x="190" y="210" width="126" height="43" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
   <text x="250" y="228" text-anchor="middle" font-size="12" fill="#f0c040">L→P Cracker × 7</text>
   <text x="250" y="240" text-anchor="middle" font-size="10" fill="#666">Light→Petro</text>
