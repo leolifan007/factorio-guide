@@ -1,28 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 100" width="820" height="100">
-  <rect width="820" height="100" fill="#1f1f1f" rx="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 114" width="820" height="114">
+  <rect width="820" height="114" fill="#1f1f1f" rx="4"/>
   <!-- Heavy oil tank + pump -->
-  <rect x="30" y="15" width="60" height="40" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
-  <text x="60" y="32" text-anchor="middle" font-size="13" fill="#d4a017">Heavy</text>
-  <text x="60" y="44" text-anchor="middle" font-size="12" fill="#666">Tank</text>
+  <rect x="30" y="15" width="63" height="50" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
+  <text x="60" y="32" text-anchor="middle" font-size="11" fill="#d4a017">Heavy</text>
+  <text x="60" y="44" text-anchor="middle" font-size="10" fill="#666">Tank</text>
   <line x1="90" y1="35" x2="105" y2="35" stroke="#555" stroke-width="1.5"/>
   <polygon points="105,30 115,35 105,40" fill="#555"/>
-  <text x="125" y="29" text-anchor="middle" font-size="11" fill="#666">if &gt;20k</text>
-  <rect x="130" y="15" width="80" height="40" rx="3" fill="#2a2a2a" stroke="#444"/>
-  <text x="170" y="35" text-anchor="middle" font-size="13" fill="#888">Cracker H→L</text>
+  <text x="125" y="29" text-anchor="middle" font-size="9" fill="#666">if &gt;20k</text>
+  <rect x="130" y="15" width="84" height="50" rx="3" fill="#2a2a2a" stroke="#444"/>
+  <text x="170" y="35" text-anchor="middle" font-size="11" fill="#888">Cracker H→L</text>
   <!-- Light oil tank + pump -->
-  <rect x="30" y="65" width="60" height="30" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
-  <text x="60" y="84" text-anchor="middle" font-size="13" fill="#f0c040">Light Tank</text>
+  <rect x="30" y="65" width="63" height="37" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
+  <text x="60" y="84" text-anchor="middle" font-size="11" fill="#f0c040">Light Tank</text>
   <line x1="90" y1="80" x2="105" y2="80" stroke="#555" stroke-width="1.5"/>
   <polygon points="105,75 115,80 105,85" fill="#555"/>
-  <text x="125" y="74" text-anchor="middle" font-size="11" fill="#666">if &gt;20k</text>
-  <rect x="130" y="65" width="80" height="30" rx="3" fill="#2a2a2a" stroke="#444"/>
-  <text x="170" y="84" text-anchor="middle" font-size="13" fill="#888">Cracker L→P</text>
+  <text x="125" y="74" text-anchor="middle" font-size="9" fill="#666">if &gt;20k</text>
+  <rect x="130" y="65" width="84" height="37" rx="3" fill="#2a2a2a" stroke="#444"/>
+  <text x="170" y="84" text-anchor="middle" font-size="11" fill="#888">Cracker L→P</text>
   <!-- Circuit wire -->
   <line x1="60" y1="55" x2="60" y2="65" stroke="#ff4400" stroke-width="1" stroke-dasharray="3"/>
   <line x1="60" y1="65" x2="110" y2="65" stroke="#ff4400" stroke-width="1" stroke-dasharray="3"/>
   <line x1="110" y1="65" x2="110" y2="80" stroke="#ff4400" stroke-width="1" stroke-dasharray="3"/>
-  <text x="620" y="30" font-size="13" fill="#555">Circuit condition: connect red wire from heavy tank</text>
-  <text x="620" y="48" font-size="13" fill="#555">to pump → Enable when Heavy Oil &gt; 20,000</text>
-  <text x="620" y="66" font-size="13" fill="#555">Same config for light oil: enable cracking when</text>
-  <text x="620" y="84" font-size="13" fill="#555">light oil &gt; 20,000 — preserves lubricant buffer</text>
+  <text x="620" y="30" font-size="11" fill="#555">Circuit condition: connect red wire from heavy tank</text>
+  <text x="620" y="48" font-size="11" fill="#555">to pump → Enable when Heavy Oil &gt; 20,000</text>
+  <text x="620" y="66" font-size="11" fill="#555">Same config for light oil: enable cracking when</text>
+  <text x="620" y="84" font-size="11" fill="#555">light oil &gt; 20,000 — preserves lubricant buffer</text>
 </svg>
