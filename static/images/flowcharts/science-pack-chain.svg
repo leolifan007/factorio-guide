@@ -1,0 +1,178 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <!-- Background -->
+  <rect width="900" height="480" fill="#1f1f1f" rx="6"/>
+  <!-- Grid -->
+  <line x1="0" y1="80" x2="900" y2="80" stroke="#333" stroke-width="1"/>
+  <line x1="0" y1="240" x2="900" y2="240" stroke="#333" stroke-width="1"/>
+  <line x1="0" y1="400" x2="900" y2="400" stroke="#333" stroke-width="1"/>
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="#e8941c">FACTORIO SCIENCE PACK PRODUCTION CHAIN</text>
+
+  <!-- Tier 1 Row: Red Science -->
+  <text x="100" y="72" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#888" letter-spacing="3">TIER 1</text>
+
+  <!-- Iron + Coal → Furnace → Iron Gear + Copper → Assembler -->
+  <!-- Iron ore -->
+  <rect x="10" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <circle cx="45" cy="118" r="16" fill="#b8b8b8"/>
+  <circle cx="45" cy="118" r="9" fill="#909090"/>
+  <text x="45" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Iron Ore</text>
+
+  <!-- Arrow -->
+  <line x1="80" y1="122" x2="100" y2="122" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="100,118 106,122 100,126" fill="#e8941c"/>
+
+  <!-- Furnace -->
+  <rect x="106" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#555" stroke-width="1"/>
+  <rect x="114" y="101" width="54" height="43" rx="2" fill="#888"/>
+  <rect x="120" y="105" width="42" height="35" rx="1" fill="#9a9a9a"/>
+  <text x="141" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Furnace</text>
+
+  <!-- Arrow -->
+  <line x1="176" y1="122" x2="196" y2="122" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="196,118 202,122 196,126" fill="#e8941c"/>
+
+  <!-- Iron plate -->
+  <rect x="202" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="214" y="105" width="46" height="35" rx="1" fill="#b8b8b8"/>
+  <rect x="220" y="110" width="34" height="25" rx="1" fill="#d0d0d0"/>
+  <text x="237" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Iron Plate</text>
+
+  <!-- Second chain: Coal to copper cable -->
+  <rect x="10" y="170" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <polygon points="45,175 65,220 25,220" fill="#3a3a3a"/>
+  <text x="45" y="235" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Coal</text>
+
+  <line x1="80" y1="197" x2="100" y2="197" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="100,193 106,197 100,201" fill="#e8941c"/>
+
+  <rect x="106" y="170" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#555" stroke-width="1"/>
+  <rect x="114" y="176" width="54" height="43" rx="2" fill="#c8824c"/>
+  <rect x="120" y="180" width="42" height="35" rx="1" fill="#e09860"/>
+  <text x="141" y="235" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Copper Plate</text>
+
+  <line x1="176" y1="197" x2="196" y2="197" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="196,193 202,197 196,201" fill="#e8941c"/>
+
+  <rect x="202" y="170" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <path d="M215 212 Q237 190 259 212" stroke="#c8824c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="237" y="235" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Copper Cable</text>
+
+  <!-- Gear from iron plate -->
+  <line x1="237" y1="150" x2="237" y2="170" stroke="#e8941c" stroke-width="2"/>
+  <line x1="237" y1="170" x2="202" y2="212" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="202,212 207,207 198,207" fill="#e8941c" transform="rotate(45 202 212)"/>
+
+  <rect x="310" y="133" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <circle cx="345" cy="158" r="14" fill="#888"/>
+  <circle cx="345" cy="158" r="8" fill="#aaa"/>
+  <text x="345" y="200" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Iron Gear</text>
+
+  <!-- Arrow to Assembler -->
+  <line x1="380" y1="160" x2="405" y2="160" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="405,156 412,160 405,164" fill="#e8941c"/>
+
+  <!-- Red science pack output -->
+  <rect x="412" y="130" width="80" height="60" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="2"/>
+  <rect x="424" y="140" width="56" height="40" rx="3" fill="#e8941c"/>
+  <rect x="430" y="145" width="44" height="30" rx="2" fill="#f5aa2e"/>
+  <text x="452" y="205" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="11" font-weight="700" fill="#e8941c">RED SCIENCE</text>
+
+  <!-- Tier 2 Row: Green Science -->
+  <text x="530" y="72" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#888" letter-spacing="3">TIER 2</text>
+
+  <!-- Inserter -->
+  <rect x="520" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <circle cx="555" cy="118" r="12" fill="#888"/>
+  <rect x="551" y="100" width="8" height="16" rx="1" fill="#aaa" transform="rotate(30 555 118)"/>
+  <text x="555" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Inserter</text>
+
+  <!-- Belt -->
+  <rect x="610" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="620" y="118" width="50" height="16" rx="2" fill="#8b6914"/>
+  <rect x="625" y="122" width="8" height="8" rx="1" fill="#6b4c10"/>
+  <rect x="639" y="122" width="8" height="8" rx="1" fill="#6b4c10"/>
+  <text x="645" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Transport Belt</text>
+
+  <!-- Splitter -->
+  <rect x="700" y="95" width="70" height="55" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="710" y="118" width="50" height="16" rx="2" fill="#8b6914"/>
+  <rect x="728" y="100" width="14" height="50" rx="2" fill="#c8824c"/>
+  <text x="735" y="160" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="10" fill="#999">Splitter</text>
+
+  <line x1="770" y1="122" x2="795" y2="122" stroke="#6abe30" stroke-width="2"/>
+  <polygon points="795,118 802,122 795,126" fill="#6abe30"/>
+
+  <rect x="800" y="95" width="80" height="55" rx="4" fill="#2a2a2a" stroke="#6abe30" stroke-width="2"/>
+  <rect x="812" y="107" width="56" height="31" rx="2" fill="#6abe30"/>
+  <rect x="818" y="111" width="44" height="23" rx="1" fill="#8ad44a"/>
+  <text x="840" y="160" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="11" font-weight="700" fill="#6abe30">GREEN SCIENCE</text>
+
+  <!-- Tier 3: Blue Science -->
+  <text x="530" y="232" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#888" letter-spacing="3">TIER 3</text>
+
+  <!-- Steel + Engine + Electric circuit -->
+  <rect x="460" y="255" width="65" height="50" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="469" y="262" width="47" height="36" rx="2" fill="#7070a0"/>
+  <text x="492" y="318" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Steel Plate</text>
+
+  <rect x="535" y="255" width="65" height="50" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <circle cx="567" cy="278" r="12" fill="#888"/>
+  <rect x="563" y="260" width="8" height="14" rx="1" fill="#aaa"/>
+  <text x="567" y="318" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Engine Unit</text>
+
+  <rect x="610" y="255" width="65" height="50" rx="4" fill="#2a2a2a" stroke="#44bb44" stroke-width="2"/>
+  <rect x="618" y="263" width="49" height="34" rx="2" fill="#44bb44"/>
+  <rect x="624" y="268" width="37" height="24" rx="1" fill="#228822"/>
+  <text x="642" y="318" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Elec. Circuit</text>
+
+  <line x1="475" y1="280" x2="535" y2="280" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="535,276 542,280 535,284" fill="#3778c8"/>
+  <line x1="565" y1="280" x2="610" y2="280" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="610,276 617,280 610,284" fill="#3778c8"/>
+
+  <rect x="685" y="250" width="80" height="60" rx="4" fill="#2a2a2a" stroke="#3778c8" stroke-width="2"/>
+  <rect x="697" y="260" width="56" height="40" rx="3" fill="#3778c8"/>
+  <rect x="703" y="265" width="44" height="30" rx="2" fill="#5599ff"/>
+  <text x="725" y="325" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="11" font-weight="700" fill="#5599ff">BLUE SCIENCE</text>
+
+  <!-- Tier 4: Purple + Yellow -->
+  <text x="800" y="72" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#888" letter-spacing="3">TIER 4</text>
+  <rect x="760" y="95" width="80" height="55" rx="4" fill="#2a2a2a" stroke="#9d4edd" stroke-width="2"/>
+  <rect x="772" y="105" width="56" height="35" rx="3" fill="#9d4edd"/>
+  <rect x="778" y="110" width="44" height="25" rx="2" fill="#b366ff"/>
+  <text x="800" y="160" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#9d4edd">PURPLE</text>
+
+  <rect x="760" y="170" width="80" height="55" rx="4" fill="#2a2a2a" stroke="#ff7700" stroke-width="2"/>
+  <rect x="772" y="180" width="56" height="35" rx="3" fill="#ff7700"/>
+  <rect x="778" y="185" width="44" height="25" rx="2" fill="#ff9922"/>
+  <text x="800" y="235" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#ff7700">YELLOW</text>
+
+  <!-- Tier 5: Space -->
+  <text x="800" y="232" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#888" letter-spacing="3">TIER 5</text>
+  <rect x="760" y="255" width="80" height="55" rx="4" fill="#2a2a2a" stroke="#e0e0e0" stroke-width="2"/>
+  <rect x="772" y="265" width="56" height="35" rx="3" fill="#e0e0e0"/>
+  <rect x="778" y="270" width="44" height="25" rx="2" fill="#f5f5f5"/>
+  <text x="800" y="325" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="10" font-weight="700" fill="#e0e0e0">SPACE</text>
+
+  <!-- Rocket -->
+  <polygon points="830,370 845,430 815,430" fill="#888"/>
+  <rect x="818" y="390" width="24" height="25" rx="2" fill="#4488ff"/>
+  <text x="830" y="455" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#e0e0e0">ROCKET</text>
+
+  <!-- Legend -->
+  <rect x="10" y="430" width="12" height="12" rx="2" fill="#2a2a2a" stroke="#444"/>
+  <rect x="12" y="432" width="8" height="8" rx="1" fill="#888"/>
+  <text x="28" y="441" font-family="Rajdhani,sans-serif" font-size="10" fill="#888">Machine / Building</text>
+  <rect x="160" y="430" width="12" height="12" rx="2" fill="#2a2a2a" stroke="#444"/>
+  <rect x="162" y="432" width="8" height="8" rx="1" fill="#b8b8b8"/>
+  <text x="178" y="441" font-family="Rajdhani,sans-serif" font-size="10" fill="#888">Raw Resource</text>
+  <rect x="300" y="430" width="12" height="12" rx="2" fill="#e8941c"/>
+  <text x="318" y="441" font-family="Rajdhani,sans-serif" font-size="10" fill="#888">Arrow = Recipe Flow</text>
+  <rect x="460" y="430" width="12" height="12" rx="2" fill="#2a2a2a" stroke="#6abe30" stroke-width="2"/>
+  <rect x="462" y="432" width="8" height="8" rx="1" fill="#6abe30"/>
+  <text x="478" y="441" font-family="Rajdhani,sans-serif" font-size="10" fill="#888">Science Pack Output</text>
+</svg>

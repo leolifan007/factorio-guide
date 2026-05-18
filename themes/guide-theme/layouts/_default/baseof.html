@@ -1,14 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-  <base href="{{ .Site.BaseURL }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {{/* <-- REPLACE: Change Google Fonts URL to match your theme */}}
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ `css/main.css` | relURL }}">
 
 {{- with .Site.Params.google_analytics_id }}
@@ -27,16 +25,18 @@
 </head>
 <body>
 <div class="site-header">
-  {{/* <-- REPLACE: Logo text and icon below */}}
   <a href="{{ `` | relURL }}" class="site-logo">
-    <span class="logo-icon">&#9670;</span> {{ .Site.Title }}
+    <span class="logo-icon">&#9881;</span> {{ .Site.Title }}
   </a>
-  <div class="nav-links">
-    {{/* <-- REPLACE: Navigation links below - one per article */}}
-    <a href="{{ `guide-one/` | relURL }}" class="nav-btn">Guide One</a>
-    <a href="{{ `guide-two/` | relURL }}" class="nav-btn">Guide Two</a>
-    <a href="{{ `guide-three/` | relURL }}" class="nav-btn">Guide Three</a>
-  </div>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="{{ `getting-started/` | relURL }}" class="nav-btn">Getting Started</a>
+    <a href="{{ `production-ratios/` | relURL }}" class="nav-btn">Production Ratios</a>
+    <a href="{{ `base-design/` | relURL }}" class="nav-btn">Base Design</a>
+    <a href="{{ `trains-logistics/` | relURL }}" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="{{ `defense/` | relURL }}" class="nav-btn">Defense</a>
+    <a href="{{ `blueprints/` | relURL }}" class="nav-btn">Blueprints</a>
+    <a href="{{ `space-age/` | relURL }}" class="nav-btn">Space Age</a>
+  </nav>
 </div>
 
   <div class="page-wrap">
@@ -45,12 +45,12 @@
 
   <footer class="site-footer">
     <div class="footer-links">
-      <a href="{{ `` | relURL }}">Guides</a>
-      <a href="{{ `tags/` | relURL }}">Topics</a>
+      <a href="{{ `getting-started/` | relURL }}">Getting Started</a>
+      <a href="{{ `production-ratios/` | relURL }}">Production Ratios</a>
+      <a href="{{ `base-design/` | relURL }}">Base Design</a>
     </div>
-    {{/* <-- REPLACE: Footer text below */}}
-    <p><strong>{{ .Site.Title }}</strong> - Unofficial community guides.</p>
-    <p>&copy; {{ now.Year }} {{ .Site.Title }} - Game assets belong to their respective owners.</p>
+    <p><strong>{{ .Site.Title }}</strong> — Unofficial community strategy guide.</p>
+    <p>&copy; {{ now.Year }} {{ .Site.Title }} — Factorio is a trademark of Wube Software.</p>
   </footer>
 <script src="{{ `js/main.js` | relURL }}"></script>
 </body>

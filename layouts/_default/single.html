@@ -1,21 +1,84 @@
 {{ define "main" }}
-<div class="single-page">
+<div class="article-page">
+
+  <!-- ── Article Hero ── -->
   <div class="article-hero-full">
     <div class="article-hero-bg" style="background-image:url('{{ `images/hero-bg.svg` | relURL }}')"></div>
     <div class="article-hero-fade"></div>
-    <div class="article-hero-text">
+    <div class="article-hero-content">
       <h1>{{ .Title }}</h1>
+      {{- with .Description }}<p class="article-desc">{{ . }}</p>{{ end }}
       <div class="article-meta">
-        <span class="meta-date">Updated: {{ .Date.Format "Jan 2, 2006" }}</span>
+        <span class="meta-item">
+          <!-- Calendar icon -->
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: {{ .Date.Format "Jan 2, 2006" }}
+        </span>
+        <span class="meta-item">
+          <!-- Clock icon -->
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          {{ .ReadingTime }} min read
+        </span>
+        <span class="meta-item">
+          <!-- Tag icon -->
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          {{ range first 1 .Sections }}{{ .Title }}{{ end }}
+        </span>
       </div>
     </div>
   </div>
 
+  <!-- ── Main Layout: [ad] [content+toc] [ad] ── -->
   <div class="article-layout">
-    <aside class="floating-toc" id="floatingToc"></aside>
-    <main class="article-body">
-      {{ .Content | safeHTML }}
-    </main>
+
+    <!-- Left Ad Slot -->
+    <div class="article-ad-left">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
+    <!-- Center: TOC + Content -->
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        {{ .Content | safeHTML }}
+      </div>
+    </div>
+
+    <!-- Right Ad Slot -->
+    <div class="article-ad-right">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
   </div>
 </div>
 {{ end }}

@@ -1,0 +1,134 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340">
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#e8941c"/>
+    </marker>
+  </defs>
+  <rect width="900" height="340" fill="#1f1f1f" rx="6"/>
+  <text x="450" y="30" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="16" font-weight="900" fill="#e8941c">FACTORIO GAME PROGRESSION TIMELINE</text>
+
+  <!-- Timeline axis -->
+  <line x1="30" y1="70" x2="870" y2="70" stroke="#444" stroke-width="2"/>
+  <!-- Arrow head -->
+  <polygon points="870,66 880,70 870,74" fill="#e8941c"/>
+
+  <!-- Phase 1 -->
+  <circle cx="70" cy="70" r="8" fill="#e8941c"/>
+  <text x="70" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#e8941c">HOUR 1</text>
+  <rect x="10" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1"/>
+  <text x="70" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#f5aa2e">EARLY GAME</text>
+  <text x="70" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Hand crafting</text>
+  <text x="70" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">First belts</text>
+  <text x="70" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Red + Green science</text>
+  <text x="70" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">First automation</text>
+  <text x="70" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">Biter-free map</text>
+
+  <!-- Arrow -->
+  <line x1="130" y1="70" x2="200" y2="70" stroke="#e8941c" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 2 -->
+  <circle cx="230" cy="70" r="8" fill="#6abe30"/>
+  <text x="230" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#6abe30">HOUR 2-3</text>
+  <rect x="170" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#6abe30" stroke-width="1"/>
+  <text x="230" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#8ad44a">BASIC FACTORY</text>
+  <text x="230" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Main bus layout</text>
+  <text x="230" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Blue science</text>
+  <text x="230" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Steel production</text>
+  <text x="230" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Electric smelting</text>
+  <text x="230" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">First defense walls</text>
+
+  <!-- Arrow -->
+  <line x1="290" y1="70" x2="360" y2="70" stroke="#6abe30" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 3 -->
+  <circle cx="390" cy="70" r="8" fill="#d7b940"/>
+  <text x="390" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#d7b940">HOUR 3-5</text>
+  <rect x="330" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#d7b940" stroke-width="1"/>
+  <text x="390" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#e8cc55">MID GAME</text>
+  <text x="390" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Purple + Yellow science</text>
+  <text x="390" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Oil processing</text>
+  <text x="390" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Sulfur + Plastics</text>
+  <text x="390" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Advanced circuits</text>
+  <text x="390" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">Military research</text>
+
+  <!-- Arrow -->
+  <line x1="450" y1="70" x2="520" y2="70" stroke="#d7b940" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 4 -->
+  <circle cx="550" cy="70" r="8" fill="#3778c8"/>
+  <text x="550" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#3778c8">HOUR 5-8</text>
+  <rect x="490" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#3778c8" stroke-width="1"/>
+  <text x="550" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#5599ee">LOGISTICS</text>
+  <text x="550" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Train network</text>
+  <text x="550" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Roboports + Bots</text>
+  <text x="550" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Logistic network</text>
+  <text x="550" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Modules + Beacons</text>
+  <text x="550" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">Nuclear power</text>
+
+  <!-- Arrow -->
+  <line x1="610" y1="70" x2="680" y2="70" stroke="#3778c8" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 5 -->
+  <circle cx="710" cy="70" r="8" fill="#9d4edd"/>
+  <text x="710" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#9d4edd">HOUR 8-15</text>
+  <rect x="650" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#9d4edd" stroke-width="1"/>
+  <text x="710" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#b366ff">PRODUCTION</text>
+  <text x="710" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Rocket silo</text>
+  <text x="710" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Low density</text>
+  <text x="710" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Rocket fuel</text>
+  <text x="710" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Satellite</text>
+  <text x="710" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">~45 SPM target</text>
+
+  <!-- Arrow -->
+  <line x1="770" y1="70" x2="840" y2="70" stroke="#9d4edd" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 6 -->
+  <circle cx="870" cy="70" r="8" fill="#e0e0e0"/>
+  <text x="870" y="90" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#e0e0e0">LAUNCH!</text>
+  <rect x="810" y="100" width="120" height="90" rx="4" fill="#2a2a2a" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="870" y="118" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#f5f5f5">ROCKET LAUNCH</text>
+  <text x="870" y="133" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Win condition!</text>
+  <text x="870" y="146" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">~100 SPM</text>
+  <text x="870" y="159" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">Space Age unlocks</text>
+  <text x="870" y="172" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#999">New planets</text>
+  <text x="870" y="185" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="8" fill="#666">Vulcanus / Gleba</text>
+
+  <!-- Key items row -->
+  <text x="450" y="220" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="12" font-weight="700" fill="#888">KEY MILESTONES</text>
+
+  <!-- Milestone items -->
+  <rect x="30" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="42" y="245" width="76" height="40" rx="3" fill="#e8941c"/>
+  <rect x="48" y="250" width="64" height="30" rx="2" fill="#f5aa2e"/>
+  <text x="80" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Red + Green</text>
+
+  <rect x="145" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="157" y="245" width="76" height="40" rx="3" fill="#3778c8"/>
+  <rect x="163" y="250" width="64" height="30" rx="2" fill="#5599ff"/>
+  <text x="195" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Blue Science</text>
+
+  <rect x="260" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="272" y="245" width="76" height="40" rx="3" fill="#c8824c"/>
+  <rect x="280" y="255" width="60" height="20" rx="1" fill="#e09860"/>
+  <text x="310" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Oil Refinery</text>
+
+  <rect x="375" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="387" y="245" width="76" height="40" rx="3" fill="#4488ff"/>
+  <rect x="393" y="251" width="64" height="28" rx="2" fill="#5599ee"/>
+  <text x="425" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Blue Circuits</text>
+
+  <rect x="490" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#c9463d" stroke-width="1"/>
+  <rect x="498" y="242" width="84" height="46" rx="2" fill="#c9463d"/>
+  <rect x="504" y="248" width="72" height="34" rx="1" fill="#dd5550"/>
+  <text x="540" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Train Network</text>
+
+  <rect x="605" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#9d4edd" stroke-width="1"/>
+  <rect x="617" y="245" width="76" height="40" rx="3" fill="#9d4edd"/>
+  <rect x="623" y="251" width="64" height="28" rx="2" fill="#b366ff"/>
+  <text x="655" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">Rocket Silo</text>
+
+  <rect x="720" y="235" width="100" height="75" rx="4" fill="#2a2a2a" stroke="#e0e0e0" stroke-width="2"/>
+  <polygon points="770,245 785,275 755,275" fill="#888"/>
+  <rect x="757" y="262" width="26" height="25" rx="2" fill="#4488ff"/>
+  <text x="770" y="327" text-anchor="middle" font-family="Rajdhani,sans-serif" font-size="9" fill="#888">LAUNCH ROCKET</text>
+</svg>

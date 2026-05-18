@@ -1,5 +1,5 @@
 baseURL = 'https://leolifan007.github.io/factorio-guide/'
-theme = 'guide-theme'
+# theme disabled - using project layouts/ directly
 title = 'Factorio Guide'
 publishDir = 'docs'
 enableRobotsTXT = true
