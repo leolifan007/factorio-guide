@@ -6,11 +6,6 @@ tags: ["production-ratios", "base-design"]
 draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#3a2010,#8b6914);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#d4a017;">OIL PROCESSING</span>
-</div>
-
 Oil processing is where most factory layouts fall apart. Unlike ore patches that just run, oil wells deplete over time, refineries produce three outputs at once, and if any of those outputs backs up, everything stops. I've rebuilt my refinery block more times than any other section of the factory.
 
 {{< callout "tip" >}}
@@ -98,15 +93,7 @@ If you don't consume or crack heavy oil, refineries will stall. This is the sing
 
 **Pump control:** Use circuit conditions to control cracking:
 
-<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
-  Pump connected to heavy oil tank:
-    Enable when heavy_oil > 20,000
-    → Feeds heavy→light cracker
-
-  Pump connected to light oil tank:
-    Enable when light_oil > 20,000
-    → Feeds light→petroleum cracker
-</pre>
+{{< diagram "diagrams/circuit-control.svg" "Circuit-controlled cracking: pumps enable only when heavy/light oil exceeds 20,000" "760" >}}
 
 This ensures your heavy oil tank always has some lubricant reserve before cracking kicks in.
 
@@ -135,15 +122,7 @@ For a mid-game refinery block, build this:
 - 4 Offshore pumps (water for refining + cracking)
 
 **Pipe layout:**
-```
-[Water in] ──┬─────────────────────────────
-              │  │  │  │  │  │  │  │  │
-            [R1][R2][R3][R4][R5][R6][R7][R8]   Refineries
-              │  │  │  │  │  │  │  │  │
-[Hvy] ────────┴──┴──┴──┴──┴──┴──┴──┴──┴──→ Lube + Cracker×1
-[Lgt] ────────┴──┴──┴──┴──┴──┴──┴──┴──┴──→ Fuel + Cracker×7
-[Pet] ────────┴──┴──┴──┴──┴──┴──┴──┴──┴──→ Plastic + Sulfur
-```
+{{< diagram "diagrams/oil-pipe-manifold.svg" "Oil refinery pipe manifold showing water input, 8 refineries, and the heavy-light-petroleum output pipes" "760" >}}
 
 {{< section "Bottom Line" >}}
 

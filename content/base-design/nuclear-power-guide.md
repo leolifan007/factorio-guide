@@ -6,11 +6,6 @@ tags: ["base-design", "production-ratios"]
 draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#0a1a2a,#1a4a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#44ff88;">NUCLEAR POWER</span>
-</div>
-
 I put off nuclear for three playthroughs. Solar seemed simpler, steam seemed cheaper. Then I built my first 2×2 reactor and watched 480 MW light up from a single fuel cell. I haven't looked back.
 
 {{< callout "tip" >}}

@@ -6,11 +6,6 @@ tags: ["defense", "base-design"]
 draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#2a1000,#8b2500);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#ff6622;">FLAMETHROWER DEFENSE</span>
-</div>
-
 I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don't care about biter armor.
 
 {{< callout "tip" >}}
@@ -47,16 +42,6 @@ Dragon's teeth walls (zigzag patterns) are outdated since the combat overhaul. M
 8. **Roboport:** Behind the wall for repairs.
 
 {{< section "Turret Spacing and Pattern" >}}
-
-The standard alternating pattern:
-
-<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
-Wall → F _ G _ F _ G _ F _ G _ F _ G _ F ← Wall
-       │   │   │   │   │   │   │   │   │
-       Oil Pipe ─────────────────────────
-       Ammo Belt ────────────────────────
-       Power pole ───────────────────────
-</pre>
 
 **Pattern:** F(lame), gap (2 tiles), G(un), gap (2 tiles), repeat.
 

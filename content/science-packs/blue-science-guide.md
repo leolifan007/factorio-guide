@@ -6,11 +6,6 @@ tags: ["science-packs", "production-ratios"]
 draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#1a3a5c,#3778c8);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#88ccff;">CHEMICAL SCIENCE</span>
-</div>
-
 Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
 
 {{< callout "tip" >}}
@@ -65,20 +60,7 @@ The most common mistake is not enough refineries. With basic processing, one ref
 
 A compact blue science array fits in roughly 15×30 tiles. Here's the layout pattern:
 
-<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
-Materials bus (top to bottom):
-  Belt 1: Iron + Steel
-  Belt 2: Copper + Coal
-  Belt 3: Red circuits + Gears
-  Pipe 1: Petroleum
-  Pipe 2: Lubricant (for future electric engine units)
-
-  [Engine × 2] → [Sulfur × 1]
-        ↓              ↓
-    Blue science assemblers × 5
-        ↓
-    Output belt → Labs
-</pre>
+{{< diagram "diagrams/bluescience-cell.svg" "Compact blue science cell with engine and sulfur sub-factories feeding 5 science assemblers" "760" >}}
 
 The engine assemblers sit next to the bus, pulling steel, iron, gears, and pipes. The sulfur plant takes petroleum from the pipe and outputs to a belt. Red circuits come from an existing production line.
 

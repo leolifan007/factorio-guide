@@ -6,11 +6,6 @@ tags: ["getting-started", "science-packs"]
 draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#556b2f,#6abe30);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:2rem;font-weight:900;color:#222;">LOGISTIC SCIENCE</span>
-</div>
-
 Green science is the wall that separates casual manual-crafting from real automation. Unlike red science (two ingredients, one assembler, done), green science forces you to think about sub-factories, belt balancing, and ratios. I've rebuilt this thing a dozen times across different playthroughs, and every time I find a cleaner way to lay it out.
 
 {{< callout "tip" >}}
@@ -48,16 +43,7 @@ The ratio is forgiving: one inserter assembler makes 2 inserters per second. Eac
 
 I've tried a few layouts. The one that sticks is a straight-line double-sided build with components running down the middle:
 
-<pre style="background:#1a1a1a;padding:0.75rem;border-radius:4px;border:1px solid #444;font-size:0.72rem;line-height:1.6;">
-  Iron Plate Belt (top lane)   Green Circuit Belt (bottom lane)
-  ─────────────────────────────────────────────────────────────
-  [Ins][Bel][Ins][Bel][Ins][Bel][Ins][Bel]   ← sub-assembler row
-    ║    ║    ║    ║    ║    ║    ║    ║
-   [GS] [GS] [GS] [GS] [GS] [GS] [GS] [GS]  ← science assemblers
-    ║    ║    ║    ║    ║    ║    ║    ║
-  ─────────────────────────────────────────────
-  Green science output belt → Labs
-</pre>
+{{< diagram "diagrams/greenscience-layout.svg" "Green science physical layout showing the bus-inserter-science assembler sandwich" "760" >}}
 
 Put inserter and belt assemblers in a row. Iron plates on one belt lane, green circuits on the other. Science packs go to a third belt feeding labs.
 
