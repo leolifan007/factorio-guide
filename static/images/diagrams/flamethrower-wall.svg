@@ -1,165 +1,187 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1100px;background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1100px;background:#1a1a1a;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="1100" height="50" fill="#1f1f1f" rx="8"/>
+  <rect x="0" y="44" width="1100" height="6" fill="#1f1f1f"/>
+  <text x="550" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#ff6622">FLAMETHROWER WALL — KILL CORRIDOR LAYOUT</text>
+
+  <!-- ===== LAYOUT AREA (left side) ===== -->
+
+  <!-- 1. BITERS -->
+  <rect x="20" y="70" width="80" height="320" rx="6" fill="#1a0f00" stroke="#442200" stroke-width="1.5"/>
+  <text x="60" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#dd8822">BITERS</text>
+  <text x="60" y="118" text-anchor="middle" font-size="11" fill="#886633">Attack Wave</text>
+
+  <!-- Biter triangles -->
+  <polygon points="35,140 60,130 85,140 80,160 40,160" fill="#553300" opacity="0.5"/>
+  <polygon points="30,175 55,165 80,175 75,195 35,195" fill="#774400" opacity="0.4"/>
+  <polygon points="35,210 60,200 85,210 80,230 40,230" fill="#663300" opacity="0.35"/>
+  <polygon points="30,280 55,270 80,280 75,300 35,300" fill="#553300" opacity="0.3"/>
+  <polygon points="35,315 60,305 85,315 80,335 40,335" fill="#774400" opacity="0.25"/>
+
+  <!-- Arrow -->
+  <line x1="100" y1="220" x2="118" y2="220" stroke="#ff6622" stroke-width="2" marker-end="url(#arrow)"/>
   <defs>
-    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <marker id="arrow-ff6622" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#ff6622"/></marker>
-    <marker id="arrow-888" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#888"/></marker>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#ff6622"/></marker>
   </defs>
 
-  <!-- Title bar -->
-  <rect x="0" y="0" width="1100" height="64" fill="#252525" rx="8"/>
-  <rect x="0" y="56" width="1100" height="8" fill="#252525"/>
-  <text x="550" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#ff6622" filter="url(#glow)">🔥 FLAMETHROWER WALL — KILL CORRIDOR LAYOUT</text>
-
-  <!-- ==================== MAIN LAYOUT AREA ==================== -->
-  <!-- Centered, y from 90 to 370 -->
-
-  <!-- 1. BITERS ZONE -->
-  <rect x="30" y="100" width="80" height="230" rx="6" fill="#1a0f00" stroke="#442200" stroke-width="2"/>
-  <text x="70" y="215" text-anchor="middle" font-size="13" font-weight="600" fill="#dd8822">BITERS</text>
-  <text x="70" y="235" text-anchor="middle" font-size="11" fill="#aa6622">Attack Wave</text>
-  <polygon points="50,160 70,150 90,160 85,180 55,180" fill="#663300" opacity="0.4"/>
-  <polygon points="45,190 65,180 85,190 80,210 50,210" fill="#885500" opacity="0.3"/>
-  <polygon points="50,280 70,270 90,280 85,300 55,300" fill="#774400" opacity="0.35"/>
-
-  <!-- Arrow: Biters → Outer Wall -->
-  <line x1="110" y1="215" x2="130" y2="215" stroke="#ff6622" stroke-width="2" marker-end="url(#arrow-ff6622)"/>
-
   <!-- 2. OUTER WALL -->
-  <rect x="135" y="100" width="14" height="230" rx="2" fill="#555" stroke="#888" stroke-width="1.5"/>
-  <text x="142" y="225" text-anchor="middle" font-size="11" fill="#ccc" transform="rotate(-90,142,225)" font-weight="600">Outer Wall (Double)</text>
+  <rect x="122" y="70" width="16" height="320" rx="2" fill="#555" stroke="#888" stroke-width="1.5"/>
+  <text x="130" y="240" text-anchor="middle" font-size="11" fill="#ddd" transform="rotate(-90,130,240)" font-weight="600">Outer Wall (Double)</text>
 
   <!-- 3. KILL CORRIDOR -->
-  <rect x="160" y="100" width="80" height="230" rx="4" fill="#440000" fill-opacity="0.12" stroke="#ff6622" stroke-width="1.5" stroke-dasharray="6,3"/>
-  <text x="200" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#ff6622">KILL</text>
-  <text x="200" y="205" text-anchor="middle" font-size="14" font-weight="700" fill="#ff6622">CORRIDOR</text>
-  <text x="200" y="225" text-anchor="middle" font-size="11" fill="#ff6622" opacity="0.6">3-4 tiles gap</text>
-  <text x="200" y="290" text-anchor="middle" font-size="10" fill="#aa4444">Biters funnel here</text>
-  <text x="200" y="305" text-anchor="middle" font-size="10" fill="#aa4444">Hit from both sides</text>
+  <rect x="148" y="70" width="90" height="320" rx="4" fill="#330000" stroke="#cc4422" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="193" y="150" text-anchor="middle" font-size="16" font-weight="800" fill="#cc4422">KILL</text>
+  <text x="193" y="172" text-anchor="middle" font-size="16" font-weight="800" fill="#cc4422">CORRIDOR</text>
+  <text x="193" y="200" text-anchor="middle" font-size="12" fill="#aa4433">3-4 tile gap</text>
+  <text x="193" y="285" text-anchor="middle" font-size="12" fill="#885544">Biters funnel here</text>
+  <text x="193" y="305" text-anchor="middle" font-size="12" fill="#885544">Hit from both sides</text>
+
+  <!-- Fire effect in corridor -->
+  <ellipse cx="193" cy="355" rx="35" ry="6" fill="#cc4422" opacity="0.15"/>
 
   <!-- 4. INNER WALL -->
-  <rect x="255" y="100" width="12" height="230" rx="2" fill="#555" stroke="#888" stroke-width="1.5"/>
-  <text x="261" y="225" text-anchor="middle" font-size="11" fill="#ccc" transform="rotate(-90,261,225)" font-weight="600">Inner Wall</text>
+  <rect x="248" y="70" width="12" height="320" rx="2" fill="#555" stroke="#888" stroke-width="1.5"/>
+  <text x="254" y="240" text-anchor="middle" font-size="11" fill="#ddd" transform="rotate(-90,254,240)" font-weight="600">Inner Wall</text>
 
-  <!-- 5. FLAMETHROWER TURRET ZONE -->
-  <rect x="285" y="100" width="115" height="230" rx="6" fill="#1a0a00" stroke="#ff6622" stroke-width="1.5"/>
+  <!-- 5. FLAMETHROWER TURRETS -->
+  <rect x="270" y="70" width="140" height="320" rx="6" fill="#1a0800" stroke="#ff6622" stroke-width="1.5"/>
+  <text x="340" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#ff6622">FLAMETHROWER</text>
+  <text x="340" y="114" text-anchor="middle" font-size="11" fill="#cc6622">×3 (every 4 tiles)</text>
 
-  <!-- Flamethrower Turret Row 1 -->
-  <rect x="295" y="110" width="95" height="50" rx="4" fill="#2a0a00" stroke="#ff6622" stroke-width="1"/>
-  <circle cx="350" cy="130" r="14" fill="#ff4400" opacity="0.5"/>
-  <circle cx="350" cy="130" r="7" fill="#ffcc00"/>
-  <text x="350" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#ff6622">Flame F</text>
+  <!-- Flame turret row 1 -->
+  <rect x="280" y="125" width="120" height="60" rx="4" fill="#221100" stroke="#ff6622" stroke-width="1"/>
+  <circle cx="310" cy="155" r="16" fill="#ff4400" opacity="0.3"/>
+  <circle cx="310" cy="155" r="10" fill="#ff6622" opacity="0.5"/>
+  <circle cx="310" cy="155" r="4" fill="#ffcc00"/>
+  <!-- Flame wisps -->
+  <ellipse cx="325" cy="148" rx="6" ry="3" fill="#ff4400" opacity="0.4"/>
+  <ellipse cx="322" cy="160" rx="5" ry="3" fill="#ff6600" opacity="0.3"/>
+  <text x="370" y="155" text-anchor="middle" font-size="13" font-weight="700" fill="#ff6622">Flame F</text>
+  <text x="370" y="173" text-anchor="middle" font-size="10" fill="#884422">primary DPS</text>
 
-  <!-- Flamethrower Turret Row 2 -->
-  <rect x="295" y="185" width="95" height="50" rx="4" fill="#2a0a00" stroke="#ff6622" stroke-width="1"/>
-  <circle cx="350" cy="205" r="14" fill="#ff4400" opacity="0.5"/>
-  <circle cx="350" cy="205" r="7" fill="#ffcc00"/>
-  <text x="350" y="225" text-anchor="middle" font-size="11" font-weight="600" fill="#ff6622">Flame F</text>
+  <!-- Flame turret row 2 -->
+  <rect x="280" y="200" width="120" height="60" rx="4" fill="#221100" stroke="#ff6622" stroke-width="1"/>
+  <circle cx="310" cy="230" r="16" fill="#ff4400" opacity="0.3"/>
+  <circle cx="310" cy="230" r="10" fill="#ff6622" opacity="0.5"/>
+  <circle cx="310" cy="230" r="4" fill="#ffcc00"/>
+  <ellipse cx="325" cy="223" rx="6" ry="3" fill="#ff4400" opacity="0.4"/>
+  <ellipse cx="322" cy="235" rx="5" ry="3" fill="#ff6600" opacity="0.3"/>
+  <text x="370" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#ff6622">Flame F</text>
+  <text x="370" y="248" text-anchor="middle" font-size="10" fill="#884422">primary DPS</text>
 
-  <!-- Flamethrower Turret Row 3 -->
-  <rect x="295" y="260" width="95" height="50" rx="4" fill="#2a0a00" stroke="#ff6622" stroke-width="1"/>
-  <circle cx="350" cy="280" r="14" fill="#ff4400" opacity="0.5"/>
-  <circle cx="350" cy="280" r="7" fill="#ffcc00"/>
-  <text x="350" y="300" text-anchor="middle" font-size="11" font-weight="600" fill="#ff6622">Flame F</text>
+  <!-- Flame turret row 3 -->
+  <rect x="280" y="275" width="120" height="60" rx="4" fill="#221100" stroke="#ff6622" stroke-width="1"/>
+  <circle cx="310" cy="305" r="16" fill="#ff4400" opacity="0.3"/>
+  <circle cx="310" cy="305" r="10" fill="#ff6622" opacity="0.5"/>
+  <circle cx="310" cy="305" r="4" fill="#ffcc00"/>
+  <ellipse cx="325" cy="298" rx="6" ry="3" fill="#ff4400" opacity="0.4"/>
+  <ellipse cx="322" cy="310" rx="5" ry="3" fill="#ff6600" opacity="0.3"/>
+  <text x="370" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#ff6622">Flame F</text>
+  <text x="370" y="323" text-anchor="middle" font-size="10" fill="#884422">primary DPS</text>
 
-  <text x="342" y="325" text-anchor="middle" font-size="10" fill="#ff6622">Primary DPS</text>
+  <!-- 6. GUN TURRETS -->
+  <rect x="430" y="70" width="140" height="320" rx="6" fill="#140000" stroke="#cc4400" stroke-width="1.5"/>
+  <text x="500" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#cc4400">GUN TURRETS</text>
+  <text x="500" y="114" text-anchor="middle" font-size="11" fill="#aa4433">×3 (between flames)</text>
 
-  <!-- Spacing label between F and G -->
-  <line x1="405" y1="130" x2="420" y2="130" stroke="#555" stroke-width="1.5"/>
-  <line x1="420" y1="130" x2="420" y2="235" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="418" y="195" text-anchor="end" font-size="11" fill="#888" transform="rotate(-90,418,195)">4 tiles spacing</text>
+  <!-- Gun turret row 1 -->
+  <rect x="440" y="125" width="120" height="60" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
+  <circle cx="470" cy="155" r="12" fill="#555" stroke="#888" stroke-width="1.5"/>
+  <rect x="465" y="147" width="10" height="16" rx="2" fill="#888"/>
+  <text x="530" y="155" text-anchor="middle" font-size="13" font-weight="700" fill="#cc4400">Gun G</text>
+  <text x="530" y="173" text-anchor="middle" font-size="10" fill="#883322">cleanup crew</text>
 
-  <!-- 6. GUN TURRET ZONE -->
-  <rect x="430" y="100" width="115" height="230" rx="6" fill="#180000" stroke="#cc4400" stroke-width="1.5"/>
+  <!-- Gun turret row 2 -->
+  <rect x="440" y="200" width="120" height="60" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
+  <circle cx="470" cy="230" r="12" fill="#555" stroke="#888" stroke-width="1.5"/>
+  <rect x="465" y="222" width="10" height="16" rx="2" fill="#888"/>
+  <text x="530" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#cc4400">Gun G</text>
+  <text x="530" y="248" text-anchor="middle" font-size="10" fill="#883322">cleanup crew</text>
 
-  <!-- Gun Turret Row 1 -->
-  <rect x="440" y="110" width="95" height="50" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
-  <circle cx="490" cy="130" r="12" fill="#555"/>
-  <rect x="484" y="124" width="12" height="12" rx="1" fill="#888"/>
-  <text x="490" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#cc4400">Gun G</text>
-
-  <!-- Gun Turret Row 2 -->
-  <rect x="440" y="185" width="95" height="50" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
-  <circle cx="490" cy="205" r="12" fill="#555"/>
-  <rect x="484" y="199" width="12" height="12" rx="1" fill="#888"/>
-  <text x="490" y="225" text-anchor="middle" font-size="11" font-weight="600" fill="#cc4400">Gun G</text>
-
-  <!-- Gun Turret Row 3 -->
-  <rect x="440" y="260" width="95" height="50" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
-  <circle cx="490" cy="280" r="12" fill="#555"/>
-  <rect x="484" y="274" width="12" height="12" rx="1" fill="#888"/>
-  <text x="490" y="300" text-anchor="middle" font-size="11" font-weight="600" fill="#cc4400">Gun G</text>
-
-  <text x="487" y="325" text-anchor="middle" font-size="10" fill="#cc4400">Cleanup Crew</text>
+  <!-- Gun turret row 3 -->
+  <rect x="440" y="275" width="120" height="60" rx="4" fill="#200000" stroke="#cc4400" stroke-width="1"/>
+  <circle cx="470" cy="305" r="12" fill="#555" stroke="#888" stroke-width="1.5"/>
+  <rect x="465" y="297" width="10" height="16" rx="2" fill="#888"/>
+  <text x="530" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#cc4400">Gun G</text>
+  <text x="530" y="323" text-anchor="middle" font-size="10" fill="#883322">cleanup crew</text>
 
   <!-- 7. AMMO BELT -->
-  <rect x="565" y="100" width="18" height="230" rx="3" fill="#1a0800" stroke="#cc4400" stroke-width="1.5"/>
-  <rect x="567" y="110" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="140" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="170" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="200" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="230" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="260" width="14" height="16" rx="2" fill="#8b4513"/>
-  <rect x="567" y="290" width="14" height="16" rx="2" fill="#8b4513"/>
-  <text x="574" y="225" text-anchor="middle" font-size="10" fill="#cc4400" transform="rotate(-90,574,225)" font-weight="600">Ammo Belt</text>
+  <rect x="585" y="70" width="22" height="320" rx="4" fill="#181810" stroke="#aa6622" stroke-width="1.5"/>
+  <!-- Ammo dots on belt -->
+  <circle cx="596" cy="100" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="140" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="180" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="220" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="260" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="300" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="340" r="5" fill="#bb7744" opacity="0.6"/>
+  <circle cx="596" cy="370" r="5" fill="#bb7744" opacity="0.4"/>
+  <circle cx="596" cy="380" r="5" fill="#bb7744" opacity="0.3"/>
+  <text x="596" y="240" text-anchor="middle" font-size="11" fill="#aa6622" transform="rotate(-90,596,240)" font-weight="600">Ammo Belt</text>
 
   <!-- 8. OIL PIPE -->
-  <rect x="598" y="100" width="18" height="230" rx="9" fill="#1a0f00" stroke="#d4a017" stroke-width="1.5"/>
-  <circle cx="607" cy="130" r="4" fill="#d4a017" opacity="0.5"/>
-  <circle cx="607" cy="180" r="4" fill="#d4a017" opacity="0.5"/>
-  <circle cx="607" cy="230" r="4" fill="#d4a017" opacity="0.5"/>
-  <circle cx="607" cy="280" r="4" fill="#d4a017" opacity="0.5"/>
-  <text x="607" y="225" text-anchor="middle" font-size="10" fill="#d4a017" transform="rotate(-90,607,225)" font-weight="600">Oil Pipe</text>
+  <rect x="618" y="70" width="22" height="320" rx="11" fill="#1a1200" stroke="#d4a017" stroke-width="1.5"/>
+  <circle cx="629" cy="110" r="4" fill="#d4a017" opacity="0.5"/>
+  <circle cx="629" cy="170" r="4" fill="#d4a017" opacity="0.5"/>
+  <circle cx="629" cy="230" r="4" fill="#d4a017" opacity="0.5"/>
+  <circle cx="629" cy="290" r="4" fill="#d4a017" opacity="0.5"/>
+  <circle cx="629" cy="350" r="4" fill="#d4a017" opacity="0.5"/>
+  <text x="629" y="240" text-anchor="middle" font-size="11" fill="#d4a017" transform="rotate(-90,629,240)" font-weight="600">Oil Pipe</text>
 
-  <!-- ==================== RIGHT SIDE: LEGEND & INFO ==================== -->
+  <!-- ===== INFO PANEL (right side) ===== -->
+  <rect x="670" y="70" width="410" height="320" rx="6" fill="#1c1c1c" stroke="#333" stroke-width="1"/>
 
-  <!-- Roboport -->
-  <rect x="650" y="100" width="180" height="70" rx="6" fill="#0f0f1f" stroke="#44aaff" stroke-width="1.5"/>
-  <text x="740" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="#44aaff">Roboport</text>
-  <text x="740" y="145" text-anchor="middle" font-size="11" fill="#888">Repair coverage</text>
-  <text x="740" y="162" text-anchor="middle" font-size="10" fill="#666">1 per 30 tiles</text>
+  <!-- Pattern Card -->
+  <rect x="685" y="85" width="380" height="70" rx="6" fill="#222" stroke="#444" stroke-width="1"/>
+  <text x="875" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#ddd">Spacing Pattern</text>
+  <text x="875" y="135" text-anchor="middle" font-size="15" font-weight="800" fill="#ff6622">F — G — F — G — F — G</text>
+  <text x="875" y="150" text-anchor="middle" font-size="11" fill="#666">F = Flamethrower, G = Gun Turret</text>
 
-  <!-- Spacing Pattern -->
-  <rect x="650" y="185" width="180" height="75" rx="6" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
-  <text x="740" y="208" text-anchor="middle" font-size="12" font-weight="600" fill="#ccc">Spacing Pattern</text>
-  <text x="740" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#ff6622">F - G - F - G - F - G</text>
-  <text x="740" y="248" text-anchor="middle" font-size="10" fill="#666">F = Flamethrower, G = Gun Turret</text>
+  <!-- Efficiency Card -->
+  <rect x="685" y="170" width="380" height="70" rx="6" fill="#0a1f0a" stroke="#33aa55" stroke-width="1"/>
+  <text x="875" y="193" text-anchor="middle" font-size="14" font-weight="700" fill="#33aa55">Resource Efficiency</text>
+  <text x="875" y="220" text-anchor="middle" font-size="13" fill="#aaa">1 pumpjack @ 2/s → supplies 30+ flame turrets</text>
 
-  <!-- Key Stats -->
-  <rect x="650" y="275" width="180" height="55" rx="6" fill="#0f1f0f" stroke="#44bb66" stroke-width="1.5"/>
-  <text x="740" y="298" text-anchor="middle" font-size="12" font-weight="600" fill="#44bb66">Resource Efficiency</text>
-  <text x="740" y="318" text-anchor="middle" font-size="11" fill="#888">1 pumpjack → 30+ flame turrets</text>
+  <!-- Roboport Card -->
+  <rect x="685" y="255" width="380" height="55" rx="6" fill="#0a0a1f" stroke="#4488cc" stroke-width="1"/>
+  <text x="875" y="278" text-anchor="middle" font-size="14" font-weight="700" fill="#4488cc">Roboport Repair Coverage</text>
+  <text x="875" y="298" text-anchor="middle" font-size="13" fill="#aaa">1 roboport per 30 tiles</text>
 
-  <!-- ==================== BOTTOM: PATTERN VISUALIZATION ==================== -->
-  <rect x="30" y="400" width="1040" height="80" rx="6" fill="#181818" stroke="#333" stroke-width="1"/>
+  <!-- Stats -->
+  <rect x="685" y="325" width="380" height="50" rx="6" fill="#1f1f10" stroke="#888" stroke-width="1"/>
+  <text x="875" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#ccc">Key Stats</text>
+  <text x="875" y="366" text-anchor="middle" font-size="12" fill="#888">3 oil/sec consumed per row | Ammo: 1 piercing assembler = full wall</text>
 
-  <!-- Mini horizontal cross-section -->
-  <text x="550" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#888">Cross-Section (From Outside In)</text>
+  <!-- ===== BOTTOM LEGEND BAR ===== -->
+  <rect x="20" y="410" width="1060" height="80" rx="6" fill="#161616" stroke="#333" stroke-width="1"/>
+  <text x="550" y="430" text-anchor="middle" font-size="13" font-weight="600" fill="#777">Cross-Section (Outside → Inside)</text>
 
-  <!-- Legend row -->
-  <rect x="40" y="430" width="40" height="14" rx="2" fill="#555" stroke="#888" stroke-width="1"/>
-  <text x="105" y="442" font-size="11" fill="#888">Outer Wall</text>
+  <rect x="40" y="445" width="36" height="16" rx="2" fill="#555" stroke="#888" stroke-width="1"/>
+  <text x="100" y="457" font-size="12" fill="#aaa">Outer Wall</text>
 
-  <line x1="140" y1="435" x2="160" y2="435" stroke="#ff6622" stroke-width="2" stroke-dasharray="4,2"/>
-  <text x="165" y="442" font-size="11" fill="#888">Kill Corridor</text>
+  <line x1="155" y1="450" x2="180" y2="450" stroke="#cc4422" stroke-width="2.5" stroke-dasharray="5,2"/>
+  <text x="185" y="457" font-size="12" fill="#aaa">Kill Corridor</text>
 
-  <rect x="260" y="430" width="30" height="14" rx="2" fill="#555" stroke="#888" stroke-width="1"/>
-  <text x="295" y="442" font-size="11" fill="#888">Inner Wall</text>
+  <rect x="280" y="445" width="28" height="16" rx="2" fill="#555" stroke="#888" stroke-width="1"/>
+  <text x="330" y="457" font-size="12" fill="#aaa">Inner Wall</text>
 
-  <circle cx="345" cy="437" r="6" fill="#ff4400" opacity="0.6"/>
-  <text x="360" y="442" font-size="11" fill="#ff6622">Flamethrower</text>
+  <circle cx="385" cy="453" r="7" fill="#ff4400" opacity="0.5"/>
+  <circle cx="385" cy="453" r="3" fill="#ffcc00"/>
+  <text x="405" y="457" font-size="12" fill="#ff6622">Flamethrower</text>
 
-  <circle cx="480" cy="437" r="5" fill="#666"/>
-  <text x="495" y="442" font-size="11" fill="#cc4400">Gun Turret</text>
+  <rect x="520" y="446" width="8" height="14" rx="1" fill="#666"/>
+  <text x="545" y="457" font-size="12" fill="#cc4400">Gun Turret</text>
 
-  <rect x="590" y="430" width="20" height="14" rx="2" fill="#8b4513"/>
-  <text x="620" y="442" font-size="11" fill="#cc4400">Ammo Belt</text>
+  <rect x="640" y="446" width="18" height="14" rx="2" fill="#aa6622"/>
+  <text x="665" y="457" font-size="12" fill="#aa6622">Ammo Belt</text>
 
-  <circle cx="690" cy="437" r="4" fill="#d4a017"/>
-  <text x="705" y="442" font-size="11" fill="#d4a017">Oil Pipe</text>
+  <circle cx="755" cy="453" r="5" fill="#d4a017"/>
+  <text x="768" y="457" font-size="12" fill="#d4a017">Oil Pipe</text>
 
-  <text x="810" y="442" font-size="11" fill="#44aaff">Roboport</text>
+  <rect x="860" y="445" width="14" height="16" rx="3" fill="#334466"/>
+  <text x="885" y="457" font-size="12" fill="#4488cc">Roboport</text>
 
-  <!-- Bottom summary -->
-  <rect x="30" y="460" width="1040" height="14" rx="0" fill="none"/>
-  <text x="550" y="472" text-anchor="middle" font-size="12" fill="#555">★ Pattern repeat every 4 tiles | One pipe + one belt = full perimeter defense</text>
+  <!-- Bottom line -->
+  <text x="550" y="495" text-anchor="middle" font-size="12" fill="#555">★ Pattern: F — G repeats every 4 tiles | One crude oil pipe + one ammo belt = full perimeter defense</text>
 </svg>
