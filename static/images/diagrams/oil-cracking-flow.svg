@@ -1,49 +1,146 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1000px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1100px;background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
   <defs>
-    <filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr-heavy" markerWidth="14" markerHeight="10" refX="13" refY="5" orient="auto"><path d="M0,0 L14,5 L0,10 Z" fill="#8b4513"/></marker>
+    <marker id="arr-light" markerWidth="14" markerHeight="10" refX="13" refY="5" orient="auto"><path d="M0,0 L14,5 L0,10 Z" fill="#d4a017"/></marker>
+    <marker id="arr-petro" markerWidth="14" markerHeight="10" refX="13" refY="5" orient="auto"><path d="M0,0 L14,5 L0,10 Z" fill="#5599ee"/></marker>
   </defs>
-  <rect width="1000" height="520" fill="#1f1f1f" rx="8"/>
-  <line x1="0" y1="70" x2="1000" y2="70" stroke="#333"/>
-  <text x="500" y="44" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="20" font-weight="900" fill="#d4a017">OIL PROCESSING — CRACKING BALANCE</text>
-  <rect x="40" y="100" width="210" height="120" rx="6" fill="#2a2a2a" stroke="#d4a017" stroke-width="2.5"/>
-  <text x="145" y="136" text-anchor="middle" font-size="16" font-weight="700" fill="#d4a017">Refinery × 8</text>
-  <text x="145" y="162" text-anchor="middle" font-size="12" fill="#888">Advanced Processing</text>
-  <text x="145" y="188" text-anchor="middle" font-size="12" fill="#666">Crude + Water → 3 outputs</text>
-  <line x1="270" y1="130" x2="310" y2="130" stroke="#8b4513" stroke-width="3"/>
-  <line x1="270" y1="168" x2="310" y2="168" stroke="#d4a017" stroke-width="3"/>
-  <line x1="270" y1="206" x2="310" y2="206" stroke="#5599ee" stroke-width="3"/>
-  <rect x="310" y="105" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#8b4513" stroke-width="2.5"/>
-  <text x="410" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">Heavy Oil (50/s)</text>
-  <text x="410" y="148" text-anchor="middle" font-size="12" fill="#888">→ 1 Cracker (Heavy→Light)</text>
-  <line x1="530" y1="129" x2="575" y2="129" stroke="#8b4513" stroke-width="2.5"/>
-  <polygon points="575,123 592,129 575,135" fill="#8b4513"/>
-  <rect x="310" y="175" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#d4a017" stroke-width="2.5"/>
-  <text x="410" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#f0c040">Light Oil (50/s)</text>
-  <text x="410" y="218" text-anchor="middle" font-size="12" fill="#888">→ 7 Crackers (Light→Petro)</text>
-  <line x1="530" y1="199" x2="575" y2="199" stroke="#d4a017" stroke-width="2.5"/>
-  <polygon points="575,193 592,199 575,205" fill="#d4a017"/>
-  <rect x="310" y="245" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#5599ee" stroke-width="2.5"/>
-  <text x="410" y="268" text-anchor="middle" font-size="13" font-weight="700" fill="#88bbff">Petroleum Gas (30/s)</text>
-  <text x="410" y="288" text-anchor="middle" font-size="12" fill="#888">→ Plastic, Sulfur</text>
-  <line x1="530" y1="269" x2="575" y2="269" stroke="#5599ee" stroke-width="2.5"/>
-  <polygon points="575,263 592,269 575,275" fill="#5599ee"/>
-  <rect x="310" y="320" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#44aa77" stroke-width="2.5"/>
-  <text x="410" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#66cc99">→ Lubricant</text>
-  <text x="410" y="360" text-anchor="middle" font-size="12" fill="#888">Consumes excess heavy oil</text>
-  <rect x="592" y="105" width="210" height="210" rx="6" fill="#2a2a2a" stroke="#d4a017" stroke-width="2.5"/>
-  <text x="697" y="138" text-anchor="middle" font-size="15" font-weight="700" fill="#d4a017">Cracking Plants</text>
-  <line x1="612" y1="148" x2="782" y2="148" stroke="#444" stroke-width="1.5"/>
-  <text x="697" y="172" text-anchor="middle" font-size="13" fill="#888">Heavy→Light:  1 plant</text>
-  <text x="697" y="196" text-anchor="middle" font-size="13" fill="#888">Light→Petro:  7 plants</text>
-  <text x="697" y="225" text-anchor="middle" font-size="13" fill="#888">40 Heavy → 30 Light (2s)</text>
-  <text x="697" y="249" text-anchor="middle" font-size="13" fill="#888">30 Light → 20 Petro (2s)</text>
-  <line x1="822" y1="180" x2="862" y2="180" stroke="#5599ee" stroke-width="2.5"/>
-  <polygon points="862,174 879,180 862,186" fill="#5599ee"/>
-  <rect x="879" y="145" width="100" height="70" rx="6" fill="#2a2a2a" stroke="#5599ee" stroke-width="2.5"/>
-  <text x="929" y="176" text-anchor="middle" font-size="14" font-weight="700" fill="#88bbff">Plastic</text>
-  <text x="929" y="198" text-anchor="middle" font-size="12" fill="#888">+ Sulfur</text>
-  <rect x="592" y="335" width="387" height="55" rx="6" fill="#1f1f0f" stroke="#d4a017" stroke-width="2"/>
-  <text x="785" y="358" text-anchor="middle" font-size="14" font-weight="700" fill="#d4a017">8 : 1 : 7 — Perfect Cracking Ratio</text>
-  <text x="785" y="380" text-anchor="middle" font-size="13" fill="#888">No output backlog · Maximum plastic throughput</text>
-  <text x="500" y="440" text-anchor="middle" font-size="13" fill="#555">Critical: Petroleum is consumed fastest — prioritize Light→Petroleum cracking</text>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1100" height="64" fill="#252525" rx="8"/>
+  <rect x="0" y="56" width="1100" height="8" fill="#252525"/>
+  <text x="550" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#d4a017" filter="url(#glow)">🛢️ OIL PROCESSING — 8 : 1 : 7 CRACKING RATIO</text>
+
+  <!-- ===== STEP 1: REFINERY BLOCK ===== -->
+  <rect x="40" y="85" width="220" height="400" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
+  <text x="150" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#888">STEP 1: REFINE</text>
+
+  <!-- 8 refineries in a 2x4 mini grid -->
+  <rect x="50" y="125" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="95" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="95" y="162" text-anchor="middle" font-size="10" fill="#888">× 1</text>
+  <rect x="155" y="125" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="200" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="200" y="162" text-anchor="middle" font-size="10" fill="#888">× 2</text>
+  <rect x="50" y="185" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="95" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="95" y="222" text-anchor="middle" font-size="10" fill="#888">× 3</text>
+  <rect x="155" y="185" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="200" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="200" y="222" text-anchor="middle" font-size="10" fill="#888">× 4</text>
+  <rect x="50" y="245" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="95" y="265" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="95" y="282" text-anchor="middle" font-size="10" fill="#888">× 5</text>
+  <rect x="155" y="245" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="200" y="265" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="200" y="282" text-anchor="middle" font-size="10" fill="#888">× 6</text>
+  <rect x="50" y="305" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="95" y="325" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="95" y="342" text-anchor="middle" font-size="10" fill="#888">× 7</text>
+  <rect x="155" y="305" width="90" height="50" rx="4" fill="#2a2a2a" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="200" y="325" text-anchor="middle" font-size="12" font-weight="600" fill="#d4a017">Refinery</text>
+  <text x="200" y="342" text-anchor="middle" font-size="10" fill="#888">× 8</text>
+
+  <!-- Total output -->
+  <rect x="50" y="375" width="195" height="36" rx="4" fill="#0a1f0a" stroke="#d4a017" stroke-width="1"/>
+  <text x="147" y="398" text-anchor="middle" font-size="13" font-weight="600" fill="#d4a017">Advanced Processing</text>
+
+  <text x="150" y="435" text-anchor="middle" font-size="11" fill="#555">Input: Crude Oil + Water</text>
+  <text x="150" y="452" text-anchor="middle" font-size="11" fill="#555">Output: 3 products each</text>
+  <text x="150" y="469" text-anchor="middle" font-size="11" fill="#555">Total: 400H / 400L / 240P per s</text>
+
+  <!-- ===== ARROWS: Refinery → Outputs ===== -->
+  <line x1="260" y1="140" x2="290" y2="140" stroke="#8b4513" stroke-width="3.5" marker-end="url(#arr-heavy)"/>
+  <line x1="260" y1="225" x2="290" y2="225" stroke="#d4a017" stroke-width="3.5" marker-end="url(#arr-light)"/>
+  <line x1="260" y1="310" x2="290" y2="310" stroke="#5599ee" stroke-width="3.5" marker-end="url(#arr-petro)"/>
+
+  <!-- ===== STEP 2: THREE OUTPUTS ===== -->
+  <rect x="305" y="85" width="250" height="400" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
+  <text x="430" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#888">STEP 2: THREE OUTPUTS</text>
+
+  <!-- Heavy Oil -->
+  <rect x="315" y="120" width="230" height="85" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
+  <text x="430" y="146" text-anchor="middle" font-size="14" font-weight="700" fill="#d4a017">Heavy Oil (400/s)</text>
+  <text x="430" y="170" text-anchor="middle" font-size="11" fill="#888">→ Lubricant (priority)</text>
+  <text x="430" y="190" text-anchor="middle" font-size="11" fill="#888">→ Cracker H→L (excess)</text>
+
+  <!-- Light Oil -->
+  <rect x="315" y="215" width="230" height="85" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
+  <text x="430" y="241" text-anchor="middle" font-size="14" font-weight="700" fill="#f0c040">Light Oil (400/s)</text>
+  <text x="430" y="265" text-anchor="middle" font-size="11" fill="#888">→ Solid Fuel / Rocket Fuel</text>
+  <text x="430" y="285" text-anchor="middle" font-size="11" fill="#888">→ Cracker L→Petro (excess)</text>
+
+  <!-- Petroleum -->
+  <rect x="315" y="310" width="230" height="85" rx="5" fill="#000d1a" stroke="#5599ee" stroke-width="2"/>
+  <text x="430" y="336" text-anchor="middle" font-size="14" font-weight="700" fill="#88bbff">Petroleum Gas (240/s)</text>
+  <text x="430" y="360" text-anchor="middle" font-size="11" fill="#888">→ Plastic Bars (primary)</text>
+  <text x="430" y="380" text-anchor="middle" font-size="11" fill="#888">→ Sulfur (secondary)</text>
+
+  <!-- Lubricant note -->
+  <rect x="315" y="410" width="230" height="45" rx="4" fill="#0a1f0a" stroke="#44aa77" stroke-width="1.5"/>
+  <text x="430" y="432" text-anchor="middle" font-size="12" fill="#66cc99">Lubricant: consumes excess Heavy</text>
+  <text x="430" y="448" text-anchor="middle" font-size="10" fill="#555">Heavy backup = refinery stall → crack it!</text>
+
+  <!-- ===== ARROWS: Outputs → Crackers ===== -->
+  <line x1="545" y1="170" x2="575" y2="170" stroke="#8b4513" stroke-width="3" marker-end="url(#arr-heavy)"/>
+  <line x1="545" y1="260" x2="575" y2="260" stroke="#d4a017" stroke-width="3" marker-end="url(#arr-light)"/>
+
+  <!-- ===== STEP 3: CRACKING ===== -->
+  <rect x="590" y="85" width="245" height="400" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
+  <text x="712" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#888">STEP 3: CRACKING</text>
+
+  <!-- Heavy → Light cracker -->
+  <rect x="600" y="135" width="225" height="80" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
+  <text x="712" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#d4a017">H→L Cracker × 1</text>
+  <text x="712" y="182" text-anchor="middle" font-size="11" fill="#888">40 Heavy → 30 Light (2s)</text>
+  <text x="712" y="200" text-anchor="middle" font-size="11" fill="#888">Consumes 20 Heavy/s</text>
+
+  <!-- Light → Petroleum crackers -->
+  <rect x="600" y="230" width="225" height="80" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
+  <text x="712" y="255" text-anchor="middle" font-size="14" font-weight="700" fill="#f0c040">L→P Cracker × 7</text>
+  <text x="712" y="277" text-anchor="middle" font-size="11" fill="#888">30 Light → 20 Petro (2s)</text>
+  <text x="712" y="295" text-anchor="middle" font-size="11" fill="#888">Consumes 105 Light/s</text>
+
+  <!-- Arrow from cracker to Petroleum -->
+  <line x1="712" y1="310" x2="712" y2="340" stroke="#5599ee" stroke-width="2.5" marker-end="url(#arr-petro)"/>
+
+  <!-- Petroleum from cracking -->
+  <rect x="615" y="345" width="195" height="55" rx="5" fill="#000d1a" stroke="#5599ee" stroke-width="2"/>
+  <text x="712" y="368" text-anchor="middle" font-size="14" font-weight="700" fill="#88bbff">+ Petro Output</text>
+  <text x="712" y="388" text-anchor="middle" font-size="11" fill="#888">1 × 15/s + 7 × 10/s = 85/s</text>
+
+  <!-- ===== STEP 4: OUTPUT ===== -->
+  <rect x="855" y="85" width="205" height="400" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
+  <text x="957" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#888">STEP 4: PRODUCTION</text>
+
+  <!-- Arrow from refineries directly -->
+  <line x1="835" y1="355" x2="855" y2="355" stroke="#5599ee" stroke-width="3" marker-end="url(#arr-petro)"/>
+
+  <!-- Plastic -->
+  <rect x="865" y="135" width="185" height="70" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2"/>
+  <text x="957" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#88bbff">Plastic</text>
+  <text x="957" y="182" text-anchor="middle" font-size="12" fill="#888">20 Petro + 1 Coal = 2 Plastic</text>
+  <text x="957" y="198" text-anchor="middle" font-size="10" fill="#555">Feeds Red Circuits</text>
+
+  <!-- Sulfur -->
+  <rect x="865" y="220" width="185" height="70" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2"/>
+  <text x="957" y="245" text-anchor="middle" font-size="14" font-weight="700" fill="#88bbff">Sulfur</text>
+  <text x="957" y="267" text-anchor="middle" font-size="12" fill="#888">30 Petro + 30 Water = 2 Sulfur</text>
+  <text x="957" y="283" text-anchor="middle" font-size="10" fill="#555">Feeds Sulfuric Acid</text>
+
+  <!-- Solid Fuel -->
+  <rect x="865" y="305" width="185" height="70" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
+  <text x="957" y="330" text-anchor="middle" font-size="14" font-weight="700" fill="#f0c040">Solid Fuel</text>
+  <text x="957" y="352" text-anchor="middle" font-size="12" fill="#888">From excess Light Oil</text>
+  <text x="957" y="368" text-anchor="middle" font-size="10" fill="#555">Feeds Rocket Fuel</text>
+
+  <!-- Sulfuric Acid -->
+  <rect x="865" y="390" width="185" height="60" rx="5" fill="#0a1f0a" stroke="#44aa77" stroke-width="1.5"/>
+  <text x="957" y="412" text-anchor="middle" font-size="12" font-weight="600" fill="#66cc99">Sulfuric Acid</text>
+  <text x="957" y="432" text-anchor="middle" font-size="10" fill="#555">5 Sulfur + 50 Water + Iron</text>
+
+  <!-- ===== BOTTOM: RATIO SUMMARY ===== -->
+  <rect x="40" y="500" width="1020" height="55" rx="6" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
+  <text x="550" y="526" text-anchor="middle" font-size="16" font-weight="700" fill="#d4a017">★ The 8 : 1 : 7 Ratio — Perfect Cracking Balance</text>
+  <text x="550" y="548" text-anchor="middle" font-size="12" fill="#888">8 Refineries → 1 Heavy→Light Cracker → 7 Light→Petro Crackers | No backup · Max throughput</text>
 </svg>
