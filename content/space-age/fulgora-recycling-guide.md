@@ -4,6 +4,7 @@ description: Fulgora scrap processing guide for Factorio Space Age. Scrap recycl
 date: 2026-05-19
 tags: ["space-age", "fulgora"]
 draft: false
+emoji: "⚡"
 ---
 
 Fulgora breaks every habit you built on Nauvis. The map is ocean islands connected by narrow paths. Lightning strikes anything metallic. And instead of mining ore, you recycle scrap — and get random outputs.

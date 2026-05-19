@@ -4,6 +4,7 @@ description: "Complete green science guide for Factorio: recipe, ratios, belt se
 date: 2026-05-18
 tags: ["getting-started", "science-packs"]
 draft: false
+emoji: "🧪"
 ---
 
 Green science is the wall that separates casual manual-crafting from real automation. Unlike red science (two ingredients, one assembler, done), green science forces you to think about sub-factories, belt balancing, and ratios. I've rebuilt this thing a dozen times across different playthroughs, and every time I find a cleaner way to lay it out.

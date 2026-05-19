@@ -3,6 +3,7 @@ title: "How to Use Blueprints — Complete Guide"
 description: "How to copy, import, export, and organize blueprints in Factorio. Includes blueprint string tutorial."
 date: 2026-05-18
 tags: ["blueprints", "tutorial", "beginner"]
+emoji: "📋"
 ---
 
 ## What Are Blueprints?

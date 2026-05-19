@@ -4,6 +4,7 @@ description: "Complete Factorio flamethrower defense guide: wall layout, turret 
 date: 2026-05-18
 tags: ["defense", "base-design"]
 draft: false
+emoji: "🔥"
 ---
 
 I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don't care about biter armor.

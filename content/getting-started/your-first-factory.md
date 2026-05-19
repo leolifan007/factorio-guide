@@ -3,6 +3,7 @@ title: "Your First Factory — A Complete Beginner Walkthrough"
 description: "Step-by-step guide to building your first working factory in Factorio, from the first punch to automated red and green science."
 date: 2026-05-18
 tags: ["getting-started", "beginner", "tutorial"]
+emoji: "🏭"
 ---
 
 <!-- Article Hero -->

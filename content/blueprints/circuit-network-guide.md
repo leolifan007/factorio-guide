@@ -4,6 +4,7 @@ description: Learn Factorio circuit network from scratch. Step-by-step guide wit
 date: 2026-05-19
 tags: ["blueprints", "circuit-network"]
 draft: false
+emoji: "🔧"
 ---
 
 I spent my first 200 hours in Factorio ignoring the circuit network entirely. Red and green wires sat in my inventory unused. Every base I built eventually deadlocked — belts backed up, oil refineries ground to a halt, and train intersections turned into parking lots. The circuit network looked intimidating, so I skipped it.

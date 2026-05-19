@@ -3,6 +3,7 @@ title: "Basic Rail Network — Your First Train Setup"
 description: "How to build a simple but functional train network in Factorio. Covers tracks, signals, train stops, and schedules."
 date: 2026-05-18
 tags: ["trains-logistics", "trains", "logistics"]
+emoji: "🚂"
 ---
 
 ## When to Switch to Trains?

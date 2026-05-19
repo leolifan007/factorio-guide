@@ -3,6 +3,7 @@ title: "Red Science Pack — Automation Science Guide"
 description: "Everything about the first science pack in Factorio: exact recipe, assembler count, and how to automate it properly."
 date: 2026-05-18
 tags: ["science-packs", "getting-started"]
+emoji: "🔴"
 ---
 
 <!-- Article Hero -->

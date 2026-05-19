@@ -4,6 +4,7 @@ description: "Complete Factorio oil processing guide: refinery ratios, cracking 
 date: 2026-05-18
 tags: ["production-ratios", "base-design"]
 draft: false
+emoji: "🛢️"
 ---
 
 Oil processing is where most factory layouts fall apart. Unlike ore patches that just run, oil wells deplete over time, refineries produce three outputs at once, and if any of those outputs backs up, everything stops. I've rebuilt my refinery block more times than any other section of the factory.

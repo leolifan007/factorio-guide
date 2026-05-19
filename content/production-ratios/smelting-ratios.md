@@ -3,6 +3,7 @@ title: "Smelting Ratios — How Many Furnaces Per Belt"
 description: "Exact smelting ratios for iron, copper, steel, and stone. Never waste furnaces or belt capacity again."
 date: 2026-05-18
 tags: ["production-ratios", "smelting", "belts"]
+emoji: "🔥"
 ---
 
 ## The Core Concept

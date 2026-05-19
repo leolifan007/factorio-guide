@@ -4,6 +4,7 @@ description: Complete space platform guide for Factorio Space Age. Hub setup, th
 date: 2026-05-19
 tags: ["space-age", "space-platform"]
 draft: false
+emoji: "🚀"
 ---
 
 Your first space platform will probably explode. Mine did. Your second one will run out of fuel halfway to Gleba. Mine did that too. The third one might actually work if you know what you are doing.

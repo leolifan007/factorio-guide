@@ -4,6 +4,7 @@ description: "Complete Factorio nuclear power guide: reactor layout, heat pipe p
 date: 2026-05-18
 tags: ["base-design", "production-ratios"]
 draft: false
+emoji: "☢️"
 ---
 
 I put off nuclear for three playthroughs. Solar seemed simpler, steam seemed cheaper. Then I built my first 2×2 reactor and watched 480 MW light up from a single fuel cell. I haven't looked back.

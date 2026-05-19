@@ -4,6 +4,7 @@ description: Complete Gleba guide for Factorio Space Age. Spoilage mechanics, pe
 date: 2026-05-19
 tags: ["space-age", "gleba"]
 draft: false
+emoji: "🌿"
 ---
 
 Landing on Gleba for the first time is a shock. Your factory skills stop working here. Belts full of items rot before they reach the assembler. The local wildlife eats your walls like they are made of paper. And the science pack production chain is the most convoluted thing in all of Space Age.

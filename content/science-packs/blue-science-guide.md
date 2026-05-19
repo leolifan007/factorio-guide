@@ -4,6 +4,7 @@ description: "Complete blue science guide for Factorio: oil processing, recipe r
 date: 2026-05-18
 tags: ["science-packs", "production-ratios"]
 draft: false
+emoji: "🔵"
 ---
 
 Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
