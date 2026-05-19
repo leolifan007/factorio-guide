@@ -23,7 +23,7 @@ This guide takes you from opening the game to launching your first rocket. No pr
 
 ## Game Progression Timeline
 
-![Factorio Game Progression](/factorio-guide/images/flowcharts/progression-timeline.svg)
+{{< diagram "flowcharts/progression-timeline.svg" "Factorio Game Progression Timeline - 6 major phases from early game to rocket launch" "960" >}}
 
 The diagram above shows the 6 major phases of a standard Factorio playthrough. Each phase unlocks new mechanics and challenges.
 
