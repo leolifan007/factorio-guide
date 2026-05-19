@@ -1,25 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" style="background:#111;font-family:system-ui,sans-serif;">
-  <text x="300" y="30" fill="#e8941c" font-size="16" text-anchor="middle" font-weight="bold">Fluid Cracking Automation</text>
-  <rect x="40" y="70" width="100" height="60" rx="4" fill="#252525" stroke="#888" stroke-width="2"/>
-  <text x="90" y="100" fill="#ccc" font-size="12" text-anchor="middle">Storage Tank</text>
-  <text x="90" y="115" fill="#888" font-size="10" text-anchor="middle">Heavy Oil: 24k</text>
-  <line x1="140" y1="100" x2="200" y2="100" stroke="#c9463d" stroke-width="3"/>
-  <text x="170" y="90" fill="#c9463d" font-size="9" text-anchor="middle">red wire</text>
-  <rect x="200" y="70" width="100" height="60" rx="4" fill="#252525" stroke="#6abe30" stroke-width="2"/>
-  <text x="250" y="95" fill="#ccc" font-size="12" text-anchor="middle">Decider</text>
-  <text x="250" y="110" fill="#6abe30" font-size="10" text-anchor="middle">heavy > 20000</text>
-  <text x="250" y="122" fill="#888" font-size="9" text-anchor="middle">output H = 1</text>
-  <line x1="300" y1="100" x2="360" y2="100" stroke="#c9463d" stroke-width="3"/>
-  <text x="330" y="90" fill="#c9463d" font-size="9" text-anchor="middle">wire</text>
-  <rect x="360" y="70" width="100" height="60" rx="4" fill="#252525" stroke="#888" stroke-width="2"/>
-  <text x="410" y="100" fill="#ccc" font-size="12" text-anchor="middle">Pump</text>
-  <text x="410" y="115" fill="#888" font-size="10" text-anchor="middle">Cracking</text>
-  <polygon points="520,80 540,100 520,120" fill="#888" opacity="0.5"/>
-  <text x="530" y="140" fill="#888" font-size="10" text-anchor="middle">To cracking</text>
-  <text x="90" y="200" fill="#777" font-size="11" text-anchor="middle">Tank reads level</text>
-  <text x="250" y="200" fill="#777" font-size="11" text-anchor="middle">Condition check</text>
-  <text x="410" y="200" fill="#777" font-size="11" text-anchor="middle">Pump opens</text>
-  <line x1="90" y1="185" x2="90" y2="175" stroke="#444" stroke-width="1"/>
-  <line x1="250" y1="185" x2="250" y2="175" stroke="#444" stroke-width="1"/>
-  <line x1="410" y1="185" x2="410" y2="175" stroke="#444" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" style="background:#111;font-family:system-ui,sans-serif;">
+  <text x="400" y="35" fill="#e8941c" font-size="18" text-anchor="middle" font-weight="bold">Fluid Cracking Automation</text>
+
+  <!-- Storage Tank -->
+  <rect x="40" y="80" width="130" height="80" rx="6" fill="#252525" stroke="#888" stroke-width="2.5"/>
+  <text x="105" y="112" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Storage Tank</text>
+  <text x="105" y="134" fill="#888" font-size="12" text-anchor="middle">Heavy Oil: 24k</text>
+
+  <!-- Red wire -->
+  <line x1="170" y1="120" x2="245" y2="120" stroke="#c9463d" stroke-width="3.5"/>
+  <text x="208" y="108" fill="#c9463d" font-size="12" text-anchor="middle">red wire</text>
+
+  <!-- Decider -->
+  <rect x="248" y="80" width="130" height="80" rx="6" fill="#252525" stroke="#6abe30" stroke-width="2.5"/>
+  <text x="313" y="108" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Decider</text>
+  <text x="313" y="128" fill="#6abe30" font-size="12" text-anchor="middle">heavy > 20000</text>
+  <text x="313" y="146" fill="#888" font-size="11" text-anchor="middle">output H = 1</text>
+
+  <!-- Wire -->
+  <line x1="378" y1="120" x2="453" y2="120" stroke="#c9463d" stroke-width="3.5"/>
+  <text x="416" y="108" fill="#c9463d" font-size="12" text-anchor="middle">wire</text>
+
+  <!-- Pump -->
+  <rect x="456" y="80" width="130" height="80" rx="6" fill="#252525" stroke="#888" stroke-width="2.5"/>
+  <text x="521" y="112" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Pump</text>
+  <text x="521" y="136" fill="#888" font-size="12" text-anchor="middle">Cracking →</text>
+
+  <!-- Arrow -->
+  <polygon points="610,95 640,120 610,145" fill="#888" opacity="0.5"/>
+
+  <!-- Step labels -->
+  <text x="105" y="225" fill="#777" font-size="13" text-anchor="middle">① Tank reads level</text>
+  <text x="313" y="225" fill="#777" font-size="13" text-anchor="middle">② Condition check</text>
+  <text x="521" y="225" fill="#777" font-size="13" text-anchor="middle">③ Pump opens</text>
+
+  <line x1="105" y1="210" x2="105" y2="195" stroke="#444" stroke-width="1.5"/>
+  <line x1="313" y1="210" x2="313" y2="195" stroke="#444" stroke-width="1.5"/>
+  <line x1="521" y1="210" x2="521" y2="195" stroke="#444" stroke-width="1.5"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="280" fill="#555" font-size="13" text-anchor="middle">When heavy oil exceeds 20k, the decider activates the pump. Crack only when needed.</text>
 </svg>
