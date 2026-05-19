@@ -875,12 +875,11 @@ About/CTA Section ── */
 
 
 .about-card {
-  max-width: 1400px;
-  margin: 0 auto 2rem;
   background: var(--bg-card);
   border: 1px solid var(--steel-border);
   border-radius: var(--radius);
   padding: 1.8rem 2rem;
+  margin-bottom: 2rem;
   box-shadow: var(--shadow-card);
   border-top: 3px solid var(--f-orange);
   display: flex; gap: 2rem; align-items: flex-start;
@@ -905,8 +904,6 @@ About/CTA Section ── */
 .newsletter-cta strong { color: var(--f-green-lt); }
 
 .site-disclaimer {
-  max-width: 1400px;
-  margin: 0 auto;
   text-align: center;
   padding: 1.5rem;
   border-top: 1px solid var(--border-md);
