@@ -6,8 +6,6 @@ tags: ["getting-started", "beginner", "tutorial"]
 emoji: "🏭"
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background-image:url('/factorio-guide/images/hero-getting-started.svg');height:220px;background-size:cover;background-position:center;border-radius:8px;margin-bottom:1.5rem;"></div>
 
 > **Goal:** By the end of this guide, you will have a working factory producing the first 4 science packs (red, green, blue, gray) automatically.
 
