@@ -14,10 +14,10 @@ date: 2026-05-18
 
 | Planet | Challenge | Key Resource |
 |--------|-----------|--------------|
-| Gleba | Biological production, spoilage management | Bioflux, Ytelmi |
-| Fulgora | Lightning storms, scrap processing | Scrap, Teslonite |
-| Vulcanus | Lava oceans, extreme heat | Calcorite, Metagelix |
-| Aquilo | Frozen ocean, strict temperature management | Cryonite, Aquarian algae |
+| Gleba | Biological production, spoilage management | Bioflux, Yumako |
+| Fulgora | Lightning storms, scrap processing | Scrap, Holmium |
+| Vulcanus | Lava oceans, extreme heat | Tungsten, Calcite |
+| Aquilo | Frozen ocean, strict temperature management | Cryonite, Ice |
 
 ## Quality Module System
 
@@ -43,3 +43,10 @@ Space Age introduces **rocket logistics** — automated rocket launches between 
 4. Rockets launch automatically when cargo is ready
 
 > **Tip:** Plan your interplanetary supply chain early. Running out of a critical resource on a distant planet is a logistics nightmare.
+
+## Available Guides
+
+- **[Gleba Survival Guide](gleba-survival-guide)** — Spoilage management, pentapod defense, and science production
+- **[Fulgora Recycling Guide](fulgora-recycling-guide)** — Scrap processing, sorting, and EM Plant production
+- **[Space Platform Build Guide](space-platform-guide)** — Thruster fuel math, asteroid processing, and defense
+- **[Quality Modules Guide](quality-module-guide)** — Tier mechanics, probabilities, and production line design

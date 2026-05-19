@@ -292,6 +292,28 @@ blockquote::before {
   color: var(--f-orange-lt) !important;
 }
 
+/* ── Space Age Nav Button (special visual tier) ── */
+.nav-btn-space-age {
+  padding: 0.38rem 0.9rem;
+  border: 1px solid #b366ff;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(157,78,221,0.25), rgba(0,184,212,0.15));
+  color: var(--f-cyan) !important;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700; font-size: 0.85rem;
+  transition: all 0.15s;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 0 6px rgba(157,78,221,0.3);
+}
+.nav-btn-space-age:hover {
+  background: linear-gradient(135deg, rgba(157,78,221,0.4), rgba(0,184,212,0.3));
+  border-color: #9d4edd;
+  box-shadow: 0 0 14px rgba(157,78,221,0.5);
+  color: #ffffff !important;
+}
+
 /* ========================================
    PAGE WRAPPER
    ======================================== */
@@ -370,6 +392,79 @@ blockquote::before {
 }
 
 .hero-cta { display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap; }
+
+.hero-btn-space {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border: 1.5px solid #b366ff;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(157,78,221,0.35), rgba(0,184,212,0.2));
+  color: #ffffff !important;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 0 12px rgba(157,78,221,0.35);
+}
+.hero-btn-space:hover {
+  background: linear-gradient(135deg, rgba(157,78,221,0.55), rgba(0,184,212,0.35));
+  border-color: #9d4edd;
+  box-shadow: 0 0 24px rgba(157,78,221,0.6);
+  transform: translateY(-2px);
+}
+
+/* ── Space Age Badge on Featured Card ── */
+.guide-card-badge {
+  position: absolute; top: 8px; right: 8px;
+  z-index: 2;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, #9d4edd, #00b8d4);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700; font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(157,78,221,0.4);
+}
+
+/* ── Space Age Topic Card (enlarged) ── */
+.topic-card-space-age {
+  grid-column: 1 / -1;
+  display: flex; align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--bg-card);
+  border: 1.5px solid rgba(157,78,221,0.4);
+  border-radius: var(--radius);
+  transition: all 0.15s;
+  cursor: default;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(157,78,221,0.2);
+}
+.topic-card-space-age:hover {
+  background: var(--bg-card-hover);
+  border-color: #9d4edd;
+  box-shadow: 0 0 18px rgba(157,78,221,0.35);
+}
+.topic-card-space-age .topic-card-top {
+  width: 6px; height: 48px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.topic-card-space-age .topic-body { flex: 1; }
+.topic-card-space-age h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: var(--f-cyan);
+  margin-bottom: 0.15rem;
+}
+.topic-card-space-age .topic-count {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
 
 /* ── Buttons ── */
 .btn {
