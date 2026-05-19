@@ -38,15 +38,13 @@
       <div class="section-nav-title">{{ .Title }}</div>
       <div class="section-nav-list">
         <!-- About this section -->
-        <a href="#overview" class="section-nav-item is-overview" data-url="overview" data-target="overview">
-          <span class="section-nav-icon">i</span>
+        <a href="#overview" class="section-nav-item" data-url="overview" data-target="overview">
           <span class="section-nav-name">About this section</span>
         </a>
 
         {{ $pages := .Pages.ByDate.Reverse }}
         {{ range $i, $p := $pages }}
         <a href="{{ $p.RelPermalink }}" class="section-nav-item" data-url="{{ $p.RelPermalink }}" data-target="article">
-          {{ with $p.Params.emoji }}<span class="section-nav-icon">{{ . }}</span>{{ else }}<span class="section-nav-icon">{{ substr $p.Title 0 1 }}</span>{{ end }}
           <span class="section-nav-name">{{ $p.Title }}</span>
           {{ if lt $i 2 }}<span class="section-nav-badge">{{ if eq $i 0 }}LATEST{{ else }}NEW{{ end }}</span>{{ end }}
         </a>
