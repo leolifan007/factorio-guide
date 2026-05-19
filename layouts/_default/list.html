@@ -49,10 +49,22 @@
     <!-- Center: Article List -->
     <div class="article-center">
       <div class="article-content" id="article-content">
-        {{ .Content | safeHTML }}
+        <!-- Article Index -->
+        <div class="article-index">
+          <span class="article-index-title">Articles in this section</span>
+          <div class="article-index-list">
+            {{ range $i, $p := .Pages }}
+            <a href="{{ $p.RelPermalink }}" class="article-index-link">
+              <span class="article-index-num">{{ add $i 1 }}</span>
+              <span class="article-index-name">{{ $p.Title }}</span>
+              <span class="article-index-date">{{ $p.Date.Format "Jan 2" }}</span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
 
         <!-- Article Cards Grid -->
-        <div class="guide-grid" style="margin-top:2rem;">
+        <div class="guide-grid" style="margin-top:1.5rem;">
           {{ range .Pages }}
           <a href="{{ .RelPermalink }}" class="guide-card">
             <div class="card-thumb" style="background:linear-gradient(135deg,#2a2a2a,#3d3d20);display:flex;align-items:center;justify-content:center;">
@@ -73,6 +85,14 @@
           </a>
           {{ end }}
         </div>
+
+            <!-- Section Overview (collapsible) -->
+        <details class="section-overview">
+          <summary>About this section</summary>
+          <div class="section-overview-body">
+            {{ .Content | safeHTML }}
+          </div>
+        </details>
 
       </div>
     </div>
