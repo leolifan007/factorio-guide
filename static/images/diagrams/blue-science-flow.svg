@@ -1,65 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 530" width="820" height="530">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
   <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect width="820" height="530" fill="#1f1f1f" rx="6"/>
-  <line x1="0" y1="60" x2="820" y2="60" stroke="#333"/>
-  <text x="527" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#3778c8">BLUE SCIENCE — OIL TO CHEMICIAL SCIENCE</text>
-  <!-- Oil Wells → Refinery -->
-  <rect x="30" y="90" width="126" height="74" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="108" y="112" text-anchor="middle" font-size="10" fill="#888">Oil Well × 4+</text>
-  <text x="108" y="130" text-anchor="middle" font-size="9" fill="#666">Crude Oil</text>
-  <line x1="187" y1="122" x2="226" y2="122" stroke="#3778c8" stroke-width="2"/>
-  <polygon points="226,118 237,122 226,126" fill="#3778c8"/>
-  <!-- Refinery -->
-  <rect x="239" y="85" width="126" height="86" rx="4" fill="#2a2a2a" stroke="#555"/>
-  <text x="318" y="108" text-anchor="middle" font-size="10" fill="#888">Refinery × 2</text>
-  <text x="318" y="126" text-anchor="middle" font-size="9" fill="#666">Basic Processing</text>
-  <text x="318" y="142" text-anchor="middle" font-size="8" fill="#555">Crude → 3 outputs</text>
-  <!-- Three outputs -->
-  <line x1="396" y1="95" x2="436" y2="95" stroke="#8b4513" stroke-width="1.5"/>
-  <rect x="436" y="80" width="105" height="34" rx="3" fill="#2a2a2a" stroke="#8b4513"/>
-  <text x="501" y="99" text-anchor="middle" font-size="9" fill="#d4a017">Heavy → Lube</text>
-  <line x1="396" y1="122" x2="436" y2="122" stroke="#d4a017" stroke-width="1.5"/>
-  <rect x="436" y="107" width="105" height="34" rx="3" fill="#2a2a2a" stroke="#d4a017"/>
-  <text x="501" y="126" text-anchor="middle" font-size="9" fill="#f0c040">Light → Solid Fuel</text>
-  <line x1="396" y1="150" x2="436" y2="150" stroke="#5599ee" stroke-width="2"/>
-  <rect x="436" y="135" width="105" height="34" rx="3" fill="#2a2a2a" stroke="#5599ee"/>
-  <text x="501" y="154" text-anchor="middle" font-size="9" fill="#88bbff">Petroleum → Plastic</text>
-  <!-- Plastic → Blue Science -->
-  <line x1="567" y1="150" x2="619" y2="150" stroke="#5599ee" stroke-width="2"/>
-  <polygon points="619,146 630,150 619,154" fill="#5599ee"/>
-  <rect x="632" y="130" width="126" height="46" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="711" y="148" text-anchor="middle" font-size="9" fill="#888">Chemical Plant × 2</text>
-  <text x="711" y="162" text-anchor="middle" font-size="8" fill="#666">Plastic</text>
-  <!-- Coal branch -->
-  <rect x="632" y="80" width="84" height="40" rx="3" fill="#2a2a2a" stroke="#444"/>
-  <text x="685" y="102" text-anchor="middle" font-size="10" fill="#888">Coal</text>
-  <line x1="685" y1="115" x2="711" y2="130" stroke="#444"/>
-  <!-- Steel + Gear + Pipe → Engine -->
-  <rect x="30" y="200" width="126" height="63" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="108" y="222" text-anchor="middle" font-size="10" fill="#888">Engine Assembly</text>
-  <text x="108" y="240" text-anchor="middle" font-size="8" fill="#666">2 Steel + 1 Gear + 1 Pipe</text>
-  <line x1="187" y1="228" x2="252" y2="228" stroke="#3778c8" stroke-width="2"/>
-  <polygon points="252,224 263,228 252,232" fill="#3778c8"/>
-  <!-- Sulfur branch -->
-  <rect x="30" y="280" width="126" height="63" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="108" y="302" text-anchor="middle" font-size="10" fill="#888">Sulfur Production</text>
-  <text x="108" y="320" text-anchor="middle" font-size="8" fill="#666">Petro + Water → 2 Sulfur</text>
-  <line x1="187" y1="308" x2="252" y2="308" stroke="#3778c8" stroke-width="2"/>
-  <polygon points="252,304 263,308 252,312" fill="#3778c8"/>
-  <!-- Blue Science Assembly -->
-  <rect x="265" y="200" width="210" height="149" rx="4" fill="#1a3a5c" stroke="#3778c8" stroke-width="1.5"/>
-  <text x="396" y="228" text-anchor="middle" font-size="12" fill="#3778c8" font-weight="700">Chemical Science Pack</text>
-  <text x="396" y="248" text-anchor="middle" font-size="10" fill="#88ccff">Assembler × 5</text>
-  <text x="396" y="270" text-anchor="middle" font-size="9" fill="#888">×1 Red Circuit</text>
-  <text x="396" y="286" text-anchor="middle" font-size="9" fill="#888">×1 Engine Unit</text>
-  <text x="396" y="302" text-anchor="middle" font-size="9" fill="#888">×1 Sulfur</text>
-  <text x="396" y="318" text-anchor="middle" font-size="8" fill="#555">12s craft time</text>
-  <!-- Output -->
-  <line x1="527" y1="265" x2="593" y2="265" stroke="#3778c8" stroke-width="2"/>
-  <polygon points="593,261 603,265 593,269" fill="#3778c8"/>
-  <rect x="606" y="240" width="105" height="57" rx="4" fill="#2a2a2a" stroke="#444"/>
-  <text x="672" y="268" text-anchor="middle" font-size="10" fill="#999">Labs</text>
-  <text x="672" y="284" text-anchor="middle" font-size="8" fill="#666">Tier 3 science</text>
-  <!-- Note -->
-  <text x="527" y="400" text-anchor="middle" font-size="9" fill="#555">Tip: 1 Sulfur plant supplies ~10 blue science assemblers</text>
+  <rect width="1000" height="620" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="#3778c8">BLUE SCIENCE — OIL TO CHEMICAL SCIENCE</text>
+
+  <!-- ===== Oil Wells ===== -->
+  <rect x="40" y="100" width="160" height="80" rx="5" fill="#2a2a2a" stroke="#444"/>
+  <text x="120" y="128" text-anchor="middle" font-size="13" fill="#888">Oil Well × 4+</text>
+  <text x="120" y="152" text-anchor="middle" font-size="12" fill="#666">Crude Oil Output</text>
+
+  <line x1="200" y1="140" x2="260" y2="140" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="260,135 275,140 260,145" fill="#3778c8"/>
+
+  <!-- ===== Refinery ===== -->
+  <rect x="278" y="95" width="160" height="92" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="358" y="122" text-anchor="middle" font-size="13" fill="#888">Refinery × 2</text>
+  <text x="358" y="144" text-anchor="middle" font-size="12" fill="#666">Basic Processing</text>
+  <text x="358" y="168" text-anchor="middle" font-size="12" fill="#555">Crude → 3 Outputs</text>
+
+  <!-- ===== Three Output Branches ===== -->
+  <!-- Heavy Oil -->
+  <line x1="438" y1="105" x2="488" y2="105" stroke="#8b4513" stroke-width="2"/>
+  <rect x="491" y="85" width="140" height="42" rx="4" fill="#2a2a2a" stroke="#8b4513"/>
+  <text x="561" y="110" text-anchor="middle" font-size="13" fill="#d4a017">Heavy → Lube</text>
+
+  <!-- Light Oil -->
+  <line x1="438" y1="140" x2="488" y2="140" stroke="#d4a017" stroke-width="2"/>
+  <rect x="491" y="120" width="140" height="42" rx="4" fill="#2a2a2a" stroke="#d4a017"/>
+  <text x="561" y="145" text-anchor="middle" font-size="13" fill="#f0c040">Light → Solid Fuel</text>
+
+  <!-- Petroleum -->
+  <line x1="438" y1="178" x2="488" y2="178" stroke="#5599ee" stroke-width="2.5"/>
+  <rect x="491" y="156" width="140" height="42" rx="4" fill="#2a2a2a" stroke="#5599ee"/>
+  <text x="561" y="182" text-anchor="middle" font-size="13" fill="#88bbff">Petroleum → Plastic</text>
+
+  <!-- ===== Plastic Plant ===== -->
+  <line x1="631" y1="178" x2="688" y2="178" stroke="#5599ee" stroke-width="2.5"/>
+  <polygon points="688,173 703,178 688,183" fill="#5599ee"/>
+  <rect x="706" y="155" width="155" height="54" rx="5" fill="#2a2a2a" stroke="#444"/>
+  <text x="784" y="178" text-anchor="middle" font-size="13" fill="#888">Chemical Plant × 2</text>
+  <text x="784" y="200" text-anchor="middle" font-size="12" fill="#666">Plastic Production</text>
+
+  <!-- Coal feeder -->
+  <rect x="706" y="86" width="120" height="48" rx="4" fill="#2a2a2a" stroke="#444"/>
+  <text x="766" y="112" text-anchor="middle" font-size="14" fill="#888">Coal Input</text>
+  <line x1="766" y1="134" x2="784" y2="155" stroke="#444" stroke-width="1.5"/>
+
+  <!-- ===== Engine Assembly ===== -->
+  <rect x="40" y="225" width="160" height="75" rx="5" fill="#2a2a2a" stroke="#444"/>
+  <text x="120" y="252" text-anchor="middle" font-size="13" fill="#888">Engine Assembly</text>
+  <text x="120" y="276" text-anchor="middle" font-size="12" fill="#666">2 Steel + Gear + Pipe</text>
+
+  <line x1="200" y1="262" x2="280" y2="262" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="280,257 295,262 280,267" fill="#3778c8"/>
+
+  <!-- ===== Sulfur Plant ===== -->
+  <rect x="40" y="325" width="160" height="75" rx="5" fill="#2a2a2a" stroke="#444"/>
+  <text x="120" y="352" text-anchor="middle" font-size="13" fill="#888">Sulfur Production</text>
+  <text x="120" y="376" text-anchor="middle" font-size="12" fill="#666">Petro + Water → Sulfur</text>
+
+  <line x1="200" y1="362" x2="280" y2="362" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="280,357 295,362 280,367" fill="#3778c8"/>
+
+  <!-- ===== Blue Science Assembly (centerpiece) ===== -->
+  <rect x="298" y="232" width="260" height="195" rx="6" fill="#1a3a5c" stroke="#3778c8" stroke-width="2"/>
+  <text x="428" y="262" text-anchor="middle" font-size="16" fill="#3778c8" font-weight="700">Chemical Science Pack</text>
+  <text x="428" y="288" text-anchor="middle" font-size="14" fill="#88ccff">Assembler × 5</text>
+
+  <line x1="298" y1="302" x2="558" y2="302" stroke="#3778c8" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="428" y="322" text-anchor="middle" font-size="13" fill="#999">×1 Red Circuit (from bus)</text>
+  <text x="428" y="342" text-anchor="middle" font-size="13" fill="#999">×1 Engine Unit</text>
+  <text x="428" y="362" text-anchor="middle" font-size="13" fill="#999">×1 Sulfur</text>
+
+  <line x1="298" y1="376" x2="558" y2="376" stroke="#3778c8" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="428" y="400" text-anchor="middle" font-size="12" fill="#555">12s craft time per pack</text>
+
+  <!-- ===== Output to Labs ===== -->
+  <line x1="558" y1="310" x2="645" y2="310" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="645,305 660,310 645,315" fill="#3778c8"/>
+
+  <rect x="663" y="285" width="140" height="64" rx="5" fill="#2a2a2a" stroke="#444"/>
+  <text x="733" y="314" text-anchor="middle" font-size="14" fill="#999">Labs</text>
+  <text x="733" y="338" text-anchor="middle" font-size="12" fill="#666">Tier 3 — Blue Science</text>
+
+  <!-- ===== Notes ===== -->
+  <text x="500" y="510" text-anchor="middle" font-size="14" fill="#555">Tip: 1 Sulfur chemical plant supplies ~10 blue science assemblers</text>
+  <text x="500" y="535" text-anchor="middle" font-size="14" fill="#555">Always build 2 refineries minimum — 1 refinery can't feed both plastic and sulfur</text>
+
+  <!-- Legend -->
+  <rect x="130" y="490" width="12" height="12" rx="2" fill="#2a2a2a" stroke="#3778c8" stroke-width="1.5"/>
+  <text x="148" y="501" font-size="12" fill="#888">Petroleum/Chemical path</text>
+  <rect x="130" y="510" width="12" height="12" rx="2" fill="#2a2a2a" stroke="#444"/>
+  <text x="148" y="521" font-size="12" fill="#888">Material bus path</text>
 </svg>
