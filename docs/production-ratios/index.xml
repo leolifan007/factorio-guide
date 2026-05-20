@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Production Ratios — Factorio Ratio Reference on Factorio Guide</title>
+    <link>https://factorioguides.com/production-ratios/</link>
+    <description>Recent content in Production Ratios — Factorio Ratio Reference on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/production-ratios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oil Processing — Ratios, Cracking, and Refinery Setup</title>
+      <link>https://factorioguides.com/production-ratios/oil-processing-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid>
+      <description>&lt;p&gt;Oil processing is where most factory layouts fall apart. Unlike ore patches that just run, oil wells deplete over time, refineries produce three outputs at once, and if any of those outputs backs up, everything stops. I&#39;ve rebuilt my refinery block more times than any other section of the factory.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build 8 refineries with advanced processing. Crack heavy→light (1 plant), light→petroleum (7 plants). That&#39;s the magic 8:1:7 ratio. No backups, maximum plastic throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Basic vs. Advanced Refining&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;You start with basic refining, but you&#39;ll want advanced as soon as possible.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smelting Ratios — How Many Furnaces Per Belt</title>
+      <link>https://factorioguides.com/production-ratios/smelting-ratios/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid>
+      <description>&lt;h2 id=&#34;the-core-concept&#34;&gt;The Core Concept&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.&#xA;An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iron-and-copper-smelting&#34;&gt;Iron and Copper Smelting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Belt Type&lt;/th&gt;&#xA;          &lt;th&gt;Plates/sec&lt;/th&gt;&#xA;          &lt;th&gt;Stone Furnaces&lt;/th&gt;&#xA;          &lt;th&gt;Electric Furnaces&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (half)&lt;/td&gt;&#xA;          &lt;td&gt;3.75&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (full)&lt;/td&gt;&#xA;          &lt;td&gt;7.5&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fast belt&lt;/td&gt;&#xA;          &lt;td&gt;15&lt;/td&gt;&#xA;          &lt;td&gt;48&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Express belt&lt;/td&gt;&#xA;          &lt;td&gt;22.5&lt;/td&gt;&#xA;          &lt;td&gt;72&lt;/td&gt;&#xA;          &lt;td&gt;36&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;steel-smelting&#34;&gt;Steel Smelting&lt;/h2&gt;&#xA;&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

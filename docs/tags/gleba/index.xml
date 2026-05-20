@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gleba on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/gleba/</link>
+    <description>Recent content in Gleba on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gleba Survival Guide — How to Beat the Spoilage Planet</title>
+      <link>https://factorioguides.com/space-age/gleba-survival-guide/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid>
+      <description>&lt;p&gt;Landing on Gleba for the first time is a shock. Your factory skills stop working here. Belts full of items rot before they reach the assembler. The local wildlife eats your walls like they are made of paper. And the science pack production chain is the most convoluted thing in all of Space Age.&lt;/p&gt;&#xA;&lt;p&gt;I lost two bases on Gleba before figuring out the rhythm. The spoilage timer changes everything. Every factory principle you learned on Nauvis — buffer chests, belt loops, long production chains — works against you here. Here is the approach that finally worked.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

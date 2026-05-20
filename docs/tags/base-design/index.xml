@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Base-Design on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/base-design/</link>
+    <description>Recent content in Base-Design on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/base-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>City Block Design Guide — Modular Megabase Layout</title>
+      <link>https://factorioguides.com/base-design/city-block-guide/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/base-design/city-block-guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flamethrower Defense — Advanced Wall &amp; Turret Layout</title>
+      <link>https://factorioguides.com/defense/flamethrower-defense-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid>
+      <description>&lt;p&gt;I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don&#39;t care about biter armor.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a wall with flamethrower turrets every 4 tiles, gun turrets every 2 tiles, and a single crude oil pipe behind them. One pumpjack at minimum speed supplies 30+ turrets. Add repair bots and you&#39;re set for the entire game.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Flamethrower Turrets?&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Each turret type has trade-offs:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Main Bus Design — The Classic Factorio Base Layout</title>
+      <link>https://factorioguides.com/base-design/main-bus-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/base-design/main-bus-guide/</guid>
+      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;&#34;&gt;MAIN BUS LAYOUT&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-a-main-bus&#34;&gt;What Is a Main Bus?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;main bus&lt;/strong&gt; is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong&gt;pull&lt;/strong&gt; from the bus and &lt;strong&gt;push&lt;/strong&gt; finished products back onto it.&lt;/p&gt;&#xA;&lt;p&gt;Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recommended-bus-width&#34;&gt;Recommended Bus Width&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Material&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Basic Belt)&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Fast/Express)&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Iron plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Copper plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Steel plates&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Green circuits&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Plastic bars&lt;/td&gt;&#xA;          &lt;td&gt;1-2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coal&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Stone&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Pro tip:&lt;/strong&gt; Build your bus with &lt;strong&gt;space between lanes&lt;/strong&gt;. You need room for underground belts to cross lanes and for inserters to pull items off the bus.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;how-to-build-it&#34;&gt;How to Build It&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-clear-a-large-area&#34;&gt;Step 1: Clear a Large Area&lt;/h3&gt;&#xA;&lt;p&gt;You need at least &lt;strong&gt;200 tiles wide&lt;/strong&gt; and &lt;strong&gt;unlimited depth&lt;/strong&gt;. The bus grows as you research more technologies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuclear Power — Complete Setup Guide</title>
+      <link>https://factorioguides.com/base-design/nuclear-power-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/base-design/nuclear-power-guide/</guid>
+      <description>&lt;p&gt;I put off nuclear for three playthroughs. Solar seemed simpler, steam seemed cheaper. Then I built my first 2×2 reactor and watched 480 MW light up from a single fuel cell. I haven&#39;t looked back.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a 2×2 reactor block for 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps. One centrifuge running Kovarex fuels it forever.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Go Nuclear?&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Nuclear isn&#39;t the cheapest option, but it&#39;s the best middle ground for a mid-to-late game factory:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oil Processing — Ratios, Cracking, and Refinery Setup</title>
+      <link>https://factorioguides.com/production-ratios/oil-processing-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid>
+      <description>&lt;p&gt;Oil processing is where most factory layouts fall apart. Unlike ore patches that just run, oil wells deplete over time, refineries produce three outputs at once, and if any of those outputs backs up, everything stops. I&#39;ve rebuilt my refinery block more times than any other section of the factory.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build 8 refineries with advanced processing. Crack heavy→light (1 plant), light→petroleum (7 plants). That&#39;s the magic 8:1:7 ratio. No backups, maximum plastic throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Basic vs. Advanced Refining&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;You start with basic refining, but you&#39;ll want advanced as soon as possible.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
