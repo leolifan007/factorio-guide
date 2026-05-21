@@ -1,19 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Space-Platform on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/space-platform/</link>
-    <description>Recent content in Space-Platform on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/space-platform/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Space Platform Build Guide — Design and Defense</title>
-      <link>https://factorioguides.com/space-age/space-platform-guide/</link>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/space-age/space-platform-guide/</guid>
-      <description>&lt;p&gt;Your first space platform will probably explode. Mine did. Your second one will run out of fuel halfway to Gleba. Mine did that too. The third one might actually work if you know what you are doing.&lt;/p&gt;&#xA;&lt;p&gt;A space platform is a ship that travels between planets. It needs propulsion, power, and the ability to handle asteroid collisions. The design space is wide open, but the constraints are tight. Here is everything I learned across three failed iterations and one successful one.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Space-Platform on Factorio Guide</title><link>https://factorioguides.com/tags/space-platform/</link><description>Recent content in Space-Platform on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/space-platform/index.xml" rel="self" type="application/rss+xml"/><item><title>Space Platform Build Guide — Design and Defense</title><link>https://factorioguides.com/space-age/space-platform-guide/</link><pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/space-platform-guide/</guid><description>&lt;p&gt;Your first space platform will probably explode. Mine did. Your second one will run out of fuel halfway to Gleba. Mine did that too. The third one might actually work if you know what you are doing.&lt;/p&gt;
+&lt;p&gt;A space platform is a ship that travels between planets. It needs propulsion, power, and the ability to handle asteroid collisions. The design space is wide open, but the constraints are tight. Here is everything I learned across three failed iterations and one successful one.&lt;/p&gt;</description></item></channel></rss>
