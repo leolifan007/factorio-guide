@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Complete space platform guide for Factorio Space Age. Hub setup, thruster fuel ratios, asteroid processing, platform defense designs, and cargo management for interplanetary travel.">
-  <title>Space Platform Build Guide — Design and Defense | Factorio Guide</title>
+  <meta name="description" content="Space platform design for Factorio Space Age. Thruster ratio, platform weight, asteroid defense, platform hub setup, and the 3-stage build order that gets you to Gleba alive.">
+  <title>Space Platform Design Guide | Factorio Guide</title>
 
   
   <link rel="canonical" href="https://factorioguides.com/space-age/space-platform-guide/">
@@ -26,8 +26,8 @@
   
 
   
-  <meta property="og:title" content="Space Platform Build Guide — Design and Defense">
-  <meta property="og:description" content="Complete space platform guide for Factorio Space Age. Hub setup, thruster fuel ratios, asteroid processing, platform defense designs, and cargo management for interplanetary travel.">
+  <meta property="og:title" content="Space Platform Design Guide">
+  <meta property="og:description" content="Space platform design for Factorio Space Age. Thruster ratio, platform weight, asteroid defense, platform hub setup, and the 3-stage build order that gets you to Gleba alive.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://factorioguides.com/space-age/space-platform-guide/">
 </head>
@@ -59,7 +59,7 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>Space Platform Build Guide — Design and Defense</h1><p class="article-desc">Complete space platform guide for Factorio Space Age. Hub setup, thruster fuel ratios, asteroid processing, platform defense designs, and cargo management for interplanetary travel.</p>
+      <h1>Space Platform Design Guide</h1><p class="article-desc">Space platform design for Factorio Space Age. Thruster ratio, platform weight, asteroid defense, platform hub setup, and the 3-stage build order that gets you to Gleba alive.</p>
       <div class="article-meta">
         <span class="meta-item">
           
@@ -69,7 +69,7 @@
             <line x1="5" y1="1" x2="5" y2="4"/>
             <line x1="9" y1="1" x2="9" y2="4"/>
           </svg>
-          Updated: May 19, 2026
+          Updated: May 21, 2026
         </span>
         <span class="meta-item">
           
@@ -78,7 +78,7 @@
             <line x1="7" y1="4" x2="7" y2="7"/>
             <line x1="7" y1="7" x2="10" y2="9"/>
           </svg>
-          7 min read
+          5 min read
         </span>
         <span class="meta-item">
           
@@ -122,173 +122,155 @@
           <a href="/space-age/">Space Age Expansion Guide</a>
           
           <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">Space Platform Build Guide — Design and Defense</span>
+          <span class="breadcrumb-current">Space Platform Design Guide</span>
         </nav>
 
-        <p>A space platform needs propulsion, power, and asteroid defense to travel between planets. The thruster-to-weight ratio determines speed, crushers keep fuel flowing mid-journey, and walls protect critical components. Below is the build order that works on the first try.</p>
-<div class="pro-tip"><strong>TL;DR:</strong> A minimal platform needs a hub at the front, thrusters at the back, asteroid collectors on the sides, fuel processing in the middle, and walls around anything fragile. Design for the cargo bay first, then add thrusters to match the weight. The thruster-to-weight ratio is the only number that matters. Overbuild crushers — running out mid-journey is the most common failure.</div>
+        <p>The space platform you just launched is drifting toward Gleba without enough fuel to brake. The thrusters are starved, the crushers aren't running, and the asteroids have punched a hole through your ammo belt. Here's the build order that prevents that from happening: build the hub → fuel plant → ammo production → thrusters → go.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Build your platform in this order: hub → crushers/chemical plants → ammo assemblers → thrusters → go. Keep platform weight under 100 tons for first trips. One thruster per 50 tons minimum thrust-to-weight ratio.</div>
 
-<div class="section-head"><h2>Platform Anatomy — Front to Back</h2></div>
-
-<p>Every platform has the same basic layout from front to back:</p>
-<ol>
-<li><strong>Hub</strong> — command center at the very front, manages cargo and provides initial power</li>
-<li><strong>Asteroid collectors</strong> — gather raw materials from space on both sides</li>
-<li><strong>Crusher array</strong> — processes asteroids into iron ore, copper ore, carbon, ice, and calcite</li>
-<li><strong>Fuel production</strong> — chemical plants making thruster fuel and oxidizer</li>
-<li><strong>Fuel storage</strong> — tanks for thruster fuel and oxidizer</li>
-<li><strong>Thrusters</strong> — propulsion units at the very rear</li>
-</ol>
-<p>The hub must be at the front. The thrusters must be at the back with clear space behind them for the exhaust. Nothing can be placed directly behind a thruster — the exhaust flame damages buildings.</p>
-<img src="/images/diagrams/platform-layout.svg" alt="Space platform side view showing hub at front, collectors on sides, processing mid-section, and thrusters at rear" class="schema-diagram" loading="lazy" width="700">
-
-<p>Platform tiles come in two types: foundation (standard) and scaffolding (lightweight). Use scaffolding behind thrusters only — it is cheaper but has less health.</p>
-<div class="section-head"><h2>Thruster Fuel Math</h2></div>
-
-<p>Thrusters consume thruster fuel (made from iron ore, calcite, and water) and oxidizer (made from iron ore and water). The consumption rate depends on how many thrusters are active and your speed setting.</p>
-<p>Here is the fuel math for a medium-sized platform carrying 6 cargo bays:</p>
+<h2 id="the-mechanics-behind-space-travel">The Mechanics Behind Space Travel</h2>
+<p>Space platforms are ships that fly between planets. They have five essential systems:</p>
 <table>
   <thead>
       <tr>
-          <th>Component</th>
-          <th style="text-align: center">Fuel per second</th>
-          <th style="text-align: center">Oxidizer per second</th>
+          <th style="text-align: left">System</th>
+          <th style="text-align: left">Purpose</th>
+          <th style="text-align: left">What can go wrong</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>1 thruster at cruising speed</td>
-          <td style="text-align: center">4.5</td>
-          <td style="text-align: center">3.0</td>
+          <td style="text-align: left">Hub</td>
+          <td style="text-align: left">Core of the platform. Stores items, provides power</td>
+          <td style="text-align: left">Running out of building materials mid-flight</td>
       </tr>
       <tr>
-          <td>1 thruster at full burn</td>
-          <td style="text-align: center">12.0</td>
-          <td style="text-align: center">8.0</td>
+          <td style="text-align: left">Crushers</td>
+          <td style="text-align: left">Break asteroids into ice, iron, carbon</td>
+          <td style="text-align: left">Not enough collectors → no fuel</td>
       </tr>
       <tr>
-          <td>4 thrusters at full burn</td>
-          <td style="text-align: center">48.0</td>
-          <td style="text-align: center">32.0</td>
+          <td style="text-align: left">Thrusters</td>
+          <td style="text-align: left">Move the platform</td>
+          <td style="text-align: left">Too much mass → too slow to escape asteroids</td>
       </tr>
       <tr>
-          <td>4 thrusters at cruising</td>
-          <td style="text-align: center">18.0</td>
-          <td style="text-align: center">12.0</td>
+          <td style="text-align: left">Turrets</td>
+          <td style="text-align: left">Shoot asteroids before they hit</td>
+          <td style="text-align: left">Ammo runs out before the trip ends</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Collectors</td>
+          <td style="text-align: left">Catch passing asteroids</td>
+          <td style="text-align: left">Placed too far back → catch nothing</td>
       </tr>
   </tbody>
 </table>
-<p>A single chemical plant making thruster fuel supports about 2 thrusters at cruising speed. For 4 thrusters at full burn, you need 2 chemical plants for fuel and 2 for oxidizer.</p>
-<div class="pro-tip">Do not run thrusters at full speed the whole trip. Pulse them. Full burn until you hit cruising velocity, then throttle to 50% for the rest of the journey. This halves fuel consumption and gives your crushers time to restock for the next burn.</div>
+<img src="/images/diagrams/space-platform-layout.svg" alt="Space platform layout with hub, crushers, ammo line, and thruster row" class="schema-diagram" loading="lazy" width="760">
 
-<p>I add 50% extra crusher capacity beyond what the math says. Running out of iron mid-journey is a disaster — your platform drifts with no way to repair.</p>
-<div class="section-head"><h2>Asteroid Processing — In-Flight Supply Chain</h2></div>
+<h2 id="the-proven-fix--stage-1-build-order-first-platform">The Proven Fix — Stage 1 Build Order (First Platform)</h2>
+<p>Build in this exact order on Nauvis orbit:</p>
+<p><strong>Stage 1 — The hub and foundation.</strong>
+Place the hub. Extend a row of foundation tiles forward (direction of travel). This is your spine. Start with 20 tiles.</p>
+<p><strong>Stage 2 — Fuel production (crushers + chemical plants).</strong>
+Place 3 asteroid collectors on the front edge. Behind them, 2 crushers (set to ice crushing). Behind crushers, 2 chemical plants making thruster fuel. Run pipes: ice → crusher → water → chemical plant → fuel → thruster.</p>
+<p><strong>Stage 3 — Ammo production.</strong>
+Behind the fuel line: 2 more crushers (iron ore crushing) feeding 1 assembling machine making magazines. Run ammo belt forward to the turrets.</p>
+<p><strong>Stage 4 — Turrets.</strong>
+Place 3-4 gun turrets on the front edge of the platform, overlapping fields of fire. Feed them from the ammo belt.</p>
+<p><strong>Stage 5 — Thrusters and go.</strong>
+2 thrusters at the back. Start with 1 thruster fuel tank (5 storage). Set target: first planet fuel stop. Launch.</p>
+<div class="pro-tip"><strong>Quick Tip:</strong> The ratio that trips up most first-time platform builders: one crusher produces enough water to feed exactly 2 chemical plants making thruster fuel. Overbuild crushers (not chemical plants) if you need more. Platforms that stall mid-journey almost always stalled because crushers were underbuilt and fuel stopped flowing.</div>
 
-<p>Asteroids come in three types, each requiring a different crusher recipe:</p>
+<h2 id="the-thrust-to-weight-problem">The Thrust-to-Weight Problem</h2>
+<p>Platform weight is the #1 killer of first platforms. Each tile of foundation adds mass. Each building adds mass. Total mass determines how fast your thrusters can push:</p>
 <ul>
-<li><strong>Metallic asteroids</strong> — crushed into iron ore (primary) and copper ore (secondary)</li>
-<li><strong>Carbonic asteroids</strong> — crushed into carbon (primary) and coal (secondary)</li>
-<li><strong>Oxide asteroids</strong> — crushed into ice (primary) and calcite (secondary)</li>
+<li>Start with total weight under 100 tons</li>
+<li>2 thrusters push 100 tons at ~50 km/s (enough to reach any inner planet)</li>
+<li>Double thrusters for every 100 tons above that</li>
+<li>The thruster tip: place fuel tanks directly adjacent to thrusters. No pipes needed. Pipe runs between fuel production and thrusters are fine, but the last connection to the thruster should be direct tank-to-thruster.</li>
 </ul>
-<p>Set up at least 6 crushers with circuit control:</p>
-<ul>
-<li>2 metallic crushers feeding iron and copper into the production line</li>
-<li>2 carbonic crushers feeding carbon into fuel production</li>
-<li>2 oxide crushers feeding ice into water and calcite production</li>
-</ul>
-<p>Wire each crusher type to a circuit network. If iron falls below 200, activate metallic collectors. If ice falls below 500, activate oxide collectors. This prevents resource starvation mid-journey.</p>
-<p>Each crusher type produces waste products too. Metallic crushers produce stone byproduct. Carbonic crushers produce sulfur. Route these byproducts to their own storage and use them for ammo or disposal. A platform that ignores byproducts fills up in 10 minutes and stops.</p>
-<div class="section-head"><h2>Thruster Configurations</h2></div>
+<p><strong>Weight budget for a 100-ton platform:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: center">Weight (tons)</th>
+          <th style="text-align: center">Count</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Hub</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Foundation</td>
+          <td style="text-align: center">0.5/tile</td>
+          <td style="text-align: center">~30 tiles</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Crusher</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Chemical plant</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Assembler</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Gun turret</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Thruster</td>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Accumulators</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Bulk (belts/pipes/inserters)</td>
+          <td style="text-align: center">~4</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Total</strong></td>
+          <td style="text-align: center"><strong>~85-95</strong></td>
+          <td style="text-align: center"></td>
+      </tr>
+  </tbody>
+</table>
+<p>Under 100 tons, 2 thrusters, plenty of room for cargo.</p>
+<div class="pro-tip"><strong>Traps People Keep Falling Into:</strong> Ammo production is the silent killer. You calculate: &quot;I have 100 red ammo, trip takes 2 minutes, turret fires once per second... I need 120 rounds&quot; — but asteroids come in waves, not steady stream. Build for 3× your calculated ammo consumption for the trip length. Better to build a bigger ammo factory than to deadstick halfway to Gleba.</div>
 
-<p>Different thruster counts change your platform behavior significantly:</p>
-<p><strong>2-thruster platform (minimal):</strong></p>
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>Crushers in the wrong spot.</strong> Collectors collect on the front edge. Belts run backward. Crushers where the belts end. If you place crushers too far from collectors, belts fill up with raw chunks and nothing gets processed.</p>
+<p><strong>One thruster fuel tank.</strong> The thruster fuel pump moves fuel fast. One storage tank empties before the trip is done. Build 3-5 tanks per thruster pair.</p>
+<p><strong>No accumulator buffer.</strong> During asteroid storms, power demand spikes. Turrets firing + crushers running + belts moving can spike past what the hub provides. 10 accumulators keep everything running through the storm.</p>
+<p><strong>Belts in the firing line.</strong> Ammo belts that pass directly in front of turret range will get destroyed by stray asteroid fragments. Run ammo belts behind the turrets.</p>
+<h2 id="scaling-past-the-first-platform">Scaling Past the First Platform</h2>
+<p><strong>Inner planet routes</strong> (Nauvis → Vulcanus/Fulgora): 100-ton platform, 2 thrusters, 4 turrets. Simple.</p>
+<p><strong>Outer planet routes</strong> (to Gleba/Aquilo): Need 300+ tons, 6+ thrusters, 12+ turrets. Build a second, larger platform. Don't try to retrofit the first one — the weight penalty kills speed.</p>
+<p><strong>Rocket transport:</strong> Already launched a platform and forgot something? Pack it in a rocket. Launched platforms are persistent — they stay in orbit of whatever planet they're at. Just launch a resupply rocket.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
 <ul>
-<li>Good for short trips between nearby planets (Nauvis to Fulgora)</li>
-<li>Top speed: about 80 km/s</li>
-<li>Fuel consumption: low (1 chemical plant per fuel type)</li>
-<li>Best for: early-game exploration, supply runs</li>
-</ul>
-<p><strong>4-thruster platform (standard):</strong></p>
-<ul>
-<li>Handles any interplanetary route</li>
-<li>Top speed: about 150 km/s</li>
-<li>Fuel consumption: medium (2 chemical plants per fuel type)</li>
-<li>Best for: general cargo transport, planet colonization</li>
-</ul>
-<p><strong>8-thruster platform (freighter):</strong></p>
-<ul>
-<li>Fastest travel times between distant planets</li>
-<li>Top speed: about 220 km/s</li>
-<li>Fuel consumption: high (4 chemical plants per fuel type)</li>
-<li>Best for: bulk cargo between established bases, Aquilo runs</li>
-</ul>
-<p>I start with 2 thrusters and upgrade to 4 once I need bulk transport between planets. The 2-thruster platform is cheap enough to build in the early Space Age phase.</p>
-<div class="section-head"><h2>Asteroid Collector Placement</h2></div>
-
-<p>Asteroid collectors pull in passing asteroids. Their placement matters for coverage:</p>
-<ul>
-<li>Place 2 collectors on each side of the platform near the front</li>
-<li>Each collector covers about 6 tiles of the platform edge</li>
-<li>Collectors pick up asteroids within a 3-tile range of the platform</li>
-<li>Metallic and carbonic asteroids are more common near planets</li>
-<li>Oxide asteroids are more common in deep space between planets</li>
-</ul>
-<p>Wire collectors to circuit conditions. Deactivate collectors when their resource type is full. This saves power and prevents belt clogging.</p>
-<div class="section-head"><h2>Defense — Surviving the Asteroid Belt</h2></div>
-
-<p>Between planets, your platform passes through asteroid-dense regions. Without defense, asteroids impact your platform and cause hull damage.</p>
-<p><strong>Minimum defense loadout:</strong></p>
-<ul>
-<li>6 gun turrets covering the front and sides of the platform</li>
-<li>Red ammo (piercing rounds) for medium asteroids</li>
-<li>A dedicated ammo production line fed by carbonic asteroids</li>
-</ul>
-<p><strong>Turret positioning:</strong></p>
-<ul>
-<li>Front: 3 turrets aimed forward (most common impact direction)</li>
-<li>Each side: 1 turret covering the flank (side impacts are less common)</li>
-<li>Rear: 1 turret covering the back (rare impacts from debris)</li>
-</ul>
-<p>Walls protect critical components. Wall the hub and fuel tanks with at least one layer. Each wall segment absorbs one asteroid hit before needing replacement.</p>
-<img src="/images/diagrams/platform-defense.svg" alt="Space platform defense layout showing turret coverage zones around hub and fuel storage" class="schema-diagram" loading="lazy" width="700">
-
-<p>Ammo consumption during the Nauvis-to-Gleba journey is about 300 piercing rounds one way. That is roughly 2 assemblers running for 2 minutes before departure. Build a buffer of 500 rounds for safety.</p>
-<div class="section-head"><h2>Cargo Bay Design and Expansion</h2></div>
-
-<p>The cargo bay determines how much you can carry between planets. More cargo bays equals more slots equals heavier platform equals more thrusters needed.</p>
-<p>Good rule of thumb:</p>
-<ul>
-<li>1 cargo bay per 100 stack size of your cargo</li>
-<li>6 cargo bays for a first trip hauling building supplies</li>
-<li>10+ cargo bays for bulk transport between established bases</li>
-</ul>
-<p>My standard platform uses 6 cargo bays and 4 thrusters. This handles equipment drops at new planets and enough return cargo to be useful. For bulk transport, build a dedicated freighter with 20-plus cargo bays and 8 thrusters.</p>
-<div class="section-head"><h2>Common Mistakes</h2></div>
-
-<p><strong>Building the platform too wide.</strong> Wide platforms catch more asteroids. Keep the hub width at 5-7 tiles. Extend the platform lengthwise rather than adding width. A long thin platform is cheaper and safer than a short wide one.</p>
-<p><strong>Not enough crushers.</strong> Your platform starves mid-journey because crushers cannot keep up with thruster demand. Build 50% more crushers than your initial calculation suggests.</p>
-<p><strong>Weak front armor.</strong> Asteroids hit the front of the platform almost every time during interplanetary travel. Double-layer walls at the front save repair packs and prevent hull damage.</p>
-<p><strong>Single fuel type.</strong> You need both thruster fuel AND oxidizer. One without the other means zero thrust. Keep the production lines balanced.</p>
-<p><strong>No circuit control.</strong> Without circuits, resources pile up in one crusher type while another type starves. Use red wire circuits to balance asteroid distribution across crushers based on current inventory levels.</p>
-<div class="section-head"><h2>FAQ</h2></div>
-
-<p><strong>Q: What is the minimum platform size for interplanetary travel?</strong>
-A: About 30 tiles long and 5 tiles wide. This fits 1 hub, 4 collectors, 6 crushers, fuel storage, and 2 thrusters.</p>
-<p><strong>Q: Can I land the platform on a planet surface?</strong>
-A: No. The platform stays in orbit. Cargo is delivered to the surface via rocket or cargo pod.</p>
-<p><strong>Q: How many thrusters do I need?</strong>
-A: 2 thrusters for a small cargo platform. 4 for a medium freighter. 8-plus for a bulk hauler.</p>
-<p><strong>Q: Do platforms generate pollution?</strong>
-A: No. But thrusters create heat. Place heat pipes if you notice temperature buildup around the thruster array.</p>
-<p><strong>Q: Can I upgrade a platform after building it?</strong>
-A: Yes. Platforms can be expanded by adding tiles, collectors, and thrusters. Build a module that you can scale.</p>
-<div class="section-head"><h2>Related Guides</h2></div>
-
-<ul>
-<li><a href="https://factorioguides.com/space-age/quality-module-guide/">Master quality modules for the platform production line</a></li>
-<li><a href="https://factorioguides.com/space-age/gleba-survival-guide/">Survive Gleba with an organized approach</a></li>
-<li><a href="https://factorioguides.com/space-age/fulgora-recycling-guide/">Process Fulgora scrap on the platform for holmium</a></li>
-<li><a href="https://factorioguides.com/blueprints/circuit-network-guide/">Use circuits to automate platform logistics</a></li>
+<li><a href="https://wiki.factorio.com/Space_platform">Official Wiki — Space Platform</a> — exact thruster fuel formulas, speed calculations, and platform hub mechanics</li>
+<li><a href="https://forums.factorio.com/viewforum.php?f=69">Factorio Forums — Space Age Discussion</a> — community platform blueprints and bug reports</li>
+<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547">Steam Guide — Platform Design Compendium</a> — tested builds for all planet routes including Aquilo</li>
+<li><a href="https://alt-f4.blog/">Alt-F4 Blog</a> — deep dives on Space Age mechanics and platform optimization</li>
 </ul>
 
 
@@ -321,8 +303,8 @@ A: Yes. Platforms can be expanded by adding tiles, collectors, and thrusters. Bu
                 </svg>
               </div>
               <div class="related-body">
-                <h4>Fulgora Recycling Guide — Scrap Processing Made Simple</h4>
-                <p>Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.</p>
+                <h4>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</h4>
+                <p>Fulgora guide for Factorio Space Age. Scrap recycling sorter design, holmium processing, lightning power, and the recycler loop that doesn&#39;t deadlock.</p>
               </div>
             </a>
             
@@ -334,8 +316,8 @@ A: Yes. Platforms can be expanded by adding tiles, collectors, and thrusters. Bu
                 </svg>
               </div>
               <div class="related-body">
-                <h4>Gleba Survival Guide — How to Beat the Spoilage Planet</h4>
-                <p>Complete Gleba guide for Factorio Space Age. Spoilage mechanics, pentapod defense, bioflux production chains, agri science ratios, and a build order that actually works.</p>
+                <h4>Gleba Survival Guide — Spoilage, Nutrients, and Science</h4>
+                <p>Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.</p>
               </div>
             </a>
             

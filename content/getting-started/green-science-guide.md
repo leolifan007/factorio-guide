@@ -1,96 +1,81 @@
 ---
-title: "Logistic Science Pack — Green Science Guide"
-description: "Complete green science guide for Factorio: recipe, ratios, belt setup, and scaling tips for automating logistic science packs."
-date: 2026-05-18
+title: "Green Science Guide — Logistics Science Pack Setup"
+description: "Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks."
+date: 2026-05-21
 tags: ["getting-started", "science-packs"]
 draft: false
 emoji: "🧪"
 ---
 
-Green science is the first production chain that requires sub-factories. Unlike red science (two ingredients, one recipe), green science needs inserters and transport belts produced separately then fed into the science assemblers. The ratio is forgiving but the layout matters for expansion.
+Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.
 
 {{< callout "tip" >}}
-**TL;DR:** 1 inserter assembler + 1 belt assembler = enough to feed 10 green science assemblers. Build them in a line with belts running down the middle.
+**TL;DR:** 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.
 {{< /callout >}}
 
-{{< section "Recipe" >}}
+## The Root Cause — Why Green Science Feels Like a Wall
 
-Each logistic science pack takes two items. Here's the exact recipe chain:
+Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.
 
-{{< recipe name1="inserter" qty1="1x" name2="transport_belt" qty2="1x" result="logistic_science" rqty="1x" >}}
+The solution is simple math: gear production is your limiting factor, not belt speed.
 
-The inserter recipe itself needs iron gears, green circuits, and iron plates. The belt recipe needs just one iron plate. So the full chain from raw materials is:
+## The Exact Setup That Works
 
-{{< recipe name1="iron_plate" qty1="3x" name2="circuit_green" qty2="1x" name3="iron_gear" qty3="2x" >}}
+**The formula:**
+- **Green science assemblers:** 12 (two rows of 6 facing each other)
+- **Belt assemblers:** 6 (one belt assembler feeds 2 science assemblers)
+- **Inserter assemblers:** 1 (one inserter assembler feeds 12 science assemblers)
 
-{{< section "Ratio Math — Getting the Numbers Right" >}}
+**Layout (left to right):**
 
-Here are the exact machine counts:
+1. Iron plate line runs past both sub-factories
+2. First sub-factory: 1 inserter assembler. Output belt feeds toward the science line
+3. Second sub-factory: 6 belt assemblers. Output belt merges with the inserter belt
+4. Both feed into one belt going to the science line
+5. 12 science assemblers in two rows of 6, input belt between them, output belt on the far side
 
-| Machine | Output | Needed assemblers | Feeds how many science asm |
-|---------|--------|:-----------------:|:--------------------------:|
-| Green science assembler | 1 pack / 6s | 10 | — |
-| Inserter assembler | 1 inserter / 0.5s | 1 | Up to 12 science assemblers |
-| Belt assembler | 2 belts / 0.5s | 1 | Up to 24 science assemblers |
-| Green circuit assembler | 1 circuit / 0.5s | 1 | Shared with red science |
-
-The ratio is forgiving: one inserter assembler makes 2 inserters per second. Each science assembler eats 1 inserter every 6 seconds, so a single inserter assembler supports 12 science assemblers. Belt assemblers are even more efficient — 4 belts per second feeding 24 science assemblers.
-
-**Bottom line:** Build 1 inserter assembler, 1 belt assembler, and 10 green science assemblers. It's a clean ratio that works from your first build through the mid-game.
-
-{{< diagram "diagrams/green-science-flow.svg" "Green science production chain - inserter and belt assemblers feeding a 10-assembler science array" "760" >}}
-
-{{< section "Layout That Works Every Time" >}}
-
-I've tried a few layouts. The one that sticks is a straight-line double-sided build with components running down the middle:
-
-{{< diagram "diagrams/greenscience-layout.svg" "Green science physical layout showing the bus-inserter-science assembler sandwich" "760" >}}
-
-Put inserter and belt assemblers in a row. Iron plates on one belt lane, green circuits on the other. Science packs go to a third belt feeding labs.
-
-{{< callout "warning" >}}
-**Watch out:** Your green science belt will back up if labs aren't consuming fast enough. I use a priority splitter: science output gets priority, excess goes to a buffer chest with circuit control.
+{{< callout type="info" >}}
+**Quick Tip:** Don't put green science production on your main bus. Build it as a standalone side-factory that pulls iron plates from the bus and outputs science packs on a dedicated belt to the labs. It keeps your bus clean and expansion is as simple as copying the side-factory.
 {{< /callout >}}
 
-{{< section "Integrating Into Your Factory" >}}
+## Where Most Players Mess This Up
 
-Green science is when you need a proper bus. Here's the minimum belt setup near labs:
+**Under-building belt assemblers.** One belt assembler produces 0.5 belts per second. A green science assembler consumes 0.17 belts per second (one pack every 6 seconds). The ratio: 1 belt assembler feeds 3 science assemblers. Many builds use 1 belt assembler for every 6 science assemblers — leads to belt starvation.
 
-1. **Iron plates** — one full belt lane
-2. **Copper plates** — one lane for circuit production
-3. **Green circuits** — already made for red science, just extend the belt
-4. **Green science output** — dedicated belt feeding labs
+**Inserters on the bus.** The inserter recipe produces 1 inserter per 0.5 seconds. One inserter assembler running non-stop produces more than enough for 12+ science assemblers (each needs 0.17 inserters/sec). Don't build three.
 
-Don't bother with a separate iron gear belt. A single gear assembler (steel furnace fed) handles everything up to blue science.
+**One-sided feeding.** If all ingredients come from one side of the science line, the first assembler hoards materials and the last one runs dry. Use a belt balancer or feed from both ends.
 
-{{< section "Mistakes I Kept Making" >}}
+## The Hidden Bottleneck — Gear Consumption
 
-**The belt backup trap.** I once spent an hour debugging why inserters weren't working. Turned out the green science belt was full — inserters couldn't place packs, which caused inserter production to back up. Solution: more labs or a buffer chest.
+Each inserter needs 1 iron gear. Green science at full tilt (12 packs/sec from 12 assemblers) consumes 2 inserters/sec = 2 gears/sec. Your red science assemblers (assuming 10) need 2 gears/sec too.
 
-**Not enough copper wire.** One copper wire assembler feeds about 6 green circuit assemblers. If circuit production stalls, wire is almost always the culprit.
+That's 4 gears/sec — a full yellow belt of gears. Most builds underestimate this and wonder why the inserter assembler keeps starving even though iron plates are flowing.
 
-**Forgetting the output inserter.** Done this more times than I'd like to admit. Assembler fills up with science packs, no way out. Always put a fast inserter on output.
+**Fix:** Dedicate one gear assembler to green science that doesn't share with red science. 2 gear assemblers on iron will feed both comfortably.
 
-{{< section "Scaling for Early Game" >}}
+## Scaling It Up
 
-Once you unlock Assembler 2 and fast belts, scaling is straightforward:
+Green science at 60 SPM needs 12 assemblers. For 120 SPM (typical mid-game target):
 
-- Upgrade belts on the bus
-- Switch science assemblers to Assembler 2
-- Add a second inserter+belt assembler if pushing 30+ green SPM
-- Red inserters speed up throughput
+- 24 science assemblers (4 rows of 6)
+- 12 belt assemblers
+- 2 inserter assemblers (redundancy helps)
+- 4 gear assemblers (2 for inserters, 2 shared)
 
-{{< callout "tip" >}}
-Don't waste modules on green science production. The raw materials are cheap enough that productivity modules on circuit production give better returns.
-{{< /callout >}}
+The footprint stays compact because belt and inserter production is tiny — roughly 1/10th the space of the science line itself.
 
-{{< section "Bottom Line" >}}
+**Material requirements at 120 SPM:**
+- Iron plates: ~45/sec (one compressed yellow belt)
+- Copper plates: ~10/sec
+- Green circuits: ~20/sec
 
-Green science is the first test of real factory design. Get this ratio once, and you won't touch it again until megabase territory.
+All fit on a single main bus with room to spare.
 
-**Numbers to remember:**
-- One inserter + one belt assembler feeds 10 green science assemblers
-- One green circuit assembler handles both red and green at this scale
-- One iron plate belt lane supports everything
+---
 
-**Next up:** The [Blue Science Guide]({{< ref "/science-packs/blue-science-guide" >}}) — oil processing is where Factorio really starts.
+## Community Verification & Resources
+
+- [Official Wiki — Logistics Science Pack](https://wiki.factorio.com/Logistics_science_pack) — exact recipe timings and crafting speed tables
+- [FactorioLab Calculator](https://factoriolab.github.io/) — input/output ratios for any SPM target
+- [Reddit — Green Science Builds](https://www.reddit.com/r/factorio/) — community blueprints and layout examples for compact designs

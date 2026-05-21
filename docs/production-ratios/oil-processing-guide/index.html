@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Complete Factorio oil processing guide: refinery ratios, cracking math, heavy/light balancing, basic vs advanced refining, and cheat sheet for perfect balance.">
+  <meta name="description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
   <title>Oil Processing — Ratios, Cracking, and Refinery Setup | Factorio Guide</title>
 
   
@@ -27,7 +27,7 @@
 
   
   <meta property="og:title" content="Oil Processing — Ratios, Cracking, and Refinery Setup">
-  <meta property="og:description" content="Complete Factorio oil processing guide: refinery ratios, cracking math, heavy/light balancing, basic vs advanced refining, and cheat sheet for perfect balance.">
+  <meta property="og:description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://factorioguides.com/production-ratios/oil-processing-guide/">
 </head>
@@ -59,7 +59,7 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>Oil Processing — Ratios, Cracking, and Refinery Setup</h1><p class="article-desc">Complete Factorio oil processing guide: refinery ratios, cracking math, heavy/light balancing, basic vs advanced refining, and cheat sheet for perfect balance.</p>
+      <h1>Oil Processing — Ratios, Cracking, and Refinery Setup</h1><p class="article-desc">Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
       <div class="article-meta">
         <span class="meta-item">
           
@@ -69,7 +69,7 @@
             <line x1="5" y1="1" x2="5" y2="4"/>
             <line x1="9" y1="1" x2="9" y2="4"/>
           </svg>
-          Updated: May 18, 2026
+          Updated: May 21, 2026
         </span>
         <span class="meta-item">
           
@@ -125,249 +125,133 @@
           <span class="breadcrumb-current">Oil Processing — Ratios, Cracking, and Refinery Setup</span>
         </nav>
 
-        <p>Oil processing is the first production chain with multiple coupled outputs. Refineries produce heavy oil, light oil, and petroleum gas simultaneously, and if any output backs up, all production stops. Proper cracking ratios and circuit control keep the system balanced.</p>
-<div class="pro-tip"><strong>TL;DR:</strong> Build 8 refineries with advanced processing. Crack heavy→light (1 plant), light→petroleum (7 plants). That's the magic 8:1:7 ratio. No backups, maximum plastic throughput.</div>
+        <p>Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &gt; 20000 → crack. This setup never deadlocks.</div>
 
-<div class="section-head"><h2>Basic vs. Advanced Refining</h2></div>
-
-<p>You start with basic refining, but you'll want advanced as soon as possible.</p>
+<h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck</h2>
+<p>Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.</p>
+<p>The solution is controlled cracking: convert excess heavy to light, excess light to petroleum, and let petroleum run through to solid fuel or rocket fuel when backed up.</p>
+<h2 id="the-proven-fix--ratios-first-pipes-second">The Proven Fix — Ratios First, Pipes Second</h2>
+<p><strong>Basic ratio: 8:1:7</strong></p>
 <table>
   <thead>
       <tr>
-          <th>Aspect</th>
-          <th style="text-align: center">Basic Processing</th>
-          <th style="text-align: center">Advanced Processing</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Unlocked</td>
-          <td style="text-align: center">Start</td>
-          <td style="text-align: center">Oil Processing research</td>
-      </tr>
-      <tr>
-          <td>Input</td>
-          <td style="text-align: center">100 Crude Oil</td>
-          <td style="text-align: center">100 Crude + 50 Water</td>
-      </tr>
-      <tr>
-          <td>Heavy Oil</td>
-          <td style="text-align: center">30</td>
-          <td style="text-align: center">50</td>
-      </tr>
-      <tr>
-          <td>Light Oil</td>
-          <td style="text-align: center">30</td>
-          <td style="text-align: center">50</td>
-      </tr>
-      <tr>
-          <td>Petroleum</td>
-          <td style="text-align: center">40</td>
-          <td style="text-align: center"><strong>30</strong></td>
-      </tr>
-      <tr>
-          <td>Total units</td>
-          <td style="text-align: center">100</td>
-          <td style="text-align: center">130 (30% more)</td>
-      </tr>
-  </tbody>
-</table>
-<p>Here's the trade-off: advanced processing gives you 30% more total output per refinery, but it shifts the ratio toward heavy and light oil. You get less petroleum per cycle, which means you absolutely need cracking to convert the excess heavy and light into more petroleum.</p>
-<img src="/images/diagrams/oil-cracking-flow.svg" alt="Oil cracking balance showing the 8:1:7 refinery to cracking ratio" class="schema-diagram" loading="lazy" width="760">
-
-<div class="section-head"><h2>The Three Outputs — Where Everything Goes</h2></div>
-
-<p>Each oil product has specific uses:</p>
-<p><strong>Heavy Oil</strong></p>
-<ul>
-<li>Lubricant production (1 heavy = 10 lubricant)</li>
-<li>Cracking to light oil (40 heavy → 30 light)</li>
-<li>Flamethrower turret ammo</li>
-</ul>
-<p><strong>Light Oil</strong></p>
-<ul>
-<li>Solid fuel production (most efficient source: 1 light = 1 solid fuel)</li>
-<li>Rocket fuel (10 solid fuel + 10 light = 1 rocket fuel)</li>
-<li>Cracking to petroleum gas (30 light → 20 petroleum)</li>
-</ul>
-<p><strong>Petroleum Gas</strong></p>
-<ul>
-<li>Plastic bars (20 petroleum + 1 coal = 2 plastic)</li>
-<li>Sulfur (30 petroleum + 30 water = 2 sulfur)</li>
-<li>Sulfuric acid (5 sulfur + 1 iron + 100 water = 50 acid)</li>
-<li>Solid fuel (least efficient from petroleum)</li>
-</ul>
-<div class="section-head"><h2>The Critical Cracking Ratio</h2></div>
-
-<p>With advanced processing, 8 refineries produce per second:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Output</th>
-          <th style="text-align: center">Per refinery</th>
-          <th style="text-align: center">8 refineries total</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Heavy Oil</td>
-          <td style="text-align: center">50/s</td>
-          <td style="text-align: center"><strong>400/s</strong></td>
-      </tr>
-      <tr>
-          <td>Light Oil</td>
-          <td style="text-align: center">50/s</td>
-          <td style="text-align: center"><strong>400/s</strong></td>
-      </tr>
-      <tr>
-          <td>Petroleum</td>
-          <td style="text-align: center">30/s</td>
-          <td style="text-align: center"><strong>240/s</strong></td>
-      </tr>
-  </tbody>
-</table>
-<p>The consumption rates for a typical mid-game factory:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Consumer</th>
-          <th>Input type</th>
-          <th style="text-align: center">Rate per machine</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Heavy→Light cracker</td>
-          <td>Heavy Oil</td>
-          <td style="text-align: center">40 every 2s (20/s)</td>
-      </tr>
-      <tr>
-          <td>Light→Petro cracker</td>
-          <td>Light Oil</td>
-          <td style="text-align: center">30 every 2s (15/s)</td>
-      </tr>
-      <tr>
-          <td>Plastic plant</td>
-          <td>Petroleum</td>
-          <td style="text-align: center">20/s</td>
-      </tr>
-      <tr>
-          <td>Sulfur plant</td>
-          <td>Petroleum</td>
-          <td style="text-align: center">30/s</td>
-      </tr>
-  </tbody>
-</table>
-<p><strong>The 8:1:7 ratio:</strong></p>
-<p>With 8 refineries (all heavy/light going to cracking and petroleum being consumed):</p>
-<table>
-  <thead>
-      <tr>
-          <th>Plant</th>
+          <th style="text-align: left">Machine</th>
           <th style="text-align: center">Count</th>
-          <th style="text-align: center">Output consumed</th>
+          <th style="text-align: left">Purpose</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Refinery</td>
+          <td style="text-align: left">Oil refineries (basic)</td>
           <td style="text-align: center">8</td>
-          <td style="text-align: center">—</td>
+          <td style="text-align: left">Raw crude → heavy + light + petroleum</td>
       </tr>
       <tr>
-          <td>Heavy→Light cracker</td>
+          <td style="text-align: left">Heavy→light crackers</td>
           <td style="text-align: center">1</td>
-          <td style="text-align: center">20 heavy/s out of 400/s (lubricant takes the rest)</td>
+          <td style="text-align: left">Converts excess heavy oil to light</td>
       </tr>
       <tr>
-          <td>Light→Petro cracker</td>
+          <td style="text-align: left">Light→petroleum crackers</td>
           <td style="text-align: center">7</td>
-          <td style="text-align: center">105 light/s (remainder goes to solid fuel)</td>
-      </tr>
-      <tr>
-          <td>Plastic plants</td>
-          <td style="text-align: center">N</td>
-          <td style="text-align: center">240 petroleum/s from cracking + remaining</td>
+          <td style="text-align: left">Converts excess light oil to petroleum</td>
       </tr>
   </tbody>
 </table>
-<p>The math works out: crack just enough heavy and light to meet petroleum demand. The rest goes to lubricant and solid fuel.</p>
-<div class="callout">If you don't consume or crack heavy oil, refineries will stall. This is the single most common oil processing failure. Always have a lubricant buffer tank AND a cracking plant connected to heavy.</div>
+<p><strong>How the math works:</strong></p>
+<ul>
+<li>8 refineries produce: 40 heavy + 40 light + 80 petroleum per 5-second cycle</li>
+<li>1 heavy cracker consumes 40 heavy → 30 light per cycle (clears all heavy if needed)</li>
+<li>7 light crackers consume 105 light → 70 petroleum per cycle</li>
+</ul>
+<p>The system can handle any consumption pattern because the cracking ratios match the production ratios.</p>
+<p><strong>Circuit control (prevents the deadlock):</strong></p>
+<ol>
+<li>Run red wire from heavy oil storage tank to decider combinator</li>
+<li>Decider: heavy_oil &gt; 20000 → output H = 1</li>
+<li>Connect H output to the pump feeding heavy→light crackers</li>
+<li>Repeat for light oil: light_oil &gt; 20000 → output L = 1 → light→petroleum pump</li>
+<li>Set and forget</li>
+</ol>
+<div class="pro-tip"><strong>Traps People Keep Falling Into:</strong> If heavy oil backs up, check that your heavy→light cracking pump gets enough supply. A common slip: the heavy oil pipe between the refinery output and the cracker input is too long (over ~100 tiles) causing flow dropoff. Use underground pipes to reduce segment count.</div>
 
-<div class="section-head"><h2>Fluid Handling Tips</h2></div>
-
-<p><strong>Storage tanks:</strong> One tank per fluid type is enough for buffering. More doesn't help — your goal is to keep fluids moving, not store them.</p>
-<p><strong>Underground pipes:</strong> These reduce the pipe entity count and improve game performance. They also make your refinery block look cleaner.</p>
-<p><strong>Pump control:</strong> Use circuit conditions to control cracking:</p>
-<img src="/images/diagrams/circuit-control.svg" alt="Circuit-controlled cracking: pumps enable only when heavy/light oil exceeds 20,000" class="schema-diagram" loading="lazy" width="760">
-
-<p>This ensures your heavy oil tank always has some lubricant reserve before cracking kicks in.</p>
-<div class="section-head"><h2>Troubleshooting Oil Processing</h2></div>
-
+<h2 id="understanding-pipe-throughput-the-hidden-limiter">Understanding Pipe Throughput (The Hidden Limiter)</h2>
+<p>Pipes have throughput limits that change with length:</p>
+<ul>
+<li>1 pipe segment: 1,200 fluid/sec</li>
+<li>10 segments: ~1,000 fluid/sec</li>
+<li>50 segments: ~400 fluid/sec</li>
+<li>100 segments: ~80 fluid/sec</li>
+</ul>
+<p>For oil processing, keep pipe runs under 30 segments (about 60 tiles). Beyond that, throughput becomes your bottleneck before refinery speed does.</p>
+<p><strong>Underground pipes are your friend.</strong> Each underground pipe section counts as 2 segments regardless of distance (up to 11 tiles). A 10-tile gap costs only 2 segments instead of 10. This is the single highest-impact optimization for oil pipe networks.</p>
 <table>
   <thead>
       <tr>
-          <th>Symptom</th>
-          <th>Cause</th>
-          <th>Fix</th>
+          <th style="text-align: center">Diameter (pipe)</th>
+          <th style="text-align: center">Max length before needing a pump</th>
+          <th style="text-align: center">Flow rate</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Refineries stalled</td>
-          <td>Heavy oil full</td>
-          <td>Add lubricant buffer + cracking</td>
+          <td style="text-align: center">1 pipe wide</td>
+          <td style="text-align: center">~30 segments (60 tiles)</td>
+          <td style="text-align: center">~80% of max</td>
       </tr>
       <tr>
-          <td>Petroleum starving</td>
-          <td>Not enough cracking</td>
-          <td>Add light→petroleum plants</td>
+          <td style="text-align: center">2 pipes wide</td>
+          <td style="text-align: center">~50 segments (100 tiles)</td>
+          <td style="text-align: center">~90% of max</td>
       </tr>
       <tr>
-          <td>Lubricant empty</td>
-          <td>Too much cracking</td>
-          <td>Increase heavy→light threshold</td>
-      </tr>
-      <tr>
-          <td>Wells below 2/s</td>
-          <td>Depleted</td>
-          <td>Speed modules + beacons, or expand</td>
-      </tr>
-      <tr>
-          <td>Plastic backed up</td>
-          <td>Belt full, not consumed</td>
-          <td>Check red circuit consumption</td>
+          <td style="text-align: center">3 pipes wide</td>
+          <td style="text-align: center">~80 segments (160 tiles)</td>
+          <td style="text-align: center">~95% of max</td>
       </tr>
   </tbody>
 </table>
-<div class="section-head"><h2>Cheat Sheet — Copy-Paste Setup</h2></div>
-
-<p>For a mid-game refinery block, build this:</p>
-<p><strong>Building list:</strong></p>
+<h2 id="advanced-oil--heavy-oil-management">Advanced Oil — Heavy Oil Management</h2>
+<p>Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If you crack all of it, you lose access to both:</p>
 <ul>
-<li>8 Refineries (advanced processing)</li>
-<li>1 Chemical plant (heavy→light cracking)</li>
-<li>7 Chemical plants (light→petroleum cracking)</li>
-<li>4+ Plastic plants</li>
-<li>1 Sulfur plant</li>
-<li>1 Lubricant plant</li>
-<li>Storage tanks: heavy, light, petroleum</li>
-<li>4 Offshore pumps (water for refining + cracking)</li>
+<li><strong>Lubricant:</strong> Needed for electric engines (purple science). Each engine unit uses 1 lubricant.</li>
+<li><strong>Flamethrower ammo:</strong> Heavy oil-based ammo deals the highest damage.</li>
 </ul>
-<p><strong>Pipe layout:</strong>
-<img src="/images/diagrams/oil-pipe-manifold.svg" alt="Oil refinery pipe manifold showing water input, 8 refineries, and the heavy-light-petroleum output pipes" class="schema-diagram" loading="lazy" width="760">
-</p>
-<div class="section-head"><h2>Bottom Line</h2></div>
-
-<p>Oil processing looks intimidating, but the 8:1:7 ratio handles everything. Build refineries in a line, pipe outputs down three parallel lines, and use circuit-controlled cracking to keep everything balanced.</p>
-<p><strong>Numbers to remember:</strong></p>
+<p><strong>The optimal approach:</strong></p>
 <ul>
-<li>8 refineries + 1 heavy cracker + 7 light crackers = perfect balance</li>
-<li>Heavy oil → lubricant first, crack the rest</li>
-<li>Petroleum is the most consumed output. Cracking toward it always</li>
-<li>One pump-controlled cracking plant prevents backpressure</li>
+<li>Use the 8:1:7 base ratio</li>
+<li>Before the heavy→light cracker, add a split: some heavy oil goes to a dedicated lubricant tank</li>
+<li>If lubricant tank is full (maybe you're not building electric engines yet), route heavy to cracking</li>
+<li>Circuit condition on the lubricant tank: heavy &gt; 5000 → send to cracking</li>
 </ul>
-<p><strong>Related:</strong> <a href="https://factorioguides.com/science-packs/blue-science-guide/">Blue Science Guide</a> — putting oil to work, <a href="https://factorioguides.com/base-design/nuclear-power-guide/">Nuclear Power Guide</a> — the next major power upgrade.</p>
+<div class="pro-tip"><strong>Quick Tip:</strong> Before advanced oil processing (which gives you full control over output ratios), you're stuck with basic processing. Build the circuit cracking setup from day one of oil — you won't need it until you've researched advanced oil, but having it ready prevents long debugging sessions later.</div>
+
+<h2 id="scaling-up--refinery-blocks-at-megabase-scale">Scaling Up — Refinery Blocks at Megabase Scale</h2>
+<p>For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly:</p>
+<p><strong>100 SPM base:</strong></p>
+<ul>
+<li>8 refineries</li>
+<li>1 heavy cracker + 7 light crackers</li>
+<li>2 chemical plants for sulfur (plastic + sulfuric acid)</li>
+<li>1 chemical plant for batteries</li>
+</ul>
+<p><strong>1,000 SPM base:</strong></p>
+<ul>
+<li>80 refineries (10× 8-reactor modules)</li>
+<li>10 heavy crackers + 70 light crackers</li>
+<li>Dedicated crude oil train station per module</li>
+<li>Circuit control per module (not shared — independent pipe networks)</li>
+</ul>
+<p>The per-module design ensures your oil base scales predictably: copy the blueprint, connect a crude oil train stop, done.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Oil_processing">Official Wiki — Oil Processing</a> — exact cracking ratios and fluid system mechanics</li>
+<li><a href="https://forums.factorio.com/viewtopic.php?t=6926">Factorio Forums — Fluid Mechanics &amp; Pipe Throughput</a> — community testing on pipe diameters, lengths, and flow rates</li>
+<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> — set SPM target, get exact refinery/building counts including cracking modules</li>
+<li><a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald's Calculator</a> — oil processing ratio calculator for any target configuration</li>
+</ul>
 
 
         

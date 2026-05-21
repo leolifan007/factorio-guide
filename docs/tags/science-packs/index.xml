@@ -6,21 +6,21 @@
     <description>Recent content in Science-Packs on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://factorioguides.com/tags/science-packs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Green Science Guide — Logistics Science Pack Setup</title>
+      <link>https://factorioguides.com/getting-started/green-science-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/getting-started/green-science-guide/</guid>
+      <description>&lt;p&gt;Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-green-science-feels-like-a-wall&#34;&gt;The Root Cause — Why Green Science Feels Like a Wall&lt;/h2&gt;&#xA;&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Chemical Science Pack — Blue Science Guide</title>
       <link>https://factorioguides.com/science-packs/blue-science-guide/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/science-packs/blue-science-guide/</guid>
       <description>&lt;p&gt;Blue science is the first real complexity spike in Factorio. It&#39;s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I&#39;ve seen countless factory tours stall right here because the oil setup wasn&#39;t thought through.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Logistic Science Pack — Green Science Guide</title>
-      <link>https://factorioguides.com/getting-started/green-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/getting-started/green-science-guide/</guid>
-      <description>&lt;p&gt;Green science is the first production chain that requires sub-factories. Unlike red science (two ingredients, one recipe), green science needs inserters and transport belts produced separately then fed into the science assemblers. The ratio is forgiving but the layout matters for expansion.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 1 inserter assembler + 1 belt assembler = enough to feed 10 green science assemblers. Build them in a line with belts running down the middle.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Each logistic science pack takes two items. Here&#39;s the exact recipe chain:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Red Science Pack — Automation Science Guide</title>

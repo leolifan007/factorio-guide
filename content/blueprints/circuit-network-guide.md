@@ -1,177 +1,84 @@
 ---
 title: Circuit Network Beginner Guide
 description: Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.
-date: 2026-05-19
+date: 2026-05-21
 tags: ["blueprints", "circuit-network"]
 draft: false
 emoji: "🔧"
 ---
 
-The circuit network is Factorio's built-in logic system. Red and green wires carry signals between machines, and combinators process those signals to control your factory automatically. You only need three basic patterns to solve 90% of common problems: fluid cracking automation, SR latches for power control, and belt item counting.
+Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up — and nobody noticed for three hours. The fix isn't more storage tanks. It's a single red wire, a decider combinator, and 30 seconds of configuration.
 
 {{< callout "tip" >}}
-**TL;DR:** Red wire and green wire are separate signal networks. A decider combinator outputs a signal when a condition is met. Connect a storage tank to a pump with red wire, set the decider to "petroleum > 20000 output petroleum = 1", and you have automated cracking. Three reusable patterns handle the rest.
+**TL;DR:** Connect a storage tank to a pump with red wire. Decider combinator: petroleum > 20000 → output P = 1. Connect to pump. Done — automated cracking solves 90% of your fluid problems.
 {{< /callout >}}
 
-{{< section "The Two Wires — What They Actually Do" >}}
+## The Root Cause — Why Fluids Stall Without Circuits
 
-Red wire and green wire are independent signal channels. Think of them as two separate data buses running through your factory.
+Refineries produce heavy oil, light oil, and petroleum simultaneously. If any of the three outputs fills up, the refinery stops all production. No petroleum means no plastic. No plastic means no red circuits. No red circuits means your entire factory crawls to a halt.
 
-A wire connects entities into a circuit network. Every entity on the same color wire can read signals from every other entity on that wire. Connect a power pole, and the network extends its reach.
+The solution is circuit-controlled cracking: convert excess heavy to light, excess light to petroleum. Three pumps, three decider combinators, zero deadlocks.
 
-{{< diagram "diagrams/circuit-wires.svg" "Red wire and green wire as two separate signal networks" "600" >}}
+## How to Solve It Properly — Three Patterns That Handle Everything
 
-Wire colors do not mix by default. But you can combine them inside a combinator — a decider or arithmetic combinator reads from one or both colors and outputs to either color.
+You only need three circuit patterns. Everything else is a variation.
 
-A common convention is to use red wire for production logic (tank levels, belt contents, chest monitoring) and green wire for global signals (train schedules, logistics requests, base-wide alerts). Keeping them separate means a bug in one does not corrupt the other.
+**Pattern 1 — Fluid cracking automation.** This is the one that fixes refinery deadlocks.
 
-{{< callout "tip" >}}
-If you want two entirely separate control systems, use red for one and green for the other. Assign red to production logic and green to train control to keep the networks distinct.
+What you need: red wire, decider combinator, pump per fluid type.
+
+1. Run red wire from a heavy oil tank to a decider combinator
+2. Set decider: heavy_oil > 20000 → output P = 1
+3. Connect decider output to the pump feeding heavy→light cracking
+4. Repeat: light oil tank → decider (light_oil > 20000) → pump for light→petroleum
+5. Skip petroleum → solid fuel. Petroleum backs up? Crack less. This handles itself.
+
+A red wire carries signal. A green wire is a separate network. If one wire shorts it doesn't corrupt the other. Convention: red for production, green for train control.
+
+**Pattern 2 — SR latch for power control.** Insert fuel cells only when steam tanks are low.
+
+- Wire all steam tanks to a decider combinator
+- Set: steam < 10000 → output S = 1 (set condition)
+- Set another: steam > 24000 → output S = 0 (reset condition)
+- Connect both to a single decider in SR latch mode
+- Output drives the fuel inserter
+
+Result: fuel insertion only triggers when steam drops below threshold, stops when full. Cuts fuel consumption by 50-80%.
+
+**Pattern 3 — Belt item counting for balanced output.**
+
+- Place a red wire on a belt segment with read-hold mode
+- Wire to an arithmetic combinator: each * -1 → each
+- Wire output back to a constant combinator with your target values
+- Sum gives you actual demand minus supply
+
+Common use: keep exactly 200 green circuits on the belt to the mall. Insert more when count drops below 200.
+
+{{< callout type="info" >}}
+**Quick Tip:** Constant combinators let you set fixed values. Use them as lookup tables: wire a constant with "iron_plate = 500" to a requester chest, and bots maintain exactly 500 iron plates in that chest. No fiddling with stack limits.
 {{< /callout >}}
 
-{{< section "Decider Combinator — The Smart Switch" >}}
+## Where Most Players Mess This Up
 
-The decider combinator is the most useful component in the entire circuit system. It checks a condition and outputs a signal if the condition is true.
+**Wire colors aren't decorative.** Red and green are electrically isolated networks. If you run both on the same pole, they stay separate — the pole carries them as independent signals. This is useful: run red for level sensors and green for demand signals on the same power pole.
 
-**Input:** Signals from the connected network (red, green, or both)
-**Condition:** Compare a signal to a value or another signal
-**Output:** A signal of your choice (or the input signal itself)
+**Output not connected.** The most common bug: the combinator is configured correctly but its output port is unconnected. The output is on the right side of the combinator (small triangle), input on the left.
 
-Configuration example:
-- Input: petroleum gas = 24000 (from a storage tank via red wire)
-- Condition: petroleum > 20000
-- Output: petroleum = 1
+**Everything on one wire.** A single circuit network can carry every item signal simultaneously — each item type is a separate channel. A belt full of 20 item types produces 20 independent signals on one wire, not interference.
 
-When petroleum exceeds 20000, the combinator outputs a single petroleum signal. Connect this output to a pump on the heavy oil to light oil cracking line, and you have built an automatic cracker.
+## Pushing It Further — Circuit Networks at Megabase Scale
 
-You can compare any signal against any other signal too. Wire both storage tanks to the combinator and set "petroleum > heavy_oil". The combinator outputs when petroleum outpaces heavy oil. This handles refineries that skew production.
+Once you've mastered the three patterns, circuit networks scale to:
 
-{{< callout "warning" >}}
-One condition per combinator. Want AND logic? Chain two deciders in series. The first checks condition A, the second checks condition B. The final output is true only when both conditions pass.
-{{< /callout >}}
+- **Train station limits** — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed.
+- **Solar accumulator ratios** — circuit-controlled power switch that disconnects accumulators from the grid at a set charge level.
+- **Kovarex smart centrifuge** — only output U-235 when you have enough to sustain the reactor block.
+- **Mall demand system** — wire requester chests to constant combinators. Set chest to request exact counts. Bots deliver only what's needed.
 
-{{< section "Arithmetic Combinator — The Calculator" >}}
+---
 
-The arithmetic combinator takes signals and performs math on them. Add, subtract, multiply, divide, modulo, exponent — it does all of them.
+## Community Verification & Resources
 
-**Typical uses:**
-- Count items on a belt segment
-- Divide a signal to create thresholds (e.g., divide belt count by 60 for per-second rate)
-- Convert signal types using "each to each" transformations
-- Calculate ratios dynamically (e.g., multiply circuit count by 0.5 to estimate copper demand)
-
-{{< recipe name1="decider" qty1="1x" name2="arithmetic" qty2="1x" name3="red_wire" qty3="10x" name4="green_wire" qty4="10x" result="circuit_network" rqty="1x" >}}
-
-The arithmetic combinator shines when you need to convert signal types. Set it to "each + 0 output each" and suddenly everything connected converts to whatever channel you want. This is useful when you need to read belt contents across multiple segments — sum them all with one arithmetic combinator.
-
-{{< section "Constant Combinator — Configuration Panel" >}}
-
-The constant combinator outputs a fixed set of signals forever. No conditions, no math. Just constant values.
-
-Constant combinators are useful for three purposes:
-- Reference values in decider comparisons (e.g., set this to 100 and compare with actual production)
-- Configuration flags (signal-green = 1 to enable night mode, red = 0 to disable)
-- Test signals during debugging
-
-A constant combinator paired with a decider is a one-way switch. The decider reads the constant value and compares it against a live signal. Change the constant value to change the behavior without rewiring anything.
-
-{{< section "Persistence — Tick-Based Updates" >}}
-
-Combinators update every game tick (60 times per second). A signal that changes on tick 1 propagates through a decider on tick 2, an arithmetic on tick 3, and reaches the final output on tick 4. For most applications this is instant. For high-speed belt counting it matters.
-
-A feedback loop (wiring a combinator output back to its own input) creates memory. The combinator remembers its state from one tick to the next. This is the basis for SR latches, counters, and clocks.
-
-{{< section "Build 1: Fluid Cracking Automation" >}}
-
-The simplest practical circuit, and the one I use in every playthrough without exception.
-
-1. Place a storage tank for heavy oil
-2. Connect a red wire from the tank to a decider combinator
-3. Set decider input: heavy_oil > 20000, output: heavy_oil = 1
-4. Connect red wire from decider output to a pump on the heavy-to-light cracking line
-5. Repeat for light oil to petroleum
-
-When heavy oil exceeds 20000, the cracking pump activates. When it drops below, it stops. No wasted petroleum gas from over-cracking heavy oil when petroleum is not needed yet.
-
-{{< diagram "diagrams/oil-cracking-circuit.svg" "Decider combinator controlling oil cracking based on storage tank level" "600" >}}
-
-{{< callout "tip" >}}
-Do the same for light oil to petroleum cracking: light_oil > 20000. Set petroleum cracking to run first, then light oil cracking kicks in automatically once petroleum demand is met. This priority system prevents lubricant starvation.
-{{< /callout >}}
-
-{{< section "Build 2: SR Latch for Nuclear Power" >}}
-
-Nuclear reactors do not throttle. They burn 100% fuel cell or nothing. A simple SR Latch solves this by activating fuel insertion when steam drops below a threshold and deactivating when steam recovers.
-
-This needs two decider combinators and a feedback loop:
-
-1. Set decider: steam < 10000, output S = 1
-2. Reset decider: steam > 24000, output R = 1
-3. Wire both outputs to a third decider that acts as memory latch
-
-The memory latch configuration:
-- Input: S (from set), R (from reset)
-- Condition: S > R, output S = 1
-- Wire its output back to its own input (feedback loop)
-
-When steam drops to 10000, the latch activates. Inserters feed one fuel cell. The latch stays on until steam reaches 24000, then resets. This saves enormous fuel over a simple timer-based approach.
-
-{{< diagram "diagrams/sr-latch-nuclear.svg" "SR Latch circuit for nuclear reactor fuel control" "600" >}}
-
-{{< section "Build 3: Belt Item Counting" >}}
-
-Need to count items passing a point on a belt? Wire a belt segment to an arithmetic combinator set to "each + 0 output each". Wire the output back to the belt input (feedback loop). Every item that passes increments the counter.
-
-To reset: connect a decider with condition "signal > target" that outputs a reset signal (red = 1). The counter clears to zero and starts fresh. This is useful for production statistics and train loading.
-
-{{< section "Advanced: Clock and Timer Circuits" >}}
-
-Need something to happen every 30 seconds? Build a clock circuit. A decider with its output wired back to its input increments a counter every tick.
-
-Configuration:
-- Input: signal-T connected from a constant combinator set to a negative reference
-- Condition: signal-T < 1800 (30 seconds at 60 ticks per second)
-- Output: signal-T = signal-T + 1
-
-Feed the output to a second decider. When signal-T exceeds 1800, fire the conditioned event. Reset the clock by feeding a third decider that outputs a clear signal.
-
-Periodic rocket launches on Gleba can be automated this way. The clock triggers a launch every 3 minutes regardless of manual input.
-
-{{< section "Common Mistakes" >}}
-
-**Mixing red and green wires.** If both wires carry the same signal, combinators see both signals added together. Use one color per logical network.
-
-**Feedback loop without a reset.** A feedback loop that never resets counts forever until it overflows. Signals max at 2^31 minus 1.
-
-**Missing output wire.** You configured the combinator correctly but nothing happens. Check that the combinator output is wired to the target entity, not just a power pole.
-
-**Forgetting entity settings.** The wire does not enable reading by itself. Go into the chest or inserter UI and enable "read contents" or "read hand contents".
-
-**Over-engineering.** A single decider handles what most players try with three combinators. Start simple. Add complexity only when the simple solution does not work.
-
-**Using both colors on the same network.** Red and green are two separate channels. Using both on the same group of entities means signals are duplicated. Stick to one color per network unless you have a specific reason.
-
-{{< section "FAQ" >}}
-
-**Q: Do red and green wires carry different signals?**
-A: No. They carry the same signal types but in separate channels. Connect both to a combinator to read both channels simultaneously.
-
-**Q: Can combinators output to a power pole?**
-A: Yes. A combinator connected to a power pole sends its output to everything on that pole network.
-
-**Q: How fast do combinators update?**
-A: Every game tick (1/60 second). Each combinator in a chain adds one tick of delay.
-
-**Q: Can I read a train cargo?**
-A: Yes. Wire a train stop. In the train stop UI panel, enable "Read train contents." The stop outputs the cargo inventory as circuit signals.
-
-**Q: What happens when the circuit network is overloaded?**
-A: Factorio caps signals at 2^31 minus 1. If your counter exceeds this, it wraps around. Reset your counters before they hit this limit.
-
-{{< section "Related Guides" >}}
-
-- [Build a main bus with circuit-controlled logistics]({{< ref "base-design/main-bus-guide" >}})
-- [Set up automated oil processing]({{< ref "production-ratios/oil-processing-guide" >}})
-- [Use circuit conditions at train intersections]({{< ref "trains-logistics/basic-rail-network" >}})
-- [Control nuclear fuel with SR latch]({{< ref "base-design/nuclear-power-guide" >}})
-- [Automate platform logistics with circuits]({{< ref "space-age/space-platform-guide" >}})
+- [Official Factorio Wiki — Circuit Network](https://wiki.factorio.com/Circuit_network) — complete combinator reference with all signal types
+- [Reddit r/factorio — Circuit Tutorials](https://www.reddit.com/r/factorio/) — community blueprints for advanced contraptions
+- [Factorio Blueprint Library](https://factorioprints.com/) — ready-to-use SR latch and fluid control blueprints

@@ -69,7 +69,7 @@
             <line x1="5" y1="1" x2="5" y2="4"/>
             <line x1="9" y1="1" x2="9" y2="4"/>
           </svg>
-          Updated: May 18, 2026
+          Updated: May 21, 2026
         </span>
         <span class="meta-item">
           
@@ -125,12 +125,11 @@
           <span class="breadcrumb-current">Nuclear Power — Complete Setup Guide</span>
         </nav>
 
-        <p>Nuclear power produces 480 MW from a single 2×2 reactor block — roughly the output of 8,000 solar panels in a fraction of the space. One uranium patch fuels the reactor for hundreds of hours.</p>
-<div class="pro-tip"><strong>TL;DR:</strong> Build a 2×2 reactor block for 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps. One centrifuge running Kovarex fuels it forever.</div>
+        <p>Your coal power graph is in the red. You expanded three new outposts and the steam engines are barely keeping up. Before you paste 10,000 solar panels — nuclear: 480 MW fits in the space of 8 solar panels, one uranium patch lasts hundreds of hours, and the UPS hit is negligible.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> 2×2 reactor = 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps, and one centrifuge running Kovarex. Build it once, never think about power again.</div>
 
-<div class="section-head"><h2>Why Go Nuclear?</h2></div>
-
-<p>Nuclear isn't the cheapest option, but it's the best middle ground for a mid-to-late game factory:</p>
+<h2 id="the-root-cause--why-coal-eventually-caps-out">The Root Cause — Why Coal Eventually Caps Out</h2>
+<p>At 40+ steam engines you're spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.</p>
 <table>
   <thead>
       <tr>
@@ -138,210 +137,153 @@
           <th style="text-align: center">MW per tile</th>
           <th style="text-align: center">Fuel cost</th>
           <th style="text-align: center">UPS impact</th>
-          <th style="text-align: center">Setup effort</th>
+          <th style="text-align: left">When to switch</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>Steam engines</td>
-          <td style="text-align: center">~0.3 MW/tile</td>
+          <td style="text-align: center">~0.3</td>
           <td style="text-align: center">Free (coal)</td>
           <td style="text-align: center">Low</td>
-          <td style="text-align: center">Minimal</td>
+          <td style="text-align: left">Early game</td>
       </tr>
       <tr>
           <td>Solar panels</td>
-          <td style="text-align: center">~0.06 MW/tile</td>
+          <td style="text-align: center">~0.06</td>
           <td style="text-align: center">Free</td>
           <td style="text-align: center">Best</td>
-          <td style="text-align: center">Massive</td>
+          <td style="text-align: left">Mid game if patient</td>
       </tr>
       <tr>
           <td>Nuclear</td>
-          <td style="text-align: center">~5 MW/tile</td>
-          <td style="text-align: center">Cheap (uranium)</td>
+          <td style="text-align: center">~5</td>
+          <td style="text-align: center">Uranium</td>
           <td style="text-align: center">Good</td>
-          <td style="text-align: center">Moderate</td>
+          <td style="text-align: left"><strong>Mid game — this one</strong></td>
       </tr>
   </tbody>
 </table>
+<p>A single 2×2 nuclear block delivers roughly 55 MW per tile loaded. For comparison, the same tile footprint with solar would net you 0.6 MW on a good day.</p>
+<h2 id="building-the-fuel-chain-first">Building the Fuel Chain First</h2>
+<p>Before you place a single reactor, set up fuel production. The nuclear chain needs three stages:</p>
+<p><strong>Stage 1 — Uranium mining.</strong> One electric mining drill on a uranium patch produces enough ore for a 2×2 reactor. The catch: you need sulfur for sulfuric acid (10 acid per ore). Run a pipe from your oil base.</p>
+<p><strong>Stage 2 — Centrifuge processing.</strong> Each centrifuge runs a 12-second cycle. 10 uranium ore in → 99.3% U-238 + 0.7% U-235. Without modules you'll net roughly 1 U-235 per 140 cycles. Start at least 5 centrifuges.</p>
+<p><strong>Stage 3 — Fuel cell assembly.</strong></p>
 <ul>
-<li>A 2×2 reactor produces 480 MW in the space of 8 solar panels</li>
-<li>One uranium patch lasts hundreds of real-time hours</li>
-<li>Nuclear UPS impact is far lower than 10,000 solar panels and accumulators</li>
-<li>Scales from 40 MW (single reactor) to multi-GW tileable designs</li>
+<li>19 U-238 + 1 U-235 → 10 fuel cells</li>
+<li>Burn time: 200 seconds per cell</li>
+<li>Consumption: ~18 cells/hour per reactor</li>
+<li>A 2×2 burns ~72 cells/hour</li>
 </ul>
-<div class="section-head"><h2>Fuel Cycle — From Ore to Power</h2></div>
+<p>One assembler with speed modules running for 5 minutes produces enough cells for hours.</p>
+<div class="pro-tip"><strong>Quick Tip for Min-Maxers:</strong> Don't rush Kovarex. The first 40 U-235 (needed to bootstrap) takes about 6,000 ore. Run centrifuges continuously from the moment you have uranium processing unlocked — stockpile U-235 while your first reactor runs on manual.</div>
 
-<p>The nuclear fuel chain has several stages:</p>
-<p><div class="game-row"><div class="game-slot"><span class="game-qty">10x</span><img src="/images/icon/uranium.png" alt="uranium" class="game-img" loading="lazy"><span class="game-name">Uranium</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">0.7%</span><img src="/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"><span class="game-name">Uranium 235</span></div></div>
-<div class="game-row"><div class="game-slot"><span class="game-qty">10x</span><img src="/images/icon/uranium.png" alt="uranium" class="game-img" loading="lazy"><span class="game-name">Uranium</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">99.3%</span><img src="/images/icon/uranium_238.png" alt="uranium_238" class="game-img" loading="lazy"><span class="game-name">Uranium 238</span></div></div></p>
-<p>Each centrifuge processes 10 uranium ore per cycle (12 seconds without modules). At 0.7% enrichment, you'll get about 1 U-235 for every 143 ore processed.</p>
-<p>Fuel cells combine the two isotopes:</p>
-<div class="game-row"><div class="game-slot"><span class="game-qty">1x</span><img src="/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"><span class="game-name">Uranium 235</span></div><span class="game-plus">+</span><div class="game-slot"><span class="game-qty">19x</span><img src="/images/icon/uranium_238.png" alt="uranium_238" class="game-img" loading="lazy"><span class="game-name">Uranium 238</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">10x</span><img src="/images/icon/uranium_fuel_cell.png" alt="uranium_fuel_cell" class="game-img" loading="lazy"><span class="game-name">Uranium fuel cell</span></div></div>
-<p>Each fuel cell burns for 200 seconds in a reactor. A single reactor uses 0.005 fuel cells per second — about 18 cells per hour.</p>
-<div class="section-head"><h2>Reactor Layout — 2×2 Standard</h2></div>
-
-<p>The 2×2 layout is the gold standard for nuclear power. Four reactors arranged in a square, each touching two neighbors.</p>
+<h2 id="the-proven-fix--22-reactor-layout">The Proven Fix — 2×2 Reactor Layout</h2>
+<p>Four reactors touching in a square. Each adjacent reactor adds +100% heat output (neighbor bonus). This is the standard for a reason.</p>
 <img src="/images/diagrams/nuclear-reactor-layout.svg" alt="2x2 nuclear reactor layout with heat pipes, heat exchangers, and steam turbines" class="schema-diagram" loading="lazy" width="760">
 
-<p><strong>Neighbor bonus:</strong> Each adjacent reactor adds +100% heat output. A 2×2 gives:</p>
+<p><strong>Neighbor bonus math:</strong></p>
 <ul>
-<li>Corner reactors: +100% (1 neighbor) = 80 MW each</li>
-<li>Center reactors: +300% (2 neighbors) = 160 MW each</li>
-<li>Total: 480 MW from 4 reactors at 72 fuel cells/hour</li>
+<li>Corner reactors: 1 neighbor → +100% = 80 MW each</li>
+<li>Center reactors: 2 neighbors → +300% = 160 MW each</li>
+<li>Total: 480 MW from 4 reactors</li>
 </ul>
-<p><strong>Component counts for 2×2:</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Component</th>
-          <th style="text-align: center">Count</th>
-          <th>Notes</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Nuclear reactors</td>
-          <td style="text-align: center">4</td>
-          <td>2×2 arrangement</td>
-      </tr>
-      <tr>
-          <td>Heat exchangers</td>
-          <td style="text-align: center">48</td>
-          <td>12 per reactor</td>
-      </tr>
-      <tr>
-          <td>Steam turbines</td>
-          <td style="text-align: center">84</td>
-          <td>21 per reactor</td>
-      </tr>
-      <tr>
-          <td>Offshore pumps</td>
-          <td style="text-align: center">4</td>
-          <td>1 per 12 exchangers</td>
-      </tr>
-      <tr>
-          <td>Fuel cells/hr</td>
-          <td style="text-align: center">72</td>
-          <td>18 per reactor</td>
-      </tr>
-  </tbody>
-</table>
-<div class="section-head"><h2>Heat Pipe Physics</h2></div>
+<p><strong>The exact component list for a 2×2:</strong></p>
+<ul>
+<li><strong>Reactors:</strong> 4 (must touch)</li>
+<li><strong>Heat exchangers:</strong> 48 (12 per reactor worth of output)</li>
+<li><strong>Steam turbines:</strong> 84 (21 per reactor worth)</li>
+<li><strong>Offshore pumps:</strong> 4 (one per 12 heat exchangers)</li>
+<li><strong>Fuel cells per hour:</strong> 72</li>
+</ul>
+<div class="pro-tip"><strong>Don't circuit-control fuel insertion without a plan.</strong> A common trap: insert fuel only when steam &lt; threshold. Works great until a power spike drains the buffer and your entire base browns out. Use at least 50 steam tanks as a buffer before attempting fuel-saving circuits.</div>
 
-<p>Heat moves through heat pipes similarly to fluids but with two key rules:</p>
+<h2 id="understanding-heat-pipe-physics-where-most-builds-fail">Understanding Heat Pipe Physics (Where Most Builds Fail)</h2>
+<p>Heat travels through pipes like a fluid with two hard limits:</p>
 <ol>
-<li><strong>Max distance:</strong> Heat travels about 16 tiles from a reactor before significant dropoff</li>
-<li><strong>Max load:</strong> Each heat pipe segment can carry heat for up to 4 heat exchangers</li>
+<li><strong>Range:</strong> ~16 tiles from reactor before meaningful dropoff begins</li>
+<li><strong>Capacity:</strong> One heat pipe segment handles heat for ~4 heat exchangers</li>
 </ol>
-<p><strong>Design rules:</strong></p>
+<p><strong>The three rules that prevent a brownout:</strong></p>
 <ul>
 <li>Keep heat pipes within 20 tiles of the reactor</li>
-<li>Run double heat pipes for 2+ reactor wide setups</li>
-<li>Place heat exchangers on both sides of the heat pipe</li>
-<li>More heat pipes = more capacity, not more range</li>
+<li>Run double pipes for 2+ wide reactor rows</li>
+<li>Place exchangers on both sides — not just one</li>
+<li>More pipes increase capacity, not range</li>
 </ul>
-<p>For a 2×2 reactor, run a thick heat pipe line (3-5 parallel pipes) from the reactor block to the exchanger array.</p>
-<div class="section-head"><h2>Fuel Efficiency Comparison</h2></div>
-
+<p>For a 2×2, use 3-5 parallel heat pipes running from the reactor block to the exchanger array. Single-file heat pipes will choke at scale.</p>
+<h2 id="the-bootstrapping-problem--getting-kovarex-started">The Bootstrapping Problem — Getting Kovarex Started</h2>
+<p>Kovarex converts 40 U-235 + 5 U-238 → 41 U-235 (+5 U-238 recipe cost, net +1 U-235 per cycle). Once running, it produces U-235 faster than any reactor block can burn it.</p>
+<p><strong>The bottleneck:</strong> Getting 40 U-235 to start. At 0.7% enrichment with 5 centrifuges, that's about 2-3 hours of continuous mining and processing.</p>
+<p><strong>Skip the wait:</strong></p>
+<ul>
+<li>Start centrifuges the moment you research uranium processing — even before you build the reactor</li>
+<li>Prod modules in centrifuges speed this up significantly</li>
+<li>If 40 U-235 feels slow, don't wait — build your reactor on the first 10 and run it manually with solar as backup</li>
+</ul>
+<h2 id="traps-people-keep-falling-into">Traps People Keep Falling Into</h2>
+<p><strong>Not enough water.</strong> One offshore pump feeds 12 heat exchangers. Period. A 2×2 needs 4 dedicated offshore pumps. Running more exchangers per pump causes steam starvation that's hard to diagnose.</p>
+<p><strong>Heat pipe too long.</strong> Past ~16 tiles, heat transfer drops off a cliff. You can extend it with more parallel pipes, but after 25 tiles you need a separate reactor row.</p>
+<p><strong>Overproducing fuel cells.</strong> 72 cells per hour is the burn rate. One assembler running for 5 minutes keeps you running for hours. Do not build four assemblers.</p>
+<p><strong>Ignoring the neighbor bonus.</strong> A 2×2 sharing bonuses produces 480 MW. Four standalone reactors with the same fuel produce 160 MW. The difference: touching the reactors.</p>
+<h2 id="scaling-past-1-gw">Scaling Past 1 GW</h2>
+<p>For megabase power, use tileable 2×N rows:</p>
 <table>
   <thead>
       <tr>
-          <th>Setup</th>
+          <th style="text-align: left">Configuration</th>
           <th style="text-align: center">Reactors</th>
           <th style="text-align: center">Cells/hr</th>
           <th style="text-align: center">Total MW</th>
-          <th style="text-align: center">MW per cell</th>
-          <th style="text-align: center">Space</th>
+          <th style="text-align: center">MW/cell</th>
+          <th style="text-align: left">When to build</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>1×1</td>
+          <td style="text-align: left">Single 1×1</td>
           <td style="text-align: center">1</td>
           <td style="text-align: center">18</td>
           <td style="text-align: center">40</td>
-          <td style="text-align: center">2.22 MW</td>
-          <td style="text-align: center">Small</td>
+          <td style="text-align: center">2.2</td>
+          <td style="text-align: left">Test setup</td>
       </tr>
       <tr>
-          <td>2×1</td>
+          <td style="text-align: left">2×1 row</td>
           <td style="text-align: center">2</td>
           <td style="text-align: center">36</td>
           <td style="text-align: center">160</td>
-          <td style="text-align: center">4.44 MW</td>
-          <td style="text-align: center">Compact</td>
+          <td style="text-align: center">4.4</td>
+          <td style="text-align: left">Early expand</td>
       </tr>
       <tr>
-          <td>2×2</td>
+          <td style="text-align: left">2×2 square</td>
           <td style="text-align: center">4</td>
           <td style="text-align: center">72</td>
           <td style="text-align: center">480</td>
-          <td style="text-align: center">6.67 MW</td>
-          <td style="text-align: center">Standard</td>
+          <td style="text-align: center">6.7</td>
+          <td style="text-align: left"><strong>Standard</strong></td>
       </tr>
       <tr>
-          <td>2×3</td>
-          <td style="text-align: center">6</td>
-          <td style="text-align: center">108</td>
-          <td style="text-align: center">800</td>
-          <td style="text-align: center">7.41 MW</td>
-          <td style="text-align: center">Wide</td>
-      </tr>
-      <tr>
-          <td>2×4</td>
+          <td style="text-align: left">2×4</td>
           <td style="text-align: center">8</td>
           <td style="text-align: center">144</td>
           <td style="text-align: center">1,120</td>
-          <td style="text-align: center">7.78 MW</td>
-          <td style="text-align: center">Very wide</td>
+          <td style="text-align: center">7.8</td>
+          <td style="text-align: left">Full megabase</td>
       </tr>
   </tbody>
 </table>
-<p>The neighbor bonus makes larger setups wildly more efficient. A 2×4 produces 7× the power of four 1×1 reactors but uses the same fuel.</p>
-<div class="section-head"><h2>Kovarex Enrichment — The Game Changer</h2></div>
-
-<p>Without Kovarex, you need centrifuge processing to get U-235 — and the 0.7% rate makes expansion painful.</p>
-<div class="game-row"><div class="game-slot"><span class="game-qty">40x</span><img src="/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"><span class="game-name">Uranium 235</span></div><span class="game-plus">+</span><div class="game-slot"><span class="game-qty">5x</span><img src="/images/icon/uranium_238.png" alt="uranium_238" class="game-img" loading="lazy"><span class="game-name">Uranium 238</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">41x</span><img src="/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"><span class="game-name">Uranium 235</span></div></div>
-<p><strong>What this does:</strong> Each cycle consumes 5 U-238 and produces 1 net U-235. After bootstrapping with 40 U-235, Kovarex runs indefinitely, producing enough fuel for any size reactor.</p>
-<p><strong>Bootstrapping:</strong> You need 40 U-235 to start Kovarex. That's about 6,000 uranium ore without productivity modules. Stockpile U-235 while running the reactor manually or supplement with solar/steam.</p>
-<div class="callout"><strong>Don't circuit-control fuel insertion without a plan.</strong> If you insert fuel only when steam is low, you save fuel — but a power spike when steam tanks are empty can crash your base. Use at least 50 steam tanks as buffer.</div>
-
-<div class="section-head"><h2>Steam Storage Strategy</h2></div>
-
-<p>Each steam tank holds 25,000 units of steam (2.425 GJ). With 200-second fuel burn cycles:</p>
+<p>Each additional reactor pair adds roughly 160 MW. A 2×8 setup pushes 2,240 MW — enough for any base size achievable without UPS mods.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
 <ul>
-<li><strong>Buffer size:</strong> 20 tanks store enough steam for ~5 minutes at 480 MW full load</li>
-<li><strong>Circuit control:</strong> Connect a tank to a decider combinator. Insert fuel when steam &lt; 10,000. This reduces fuel consumption by 50-80%</li>
-<li><strong>Turbine layout:</strong> One steam turbine consumes 60 units/s. At max output, 84 turbines consume 5,040 steam/s. 20 tanks provide about 100 seconds of buffer</li>
+<li><a href="https://wiki.factorio.com/Nuclear_power">Official Factorio Wiki — Nuclear Power</a> — exact heat exchange formulas and pipe throughput tables</li>
+<li><a href="https://forums.factorio.com/viewforum.php?f=18">Factorio Forums — Nuclear Power Discussion</a> — community reactor blueprints and bug reports</li>
+<li><a href="https://alt-f4.blog/">Alt-F4 Blog — Nuclear Throughput Deep Dive</a> — engineering analysis of heat pipe mechanics</li>
+<li><a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald's Factorio Calculator</a> — exact ratios for any reactor configuration</li>
 </ul>
-<div class="section-head"><h2>Common Mistakes</h2></div>
-
-<p><strong>Not enough water.</strong> One offshore pump feeds 12 heat exchangers. A 2×2 needs 4 dedicated offshore pumps. Running multiple exchangers off one pump causes steam starvation.</p>
-<p><strong>Heat pipe too long.</strong> Past ~16 tiles from the reactor, heat transfer drops significantly. For 2×2 layouts, run heat pipes in parallel (3-5 width) rather than single-file.</p>
-<p><strong>Overproducing fuel cells.</strong> A 2×2 burns 72 cells per hour. One assembler with speed modules running for 5 minutes produces enough fuel cells for hours of operation. Don't build four assemblers.</p>
-<p><strong>Ignoring neighbor bonus.</strong> A 2×2 using 4 cells/cycle produces 480 MW. Four standalone reactors produce 160 MW with the same fuel. Touching reactors matters.</p>
-<div class="section-head"><h2>Scaling Past 1 GW</h2></div>
-
-<p>For larger bases, use tileable 2×N reactor rows:</p>
-<ul>
-<li>Each additional pair of reactors adds 160 MW</li>
-<li>A 2×8 setup produces 2,240 MW — enough for a full megabase</li>
-<li>Use a dedicated train station for uranium ore delivery</li>
-<li>Multiple centrifuges with Kovarex produce enough U-235 for any scale</li>
-</ul>
-<div class="section-head"><h2>Bottom Line</h2></div>
-
-<p>Nuclear power is the most space-efficient power source in Factorio. A 2×2 reactor at 480 MW is the ideal first build — big enough to power a megabase but simple enough to build in an afternoon.</p>
-<p><strong>Numbers to remember:</strong></p>
-<ul>
-<li>2×2 = 480 MW, 48 heat exchangers, 84 turbines, 4 pumps</li>
-<li>72 fuel cells per hour until Kovarex, then effectively infinite</li>
-<li>Heat pipes max out at ~16 tiles — plan your exchanger placement</li>
-<li>20 steam tanks + circuit control = 80% fuel savings</li>
-</ul>
-<p><strong>Related:</strong> <a href="https://factorioguides.com/base-design/main-bus-guide/">Main Bus Guide</a> — routing all that nuclear power through your base, <a href="https://factorioguides.com/production-ratios/oil-processing-guide/">Oil Processing Guide</a> — fuel chain before nuclear.</p>
 
 
         

@@ -6,14 +6,14 @@
     <description>Recent content in Fulgora on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://factorioguides.com/tags/fulgora/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fulgora Recycling Guide — Scrap Processing Made Simple</title>
+      <title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title>
       <link>https://factorioguides.com/space-age/fulgora-recycling-guide/</link>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/space-age/fulgora-recycling-guide/</guid>
-      <description>&lt;p&gt;Fulgora replaces traditional mining with scrap recycling that produces random outputs. Iron gears, concrete, ice, blue circuits, holmium ore — all come from the same recycler. The challenge is not production but sorting: each item type needs a path out of the system, or the recyclers stall.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Recyclers output scrap at roughly 1 stack per second. Each recycler needs a sorting system behind it: filtered splitters for common items, overflow loops for rare items, and circuit-controlled storage for everything. Process scrap where you mine it on the same island. Build a dedicated island for EM Plant production. Lightning rods every 20 tiles on every island.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Scrap Recycling — What Comes Out&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Scrap recycles into random outputs. Here is the approximate distribution per 1000 scrap processed based on my measurements:&lt;/p&gt;</description>
+      <description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can&#39;t predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

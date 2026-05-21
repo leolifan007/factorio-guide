@@ -6,14 +6,14 @@
     <description>Recent content in Blueprints and Blueprint Books on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://factorioguides.com/blueprints/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Circuit Network Beginner Guide</title>
       <link>https://factorioguides.com/blueprints/circuit-network-guide/</link>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/blueprints/circuit-network-guide/</guid>
-      <description>&lt;p&gt;The circuit network is Factorio&#39;s built-in logic system. Red and green wires carry signals between machines, and combinators process those signals to control your factory automatically. You only need three basic patterns to solve 90% of common problems: fluid cracking automation, SR latches for power control, and belt item counting.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Red wire and green wire are separate signal networks. A decider combinator outputs a signal when a condition is met. Connect a storage tank to a pump with red wire, set the decider to &amp;quot;petroleum &amp;gt; 20000 output petroleum = 1&amp;quot;, and you have automated cracking. Three reusable patterns handle the rest.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;The Two Wires — What They Actually Do&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Red wire and green wire are independent signal channels. Think of them as two separate data buses running through your factory.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up — and nobody noticed for three hours. The fix isn&#39;t more storage tanks. It&#39;s a single red wire, a decider combinator, and 30 seconds of configuration.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Connect a storage tank to a pump with red wire. Decider combinator: petroleum &amp;gt; 20000 → output P = 1. Connect to pump. Done — automated cracking solves 90% of your fluid problems.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-fluids-stall-without-circuits&#34;&gt;The Root Cause — Why Fluids Stall Without Circuits&lt;/h2&gt;&#xA;&lt;p&gt;Refineries produce heavy oil, light oil, and petroleum simultaneously. If any of the three outputs fills up, the refinery stops all production. No petroleum means no plastic. No plastic means no red circuits. No red circuits means your entire factory crawls to a halt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Use Blueprints — Complete Guide</title>

@@ -1,156 +1,106 @@
 ---
-title: Fulgora Recycling Guide — Scrap Processing Made Simple
-description: Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.
-date: 2026-05-19
+title: "Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power"
+description: "Fulgora guide for Factorio Space Age. Scrap recycling sorter design, holmium processing, lightning power, and the recycler loop that doesn't deadlock."
+date: 2026-05-21
 tags: ["space-age", "fulgora"]
 draft: false
 emoji: "⚡"
 ---
 
-Fulgora replaces traditional mining with scrap recycling that produces random outputs. Iron gears, concrete, ice, blue circuits, holmium ore — all come from the same recycler. The challenge is not production but sorting: each item type needs a path out of the system, or the recyclers stall.
+You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can't predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.
 
 {{< callout "tip" >}}
-**TL;DR:** Recyclers output scrap at roughly 1 stack per second. Each recycler needs a sorting system behind it: filtered splitters for common items, overflow loops for rare items, and circuit-controlled storage for everything. Process scrap where you mine it on the same island. Build a dedicated island for EM Plant production. Lightning rods every 20 tiles on every island.
+**TL;DR:** Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.
 {{< /callout >}}
 
-{{< section "Scrap Recycling — What Comes Out" >}}
+## The Mechanics Behind This Bottleneck
 
-Scrap recycles into random outputs. Here is the approximate distribution per 1000 scrap processed based on my measurements:
+Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:
 
-| Item | Quantity per 1000 scrap | Approx chance |
-|------|:----------------------:|:-------------:|
-| Iron gear | 150 | 15% |
-| Iron plate | 120 | 12% |
-| Copper plate | 100 | 10% |
-| Concrete | 80 | 8% |
-| Stone | 70 | 7% |
-| Battery | 60 | 6% |
-| Holmium ore | 50 | 5% |
-| Plastic bar | 45 | 4.5% |
-| Red circuit | 35 | 3.5% |
-| Blue circuit | 25 | 2.5% |
-| Processing unit | 15 | 1.5% |
-| Ice | 250 | 25% |
+| Material | Weight | Primary use |
+|:---------|:------:|:-----------|
+| Iron gear | Common | Mall items, steel recycling |
+| Ice | Common | Water → steam → power |
+| Concrete | Common | Foundations, walls |
+| Iron plate | Common | General construction |
+| Copper plate | Common | General construction |
+| Steel plate | Uncommon | Advanced items |
+| Battery | Uncommon | Accumulators, science |
+| Blue circuit | Uncommon | Science, modules |
+| Holmium ore | Rare | **Science, modules — the reason you're on Fulgora** |
+| Solid fuel | Common | Boiler fuel |
+| Stone | Common | Walls, rails |
 
-The exact percentages vary slightly by game version, but the pattern holds: iron and ice dominate the output. Holmium ore is rare at about 5% per scrap. This means you need a lot of recyclers to get meaningful holmium throughput.
+Every item type needs a place to go. If blue circuits pile up and have no consumer, the belt backs up, the recycler stalls, and you stop getting holmium ore.
 
-{{< diagram "diagrams/fulgora-scrap-output.svg" "Scrap recycling output distribution chart showing iron gear and ice as highest volume outputs" "700" >}}
+## The Proven Fix — Sushi Belt + Filter Splitter Sorting
 
-{{< section "The Sorting Challenge" >}}
+**Stage 1 — The scrap processing line.**
+Place recyclers in a row. Each feeds into a red belt running below. This belt carries all output items — it's your "sushi belt".
 
-The biggest design problem on Fulgora is not production — it is sorting. Recyclers output random items quickly, and any belt can fill up with one item type while other types stop flowing. When a belt is full of iron gears, the new concrete has nowhere to go.
+**Stage 2 — Filter splitters.**
+After the recycler row, add one filter splitter per item type. Each splitter filters one material onto a dedicated belt:
 
-**The solution: filtered splitter cascades.**
+1. First splitter: filter Holmium Ore → dedicated belt to processing
+2. Second: Blue Circuits → requester chest (feed mall)
+3. Third: Batteries → requester chest
+4. Fourth: Steel → requester chest or recycler void
+5. Fifth: Iron/Copper → dedicated storage (you'll use them)
+6. Remaining on sushi belt: concrete, stone, ice, solid fuel → recyclers for voiding
 
-Each recycler feeds into a row of filtered splitters arranged by item priority:
-1. First splitter: filter iron gear (highest volume item)
-2. Second splitter: filter iron plate
-3. Third splitter: filter copper plate
-4. Continue down the chain for each item type by volume
+{{< diagram "diagrams/fulgora-scrap-sorter.svg" "Fulgora scrap sorting sushi belt with filter splitters and dedicated output belts" "760" >}}
 
-Each filtered output goes to a buffer chest. When the chest fills up, the item type backs up on the belt. But the splitter cascade keeps flowing — backed up items overflow to the next filter in the chain automatically.
+**Stage 3 — Voiding excess.**
+The items you can't use (excess concrete, stone, gears) need to disappear. Route them to a recycler loop: recycler → belt → recycler → belt → ... until items are destroyed. Each recycler reduces items by 75% per pass, so 3 recyclers in series gets rid of anything.
 
-{{< callout "tip" >}}
-If iron gear backs up, it overflows to the iron plate filter. If that backs up too, it overflows to concrete. Eventually everything ends up in a final passive provider chest at the end of the cascade. Nothing stops the recyclers from running.
+{{< callout type="info" >}}
+**Quick Tip:** Don't store items you don't need. I tried buffer chests for everything. Turns out you get copper, iron, and gears way faster than you can use them. A buffer of 4 steel chests per item type is more than enough — route everything else to the void recycler.
 {{< /callout >}}
 
-Wire each buffer chest to a circuit. When chest contents exceed a threshold, route excess items to additional recyclers for disposal. This prevents the entire system from locking up due to one item type.
+## The Holmium Processing Chain
 
-{{< section "Holmium Processing — Why You Are Here" >}}
+Holmium ore is the reason you're on Fulgora. The processing chain:
 
-Holmium ore is the reason you travel to Fulgora. It processes into holmium plates, then into supercapacitors and eventually into Electromagnetic Plants.
+1. Holmium ore → Holmium plate (needs sulfuric acid)
+2. Holmium plate → Electromagnetic science (with other ingredients)
+3. Holmium plate → Superconductor (for quality modules)
 
-**Full production chain:**
-- 50 holmium ore plus sulfuric acid = 1 holmium plate
-- Holmium plate plus copper wire plus plastic = 1 supercapacitor
-- Supercapacitor plus circuits plus concrete = 1 EM Plant component
+**The ratio:** 1 scrap recycler produces roughly 0.3 holmium ore per second with average luck. One electromagnetic science assembler needs about 2.5 ore/second. That means ~8 scrap recyclers running constantly for every 1 science assembler.
 
-A single EM Plant requires roughly 2000 scrap to be processed. For reference:
-- 1 recycler at full speed = about 60 scrap per minute
-- 4 recyclers = about 240 scrap per minute
-- Holmium plates per minute from 4 recyclers: only 2-3 plates
+Scale accordingly: 40 recyclers → 5 science assemblers → 60 SPM of electromagnetic science.
 
-Scale accordingly. You need at least 12 recyclers for steady holmium plate production. I run 20 recyclers on my main Fulgora base.
+{{< callout type="info" >}}
+**Quick Tip for Min-Maxers:** Holmium plate processing uses sulfuric acid. Bring it from Nauvis in barrels until you have a reliable iron supply on Fulgora — or you'll be running back and forth.
+{{< /callout >}}
 
-{{< recipe name1="holmium_ore" qty1="50x" name2="sulfuric_acid" qty2="10x" result="holmium_plate" rqty="1x" >}}
+## Power — Lighting Into Electricity
 
-{{< section "Island Connection Strategy" >}}
+Lightning strikes metal objects on Fulgora. Lightning rods capture this and turn it into electricity.
 
-Fulgora islands are separated by water. You connect them with elevated rails. Planning your island network is critical.
+**Power setup:**
+- 1 lightning rod covers a ~20 tile radius
+- Connect rods directly to accumulators (no power poles needed in the rod-to-accumulator path)
+- Lightning strikes are periodic, so build at least 50 accumulators per 10 rods
+- A single heavy lightning storm charges 50 accumulators in roughly 10 seconds
 
-**Best island setup for Fulgora:**
-- Scrap islands: dedicated to recyclers and sorting only (multiple small islands)
-- Processing island: one large island for holmium refining and EM Plant assembly
-- Science island: a separate island for electromagnetic science production
-- Logistics island: rocket silos and cargo hub for interplanetary transport
+**The math:** Each rod produces ~1.5 MW during a strike. 10 rods + 100 accumulators provides continuous 5-8 MW — enough for a mid-size base. For megabase scale, build separate rod banks across islands and wire them together.
 
-Build elevated rail bridges between islands. Each bridge segment needs pylons every 15 tiles. Plan your rail routes before building — rebuilding bridges is expensive.
+{{< callout type="warning" >}}
+**Traps People Keep Falling Into:** Power poles on Fulgora attract lightning. If you run power lines across open ground between buildings, lightning will destroy them. Solution: run power under the metal foundation tiles. Foundation acts as a lightning shield — pipes and wires beneath it are safe.
+{{< /callout >}}
 
-{{< section "Ice and Water Management" >}}
+## Where Most Players Mess This Up
 
-Ice is the most common scrap output at about 25% of all recycling. Managing ice is critical for acid production.
+**Sushi belt too short.** If the sushi belt doesn't have enough room for all filter splitters, some item types never get filtered and pile up in the recyclers. Make the belt long enough for one splitter per item type.
 
-Each recycler outputs roughly 15 ice per minute. For 20 recyclers, that is 300 ice per minute. Ice melts into water in a chemical plant: 20 ice = 200 water. That water feeds your acid production.
+**No ice void path.** Ice melts into water. Water creates steam. Steam runs turbines. This sounds great until your steam tanks are full and ice is still piling up — stalling the recycling. Always route excess ice to a recycler after your steam tanks are full.
 
-**Ice circuit condition:** Wire your ice chest to a decider combinator. If ice exceeds 500, activate an extra chemical plant to melt it. This prevents ice from filling your sorting system and blocking other outputs.
+**Scrap islands run out.** A full scrap patch on a large island lasts ~50 hours. Medium patches last 15-20 hours. Place your recycler grid centrally and extend belts to new scrap patches as old ones deplete.
 
-Excess water from ice melting can be vented. Place an extra pipe connected to a pump. Wire the pump to activate when water exceeds 10,000. Vent the overflow into the ocean.
+---
 
-{{< section "Lightning Protection" >}}
+## Community Verification & Resources
 
-Lightning strikes exposed surfaces on Fulgora every few minutes during storms. It damages anything metallic and can destroy power poles, assemblers, and chests instantly.
-
-**Protection rules for each island:**
-- Place a lightning rod every 20 tiles in every direction
-- Each rod protects a 10-tile radius from its position
-- Connect rods to the power grid — they collect free energy from strikes
-- All buildings within rod range are immune to lightning
-
-The rod network overlaps by default at 20-tile spacing. I place rods first before any other building on a new island. I learned this the hard way when a single lightning strike took out half my holmium production line.
-
-{{< section "EM Plant Production Block" >}}
-
-The EM Plant is Fulgora signature building. It replaces assemblers for circuit production and is significantly faster than anything on Nauvis.
-
-Build a dedicated island for EM Plant production:
-- 6 recyclers feeding into a sorting cascade system
-- 2 chemical plants producing acid from ice and sulfur
-- 4 holmium plate refineries processing ore into plates
-- 2 supercapacitor assemblers making capacitors
-- 1 EM Plant assembler for final assembly
-
-Each EM Plant built on Fulgora can be shipped to other planets via rocket. I bring three back to Nauvis for my green circuit lines — they quadruple circuit production compared to assembler 3s.
-
-{{< section "Common Mistakes" >}}
-
-**Building on the wrong island.** Some islands have scrap resource patches, some do not. Scout with radar before building. Build recyclers directly on scrap islands to minimize belt distance between scrap and processing.
-
-**No overflow path for sorting.** If every filter fills up, the recycler stops. Always leave an overflow path to a final chest or secondary recycler loop. Design for the worst case.
-
-**Forgetting ice processing.** Ice is the highest volume scrap output at about 25%. It melts into water. Water goes to acid production. Without enough ice processing capacity, your acid line starves and holmium production stops.
-
-**Not enough recyclers.** Holmium is rare. Underestimating recycler count is the most common Fulgora failure. Build 50% more than your initial estimate. Extra recyclers are cheap compared to a dead base.
-
-**Skipping lightning rods.** One strike during a storm can destroy hours of progress. Rods are cheap. Build them everywhere.
-
-{{< section "FAQ" >}}
-
-**Q: Can I bring scrap to Nauvis for processing?**
-A: Yes. Ship scrap via rocket to Nauvis and recycle it there. The sorting challenge is the same, but lightning is not an issue on Nauvis. This is a good option for getting EM Plants without building a large Fulgora base.
-
-**Q: How much holmium do I need for the full tech tree?**
-A: About 2000 holmium plates total for all Space Age technologies. That is roughly 8 full stacks of holmium ore.
-
-**Q: What about the Fulgora-specific science pack?**
-A: Electromagnetic science uses EM Plant components plus circuits. Build the science assembler on the same island as the EM Plant production block.
-
-**Q: How do I connect islands?**
-A: Elevated rails connect islands. Build rail bridges over water between islands. Each bridge needs pylons every 15 tiles.
-
-{{< section "Related Guides" >}}
-
-- [Use quality modules on your recyclers]({{< ref "space-age/quality-module-guide" >}})
-- [Transport EM Plants between planets]({{< ref "space-age/space-platform-guide" >}})
-- [Automate sorting with circuit networks]({{< ref "blueprints/circuit-network-guide" >}})
-- [Design a main bus for Fulgora supply lines]({{< ref "base-design/main-bus-guide" >}})
-- [Survive Gleba for bioflux production]({{< ref "space-age/gleba-survival-guide" >}})
+- [Official Wiki — Fulgora](https://wiki.factorio.com/Fulgora) — scrap recycling weights, holmium processing ratios, lightning mechanics
+- [Factorio Forums — Fulgora Design Thread](https://forums.factorio.com/viewforum.php?f=69) — community sorting designs and power grid layouts
+- [Reddit — Fulgora Science Builds](https://www.reddit.com/r/factorio/) — sushi belt designs and compact holmium processing layouts

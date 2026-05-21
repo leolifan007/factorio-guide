@@ -6,14 +6,14 @@
     <description>Recent content in Gleba on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gleba Survival Guide — How to Beat the Spoilage Planet</title>
+      <title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title>
       <link>https://factorioguides.com/space-age/gleba-survival-guide/</link>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;Gleba replaces static production with spoilage-based mechanics. Every organic item decays over time, belts must be kept short, and buffer chests destroy production instead of helping it. The core loop — nutrients feed bacteria, bacteria produce ore, science consumes it all — works reliably with tight belts and circuit-controlled splitters.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Spoilage is the core mechanic on Gleba. Everything you build needs buffer-bounded belts, priority splitters for freshness, and pentapod-proof walls. Build a nutrient plus bacteria loop first, then layer in bioflux for science. Spoiled items recycle into nutrients, so nothing is ever completely wasted. Purple belts help move fresh items faster than spoilage can decay them.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Understanding Spoilage — The Two-Minute Rule&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Everything organic on Gleba has a spoilage timer. Yumako fruit, jelly, bioflux, nutrients, science packs — all of it decays into spoilage over time. Freshness is a percentage that ticks down continuously.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Every organic item on Gleba (and items derived from them) spoils over time:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

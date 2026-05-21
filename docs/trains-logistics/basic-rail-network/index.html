@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How to build a simple but functional train network in Factorio. Covers tracks, signals, train stops, and schedules.">
-  <title>Basic Rail Network — Your First Train Setup | Factorio Guide</title>
+  <meta name="description" content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.">
+  <title>Basic Rail Network — Signalling, Junctions, and Train Management | Factorio Guide</title>
 
   
   <link rel="canonical" href="https://factorioguides.com/trains-logistics/basic-rail-network/">
@@ -26,8 +26,8 @@
   
 
   
-  <meta property="og:title" content="Basic Rail Network — Your First Train Setup">
-  <meta property="og:description" content="How to build a simple but functional train network in Factorio. Covers tracks, signals, train stops, and schedules.">
+  <meta property="og:title" content="Basic Rail Network — Signalling, Junctions, and Train Management">
+  <meta property="og:description" content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://factorioguides.com/trains-logistics/basic-rail-network/">
 </head>
@@ -59,7 +59,7 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>Basic Rail Network — Your First Train Setup</h1><p class="article-desc">How to build a simple but functional train network in Factorio. Covers tracks, signals, train stops, and schedules.</p>
+      <h1>Basic Rail Network — Signalling, Junctions, and Train Management</h1><p class="article-desc">Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.</p>
       <div class="article-meta">
         <span class="meta-item">
           
@@ -69,7 +69,7 @@
             <line x1="5" y1="1" x2="5" y2="4"/>
             <line x1="9" y1="1" x2="9" y2="4"/>
           </svg>
-          Updated: May 18, 2026
+          Updated: May 20, 2026
         </span>
         <span class="meta-item">
           
@@ -78,7 +78,7 @@
             <line x1="7" y1="4" x2="7" y2="7"/>
             <line x1="7" y1="7" x2="10" y2="9"/>
           </svg>
-          2 min read
+          4 min read
         </span>
         <span class="meta-item">
           
@@ -122,106 +122,91 @@
           <a href="/trains-logistics/">Trains and Logistics Guide</a>
           
           <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">Basic Rail Network — Your First Train Setup</span>
+          <span class="breadcrumb-current">Basic Rail Network — Signalling, Junctions, and Train Management</span>
         </nav>
 
-        <h2 id="when-to-switch-to-trains">When to Switch to Trains?</h2>
-<p>Belts are fine for your starting area. But when ore patches are <strong>500 plus tiles away</strong>, trains become necessary.</p>
-<blockquote>
-<p><strong>Rule of thumb:</strong> If you need more than 200 belts of iron/copper, switch to trains.</p>
-</blockquote>
-<h2 id="basic-components">Basic Components</h2>
+        <p>You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.</div>
+
+<h2 id="the-mechanics-behind-train-deadlocks">The Mechanics Behind Train Deadlocks</h2>
+<p>Factorio's rail system uses <strong>blocks</strong>. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.</p>
+<p><strong>The two signals and when to use them:</strong></p>
 <table>
   <thead>
       <tr>
-          <th>Component</th>
-          <th>Purpose</th>
+          <th style="text-align: left">Signal</th>
+          <th style="text-align: left">What it does</th>
+          <th style="text-align: left">Where to place it</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Rail</td>
-          <td>The track trains drive on</td>
+          <td style="text-align: left">Rail signal</td>
+          <td style="text-align: left">Shows green if block ahead is clear</td>
+          <td style="text-align: left"><strong>After</strong> intersections, on straight track</td>
       </tr>
       <tr>
-          <td>Train stop</td>
-          <td>Where trains stop to load/unload</td>
-      </tr>
-      <tr>
-          <td>Rail signal</td>
-          <td>Controls block access (placed after intersections)</td>
-      </tr>
-      <tr>
-          <td>Chain signal</td>
-          <td>Extends block check (placed before intersections)</td>
-      </tr>
-      <tr>
-          <td>Locomotive</td>
-          <td>The engine (needs fuel)</td>
-      </tr>
-      <tr>
-          <td>Cargo wagon</td>
-          <td>Holds 40 stacks of items (20 in Space Age)</td>
+          <td style="text-align: left">Chain signal</td>
+          <td style="text-align: left">Shows green only if the NEXT block after it is also clear</td>
+          <td style="text-align: left"><strong>Before</strong> intersections, before rail crossings</td>
       </tr>
   </tbody>
 </table>
-<h2 id="your-first-train-line-step-by-step">Your First Train Line (Step-by-Step)</h2>
-<h3 id="step-1-lay-the-track">Step 1: Lay the Track</h3>
-<p>Build a <strong>single straight track</strong> from your main base to the mining outpost. Use <strong>rails</strong>, not <strong>straight rails</strong> (they allow curves).</p>
-<h3 id="step-2-place-train-stops">Step 2: Place Train Stops</h3>
+<p><strong>The rule:</strong> Chain before intersection, rail after intersection. If there's a string of intersections close together, chain signal before the first one and rail after the last one, with chain signals between them.</p>
+<h2 id="the-proven-fix--2-lane-rail-grid">The Proven Fix — 2-Lane Rail Grid</h2>
+<p><strong>Step 1 — Right-hand drive layout.</strong></p>
+<p>Run two rails: trains travel on the right. That means:</p>
 <ul>
-<li>At the <strong>mining outpost</strong>: name it <code>Iron Ore Pickup</code></li>
-<li>At the <strong>main base</strong>: name it <code>Iron Ore Dropoff</code></li>
+<li>Outer rail on each side → direction of travel</li>
+<li>Space between rails: 4 tiles (enough for signals between tracks)</li>
 </ul>
-<h3 id="step-3-add-signals">Step 3: Add Signals</h3>
-<p>Place a <strong>rail signal</strong> after each train stop (on the right side of the track).
-Place a <strong>chain signal</strong> before any intersection.</p>
-<div class="tip-box">
-<strong>Signal rule:</strong> Trains drive on the <em>right</em> in Factorio. Place signals on the right side of the track.
-</div>
-<h3 id="step-4-configure-the-train-schedule">Step 4: Configure the Train Schedule</h3>
+<p><strong>Step 2 — Intersection signals.</strong></p>
+<p>For a simple T-junction:</p>
 <ol>
-<li>Open the locomotive UI</li>
-<li>Add stop: <code>Iron Ore Pickup</code> — wait condition: <code>Full cargo</code></li>
-<li>Add stop: <code>Iron Ore Dropoff</code> — wait condition: <code>Empty cargo</code></li>
-<li>Repeat</li>
+<li>Before each entrance: chain signal on the right rail</li>
+<li>After each exit: rail signal on the right rail</li>
+<li>Inside the junction: no signals (trains should pass through without stopping)</li>
 </ol>
-<h2 id="single-track-vs-double-track">Single Track vs Double Track</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Type</th>
-          <th>Pros</th>
-          <th>Cons</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Single track</td>
-          <td>Cheap, simple</td>
-          <td>Only 1 train at a time</td>
-      </tr>
-      <tr>
-          <td>Double track</td>
-          <td>Multiple trains, bidirectional</td>
-          <td>More expensive, needs signals</td>
-      </tr>
-  </tbody>
-</table>
-<blockquote>
-<p><strong>Recommendation:</strong> Start with <strong>single track plus 1 train</strong>. Upgrade to double track only when you have 3 plus trains.</p>
-</blockquote>
-<h2 id="common-signal-mistakes">Common Signal Mistakes</h2>
-<blockquote>
-<p><strong>Mistake 1:</strong> Placing rail signals on both sides of the track. Only place on the <strong>right</strong>.</p>
-</blockquote>
-<blockquote>
-<p><strong>Mistake 2:</strong> No chain signals at intersections. Trains will deadlock.</p>
-</blockquote>
-<blockquote>
-<p><strong>Mistake 3:</strong> Forgetting that trains need <strong>fuel</strong>. Place a <strong>fuel inserter</strong> at the depot.</p>
-</blockquote>
-<p><strong>Next:</strong> <a href="https://factorioguides.com/trains-logistics/">Trains and Logistics Overview</a> — signals, deadlocks, and train limits for managing multiple trains.</p>
+<p>For a 4-way intersection (crossing):</p>
+<ol>
+<li>Chain signals at all four entrances</li>
+<li>Rail signals at all four exits</li>
+<li>If the intersection is compact, chain signals inside any branching path</li>
+</ol>
+<p><strong>Step 3 — Train stops.</strong></p>
+<p>Each station needs:</p>
+<ol>
+<li>A rail signal immediately after the station (defines the station block)</li>
+<li>A chain signal before the first turn into the station (prevents trains blocking the main line while waiting)</li>
+<li>Station name: <code>[Resource] Location Function</code> (e.g. <code>[Iron] Smelter Input</code>)</li>
+</ol>
+<div class="pro-tip"><strong>Quick Tip:</strong> Use train limits (the number in the station UI) instead of disabling stations via circuit network. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).</div>
+
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>Rail signal inside the intersection.</strong> A train stops on the rail signal, which is inside the intersection, blocking all crossing paths. Fix: chain signals at entrances ensure trains don't enter unless they can clear the entire intersection.</p>
+<p><strong>Roundabout without chain signals.</strong> A single-track roundabout with rail signals at each exit. A train enters, then stops because the exit is blocked — jams the entire roundabout. Fix: chain signal at every roundabout entrance.</p>
+<p><strong>One-way tracks in a two-way network.</strong> Every piece of track should be assigned one direction. If you place a locomotive facing the wrong way, the station may not work, or the train may try to reverse. Solution: use one-way rails exclusively for large networks.</p>
+<p><strong>Too few stackers.</strong> A station with limit 3 and 3 trains: when all 3 are at the station, the third waits on the main line, blocking everything. Build a stacker (waiting area with multiple parallel tracks) outside each high-traffic station.</p>
+<h2 id="pushing-it-further--megabase-rail-networks">Pushing It Further — Megabase Rail Networks</h2>
+<p>At 500+ SPM, your rail grid needs:</p>
+<p><strong>4-lane tracks</strong> — 2 lanes per direction. Dedicated passing lane for faster trains.</p>
+<p><strong>Buffered intersections</strong> — Intersections with waiting bays for turning traffic. Prevents a turning train from blocking the straight-through lane.</p>
+<p><strong>Train fuel depots</strong> — 1-minute refuel stop in the center of the grid. Every train's schedule starts with: Depot (fuel stop, 5s) → Pickup → Drop-off → Back to Depot.</p>
+<p><strong>Centralized train control</strong> — Use circuit network to broadcast open station slots. A &quot;train manager&quot; constant combinator at each station sends its availability to a central signal, which dynamically reroutes trains.</p>
+<p><strong>Key metrics to track:</strong></p>
+<ul>
+<li>If trains wait more than 30 seconds at any intersection: upgrade that junction</li>
+<li>If stacker fills up regularly: add more stacker capacity</li>
+<li>If fuel trains cannot reach depots: the grid is too congested</li>
+</ul>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Rail_signals">Official Wiki — Rail Signals</a> — signal placement rules, chain signal behavior, and block mechanics</li>
+<li><a href="https://wiki.factorio.com/Tutorial:Train_signals">Official Wiki — Train Automation</a> — interactive tutorial on chain and rail signal logic</li>
+<li><a href="https://forums.factorio.com/viewforum.php?f=18">Factorio Forums — Rail Design</a> — community blueprints for 4-lane intersections and train stackers</li>
+<li><a href="https://factorioprints.com/">Factorio Blueprint Library — Train Grids</a> — ready-to-use 2-lane and 4-lane City Block rail grids</li>
+</ul>
 
 
         
