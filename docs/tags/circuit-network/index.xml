@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Circuit-Network on Factorio Guide</title><link>https://factorioguides.com/tags/circuit-network/</link><description>Recent content in Circuit-Network on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/circuit-network/index.xml" rel="self" type="application/rss+xml"/><item><title>Circuit Network Beginner Guide</title><link>https://factorioguides.com/blueprints/circuit-network-guide/</link><pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/blueprints/circuit-network-guide/</guid><description>&lt;p&gt;I spent my first 200 hours in Factorio ignoring the circuit network entirely. Red and green wires sat in my inventory unused. Every base I built eventually deadlocked — belts backed up, oil refineries ground to a halt, and train intersections turned into parking lots. The circuit network looked intimidating, so I skipped it.&lt;/p&gt;
-&lt;p&gt;Turns out you only need three basic patterns to solve 90% of your circuit problems. I will walk through them from zero.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Circuit-Network on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/circuit-network/</link>
+    <description>Recent content in Circuit-Network on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/circuit-network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Circuit Network Beginner Guide</title>
+      <link>https://factorioguides.com/blueprints/circuit-network-guide/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/blueprints/circuit-network-guide/</guid>
+      <description>&lt;p&gt;The circuit network is Factorio&#39;s built-in logic system. Red and green wires carry signals between machines, and combinators process those signals to control your factory automatically. You only need three basic patterns to solve 90% of common problems: fluid cracking automation, SR latches for power control, and belt item counting.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Red wire and green wire are separate signal networks. A decider combinator outputs a signal when a condition is met. Connect a storage tank to a pump with red wire, set the decider to &amp;quot;petroleum &amp;gt; 20000 output petroleum = 1&amp;quot;, and you have automated cracking. Three reusable patterns handle the rest.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;The Two Wires — What They Actually Do&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Red wire and green wire are independent signal channels. Think of them as two separate data buses running through your factory.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

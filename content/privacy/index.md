@@ -1,51 +1,40 @@
 ---
-title: "XXXXX XXXXX"
-description: "XXXXX XXXXX XXXXX XXXXX XXXXX."
-date: "2026-05-16"
-draft: true
+title: "Privacy Policy"
+description: "Privacy policy for Factorio Guide — how we handle your data."
+date: "2026-05-21"
+draft: false
 ---
 
-XXXXX XXXXX: XXXXX XXXXX, XXXXX XXXXX
+## Privacy Policy
 
-## XXXXX XXXXX XXXXX
+**Last updated:** May 21, 2026
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX:
+### Information We Collect
 
-- **XXXXX XXXXX** XXXXX XXXXX XXXXX XXXXX
-- **XXXXX XXXXX** (XXXXX) XXXXX XXXXX XXXXX XXXXX
-- **XXXXX XXXXX** XXXXX XXXXX XXXXX XXXXX
-- **XXXXX XXXXX** XXXXX XXXXX XXXXX XXXXX
+**Analytics:** We use Google Analytics to understand how visitors use our site. Google Analytics collects anonymized data such as pages visited, time spent, and approximate geographic region. No personally identifiable information is collected.
 
-## XXXXX
+**Cookies:** Our site uses essential cookies for site functionality. Google Analytics may set performance cookies. You can disable cookies in your browser settings.
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
+### How We Use Your Data
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
+- Improve site content and navigation
+- Understand which guides are most helpful to readers
+- Monitor site performance and uptime
 
-## XXXXX XXXXX
+### Third-Party Services
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX:
+- **Google Analytics:** Anonymized usage data (opt-out available via [Google's opt-out page](https://tools.google.com/dlpage/gaoptout))
+- **Google Fonts:** Font loading (standard web font request, no tracking)
+- **Cloudflare:** CDN and security (standard web traffic data)
 
-- **XXXXX XXXXX** — XXXXX XXXXX
-- **XXXXX XXXXX** — XXXXX XXXXX
-- **XXXXX XXXXX** — XXXXX XXXXX
+### Data Retention
 
-## XXXXX XXXXX
+Analytics data is retained for 26 months. We do not store any personal data server-side.
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
+### Contact
 
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
-
-## XXXXX XXXXX
-
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
-
-## XXXXX
-
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
-
-XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.
+For privacy-related inquiries: contact@factorioguides.com
 
 ---
 
-*XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX.*
+*This is an unofficial fan guide. Factorio and all related content are trademarks of Wube Software.*

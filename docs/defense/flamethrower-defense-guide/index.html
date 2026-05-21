@@ -1,24 +1,389 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon's teeth patterns, and biter-proof designs for early to endgame."><title>Flamethrower Defense — Advanced Wall & Turret Layout | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/defense/flamethrower-defense-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Flamethrower Defense — Advanced Wall & Turret Layout"><meta property="og:description" content="Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon's teeth patterns, and biter-proof designs for early to endgame."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/defense/flamethrower-defense-guide/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Flamethrower Defense — Advanced Wall & Turret Layout</h1><p class=article-desc>Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon's teeth patterns, and biter-proof designs for early to endgame.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 18, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-5 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=article-ad-left><div class=ad-placeholder><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-<span class=ad-placeholder-label>Advertisement</span>
-<span class=ad-placeholder-size>160 × 600</span></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>›</span>
-<a href=/defense/>Defense Guide</a>
-<span class=breadcrumb-sep>›</span>
-<span class=breadcrumb-current>Flamethrower Defense — Advanced Wall & Turret Layout</span></nav><p>I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don't care about biter armor.</p><div class=pro-tip><strong>TL;DR:</strong> Build a wall with flamethrower turrets every 4 tiles, gun turrets every 2 tiles, and a single crude oil pipe behind them. One pumpjack at minimum speed supplies 30+ turrets. Add repair bots and you're set for the entire game.</div><div class=section-head><h2>Why Flamethrower Turrets?</h2></div><p>Each turret type has trade-offs:</p><table><thead><tr><th>Turret</th><th style=text-align:center>DPS</th><th style=text-align:center>Ammo cost</th><th style=text-align:center>Power draw</th><th style=text-align:center>Biter armor</th></tr></thead><tbody><tr><td>Gun turret (piercing)</td><td style=text-align:center>Medium</td><td style=text-align:center>High (iron/copper)</td><td style=text-align:center>Negligible</td><td style=text-align:center>Resist 20%</td></tr><tr><td>Laser turret</td><td style=text-align:center>Medium</td><td style=text-align:center>None</td><td style=text-align:center>Massive (2.4 MW each)</td><td style=text-align:center>Full damage</td></tr><tr><td>Flamethrower</td><td style=text-align:center>Highest</td><td style=text-align:center>Minimal (crude oil)</td><td style=text-align:center>Very low</td><td style=text-align:center>Ignores armor</td></tr></tbody></table><p>Flamethrower turrets deal both direct impact damage and fire-on-ground damage over time. Biters keep burning even after running past the flame. This area denial makes them dramatically more efficient than any other turret for the same resource cost.</p><div class=section-head><h2>The Kill Corridor — Wall Layout</h2></div><p>Dragon's teeth walls (zigzag patterns) are outdated since the combat overhaul. Modern defense uses a <strong>kill corridor</strong>:</p><img src=/images/diagrams/flamethrower-wall.svg alt="Kill corridor wall layout with flamethrower and gun turret spacing, ammo belt, and oil pipe" class=schema-diagram loading=lazy width=760><p><strong>Layer breakdown (from outside in):</strong></p><ol><li><strong>Outer wall:</strong> 2-thick stone wall. Biters will damage this regardless.</li><li><strong>Kill corridor:</strong> 3-4 tile gap. Biters funnel through here, getting hit from both sides.</li><li><strong>Inner wall:</strong> Single-thick stone wall. Protects turrets from spitter acid.</li><li><strong>Flamethrower turrets:</strong> Every 4 tiles. Primary DPS.</li><li><strong>Gun turrets:</strong> Between flamethrowers. Cleanup crew for fast biters.</li><li><strong>Ammo belt:</strong> Express belt of piercing rounds feeding gun turrets.</li><li><strong>Oil pipe:</strong> Underground pipes for crude oil to flamethrower turrets.</li><li><strong>Roboport:</strong> Behind the wall for repairs.</li></ol><div class=section-head><h2>Turret Spacing and Pattern</h2></div><p><strong>Pattern:</strong> F(lame), gap (2 tiles), G(un), gap (2 tiles), repeat.</p><p>This gives you:</p><ul><li>Flame coverage overlapping across the entire wall</li><li>Gun turrets catching any biter that survives the fire</li><li>No gaps in the damage field</li></ul><div class=section-head><h2>Oil Supply — More Efficient Than You Think</h2></div><p>This is what surprised me most: flamethrower turrets barely use oil.</p><ul><li>One turret consumes <strong>3 crude oil per shot</strong></li><li>One shot creates a flame that burns for ~3 seconds</li><li>At 1 attack wave per minute, each turret needs &lt; 2 oil/s average</li><li>A minimum-speed pumpjack (~2/s) supplies <strong>30+ flamethrower turrets</strong></li></ul><p><strong>Oil logistics:</strong></p><ol><li>Run a single pipe line from your refinery or a dedicated pumpjack</li><li>Use underground pipes every 2 tiles to keep the path clear</li><li>Buffer: 1 storage tank per 20 turrets — provides 3+ minutes of sustained fire</li><li>Circuit condition: connect a tank to your refinery. If crude &lt; 500, send a warning</li></ol><div class=callout><strong>Don't use heavy or light oil for flamethrowers.</strong> They work on any oil type, but crude is the cheapest you'll find. Save light oil for solid fuel and cracking.</div><div class=section-head><h2>Ammo Supply — Belt-Fed Gun Turrets</h2></div><p>Gun turrets chew through ammo during big attacks. Here's a reliable setup:</p><ol><li>Run an express belt of piercing rounds behind the entire wall</li><li>Use red inserters from belt into each gun turret</li><li>Set a circuit condition: belt runs only when turret ammo &lt; 100 rounds</li></ol><div class=pro-tip><strong>Ammo production:</strong> One assembler making piercing rounds runs fast enough for a full perimeter. Place it near your wall and feed directly onto the ammo belt loop.</div><div class=section-head><h2>Repair and Maintenance</h2></div><p>A defensive wall needs ongoing maintenance. Here's the logistics setup:</p><ul><li><strong>Construction bots</strong> in a roboport network (overlapping coverage along the entire wall)</li><li><strong>Repair packs</strong> in a requester chest near each roboport section</li><li><strong>Spare walls and turrets</strong> in logistics storage (bots automatically replace destroyed ones)</li><li><strong>Power poles</strong> inside the wall (large poles to skip gaps)</li></ul><p>Build repair stations every 30-40 tiles along the wall. Each station: 1 roboport, 1 storage chest with replacement walls/turrets, 1 requester chest with repair packs.</p><div class=section-head><h2>Artillery and Flamethrower Combo</h2></div><p>Late game, artillery triggers attack waves. Flamethrowers handle the cleanup:</p><ol><li>Artillery shell lands in biter base</li><li>Biters aggro and charge toward the loudest sound (artillery)</li><li>They funnel into your kill corridor</li><li>Flamethrowers torch the entire wave</li><li>Gun turrets finish survivors</li><li>Repeat until biter base is gone</li></ol><p><strong>Artillery range tip:</strong> Overlap your artillery wagon range with neighboring outposts. One artillery train stop per ~4 map chunks creates safe zones.</p><div class=pro-tip>Use a circuit network around your artillery to detect incoming attacks. Wire a radar to the artillery — when the outpost gets attacked, the circuit flips an alarm. Works better than listening for distant gunfire.</div><div class=section-head><h2>Troubleshooting</h2></div><table><thead><tr><th>Problem</th><th>Likely Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Walls breached</td><td>Not enough flamethrowers</td><td>Add one every 4 tiles</td></tr><tr><td>Oil pipe empty</td><td>Pipe throughput limit</td><td>Use underground pipes throughout</td></tr><tr><td>Gun turrets out of ammo</td><td>Belt supply too slow</td><td>Upgrade to express belt, check assembler</td></tr><tr><td>Behemoth breakthrough</td><td>Need more damage upgrades</td><td>Research physical + fire damage together</td></tr><tr><td>Bots not repairing</td><td>Roboport too far</td><td>Add roboports every 30 tiles</td></tr><tr><td>Biters path around wall</td><td>Wall not sealed</td><td>Check for gaps — water, cliffs, ore patches</td></tr></tbody></table><div class=section-head><h2>Scaling for Megabase</h2></div><p>For a full perimeter around a megabase:</p><ol><li>Build wall modules in blueprint form (50-tile segments)</li><li>Each segment: 2 walls, 6 flamethrowers, 6 gun turrets, 1 roboport</li><li>Connect with a crude oil pipe ring around your entire base</li><li>Add artillery outposts at chokepoints (bottleneck areas between water/lakes)</li><li>Train-deliver replacement walls and ammo from central production</li></ol><p>A full perimeter using this design handles 99% of attacks autonomously. The only intervention needed is the occasional behemoth wave after artillery expansion.</p><div class=section-head><h2>Bottom Line</h2></div><p>Flamethrower defense is the most resource-efficient way to protect your factory. One oil pipe, one ammo belt, and a well-designed kill corridor handle everything from early-game small biters to late-game behemoths.</p><p><strong>Numbers to remember:</strong></p><ul><li>Flamethrowers every 4 tiles, gun turrets every 2 tiles</li><li>One minimum-speed pumpjack supplies 30+ turrets</li><li>Kill corridor: outer wall → 3-4 tile gap → inner wall → turrets</li><li>Roboports every 30 tiles for full repair coverage</li></ul><p><strong>Related:</strong> <a href=https://factorioguides.com/defense/early-game-defense/>Early Game Defense</a> — setting up your first walls before flamethrowers.</p><div class=back-to-section><a href=/defense/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Defense Guide</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/defense/early-game-defense/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">E</text></svg></div><div class=related-body><h4>Early Game Defense — Surviving Your First Biter Attacks</h4><p>How to defend your factory in the first few hours of Factorio. Walls, gun turrets, and ammo management.</p></div></a></div></div></div></div><div class=article-ad-right><div class=ad-placeholder><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-<span class=ad-placeholder-label>Advertisement</span>
-<span class=ad-placeholder-size>160 × 600</span></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon&#39;s teeth patterns, and biter-proof designs for early to endgame.">
+  <title>Flamethrower Defense — Advanced Wall &amp; Turret Layout | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/defense/flamethrower-defense-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Flamethrower Defense — Advanced Wall &amp; Turret Layout">
+  <meta property="og:description" content="Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon&#39;s teeth patterns, and biter-proof designs for early to endgame.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/defense/flamethrower-defense-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Flamethrower Defense — Advanced Wall &amp; Turret Layout</h1><p class="article-desc">Complete Factorio flamethrower defense guide: wall layout, turret spacing, oil supply, dragon&#39;s teeth patterns, and biter-proof designs for early to endgame.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 18, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          5 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    <div class="article-ad-left">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          
+          <a href="/defense/">Defense Guide</a>
+          
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Flamethrower Defense — Advanced Wall &amp; Turret Layout</span>
+        </nav>
+
+        <p>Flamethrower turrets have the highest raw DPS of any early-to-mid-game turret. They cost almost nothing to feed (one pumpjack supplies 30+ turrets), deal area damage over time, and ignore biter armor. A properly designed wall with flamethrowers handles attacks from early-game small biters through late-game behemoths.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Build a wall with flamethrower turrets every 4 tiles, gun turrets every 2 tiles, and a single crude oil pipe behind them. One pumpjack at minimum speed supplies 30+ turrets. Add repair bots and you're set for the entire game.</div>
+
+<div class="section-head"><h2>Why Flamethrower Turrets?</h2></div>
+
+<p>Each turret type has trade-offs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Turret</th>
+          <th style="text-align: center">DPS</th>
+          <th style="text-align: center">Ammo cost</th>
+          <th style="text-align: center">Power draw</th>
+          <th style="text-align: center">Biter armor</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gun turret (piercing)</td>
+          <td style="text-align: center">Medium</td>
+          <td style="text-align: center">High (iron/copper)</td>
+          <td style="text-align: center">Negligible</td>
+          <td style="text-align: center">Resist 20%</td>
+      </tr>
+      <tr>
+          <td>Laser turret</td>
+          <td style="text-align: center">Medium</td>
+          <td style="text-align: center">None</td>
+          <td style="text-align: center">Massive (2.4 MW each)</td>
+          <td style="text-align: center">Full damage</td>
+      </tr>
+      <tr>
+          <td>Flamethrower</td>
+          <td style="text-align: center">Highest</td>
+          <td style="text-align: center">Minimal (crude oil)</td>
+          <td style="text-align: center">Very low</td>
+          <td style="text-align: center">Ignores armor</td>
+      </tr>
+  </tbody>
+</table>
+<p>Flamethrower turrets deal both direct impact damage and fire-on-ground damage over time. Biters keep burning even after running past the flame. This area denial makes them dramatically more efficient than any other turret for the same resource cost.</p>
+<div class="section-head"><h2>The Kill Corridor — Wall Layout</h2></div>
+
+<p>Dragon's teeth walls (zigzag patterns) are outdated since the combat overhaul. Modern defense uses a <strong>kill corridor</strong>:</p>
+<img src="/images/diagrams/flamethrower-wall.svg" alt="Kill corridor wall layout with flamethrower and gun turret spacing, ammo belt, and oil pipe" class="schema-diagram" loading="lazy" width="760">
+
+<p><strong>Layer breakdown (from outside in):</strong></p>
+<ol>
+<li><strong>Outer wall:</strong> 2-thick stone wall. Biters will damage this regardless.</li>
+<li><strong>Kill corridor:</strong> 3-4 tile gap. Biters funnel through here, getting hit from both sides.</li>
+<li><strong>Inner wall:</strong> Single-thick stone wall. Protects turrets from spitter acid.</li>
+<li><strong>Flamethrower turrets:</strong> Every 4 tiles. Primary DPS.</li>
+<li><strong>Gun turrets:</strong> Between flamethrowers. Cleanup crew for fast biters.</li>
+<li><strong>Ammo belt:</strong> Express belt of piercing rounds feeding gun turrets.</li>
+<li><strong>Oil pipe:</strong> Underground pipes for crude oil to flamethrower turrets.</li>
+<li><strong>Roboport:</strong> Behind the wall for repairs.</li>
+</ol>
+<div class="section-head"><h2>Turret Spacing and Pattern</h2></div>
+
+<p><strong>Pattern:</strong> F(lame), gap (2 tiles), G(un), gap (2 tiles), repeat.</p>
+<p>This gives you:</p>
+<ul>
+<li>Flame coverage overlapping across the entire wall</li>
+<li>Gun turrets catching any biter that survives the fire</li>
+<li>No gaps in the damage field</li>
+</ul>
+<div class="section-head"><h2>Oil Supply — More Efficient Than You Think</h2></div>
+
+<p>This is what surprised me most: flamethrower turrets barely use oil.</p>
+<ul>
+<li>One turret consumes <strong>3 crude oil per shot</strong></li>
+<li>One shot creates a flame that burns for ~3 seconds</li>
+<li>At 1 attack wave per minute, each turret needs &lt; 2 oil/s average</li>
+<li>A minimum-speed pumpjack (~2/s) supplies <strong>30+ flamethrower turrets</strong></li>
+</ul>
+<p><strong>Oil logistics:</strong></p>
+<ol>
+<li>Run a single pipe line from your refinery or a dedicated pumpjack</li>
+<li>Use underground pipes every 2 tiles to keep the path clear</li>
+<li>Buffer: 1 storage tank per 20 turrets — provides 3+ minutes of sustained fire</li>
+<li>Circuit condition: connect a tank to your refinery. If crude &lt; 500, send a warning</li>
+</ol>
+<div class="callout"><strong>Don't use heavy or light oil for flamethrowers.</strong> They work on any oil type, but crude is the cheapest you'll find. Save light oil for solid fuel and cracking.</div>
+
+<div class="section-head"><h2>Ammo Supply — Belt-Fed Gun Turrets</h2></div>
+
+<p>Gun turrets chew through ammo during big attacks. Here's a reliable setup:</p>
+<ol>
+<li>Run an express belt of piercing rounds behind the entire wall</li>
+<li>Use red inserters from belt into each gun turret</li>
+<li>Set a circuit condition: belt runs only when turret ammo &lt; 100 rounds</li>
+</ol>
+<div class="pro-tip"><strong>Ammo production:</strong> One assembler making piercing rounds runs fast enough for a full perimeter. Place it near your wall and feed directly onto the ammo belt loop.</div>
+
+<div class="section-head"><h2>Repair and Maintenance</h2></div>
+
+<p>A defensive wall needs ongoing maintenance. Here's the logistics setup:</p>
+<ul>
+<li><strong>Construction bots</strong> in a roboport network (overlapping coverage along the entire wall)</li>
+<li><strong>Repair packs</strong> in a requester chest near each roboport section</li>
+<li><strong>Spare walls and turrets</strong> in logistics storage (bots automatically replace destroyed ones)</li>
+<li><strong>Power poles</strong> inside the wall (large poles to skip gaps)</li>
+</ul>
+<p>Build repair stations every 30-40 tiles along the wall. Each station: 1 roboport, 1 storage chest with replacement walls/turrets, 1 requester chest with repair packs.</p>
+<div class="section-head"><h2>Artillery and Flamethrower Combo</h2></div>
+
+<p>Late game, artillery triggers attack waves. Flamethrowers handle the cleanup:</p>
+<ol>
+<li>Artillery shell lands in biter base</li>
+<li>Biters aggro and charge toward the loudest sound (artillery)</li>
+<li>They funnel into your kill corridor</li>
+<li>Flamethrowers torch the entire wave</li>
+<li>Gun turrets finish survivors</li>
+<li>Repeat until biter base is gone</li>
+</ol>
+<p><strong>Artillery range tip:</strong> Overlap your artillery wagon range with neighboring outposts. One artillery train stop per ~4 map chunks creates safe zones.</p>
+<div class="pro-tip">Use a circuit network around your artillery to detect incoming attacks. Wire a radar to the artillery — when the outpost gets attacked, the circuit flips an alarm. Works better than listening for distant gunfire.</div>
+
+<div class="section-head"><h2>Troubleshooting</h2></div>
+
+<table>
+  <thead>
+      <tr>
+          <th>Problem</th>
+          <th>Likely Cause</th>
+          <th>Fix</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Walls breached</td>
+          <td>Not enough flamethrowers</td>
+          <td>Add one every 4 tiles</td>
+      </tr>
+      <tr>
+          <td>Oil pipe empty</td>
+          <td>Pipe throughput limit</td>
+          <td>Use underground pipes throughout</td>
+      </tr>
+      <tr>
+          <td>Gun turrets out of ammo</td>
+          <td>Belt supply too slow</td>
+          <td>Upgrade to express belt, check assembler</td>
+      </tr>
+      <tr>
+          <td>Behemoth breakthrough</td>
+          <td>Need more damage upgrades</td>
+          <td>Research physical + fire damage together</td>
+      </tr>
+      <tr>
+          <td>Bots not repairing</td>
+          <td>Roboport too far</td>
+          <td>Add roboports every 30 tiles</td>
+      </tr>
+      <tr>
+          <td>Biters path around wall</td>
+          <td>Wall not sealed</td>
+          <td>Check for gaps — water, cliffs, ore patches</td>
+      </tr>
+  </tbody>
+</table>
+<div class="section-head"><h2>Scaling for Megabase</h2></div>
+
+<p>For a full perimeter around a megabase:</p>
+<ol>
+<li>Build wall modules in blueprint form (50-tile segments)</li>
+<li>Each segment: 2 walls, 6 flamethrowers, 6 gun turrets, 1 roboport</li>
+<li>Connect with a crude oil pipe ring around your entire base</li>
+<li>Add artillery outposts at chokepoints (bottleneck areas between water/lakes)</li>
+<li>Train-deliver replacement walls and ammo from central production</li>
+</ol>
+<p>A full perimeter using this design handles 99% of attacks autonomously. The only intervention needed is the occasional behemoth wave after artillery expansion.</p>
+<div class="section-head"><h2>Bottom Line</h2></div>
+
+<p>Flamethrower defense is the most resource-efficient way to protect your factory. One oil pipe, one ammo belt, and a well-designed kill corridor handle everything from early-game small biters to late-game behemoths.</p>
+<p><strong>Numbers to remember:</strong></p>
+<ul>
+<li>Flamethrowers every 4 tiles, gun turrets every 2 tiles</li>
+<li>One minimum-speed pumpjack supplies 30+ turrets</li>
+<li>Kill corridor: outer wall → 3-4 tile gap → inner wall → turrets</li>
+<li>Roboports every 30 tiles for full repair coverage</li>
+</ul>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/defense/early-game-defense/">Early Game Defense</a> — setting up your first walls before flamethrowers.</p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/defense/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Defense Guide
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/defense/early-game-defense/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">E</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Early Game Defense — Surviving Your First Biter Attacks</h4>
+                <p>How to defend your factory in the first few hours of Factorio. Walls, gun turrets, and ammo management.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+    <div class="article-ad-right">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

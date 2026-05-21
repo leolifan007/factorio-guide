@@ -1,15 +1,15 @@
 ---
 title: "Factorio Science Packs — Complete Recipes & Ratios Guide"
 description: "All 7 Factorio science pack tiers: exact recipes, assembler requirements, production ratios, and the research order that makes sense. With visual chain diagrams."
-date: "2026-05-18"
+date: "2026-05-21"
 ---
 
 <!-- Section: Overview -->
 <div class="section-card orange">
 
-**Science Packs** are the core progression mechanic in Factorio. Each pack represents a branch of research, and researching them unlocks new technologies. This guide covers all 7 science pack tiers, their exact recipes, production ratios, and the recommended research order.
+**Science Packs** are the core progression mechanic in Factorio. Each pack represents a branch of research. This guide covers all 7 science pack tiers, their exact recipes, production ratios, and the recommended research order.
 
-> **Quick tip:** Always build science pack assemblers **before** you need the science, not after. Running out of science mid-game is one of the most common early mistakes.
+> **Quick tip:** Build science pack assemblers before you need the science, not after. Running out of science mid-game is one of the most common early mistakes.
 
 </div>
 
@@ -95,11 +95,10 @@ The first science pack you produce. Unlocks basic automation and logistic resear
 
 | Input | Quantity | Source |
 |-------|----------|--------|
-| Iron Plate | 1 | Smelting |
-| Copper Plate | 1 | Smelting |
 | Iron Gear Wheel | 1 | Iron Plate × 2 |
+| Copper Plate | 1 | Smelting |
 
-**Ratio:** 1 assembler = 12 RPM = 0.2 packs/s → **need 5 assemblers for 1 SPM**
+**Ratio:** 1 assembler produces 1 red pack every 5 seconds. Build 5-10 assemblers to feed early-game research.
 
 </div>
 
@@ -113,18 +112,16 @@ The first science pack you produce. Unlocks basic automation and logistic resear
 
 Unlocks logistics research: inserters, belts, circuits, and the logistic system.
 
-**Assembler:** Assembling Machine 2
+**Assembler:** Assembling Machine 1 (upgrade to 2 later)
 **Crafting Time:** 6 seconds
 **Stack Size:** 200
 
 | Input | Quantity | Notes |
 |-------|----------|-------|
-| Inserter | 1 | ~0.5 iron plate/s |
-| Transport Belt | 1 | 0.5 iron plate/s |
-| Assembly Machine (or) Copper Cable | 1 | Either/or |
-| Iron Gear Wheel | 1 | |
+| Inserter | 1 | 1 iron gear + 1 green circuit + 1 iron plate |
+| Transport Belt | 1 | 1 iron plate |
 
-**Ratio:** Requires a **Mall** to supply parts. Build a dedicated mall before blue science.
+**Ratio:** 1 inserter assembler supports 12 science assemblers. 1 belt assembler supports 24.
 
 </div>
 
@@ -136,7 +133,7 @@ Unlocks logistics research: inserters, belts, circuits, and the logistic system.
   Tier 3 — Military Science Pack
 </div>
 
-Unlocks combat and defense research. Requires coal, not just ore.
+Unlocks combat and defense research.
 
 **Assembler:** Assembling Machine 2
 **Crafting Time:** 10 seconds
@@ -144,12 +141,11 @@ Unlocks combat and defense research. Requires coal, not just ore.
 
 | Input | Quantity | Notes |
 |-------|----------|-------|
-| Piercing Rounds Magazine | 1 | Red science + steel |
-| Grenade | 1 | Coal + iron plate |
-| Submachine Gun | 1 | Iron plate + copper |
-| Wall | 2 | Stone |
+| Piercing Rounds Magazine | 1 | Steel + copper + iron |
+| Grenade | 1 | Iron + coal |
+| Wall | 1 | Stone bricks |
 
-**Tip:** Build Military science last of the Tier 1-3 packs — it requires the most complex supply chain.
+**Note:** Military science requires steel production. Research steel processing before scaling military science.
 
 </div>
 
@@ -161,20 +157,18 @@ Unlocks combat and defense research. Requires coal, not just ore.
   Tier 4 — Chemical Science Pack
 </div>
 
-The hardest science pack to produce. Requires oil processing and blue circuits.
+Introduces fluid-based production. Requires oil processing for plastic (needed for red circuits) and sulfur.
 
-**Assembler:** Assembling Machine 3
+**Assembler:** Assembling Machine 2 (upgrade to 3 later)
 **Crafting Time:** 12 seconds
 **Stack Size:** 200
 
 | Input | Quantity | Notes |
 |-------|----------|-------|
-| Advanced Circuit | 3 | Red circuits |
-| Engine Unit | 2 | Steel + red circuits |
-| Lubricant | 10 | From heavy oil |
-| Steel Plate | 2 | From iron ore |
+| Advanced Circuit | 1 | Red circuit: plastic + copper + green circuits |
+| Engine Unit | 1 | Steel + iron gears + pipe |
 
-**Ratio:** 3 Blue Circuits/s + 2 Engine Units/s + 20 Lubricant/s → build this as a **standalone unit**, not on the main bus.
+**Ratio:** 1 engine assembler supports about 2.5 science assemblers. Build at least 2 engine assemblers for every 5 blue science assemblers.
 
 </div>
 
@@ -186,7 +180,7 @@ The hardest science pack to produce. Requires oil processing and blue circuits.
   Tier 5 — Production Science Pack
 </div>
 
-Unlocks production module and productivity research. Uses modules as inputs.
+Unlocks production modules, beacons, and late-game technologies.
 
 **Assembler:** Assembling Machine 3
 **Crafting Time:** 14 seconds
@@ -194,16 +188,15 @@ Unlocks production module and productivity research. Uses modules as inputs.
 
 | Input | Quantity | Notes |
 |-------|----------|-------|
-| Electric Furnace | 1 | Steel + circuits |
-| Electric Mining Drill | 1 | Steel + gears + circuits |
-| Productivity Module 1 | 1 | From modules |
-| Rail | 30 | |
+| Electric Furnace | 1 | Steel + circuits + stone brick |
+| Productivity Module 1 | 1 | Green circuits + plastic |
+| Rail | 30 | Steel + stone |
 
-**Note:** Rail is consumed (not returned). This is one of the most expensive science packs to produce.
+**Note:** Purple science is the most expensive per-pack in raw resources. Build a dedicated sub-factory rather than adding to the main bus.
 
 </div>
 
-### Yellow Science Pack (Usage)
+### Yellow Science Pack (Utility)
 
 <div class="section-card">
 <div class="section-card-title" style="border-color:#ff7700">
@@ -211,7 +204,7 @@ Unlocks production module and productivity research. Uses modules as inputs.
   Tier 6 — Utility Science Pack
 </div>
 
-Unlocks utility research including nuclear, modules, and logistics bots.
+Unlocks utility research: nuclear power, logistics bots, and advanced module technologies.
 
 **Assembler:** Assembling Machine 3
 **Crafting Time:** 16 seconds
@@ -219,12 +212,11 @@ Unlocks utility research including nuclear, modules, and logistics bots.
 
 | Input | Quantity | Notes |
 |-------|----------|-------|
-| Processing Unit | 2 | Blue circuits + advanced |
-| Heavy Modular Frame | 1 | From Vulcanus (Space Age) |
-| Electric Engine Unit | 1 | Electric furnace + lubricant |
-| Battery | 1 | From processing |
+| Processing Unit | 2 | Blue circuit: red circuits + green circuits |
+| Electric Engine Unit | 1 | Engine + electric motor + lubricant |
+| Battery | 1 | Iron + sulfuric acid + copper |
 
-**Ratio:** Processing Units are the bottleneck. Build a dedicated blue circuit production line before Yellow science.
+**Bottleneck:** Processing Units. Build a dedicated blue circuit line before scaling yellow science. Each blue circuit consumes 20 green circuits and 2 red circuits.
 
 </div>
 
@@ -246,10 +238,10 @@ Produced by launching rockets. Requires the most infrastructure of any science p
 |-----------|----------|-------|
 | Rocket Control Unit | 10 | Blue circuit + processing unit |
 | Rocket Fuel | 10 | Solid fuel + light oil |
-| Low Density Structure | 10 | Copper plate + steel |
-| Satellite | 1 | Solar panels + processing unit |
+| Low Density Structure | 10 | Copper plate + steel + plastic |
+| Satellite | 1 | Solar panels + processing unit + batteries |
 
-**Ratio:** 1 rocket = 100 science = 100 SPM of space science. For 100 SPM, you need to launch **1 rocket per minute**.
+**Ratio:** 1 rocket = 100 science. For 100 SPM of space science, you need to launch 1 rocket per minute.
 
 </div>
 
@@ -265,14 +257,14 @@ Produced by launching rockets. Requires the most infrastructure of any science p
 
 For **1 SPM** of each science pack (at 60 SPM total):
 
-| Science Pack | Assemblers Needed | Key Input/s |
-|-------------|-------------------|-------------|
+| Science Pack | Assemblers Needed | Key Input/min |
+|-------------|-------------------|---------------|
 | Red | 5 | 5 iron + 5 copper |
-| Green | 3 | Varies (mall items) |
-| Military | 1.67 | Piercing rounds |
-| Blue | 2 | 6 advanced circuits |
-| Purple | 2.33 | 70 rails/min |
-| Yellow | 2.67 | 5 processing units |
+| Green | 10 | 10 inserters + 10 belts |
+| Military | 1.67 | ~1.7 piercing rounds |
+| Blue | 5 | 5 engine units + 5 red circuits |
+| Purple | 4.29 | ~4.3 prod modules + ~129 rails |
+| Yellow | 3.75 | 7.5 processing units |
 | Space | ~1 rocket/min | Satellite + rocket parts |
 
 </div>
@@ -287,10 +279,10 @@ For **1 SPM** of each science pack (at 60 SPM total):
   Research Priority — What to Research First
 </div>
 
-<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Automation 1 → Build red + green science assemblers</span></div>
-<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Electronics → Unlock green circuits (most important intermediate)</span></div>
-<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Logistics 1 → Unlock logistic belts and inserters</span></div>
-<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Steel Processing → Unlock steel production (needed everywhere)</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Automation 1 → Build red science assemblers</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Electronics → Unlock green circuits</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Logistics 1 → Unlock logistic belts and inserters, then green science</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Steel Processing → Unlock steel production</span></div>
 <div class="check-row"><span class="check-icon">✓</span><span class="check-text">Oil Processing → Sulfur, plastic, blue circuits</span></div>
 <div class="check-row"><span class="check-icon">✓</span><span class="check-text">Advanced Electronics → Red circuits for blue science</span></div>
 <div class="check-row"><span class="check-icon">✓</span><span class="check-text">Chemical Science → Blue science packs</span></div>
@@ -308,14 +300,14 @@ For **1 SPM** of each science pack (at 60 SPM total):
 <div class="callout-icon">
   <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#e8941c" stroke-width="2"><path d="M10 2L2 18h16L10 2z"/><line x1="10" y1="8" x2="10" y2="13"/><circle cx="10" cy="16" r="1" fill="#e8941c"/></svg>
 </div>
-<p><strong>Building science packs on the main bus.</strong> Blue science and above are too complex for the main bus. Build them as <strong>standalone factory units</strong> fed by dedicated sub-factories. Trying to bus blue circuits, engines, and lubricant just creates chaos.</p>
+<p><strong>Building science packs on the main bus.</strong> Blue science and above are too complex for the main bus. Build them as <strong>standalone factory units</strong> fed by dedicated sub-factories.</p>
 </div>
 
 <div class="callout tip">
 <div class="callout-icon">
   <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#6abe30" stroke-width="2"><circle cx="10" cy="10" r="8"/><path d="M6 10l3 3 5-6"/></svg>
 </div>
-<p><strong>Use a bot-based mall.</strong> For everything except raw ore smelting, build your mall using <strong>requestor chests + logistic bots</strong>. It's faster to set up and far easier to expand than a belt-based mall.</p>
+<p><strong>Use a bot-based mall.</strong> For everything except raw ore smelting, build your mall using <strong>requestor chests + logistic bots</strong>. It's faster to set up and easier to expand.</p>
 </div>
 
 ---

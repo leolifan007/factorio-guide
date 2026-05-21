@@ -7,7 +7,7 @@ draft: false
 emoji: "🧪"
 ---
 
-Green science is the wall that separates casual manual-crafting from real automation. Unlike red science (two ingredients, one assembler, done), green science forces you to think about sub-factories, belt balancing, and ratios. I've rebuilt this thing a dozen times across different playthroughs, and every time I find a cleaner way to lay it out.
+Green science is the first production chain that requires sub-factories. Unlike red science (two ingredients, one recipe), green science needs inserters and transport belts produced separately then fed into the science assemblers. The ratio is forgiving but the layout matters for expansion.
 
 {{< callout "tip" >}}
 **TL;DR:** 1 inserter assembler + 1 belt assembler = enough to feed 10 green science assemblers. Build them in a line with belts running down the middle.
@@ -25,7 +25,7 @@ The inserter recipe itself needs iron gears, green circuits, and iron plates. Th
 
 {{< section "Ratio Math — Getting the Numbers Right" >}}
 
-Here's the math after crunching it:
+Here are the exact machine counts:
 
 | Machine | Output | Needed assemblers | Feeds how many science asm |
 |---------|--------|:-----------------:|:--------------------------:|

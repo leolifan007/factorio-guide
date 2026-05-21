@@ -7,7 +7,7 @@ draft: false
 emoji: "🔥"
 ---
 
-I spent my first hundred hours in Factorio trying to make pure gun turret walls work. The ammo consumption was brutal. Then I tried laser walls — the power draw was worse. Flamethrower turrets are the answer. They have the highest raw DPS, cost almost nothing to feed, and don't care about biter armor.
+Flamethrower turrets have the highest raw DPS of any early-to-mid-game turret. They cost almost nothing to feed (one pumpjack supplies 30+ turrets), deal area damage over time, and ignore biter armor. A properly designed wall with flamethrowers handles attacks from early-game small biters through late-game behemoths.
 
 {{< callout "tip" >}}
 **TL;DR:** Build a wall with flamethrower turrets every 4 tiles, gun turrets every 2 tiles, and a single crude oil pipe behind them. One pumpjack at minimum speed supplies 30+ turrets. Add repair bots and you're set for the entire game.

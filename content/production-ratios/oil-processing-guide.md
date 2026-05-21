@@ -7,7 +7,7 @@ draft: false
 emoji: "🛢️"
 ---
 
-Oil processing is where most factory layouts fall apart. Unlike ore patches that just run, oil wells deplete over time, refineries produce three outputs at once, and if any of those outputs backs up, everything stops. I've rebuilt my refinery block more times than any other section of the factory.
+Oil processing is the first production chain with multiple coupled outputs. Refineries produce heavy oil, light oil, and petroleum gas simultaneously, and if any output backs up, all production stops. Proper cracking ratios and circuit control keep the system balanced.
 
 {{< callout "tip" >}}
 **TL;DR:** Build 8 refineries with advanced processing. Crack heavy→light (1 plant), light→petroleum (7 plants). That's the magic 8:1:7 ratio. No backups, maximum plastic throughput.

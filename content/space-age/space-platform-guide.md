@@ -7,9 +7,7 @@ draft: false
 emoji: "🚀"
 ---
 
-Your first space platform will probably explode. Mine did. Your second one will run out of fuel halfway to Gleba. Mine did that too. The third one might actually work if you know what you are doing.
-
-A space platform is a ship that travels between planets. It needs propulsion, power, and the ability to handle asteroid collisions. The design space is wide open, but the constraints are tight. Here is everything I learned across three failed iterations and one successful one.
+A space platform needs propulsion, power, and asteroid defense to travel between planets. The thruster-to-weight ratio determines speed, crushers keep fuel flowing mid-journey, and walls protect critical components. Below is the build order that works on the first try.
 
 {{< callout "tip" >}}
 **TL;DR:** A minimal platform needs a hub at the front, thrusters at the back, asteroid collectors on the sides, fuel processing in the middle, and walls around anything fragile. Design for the cargo bay first, then add thrusters to match the weight. The thruster-to-weight ratio is the only number that matters. Overbuild crushers — running out mid-journey is the most common failure.

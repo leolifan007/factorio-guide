@@ -21,7 +21,7 @@ Belts are fine for your starting area. But when ore patches are **500 plus tiles
 | Rail signal | Controls block access (placed after intersections) |
 | Chain signal | Extends block check (placed before intersections) |
 | Locomotive | The engine (needs fuel) |
-| Cargo wagon | Holds 40 stacks of items |
+| Cargo wagon | Holds 40 stacks of items (20 in Space Age) |
 
 ## Your First Train Line (Step-by-Step)
 
@@ -63,4 +63,4 @@ Place a **chain signal** before any intersection.
 
 > **Mistake 3:** Forgetting that trains need **fuel**. Place a **fuel inserter** at the depot.
 
-**Next:** [Trains and Logistics Overview]({{< ref "/trains-logistics/" >}}) — signals, deadlocks, and LTN.
+**Next:** [Trains and Logistics Overview]({{< ref "/trains-logistics/" >}}) — signals, deadlocks, and train limits for managing multiple trains.

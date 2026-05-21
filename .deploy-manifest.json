@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "branch": "content-fixes-staged",
+  "created": "2026-05-21",
+  "units": [
+    {
+      "id": "contact-privacy",
+      "priority": 1,
+      "files": {
+        "content": ["content/contact/index.md", "content/privacy/index.md"],
+        "docs": ["docs/contact/index.html", "docs/privacy/index.html"]
+      },
+      "deployed": false,
+      "message": "添加联系页面和隐私政策页面（替换占位符）"
+    },
+    {
+      "id": "city-block-guide",
+      "priority": 1,
+      "files": {
+        "content": ["content/base-design/city-block-guide.md"],
+        "docs": ["docs/base-design/city-block-guide/index.html", "docs/base-design/index.html", "docs/base-design/index.xml"]
+      },
+      "deployed": false,
+      "message": "修复 City Block Guide 空页面：补充完整攻略"
+    },
+    {
+      "id": "science-packs-index",
+      "priority": 1,
+      "files": {
+        "content": ["content/science-packs/_index.md"],
+        "docs": ["docs/science-packs/index.html", "docs/science-packs/index.xml", "docs/science-packs/blue-science-guide/index.html", "docs/science-packs/red-science-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "修正科技瓶页面配方错误（删除 Satisfactory 注入的 Heavy Modular Frame），更新所有配方数据"
+    },
+    {
+      "id": "production-ratios-index",
+      "priority": 1,
+      "files": {
+        "content": ["content/production-ratios/_index.md"],
+        "docs": ["docs/production-ratios/index.html", "docs/production-ratios/index.xml"]
+      },
+      "deployed": false,
+      "message": "修正 Production Ratios 页面 'wait, no' AI 自纠正语句和 Blue Circuit 配方比例"
+    },
+    {
+      "id": "circuit-network",
+      "priority": 2,
+      "files": {
+        "content": ["content/blueprints/circuit-network-guide.md"],
+        "docs": ["docs/blueprints/circuit-network-guide/index.html", "docs/blueprints/index.html", "docs/blueprints/index.xml"]
+      },
+      "deployed": false,
+      "message": "重写 Circuit Network Guide 开头：移除 AI 第一人称叙事故事"
+    },
+    {
+      "id": "nuclear-power",
+      "priority": 2,
+      "files": {
+        "content": ["content/base-design/nuclear-power-guide.md"],
+        "docs": ["docs/base-design/nuclear-power-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "重写 Nuclear Power Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "flamethrower-defense",
+      "priority": 2,
+      "files": {
+        "content": ["content/defense/flamethrower-defense-guide.md"],
+        "docs": ["docs/defense/flamethrower-defense-guide/index.html", "docs/defense/index.html", "docs/defense/index.xml"]
+      },
+      "deployed": false,
+      "message": "重写 Flamethrower Defense Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "oil-processing",
+      "priority": 2,
+      "files": {
+        "content": ["content/production-ratios/oil-processing-guide.md"],
+        "docs": ["docs/production-ratios/oil-processing-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "重写 Oil Processing Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "green-science",
+      "priority": 2,
+      "files": {
+        "content": ["content/getting-started/green-science-guide.md"],
+        "docs": ["docs/getting-started/green-science-guide/index.html", "docs/getting-started/index.html", "docs/getting-started/index.xml"]
+      },
+      "deployed": false,
+      "message": "重写 Green Science Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "space-platform",
+      "priority": 2,
+      "files": {
+        "content": ["content/space-age/space-platform-guide.md"],
+        "docs": ["docs/space-age/space-platform-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "重写 Space Platform Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "your-first-factory",
+      "priority": 2,
+      "files": {
+        "content": ["content/getting-started/your-first-factory.md"],
+        "docs": ["docs/getting-started/your-first-factory/index.html"]
+      },
+      "deployed": false,
+      "message": "修正 Your First Factory 目标为红绿瓶、更新配方表"
+    },
+    {
+      "id": "fulgora-recycling",
+      "priority": 2,
+      "files": {
+        "content": ["content/space-age/fulgora-recycling-guide.md"],
+        "docs": ["docs/space-age/fulgora-recycling-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "重写 Fulgora Recycling Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "gleba-survival",
+      "priority": 2,
+      "files": {
+        "content": ["content/space-age/gleba-survival-guide.md"],
+        "docs": ["docs/space-age/gleba-survival-guide/index.html"]
+      },
+      "deployed": false,
+      "message": "重写 Gleba Survival Guide 开头：移除 AI 第一人称叙事"
+    },
+    {
+      "id": "basic-rail-network",
+      "priority": 3,
+      "files": {
+        "content": ["content/trains-logistics/basic-rail-network.md"],
+        "docs": ["docs/trains-logistics/basic-rail-network/index.html"]
+      },
+      "deployed": false,
+      "message": "修正 Basic Rail Network 提及过时的 LTN 模组引用"
+    }
+  ]
+}

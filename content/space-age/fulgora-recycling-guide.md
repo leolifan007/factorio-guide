@@ -7,11 +7,7 @@ draft: false
 emoji: "⚡"
 ---
 
-Fulgora breaks every habit you built on Nauvis. The map is ocean islands connected by narrow paths. Lightning strikes anything metallic. And instead of mining ore, you recycle scrap — and get random outputs.
-
-The randomness is the hard part. One recycler run might give you iron gears. The next gives you concrete. The one after that gives you blue circuits. You cannot predict what comes out. You have to plan for every possibility at once.
-
-I have rebuilt my Fulgora base three times. First time I built on an island with no scrap patch and had to rebuild everything. Second time my sorting system backed up and stopped all production. The third approach finally produced consistent holmium throughput.
+Fulgora replaces traditional mining with scrap recycling that produces random outputs. Iron gears, concrete, ice, blue circuits, holmium ore — all come from the same recycler. The challenge is not production but sorting: each item type needs a path out of the system, or the recyclers stall.
 
 {{< callout "tip" >}}
 **TL;DR:** Recyclers output scrap at roughly 1 stack per second. Each recycler needs a sorting system behind it: filtered splitters for common items, overflow loops for rare items, and circuit-controlled storage for everything. Process scrap where you mine it on the same island. Build a dedicated island for EM Plant production. Lightning rods every 20 tiles on every island.

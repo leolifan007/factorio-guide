@@ -1,43 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trains-Logistics on Factorio Guide</title><link>https://factorioguides.com/tags/trains-logistics/</link><description>Recent content in Trains-Logistics on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/trains-logistics/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Rail Network — Your First Train Setup</title><link>https://factorioguides.com/trains-logistics/basic-rail-network/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid><description>&lt;h2 id="when-to-switch-to-trains"&gt;When to Switch to Trains?&lt;/h2&gt;
-&lt;p&gt;Belts are fine for your starting area. But when ore patches are &lt;strong&gt;500 plus tiles away&lt;/strong&gt;, trains become necessary.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; If you need more than 200 belts of iron/copper, switch to trains.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="basic-components"&gt;Basic Components&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Component&lt;/th&gt;
- &lt;th&gt;Purpose&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;Rail&lt;/td&gt;
- &lt;td&gt;The track trains drive on&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Train stop&lt;/td&gt;
- &lt;td&gt;Where trains stop to load/unload&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Rail signal&lt;/td&gt;
- &lt;td&gt;Controls block access (placed after intersections)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Chain signal&lt;/td&gt;
- &lt;td&gt;Extends block check (placed before intersections)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Locomotive&lt;/td&gt;
- &lt;td&gt;The engine (needs fuel)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Cargo wagon&lt;/td&gt;
- &lt;td&gt;Holds 40 stacks of items&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="your-first-train-line-step-by-step"&gt;Your First Train Line (Step-by-Step)&lt;/h2&gt;
-&lt;h3 id="step-1-lay-the-track"&gt;Step 1: Lay the Track&lt;/h3&gt;
-&lt;p&gt;Build a &lt;strong&gt;single straight track&lt;/strong&gt; from your main base to the mining outpost. Use &lt;strong&gt;rails&lt;/strong&gt;, not &lt;strong&gt;straight rails&lt;/strong&gt; (they allow curves).&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trains-Logistics on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/trains-logistics/</link>
+    <description>Recent content in Trains-Logistics on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/trains-logistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Rail Network — Your First Train Setup</title>
+      <link>https://factorioguides.com/trains-logistics/basic-rail-network/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid>
+      <description>&lt;h2 id=&#34;when-to-switch-to-trains&#34;&gt;When to Switch to Trains?&lt;/h2&gt;&#xA;&lt;p&gt;Belts are fine for your starting area. But when ore patches are &lt;strong&gt;500 plus tiles away&lt;/strong&gt;, trains become necessary.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; If you need more than 200 belts of iron/copper, switch to trains.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;basic-components&#34;&gt;Basic Components&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Component&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rail&lt;/td&gt;&#xA;          &lt;td&gt;The track trains drive on&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Train stop&lt;/td&gt;&#xA;          &lt;td&gt;Where trains stop to load/unload&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rail signal&lt;/td&gt;&#xA;          &lt;td&gt;Controls block access (placed after intersections)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Chain signal&lt;/td&gt;&#xA;          &lt;td&gt;Extends block check (placed before intersections)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Locomotive&lt;/td&gt;&#xA;          &lt;td&gt;The engine (needs fuel)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Cargo wagon&lt;/td&gt;&#xA;          &lt;td&gt;Holds 40 stacks of items (20 in Space Age)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;your-first-train-line-step-by-step&#34;&gt;Your First Train Line (Step-by-Step)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-lay-the-track&#34;&gt;Step 1: Lay the Track&lt;/h3&gt;&#xA;&lt;p&gt;Build a &lt;strong&gt;single straight track&lt;/strong&gt; from your main base to the mining outpost. Use &lt;strong&gt;rails&lt;/strong&gt;, not &lt;strong&gt;straight rails&lt;/strong&gt; (they allow curves).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

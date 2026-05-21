@@ -7,7 +7,7 @@ emoji: "🏭"
 ---
 
 
-> **Goal:** By the end of this guide, you will have a working factory producing the first 4 science packs (red, green, blue, gray) automatically.
+> **Goal:** By the end of this guide, you will have a working factory producing red and green science packs automatically, with a solid foundation for blue science.
 
 ## Step 1: The First 10 Minutes
 
@@ -33,10 +33,9 @@ Research **automation** first. Then build an **assembler** making **electronic c
 
 | Science Pack | Key Ingredients |
 |-------------|-----------------|
-| Red (Automation) | Iron gear + Iron plate |
-| Green (Logistic) | Electronic circuit + Iron gear |
-| Blue (Chemical) | Engine unit + Electronic circuit + Plastic bar |
-| Gray (Military) | Piercing rounds magazine + Defender capsule |
+| Red (Automation) | Iron gear + Copper plate |
+| Green (Logistic) | Inserter + Transport belt |
+| Blue (Chemical) | Engine unit + Advanced circuit |
 
 ## Step 4: Scaling Up
 
@@ -51,10 +50,10 @@ Once red and green science are automated:
 ## Checklist Before Launch
 
 - [ ] Red + Green science fully automated
-- [ ] Blue science production started (requires oil)
 - [ ] Steel production running
 - [ ] A few **gun turrets** with ammo near your base
 - [ ] **Radar** placed (reveals map around your base)
-- [ ] Started planning your **rocket silo** location
+- [ ] Main bus layout started (iron + copper lanes)
+- [ ] Oil processing planned for next expansion
 
 **Next up:** Read the [Production Ratios]({{< ref "/production-ratios/" >}}) guide to optimize your assembler counts.

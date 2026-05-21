@@ -7,9 +7,7 @@ draft: false
 emoji: "🌿"
 ---
 
-Landing on Gleba for the first time is a shock. Your factory skills stop working here. Belts full of items rot before they reach the assembler. The local wildlife eats your walls like they are made of paper. And the science pack production chain is the most convoluted thing in all of Space Age.
-
-I lost two bases on Gleba before figuring out the rhythm. The spoilage timer changes everything. Every factory principle you learned on Nauvis — buffer chests, belt loops, long production chains — works against you here. Here is the approach that finally worked.
+Gleba replaces static production with spoilage-based mechanics. Every organic item decays over time, belts must be kept short, and buffer chests destroy production instead of helping it. The core loop — nutrients feed bacteria, bacteria produce ore, science consumes it all — works reliably with tight belts and circuit-controlled splitters.
 
 {{< callout "tip" >}}
 **TL;DR:** Spoilage is the core mechanic on Gleba. Everything you build needs buffer-bounded belts, priority splitters for freshness, and pentapod-proof walls. Build a nutrient plus bacteria loop first, then layer in bioflux for science. Spoiled items recycle into nutrients, so nothing is ever completely wasted. Purple belts help move fresh items faster than spoilage can decay them.

@@ -1,28 +1,410 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain."><title>Fulgora Recycling Guide — Scrap Processing Made Simple | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/space-age/fulgora-recycling-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Fulgora Recycling Guide — Scrap Processing Made Simple"><meta property="og:description" content="Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/space-age/fulgora-recycling-guide/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Fulgora Recycling Guide — Scrap Processing Made Simple</h1><p class=article-desc>Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 19, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-7 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=article-ad-left><div class=ad-placeholder><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-<span class=ad-placeholder-label>Advertisement</span>
-<span class=ad-placeholder-size>160 × 600</span></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>›</span>
-<a href=/space-age/>Space Age Expansion Guide</a>
-<span class=breadcrumb-sep>›</span>
-<span class=breadcrumb-current>Fulgora Recycling Guide — Scrap Processing Made Simple</span></nav><p>Fulgora breaks every habit you built on Nauvis. The map is ocean islands connected by narrow paths. Lightning strikes anything metallic. And instead of mining ore, you recycle scrap — and get random outputs.</p><p>The randomness is the hard part. One recycler run might give you iron gears. The next gives you concrete. The one after that gives you blue circuits. You cannot predict what comes out. You have to plan for every possibility at once.</p><p>I have rebuilt my Fulgora base three times. First time I built on an island with no scrap patch and had to rebuild everything. Second time my sorting system backed up and stopped all production. The third approach finally produced consistent holmium throughput.</p><div class=pro-tip><strong>TL;DR:</strong> Recyclers output scrap at roughly 1 stack per second. Each recycler needs a sorting system behind it: filtered splitters for common items, overflow loops for rare items, and circuit-controlled storage for everything. Process scrap where you mine it on the same island. Build a dedicated island for EM Plant production. Lightning rods every 20 tiles on every island.</div><div class=section-head><h2>Scrap Recycling — What Comes Out</h2></div><p>Scrap recycles into random outputs. Here is the approximate distribution per 1000 scrap processed based on my measurements:</p><table><thead><tr><th>Item</th><th style=text-align:center>Quantity per 1000 scrap</th><th style=text-align:center>Approx chance</th></tr></thead><tbody><tr><td>Iron gear</td><td style=text-align:center>150</td><td style=text-align:center>15%</td></tr><tr><td>Iron plate</td><td style=text-align:center>120</td><td style=text-align:center>12%</td></tr><tr><td>Copper plate</td><td style=text-align:center>100</td><td style=text-align:center>10%</td></tr><tr><td>Concrete</td><td style=text-align:center>80</td><td style=text-align:center>8%</td></tr><tr><td>Stone</td><td style=text-align:center>70</td><td style=text-align:center>7%</td></tr><tr><td>Battery</td><td style=text-align:center>60</td><td style=text-align:center>6%</td></tr><tr><td>Holmium ore</td><td style=text-align:center>50</td><td style=text-align:center>5%</td></tr><tr><td>Plastic bar</td><td style=text-align:center>45</td><td style=text-align:center>4.5%</td></tr><tr><td>Red circuit</td><td style=text-align:center>35</td><td style=text-align:center>3.5%</td></tr><tr><td>Blue circuit</td><td style=text-align:center>25</td><td style=text-align:center>2.5%</td></tr><tr><td>Processing unit</td><td style=text-align:center>15</td><td style=text-align:center>1.5%</td></tr><tr><td>Ice</td><td style=text-align:center>250</td><td style=text-align:center>25%</td></tr></tbody></table><p>The exact percentages vary slightly by game version, but the pattern holds: iron and ice dominate the output. Holmium ore is rare at about 5% per scrap. This means you need a lot of recyclers to get meaningful holmium throughput.</p><img src=/images/diagrams/fulgora-scrap-output.svg alt="Scrap recycling output distribution chart showing iron gear and ice as highest volume outputs" class=schema-diagram loading=lazy width=700><div class=section-head><h2>The Sorting Challenge</h2></div><p>The biggest design problem on Fulgora is not production — it is sorting. Recyclers output random items quickly, and any belt can fill up with one item type while other types stop flowing. When a belt is full of iron gears, the new concrete has nowhere to go.</p><p><strong>The solution: filtered splitter cascades.</strong></p><p>Each recycler feeds into a row of filtered splitters arranged by item priority:</p><ol><li>First splitter: filter iron gear (highest volume item)</li><li>Second splitter: filter iron plate</li><li>Third splitter: filter copper plate</li><li>Continue down the chain for each item type by volume</li></ol><p>Each filtered output goes to a buffer chest. When the chest fills up, the item type backs up on the belt. But the splitter cascade keeps flowing — backed up items overflow to the next filter in the chain automatically.</p><div class=pro-tip>If iron gear backs up, it overflows to the iron plate filter. If that backs up too, it overflows to concrete. Eventually everything ends up in a final passive provider chest at the end of the cascade. Nothing stops the recyclers from running.</div><p>Wire each buffer chest to a circuit. When chest contents exceed a threshold, route excess items to additional recyclers for disposal. This prevents the entire system from locking up due to one item type.</p><div class=section-head><h2>Holmium Processing — Why You Are Here</h2></div><p>Holmium ore is the reason you travel to Fulgora. It processes into holmium plates, then into supercapacitors and eventually into Electromagnetic Plants.</p><p><strong>Full production chain:</strong></p><ul><li>50 holmium ore plus sulfuric acid = 1 holmium plate</li><li>Holmium plate plus copper wire plus plastic = 1 supercapacitor</li><li>Supercapacitor plus circuits plus concrete = 1 EM Plant component</li></ul><p>A single EM Plant requires roughly 2000 scrap to be processed. For reference:</p><ul><li>1 recycler at full speed = about 60 scrap per minute</li><li>4 recyclers = about 240 scrap per minute</li><li>Holmium plates per minute from 4 recyclers: only 2-3 plates</li></ul><p>Scale accordingly. You need at least 12 recyclers for steady holmium plate production. I run 20 recyclers on my main Fulgora base.</p><div class=game-row><div class=game-slot><span class=game-qty>50x</span><img src=/images/icon/holmium_ore.png alt=holmium_ore class=game-img loading=lazy><span class=game-name>Holmium ore</span></div><span class=game-plus>+</span><div class=game-slot><span class=game-qty>10x</span><img src=/images/icon/sulfuric_acid.png alt=sulfuric_acid class=game-img loading=lazy><span class=game-name>Sulfuric acid</span></div><span class=game-plus>&rarr;</span><div class="game-slot result"><span class=game-qty>1x</span><img src=/images/icon/holmium_plate.png alt=holmium_plate class=game-img loading=lazy><span class=game-name>Holmium plate</span></div></div><div class=section-head><h2>Island Connection Strategy</h2></div><p>Fulgora islands are separated by water. You connect them with elevated rails. Planning your island network is critical.</p><p><strong>Best island setup for Fulgora:</strong></p><ul><li>Scrap islands: dedicated to recyclers and sorting only (multiple small islands)</li><li>Processing island: one large island for holmium refining and EM Plant assembly</li><li>Science island: a separate island for electromagnetic science production</li><li>Logistics island: rocket silos and cargo hub for interplanetary transport</li></ul><p>Build elevated rail bridges between islands. Each bridge segment needs pylons every 15 tiles. Plan your rail routes before building — rebuilding bridges is expensive.</p><div class=section-head><h2>Ice and Water Management</h2></div><p>Ice is the most common scrap output at about 25% of all recycling. Managing ice is critical for acid production.</p><p>Each recycler outputs roughly 15 ice per minute. For 20 recyclers, that is 300 ice per minute. Ice melts into water in a chemical plant: 20 ice = 200 water. That water feeds your acid production.</p><p><strong>Ice circuit condition:</strong> Wire your ice chest to a decider combinator. If ice exceeds 500, activate an extra chemical plant to melt it. This prevents ice from filling your sorting system and blocking other outputs.</p><p>Excess water from ice melting can be vented. Place an extra pipe connected to a pump. Wire the pump to activate when water exceeds 10,000. Vent the overflow into the ocean.</p><div class=section-head><h2>Lightning Protection</h2></div><p>Lightning strikes exposed surfaces on Fulgora every few minutes during storms. It damages anything metallic and can destroy power poles, assemblers, and chests instantly.</p><p><strong>Protection rules for each island:</strong></p><ul><li>Place a lightning rod every 20 tiles in every direction</li><li>Each rod protects a 10-tile radius from its position</li><li>Connect rods to the power grid — they collect free energy from strikes</li><li>All buildings within rod range are immune to lightning</li></ul><p>The rod network overlaps by default at 20-tile spacing. I place rods first before any other building on a new island. I learned this the hard way when a single lightning strike took out half my holmium production line.</p><div class=section-head><h2>EM Plant Production Block</h2></div><p>The EM Plant is Fulgora signature building. It replaces assemblers for circuit production and is significantly faster than anything on Nauvis.</p><p>Build a dedicated island for EM Plant production:</p><ul><li>6 recyclers feeding into a sorting cascade system</li><li>2 chemical plants producing acid from ice and sulfur</li><li>4 holmium plate refineries processing ore into plates</li><li>2 supercapacitor assemblers making capacitors</li><li>1 EM Plant assembler for final assembly</li></ul><p>Each EM Plant built on Fulgora can be shipped to other planets via rocket. I bring three back to Nauvis for my green circuit lines — they quadruple circuit production compared to assembler 3s.</p><div class=section-head><h2>Common Mistakes</h2></div><p><strong>Building on the wrong island.</strong> Some islands have scrap resource patches, some do not. Scout with radar before building. Build recyclers directly on scrap islands to minimize belt distance between scrap and processing.</p><p><strong>No overflow path for sorting.</strong> If every filter fills up, the recycler stops. Always leave an overflow path to a final chest or secondary recycler loop. Design for the worst case.</p><p><strong>Forgetting ice processing.</strong> Ice is the highest volume scrap output at about 25%. It melts into water. Water goes to acid production. Without enough ice processing capacity, your acid line starves and holmium production stops.</p><p><strong>Not enough recyclers.</strong> Holmium is rare. Underestimating recycler count is the most common Fulgora failure. Build 50% more than your initial estimate. Extra recyclers are cheap compared to a dead base.</p><p><strong>Skipping lightning rods.</strong> One strike during a storm can destroy hours of progress. Rods are cheap. Build them everywhere.</p><div class=section-head><h2>FAQ</h2></div><p><strong>Q: Can I bring scrap to Nauvis for processing?</strong>
-A: Yes. Ship scrap via rocket to Nauvis and recycle it there. The sorting challenge is the same, but lightning is not an issue on Nauvis. This is a good option for getting EM Plants without building a large Fulgora base.</p><p><strong>Q: How much holmium do I need for the full tech tree?</strong>
-A: About 2000 holmium plates total for all Space Age technologies. That is roughly 8 full stacks of holmium ore.</p><p><strong>Q: What about the Fulgora-specific science pack?</strong>
-A: Electromagnetic science uses EM Plant components plus circuits. Build the science assembler on the same island as the EM Plant production block.</p><p><strong>Q: How do I connect islands?</strong>
-A: Elevated rails connect islands. Build rail bridges over water between islands. Each bridge needs pylons every 15 tiles.</p><div class=section-head><h2>Related Guides</h2></div><ul><li><a href=https://factorioguides.com/space-age/quality-module-guide/>Use quality modules on your recyclers</a></li><li><a href=https://factorioguides.com/space-age/space-platform-guide/>Transport EM Plants between planets</a></li><li><a href=https://factorioguides.com/blueprints/circuit-network-guide/>Automate sorting with circuit networks</a></li><li><a href=https://factorioguides.com/base-design/main-bus-guide/>Design a main bus for Fulgora supply lines</a></li><li><a href=https://factorioguides.com/space-age/gleba-survival-guide/>Survive Gleba for bioflux production</a></li></ul><div class=back-to-section><a href=/space-age/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Space Age Expansion Guide</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/space-age/gleba-survival-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text></svg></div><div class=related-body><h4>Gleba Survival Guide — How to Beat the Spoilage Planet</h4><p>Complete Gleba guide for Factorio Space Age. Spoilage mechanics, pentapod defense, bioflux production chains, agri science ratios, and a build order that actually works.</p></div></a><a href=/space-age/space-platform-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text></svg></div><div class=related-body><h4>Space Platform Build Guide — Design and Defense</h4><p>Complete space platform guide for Factorio Space Age. Hub setup, thruster fuel ratios, asteroid processing, platform defense designs, and cargo management for interplanetary travel.</p></div></a><a href=/space-age/quality-module-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Q</text></svg></div><div class=related-body><h4>Quality Modules — Space Age New Mechanic Explained</h4><p>How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.</p></div></a></div></div></div></div><div class=article-ad-right><div class=ad-placeholder><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-<span class=ad-placeholder-label>Advertisement</span>
-<span class=ad-placeholder-size>160 × 600</span></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.">
+  <title>Fulgora Recycling Guide — Scrap Processing Made Simple | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/space-age/fulgora-recycling-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Fulgora Recycling Guide — Scrap Processing Made Simple">
+  <meta property="og:description" content="Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/space-age/fulgora-recycling-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Fulgora Recycling Guide — Scrap Processing Made Simple</h1><p class="article-desc">Fulgora scrap processing guide for Factorio Space Age. Scrap recycling ratios, sorting strategies, EM Plant setups, island layouts, lightning protection, and holmium production chain.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 19, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          7 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    <div class="article-ad-left">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          
+          <a href="/space-age/">Space Age Expansion Guide</a>
+          
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Fulgora Recycling Guide — Scrap Processing Made Simple</span>
+        </nav>
+
+        <p>Fulgora replaces traditional mining with scrap recycling that produces random outputs. Iron gears, concrete, ice, blue circuits, holmium ore — all come from the same recycler. The challenge is not production but sorting: each item type needs a path out of the system, or the recyclers stall.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Recyclers output scrap at roughly 1 stack per second. Each recycler needs a sorting system behind it: filtered splitters for common items, overflow loops for rare items, and circuit-controlled storage for everything. Process scrap where you mine it on the same island. Build a dedicated island for EM Plant production. Lightning rods every 20 tiles on every island.</div>
+
+<div class="section-head"><h2>Scrap Recycling — What Comes Out</h2></div>
+
+<p>Scrap recycles into random outputs. Here is the approximate distribution per 1000 scrap processed based on my measurements:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th style="text-align: center">Quantity per 1000 scrap</th>
+          <th style="text-align: center">Approx chance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron gear</td>
+          <td style="text-align: center">150</td>
+          <td style="text-align: center">15%</td>
+      </tr>
+      <tr>
+          <td>Iron plate</td>
+          <td style="text-align: center">120</td>
+          <td style="text-align: center">12%</td>
+      </tr>
+      <tr>
+          <td>Copper plate</td>
+          <td style="text-align: center">100</td>
+          <td style="text-align: center">10%</td>
+      </tr>
+      <tr>
+          <td>Concrete</td>
+          <td style="text-align: center">80</td>
+          <td style="text-align: center">8%</td>
+      </tr>
+      <tr>
+          <td>Stone</td>
+          <td style="text-align: center">70</td>
+          <td style="text-align: center">7%</td>
+      </tr>
+      <tr>
+          <td>Battery</td>
+          <td style="text-align: center">60</td>
+          <td style="text-align: center">6%</td>
+      </tr>
+      <tr>
+          <td>Holmium ore</td>
+          <td style="text-align: center">50</td>
+          <td style="text-align: center">5%</td>
+      </tr>
+      <tr>
+          <td>Plastic bar</td>
+          <td style="text-align: center">45</td>
+          <td style="text-align: center">4.5%</td>
+      </tr>
+      <tr>
+          <td>Red circuit</td>
+          <td style="text-align: center">35</td>
+          <td style="text-align: center">3.5%</td>
+      </tr>
+      <tr>
+          <td>Blue circuit</td>
+          <td style="text-align: center">25</td>
+          <td style="text-align: center">2.5%</td>
+      </tr>
+      <tr>
+          <td>Processing unit</td>
+          <td style="text-align: center">15</td>
+          <td style="text-align: center">1.5%</td>
+      </tr>
+      <tr>
+          <td>Ice</td>
+          <td style="text-align: center">250</td>
+          <td style="text-align: center">25%</td>
+      </tr>
+  </tbody>
+</table>
+<p>The exact percentages vary slightly by game version, but the pattern holds: iron and ice dominate the output. Holmium ore is rare at about 5% per scrap. This means you need a lot of recyclers to get meaningful holmium throughput.</p>
+<img src="/images/diagrams/fulgora-scrap-output.svg" alt="Scrap recycling output distribution chart showing iron gear and ice as highest volume outputs" class="schema-diagram" loading="lazy" width="700">
+
+<div class="section-head"><h2>The Sorting Challenge</h2></div>
+
+<p>The biggest design problem on Fulgora is not production — it is sorting. Recyclers output random items quickly, and any belt can fill up with one item type while other types stop flowing. When a belt is full of iron gears, the new concrete has nowhere to go.</p>
+<p><strong>The solution: filtered splitter cascades.</strong></p>
+<p>Each recycler feeds into a row of filtered splitters arranged by item priority:</p>
+<ol>
+<li>First splitter: filter iron gear (highest volume item)</li>
+<li>Second splitter: filter iron plate</li>
+<li>Third splitter: filter copper plate</li>
+<li>Continue down the chain for each item type by volume</li>
+</ol>
+<p>Each filtered output goes to a buffer chest. When the chest fills up, the item type backs up on the belt. But the splitter cascade keeps flowing — backed up items overflow to the next filter in the chain automatically.</p>
+<div class="pro-tip">If iron gear backs up, it overflows to the iron plate filter. If that backs up too, it overflows to concrete. Eventually everything ends up in a final passive provider chest at the end of the cascade. Nothing stops the recyclers from running.</div>
+
+<p>Wire each buffer chest to a circuit. When chest contents exceed a threshold, route excess items to additional recyclers for disposal. This prevents the entire system from locking up due to one item type.</p>
+<div class="section-head"><h2>Holmium Processing — Why You Are Here</h2></div>
+
+<p>Holmium ore is the reason you travel to Fulgora. It processes into holmium plates, then into supercapacitors and eventually into Electromagnetic Plants.</p>
+<p><strong>Full production chain:</strong></p>
+<ul>
+<li>50 holmium ore plus sulfuric acid = 1 holmium plate</li>
+<li>Holmium plate plus copper wire plus plastic = 1 supercapacitor</li>
+<li>Supercapacitor plus circuits plus concrete = 1 EM Plant component</li>
+</ul>
+<p>A single EM Plant requires roughly 2000 scrap to be processed. For reference:</p>
+<ul>
+<li>1 recycler at full speed = about 60 scrap per minute</li>
+<li>4 recyclers = about 240 scrap per minute</li>
+<li>Holmium plates per minute from 4 recyclers: only 2-3 plates</li>
+</ul>
+<p>Scale accordingly. You need at least 12 recyclers for steady holmium plate production. I run 20 recyclers on my main Fulgora base.</p>
+<div class="game-row"><div class="game-slot"><span class="game-qty">50x</span><img src="/images/icon/holmium_ore.png" alt="holmium_ore" class="game-img" loading="lazy"><span class="game-name">Holmium ore</span></div><span class="game-plus">+</span><div class="game-slot"><span class="game-qty">10x</span><img src="/images/icon/sulfuric_acid.png" alt="sulfuric_acid" class="game-img" loading="lazy"><span class="game-name">Sulfuric acid</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">1x</span><img src="/images/icon/holmium_plate.png" alt="holmium_plate" class="game-img" loading="lazy"><span class="game-name">Holmium plate</span></div></div>
+<div class="section-head"><h2>Island Connection Strategy</h2></div>
+
+<p>Fulgora islands are separated by water. You connect them with elevated rails. Planning your island network is critical.</p>
+<p><strong>Best island setup for Fulgora:</strong></p>
+<ul>
+<li>Scrap islands: dedicated to recyclers and sorting only (multiple small islands)</li>
+<li>Processing island: one large island for holmium refining and EM Plant assembly</li>
+<li>Science island: a separate island for electromagnetic science production</li>
+<li>Logistics island: rocket silos and cargo hub for interplanetary transport</li>
+</ul>
+<p>Build elevated rail bridges between islands. Each bridge segment needs pylons every 15 tiles. Plan your rail routes before building — rebuilding bridges is expensive.</p>
+<div class="section-head"><h2>Ice and Water Management</h2></div>
+
+<p>Ice is the most common scrap output at about 25% of all recycling. Managing ice is critical for acid production.</p>
+<p>Each recycler outputs roughly 15 ice per minute. For 20 recyclers, that is 300 ice per minute. Ice melts into water in a chemical plant: 20 ice = 200 water. That water feeds your acid production.</p>
+<p><strong>Ice circuit condition:</strong> Wire your ice chest to a decider combinator. If ice exceeds 500, activate an extra chemical plant to melt it. This prevents ice from filling your sorting system and blocking other outputs.</p>
+<p>Excess water from ice melting can be vented. Place an extra pipe connected to a pump. Wire the pump to activate when water exceeds 10,000. Vent the overflow into the ocean.</p>
+<div class="section-head"><h2>Lightning Protection</h2></div>
+
+<p>Lightning strikes exposed surfaces on Fulgora every few minutes during storms. It damages anything metallic and can destroy power poles, assemblers, and chests instantly.</p>
+<p><strong>Protection rules for each island:</strong></p>
+<ul>
+<li>Place a lightning rod every 20 tiles in every direction</li>
+<li>Each rod protects a 10-tile radius from its position</li>
+<li>Connect rods to the power grid — they collect free energy from strikes</li>
+<li>All buildings within rod range are immune to lightning</li>
+</ul>
+<p>The rod network overlaps by default at 20-tile spacing. I place rods first before any other building on a new island. I learned this the hard way when a single lightning strike took out half my holmium production line.</p>
+<div class="section-head"><h2>EM Plant Production Block</h2></div>
+
+<p>The EM Plant is Fulgora signature building. It replaces assemblers for circuit production and is significantly faster than anything on Nauvis.</p>
+<p>Build a dedicated island for EM Plant production:</p>
+<ul>
+<li>6 recyclers feeding into a sorting cascade system</li>
+<li>2 chemical plants producing acid from ice and sulfur</li>
+<li>4 holmium plate refineries processing ore into plates</li>
+<li>2 supercapacitor assemblers making capacitors</li>
+<li>1 EM Plant assembler for final assembly</li>
+</ul>
+<p>Each EM Plant built on Fulgora can be shipped to other planets via rocket. I bring three back to Nauvis for my green circuit lines — they quadruple circuit production compared to assembler 3s.</p>
+<div class="section-head"><h2>Common Mistakes</h2></div>
+
+<p><strong>Building on the wrong island.</strong> Some islands have scrap resource patches, some do not. Scout with radar before building. Build recyclers directly on scrap islands to minimize belt distance between scrap and processing.</p>
+<p><strong>No overflow path for sorting.</strong> If every filter fills up, the recycler stops. Always leave an overflow path to a final chest or secondary recycler loop. Design for the worst case.</p>
+<p><strong>Forgetting ice processing.</strong> Ice is the highest volume scrap output at about 25%. It melts into water. Water goes to acid production. Without enough ice processing capacity, your acid line starves and holmium production stops.</p>
+<p><strong>Not enough recyclers.</strong> Holmium is rare. Underestimating recycler count is the most common Fulgora failure. Build 50% more than your initial estimate. Extra recyclers are cheap compared to a dead base.</p>
+<p><strong>Skipping lightning rods.</strong> One strike during a storm can destroy hours of progress. Rods are cheap. Build them everywhere.</p>
+<div class="section-head"><h2>FAQ</h2></div>
+
+<p><strong>Q: Can I bring scrap to Nauvis for processing?</strong>
+A: Yes. Ship scrap via rocket to Nauvis and recycle it there. The sorting challenge is the same, but lightning is not an issue on Nauvis. This is a good option for getting EM Plants without building a large Fulgora base.</p>
+<p><strong>Q: How much holmium do I need for the full tech tree?</strong>
+A: About 2000 holmium plates total for all Space Age technologies. That is roughly 8 full stacks of holmium ore.</p>
+<p><strong>Q: What about the Fulgora-specific science pack?</strong>
+A: Electromagnetic science uses EM Plant components plus circuits. Build the science assembler on the same island as the EM Plant production block.</p>
+<p><strong>Q: How do I connect islands?</strong>
+A: Elevated rails connect islands. Build rail bridges over water between islands. Each bridge needs pylons every 15 tiles.</p>
+<div class="section-head"><h2>Related Guides</h2></div>
+
+<ul>
+<li><a href="https://factorioguides.com/space-age/quality-module-guide/">Use quality modules on your recyclers</a></li>
+<li><a href="https://factorioguides.com/space-age/space-platform-guide/">Transport EM Plants between planets</a></li>
+<li><a href="https://factorioguides.com/blueprints/circuit-network-guide/">Automate sorting with circuit networks</a></li>
+<li><a href="https://factorioguides.com/base-design/main-bus-guide/">Design a main bus for Fulgora supply lines</a></li>
+<li><a href="https://factorioguides.com/space-age/gleba-survival-guide/">Survive Gleba for bioflux production</a></li>
+</ul>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/space-age/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Space Age Expansion Guide
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/space-age/gleba-survival-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Gleba Survival Guide — How to Beat the Spoilage Planet</h4>
+                <p>Complete Gleba guide for Factorio Space Age. Spoilage mechanics, pentapod defense, bioflux production chains, agri science ratios, and a build order that actually works.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/space-platform-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Space Platform Build Guide — Design and Defense</h4>
+                <p>Complete space platform guide for Factorio Space Age. Hub setup, thruster fuel ratios, asteroid processing, platform defense designs, and cargo management for interplanetary travel.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/quality-module-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Q</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Quality Modules — Space Age New Mechanic Explained</h4>
+                <p>How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+    <div class="article-ad-right">
+      <div class="ad-placeholder">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class="ad-placeholder-label">Advertisement</span>
+        <span class="ad-placeholder-size">160 × 600</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

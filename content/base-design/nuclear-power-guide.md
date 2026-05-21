@@ -7,7 +7,7 @@ draft: false
 emoji: "☢️"
 ---
 
-I put off nuclear for three playthroughs. Solar seemed simpler, steam seemed cheaper. Then I built my first 2×2 reactor and watched 480 MW light up from a single fuel cell. I haven't looked back.
+Nuclear power produces 480 MW from a single 2×2 reactor block — roughly the output of 8,000 solar panels in a fraction of the space. One uranium patch fuels the reactor for hundreds of hours.
 
 {{< callout "tip" >}}
 **TL;DR:** Build a 2×2 reactor block for 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps. One centrifuge running Kovarex fuels it forever.

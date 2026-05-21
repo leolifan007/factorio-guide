@@ -7,12 +7,10 @@ draft: false
 emoji: "🔧"
 ---
 
-I spent my first 200 hours in Factorio ignoring the circuit network entirely. Red and green wires sat in my inventory unused. Every base I built eventually deadlocked — belts backed up, oil refineries ground to a halt, and train intersections turned into parking lots. The circuit network looked intimidating, so I skipped it.
-
-Turns out you only need three basic patterns to solve 90% of your circuit problems. I will walk through them from zero.
+The circuit network is Factorio's built-in logic system. Red and green wires carry signals between machines, and combinators process those signals to control your factory automatically. You only need three basic patterns to solve 90% of common problems: fluid cracking automation, SR latches for power control, and belt item counting.
 
 {{< callout "tip" >}}
-**TL;DR:** Red wire and green wire are separate networks. A decider combinator outputs a signal when a condition is true. An arithmetic combinator does math on signals. Connect a storage tank to a pump with red wire, set the decider to "petroleum > 20000 output petroleum = 1", and you have automated cracking. That is it — 90% of circuit problems solved with this one trick.
+**TL;DR:** Red wire and green wire are separate signal networks. A decider combinator outputs a signal when a condition is met. Connect a storage tank to a pump with red wire, set the decider to "petroleum > 20000 output petroleum = 1", and you have automated cracking. Three reusable patterns handle the rest.
 {{< /callout >}}
 
 {{< section "The Two Wires — What They Actually Do" >}}
@@ -25,10 +23,10 @@ A wire connects entities into a circuit network. Every entity on the same color 
 
 Wire colors do not mix by default. But you can combine them inside a combinator — a decider or arithmetic combinator reads from one or both colors and outputs to either color.
 
-I use red wire for production logic (tank levels, belt contents, chest monitoring) and green wire for global signals (train schedules, logistics requests, base-wide alerts). Keeping them separate means a bug in one does not corrupt the other.
+A common convention is to use red wire for production logic (tank levels, belt contents, chest monitoring) and green wire for global signals (train schedules, logistics requests, base-wide alerts). Keeping them separate means a bug in one does not corrupt the other.
 
 {{< callout "tip" >}}
-If you want two entirely separate control systems, use red for one and green for the other. I use red for production logic and green for train control most playthroughs.
+If you want two entirely separate control systems, use red for one and green for the other. Assign red to production logic and green to train control to keep the networks distinct.
 {{< /callout >}}
 
 {{< section "Decider Combinator — The Smart Switch" >}}
@@ -70,7 +68,7 @@ The arithmetic combinator shines when you need to convert signal types. Set it t
 
 The constant combinator outputs a fixed set of signals forever. No conditions, no math. Just constant values.
 
-I use constant combinators for three things:
+Constant combinators are useful for three purposes:
 - Reference values in decider comparisons (e.g., set this to 100 and compare with actual production)
 - Configuration flags (signal-green = 1 to enable night mode, red = 0 to disable)
 - Test signals during debugging
@@ -137,7 +135,7 @@ Configuration:
 
 Feed the output to a second decider. When signal-T exceeds 1800, fire the conditioned event. Reset the clock by feeding a third decider that outputs a clear signal.
 
-I use this to automate periodic rocket launches on Gleba. The clock triggers a launch every 3 minutes regardless of manual input.
+Periodic rocket launches on Gleba can be automated this way. The clock triggers a launch every 3 minutes regardless of manual input.
 
 {{< section "Common Mistakes" >}}
 

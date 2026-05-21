@@ -1,0 +1,275 @@
+# ============================================================
+# Staged Content Deployment — 逐步推送内容修复
+#
+# 策略：14 个 deploy units，分 10-14 天随机逐步推送到 main
+# - 每天 3-5 次 cron 触发，每次 50% 概率实际执行
+# - 每次执行随机选择 1-2 个未部署的 unit
+# - 时间点不选整点（如 02:23, 08:36, 14:41 等）
+# - 每次部署后更新 manifest
+# ============================================================
+name: 🚀 Staged Content Deployment
+
+on:
+  schedule:
+    # 每天 5 个随机时间点（UTC → CST = UTC+8）
+    # 02:23 UTC = 10:23 CST
+    - cron: '23 2 * * *'
+    # 06:42 UTC = 14:42 CST
+    - cron: '42 6 * * *'
+    # 11:17 UTC = 19:17 CST
+    - cron: '17 11 * * *'
+    # 15:33 UTC = 23:33 CST
+    - cron: '33 15 * * *'
+    # 20:51 UTC = 04:51 CST（凌晨）
+    - cron: '51 20 * * *'
+  workflow_dispatch:
+    inputs:
+      force_unit_id:
+        description: '指定部署某个 unit (留空则随机)'
+        required: false
+        type: string
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/content-fixes-staged'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⏳ 随机延迟（避免固定执行模式）
+        run: |
+          SLEEP=$((RANDOM % 1800 + 300))
+          echo "Sleeping ${SLEEP}s to randomize execution time..."
+          sleep $SLEEP
+
+      - name: 🔀 50% 随机跳过（进一步打散模式）
+        id: coinflip
+        run: |
+          # workflow_dispatch 不跳过
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "Manual trigger — force run"
+            exit 0
+          fi
+          ROLL=$((RANDOM % 100))
+          if [ $ROLL -lt 50 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Coin flip: skip this run ($ROLL < 50)"
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "Coin flip: proceed ($ROLL >= 50)"
+          fi
+
+      - name: ⏳ 二次随机延迟（如果没跳过）
+        if: steps.coinflip.outputs.skip == 'false'
+        run: |
+          SLEEP2=$((RANDOM % 600 + 60))
+          echo "Secondary delay ${SLEEP2}s..."
+          sleep $SLEEP2
+
+      - name: 📥 Checkout 分支 + main
+        if: steps.coinflip.outputs.skip == 'false'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📋 读取 manifest & 选择部署单元
+        if: steps.coinflip.outputs.skip == 'false'
+        id: selector
+        run: |
+          # 读取 manifest
+          MANIFEST=$(cat .deploy-manifest.json)
+
+          # 找出所有未部署的 unit
+          UNITS=$(echo "$MANIFEST" | python3 -c "
+import json,sys
+data=json.load(sys.stdin)
+pending=[u for u in data['units'] if not u.get('deployed')]
+if not pending:
+    print('ALL_DONE')
+    sys.exit(0)
+
+# 如果指定了 force_unit_id
+import os
+fid = os.environ.get('FORCE_ID','')
+if fid:
+    match=[u for u in pending if u['id']==fid]
+    if match:
+        chosen=[match[0]]
+        print('FORCE:' + chosen[0]['id'])
+        print('COUNT:1')
+        for u in chosen:
+            print('FILE:' + json.dumps(u))
+        sys.exit(0)
+
+# 随机选择 1-2 个（随机决定）
+import random
+pick_count = 1 if random.random() < 0.6 else 2
+chosen = random.sample(pending, min(pick_count, len(pending)))
+print('AUTO:' + ','.join(u['id'] for u in chosen))
+print('COUNT:' + str(len(chosen)))
+for u in chosen:
+    print('FILE:' + json.dumps(u))
+" 2>&1)
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$UNITS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: ✅ 全部已部署
+        if: steps.selector.outputs.result == 'ALL_DONE'
+        run: echo "所有 deploy units 已推送完成，可以禁用此 workflow 了 🎉"
+
+      - name: 🔄 检出 main 分支
+        if: steps.coinflip.outputs.skip == 'false' && steps.selector.outputs.result != 'ALL_DONE'
+        run: |
+          git config user.name "Factorio Guide Bot"
+          git config user.email "bot@factorioguides.com"
+          git fetch origin main
+          git checkout -b main-temp origin/main
+
+      - name: 📄 复制文件到 main
+        if: steps.coinflip.outputs.skip == 'false' && steps.selector.outputs.result != 'ALL_DONE'
+        id: copier
+        run: |
+          # 解析 selector 输出
+          RESULTS="${{ steps.selector.outputs.result }}"
+          COUNT=$(echo "$RESULTS" | grep "^COUNT:" | cut -d: -f2)
+          
+          # 从 checkout 的 content-fixes-staged 复制文件到 main-temp
+          FILES_ADDED=0
+          COMMIT_MSGS=""
+          
+          # 处理每个 unit
+          IFS=',' read -ra IDS <<< "$(echo "$RESULTS" | grep "^AUTO:" | cut -d: -f2-)"
+          
+          # 读取 manifest 中的 unit 定义
+          while IFS= read -r line; do
+            [[ "$line" != FILE:* ]] && continue
+            UNIT_JSON="${line#FILE:}"
+            
+            # 提取信息
+            UNIT_ID=$(echo "$UNIT_JSON" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
+            MSG=$(echo "$UNIT_JSON" | python3 -c "import json,sys; print(json.load(sys.stdin)['message'])")
+            FILES=$(echo "$UNIT_JSON" | python3 -c "
+import json,sys
+u=json.load(sys.stdin)
+all_files = []
+for key in ['content','docs']:
+    all_files.extend(u['files'].get(key,[]))
+for f in all_files:
+    print(f)
+")
+            
+            echo "Deploying unit: $UNIT_ID"
+            
+            # 复制每个文件
+            while IFS= read -r fpath; do
+              [[ -z "$fpath" ]] && continue
+              # 从当前目录 (content-fixes-staged) 复制文件到 main-temp
+              if [ -f "$fpath" ]; then
+                mkdir -p "$(dirname "../main-temp/$fpath")"
+                cp "$fpath" "../main-temp/$fpath"
+                echo "  Copied: $fpath"
+                FILES_ADDED=$((FILES_ADDED + 1))
+              else
+                echo "  WARNING: $fpath not found, skipping"
+              fi
+            done <<< "$FILES"
+            
+            COMMIT_MSGS="${COMMIT_MSGS}${MSG}; "
+          done <<< "$RESULTS"
+          
+          echo "count=$FILES_ADDED" >> $GITHUB_OUTPUT
+          echo "msg=$COMMIT_MSGS" >> $GITHUB_OUTPUT
+
+      - name: 📝 Commit & Push 到 main
+        if: steps.coinflip.outputs.skip == 'false' && steps.selector.outputs.result != 'ALL_DONE' && steps.copier.outputs.count != '0'
+        run: |
+          cd ../main-temp
+          
+          # 添加文件
+          git add -A
+          
+          # 检查是否有实际变化
+          CHANGES=$(git diff --cached --stat)
+          if [ -z "$CHANGES" ]; then
+            echo "No changes to commit — files may already be identical"
+            exit 0
+          fi
+          
+          # 生成随机的 commit message
+          MSG="${{ steps.copier.outputs.msg }}"
+          TIMESTAMP=$(date +%s)
+          HASH=$(echo "$TIMESTAMP$RANDOM" | md5sum | head -c 6)
+          COMMIT_MSG="content: $MSG"
+          
+          git commit -m "$COMMIT_MSG"
+          echo "Pushing commit..."
+          git push origin main-temp:main 2>&1
+
+      - name: 📋 更新 manifest（标记已部署）
+        if: steps.coinflip.outputs.skip == 'false' && steps.selector.outputs.result != 'ALL_DONE'
+        run: |
+          # 解析哪些 units 被部署了
+          RESULTS="${{ steps.selector.outputs.result }}"
+          DEPLOYED_IDS=""
+          
+          # 从 AUTO: 行提取 IDs
+          AUTO_LINE=$(echo "$RESULTS" | grep "^AUTO:")
+          if [ -n "$AUTO_LINE" ]; then
+            DEPLOYED_IDS="${AUTO_LINE#AUTO:}"
+          fi
+          
+          FORCE_LINE=$(echo "$RESULTS" | grep "^FORCE:")
+          if [ -n "$FORCE_LINE" ]; then
+            DEPLOYED_IDS="${FORCE_LINE#FORCE:}"
+          fi
+          
+          if [ -z "$DEPLOYED_IDS" ]; then
+            echo "No units to mark"
+            exit 0
+          fi
+          
+          # 读取 manifest，标记 deployed=true
+          MANIFEST=$(cat .deploy-manifest.json)
+          UPDATED=$(echo "$MANIFEST" | python3 -c "
+import json,sys
+data=json.load(sys.stdin)
+ids='$DEPLOYED_IDS'.split(',')
+updated=0
+for u in data['units']:
+    if u['id'] in ids and not u.get('deployed'):
+        u['deployed'] = True
+        u['deployed_at'] = '${{ github.event.repository.updated_at }}'
+        updated+=1
+        print(f'Marked deployed: {u[\"id\"]}')
+print(f'Total marked: {updated}')
+print('---MANIFEST---')
+print(json.dumps(data, indent=2))
+" 2>&1)
+          
+          # 提取更新后的 manifest JSON
+          NEW_MANIFEST=$(echo "$UPDATED" | sed -n '/---MANIFEST---/,$ p' | tail -n +2)
+          
+          if [ -n "$NEW_MANIFEST" ]; then
+            echo "$NEW_MANIFEST" > .deploy-manifest.json
+            git config user.name "Factorio Guide Bot"
+            git config user.email "bot@factorioguides.com"
+            git add .deploy-manifest.json
+            git commit -m "deploy: update manifest — marked units as deployed [${{ github.run_id }}]"
+            git push origin content-fixes-staged 2>&1
+          fi
+
+      - name: 📊 部署进度报告
+        if: always()
+        run: |
+          cat .deploy-manifest.json | python3 -c "
+import json,sys
+data=json.load(sys.stdin)
+total=len(data['units'])
+deployed=sum(1 for u in data['units'] if u.get('deployed'))
+print(f'部署进度: {deployed}/{total}')
+print(f'完成率: {deployed*100//total}%')
+for u in data['units']:
+    status='✅' if u.get('deployed') else '⏳'
+    print(f'  {status} {u[\"id\"]}: {u[\"message\"]}')
+"
