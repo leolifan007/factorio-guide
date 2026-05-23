@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aquilo guide for Factorio Space Age. Ice power mechanics, heat management systems, lithium supply chains, cryogenic science packs, and the strategy that keeps your base alive on the coldest planet.">
+  <title>Aquilo 閳?The Frozen Planet Survival and Research Guide | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1313/space-age/aquilo-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Aquilo 閳?The Frozen Planet Survival and Research Guide">
+  <meta property="og:description" content="Aquilo guide for Factorio Space Age. Ice power mechanics, heat management systems, lithium supply chains, cryogenic science packs, and the strategy that keeps your base alive on the coldest planet.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1313/space-age/aquilo-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Aquilo 閳?The Frozen Planet Survival and Research Guide</h1><p class="article-desc">Aquilo guide for Factorio Space Age. Ice power mechanics, heat management systems, lithium supply chains, cryogenic science packs, and the strategy that keeps your base alive on the coldest planet.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 23, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          3 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          
+          <a href="/space-age/">Space Age Expansion Guide</a>
+          
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Aquilo 閳?The Frozen Planet Survival and Research Guide</span>
+        </nav>
+
+        <p>Aquilo is where Factorio stops being a factory game and starts being a survival game. <div class="game-slot"><img src="/images/icon/solar_panel.png" alt="solar_panel" class="game-img" loading="lazy">
+  <span class="game-name">Solar panel</span>
+</div>
+ Solar panels produce nothing here. Steam engines freeze solid. Roboports go dark. Every building is either generating heat or dying of cold.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Burn ice in smelters for heat + steam 閳?turbine = electricity. Heat pipes radiate warmth to every building. Lithium is scarce 閳?import from Gleba. Build only what Aquilo uniquely provides: cryogenic science packs.</div>
+
+<img src="/images/diagrams/aquilo-ice-power.svg" alt="Aquilo ice power system 閳?burner drill, ice smelter heat array, steam turbine, and heat pipe network" class="schema-diagram" loading="lazy" width="900">
+
+<h2 id="ice-is-your-power-grid">Ice Is Your Power Grid</h2>
+<p>Ice is Aquilo's primary resource and its entire power infrastructure. You mine it, burn it, and convert the heat into both warmth and electricity.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>Building</th>
+          <th>Output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Mine ice</td>
+          <td>Burner mining drill</td>
+          <td>Ice chunks</td>
+      </tr>
+      <tr>
+          <td>Burn ice</td>
+          <td>Electric smelter (array)</td>
+          <td>Heat + steam</td>
+      </tr>
+      <tr>
+          <td>Generate power</td>
+          <td>Steam turbine</td>
+          <td>~500 kW per 4 smelters</td>
+      </tr>
+      <tr>
+          <td>Distribute heat</td>
+          <td>Heat pipe network</td>
+          <td>Keeps buildings above freezing</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>The math:</strong> 1 ice-burning smelter produces ~125 kW of usable power (after 25% turbine efficiency). A 4-smelter heat plant powers a small factory at ~500 kW. Scale smelters to match demand.</p>
+<div class="callout"><strong>Critical rule:</strong> the heat network must be continuous. Any gap = freeze point. Build 50% extra heat capacity 閳?if one smelter runs dry, the others cover it.</div>
+
+<h2 id="the-heating-network">The Heating Network</h2>
+<p>Smelters burning ice radiate heat through heat pipes. Every building on Aquilo needs this:</p>
+<ul>
+<li><div class="game-slot"><img src="/images/icon/assembling_machine_3.png" alt="assembling_machine_3" class="game-img" loading="lazy">
+  <span class="game-name">Assembling</span>
+</div>
+ <strong>Assemblers</strong> 閳?freeze = production stops</li>
+<li><div class="game-slot"><img src="/images/icon/roboport.png" alt="roboport" class="game-img" loading="lazy">
+  <span class="game-name">Roboport</span>
+</div>
+ <strong>Roboports</strong> 閳?freeze = logistic network shuts down, bots return to nests</li>
+<li><div class="game-slot"><img src="/images/icon/roboport.png" alt="roboport" class="game-img" loading="lazy">
+  <span class="game-name">Roboport</span>
+</div>
+ <strong>Substations</strong> 閳?freeze = power grid flickers</li>
+<li><div class="game-slot"><img src="/images/icon/inserter.png" alt="inserter" class="game-img" loading="lazy">
+  <span class="game-name">Inserter</span>
+</div>
+ <strong>Inserters</strong> 閳?freeze = belts back up</li>
+</ul>
+<p>Heat pipes transfer warmth 4 tiles per pipe segment. Use underground heat pipes to span large distances. Place your smelter array at the center of your factory for even coverage.</p>
+<h2 id="lithium-import-it">Lithium: Import It</h2>
+<p>Lithium is essential for <div class="game-slot"><img src="/images/icon/battery.png" alt="battery" class="game-img" loading="lazy">
+  <span class="game-name">Battery</span>
+</div>
+ batteries, cryogenic science packs, and Quality Module 5 components. Aquilo surface deposits are rare and small 閳?insufficient for sustained production.</p>
+<p><strong>Source: Gleba.</strong> Lithium is a common byproduct in Gleba's bio-processing chain. Export lithium ore via space platform. If you don't have Gleba running yet, mine the pale green surface patches sparingly 閳?you'll need every chunk.</p>
+<h2 id="cryogenic-science-chain">Cryogenic Science Chain</h2>
+<p>Aquilo's unique research output:</p>
+<ol>
+<li>Ice 閳?power the factory (heat plant)</li>
+<li>Lithium 閳?lithium batteries</li>
+<li>Battery + ice + advanced circuit 閳?<strong>cryogenic science pack</strong></li>
+<li>Research unlocks: Quality Module 5, space platform upgrades, ultimate energy storage</li>
+</ol>
+<p>Quality Module 5 is the capstone 閳?+10% base productivity over Module 4 with quality bonuses on top. A rocket silo with 4 QM5s produces 50%+ more rockets per resource than with PM3s.</p>
+<h2 id="what-veterans-learn-the-hard-way">What Veterans Learn the Hard Way</h2>
+<ul>
+<li><div class="game-slot"><img src="/images/icon/solar_panel.png" alt="solar_panel" class="game-img" loading="lazy">
+  <span class="game-name">Solar panel</span>
+</div>
+ <strong>Solar panels are useless here</strong> 閳?they produce power but zero heat. You still need the ice smelter array.</li>
+<li><strong>Build compact</strong> 閳?every tile of heat pipe costs smelter output. Sprawling layouts = heat distribution nightmare.</li>
+<li><strong>Import aggressively</strong> 閳?Aquilo is a specialized research facility, not a self-sufficient planet. Import construction bots, nuclear fuel cells, spare parts.</li>
+<li><div class="game-slot"><img src="/images/icon/roboport.png" alt="roboport" class="game-img" loading="lazy">
+  <span class="game-name">Roboport</span>
+</div>
+ <strong>Heat roboports directly</strong> 閳?don't rely on proximity to warm buildings. Dedicated heat pipe connections prevent bot network collapse.</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Mistake</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>No heat buffer</td>
+          <td>One smelter stalls 閳?entire factory freezes</td>
+      </tr>
+      <tr>
+          <td>Relying on solar for power</td>
+          <td>Power works, heat doesn't 閳?everything still freezes</td>
+      </tr>
+      <tr>
+          <td>Mining all local lithium upfront</td>
+          <td>Depletes stockpile before science chain is stable</td>
+      </tr>
+      <tr>
+          <td>Spread-out factory layout</td>
+          <td>Heat can't reach outer buildings 閳?they freeze</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Aquilo demands compact layouts, continuous heat, and imported lithium. The strategy: burn ice for heat first, power second. Import everything possible. Extract cryogenic science and QM5 research. Everything else serves that goal.</p>
+<hr>
+<p><strong>Related:</strong> <a href="http://localhost:1313/space-age/vulcanus-guide/">Vulcanus Guide</a> | <a href="http://localhost:1313/space-age/space-platform-guide/">Space Platform Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/space-age/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Space Age Expansion Guide
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/space-age/vulcanus-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">V</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Vulcanus 鈥?The Volcanic Planet Foundry Guide</h4>
+                <p>Vulcanus guide for Factorio Space Age. Foundry mechanics, volcanic ash recycling, tungsten carbide production, and Productivity Module 4 unlocks.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/fulgora-recycling-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</h4>
+                <p>Fulgora guide for Factorio Space Age. Scrap recycling sorter design, holmium processing, lightning power, and the recycler loop that doesn&#39;t deadlock.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/gleba-survival-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Gleba Survival Guide — Spoilage, Nutrients, and Science</h4>
+                <p>Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/space-platform-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Space Platform Design Guide</h4>
+                <p>Space platform design for Factorio Space Age. Thruster ratio, platform weight, asteroid defense, platform hub setup, and the 3-stage build order that gets you to Gleba alive.</p>
+              </div>
+            </a>
+            
+            <a href="/space-age/quality-module-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Q</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Quality Modules — Space Age New Mechanic Explained</h4>
+                <p>How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

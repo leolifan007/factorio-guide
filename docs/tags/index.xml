@@ -2,164 +2,227 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Base-Design</title>
-      <link>https://factorioguides.com/tags/base-design/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/base-design/</guid>
+      <title>Aquilo</title>
+      <link>http://localhost:1313/tags/aquilo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aquilo/</guid>
       <description></description>
     </item>
     <item>
-      <title>Beginner</title>
-      <link>https://factorioguides.com/tags/beginner/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/beginner/</guid>
+      <title>Artillery</title>
+      <link>http://localhost:1313/tags/artillery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/artillery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beacons</title>
+      <link>http://localhost:1313/tags/beacons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/beacons/</guid>
       <description></description>
     </item>
     <item>
       <title>Blueprints</title>
-      <link>https://factorioguides.com/tags/blueprints/</link>
+      <link>http://localhost:1313/tags/blueprints/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/blueprints/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Circuit-Network</title>
-      <link>https://factorioguides.com/tags/circuit-network/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/circuit-network/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>City-Block</title>
-      <link>https://factorioguides.com/tags/city-block/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/city-block/</guid>
+      <guid>http://localhost:1313/tags/blueprints/</guid>
       <description></description>
     </item>
     <item>
       <title>Defense</title>
-      <link>https://factorioguides.com/tags/defense/</link>
+      <link>http://localhost:1313/tags/defense/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/defense/</guid>
+      <guid>http://localhost:1313/tags/defense/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fulgora</title>
-      <link>https://factorioguides.com/tags/fulgora/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/fulgora/</guid>
+      <title>Logistics</title>
+      <link>http://localhost:1313/tags/logistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logistics/</guid>
       <description></description>
     </item>
     <item>
-      <title>Getting-Started</title>
-      <link>https://factorioguides.com/tags/getting-started/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/getting-started/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gleba</title>
-      <link>https://factorioguides.com/tags/gleba/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/gleba/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Production-Ratios</title>
-      <link>https://factorioguides.com/tags/production-ratios/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/production-ratios/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Science-Packs</title>
-      <link>https://factorioguides.com/tags/science-packs/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/science-packs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Space-Age</title>
-      <link>https://factorioguides.com/tags/space-age/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/space-age/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Space-Platform</title>
-      <link>https://factorioguides.com/tags/space-platform/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/space-platform/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trains-Logistics</title>
-      <link>https://factorioguides.com/tags/trains-logistics/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/trains-logistics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Belts</title>
-      <link>https://factorioguides.com/tags/belts/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/belts/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Biters</title>
-      <link>https://factorioguides.com/tags/biters/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/biters/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Layout</title>
-      <link>https://factorioguides.com/tags/layout/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/layout/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Main-Bus</title>
-      <link>https://factorioguides.com/tags/main-bus/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/main-bus/</guid>
+      <title>Military</title>
+      <link>http://localhost:1313/tags/military/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/military/</guid>
       <description></description>
     </item>
     <item>
       <title>Modules</title>
-      <link>https://factorioguides.com/tags/modules/</link>
+      <link>http://localhost:1313/tags/modules/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/modules/</guid>
+      <guid>http://localhost:1313/tags/modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nuclear</title>
+      <link>http://localhost:1313/tags/nuclear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nuclear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Production-Ratios</title>
+      <link>http://localhost:1313/tags/production-ratios/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/production-ratios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Space-Age</title>
+      <link>http://localhost:1313/tags/space-age/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/space-age/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Space-Platform</title>
+      <link>http://localhost:1313/tags/space-platform/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/space-platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trains</title>
+      <link>http://localhost:1313/tags/trains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/trains/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uranium</title>
+      <link>http://localhost:1313/tags/uranium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/uranium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulcanus</title>
+      <link>http://localhost:1313/tags/vulcanus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vulcanus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Base-Design</title>
+      <link>http://localhost:1313/tags/base-design/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/base-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>http://localhost:1313/tags/beginner/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/beginner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circuit-Network</title>
+      <link>http://localhost:1313/tags/circuit-network/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/circuit-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>City-Block</title>
+      <link>http://localhost:1313/tags/city-block/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/city-block/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fulgora</title>
+      <link>http://localhost:1313/tags/fulgora/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fulgora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Getting-Started</title>
+      <link>http://localhost:1313/tags/getting-started/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/getting-started/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gleba</title>
+      <link>http://localhost:1313/tags/gleba/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gleba/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Science-Packs</title>
+      <link>http://localhost:1313/tags/science-packs/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/science-packs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trains-Logistics</title>
+      <link>http://localhost:1313/tags/trains-logistics/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/trains-logistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Belts</title>
+      <link>http://localhost:1313/tags/belts/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/belts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Biters</title>
+      <link>http://localhost:1313/tags/biters/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/biters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Layout</title>
+      <link>http://localhost:1313/tags/layout/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/layout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Main-Bus</title>
+      <link>http://localhost:1313/tags/main-bus/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/main-bus/</guid>
       <description></description>
     </item>
     <item>
       <title>Quality</title>
-      <link>https://factorioguides.com/tags/quality/</link>
+      <link>http://localhost:1313/tags/quality/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/quality/</guid>
+      <guid>http://localhost:1313/tags/quality/</guid>
       <description></description>
     </item>
     <item>
       <title>Smelting</title>
-      <link>https://factorioguides.com/tags/smelting/</link>
+      <link>http://localhost:1313/tags/smelting/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/smelting/</guid>
+      <guid>http://localhost:1313/tags/smelting/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>https://factorioguides.com/tags/tutorial/</link>
+      <link>http://localhost:1313/tags/tutorial/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/tags/tutorial/</guid>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,162 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://factorioguides.com/tags/base-design/</loc>
+    <loc>http://localhost:1313/tags/aquilo/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/space-age/aquilo-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/artillery/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/defense/artillery-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production-ratios/beacon-module-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/beacons/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blueprints/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/defense/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production-ratios/kovarex-enrichment-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/logistics/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blueprints/ltn-mod-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/military/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/modules/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nuclear/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/production-ratios/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/space-age/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/space-platform/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/trains/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/uranium/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vulcanus/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/space-age/vulcanus-guide/</loc>
+    <lastmod>2026-05-23T19:09:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/base-design/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/beginner/</loc>
+    <loc>http://localhost:1313/tags/beginner/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/blueprints/</loc>
+    <loc>http://localhost:1313/blueprints/circuit-network-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/blueprints/circuit-network-guide/</loc>
+    <loc>http://localhost:1313/tags/circuit-network/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/circuit-network/</loc>
+    <loc>http://localhost:1313/base-design/city-block-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/base-design/city-block-guide/</loc>
+    <loc>http://localhost:1313/tags/city-block/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/city-block/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/contact/</loc>
+    <loc>http://localhost:1313/science-packs/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/defense/</loc>
+    <loc>http://localhost:1313/defense/flamethrower-defense-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/science-packs/</loc>
+    <loc>http://localhost:1313/tags/fulgora/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/defense/flamethrower-defense-guide/</loc>
+    <loc>http://localhost:1313/space-age/fulgora-recycling-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/fulgora/</loc>
+    <loc>http://localhost:1313/tags/getting-started/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/space-age/fulgora-recycling-guide/</loc>
+    <loc>http://localhost:1313/tags/gleba/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/getting-started/</loc>
+    <loc>http://localhost:1313/space-age/gleba-survival-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/gleba/</loc>
+    <loc>http://localhost:1313/getting-started/green-science-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/space-age/gleba-survival-guide/</loc>
+    <loc>http://localhost:1313/base-design/nuclear-power-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/getting-started/green-science-guide/</loc>
+    <loc>http://localhost:1313/production-ratios/oil-processing-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/base-design/nuclear-power-guide/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/production-ratios/oil-processing-guide/</loc>
+    <loc>http://localhost:1313/production-ratios/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/privacy/</loc>
+    <loc>http://localhost:1313/tags/science-packs/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/production-ratios/</loc>
+    <loc>http://localhost:1313/space-age/space-platform-guide/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/production-ratios/</loc>
+    <loc>http://localhost:1313/getting-started/your-first-factory/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/science-packs/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/space-age/space-platform-guide/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/tags/space-age/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/tags/space-platform/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/tags/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/getting-started/your-first-factory/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/trains-logistics/basic-rail-network/</loc>
+    <loc>http://localhost:1313/trains-logistics/basic-rail-network/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/trains-logistics/</loc>
+    <loc>http://localhost:1313/tags/trains-logistics/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/belts/</loc>
+    <loc>http://localhost:1313/tags/belts/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/biters/</loc>
+    <loc>http://localhost:1313/tags/biters/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/blueprints/</loc>
+    <loc>http://localhost:1313/blueprints/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/science-packs/blue-science-guide/</loc>
+    <loc>http://localhost:1313/science-packs/blue-science-guide/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/defense/</loc>
+    <loc>http://localhost:1313/defense/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/defense/early-game-defense/</loc>
+    <loc>http://localhost:1313/defense/early-game-defense/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/getting-started/</loc>
+    <loc>http://localhost:1313/getting-started/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/blueprints/how-to-use-blueprints/</loc>
+    <loc>http://localhost:1313/blueprints/how-to-use-blueprints/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/layout/</loc>
+    <loc>http://localhost:1313/tags/layout/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/base-design/main-bus-guide/</loc>
+    <loc>http://localhost:1313/base-design/main-bus-guide/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/main-bus/</loc>
+    <loc>http://localhost:1313/tags/main-bus/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/modules/</loc>
+    <loc>http://localhost:1313/tags/quality/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/quality/</loc>
+    <loc>http://localhost:1313/space-age/quality-module-guide/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/space-age/quality-module-guide/</loc>
+    <loc>http://localhost:1313/science-packs/red-science-guide/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/science-packs/red-science-guide/</loc>
+    <loc>http://localhost:1313/tags/smelting/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/smelting/</loc>
+    <loc>http://localhost:1313/production-ratios/smelting-ratios/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/production-ratios/smelting-ratios/</loc>
+    <loc>http://localhost:1313/space-age/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/space-age/</loc>
+    <loc>http://localhost:1313/trains-logistics/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/trains-logistics/</loc>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/tags/tutorial/</loc>
-    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://factorioguides.com/base-design/</loc>
+    <loc>http://localhost:1313/base-design/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://factorioguides.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

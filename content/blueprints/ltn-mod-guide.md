@@ -1,5 +1,5 @@
 ---
-title: "LTN — Logistic Train Network Setup"
+title: "LTN 鈥?Logistic Train Network Setup"
 description: "LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
@@ -11,13 +11,13 @@ emoji: ""
 version: "2.0"
 ---
 
-LTN (Logistic Train Network) turns trains into logistic bots. {{< material "locomotive" >}} Trains automatically travel from providers to requesters based on supply and demand — no schedules needed.
+LTN (Logistic Train Network) turns trains into logistic bots. {{< material "rail" >}} Trains automatically travel from providers to requesters based on supply and demand 鈥?no schedules needed.
 
 {{< callout "tip" >}}
 **TL;DR:** Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.
 {{< /callout >}}
 
-{{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system — depot, provider stop, and requester stop with train flow" "900" >}}
+{{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system 鈥?depot, provider stop, and requester stop with train flow" "900" >}}
 
 ## The 3-Stop System
 
@@ -26,8 +26,8 @@ LTN requires three stop types:
 | Stop Type | Purpose | Circuit Connection |
 |-----------|---------|-------------------|
 | **Depot** | Idle trains wait here | None (LTN manages) |
-| **Provider** | Items available for pickup | Storage chest → stop |
-| **Requester** | Items needed for delivery | Requester chest → stop |
+| **Provider** | Items available for pickup | Storage chest 鈫?stop |
+| **Requester** | Items needed for delivery | Requester chest 鈫?stop |
 
 **How it works:**
 1. Provider signals available items to LTN
@@ -40,9 +40,9 @@ LTN requires three stop types:
 
 The depot is where idle trains park. Critical rules:
 
-- **Minimum 2 trains** — one loading/unloading, one waiting
-- **No schedule** — LTN assigns temporary schedules
-- **Fuel station** — trains refuel at depot automatically
+- **Minimum 2 trains** 鈥?one loading/unloading, one waiting
+- **No schedule** 鈥?LTN assigns temporary schedules
+- **Fuel station** 鈥?trains refuel at depot automatically
 
 Place depots centrally on your rail network. Every train should reach a depot within 30 seconds of emptying.
 
@@ -68,10 +68,10 @@ Requester stops announce demand:
 
 ## What Veterans Learn the Hard Way
 
-- **Depot trains must be empty** — LTN can't assign a train carrying cargo
-- **Wire every stop** — unwired stops break the network
-- **Thresholds matter** — too low = train spam; too high = stockouts
-- **One item type per provider** — mixed providers confuse LTN
+- **Depot trains must be empty** 鈥?LTN can't assign a train carrying cargo
+- **Wire every stop** 鈥?unwired stops break the network
+- **Thresholds matter** 鈥?too low = train spam; too high = stockouts
+- **One item type per provider** 鈥?mixed providers confuse LTN
 
 ## Common Mistakes
 
