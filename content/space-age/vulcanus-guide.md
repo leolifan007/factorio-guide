@@ -2,7 +2,7 @@
 title: "Vulcanus — The Lava Planet Full Setup Guide"
 description: "Vulcanus guide for Factorio Space Age. Foundry mechanics, calcite supply chains, tungsten carbide production, metallurgic science, and the full setup that makes Vulcanus worth the trip."
 date: 2026-05-23
-lastmod: 2026-05-23T17:54:00+08:00
+lastmod: 2026-05-23T19:09:00+08:00
 publishDate: 2026-05-27T11:28:00+08:00
 tags: ["space-age", "vulcanus", "production-ratios"]
 draft: false
@@ -11,158 +11,112 @@ emoji: ""
 version: "2.0"
 ---
 
-You land on Vulcanus and your circuits stop working. Your smelting column is glowing red and eating plates faster than it produces them. There's lava everywhere and no water in sight. The local ore patches glow orange — iron and copper, but different somehow. Your Fulgora and Gleba blueprints are useless here. Vulcanus has its own rules.
-
-The foundry is not a furnace. Your existing factory knowledge breaks here. This guide is the exact order of operations to build a functional base on Vulcanus without wasting your first 10 cargo pods on the wrong materials.
+You land on Vulcanus and your smelting knowledge breaks. No water for steam. No coal for solid fuel. The foundry replaces everything you know about metal processing.
 
 {{< callout "tip" >}}
-**TL;DR:** Vulcanus replaces smelting with the Foundry. Foundry takes iron ore + calcite → molten iron → steel plate in one building. Calcite is the unique resource from volcanic ash. Build the calcite chain first. Then the Foundry. Then tungsten carbide for the endgame module chain. Vulcanus Demons are cleared with artillery or lasers — walls are optional.
+**TL;DR:** The Foundry replaces furnaces — it takes ore + calcite → molten metal → plates in one building. Calcite comes from recycling volcanic ash (ore processing byproduct). Build calcite chain first, then foundries, then tungsten carbide for Module 4.
 {{< /callout >}}
 
+{{< diagram "diagrams/foundry-cycle.svg" "Vulcanus foundry circular dependency — iron/steel foundry, copper foundry, and calcite recycling" "820" >}}
 
-{< diagram "diagrams/foundry-cycle.svg" "Vulcanus foundry circular dependency — iron/steel foundry, copper foundry, and calcite recycling" "820" >}
+## Why Vulcanus Is Different
 
-## Lava, Calderite, and Why Your Existing Factory Breaks Here
+| Nauvis | Vulcanus |
+|--------|----------|
+| Water everywhere | **No water** — no steam power |
+| Coal patches | **No coal** — import or make coke |
+| Electric furnaces | **Foundry** (unique building) |
+| Simple ore → plate | Circular: iron feeds copper, copper feeds iron |
 
-Vulcanus is a volcanic planet with three critical differences from Nauvis:
-- No water patches — no steam power, no offshore pumps
-- No coal patches — no solid fuel chain from coal, no plastic from petroleum gas (wait, petroleum still works, but more on that)
-- Iron and copper ore exist but behave differently: ore chunks are surrounded by basalt, and the ore grades vary wildly
+Power solution: bring nuclear fuel cells from Nauvis. Vulcanus has no uranium ore.
 
-The bigger problem: you can't use electric furnaces here. Electric furnaces require electricity, which requires power. On Vulcanus, the primary power sources are nuclear (imported fuel) or the lava itself. But the lava doesn't do what you'd expect — you can't pump lava into a boiler.
+## The Foundry System
 
-The actual power solution: bring nuclear fuel cells from Nauvis. Vulcanus has no uranium ore. Every nuclear fuel cell you burn here is imported. Plan accordingly.
+The Foundry is a complete metal processing facility in one 3×3 building. It produces **molten metal** as an intermediate — and the recipes create a circular dependency:
 
-## The Foundry: Making Steel Without Iron Ore
+| Foundry Recipe | Input | Output |
+|----------------|-------|--------|
+| Iron smelting | Iron ore + calcite | Molten iron + volcanic ash |
+| Steel making | Molten iron + calcite | Steel plate |
+| Copper smelting | Copper ore + **molten iron** + calcite | Molten copper + ash |
 
-The Foundry is the defining building of Vulcanus. It is not a smelter. It is a complete metal processing facility in one tile.
+**The circular trap:** you need molten iron to process copper ore, but you need the copper foundry running to understand why your iron foundry seems incomplete. Break the cycle by bootstrapping with a small buffer of manually-placed iron plates to start the first copper foundry.
 
-The Foundry takes three inputs:
-- Ore (iron ore, copper ore, or iron ore for steel)
-- Calcite (the unique Vulcanus reagent)
-- Molten metal from the other output of the Foundry
+## Calcite: The Currency of Vulcanus
 
-The recipe system is circular: you need molten copper to process iron ore, and you need molten iron to process copper ore. This circular dependency is why the Foundry is confusing on first read.
+Every Foundry operation consumes calcite. Calcite is made from **volcanic ash** — a byproduct of all ore processing on Vulcanus.
 
-**The basic Foundry cycle:**
-1. Iron ore + calcite → molten iron + volcanic ash
-2. Molten iron + calcite → steel plate (if you route it back)
-3. Copper ore + molten iron (from step 1) + calcite → molten copper + volcanic ash
-4. Molten copper → plates normally
+The loop: `ore → foundry → volcanic ash → recycler → calcite → back to foundry`
 
-The practical setup:
-- 1 Foundry running iron ore → molten iron (feeds steel plate Foundry)
-- 2 Foundries running copper ore → molten copper (feeds plates)
-- The steel Foundry takes molten iron input from the iron Foundry + calcite
+**This is the #1 failure mode on Vulcanus.** If calcite runs out, every foundry stops. Cascade: no steel → no circuits → no science.
 
-This is why Vulcanus production chains are larger than Nauvis equivalents. The Foundry replaces an entire smelting row + a steel processing plant. The footprint is smaller, but the recipe complexity is higher.
+**Reliable calcite setup:**
+1. Dedicate 2 Foundries to ash→calcite recycling
+2. Buffer **500+ calcite** in a storage chest
+3. Route to all other Foundry inputs via bots or belts
+4. Monitor buffer until stable
 
-**Calcite: the currency of Vulcanus.**
-Every Foundry operation consumes calcite. Calcite comes from volcanic ash — a byproduct of iron and copper ore processing on Vulcanus. When you process ore in the Foundry, you get volcanic ash as output. Ash can be recycled back into calcite through a processing step.
+## Tungsten Carbide & Module 4
 
-The calcite loop: volcanic ash → calcite (via Foundry processing). The net calcite consumption per ton of metal is low, but you need a dedicated calcite recycling line to avoid running dry.
+Tungsten carbide is Vulcanus's endgame product — the key ingredient for Space Age's highest-tier modules:
 
-## Metal Mining Here Changes Everything
+| Product | Recipe | Value |
+|---------|--------|-------|
+| Tungsten carbide | 5 tungsten ore + 5 iron plate + 5 coke | Module 4 ingredient |
+| Productivity Module 4 | 5 TC + 5 PM3 + 1 advanced circuit | +30% prod (vs PM3's +10%) |
+| Speed Module 4 | 5 TC + 5 SM3 + 1 advanced circuit | Higher speed bonus |
 
-Vulcanus iron and copper ore patches are different from Nauvis:
-- Ore density is higher per tile (more ore per mining drill)
-- Ore patches are surrounded by basalt (purely cosmetic)
-- Mining drills on Vulcanus operate at normal speed but produce higher yield per ore node
+**Module 4 vs Module 3:** 3× productivity improvement. A rocket silo with 4 PM4s produces 30% more rockets per resource than with PM3s. This justifies the entire Vulcanus expedition.
 
-The practical advantage: you need fewer mining drills for the same metal output. A Vulcanus iron mining operation can be half the size of an equivalent Nauvis operation.
+Tungsten ore is rare on Vulcanus surface. Plan asteroid mining for long-term supply.
 
-The practical disadvantage: no water for mining drills. Mining drills on Vulcanus are burner mining drills (not electric). This means: they run on coal, coke, or wood. Coke is the Vulcanus fuel of choice — made from processing coal (imported or from Nauvis) or from heavy oil via solid fuel chain.
+## Power & Trains
 
-**Coke production on Vulcanus:**
-- Import coal from Nauvis via space platform
-- Or: crude oil → heavy oil → solid fuel → coke (from solid fuel processing)
-- Burner drills run on coke indefinitely
+| Problem | Solution |
+|---------|----------|
+| No water for steam | Nuclear fuel cells (imported from Nauvis) |
+| No coal for burners | Coke from imported coal or oil→solid fuel chain |
+| Steam locomotives don't work | Nuclear fuel or diesel locomotives only |
 
-The mining + coke loop is self-sufficient once established. You don't need to keep importing fuel if you have a crude oil processing setup.
+Run 1-2 nuclear reactors on Vulcanus for train locomotion and factory backup. The reactors aren't main power — they're logistics enablers.
 
-## Tungsten Carbide — the New High-Tier Module
+## Demons: Flying Enemies from Lava Vents
 
-Tungsten carbide is the Vulcanus unique material used to manufacture Productivity Module 4 and Speed Module 4 (the highest tier in the game). This is the endgame production chain that justifies the Vulcanus trip.
+Vulcanus has no biters. Instead, **Demons** spawn from lava vents:
+- Fast (faster than spitters), fragile (one laser kill)
+- Don't expand like biters — fixed population around vents
+- Target anything, including construction bots mid-build
 
-**Tungsten carbide recipe:**
-- 5 tungsten ore + 5 iron plate + 5 coke → 1 tungsten carbide
-- Crafted in an assembling machine (not a Foundry)
+**Solutions:**
+- **Lazy:** landfill the vents. No vent = no demons.
+- **Active:** laser turrets on power switch. Zero maintenance.
 
-**Tungsten ore:** unique to Vulcanus. Rare patches scattered across the map. You'll need asteroid mining to supplement surface deposits for long-term production.
+## Research Order
 
-**Module 4 production:**
-- Productivity Module 4 = 5 tungsten carbide + 5 productivity module 3 + 5 advanced circuit → 1 productivity module 4
-- Speed Module 4 = 5 tungsten carbide + 5 speed module 3 + 5 advanced circuit → 1 speed module 4
-- These replace module 3s in your late-game beacon arrays
+1. Metallurgic science pack 1 (basic foundry products)
+2. Foundry efficiency upgrades (reduces calcite/plate)
+3. Metallurgic science pack 2 (requires tungsten carbide)
+4. Tungsten carbide tech → unlocks Module 4 production
+5. Advanced metallurgic science (combines all planet outputs)
 
-The key advantage of module 4 over module 3: 30% productivity (vs 10% for mod 3) for productivity modules. This is a 3x improvement in rare resource efficiency. A rocket silo with 4 Productivity Module 4s produces 30% more rockets per resource than with mod 3s.
+Critical path: **calcite stable → plates → sci pack 1 → efficiency → tungsten → Module 4**
 
-## The Locomotive Problem and How to Solve It
+## Import / Export Priority
 
-Vulcanus has no water. Steam locomotives are useless. You need one of:
-- Nuclear fuel cells (imported from Nauvis)
--iesel fuel from oil processing (works on Vulcanus)
-- Battery power (imported lithium batteries from Aquilo)
+| Direction | Items |
+|-----------|-------|
+| **Export** | Tungsten carbide (highest value), metallurgic science, surplus calcite |
+| **Import** | Nuclear fuel cells, construction bots, backup calcite |
 
-The practical answer for most players: nuclear. Bring fuel cells. Run a small nuclear plant on Vulcanus (1-2 reactors). The reactors are for the trains and the factory — not the main power, just the locomotion.
+## Common Mistakes
 
-The train network on Vulcanus runs on nuclear fuel cells and imported diesel. You need a Vulcanus-specific train fleet because steam doesn't work.
-
-**The Vulcanus train schedule:**
-- Pick up: calcite / tungsten ore / metallurgic science packs
-- Deliver to: space platform pad
-- Import: nuclear fuel cells / construction bots / backup calcite
-
-## Demons: The Unique Enemy of Vulcanus
-
-Vulcanus has no traditional biters. Instead, there are Demons — flying enemies that spawn from lava vents. They are:
-- Fast: faster than spitters
-- Fragile: one laser turret kills them quickly
-- Annoying: they target anything, including construction bots mid-build
-
-Demons do not expand like biters. They are a fixed population around lava vents. Clear the vents in your build area with artillery or laser turrets, and the area stays clear.
-
-The lazy solution: landfill the lava vents. Fill them with stone or concrete. Demons can't spawn without vents. One landfill + one concrete tile = permanent demon-free zone.
-
-The active solution: laser turrets wired to a power switch. When power is available, lasers fire. Simple, effective, zero maintenance.
-
-## What Gleba and Fulgora Forgot to Tell You
-
-Vulcanus is the supply chain planet. Fulgora handles recyclables. Gleba handles biology. Vulcanus handles the metallurgic backbone that both of those planets need.
-
-**The Vulcanus export priority:**
-1. Tungsten carbide (for module 4 production — highest value)
-2. Metallurgic science packs (required for advanced research)
-3. Calcite surplus (Calcite is also needed on Gleba for bioflux production)
-
-Import priority:
-1. Nuclear fuel cells (unless you have local uranium — you don't)
-2. Construction bots (vulcanus construction is brutal without bots)
-3. Backup calcite (until your own recycling loop is established)
-
-## The Calcite Chain: The Foundation of Everything
-
-The most common failure mode on Vulcanus: calcite starvation. The Foundry stops because no calcite is available. This cascades: no steel plates → no advanced circuits → no science.
-
-**The calcite setup that works:**
-1. Build 2 Foundry units dedicated to calcite production: process volcanic ash → calcite
-2. Buffer 500 calcite in a storage chest
-3. Route calcite to all other Foundry inputs
-4. Check the buffer every 10 minutes until the loop is stable
-
-The volcanic ash byproduct from ore processing should nearly cover your calcite demand. "Nearly" is doing a lot of work here — the first time you run a Foundry without enough calcite backup, the entire chain halts.
-
-## The Vulcanus Research Unlock Order
-
-The research tree on Vulcanus is separate from Nauvis science. The order:
-1. Metallurgic science pack 1 (requires basic foundry products)
-2. Foundry efficiency upgrades (reduces calcite consumption per plate)
-3. Metallurgic science pack 2 (requires tungsten carbide — wait for this)
-4. Tungsten carbide technology (unlocks module 4 production)
-5. Advanced metallurgic science (combines Vulcanus products with Fulgora/Gleba science)
-
-The critical path: get calcite stable → get iron/copper plates → get metallurgic science pack 1 → unlock efficiency upgrades → get tungsten → unlock module 4 → build the endgame production chain.
+| Mistake | Consequence |
+|---------|-------------|
+| Starting foundries without calcite buffer | Chain halts within minutes |
+| Ignoring circular dependency | Copper foundry stuck waiting for molten iron that doesn't exist yet |
+| Mining all tungsten upfront | Surface deposits deplete before Module 4 line is built |
+| Using steam locomotives | They don't work without water |
 
 ## The Bottom Line
 
-Vulcanus is the hardest Space Age planet to set up and the most rewarding to optimize. The Foundry is the center of everything — get the calcite loop right and the rest follows. Tungsten carbide is the endgame reward that justifies the trip. Build the calcite chain first, then the Foundries, then the train network, then the tungsten. Everything else is footnotes.
+Vulcanus rewards players who master the foundry's circular recipe system. Get calcite recycling stable first — everything else depends on it. Tungsten carbide and Module 4 are the endgame payoff. Build compact, import fuel, landfill demon vents.
