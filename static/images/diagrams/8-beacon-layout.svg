@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520">
+  <defs>
+    <marker id="mg" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/></marker>
+    <marker id="mo" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffa657"/></marker>
+    <marker id="mp" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d2a8ff"/></marker>
+    <marker id="mb" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#58a6ff"/></marker>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#21262d" stroke-width="0.5"/>
+    </pattern>
+    <style>
+      .lbl { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #c9d1d9; }
+      .ttl { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: bold; fill: #e6edf3; }
+      .sub { font-family: 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
+      .mono { font-family: monospace; font-size: 9px; }
+    </style>
+  </defs>
+  <rect width="820" height="520" rx="8" fill="#0d1117"/>
+  <text x="410" y="26" text-anchor="middle" class="ttl">8-Beacon Layout — The Standard Module Setup</text>
+  <line x1="20" y1="36" x2="800" y2="36" stroke="#21262d"/>
+
+  <!-- Grid background -->
+  <rect x="200" y="60" width="420" height="380" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- ===================== BEACON RANGE RINGS ===================== -->
+  <!-- Each beacon has range 4 tiles. Show coverage circle for center -->
+  <circle cx="410" cy="250" r="80" fill="none" stroke="#d2a8ff" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- ===================== 8 BEACONS (orange, numbered) ===================== -->
+  <!-- Beacon 1: top-left -->
+  <rect x="310" y="170" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="317" y="177" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="326" cy="184" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="326" y="187" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="326" y="210" text-anchor="middle" class="sub">B1</text>
+
+  <!-- Beacon 2: top-center-left -->
+  <rect x="410" y="170" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="417" y="177" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="426" cy="184" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="426" y="187" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="426" y="210" text-anchor="middle" class="sub">B2</text>
+
+  <!-- Beacon 3: top-center-right -->
+  <rect x="478" y="170" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="485" y="177" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="494" cy="184" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="494" y="187" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="494" y="210" text-anchor="middle" class="sub">B3</text>
+
+  <!-- Beacon 4: left-side -->
+  <rect x="310" y="250" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="317" y="257" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="326" cy="264" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="326" y="267" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="326" y="290" text-anchor="middle" class="sub">B4</text>
+
+  <!-- Beacon 5: right-side -->
+  <rect x="478" y="250" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="485" y="257" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="494" cy="264" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="494" y="267" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="494" y="290" text-anchor="middle" class="sub">B5</text>
+
+  <!-- Beacon 6: bottom-left -->
+  <rect x="310" y="322" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="317" y="329" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="326" cy="336" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="326" y="339" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="326" y="362" text-anchor="middle" class="sub">B6</text>
+
+  <!-- Beacon 7: bottom-center-left -->
+  <rect x="410" y="322" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="417" y="329" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="426" cy="336" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="426" y="339" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="426" y="362" text-anchor="middle" class="sub">B7</text>
+
+  <!-- Beacon 8: bottom-center-right -->
+  <rect x="478" y="322" width="32" height="28" rx="3" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="485" y="329" width="18" height="14" rx="2" fill="#21262d"/>
+  <circle cx="494" cy="336" r="5" fill="#f0883e" opacity="0.7"/>
+  <text x="494" y="339" text-anchor="middle" font-size="7" fill="#0d1117">B</text>
+  <text x="494" y="362" text-anchor="middle" class="sub">B8</text>
+
+  <!-- ===================== CENTER: ASSEMBLER (3x3) ===================== -->
+  <rect x="352" y="192" width="116" height="116" rx="4" fill="#161b22" stroke="#58a6ff" stroke-width="3"/>
+  <!-- 4 module slots shown -->
+  <rect x="360" y="200" width="100" height="100" rx="2" fill="#21262d"/>
+  <!-- Module slots -->
+  <rect x="368" y="208" width="36" height="36" rx="2" fill="#2d1a4a" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="386" y="224" text-anchor="middle" font-size="8" fill="#d2a8ff">PM3</text>
+  <text x="386" y="234" text-anchor="middle" font-size="7" fill="#8b949e">-40%spd</text>
+  <text x="386" y="243" text-anchor="middle" font-size="7" fill="#8b949e">+30%prod</text>
+
+  <rect x="416" y="208" width="36" height="36" rx="2" fill="#2d1a4a" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="434" y="224" text-anchor="middle" font-size="8" fill="#d2a8ff">PM3</text>
+  <text x="434" y="234" text-anchor="middle" font-size="7" fill="#8b949e">-40%spd</text>
+  <text x="434" y="243" text-anchor="middle" font-size="7" fill="#8b949e">+30%prod</text>
+
+  <rect x="368" y="256" width="36" height="36" rx="2" fill="#2d1a4a" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="386" y="272" text-anchor="middle" font-size="8" fill="#d2a8ff">PM3</text>
+  <text x="386" y="282" text-anchor="middle" font-size="7" fill="#8b949e">-40%spd</text>
+  <text x="386" y="291" text-anchor="middle" font-size="7" fill="#8b949e">+30%prod</text>
+
+  <rect x="416" y="256" width="36" height="36" rx="2" fill="#2d1a4a" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="434" y="272" text-anchor="middle" font-size="8" fill="#d2a8ff">PM3</text>
+  <text x="434" y="282" text-anchor="middle" font-size="7" fill="#8b949e">-40%spd</text>
+  <text x="434" y="291" text-anchor="middle" font-size="7" fill="#8b949e">+30%prod</text>
+
+  <text x="410" y="315" text-anchor="middle" class="lbl" fill="#58a6ff">Assembler 3</text>
+
+  <!-- Speed bonus from beacons (+50% each, 8 total) -->
+  <!-- Show beacon beams hitting assembler -->
+  <line x1="342" y1="184" x2="352" y2="192" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  <line x1="442" y1="184" x2="468" y2="192" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  <line x1="342" y1="308" x2="352" y2="308" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  <line x1="442" y1="308" x2="468" y2="308" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  <line x1="326" y1="198" x2="352" y2="198" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+  <line x1="494" y1="198" x2="468" y2="198" stroke="#f0883e" stroke-width="1" opacity="0.5" stroke-dasharray="2,2"/>
+
+  <!-- ===================== RIGHT PANEL: Speed/Prod Math ===================== -->
+  <text x="700" y="56" text-anchor="middle" class="ttl" fill="#d2a8ff">Speed vs Productivity — The Math</text>
+
+  <rect x="630" y="70" width="175" height="200" rx="5" fill="#161b22" stroke="#21262d"/>
+  <text x="640" y="87" class="lbl" fill="#d2a8ff">WITHOUT beacons:</text>
+  <text x="640" y="102" class="mono" fill="#8b949e">4x PM3 = -40% speed</text>
+  <text x="640" y="115" class="mono" fill="#da3633">Craft time: 1.67× slower</text>
+  <text x="640" y="128" class="mono" fill="#3fb950">+30% more items/craft</text>
+  <text x="640" y="142" class="sub" fill="#8b949e">Net: WORSE than no modules!</text>
+  <line x1="635" y1="150" x2="800" y2="150" stroke="#21262d"/>
+
+  <text x="640" y="167" class="lbl" fill="#3fb950">WITH 8 beacons (Speed 3):</text>
+  <text x="640" y="182" class="mono" fill="#8b949e">8x SM3 = +400% speed spread</text>
+  <text x="640" y="195" class="mono" fill="#ffa657">-40% + 50% net = +10% speed</text>
+  <text x="640" y="208" class="mono" fill="#3fb950">+30% more items/craft</text>
+  <text x="640" y="221" class="mono" fill="#3fb950">+10% faster craft time</text>
+  <text x="640" y="235" class="sub" fill="#3fb950">This is why 8 beacons is the standard</text>
+  <line x1="635" y1="248" x2="800" y2="248" stroke="#21262d"/>
+
+  <text x="640" y="263" class="mono" fill="#da3633">⚠ Fewer than 8 beacons</text>
+  <text x="640" y="276" class="sub" fill="#8b949e">= partial speed coverage</text>
+  <text x="640" y="289" class="sub" fill="#8b949e">= productivity penalty not cancelled</text>
+  <text x="640" y="302" class="sub" fill="#8b949e">= machine still slower than base</text>
+
+  <!-- ===================== BOTTOM: Tile Grid Dimension ===================== -->
+  <text x="410" y="390" text-anchor="middle" class="ttl" fill="#58a6ff">7-Tile Grid Spacing</text>
+
+  <!-- Grid dimension markers -->
+  <line x1="200" y1="420" x2="620" y2="420" stroke="#58a6ff" stroke-width="1.5"/>
+  <line x1="200" y1="414" x2="200" y2="426" stroke="#58a6ff" stroke-width="1.5"/>
+  <line x1="620" y1="414" x2="620" y2="426" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="410" y="436" text-anchor="middle" class="mono" fill="#58a6ff">420 tiles = 60 tile wide cell × 7-tile gap</text>
+
+  <!-- 4-tile gap label -->
+  <line x1="548" y1="350" x2="548" y2="378" stroke="#484f58" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="548" y1="378" x2="200" y2="378" stroke="#484f58" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="374" y="375" text-anchor="middle" class="sub" fill="#6e7681">4-tile gap (belt space)</text>
+
+  <!-- Single cell label -->
+  <text x="410" y="450" text-anchor="middle" class="sub" fill="#8b949e">1 assembler cell = 3-tile machine + 4-tile gap = 7-tile unit. Repeat horizontally for production lines.</text>
+
+  <!-- ===================== LEGEND ===================== -->
+  <rect x="20" y="462" width="780" height="50" rx="5" fill="#161b22" stroke="#21262d"/>
+  <rect x="25" y="467" width="18" height="14" rx="2" fill="#161b22" stroke="#f0883e" stroke-width="1.5"/>
+  <circle cx="34" cy="474" r="4" fill="#f0883e" opacity="0.7"/>
+  <text x="48" y="480" class="sub">Speed Beacon 3 (+50%)</text>
+  <rect x="165" y="467" width="18" height="14" rx="2" fill="#2d1a4a" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="188" y="480" class="sub">Productivity Module 3 (+30% prod, -40% speed)</text>
+  <rect x="385" y="467" width="18" height="14" rx="2" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="408" y="480" class="sub">Assembler 3</text>
+  <line x1="520" y1="474" x2="535" y2="474" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="542" y="480" class="sub">Beacon range (4 tiles)</text>
+  <circle cx="640" cy="474" r="8" fill="none" stroke="#d2a8ff" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="655" y="480" class="sub">Coverage ring</text>
+</svg>

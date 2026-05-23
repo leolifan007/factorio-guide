@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+  <defs>
+    <marker id="lg" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/></marker>
+    <marker id="lr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#da3633"/></marker>
+    <marker id="lb" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#58a6ff"/></marker>
+    <marker id="lo" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffa657"/></marker>
+    <marker id="lp" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d2a8ff"/></marker>
+    <style>
+      .lbl { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #c9d1d9; }
+      .ttl { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: bold; fill: #e6edf3; }
+      .sub { font-family: 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
+      .mono { font-family: monospace; font-size: 9px; }
+    </style>
+  </defs>
+  <rect width="820" height="480" rx="8" fill="#0d1117"/>
+  <text x="410" y="26" text-anchor="middle" class="ttl">LTN — The 3-Stop System</text>
+  <line x1="20" y1="36" x2="800" y2="36" stroke="#21262d"/>
+
+  <!-- ===================== LEFT: Provider Stop ===================== -->
+  <text x="110" y="56" text-anchor="middle" class="ttl" fill="#3fb950">1. PROVIDER STOP</text>
+  <text x="110" y="68" text-anchor="middle" class="sub">"Has items ready for pickup"</text>
+
+  <!-- Mining outpost at provider -->
+  <ellipse cx="70" cy="110" rx="28" ry="18" fill="#2d5020" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+  <text x="70" y="114" text-anchor="middle" font-size="9" fill="#3fb950">Fe ore</text>
+  <text x="70" y="135" text-anchor="middle" class="lbl">Iron Mine</text>
+
+  <!-- Belt to passive provider -->
+  <line x1="98" y1="110" x2="120" y2="110" stroke="#6e7681" stroke-width="3"/>
+  <text x="109" y="104" text-anchor="middle" class="sub">belt</text>
+
+  <!-- Passive Provider Chest -->
+  <rect x="120" y="90" width="64" height="44" rx="3" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="152" y="107" text-anchor="middle" class="lbl" fill="#3fb950">Passive</text>
+  <text x="152" y="119" text-anchor="middle" class="lbl" fill="#3fb950">Provider</text>
+  <text x="152" y="131" text-anchor="middle" class="mono" fill="#ffa657">+500 iron ore</text>
+
+  <!-- LTN train stop -->
+  <rect x="120" y="138" width="64" height="28" rx="3" fill="#21262d" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="152" y="153" text-anchor="middle" class="lbl" fill="#3fb950">Provider</text>
+  <text x="152" y="163" text-anchor="middle" class="mono" fill="#ffa657">Iron Ore</text>
+
+  <!-- Arrow to track -->
+  <line x1="184" y1="152" x2="220" y2="152" stroke="#3fb950" stroke-width="1.5" marker-end="url(#lg)"/>
+  <text x="202" y="145" text-anchor="middle" class="sub" fill="#3fb950">green wire</text>
+
+  <!-- Train at provider stop -->
+  <line x1="220" y1="148" x2="220" y2="160" stroke="#6e7681" stroke-width="4"/>
+  <line x1="220" y1="155" x2="220" y2="163" stroke="#6e7681" stroke-width="4"/>
+  <rect x="228" y="144" width="36" height="24" rx="3" fill="#161b22" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="246" y="158" text-anchor="middle" font-size="8" fill="#ffa657">L</text>
+  <rect x="267" y="145" width="32" height="22" rx="2" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="283" y="158" text-anchor="middle" font-size="8" fill="#58a6ff">Fe</text>
+
+  <!-- Note: train loads here -->
+  <text x="152" y="182" text-anchor="middle" class="sub" fill="#8b949e">LTN dispatches empty train</text>
+  <text x="152" y="193" text-anchor="middle" class="sub" fill="#8b949e">→ train loads 200 iron ore</text>
+
+  <!-- ===================== CENTER: Rail Network ===================== -->
+  <text x="410" y="56" text-anchor="middle" class="ttl" fill="#ffa657">Rail Network — Shared by All Resources</text>
+  <text x="410" y="68" text-anchor="middle" class="sub">One track network. One train handles every resource. Zero route conflicts (when wired correctly).</text>
+
+  <!-- Main rail -->
+  <line x1="300" y1="220" x2="720" y2="220" stroke="#484f58" stroke-width="6"/>
+  <line x1="300" y1="228" x2="720" y2="228" stroke="#484f58" stroke-width="6"/>
+  <!-- Rail ties -->
+  <line x1="320" y1="216" x2="320" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="360" y1="216" x2="360" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="400" y1="216" x2="400" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="440" y1="216" x2="440" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="480" y1="216" x2="480" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="520" y1="216" x2="520" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="560" y1="216" x2="560" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="600" y1="216" x2="600" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="640" y1="216" x2="640" y2="232" stroke="#30363d" stroke-width="2"/>
+  <line x1="680" y1="216" x2="680" y2="232" stroke="#30363d" stroke-width="2"/>
+  <text x="510" y="210" text-anchor="middle" class="sub" fill="#6e7681">Shared Rail — no resource-specific tracks</text>
+
+  <!-- Signal chain on rail -->
+  <rect x="340" y="234" width="8" height="16" rx="1" fill="#ffa657"/>
+  <rect x="420" y="234" width="8" height="16" rx="1" fill="#ffa657"/>
+  <rect x="500" y="234" width="8" height="16" rx="1" fill="#ffa657"/>
+  <rect x="580" y="234" width="8" height="16" rx="1" fill="#ffa657"/>
+  <rect x="660" y="234" width="8" height="16" rx="1" fill="#ffa657"/>
+
+  <!-- Moving train (animated position ~) -->
+  <rect x="390" y="214" width="36" height="20" rx="3" fill="#161b22" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="408" y="226" text-anchor="middle" font-size="8" fill="#ffa657">L</text>
+  <rect x="428" y="215" width="32" height="18" rx="2" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="444" y="226" text-anchor="middle" font-size="8" fill="#58a6ff">Fe</text>
+
+  <!-- Arrow showing direction -->
+  <line x1="350" y1="205" x2="390" y2="205" stroke="#ffa657" stroke-width="1.5" marker-end="url(#lo)"/>
+  <text x="370" y="198" text-anchor="middle" class="mono" fill="#ffa657">→ en route</text>
+
+  <!-- ===================== RIGHT: Requester Stop ===================== -->
+  <text x="710" y="56" text-anchor="middle" class="ttl" fill="#da3633">2. REQUESTER STOP</text>
+  <text x="710" y="68" text-anchor="middle" class="sub">"Needs items delivered"</text>
+
+  <!-- Train arriving at requester -->
+  <line x1="660" y1="220" x2="660" y2="232" stroke="#484f58" stroke-width="4"/>
+  <line x1="660" y1="227" x2="660" y2="235" stroke="#484f58" stroke-width="4"/>
+  <rect x="648" y="214" width="36" height="20" rx="3" fill="#161b22" stroke="#ffa657" stroke-width="1.5"/>
+  <rect x="648" y="215" width="32" height="18" rx="2" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
+
+  <!-- Requester stop sign -->
+  <rect x="660" y="138" width="64" height="28" rx="3" fill="#21262d" stroke="#da3633" stroke-width="1.5"/>
+  <text x="692" y="153" text-anchor="middle" class="lbl" fill="#da3633">Requester</text>
+  <text x="692" y="163" text-anchor="middle" class="mono" fill="#ffa657">Iron Plates</text>
+
+  <!-- Requester Chest -->
+  <rect x="660" y="90" width="64" height="44" rx="3" fill="#161b22" stroke="#da3633" stroke-width="2"/>
+  <text x="692" y="107" text-anchor="middle" class="lbl" fill="#da3633">Requester</text>
+  <text x="692" y="119" text-anchor="middle" class="lbl" fill="#da3633">Chest</text>
+  <text x="692" y="131" text-anchor="middle" class="mono" fill="#ffa657">req: 400 Fe ore</text>
+
+  <!-- Assembler at requester -->
+  <rect x="730" y="85" width="70" height="50" rx="4" fill="#161b22" stroke="#d2a8ff" stroke-width="1.5"/>
+  <text x="765" y="105" text-anchor="middle" class="lbl" fill="#d2a8ff">Assembler</text>
+  <text x="765" y="118" text-anchor="middle" class="mono" fill="#8b949e">iron plates</text>
+  <text x="765" y="130" text-anchor="middle" class="sub">smelters</text>
+
+  <!-- Arrow requester chest to assembler -->
+  <line x1="724" y1="112" x2="730" y2="108" stroke="#da3633" stroke-width="1.5" marker-end="url(#lr)"/>
+
+  <!-- Train to track -->
+  <line x1="660" y1="152" x2="660" y2="210" stroke="#da3633" stroke-width="1.5" marker-end="url(#lr)"/>
+
+  <!-- Note: train unloads here -->
+  <text x="692" y="182" text-anchor="middle" class="sub" fill="#8b949e">LTN dispatches train here</text>
+  <text x="692" y="193" text-anchor="middle" class="sub" fill="#8b949e">→ train unloads 400 iron ore</text>
+  <text x="692" y="204" text-anchor="middle" class="sub" fill="#8b949e">→ returns to depot</text>
+
+  <!-- ===================== BOTTOM: Depot ===================== -->
+  <text x="410" y="272" text-anchor="middle" class="ttl" fill="#58a6ff">3. DEPOT — Train Home Base</text>
+
+  <!-- Depot tracks (dead-end) -->
+  <line x1="350" y1="305" x2="350" y2="345" stroke="#484f58" stroke-width="6"/>
+  <line x1="358" y1="305" x2="358" y2="345" stroke="#484f58" stroke-width="6"/>
+  <line x1="470" y1="305" x2="470" y2="345" stroke="#484f58" stroke-width="6"/>
+  <line x1="478" y1="305" x2="478" y2="345" stroke="#484f58" stroke-width="6"/>
+  <!-- Dead end -->
+  <line x1="350" y1="345" x2="478" y2="345" stroke="#484f58" stroke-width="4"/>
+  <!-- Track to main line -->
+  <path d="M 350 305 Q 350 285 300 285 Q 280 285 280 260" stroke="#484f58" stroke-width="4" fill="none"/>
+  <path d="M 300 285 Q 280 285 280 260" stroke="#484f58" stroke-width="4" fill="none"/>
+  <path d="M 478 305 Q 478 285 500 285 Q 520 285 520 260" stroke="#484f58" stroke-width="4" fill="none"/>
+
+  <!-- Depot idle trains -->
+  <rect x="362" y="308" width="36" height="22" rx="3" fill="#161b22" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="380" y="321" text-anchor="middle" font-size="8" fill="#ffa657">L</text>
+  <rect x="400" y="309" width="28" height="20" rx="2" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="414" y="321" text-anchor="middle" font-size="8" fill="#58a6ff">empty</text>
+
+  <!-- Depot sign -->
+  <rect x="370" y="355" width="80" height="28" rx="3" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="410" y="370" text-anchor="middle" class="lbl" fill="#58a6ff">LTN Depot</text>
+  <text x="410" y="381" text-anchor="middle" class="mono" fill="#ffa657">idle trains</text>
+
+  <!-- Annotations for depot -->
+  <text x="410" y="400" text-anchor="middle" class="sub" fill="#8b949e">Idle trains wait here. LTN dispatches them to provider → requester → back here.</text>
+  <text x="410" y="412" text-anchor="middle" class="mono" fill="#ffa657">Minimum 2 trains in depot or network stalls</text>
+
+  <!-- Arrow depot to main line -->
+  <line x1="300" y1="282" x2="300" y2="220" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="295" y="250" class="sub" fill="#58a6ff">to rail</text>
+
+  <!-- ===================== KEY BOX ===================== -->
+  <rect x="20" y="432" width="780" height="40" rx="5" fill="#161b22" stroke="#21262d"/>
+  <rect x="20" y="432" width="8" height="40" rx="4" fill="#3fb950"/>
+  <text x="35" y="448" class="mono" fill="#3fb950">Provider</text>
+  <text x="35" y="460" class="sub">"has items"</text>
+  <rect x="130" y="432" width="8" height="40" rx="4" fill="#da3633"/>
+  <text x="145" y="448" class="mono" fill="#da3633">Requester</text>
+  <text x="145" y="460" class="sub">"needs items"</text>
+  <rect x="250" y="432" width="8" height="40" rx="4" fill="#58a6ff"/>
+  <text x="265" y="448" class="mono" fill="#58a6ff">Depot</text>
+  <text x="265" y="460" class="sub">"idle home"</text>
+  <line x1="330" y1="452" x2="370" y2="452" stroke="#ffa657" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="378" y="448" class="mono" fill="#ffa657">One train</text>
+  <text x="378" y="460" class="sub">any resource</text>
+  <text x="480" y="448" class="mono" fill="#d2a8ff">Circuit Wire</text>
+  <text x="480" y="460" class="sub">connects stops to network</text>
+  <rect x="590" y="437" width="200" height="28" rx="3" fill="#21262d" stroke="#da3633" stroke-width="1"/>
+  <text x="600" y="452" class="mono" fill="#da3633">⚠ No depot trains = network stops</text>
+  <text x="600" y="463" class="sub">Always maintain idle fleet</text>
+</svg>

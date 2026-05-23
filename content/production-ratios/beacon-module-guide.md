@@ -31,6 +31,9 @@ Productivity Module 4 (Space Age, made with tungsten carbide): +10% base + quali
 
 The trade-off is real. Productivity modules produce more items per craft, but each craft takes longer. Speed modules cancel out the slowdown. Together: +30% productivity at full speed.
 
+
+{< diagram "diagrams/8-beacon-layout.svg" "8-beacon layout — module slots, speed beacon coverage, and 7-tile grid spacing" "820" >}
+
 ## The Speed-Productivity Paradox Nobody Explains Right
 
 Here is the exact scenario that breaks most module setups:

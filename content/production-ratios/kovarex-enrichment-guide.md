@@ -19,6 +19,9 @@ Your nuclear plant is burning fuel cells it cannot replace. Kovarex is the solut
 **TL;DR:** Kovarex enrichment converts excess U-238 into U-235. It requires 40 U-238 as input to produce 1 U-235 per cycle (~60 seconds). Kickstart requires stockpiling 40 U-235 from normal processing first. Ratio: 3 Kovarex centrifuges per reactor running at full power. Always buffer U-238 — if the stockpile runs dry, enrichment stops.
 {{< /callout >}}
 
+
+{< diagram "diagrams/kovarex-loop.svg" "Kovarex enrichment loop — normal processing, 3-centrifuge enrichment, and fuel cell production" "800" >}
+
 ## The Uranium Bottleneck Nobody Tells You About
 
 Normal uranium processing (centrifuge on uranium ore) produces U-238 at 99.3% efficiency and U-235 at 0.7%. This is per cycle. The cycle is fast — a centrifuge runs about 1 cycle per 50 seconds. But 0.7% means: for every 143 centrifuge-cycles of uranium ore processing, you get 1 U-235.

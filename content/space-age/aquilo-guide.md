@@ -19,6 +19,9 @@ The cold kills your power grid. The lack of resources kills your factory. The lo
 **TL;DR:** Aquilo power comes from burning ice. Ice burned in smelter arrays produces heat and steam. Build a centralized heat distribution network first. Lithium is rare here — import from Gleba. Aquilo is not meant to be self-sufficient. Build only what Aquilo uniquely provides: cryogenic science packs. Import everything else.
 {{< /callout >}}
 
+
+{< diagram "diagrams/aquilo-ice-power.svg" "Aquilo ice power system — burner drill, ice smelter heat array, steam turbine, and heat pipe network" "800" >}
+
 ## The Coldest Place in the Factorio Universe
 
 Aquilo is a frozen moon. The surface temperature is below the freezing point of water. This is not cosmetic — it is a mechanical constraint that governs every aspect of gameplay.

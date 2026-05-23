@@ -19,6 +19,9 @@ Your artillery turret is flashing. Nothing is dying. Here's why, and how to buil
 **TL;DR:** Artillery turrets fire at any biter base within targeting range (research-dependent, starts at 7 tiles). You need 1 artillery shell assembler + 1 turret + circuit-controlled auto-fire. For outpost chains: build a turret, add 200 shells in buffer, wire requester chest to circuit network. When shells drop below 50, a train resupplies automatically.
 {{< /callout >}}
 
+
+{< diagram "diagrams/artillery-outpost.svg" "Artillery outpost circuit diagram — turret, shells, circuit network, and supply train" "800" >}
+
 ## Why Your Turrets Miss Everything
 
 The artillery turret is not a flamethrower. It does not auto-target. It fires in one direction only — the direction its targeting computer is pointed at. If you place one turret and expect it to sweep the map, you'll stare at it blinking for hours.

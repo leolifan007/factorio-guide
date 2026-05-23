@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <defs>
+    <marker id="ai" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#79c0ff"/></marker>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f0883e"/></marker>
+    <marker id="ae" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/></marker>
+    <marker id="ap" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d2a8ff"/></marker>
+    <linearGradient id="heatGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d1a0a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f0883e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2d1a0a" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .lbl { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #c9d1d9; }
+      .ttl { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: bold; fill: #e6edf3; }
+      .sub { font-family: 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
+      .mono { font-family: monospace; font-size: 9px; }
+    </style>
+  </defs>
+  <rect width="800" height="460" rx="8" fill="#0d1117"/>
+  <text x="400" y="26" text-anchor="middle" class="ttl">Aquilo Ice Power System — Heat Network &amp; Power Grid</text>
+  <line x1="20" y1="36" x2="780" y2="36" stroke="#21262d"/>
+
+  <!-- ===================== LEFT: Ice Mining ===================== -->
+  <text x="80" y="56" text-anchor="middle" class="ttl" fill="#79c0ff">Ice Mining</text>
+
+  <!-- Ice patch -->
+  <ellipse cx="80" cy="100" rx="36" ry="22" fill="#1a3a5c" stroke="#79c0ff" stroke-width="2"/>
+  <text x="80" y="95" text-anchor="middle" font-size="8" fill="#79c0ff">ICE</text>
+  <text x="80" y="106" text-anchor="middle" font-size="8" fill="#58a6ff">PATCH</text>
+  <text x="80" y="130" text-anchor="middle" class="lbl">Ice Ore</text>
+  <text x="80" y="142" text-anchor="middle" class="sub">Dense surface patches</text>
+
+  <!-- Arrow ice to drill -->
+  <line x1="80" y1="122" x2="80" y2="152" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ai)"/>
+
+  <!-- Burner mining drill -->
+  <rect x="52" y="155" width="56" height="48" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="60" y="163" width="40" height="32" rx="2" fill="#21262d"/>
+  <circle cx="80" cy="179" r="10" fill="#30363d" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="80" y="183" text-anchor="middle" font-size="9" fill="#f0883e">B</text>
+  <text x="80" y="211" text-anchor="middle" class="lbl" fill="#f0883e">Burner Drill</text>
+  <text x="80" y="223" text-anchor="middle" class="sub">runs on coke/fuel</text>
+
+  <!-- Ice output arrow -->
+  <line x1="80" y1="203" x2="80" y2="230" stroke="#79c0ff" stroke-width="2" marker-end="url(#ai)"/>
+  <text x="88" y="218" class="mono" fill="#79c0ff">ice chunks</text>
+
+  <!-- ===================== CENTER: Heat Plant (Smelter Array) ===================== -->
+  <text x="400" y="56" text-anchor="middle" class="ttl" fill="#f0883e">Heat Plant — Ice-Burning Smelter Array</text>
+  <text x="400" y="68" text-anchor="middle" class="sub">2 smelters = ~500 kW heat → steam turbine ~200 kW power. Scale to demand.</text>
+
+  <!-- Heat distribution band -->
+  <rect x="200" y="90" width="400" height="120" rx="5" fill="url(#heatGrad)" stroke="#f0883e" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="210" y="104" class="sub" fill="#f0883e">⬛ Heat radius from smelters — buildings in this zone stay above freezing</text>
+
+  <!-- Ice belt into smelter array -->
+  <line x1="80" y1="230" x2="200" y2="230" stroke="#79c0ff" stroke-width="2" marker-end="url(#ai)"/>
+  <text x="140" y="222" text-anchor="middle" class="mono" fill="#79c0ff">ice belt</text>
+
+  <!-- Smelter 1 -->
+  <rect x="210" y="118" width="70" height="65" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="218" y="126" width="54" height="35" rx="2" fill="#21262d"/>
+  <rect x="225" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="240" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="255" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <text x="245" y="172" text-anchor="middle" class="lbl" fill="#f0883e">Smelter 1</text>
+  <text x="245" y="183" text-anchor="middle" class="mono" fill="#ffa657">ice → steam + heat</text>
+
+  <!-- Smelter 2 -->
+  <rect x="295" y="118" width="70" height="65" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="303" y="126" width="54" height="35" rx="2" fill="#21262d"/>
+  <rect x="310" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="325" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="340" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <text x="330" y="172" text-anchor="middle" class="lbl" fill="#f0883e">Smelter 2</text>
+  <text x="330" y="183" text-anchor="middle" class="mono" fill="#ffa657">ice → steam + heat</text>
+
+  <!-- Smelter 3 -->
+  <rect x="380" y="118" width="70" height="65" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="388" y="126" width="54" height="35" rx="2" fill="#21262d"/>
+  <rect x="395" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="410" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="425" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <text x="415" y="172" text-anchor="middle" class="lbl" fill="#f0883e">Smelter 3</text>
+  <text x="415" y="183" text-anchor="middle" class="mono" fill="#ffa657">ice → steam + heat</text>
+
+  <!-- Smelter 4 -->
+  <rect x="465" y="118" width="70" height="65" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="473" y="126" width="54" height="35" rx="2" fill="#21262d"/>
+  <rect x="480" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="495" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <rect x="510" y="133" width="12" height="22" rx="1" fill="#1a3a5c" stroke="#79c0ff" stroke-width="1"/>
+  <text x="500" y="172" text-anchor="middle" class="lbl" fill="#f0883e">Smelter 4</text>
+  <text x="500" y="183" text-anchor="middle" class="mono" fill="#ffa657">ice → steam + heat</text>
+
+  <!-- Steam arrows down to turbine -->
+  <line x1="245" y1="183" x2="245" y2="220" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ai)"/>
+  <line x1="330" y1="183" x2="330" y2="220" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ai)"/>
+  <line x1="415" y1="183" x2="415" y2="220" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ai)"/>
+  <line x1="500" y1="183" x2="500" y2="220" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ai)"/>
+  <text x="370" y="204" text-anchor="middle" class="sub" fill="#79c0ff">steam pipes</text>
+
+  <!-- ===================== RIGHT: Steam Turbine ===================== -->
+  <rect x="590" y="110" width="100" height="110" rx="5" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <rect x="600" y="122" width="80" height="70" rx="3" fill="#21262d"/>
+  <!-- Turbine blades -->
+  <circle cx="640" cy="157" r="24" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <line x1="640" y1="133" x2="640" y2="181" stroke="#3fb950" stroke-width="2"/>
+  <line x1="616" y1="157" x2="664" y2="157" stroke="#3fb950" stroke-width="2"/>
+  <text x="640" y="230" text-anchor="middle" class="lbl" fill="#3fb950">Steam Turbine</text>
+  <text x="640" y="242" text-anchor="middle" class="mono" fill="#ffa657">~200 kW output</text>
+  <text x="640" y="254" text-anchor="middle" class="sub">25% of heat → power</text>
+
+  <!-- Steam pipe from smelter row to turbine -->
+  <path d="M 550 165 Q 565 165 575 165 Q 585 165 590 160" stroke="#79c0ff" stroke-width="2" fill="none" marker-end="url(#ai)"/>
+
+  <!-- Heat pipe network -->
+  <!-- Heat pipes radiate from smelter array -->
+  <line x1="245" y1="90" x2="245" y2="70" stroke="#f0883e" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="415" y1="90" x2="415" y2="70" stroke="#f0883e" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="500" y1="90" x2="500" y2="70" stroke="#f0883e" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="640" y1="110" x2="640" y2="70" stroke="#f0883e" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Heat pipe horizontal -->
+  <line x1="200" y1="90" x2="640" y2="90" stroke="#f0883e" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="420" y="84" text-anchor="middle" class="sub" fill="#f0883e">Heat Pipe Network — radiate warmth to all factory buildings</text>
+
+  <!-- ===================== BOTTOM: Heat Zones ===================== -->
+  <text x="400" y="282" text-anchor="middle" class="ttl">Heat Distribution to Factory</text>
+
+  <!-- Assembler (needs heat) -->
+  <rect x="120" y="300" width="80" height="60" rx="4" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
+  <text x="160" y="320" text-anchor="middle" class="lbl" fill="#d2a8ff">Assembler</text>
+  <text x="160" y="334" text-anchor="middle" class="sub">needs heat</text>
+  <text x="160" y="346" text-anchor="middle" class="mono" fill="#8b949e">> 0°C ambient</text>
+
+  <!-- Heat pipe to assembler -->
+  <line x1="200" y1="330" x2="280" y2="330" stroke="#f0883e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#ah)"/>
+  <text x="240" y="324" text-anchor="middle" class="sub" fill="#f0883e">heat pipe</text>
+
+  <!-- Roboport (needs heat) -->
+  <rect x="310" y="300" width="80" height="60" rx="4" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
+  <text x="350" y="320" text-anchor="middle" class="lbl" fill="#d2a8ff">Roboport</text>
+  <text x="350" y="334" text-anchor="middle" class="sub">freeze = no bots!</text>
+  <text x="350" y="346" text-anchor="middle" class="mono" fill="#8b949e">> 0°C ambient</text>
+
+  <!-- Heat pipe to roboport -->
+  <line x1="390" y1="330" x2="430" y2="330" stroke="#f0883e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#ah)"/>
+
+  <!-- Power substation -->
+  <rect x="460" y="300" width="80" height="60" rx="4" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="500" y="320" text-anchor="middle" class="lbl" fill="#3fb950">Substation</text>
+  <text x="500" y="334" text-anchor="middle" class="sub">power distribution</text>
+  <text x="500" y="346" text-anchor="middle" class="mono" fill="#8b949e">needs heat too</text>
+
+  <!-- Heat pipe to substation -->
+  <line x1="540" y1="330" x2="580" y2="330" stroke="#f0883e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#ah)"/>
+
+  <!-- Battery (lithium-based) -->
+  <rect x="610" y="300" width="80" height="60" rx="4" fill="#161b22" stroke="#ffa657" stroke-width="2"/>
+  <text x="650" y="320" text-anchor="middle" class="lbl" fill="#ffa657">Battery</text>
+  <text x="650" y="334" text-anchor="middle" class="sub">Li battery</text>
+  <text x="650" y="346" text-anchor="middle" class="mono" fill="#8b949e">import from Gleba</text>
+
+  <!-- Cryo science -->
+  <rect x="710" y="300" width="70" height="60" rx="4" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
+  <text x="745" y="320" text-anchor="middle" class="lbl" fill="#d2a8ff">Cryo Sci</text>
+  <text x="745" y="334" text-anchor="middle" class="sub">unique to Aquilo</text>
+  <text x="745" y="346" text-anchor="middle" class="mono" fill="#8b949e">QM5, space</text>
+
+  <!-- ===================== WARNING BOX ===================== -->
+  <rect x="20" y="408" width="760" height="44" rx="5" fill="#161b22" stroke="#da3633" stroke-width="1.5"/>
+  <text x="35" y="424" class="mono" fill="#da3633">⚠ COLD = DEATH</text>
+  <text x="35" y="440" class="sub" fill="#8b949e">All buildings need heat from smelter array via heat pipes. No gap = freeze. No ice = no heat = no power. Always build 50% extra heat capacity.</text>
+  <text x="680" y="432" text-anchor="middle" class="mono" fill="#79c0ff">import Li from Gleba</text>
+  <text x="680" y="444" text-anchor="middle" class="sub" fill="#8b949e">surface Li is insufficient</text>
+</svg>

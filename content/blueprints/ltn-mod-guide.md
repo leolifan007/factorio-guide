@@ -21,6 +21,9 @@ Your factory has 40 trains and zero deadlocks. Here's how.
 **TL;DR:** LTN replaces fixed train schedules with a virtual dispatcher. You build three types of stops: providers (has items), requesters (needs items), and depots (train home base). LTN automatically sends empty trains from depots to providers, loads them, and delivers to requesters. One train handles every resource. The depot must always have idle trains or nothing moves.
 {{< /callout >}}
 
+
+{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system — provider stop, rail network, requester stop, and depot" "820" >}
+
 ## Why Your Train Network Is Always Gridlocked
 
 The problem is not your signaling. Your signaling is fine. The problem is that your train network is a collection of individual point-to-point routes, and every point-to-point route competes for the same junctions.

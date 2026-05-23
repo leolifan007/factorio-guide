@@ -19,6 +19,9 @@ The foundry is not a furnace. Your existing factory knowledge breaks here. This 
 **TL;DR:** Vulcanus replaces smelting with the Foundry. Foundry takes iron ore + calcite → molten iron → steel plate in one building. Calcite is the unique resource from volcanic ash. Build the calcite chain first. Then the Foundry. Then tungsten carbide for the endgame module chain. Vulcanus Demons are cleared with artillery or lasers — walls are optional.
 {{< /callout >}}
 
+
+{< diagram "diagrams/foundry-cycle.svg" "Vulcanus foundry circular dependency — iron/steel foundry, copper foundry, and calcite recycling" "820" >}
+
 ## Lava, Calderite, and Why Your Existing Factory Breaks Here
 
 Vulcanus is a volcanic planet with three critical differences from Nauvis:
