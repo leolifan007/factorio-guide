@@ -1,121 +1,91 @@
 ---
-title: "LTN Guide — Logistics Train Network for Megabases"
-description: "LTN (Logistics Train Network) mod guide for Factorio. How the 3-stop system works, provider and requester configuration, depot setup, and the exact circuit wiring that gets your megabase trains running without deadlocks."
+title: "LTN — Logistic Train Network Setup"
+description: "LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-28T08:11:00+08:00
-tags: ["blueprints", "trains-logistics", "ltn", "circuit-network"]
+publishDate: 2026-05-27T16:52:00+08:00
+tags: ["blueprints", "trains", "logistics"]
 draft: false
 hidden: true
 emoji: ""
 version: "2.0"
 ---
 
-You have 5 dedicated resource trains. Then 10. Then 20. Every junction is a deadlock. Trains wait for trains waiting for trains. LTN solves this by making **one train handle every resource** automatically.
+LTN (Logistic Train Network) turns trains into logistic bots. {{< material "locomotive" >}} Trains automatically travel from providers to requesters based on supply and demand — no schedules needed.
 
 {{< callout "tip" >}}
-**TL;DR:** LTN uses three stop types — Provider (has items), Requester (needs items), Depot (idle home). Wire each stop to the circuit network. LTN dispatches empty trains from depot → provider → requester → depot automatically. **Always keep idle trains in the depot or nothing moves.**
+**TL;DR:** Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.
 {{< /callout >}}
 
-{{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system — provider stop, rail network, requester stop, and depot" "820" >}}
+{{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system — depot, provider stop, and requester stop with train flow" "900" >}}
 
-## Why Dedicated Trains Don't Scale
+## The 3-Stop System
 
-Every new resource pair needs a new train route. At 20 resources × 20 destinations = **400 potential routes**. Each route competes for shared junctions. The problem isn't signaling — it's dispatching.
+LTN requires three stop types:
 
-LTN replaces fixed schedules with a virtual dispatcher. You tell stations what they **provide** and what they **request**. LTN handles routing.
+| Stop Type | Purpose | Circuit Connection |
+|-----------|---------|-------------------|
+| **Depot** | Idle trains wait here | None (LTN manages) |
+| **Provider** | Items available for pickup | Storage chest → stop |
+| **Requester** | Items needed for delivery | Requester chest → stop |
 
-## The Three Stop Types
+**How it works:**
+1. Provider signals available items to LTN
+2. Requester signals needed items to LTN
+3. LTN dispatches idle train from depot
+4. Train loads at provider, unloads at requester
+5. Empty train returns to depot
 
-### 1. Provider Stop — "I Have Items"
+## Depot Setup
 
-| Component | Configuration |
-|-----------|---------------|
-| Train stop | Named `Provider [Resource]` (e.g., `Provider Iron Ore`) |
-| Chest | Storage or passive provider, filled with items |
-| Wire | Green wire from chest → train stop |
+The depot is where idle trains park. Critical rules:
 
-LTN reads chest contents via circuit network. When items exceed threshold, provider is "active" and LTN dispatches an empty train to load.
+- **Minimum 2 trains** — one loading/unloading, one waiting
+- **No schedule** — LTN assigns temporary schedules
+- **Fuel station** — trains refuel at depot automatically
 
-### 2. Requester Stop — "I Need Items"
+Place depots centrally on your rail network. Every train should reach a depot within 30 seconds of emptying.
 
-| Component | Configuration |
-|-----------|---------------|
-| Train stop | Named `Requester [Product]` (e.g., `Requester Iron Plates`) |
-| Chest | Requester chest set to request amount |
-| Wire | Green wire from chest → train stop |
+## Provider Stops
 
-LTN reads the request signal and sends a loaded train from a provider.
+Provider stops announce available items:
 
-### 3. Depot Stop — "Train Home Base"
+1. Place stop next to production
+2. Wire storage chests to stop
+3. Set "provide threshold" (e.g., provide iron plates when >1000)
 
-| Component | Configuration |
-|-----------|---------------|
-| Train stop | Named `LTN Depot` (exact name required) |
-| Trains | Parked with **no schedule** |
-| Minimum fleet | 2 trains (small), 10+ (megabase) |
+**Best practice:** Use passive provider chests. LTN will dispatch trains when stock exceeds threshold.
 
-**The depot is the most critical element.** If all trains are busy, LTN cannot dispatch new deliveries. Build as dead-end spurs with enough slots for your entire fleet.
+## Requester Stops
 
-## How Dispatching Works
+Requester stops announce demand:
 
-```
-Depot (idle train) → Provider (loads cargo) → Requester (unloads) → Depot
-```
+1. Place stop next to consumption
+2. Wire requester chests to stop
+3. Set "request threshold" (e.g., request iron plates when <200)
 
-One train carries one resource type per trip. LTN prevents cargo mixing by design — a train carrying iron ore only travels to requesters requesting iron ore.
+**Best practice:** Use requester chests with high request counts. LTN batches deliveries to minimize train trips.
 
-**Multi-stop delivery** (optional): one train visits multiple requesters in sequence before returning to depot. Common for science pack distribution.
+## What Veterans Learn the Hard Way
 
-## Circuit Wiring Step-by-Step
-
-**Provider stop:**
-1. Place storage chest with items (e.g., iron ore)
-2. Red wire: chest → decider combinator
-3. Combinator: `If [item] > 0 → output [item] signal`
-4. Green wire: combinator → train stop
-5. Name stop: `Provider Iron Ore`
-
-**Requester stop:**
-1. Place requester chest (set request quantity, e.g., 400 iron ore)
-2. Green wire: chest → train stop
-3. Name stop: `Requester Iron Plates`
-
-Without wires, LTN is blind.
-
-## The Gotchas That Break First Setups
-
-| Gotcha | Symptom | Fix |
-|--------|---------|-----|
-| No depot trains | LTN shows 0 available, nothing moves | Park 2+ unscheduled trains at depot |
-| Provider not wired | Items exist but no train dispatched | Connect chest → stop with green wire |
-| Request too low | Partial loads, slow trips | Match request to consumption rate (~400 ore/delivery) |
-| Train length mismatch | Underloading, station overflow | Set LTN min length to match actual train size |
-| Phantom train | Train exists but invisible to LTN | Clear leftover vanilla schedule — LTN trains must have **no schedule** |
-
-## LTN vs Vanilla Train Limits
-
-| Use Case | Recommendation |
-|----------|----------------|
-| <20 trains, simple routes | Vanilla train limits (no mod dependency) |
-| 20+ trains, multi-resource | **LTN** (automatic dispatch, one train per all resources) |
-| 200+ extreme scale | Vanilla limits + circuit control (lower CPU overhead) |
-
-## Performance Notes
-
-- LTN has measurable CPU cost at 100+ trains
-- For most megabases (20-100 trains), LTN is the clear winner
-- Keep depot near network center to minimize empty travel distance
+- **Depot trains must be empty** — LTN can't assign a train carrying cargo
+- **Wire every stop** — unwired stops break the network
+- **Thresholds matter** — too low = train spam; too high = stockouts
+- **One item type per provider** — mixed providers confuse LTN
 
 ## Common Mistakes
 
-| Mistake | Result |
-|---------|--------|
-| Only 1 train in depot | Network stalls whenever that train is en route |
-| Mixing resource types on one train | LTN prevents this by design — but miswired stops cause confusion |
-| Forgetting to name stops correctly | LTN can't match providers to requesters |
-| Depot too far from main network | Empty trains waste time traveling to providers |
+| Mistake | Consequence |
+|---------|-------------|
+| Single train depot | Network stalls when train is busy |
+| Unwired stops | LTN doesn't see supply/demand |
+| Mixed provider chests | Trains load wrong items |
+| No fuel at depot | Trains strand mid-network |
 
 ## The Bottom Line
 
-LTN's 3-stop model — provider, requester, depot — is the entire mental model. Wire correctly, maintain idle depot trains, and your megabase logistics run themselves. Complexity is front-loaded; configured networks need almost no maintenance.
+LTN automates train logistics. Build depots with 2+ trains. Wire providers to storage chests. Wire requesters to requester chests. Set thresholds. Let LTN handle the rest.
+
+---
+
+**Related:** [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}}) | [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}})

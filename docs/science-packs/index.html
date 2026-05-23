@@ -112,22 +112,417 @@
     
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content"><!-- Section: Overview -->
+<div class="section-card orange">
+<p><strong>Science Packs</strong> are the core progression mechanic in Factorio. Each pack represents a branch of research. This guide covers all 7 science pack tiers, their exact recipes, production ratios, and the recommended research order.</p>
+<blockquote>
+<p><strong>Quick tip:</strong> Build science pack assemblers before you need the science, not after. Running out of science mid-game is one of the most common early mistakes.</p>
+</blockquote>
+</div>
+<!-- Item Icon Row: All Science Packs -->
+<div class="item-row">
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/automation_science.png" alt="Red Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e8941c"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5aa2e"/></svg>
+  <span class="item-icon-name">Red</span>
+  <span class="item-icon-label">Automation</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/logistic_science.png" alt="Green Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#6abe30"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#8ad44a"/></svg>
+  <span class="item-icon-name">Green</span>
+  <span class="item-icon-label">Logistics</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/military_science.png" alt="Military Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#d7b940"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#e8cc55"/></svg>
+  <span class="item-icon-name">Yellow</span>
+  <span class="item-icon-label">Military</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/chemical_science.png" alt="Blue Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#3778c8"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#5599ee"/></svg>
+  <span class="item-icon-name">Blue</span>
+  <span class="item-icon-label">Chemical</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/production_science.png" alt="Purple Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#9d4edd"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#b366ff"/></svg>
+  <span class="item-icon-name">Purple</span>
+  <span class="item-icon-label">Production</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/utility_science.png" alt="Yellow Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#ff7700"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#ff9922"/></svg>
+  <span class="item-icon-name">Yellow</span>
+  <span class="item-icon-label">Usage</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/space_science.png" alt="Space Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e0e0e0"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5f5f5"/></svg>
+  <span class="item-icon-name">Space</span>
+  <span class="item-icon-label">Rocket</span>
+</div>
+</div>
+<hr>
+<h2 id="complete-production-chain-diagram">Complete Production Chain Diagram</h2>
+<p><img src="/factorio-guide/images/flowcharts/science-pack-chain.svg" alt="Science Pack Production Chain"></p>
+<p>The diagram above shows how all 7 science tiers connect. Click to enlarge. The arrows show recipe flow — each arrow represents a crafting operation.</p>
+<hr>
+<h2 id="science-pack-recipes">Science Pack Recipes</h2>
+<h3 id="red-science-pack-automation">Red Science Pack (Automation)</h3>
+<div class="section-card orange">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#e8941c"/></svg>
+  Tier 1 — Automation Science Pack
+</div>
+<p>The first science pack you produce. Unlocks basic automation and logistic research.</p>
+<p><strong>Assembler:</strong> Assembling Machine 1
+<strong>Crafting Time:</strong> 5 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron Gear Wheel</td>
+          <td>1</td>
+          <td>Iron Plate × 2</td>
+      </tr>
+      <tr>
+          <td>Copper Plate</td>
+          <td>1</td>
+          <td>Smelting</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Ratio:</strong> 1 assembler produces 1 red pack every 5 seconds. Build 5-10 assemblers to feed early-game research.</p>
+</div>
+<h3 id="green-science-pack-logistics">Green Science Pack (Logistics)</h3>
+<div class="section-card green">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#6abe30"/></svg>
+  Tier 2 — Logistics Science Pack
+</div>
+<p>Unlocks logistics research: inserters, belts, circuits, and the logistic system.</p>
+<p><strong>Assembler:</strong> Assembling Machine 1 (upgrade to 2 later)
+<strong>Crafting Time:</strong> 6 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Inserter</td>
+          <td>1</td>
+          <td>1 iron gear + 1 green circuit + 1 iron plate</td>
+      </tr>
+      <tr>
+          <td>Transport Belt</td>
+          <td>1</td>
+          <td>1 iron plate</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Ratio:</strong> 1 inserter assembler supports 12 science assemblers. 1 belt assembler supports 24.</p>
+</div>
+<h3 id="military-science-pack-military">Military Science Pack (Military)</h3>
+<div class="section-card yellow">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#d7b940"/></svg>
+  Tier 3 — Military Science Pack
+</div>
+<p>Unlocks combat and defense research.</p>
+<p><strong>Assembler:</strong> Assembling Machine 2
+<strong>Crafting Time:</strong> 10 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Piercing Rounds Magazine</td>
+          <td>1</td>
+          <td>Steel + copper + iron</td>
+      </tr>
+      <tr>
+          <td>Grenade</td>
+          <td>1</td>
+          <td>Iron + coal</td>
+      </tr>
+      <tr>
+          <td>Wall</td>
+          <td>1</td>
+          <td>Stone bricks</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Note:</strong> Military science requires steel production. Research steel processing before scaling military science.</p>
+</div>
+<h3 id="blue-science-pack-chemical">Blue Science Pack (Chemical)</h3>
+<div class="section-card blue">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#3778c8"/></svg>
+  Tier 4 — Chemical Science Pack
+</div>
+<p>Introduces fluid-based production. Requires oil processing for plastic (needed for red circuits) and sulfur.</p>
+<p><strong>Assembler:</strong> Assembling Machine 2 (upgrade to 3 later)
+<strong>Crafting Time:</strong> 12 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Advanced Circuit</td>
+          <td>1</td>
+          <td>Red circuit: plastic + copper + green circuits</td>
+      </tr>
+      <tr>
+          <td>Engine Unit</td>
+          <td>1</td>
+          <td>Steel + iron gears + pipe</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Ratio:</strong> 1 engine assembler supports about 2.5 science assemblers. Build at least 2 engine assemblers for every 5 blue science assemblers.</p>
+</div>
+<h3 id="purple-science-pack-production">Purple Science Pack (Production)</h3>
+<div class="section-card purple">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#9d4edd"/></svg>
+  Tier 5 — Production Science Pack
+</div>
+<p>Unlocks production modules, beacons, and late-game technologies.</p>
+<p><strong>Assembler:</strong> Assembling Machine 3
+<strong>Crafting Time:</strong> 14 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Electric Furnace</td>
+          <td>1</td>
+          <td>Steel + circuits + stone brick</td>
+      </tr>
+      <tr>
+          <td>Productivity Module 1</td>
+          <td>1</td>
+          <td>Green circuits + plastic</td>
+      </tr>
+      <tr>
+          <td>Rail</td>
+          <td>30</td>
+          <td>Steel + stone</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Note:</strong> Purple science is the most expensive per-pack in raw resources. Build a dedicated sub-factory rather than adding to the main bus.</p>
+</div>
+<h3 id="yellow-science-pack-utility">Yellow Science Pack (Utility)</h3>
+<div class="section-card">
+<div class="section-card-title" style="border-color:#ff7700">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#ff7700"/></svg>
+  Tier 6 — Utility Science Pack
+</div>
+<p>Unlocks utility research: nuclear power, logistics bots, and advanced module technologies.</p>
+<p><strong>Assembler:</strong> Assembling Machine 3
+<strong>Crafting Time:</strong> 16 seconds
+<strong>Stack Size:</strong> 200</p>
+<table>
+  <thead>
+      <tr>
+          <th>Input</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Processing Unit</td>
+          <td>2</td>
+          <td>Blue circuit: red circuits + green circuits</td>
+      </tr>
+      <tr>
+          <td>Electric Engine Unit</td>
+          <td>1</td>
+          <td>Engine + electric motor + lubricant</td>
+      </tr>
+      <tr>
+          <td>Battery</td>
+          <td>1</td>
+          <td>Iron + sulfuric acid + copper</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Bottleneck:</strong> Processing Units. Build a dedicated blue circuit line before scaling yellow science. Each blue circuit consumes 20 green circuits and 2 red circuits.</p>
+</div>
+<h3 id="space-science-pack-rocket">Space Science Pack (Rocket)</h3>
+<div class="section-card">
+<div class="section-card-title" style="border-color:#e0e0e0">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#e0e0e0"/></svg>
+  Tier 7 — Space Science Pack
+</div>
+<p>Produced by launching rockets. Requires the most infrastructure of any science pack.</p>
+<p><strong>Building:</strong> Rocket Silo
+<strong>Launch Time:</strong> ~70 seconds per rocket
+<strong>Output:</strong> 100 Space Science per rocket launch</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rocket Control Unit</td>
+          <td>10</td>
+          <td>Blue circuit + processing unit</td>
+      </tr>
+      <tr>
+          <td>Rocket Fuel</td>
+          <td>10</td>
+          <td>Solid fuel + light oil</td>
+      </tr>
+      <tr>
+          <td>Low Density Structure</td>
+          <td>10</td>
+          <td>Copper plate + steel + plastic</td>
+      </tr>
+      <tr>
+          <td>Satellite</td>
+          <td>1</td>
+          <td>Solar panels + processing unit + batteries</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Ratio:</strong> 1 rocket = 100 science. For 100 SPM of space science, you need to launch 1 rocket per minute.</p>
+</div>
+<hr>
+<h2 id="production-ratio-quick-reference">Production Ratio Quick Reference</h2>
+<div class="section-card">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect width="16" height="16" rx="2" fill="#3778c8"/></svg>
+  Science Pack Per Minute (SPM) Reference
+</div>
+<p>For <strong>1 SPM</strong> of each science pack (at 60 SPM total):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Science Pack</th>
+          <th>Assemblers Needed</th>
+          <th>Key Input/min</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Red</td>
+          <td>5</td>
+          <td>5 iron + 5 copper</td>
+      </tr>
+      <tr>
+          <td>Green</td>
+          <td>10</td>
+          <td>10 inserters + 10 belts</td>
+      </tr>
+      <tr>
+          <td>Military</td>
+          <td>1.67</td>
+          <td>~1.7 piercing rounds</td>
+      </tr>
+      <tr>
+          <td>Blue</td>
+          <td>5</td>
+          <td>5 engine units + 5 red circuits</td>
+      </tr>
+      <tr>
+          <td>Purple</td>
+          <td>4.29</td>
+          <td>~4.3 prod modules + ~129 rails</td>
+      </tr>
+      <tr>
+          <td>Yellow</td>
+          <td>3.75</td>
+          <td>7.5 processing units</td>
+      </tr>
+      <tr>
+          <td>Space</td>
+          <td>~1 rocket/min</td>
+          <td>Satellite + rocket parts</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h2 id="recommended-research-order">Recommended Research Order</h2>
+<div class="checklist">
+<div class="checklist-header">
+  <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M8 2l8 6-8 6z"/></svg>
+  Research Priority — What to Research First
+</div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Automation 1 → Build red science assemblers</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Electronics → Unlock green circuits</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Logistics 1 → Unlock logistic belts and inserters, then green science</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Steel Processing → Unlock steel production</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Oil Processing → Sulfur, plastic, blue circuits</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Advanced Electronics → Red circuits for blue science</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Chemical Science → Blue science packs</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Production Science → Purple science</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Utility Science → Yellow science</span></div>
+<div class="check-row"><span class="check-icon">✓</span><span class="check-text">Rocket Silo → Space science</span></div>
+</div>
+<hr>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<div class="callout warn">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#e8941c" stroke-width="2"><path d="M10 2L2 18h16L10 2z"/><line x1="10" y1="8" x2="10" y2="13"/><circle cx="10" cy="16" r="1" fill="#e8941c"/></svg>
+</div>
+<p><strong>Building science packs on the main bus.</strong> Blue science and above are too complex for the main bus. Build them as <strong>standalone factory units</strong> fed by dedicated sub-factories.</p>
+</div>
+<div class="callout tip">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#6abe30" stroke-width="2"><circle cx="10" cy="10" r="8"/><path d="M6 10l3 3 5-6"/></svg>
+</div>
+<p><strong>Use a bot-based mall.</strong> For everything except raw ore smelting, build your mall using <strong>requestor chests + logistic bots</strong>. It's faster to set up and easier to expand.</p>
+</div>
+<hr>
+<h2 id="related-guides">Related Guides</h2>
+<ul>
+<li><strong><a href="/production-ratios/">Production Ratios</a></strong> — Smelting, circuit, and science ratios with math</li>
+<li><strong><a href="/getting-started/">Getting Started</a></strong> — First hour guide including early science setup</li>
+<li><strong><a href="/base-design/">Base Design</a></strong> — Main bus vs city blocks for science production</li>
+</ul>
+</div>
       </div>
     </main>
-
-    
-    <div class="article-ad-right">
-      <div class="ad-placeholder">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
-          <rect x="2" y="2" width="20" height="20" rx="3"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-          <line x1="8" y1="12" x2="16" y2="12"/>
-        </svg>
-        <span class="ad-placeholder-label">Advertisement</span>
-        <span class="ad-placeholder-size">160 × 600</span>
-      </div>
-    </div>
 
   </div>
 </div>

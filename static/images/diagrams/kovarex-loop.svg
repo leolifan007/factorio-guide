@@ -1,183 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440">
-  <defs>
-    <marker id="arrY" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#ffa657"/>
-    </marker>
-    <marker id="arrG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/>
-    </marker>
-    <marker id="arrB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#58a6ff"/>
-    </marker>
-    <marker id="arrP" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#d2a8ff"/>
-    </marker>
-    <marker id="arrR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#da3633"/>
-    </marker>
-    <style>
-      .lbl { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #c9d1d9; }
-      .ttl { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: bold; fill: #e6edf3; }
-      .sub { font-family: 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
-      .mono { font-family: monospace; font-size: 9px; fill: #ffa657; }
-      .big { font-family: 'Segoe UI', sans-serif; font-size: 32px; font-weight: bold; }
-    </style>
-  </defs>
-  <rect width="800" height="440" rx="8" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440">
+  <defs><marker id="c1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#58a6ff"/></marker><marker id="c2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e"/></marker><marker id="c3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#3fb950"/></marker></defs>
+  <style>.bg{fill:#0d1117}.box{fill:#161b22;stroke-width:2;rx:8}.lbl{font-family:'Segoe UI',sans-serif;font-size:17px;font-weight:bold;fill:#e6edf3}.sub{font-family:'Segoe UI',sans-serif;font-size:13px;fill:#8b949e}.arr{stroke-width:3;fill:none}</style>
+  <rect width="900" height="440" class="bg" rx="10"/>
+  <text x="450" y="38" text-anchor="middle" style="font-family:'Segoe UI';font-size:22px;font-weight:bold;fill:#e6edf3">Kovarex Enrichment Loop</text>
+  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d"/>
 
-  <!-- Title -->
-  <text x="400" y="26" text-anchor="middle" class="ttl">Kovarex Enrichment — Closed-Loop U-235 Production</text>
-  <line x1="20" y1="36" x2="780" y2="36" stroke="#21262d"/>
+  <!-- Ore Processing -->
+  <rect x="50" y="80" width="180" height="85" class="box" stroke="#58a6ff"/><text x="140" y="115" text-anchor="middle" class="lbl">Ore Processing</text><text x="140" y="140" text-anchor="middle" class="sub">Uranium ore → U-238 + U-235</text><text x="140" y="158" text-anchor="middle" style="font-size:11px;fill:#f0883e">(0.7% U-235 chance)</text>
 
-  <!-- ===================== LEFT: Normal Uranium Processing ===================== -->
-  <!-- Header -->
-  <text x="110" y="56" text-anchor="middle" class="ttl" fill="#8b949e">Normal Uranium Processing</text>
-  <text x="110" y="68" text-anchor="middle" class="sub">Source of initial U-235 and U-238</text>
+  <!-- Arrow to Kovarex -->
+  <line x1="230" y1="122" x2="300" y2="122" class="arr" stroke="#58a6ff" marker-end="url(#c1)"/><text x="265" y="112" text-anchor="middle" style="font-size:11px;fill:#c9d1d9">40 U-238 + 40 U-235</text>
 
-  <!-- Uranium ore -->
-  <ellipse cx="60" cy="120" rx="24" ry="18" fill="#2d8a4e" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
-  <text x="60" y="124" text-anchor="middle" font-size="9" fill="#0d1117">U</text>
-  <text x="60" y="145" text-anchor="middle" class="lbl">Uranium Ore</text>
-  <text x="60" y="157" text-anchor="middle" class="mono">100%</text>
+  <!-- Kovarex Centrifuge -->
+  <rect x="310" y="75" width="220" height="95" class="box" stroke="#f0883e"/><text x="420" y="108" text-anchor="middle" class="lbl">Kovarex Centrifuge</text><text x="420" y="133" text-anchor="middle" class="sub">Input: 40 U-238 × 2 slots</text><text x="420" y="153" text-anchor="middle" class="sub">Output: 41 U-238 + 1 U-235</text><text x="420" y="165" text-anchor="middle" style="font-size:11px;fill:#3fb950">Cycle: ~60 sec | Net: -40 U-238 → +1 U-235</text>
 
-  <!-- Arrow to centrifuge -->
-  <line x1="84" y1="120" x2="120" y2="120" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrY)"/>
-  <text x="102" y="114" text-anchor="middle" class="sub">centrifuge</text>
+  <!-- Arrow split -->
+  <line x1="530" y1="110" x2="600" y2="110" class="arr" stroke="#3fb950" marker-end="url(#c3)"/><text x="565" y="100" text-anchor="middle" style="font-size:11px;fill:#c9d1d9">+1 U-235</text>
+  <line x1="530" y1="145" x2="600" y2="175" class="arr" stroke="#f0883e" marker-end="url(#c2)" stroke-dasharray="5,3"/><text x="575" y="165" text-anchor="middle" style="font-size:11px;fill:#c9d1d9">recycle U-238</text>
 
-  <!-- Normal Centrifuge 1 -->
-  <rect x="124" y="95" width="64" height="52" rx="4" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
-  <circle cx="156" cy="121" r="18" fill="#21262d" stroke="#f0883e" stroke-width="1.5"/>
-  <line x1="156" y1="103" x2="156" y2="139" stroke="#f0883e" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="138" y1="121" x2="174" y2="121" stroke="#f0883e" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="156" y="155" text-anchor="middle" class="lbl" fill="#f0883e">Centrifuge</text>
-  <text x="156" y="166" text-anchor="middle" class="sub">50 sec/cycle</text>
+  <!-- Fuel Cell -->
+  <rect x="610" y="75" width="150" height="70" class="box" stroke="#3fb950"/><text x="685" y="108" text-anchor="middle" class="lbl">Fuel Cell</text><text x="685" y="130" text-anchor="middle" class="sub">10 U-235 + 19 U-238</text>
 
-  <!-- Outputs: U-238 (99.3%) -->
-  <line x1="188" y1="108" x2="225" y2="90" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrB)"/>
-  <text x="207" y="94" text-anchor="middle" class="mono">U-238</text>
-  <text x="207" y="82" text-anchor="middle" class="sub" fill="#58a6ff">99.3%</text>
+  <!-- Reactor -->
+  <line x1="760" y1="110" x2="800" y2="110" class="arr" stroke="#3fb950" marker-end="url(#c3)"/>
+  <rect x="810" y="78" width="75" height="65" class="box" stroke="#da3633"/><text x="847" y="108" text-anchor="middle" class="lbl" style="font-size:14px">Reactor</text><text x="847" y="128" text-anchor="middle" class="sub" style="font-size:11px">1 GW</text>
 
-  <!-- Outputs: U-235 (0.7%) — rare! -->
-  <line x1="188" y1="134" x2="225" y2="152" stroke="#da3633" stroke-width="2" marker-end="url(#arrR)"/>
-  <text x="207" y="168" text-anchor="middle" class="mono" fill="#da3633">U-235</text>
-  <text x="207" y="180" text-anchor="middle" class="sub" fill="#da3633">0.7% = scarce!</text>
+  <!-- U-238 buffer -->
+  <rect x="610" y="160" width="150" height="60" class="box" stroke="#f0883e"/><text x="685" y="188" text-anchor="middle" class="lbl" style="font-size:15px">U-238 Buffer</text><text x="685" y="208" text-anchor="middle" class="sub" style="font-size:11px">Keep 500+ stocked!</text>
 
-  <!-- U-238 buffer chest -->
-  <rect x="228" y="72" width="48" height="36" rx="3" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
-  <text x="252" y="85" text-anchor="middle" class="sub" fill="#58a6ff">BUFFER</text>
-  <text x="252" y="97" text-anchor="middle" class="mono">500+ U-238</text>
-  <text x="252" y="118" text-anchor="middle" class="lbl">Storage</text>
+  <!-- Bottom: Ratio Card -->
+  <rect x="50" y="260" width="800" height="160" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="292" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#e6edf3">The Golden Ratio</text>
+  <line x1="70" y1="305" x2="830" y2="305" stroke="#21262d"/>
 
-  <!-- U-235 small chest -->
-  <rect x="228" y="134" width="48" height="36" rx="3" fill="#161b22" stroke="#da3633" stroke-width="1.5"/>
-  <text x="252" y="147" text-anchor="middle" class="sub" fill="#da3633">STOCKPILE</text>
-  <text x="252" y="159" text-anchor="middle" class="mono">40 U-235</text>
-  <text x="252" y="180" text-anchor="middle" class="sub" fill="#da3633">= kickstart</text>
+  <rect x="80" y="320" width="340" height="85" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="250" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:24px;font-weight:bold;fill:#f0883e">3 : 1</text>
+  <text x="250" y="378" text-anchor="middle" class="sub">Kovarex centrifuges per reactor</text>
+  <text x="250" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">3 centrifuges = 3 U-235/min = 1 reactor demand</text>
 
-  <!-- Arrow from stockpile to Kovarex section -->
-  <path d="M 276 152 L 310 152 Q 320 152 320 162 L 320 200 Q 320 210 330 210 L 360 210" stroke="#da3633" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrR)"/>
-  <text x="330" y="172" text-anchor="middle" class="sub" fill="#da3633">kickstart input</text>
-
-  <!-- Arrow: U-238 buffer to Kovarex -->
-  <path d="M 276 90 L 310 90 Q 320 90 320 100 L 320 190 Q 320 200 330 200 L 360 200" stroke="#58a6ff" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrB)"/>
-
-  <!-- ===================== CENTER: Kovarex Centrifuge Bank ===================== -->
-  <!-- Label -->
-  <text x="460" y="56" text-anchor="middle" class="ttl" fill="#d2a8ff">Kovarex Enrichment (3x Centrifuges)</text>
-  <text x="460" y="68" text-anchor="middle" class="sub">Net: 3 U-235/min — self-sustaining once kicked</text>
-
-  <!-- Kovarex Centrifuge 1 -->
-  <rect x="395" y="90" width="130" height="70" rx="5" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
-  <text x="460" y="108" text-anchor="middle" class="lbl" fill="#d2a8ff">Kovarex Centrifuge</text>
-  <!-- Slots visualization -->
-  <rect x="403" y="115" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <rect x="428" y="115" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <text x="414" y="129" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <text x="439" y="129" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <text x="460" y="142" text-anchor="middle" class="mono">40 U-238 × 2</text>
-  <text x="460" y="154" text-anchor="middle" class="sub">60 sec cycle</text>
-  <!-- Output U-235 -->
-  <line x1="525" y1="125" x2="565" y2="125" stroke="#da3633" stroke-width="2" marker-end="url(#arrR)"/>
-  <text x="545" y="118" text-anchor="middle" class="mono" fill="#da3633">+1 U-235</text>
-  <!-- Output U-238 -->
-  <line x1="460" y1="160" x2="460" y2="190" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrB)"/>
-  <text x="470" y="178" class="mono" fill="#58a6ff">+40 U-238</text>
-  <text x="460" y="168" text-anchor="middle" class="sub">net</text>
-
-  <!-- Kovarex Centrifuge 2 -->
-  <rect x="395" y="210" width="130" height="70" rx="5" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
-  <text x="460" y="228" text-anchor="middle" class="lbl" fill="#d2a8ff">Kovarex Centrifuge</text>
-  <rect x="403" y="235" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <rect x="428" y="235" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <text x="414" y="249" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <text x="439" y="249" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <line x1="525" y1="245" x2="565" y2="245" stroke="#da3633" stroke-width="2" marker-end="url(#arrR)"/>
-  <text x="545" y="238" text-anchor="middle" class="mono" fill="#da3633">+1 U-235</text>
-  <line x1="460" y1="280" x2="460" y2="310" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrB)"/>
-  <text x="470" y="298" class="mono" fill="#58a6ff">+40 U-238</text>
-
-  <!-- Kovarex Centrifuge 3 -->
-  <rect x="395" y="330" width="130" height="70" rx="5" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
-  <text x="460" y="348" text-anchor="middle" class="lbl" fill="#d2a8ff">Kovarex Centrifuge</text>
-  <rect x="403" y="355" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <rect x="428" y="355" width="22" height="22" rx="2" fill="#da3633" opacity="0.8"/>
-  <text x="414" y="369" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <text x="439" y="369" text-anchor="middle" font-size="9" fill="#0d1117">U5</text>
-  <line x1="525" y1="365" x2="565" y2="365" stroke="#da3633" stroke-width="2" marker-end="url(#arrR)"/>
-  <text x="545" y="358" text-anchor="middle" class="mono" fill="#da3633">+1 U-235</text>
-  <line x1="460" y1="400" x2="460" y2="430" stroke="#58a6ff" stroke-width="2"/>
-
-  <!-- ===================== RIGHT: Fuel Cell Production ===================== -->
-  <text x="665" y="56" text-anchor="middle" class="ttl" fill="#3fb950">Fuel Cell Production</text>
-  <text x="665" y="68" text-anchor="middle" class="sub">U-235 + U-238 → Nuclear Fuel Cell</text>
-
-  <!-- Assembler -->
-  <rect x="618" y="90" width="90" height="72" rx="5" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
-  <rect x="626" y="100" width="30" height="24" rx="2" fill="#da3633" opacity="0.5"/>
-  <rect x="662" y="100" width="30" height="24" rx="2" fill="#58a6ff" opacity="0.5"/>
-  <text x="641" y="114" text-anchor="middle" font-size="8" fill="#da3633">U-235</text>
-  <text x="677" y="114" text-anchor="middle" font-size="8" fill="#58a6ff">U-238</text>
-  <line x1="641" y1="124" x2="663" y2="140" stroke="#3fb950" stroke-width="1.5" marker-end="url(#arrG)"/>
-  <line x1="677" y1="124" x2="663" y2="140" stroke="#3fb950" stroke-width="1.5" marker-end="url(#arrG)"/>
-  <text x="663" y="152" text-anchor="middle" class="lbl" fill="#3fb950">Assembler 3</text>
-  <text x="663" y="163" text-anchor="middle" class="sub">1 fuel cell / 10 sec</text>
-
-  <!-- Arrow U-235 from Kovarex -->
-  <path d="M 565 125 L 580 125 Q 590 125 590 135 L 590 140 Q 590 150 600 150 L 618 150" stroke="#da3633" stroke-width="1.5" fill="none" marker-end="url(#arrR)"/>
-
-  <!-- Nuclear Reactor -->
-  <rect x="618" y="220" width="90" height="100" rx="5" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
-  <rect x="630" y="232" width="66" height="76" rx="3" fill="#21262d" stroke="#f0883e" stroke-width="1"/>
-  <rect x="638" y="240" width="50" height="60" rx="2" fill="#1c2128" stroke="#30363d" stroke-width="1"/>
-  <!-- Fuel cell in reactor -->
-  <rect x="650" y="258" width="26" height="24" rx="2" fill="#30363d" stroke="#f0883e" stroke-width="1.5"/>
-  <circle cx="663" cy="270" r="7" fill="#21262d" stroke="#f0883e" stroke-width="1"/>
-  <text x="663" y="325" text-anchor="middle" class="lbl" fill="#f0883e">Nuclear Reactor</text>
-  <text x="663" y="338" text-anchor="middle" class="sub">200 sec / cell</text>
-  <text x="663" y="350" text-anchor="middle" class="mono">1 GW power</text>
-
-  <!-- Arrow: fuel cells to reactor -->
-  <line x1="663" y1="162" x2="663" y2="220" stroke="#ffa657" stroke-width="2" marker-end="url(#arrY)"/>
-  <text x="672" y="192" class="sub">fuel cells</text>
-
-  <!-- Arrows: U-235 from Kovarex 2 & 3 also to assembler -->
-  <path d="M 565 245 L 580 245 Q 590 245 590 215 L 590 200 Q 590 185 600 185 L 618 185" stroke="#da3633" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
-  <path d="M 565 365 L 580 365 Q 590 365 590 210 L 590 195 Q 590 180 600 180 L 618 180" stroke="#da3633" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
-
-  <!-- Total U-235 output annotation -->
-  <rect x="565" y="80" width="80" height="32" rx="3" fill="#21262d" stroke="#da3633" stroke-width="1"/>
-  <text x="605" y="95" text-anchor="middle" class="mono" fill="#da3633">3 U-235/min</text>
-  <text x="605" y="107" text-anchor="middle" class="sub">= 1 reactor</text>
-
-  <!-- ===================== BOTTOM: Ratio Box ===================== -->
-  <rect x="20" y="398" width="760" height="38" rx="5" fill="#161b22" stroke="#21262d"/>
-  <text x="30" y="416" class="mono" fill="#ffa657">10 ore-centrifuges</text>
-  <text x="135" y="416" class="sub">→ 100 U-238/min</text>
-  <text x="230" y="416" class="mono" fill="#d2a8ff">+ 3 Kovarex</text>
-  <text x="320" y="416" class="sub">→ 3 U-235/min</text>
-  <text x="415" y="416" class="mono" fill="#3fb950">+ 1 assembler</text>
-  <text x="510" y="416" class="sub">→ fuel cells</text>
-  <text x="600" y="416" class="mono" fill="#f0883e">→ 1 reactor</text>
-  <text x="680" y="416" class="sub">at full power</text>
+  <rect x="460" y="320" width="360" height="85" rx="6" fill="#0d1117" stroke="#da3633" stroke-width="1.5"/>
+  <text x="640" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:24px;font-weight:bold;fill:#da3633">40 U-235</text>
+  <text x="640" y="378" text-anchor="middle" class="sub">Kickstart requirement</text>
+  <text x="640" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">Must accumulate from normal processing first (30-60 min)</text>
 </svg>

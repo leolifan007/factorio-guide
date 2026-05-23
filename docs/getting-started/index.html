@@ -112,22 +112,316 @@
     
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content"><!-- Hero Section Card -->
+<div class="section-card orange">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><path d="M8 1L1 9h4v6h6V9h4L8 1z" fill="#e8941c"/></svg>
+  Welcome to Factorio
+</div>
+<p><strong>Factorio</strong> is a game about building and automating a factory. Your goal: launch a rocket into space. The twist? Everything is manual at first. Your job is to automate yourself out of a job.</p>
+<p>This guide takes you from opening the game to launching your first rocket. No prior experience needed.</p>
+<blockquote>
+<p><strong>How long does it take?</strong> Casual playthrough: 40-60 hours. Speedrun: under 2 hours. Don't rush — enjoy the automation!</p>
+</blockquote>
+</div>
+<hr>
+<h2 id="game-progression-timeline">Game Progression Timeline</h2>
+<img src="/images/flowcharts/progression-timeline.svg" alt="Factorio Game Progression Timeline - 6 major phases from early game to rocket launch" class="schema-diagram" loading="lazy" width="960">
+
+<p>The diagram above shows the 6 major phases of a standard Factorio playthrough. Each phase unlocks new mechanics and challenges.</p>
+<hr>
+<h2 id="your-first-hour">Your First Hour</h2>
+<h3 id="what-to-do-first">What to Do First</h3>
+<div class="section-card green">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><circle cx="8" cy="8" r="6" fill="#6abe30"/></svg>
+  Hour 0-1: The Tutorial Phase
+</div>
+<p><strong>Step 1: Open the game and pick a map.</strong></p>
+<ul>
+<li>Click <strong>New Game</strong></li>
+<li>Select <strong>Freeplay</strong> mode (the real game)</li>
+<li>Keep default settings for your first run</li>
+<li>Click <strong>Generate</strong></li>
+</ul>
+<p><strong>Step 2: Walk around and collect resources.</strong></p>
+<ul>
+<li>Walk with <code>WASD</code> keys</li>
+<li>Mine resources by holding left-click on rocks/trees</li>
+<li>Pick up everything — ore, wood, stone</li>
+<li>Build your first <strong>stone furnace</strong> near iron ore</li>
+</ul>
+<p><strong>Step 3: Smelt iron and copper.</strong></p>
+<ul>
+<li>Place a stone furnace (press <code>E</code> to open build menu)</li>
+<li>Put iron ore in the top slot, coal in the bottom</li>
+<li>Wait for iron plates to appear</li>
+<li>Repeat for copper ore</li>
+</ul>
+<p><strong>Step 4: Build your first assembler.</strong></p>
+<ul>
+<li>Craft an <strong>Assembling Machine 1</strong> from the menu (<code>E</code>)</li>
+<li>Place it near your smelting area</li>
+<li>Insert iron plates → get iron gear wheels</li>
+<li>Insert gears + iron plates → get inserters</li>
+</ul>
+<p><strong>Step 5: Automate your first belt.</strong></p>
+<ul>
+<li>Place a <strong>transport belt</strong> connecting ore to your furnace</li>
+<li>Place an <strong>inserter</strong> taking plates out of the furnace</li>
+<li>Use inserters to feed the assembler</li>
+</ul>
+<blockquote>
+<p><strong>Key lesson:</strong> If you're doing something manually more than once, automate it.</p>
+</blockquote>
+</div>
+<h3 id="first-science-pack--red--green">First Science Pack — Red &amp; Green</h3>
+<div class="item-row">
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/automation_science.png" alt="Red Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#e8941c"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#f5aa2e"/></svg>
+  <span class="item-icon-name">Red Science</span>
+  <span class="item-icon-label">Iron + Copper</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/logistic_science.png" alt="Green Science Pack">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="11" width="18" height="14" rx="2" fill="#6abe30"/><rect x="11" y="13" width="14" height="10" rx="1" fill="#8ad44a"/></svg>
+  <span class="item-icon-name">Green Science</span>
+  <span class="item-icon-label">Belt + Inserter</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/stone_furnace.png" alt="Stone Furnace">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="8" width="18" height="20" rx="2" fill="#888"/><rect x="11" y="10" width="14" height="16" rx="1" fill="#9a9a9a"/></svg>
+  <span class="item-icon-name">Furnace</span>
+  <span class="item-icon-label">Smelting</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/assembling_machine_1.png" alt="Assembler">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="8" y="8" width="20" height="20" rx="2" fill="#555"/><circle cx="18" cy="18" r="6" fill="#777"/></svg>
+  <span class="item-icon-name">Assembler</span>
+  <span class="item-icon-label">Crafting</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/inserter.png" alt="Inserter">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><circle cx="18" cy="22" r="6" fill="#888"/><rect x="15" y="10" width="6" height="12" rx="1" fill="#aaa" transform="rotate(45 18 18)"/></svg>
+  <span class="item-icon-name">Inserter</span>
+  <span class="item-icon-label">Item movement</span>
+</div>
+<div class="item-icon">
+  <img src="/factorio-guide/images/icon/transport_belt.png" alt="Transport Belt">
+  <svg viewBox="0 0 36 36" width="36" height="36" style="display:none"><rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="4" y="14" width="28" height="8" rx="1" fill="#8b6914"/><rect x="8" y="17" width="4" height="2" fill="#6b4c10"/><rect x="16" y="17" width="4" height="2" fill="#6b4c10"/><rect x="24" y="17" width="4" height="2" fill="#6b4c10"/></svg>
+  <span class="item-icon-name">Belt</span>
+  <span class="item-icon-label">Transport</span>
+</div>
+</div>
+<hr>
+<h2 id="the-science-pack-progression">The Science Pack Progression</h2>
+<div class="section-card">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect x="1" y="4" width="14" height="8" rx="2" fill="#e8941c"/><rect x="3" y="6" width="10" height="4" rx="1" fill="#f5aa2e"/></svg>
+  Science Pack Unlock Order
+</div>
+<p>Research unlocks new technologies in a specific order. Here's what each science pack unlocks:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Science</th>
+          <th>Color</th>
+          <th>Key Unlocks</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Automation</td>
+          <td>Red</td>
+          <td>Belts, inserters, assemblers</td>
+      </tr>
+      <tr>
+          <td>Logistics</td>
+          <td>Green</td>
+          <td>Logistic belts, circuits, automation 2</td>
+      </tr>
+      <tr>
+          <td>Military</td>
+          <td>Yellow</td>
+          <td>Combat, defense, walls</td>
+      </tr>
+      <tr>
+          <td>Chemical</td>
+          <td>Blue</td>
+          <td>Oil, blue circuits, modules</td>
+      </tr>
+      <tr>
+          <td>Production</td>
+          <td>Purple</td>
+          <td>Productivity modules, beacons</td>
+      </tr>
+      <tr>
+          <td>Utility</td>
+          <td>Orange</td>
+          <td>Nuclear, logistics bots</td>
+      </tr>
+      <tr>
+          <td>Space</td>
+          <td>White</td>
+          <td>Rocket launch, win</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Build a science lab</strong> as soon as you have red science — it unlocks everything else.</p>
+</div>
+<hr>
+<h2 id="building-your-first-mall">Building Your First Mall</h2>
+<div class="section-card blue">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect x="1" y="6" width="14" height="9" rx="1" fill="#3778c8"/><polygon points="8,1 1,6 15,6" fill="#3778c8"/></svg>
+  What is a Mall?
+</div>
+<p>A <strong>Mall</strong> (short for &quot;shopping mall&quot;) is a factory section that produces everything you need to expand:</p>
+<ul>
+<li>Inserters (all types)</li>
+<li>Underground belts</li>
+<li>Splitters</li>
+<li>Assembling machines</li>
+<li>Miners</li>
+<li>Smelting columns</li>
+<li>Power poles</li>
+<li>Science packs</li>
+</ul>
+<p><strong>Why build it?</strong> Instead of hand-crafting 200 inserters for your train network, you just drive to the mall and pick them up.</p>
+<div class="callout info">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#3778c8" stroke-width="2"><circle cx="10" cy="10" r="8"/><line x1="10" y1="6" x2="10" y2="11"/><circle cx="10" cy="14" r="1" fill="#3778c8"/></svg>
+</div>
+<p><strong>Pro tip:</strong> Build your mall next to your main base but with its own smelting. Keep the production separated.</p>
+</div>
+</div>
+<hr>
+<h2 id="the-main-bus-layout">The Main Bus Layout</h2>
+<div class="section-card green">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect x="7" y="1" width="2" height="14" fill="#6abe30"/><rect x="3" y="7" width="10" height="2" fill="#6abe30"/></svg>
+  Main Bus — Your Factory's Backbone
+</div>
+<p>The <strong>main bus</strong> is the most popular beginner-friendly factory design. It works like a highway:</p>
+<ol>
+<li><strong>Lanes run in parallel</strong> — Iron plates on lanes 1-4, copper on 5-8, etc.</li>
+<li><strong>Branches off</strong> — Splitters take items from the bus as needed</li>
+<li><strong>Easy to expand</strong> — Just add more lanes when you run out</li>
+</ol>
+<p><strong>The 4-lane bus rule:</strong> Start with 4 iron and 4 copper lanes. This is enough for most early-game bases.</p>
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">4</div>
+    <div class="stat-label">Iron Lanes</div>
+    <div class="stat-sub">For SPM &lt; 100</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">8</div>
+    <div class="stat-label">Total Lanes</div>
+    <div class="stat-sub">4 iron + 4 copper</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">120</div>
+    <div class="stat-label">Items/lane/s</div>
+    <div class="stat-sub">Yellow belt throughput</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2</div>
+    <div class="stat-label">Splitters</div>
+    <div class="stat-sub">Per bus branch</div>
+  </div>
+</div>
+</div>
+<hr>
+<h2 id="common-beginner-mistakes">Common Beginner Mistakes</h2>
+<div class="callout danger">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#c9463d" stroke-width="2"><circle cx="10" cy="10" r="8"/><line x1="6" y1="6" x2="14" y2="14"/><line x1="14" y1="6" x2="6" y2="14"/></svg>
+</div>
+<p><strong>Not enough smelting early.</strong> Every beginner under-builds smelting. You need at least 24 electric furnaces per resource type to keep up with mid-game demand.</p>
+</div>
+<div class="callout danger">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#c9463d" stroke-width="2"><circle cx="10" cy="10" r="8"/><line x1="6" y1="6" x2="14" y2="14"/><line x1="14" y1="6" x2="6" y2="14"/></svg>
+</div>
+<p><strong>No defense until biters attack.</strong> By the time biters are at your walls, it's too late. Build walls and turrets as soon as you have military science.</p>
+</div>
+<div class="callout danger">
+<div class="callout-icon">
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="#c9463d" stroke-width="2"><circle cx="10" cy="10" r="8"/><line x1="6" y1="6" x2="14" y2="14"/><line x1="14" y1="6" x2="6" y2="14"/></svg>
+</div>
+<p><strong>Not researching efficiency modules.</strong> Efficiency Module 1 reduces pollution by 30% for almost no cost. Research this early to reduce biter aggression naturally.</p>
+</div>
+<hr>
+<h2 id="controls-quick-reference">Controls Quick Reference</h2>
+<div class="section-card">
+<div class="section-card-title">
+  <svg viewBox="0 0 16 16" width="16" height="16"><rect x="1" y="4" width="14" height="10" rx="2" fill="#555"/><rect x="3" y="6" width="4" height="4" rx="1" fill="#888"/><rect x="9" y="6" width="4" height="4" rx="1" fill="#888"/></svg>
+  Essential Keybindings
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>WASD</code></td>
+          <td>Move character</td>
+      </tr>
+      <tr>
+          <td><code>E</code></td>
+          <td>Open build menu</td>
+      </tr>
+      <tr>
+          <td><code>Q</code></td>
+          <td>Open deconstruction menu</td>
+      </tr>
+      <tr>
+          <td><code>Shift + Click</code></td>
+          <td>Quick build (no confirmation)</td>
+      </tr>
+      <tr>
+          <td><code>Alt</code></td>
+          <td>Toggle entity info overlay</td>
+      </tr>
+      <tr>
+          <td><code>Ctrl + Click</code></td>
+          <td>Copy-paste building settings</td>
+      </tr>
+      <tr>
+          <td><code>F</code></td>
+          <td>Rotate building</td>
+      </tr>
+      <tr>
+          <td><code>Z</code></td>
+          <td>Toggle zoom</td>
+      </tr>
+      <tr>
+          <td><code>M</code></td>
+          <td>Open map</td>
+      </tr>
+      <tr>
+          <td><code>B</code></td>
+          <td>Open blueprint book</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h2 id="related-guides">Related Guides</h2>
+<ul>
+<li><strong><a href="/science-packs/">Science Pack Recipes</a></strong> — Exact recipes and ratios for all 7 science packs</li>
+<li><strong><a href="/production-ratios/">Production Ratios</a></strong> — Smelting, circuit, and beacon math</li>
+<li><strong><a href="/base-design/">Base Design</a></strong> — Main bus, city blocks, and megabase design</li>
+<li><strong><a href="/defense/">Defense</a></strong> — Turrets, walls, and pollution management</li>
+</ul>
+</div>
       </div>
     </main>
-
-    
-    <div class="article-ad-right">
-      <div class="ad-placeholder">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
-          <rect x="2" y="2" width="20" height="20" rx="3"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-          <line x1="8" y1="12" x2="16" y2="12"/>
-        </svg>
-        <span class="ad-placeholder-label">Advertisement</span>
-        <span class="ad-placeholder-size">160 × 600</span>
-      </div>
-    </div>
 
   </div>
 </div>

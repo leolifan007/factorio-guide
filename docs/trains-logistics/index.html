@@ -107,22 +107,82 @@
     
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content"><!-- Section: Trains and Logistics Overview -->
+<div class="section-card orange">
+<p>Factorios transport system scales from a single locomotive to continent-spanning rail networks carrying thousands of items per minute.</p>
+<blockquote><p><strong>Design principle:</strong> Build your rail network <em>before</em> you need it. Retrofitting rails into a built-out base is painful.</p></blockquote>
+</div>
+<h2 id="rail-signal-basics">Rail Signal Basics</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Signal</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rail signal</td>
+          <td>Marks end of a block (placed after intersections)</td>
+      </tr>
+      <tr>
+          <td>Chain signal</td>
+          <td>Extends block (placed before intersections)</td>
+      </tr>
+      <tr>
+          <td>Train stop</td>
+          <td>Destination for a train schedule</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Golden rule:</strong> A train can only enter a block if the exit is also clear. Chain signals propagate this check through intersections.</p>
+</blockquote>
+<h2 id="deadlock-prevention">Deadlock Prevention</h2>
+<p>Deadlocks happen when two trains each occupy a block the other needs.</p>
+<div class="check-row">
+<div class="check-item"><span class="check-icon"></span><div><strong>Rule 1:</strong> Never have two trains share the same single-track segment in opposite directions.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Rule 2:</strong> Use chain signals at all intersection entrances.</div></div>
+<div class="check-item"><span class="check-icon"></span><div><strong>Rule 3:</strong> Keep train station lanes separate (dedicated in/out tracks).</div></div>
+</div>
+<h2 id="logistics-robots-vs-belts">Logistics Robots vs Belts</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Task</th>
+          <th>Belts</th>
+          <th>Logistics robots</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>High volume</td>
+          <td>Best</td>
+          <td>Warning limited by roboport coverage</td>
+      </tr>
+      <tr>
+          <td>Long distance</td>
+          <td>Warning Complex</td>
+          <td>Excellent (via roboport network)</td>
+      </tr>
+      <tr>
+          <td>Setup cost</td>
+          <td>Low</td>
+          <td>High (roboports plus robots)</td>
+      </tr>
+      <tr>
+          <td>UPS cost</td>
+          <td>Low</td>
+          <td>High (late-game impact)</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Rule of thumb:</strong> Belts for bulk production (iron, copper, plates). Robots for low-volume, high-flexibility tasks (modules, blueprints, repair packs).</p>
+</blockquote>
+</div>
       </div>
     </main>
-
-    
-    <div class="article-ad-right">
-      <div class="ad-placeholder">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
-          <rect x="2" y="2" width="20" height="20" rx="3"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-          <line x1="8" y1="12" x2="16" y2="12"/>
-        </svg>
-        <span class="ad-placeholder-label">Advertisement</span>
-        <span class="ad-placeholder-size">160 × 600</span>
-      </div>
-    </div>
 
   </div>
 </div>

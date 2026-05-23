@@ -1,7 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
-  <rect width="36" height="36" rx="3" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
-  <circle cx="18" cy="18" r="9" fill="#44aa66"/>
-  <circle cx="18" cy="18" r="6" fill="#55cc77"/>
-  <circle cx="18" cy="18" r="3" fill="#88eeaa"/>
-  <text x="18" y="21" text-anchor="middle" font-size="6" fill="#fff" font-weight="bold" font-family="sans-serif">U</text>
-</svg>

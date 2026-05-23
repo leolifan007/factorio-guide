@@ -1,134 +1,96 @@
 ---
-title: "Modules and Beacons — The Late-Game Multiplier"
-description: "Factorio modules and beacons guide. Speed vs productivity module math, beacon coverage math, the 8-beacon optimal layout, where to use each module type, and the Space Age quality module layer on top."
+title: "Beacon and Module Layout — 8-Beacon Setup"
+description: "Beacon and module guide for Factorio. The 8-beacon layout that maximizes productivity and speed. Module combinations, power costs, and the math behind efficient factory design."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-28T13:47:00+08:00
-tags: ["production-ratios", "base-design", "modules", "beacon"]
+publishDate: 2026-05-27T16:52:00+08:00
+tags: ["production-ratios", "modules", "beacons"]
 draft: false
 hidden: true
 emoji: ""
 version: "2.0"
 ---
 
-You added Productivity Module 3s to your assemblers. Production went up slightly. Then you added beacons. The machine consumes 5× power for 2× output. Something is wrong.
-
-The problem: productivity modules **slow down** machines. Speed beacons **speed them up**. Getting the ratio right is the whole game.
+Beacons amplify module effects across multiple buildings. {{< material "beacon" >}} One beacon with {{< material "productivity-module" >}} speed modules can boost 8 nearby assemblers — if you lay them out correctly.
 
 {{< callout "tip" >}}
-**TL;DR:** 4 Productivity Module 3s in a machine = -40% speed, +30% items per craft. Surround with **8 Speed Beacon 3s** (each +50% speed) to cancel the slowdown and gain +10% net speed. Result: **+30% productivity at full speed**. This is why 8 beacons is the standard.
+**TL;DR:** 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.
 {{< /callout >}}
 
-{{< diagram "diagrams/8-beacon-layout.svg" "8-beacon layout — module slots, speed beacon coverage, and 7-tile grid spacing" "820" >}}
+{{< diagram "diagrams/8-beacon-layout.svg" "8-beacon layout showing assembler surrounded by 8 beacons with module distribution" "900" >}}
 
-## Module Stats
+## How Beacons Work
 
-| Module | Speed | Productivity | Power |
-|--------|-------|-------------|-------|
-| Speed 1 | +20% | -15% prod | +50% |
-| Speed 2 | +40% | -30% prod | +60% |
-| **Speed 3** | **+50%** | **-40% prod** | **+70%** |
-| Prod 1 | -15% spd | +10% | +50% |
-| Prod 2 | -30% spd | +15% | +60% |
-| **Prod 3** | **-40% spd** | **+30%** | **+70%** |
-| **Prod 4 (Space Age)** | -15% spd | +10% base (+quality) | +80% |
+Beacons transmit module effects to nearby buildings:
 
-## The Speed-Productivity Paradox
+- **Range:** 9 tiles (affects buildings in 9×9 area)
+- **Distribution:** Effect is split — 50% transmission to each building
+- **Stacking:** Multiple beacons stack additively
+- **Limit:** Maximum 12 beacons can affect one building
 
-The scenario that breaks most setups:
+**Key rule:** Beacons don't affect other beacons. Only production buildings (assemblers, furnaces, chemical plants, etc.).
 
-1. Put 4 PM3s in an assembler making advanced circuits (6 sec craft)
-2. Machine slows by 40% → each craft now takes **10 seconds**
-3. You get 30% more circuits per craft, but 67% slower
-4. **Net result: fewer circuits per minute than before**
+## The 8-Beacon Layout
 
-**The fix:** 8 beacons with SM3s around that assembler:
-- 8 × SM3 = +400% speed spread → fully cancels PM3's -40%
-- Net speed: **+10% faster than base**
-- Net productivity: **+30% more items per craft**
+The standard endgame layout:
 
-## Why Exactly 8 Beacons
+- 1 assembler (3×3) in center
+- 8 beacons surrounding it (in the 12 possible positions, use 8)
+- Beacons filled with {{< material "productivity-module" >}} Speed Module 3 (+50% speed each)
+- Assembler filled with {{< material "productivity-module" >}} Productivity Module 3 (+10% productivity, -40% speed)
 
-A beacon's effect range = **4 tiles** in all directions. An assembler is 3×3 tiles. Placing 8 beacons at the positions immediately adjacent to the assembler gives maximum coverage — every module slot receives full speed bonus.
+**The math:**
+- 8 beacons × +50% speed × 50% transmission = +200% speed
+- Assembler PM3: -40% speed, +30% productivity
+- Net: +160% speed, +30% productivity
 
-| Layout | Coverage | Result |
-|--------|----------|--------|
-| 0 beacons (PM3 only) | None | -40% speed, +30% prod — **slower overall** |
-| 4 beacons | Partial | Some slowdown remains |
-| **8 beacons** | **Full** | **Speed cancelled, +10% bonus, +30% prod** |
+## Module Combinations
 
-Any fewer than 8 = incomplete coverage = wasted module potential.
+Different goals need different setups:
 
-## Tile Layout: The 7-Tile Grid
+| Goal | Beacon Modules | Assembler Modules | Result |
+|------|---------------|-------------------|--------|
+| Max productivity | 8× SM3 | 4× PM3 | +30% items, +160% speed |
+| Max speed | 8× SM3 | 4× SM3 | +360% speed, 0% productivity |
+| Balanced | 8× SM3 | 2× PM3 + 2× SM3 | +15% items, +260% speed |
 
-```
-[B] [B] [ASM] [ASM] [ASM] [B] [B]
-[B] [B] [ASM] [ASM] [ASM] [B] [B]
-    ↑ 3-tile machine   ↑ 4-tile gap for beacons
-    = 7-tile repeating unit
-```
+**Recommendation:** Use max productivity for expensive recipes (rocket parts, science packs). Use max speed for cheap bulk items (gears, circuits).
 
-Use underground belts and pipes through beacon gaps. This layout minimizes beacon count per machine output.
+## Power Cost
 
-**Space platform note:** beacon range is reduced on platforms. Expect 12-16 beacons for equivalent ground coverage.
+Beacons and modules draw massive power:
 
-## Where to Use Each Module Type
+- Beacon: 480 kW base + module drain
+- Speed Module 3: +70% power consumption
+- Productivity Module 3: +80% power consumption
 
-### Productivity Modules — High ROI Targets
+**8-beacon setup power:**
+- 8 beacons × 480 kW = 3.84 MW
+- 8 SM3s × 70% = +560% drain
+- Total: ~25 MW per assembler
 
-| Target | Why |
-|--------|-----|
-| Rocket silo | Highest cost per craft — biggest absolute savings |
-| Processing units | Expensive science ingredient |
-| Low density structures | Moderate cost, high volume |
-| Science packs (purple/yellow) | Expensive ingredients compound over time |
+**The tradeoff:** 25 MW sounds expensive, but +30% productivity means 30% less ore, oil, and processing for the same output. Power is cheap; resources are precious.
 
-### Speed Modules — Better Alternatives
+## What Veterans Learn the Hard Way
 
-| Target | Why |
-|--------|-----|
-| Smelters | No productivity available — pure speed win |
-| Oil refineries | No productivity — speed reduces bottleneck |
-| Cheap intermediates (inserters, green circuits) | Ingredient cost too low for productivity ROI |
-| Space platforms | Lower beacon density — speed modules maximize output/tile |
-
-### Quality Module 4 (Space Age)
-
-Install in rocket silo and key science assemblers after unlocking from Aquilo. Rare-quality QM4 can reach +15% productivity — worth the investment for endgame components.
-
-## Smelter Speed Case Study
-
-| Setup | Plates/min per furnace | Furnaces needed for 60k plates/min |
-|-------|----------------------|-----------------------------------|
-| No modules | ~17 | ~3,500 |
-| 4× SM3 | ~26 (+50%) | ~2,300 |
-| 8-beacon + 4× SM3 | ~39 (+130%) | ~1,500 |
-
-Power cost increases proportionally, but space savings are massive.
-
-## Build Order
-
-| Phase | Action |
-|-------|--------|
-| 1 | Add 4× SM3 to smelter row (quick throughput win) |
-| 2 | Install PM3 in science assemblers + 8 SM3 beacons (maximize research) |
-| 3 | Rocket silo: 4× PM3 + 8× SM3 beacons (fastest ROI in game) |
-| 4 | Space Age: QM4 in silo + key science (endgame efficiency) |
-
-## Pollution Note
-
-Productivity modules reduce pollution **per item** (more output per ore). But total pollution often **increases** because you produce more items with the same infrastructure, and speed beacons draw significant power. The planet cares about total cloud size, not per-item efficiency.
+- **12-beacon is overkill** — 8 beacons hits the sweet spot. 12 beacons = marginal gains, massive power cost.
+- **PM3 first, then beacons** — productivity modules reduce resource cost. Speed beacons fix the speed penalty.
+- **Not for everything** — 8-beacon setups are overkill for cheap items. Use for expensive recipes only.
+- **Power grid matters** — 100 beaconed assemblers = 2.5 GW. Plan your nuclear setup accordingly.
 
 ## Common Mistakes
 
 | Mistake | Consequence |
 |---------|-------------|
-| PM3 without beacons | Machine slower than base — net loss |
-| Fewer than 8 beacons | Partial speed cancellation — still losing time |
-| PM3 in cheap-item machines (green circuits) | 30% of nearly nothing = nearly nothing |
-| Forgetting smelters can't use productivity | Wasted module slot — use speed instead |
-| Ignoring power cost | 8 beacons + 4 PM3 = ~5× base power draw |
+| 12-beacon layouts | Diminishing returns, power grid collapse |
+| SM3 in assemblers | Wasted productivity potential |
+| Beaconed smelters | Furnaces are cheap — beacons are overkill |
+| Ignoring power costs | Brownouts when factory scales up |
 
 ## The Bottom Line
 
-The 8-beacon standard exists for a reason: it's the exact number needed to cancel PM3's -40% speed penalty while adding +10% net speed. Put productivity in expensive-output machines (rocket silo, science), speed everywhere else, 8 beacons per machine. Your megabase produces 30% more with the same ore input.
+8-beacon layouts with PM3 assemblers and SM3 beacons are the endgame standard. +30% productivity saves resources. Power cost is acceptable at scale. Use for expensive recipes, skip for cheap bulk.
+
+---
+
+**Related:** [Production Ratios]({{< ref "/production-ratios" >}}) | [Oil Processing]({{< ref "/production-ratios/oil-processing-guide" >}})

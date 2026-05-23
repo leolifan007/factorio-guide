@@ -1,106 +1,89 @@
 ---
-title: "Artillery Turret — How to Clear Biters and Map the Whole World"
-description: "Factorio artillery turret guide. Shell recipes, outpost chains, circuit-controlled auto-fire, and the supply train setup that keeps your artillery firing without manual babysitting."
+title: "Artillery — Range, Shells, and Outpost Setup"
+description: "Artillery guide for Factorio. Shell production, range research, outpost placement, and the logistics chain that keeps your perimeter safe from biter attacks."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-26T14:17:00+08:00
-tags: ["defense", "biters", "artillery"]
+publishDate: 2026-05-27T16:52:00+08:00
+tags: ["defense", "artillery", "military"]
 draft: false
 hidden: true
 emoji: ""
 version: "2.0"
 ---
 
-Your walls are up. Flamethrowers are hot. And yet biter bases keep spawning just outside your pollution cloud, eating through defenses in waves. The artillery turret is the fix — but placing one turret and watching it miss isn't automation.
+Artillery is the endgame solution to biter bases. {{< material "gun-turret" >}} Gun turrets and {{< material "laser-turret" >}} laser turrets defend your walls. Artillery deletes the threat before it reaches you.
 
 {{< callout "tip" >}}
-**TL;DR:** Artillery fires at biter bases within targeting range (starts at 7 tiles, researchable to 140). You need: 1 shell assembler + 1 turret + circuit-controlled auto-fire + 200-shell buffer per outpost. Train resupplies when shells drop below 50.
+**TL;DR:** Build artillery turrets at outposts, connect them to your rail network, and supply shells via trains. Research range to extend coverage. One shell destroys most biter bases in 2-3 shots.
 {{< /callout >}}
 
-{{< diagram "diagrams/artillery-outpost.svg" "Artillery outpost circuit diagram — turret, shells, circuit network, and supply train" "800" >}}
+{{< diagram "diagrams/artillery-outpost.svg" "Artillery outpost logistics chain — main base shell production, train delivery, and targeting range" "900" >}}
 
-## How Artillery Actually Works
+## How Artillery Works
 
-Three conditions must be met for a turret to fire:
+The artillery turret fires explosive shells at biter bases within range. Each shell deals massive area damage, destroying nests, worms, and biters in the blast radius.
 
-1. **Biter base inside targeting range** (circle around turret, radius = researched level × 20 tiles)
-2. **Circuit network sends fire signal** (or manual aim)
-3. **Shells in inventory** (turret holds 100 max)
+**Key mechanics:**
+- Manual targeting: click the map, the turret fires
+- Automatic targeting: turrets auto-fire at biter bases in range (configurable)
+- Shell consumption: each shot uses one artillery shell
+- Range: base 7 tiles, max 140 tiles with research
 
-Without circuit control, you're manually aiming a targeting camera. That's not automation.
+## Shell Production Chain
 
-## Targeting Range Research
+Artillery shells are expensive. Plan your factory:
 
-| Level | Range (tiles) | Coverage |
-|-------|--------------|----------|
-| 0 (base) | 7 | Barely clears adjacent nests |
-| 3 | 60 | Small perimeter defense |
-| 5 | 100 | Covers most expansion zones |
-| 7 (max) | 140 | Entire small vanilla map |
+| Component | Source | Notes |
+|-----------|--------|-------|
+| Explosive cannon shell | Military science | Standard ammo production |
+| Radar | Green circuits + iron | One per turret for targeting |
+| Artillery shell | Explosive shell + radar | Assemble at dedicated factory |
 
-**Rule:** always research range before building outposts. A 7-tile turret is nearly useless.
+**Throughput:** One assembler 2 produces 1 shell every 15 seconds. For sustained fire, build 4-6 assemblers.
 
-## Shell Production Ratio
+## Outpost Setup
 
-| Item | Recipe | Time |
-|------|--------|------|
-| Explosive cannon shell | 1 iron + 1 copper + 1 sulfur | 3 sec |
-| **Artillery shell** | 8 explosive shells + 1 radar | 10 sec |
+Artillery outposts need three things: a turret, a buffer chest, and a train connection.
 
-**The ratio:** 1 assembler making explosive shells feeds ~1.2 artillery shell assemblers. Start with **1 shell assembler per 2 turrets** for continuous fire.
+**The buffer rule:** Store 200 shells locally. This covers 50-100 biter bases before resupply is needed. Use requester chests wired to the train stop — trains only dispatch when stock is low.
 
-Each turret fires every ~20 seconds when loaded. 100 shells = ~33 minutes of continuous engagement. Buffer **200 shells minimum** per outpost.
+**Placement strategy:**
+- Space outposts 200+ tiles apart (overlap coverage by ~40 tiles)
+- Connect to your main rail network
+- Defend the outpost itself — biters attack artillery
 
-## Outpost Design
+## Range Research
 
-Every artillery outpost needs these components:
+Research extends artillery range dramatically:
 
-| Component | Purpose |
-|-----------|---------|
-| Artillery turret | Fires at targets in range |
-| Requester chest (200 shells) | Triggers resupply at <50 shells |
-| Provider chest | Receives train/bot deliveries |
-| Inserter (provider → turret) | Auto-feeds shells |
-| Radar (optional) | Reveals bases for auto-targeting |
-| Wall + flamethrower backup | Survives biter retaliation |
+| Level | Range | Coverage Area |
+|-------|-------|---------------|
+| 0 (base) | 7 tiles | Tiny |
+| 3 | 60 tiles | Small perimeter |
+| 7 (max) | 140 tiles | Entire visible map |
 
-## Circuit-Controlled Auto-Fire
+**Priority:** Artillery range 3 unlocks practical outpost placement. Range 7 is endgame convenience.
 
-The setup that makes artillery truly automatic:
+## What Veterans Learn the Hard Way
 
-1. Wire requester chest to **decider combinator** via red wire
-2. Set combinator: `shells < 50 → output signal "fire"` (or wire directly to turret enable)
-3. Turret receives signal → fires at any target in range
-4. When shells drop below threshold → train dispatches from depot
-
-**Simpler alternative:** skip the radar. Aim the turret manually on first visit, then leave it. Biters wander into range naturally (attracted by pollution). The turret handles the rest.
-
-## Resupply: Trains vs Bots
-
-| Method | Best For | Limitation |
-|--------|----------|------------|
-| Logistic bots | 1-3 outposts, close to base | Range limited by roboport coverage |
-| Delivery train | 3-10 outposts, any distance | Requires depot with idle trains |
-| Belt/inserter chain | Outposts <100 tiles from production | Not scalable |
-
-**For 5+ outposts:** dedicated supply train with circuit-condition schedule is the only solution that scales. Schedule: train waits at depot until any outpost signals `shells < 50` → delivers 200 shells → returns to depot.
-
-## Biter Expansion Mechanics
-
-Biters send expansion squads every ~30-60 seconds if an empty chunk exists within range. Artillery's firing range creates a permanent no-spawn zone — as long as it keeps firing.
-
-**Warning:** artillery is loud. Within ~100 tiles, biters hear it and send attack waves. At max range research (140 tiles), your turret outranges their perception. Before max research, pair outposts with walls and flamethrowers.
+- **Shells are heavy** — one stack is only 10 shells. Trains need dedicated artillery shell cars.
+- **Biters evolve** — artillery fire draws evolution. Expect retaliation.
+- **Outposts need defense** — the turret fires outward, but biters attack the outpost itself. {{< material "wall" >}} Walls and {{< material "gun-turret" >}} turrets required.
+- **Don't overbuild** — 3-4 outposts cover most maps. More = shell drain without benefit.
 
 ## Common Mistakes
 
-| Mistake | Why It Fails |
+| Mistake | Consequence |
 |---------|-------------|
-| Building before researching range | 7-tile range = useless |
-| Buffering <100 shells | Turret runs dry mid-clearing |
-| Gun turret defense (not flamethrower) | Ammo depletes under sustained attack |
-| Placing turret inside walls | Range wasted — outposts go ahead of walls |
-| Unwired requester chest | Manual refill job forever |
+| No shell buffer | Turret runs dry during attack |
+| Outpost too far from rail | Manual shell delivery = tedious |
+| No outpost defense | Biters destroy your investment |
+| Firing at everything | Wastes shells, accelerates evolution |
 
 ## The Bottom Line
 
-Artillery converts biter management from active chore to background process. The three essentials: circuit network for auto-fire, 200+ shell buffer, and train resupply. Get those right and your network clears the map while you design production lines.
+Artillery turns biter defense from reactive to proactive. Build shells at main base, deliver by train, store 200 at each outpost. Research range to 3, then 7. Clear the map on your terms.
+
+---
+
+**Related:** [Early Game Defense]({{< ref "/defense/early-game-defense" >}}) | [Flamethrower Defense]({{< ref "/defense/flamethrower-defense-guide" >}})

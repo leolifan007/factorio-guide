@@ -112,22 +112,157 @@
     
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content"><h2 id="production-ratios">Production Ratios</h2>
+<p>The <strong>Production Ratios</strong> section is your reference guide for Factorio's math. Every recipe has a precise input/output ratio. Understanding these ratios lets you build factories that run at exactly the throughput you need — no overproduction, no starvation.</p>
+<hr>
+<h2 id="why-ratios-matter">Why Ratios Matter</h2>
+<p>Factorio's production chain is a system of ratios. If assemblers run faster than their upstream suppliers, they starve. If they run slower, you waste potential.</p>
+<p>For example: <strong>1 Green Circuit</strong> requires <strong>3 Iron Plates + 2 Copper Cable</strong> (made from 1 Copper Plate). If your iron supply is 60 items/min but your copper output is only enough for 30 items/min, green circuit production caps at copper throughput.</p>
+<p>Knowing ratios lets you <strong>balance your factory on paper before you build it</strong>.</p>
+<hr>
+<h2 id="core-smelting-ratios">Core Smelting Ratios</h2>
+<h3 id="furnace-ratio">Furnace Ratio</h3>
+<p>Stone furnace vs. steel furnace, ore to plate conversion rate:</p>
+<ul>
+<li><strong>1 Stone Furnace</strong> smelts ore at 0.3125 plates/second</li>
+<li><strong>1 Steel Furnace</strong> smelts ore at 0.5 plates/second (60% faster)</li>
+<li><strong>1 Electric Furnace</strong> smelts ore at 0.5 plates/second (same speed, no fuel needed)</li>
+</ul>
+<h3 id="steel-ratio">Steel Ratio</h3>
+<ul>
+<li><strong>1 Steel Plate</strong> requires <strong>5 Iron Plates</strong></li>
+<li><strong>Ratio:</strong> For every 1 steel plate/second, you need 5 iron plates/second dedicated to steel.</li>
+</ul>
+<hr>
+<h2 id="circuit-ratios">Circuit Ratios</h2>
+<h3 id="copper-cable-ratio">Copper Cable Ratio</h3>
+<ul>
+<li><strong>1 Copper Plate</strong> makes <strong>2 Copper Cable</strong></li>
+<li><strong>1 Electronic Circuit</strong> requires <strong>2 Copper Cable</strong></li>
+<li><strong>Net:</strong> 1 copper plate feeds 1 green circuit assembler</li>
+</ul>
+<h3 id="green-circuit-ratio">Green Circuit Ratio</h3>
+<ul>
+<li><strong>1 Electronic Circuit</strong> = 3 Iron Plates + 2 Copper Cable</li>
+<li>The 2 copper cables come from 1 copper plate</li>
+<li><strong>Standard ratio:</strong> 3 green circuit assemblers need ~1.5 belts of iron and ~1 belt of copper supply</li>
+</ul>
+<h3 id="red-circuit-ratio-advanced-circuit">Red Circuit Ratio (Advanced Circuit)</h3>
+<ul>
+<li><strong>1 Advanced Circuit</strong> = 2 Electronic Circuits + 2 Copper Cable + 1 Plastic Bar</li>
+<li><strong>Supply chain:</strong> 3 red circuit assemblers consume roughly 1 full belt of green circuits</li>
+</ul>
+<h3 id="blue-circuit-ratio-processing-unit">Blue Circuit Ratio (Processing Unit)</h3>
+<ul>
+<li><strong>1 Processing Unit</strong> = 2 Advanced Circuits + 20 Electronic Circuits</li>
+<li><strong>Total raw:</strong> 1 blue circuit needs ~40 iron plates + ~30 copper plates worth of intermediates</li>
+<li>Very high demand — always build dedicated blue circuit sub-factories</li>
+</ul>
+<hr>
+<h2 id="science-pack-ratios">Science Pack Ratios</h2>
+<h3 id="red-science-ratio">Red Science Ratio</h3>
+<ul>
+<li>1 Iron Gear + 1 Copper Plate → 1 Red Science Pack</li>
+<li>5 assemblers = ~1 red science per second</li>
+</ul>
+<h3 id="green-science-ratio">Green Science Ratio</h3>
+<ul>
+<li>1 Inserter + 1 Transport Belt → 1 Green Science Pack</li>
+<li>1 inserter assembler feeds ~12 science assemblers; 1 belt assembler feeds ~24</li>
+</ul>
+<h3 id="blue-science-ratio">Blue Science Ratio</h3>
+<ul>
+<li>1 Advanced Circuit + 1 Engine Unit → 1 Blue Science Pack</li>
+<li><strong>Bottleneck:</strong> Engine unit production (needs steel + pipes + gears)</li>
+</ul>
+<hr>
+<h2 id="module--beacon-ratios">Module &amp; Beacon Ratios</h2>
+<h3 id="speed-module-effect">Speed Module Effect</h3>
+<p>Speed modules increase assembler speed multiplicatively:</p>
+<ul>
+<li><strong>Speed Module 1:</strong> +20% speed per module</li>
+<li>With 8 speed beacons (Speed 3): assembler runs at ~700% base speed</li>
+</ul>
+<h3 id="productivity-module-effect">Productivity Module Effect</h3>
+<p>Productivity modules reduce total raw material cost:</p>
+<ul>
+<li><strong>Productivity Module 3:</strong> +10% productivity per module</li>
+<li><strong>Critical for:</strong> Rocket parts, blue circuits, science packs with high intermediate costs</li>
+</ul>
+<h3 id="beacon-density-20-update">Beacon Density (2.0 update)</h3>
+<p>In Factorio 2.0, the maximum beacons affecting a single machine is reduced compared to 1.1. Plan for <strong>6-8 beacons</strong> per machine for late-game layouts, not the old 12-beacon standard.</p>
+<hr>
+<h2 id="quick-reference-table">Quick Reference Table</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Recipe</th>
+          <th>Key Ratio</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron Plate</td>
+          <td>1 Iron Ore</td>
+          <td>1:1</td>
+      </tr>
+      <tr>
+          <td>Copper Plate</td>
+          <td>1 Copper Ore</td>
+          <td>1:1</td>
+      </tr>
+      <tr>
+          <td>Steel Plate</td>
+          <td>5 Iron Plate</td>
+          <td>5:1</td>
+      </tr>
+      <tr>
+          <td>Copper Cable</td>
+          <td>1 Copper Plate</td>
+          <td>2:1</td>
+      </tr>
+      <tr>
+          <td>Green Circuit</td>
+          <td>3 Iron + 2 Copper Cable</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Red Circuit</td>
+          <td>2 Green + 2 Cable + 1 Plastic</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Blue Circuit</td>
+          <td>2 Red + 20 Green</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Engine Unit</td>
+          <td>1 Steel + 1 Iron Gear + 1 Pipe</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Battery</td>
+          <td>1 Sulfuric Acid + 1 Iron Plate</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Low Density Structure</td>
+          <td>1 Steel + 2 Copper Plate</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="related-sections">Related Sections</h2>
+<ul>
+<li><strong><a href="/getting-started/">Getting Started</a></strong> — Use these ratios in context</li>
+<li><strong><a href="/base-design/">Base Design</a></strong> — Layout your factory around these ratios</li>
+</ul>
+</div>
       </div>
     </main>
-
-    
-    <div class="article-ad-right">
-      <div class="ad-placeholder">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
-          <rect x="2" y="2" width="20" height="20" rx="3"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-          <line x1="8" y1="12" x2="16" y2="12"/>
-        </svg>
-        <span class="ad-placeholder-label">Advertisement</span>
-        <span class="ad-placeholder-size">160 × 600</span>
-      </div>
-    </div>
 
   </div>
 </div>

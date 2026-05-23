@@ -1,172 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
-  <defs>
-    <marker id="af" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f0883e"/></marker>
-    <marker id="ab" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#58a6ff"/></marker>
-    <marker id="ag" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/></marker>
-    <marker id="ap" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d2a8ff"/></marker>
-    <marker id="ay" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ffa657"/></marker>
-    <style>
-      .lbl { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #c9d1d9; }
-      .ttl { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: bold; fill: #e6edf3; }
-      .sub { font-family: 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
-      .mono { font-family: monospace; font-size: 9px; }
-    </style>
-  </defs>
-  <rect width="820" height="480" rx="8" fill="#0d1117"/>
-  <text x="410" y="26" text-anchor="middle" class="ttl">Vulcanus Foundry — Circular Metal Processing Loop</text>
-  <line x1="20" y1="36" x2="800" y2="36" stroke="#21262d"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440">
+  <defs><marker id="v1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e"/></marker><marker id="v2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#79c0ff"/></marker><marker id="v3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#3fb950"/></marker></defs>
+  <style>.bg{fill:#0d1117}.box{fill:#161b22;stroke-width:2;rx:8}.lbl{font-family:'Segoe UI',sans-serif;font-size:17px;font-weight:bold;fill:#e6edf3}.sub{font-family:'Segoe UI',sans-serif;font-size:13px;fill:#8b949e}.arr{stroke-width:3;fill:none}</style>
+  <rect width="900" height="440" class="bg" rx="10"/>
+  <text x="450" y="38" text-anchor="middle" style="font-family:'Segoe UI';font-size:22px;font-weight:bold;fill:#e6edf3">Vulcanus Foundry System</text>
+  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d"/>
 
-  <!-- ===================== CALCITE RECYCLING (top) ===================== -->
-  <text x="410" y="56" text-anchor="middle" class="ttl" fill="#d2a8ff">Calcite Recycling Loop</text>
-  <text x="410" y="68" text-anchor="middle" class="sub">Volcanic ash → calcite → foundry → volcanic ash (recycled)</text>
+  <!-- Iron Ore -->
+  <rect x="50" y="80" width="140" height="75" class="box" stroke="#79c0ff"/><text x="120" y="110" text-anchor="middle" class="lbl">Iron Ore</text><text x="120" y="132" text-anchor="middle" class="sub">+ Calcite</text>
+  <line x1="190" y1="117" x2="250" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/>
 
-  <!-- Volcanic ash source -->
-  <ellipse cx="250" cy="105" rx="28" ry="20" fill="#2d1a0a" stroke="#f0883e" stroke-width="1.5" opacity="0.8"/>
-  <text x="250" y="109" text-anchor="middle" font-size="10" fill="#f0883e">ash</text>
-  <text x="250" y="132" text-anchor="middle" class="lbl">Volcanic Ash</text>
-  <text x="250" y="144" text-anchor="middle" class="sub">ore processing byproduct</text>
+  <!-- Foundry A -->
+  <rect x="260" y="75" width="160" height="85" class="box" stroke="#f0883e"/><text x="340" y="108" text-anchor="middle" class="lbl">Foundry A</text><text x="340" y="133" text-anchor="middle" class="sub">Iron → Molten Iron</text><text x="340" y="148" text-anchor="middle" style="font-size:11px;fill:#8b949e">+ Volcanic Ash</text>
 
-  <!-- Ash → Calcite Recycler (small assembler) -->
-  <rect x="320" y="85" width="80" height="44" rx="4" fill="#161b22" stroke="#d2a8ff" stroke-width="2"/>
-  <text x="360" y="102" text-anchor="middle" class="lbl" fill="#d2a8ff">Recycler</text>
-  <text x="360" y="115" text-anchor="middle" class="mono" fill="#d2a8ff">ash→calcite</text>
-  <text x="360" y="126" text-anchor="middle" class="sub">5 sec</text>
+  <!-- Molten Iron -->
+  <line x1="420" y1="117" x2="480" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/><text x="450" y="107" text-anchor="middle" style="font-size:12px;fill:#c9d1d9">Molten Iron</text>
 
-  <!-- Arrow ash → recycler -->
-  <line x1="278" y1="105" x2="320" y2="107" stroke="#f0883e" stroke-width="1.5" marker-end="url(#af)"/>
+  <!-- Split -->
+  <rect x="490" y="75" width="160" height="85" class="box" stroke="#da3633"/><text x="570" y="108" text-anchor="middle" class="lbl">Foundry B</text><text x="570" y="133" text-anchor="middle" class="sub">Steel Plates</text><text x="570" y="148" text-anchor="middle" style="font-size:11px;fill:#8b949e">+ Calcite</text>
 
-  <!-- Calcite storage -->
-  <rect x="420" y="82" width="60" height="44" rx="3" fill="#161b22" stroke="#d2a8ff" stroke-width="1.5"/>
-  <text x="450" y="97" text-anchor="middle" class="sub" fill="#d2a8ff">BUFFER</text>
-  <text x="450" y="110" text-anchor="middle" class="mono" fill="#ffa657">500+ calcite</text>
-  <text x="450" y="122" text-anchor="middle" class="sub">critical stock!</text>
+  <!-- Copper branch -->
+  <line x1="420" y1="135" x2="480" y2="165" class="arr" stroke="#f0883e" marker-end="url(#v1)" stroke-dasharray="4,2"/>
+  <rect x="490" y="150" width="160" height="80" class="box" stroke="#79c0ff"/><text x="570" y="178" text-anchor="middle" class="lbl">Foundry C</text><text x="570" y="200" text-anchor="middle" class="sub">Copper + Molten Iron</text><text x="570" y="218" text-anchor="middle" style="font-size:11px;fill:#8b949e">→ Molten Copper</text>
 
-  <!-- Arrow recycler → calcite storage -->
-  <line x1="400" y1="107" x2="420" y2="104" stroke="#d2a8ff" stroke-width="1.5" marker-end="url(#ap)"/>
+  <!-- Ash Recycling -->
+  <line x1="650" y1="117" x2="710" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/>
+  <rect x="720" y="80" width="150" height="75" class="box" stroke="#3fb950"/><text x="795" y="110" text-anchor="middle" class="lbl">Ash Recycler</text><text x="795" y="135" text-anchor="middle" class="sub">→ Calcite</text>
 
-  <!-- Arrow calcite → foundries (3 directions) -->
-  <line x1="450" y1="126" x2="450" y2="160" stroke="#d2a8ff" stroke-width="1.5" marker-end="url(#ap)"/>
-  <path d="M 450 160 Q 450 175 200 175 Q 180 175 180 192" stroke="#d2a8ff" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
-  <path d="M 450 160 Q 450 175 410 175 Q 390 175 390 192" stroke="#d2a8ff" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
-  <path d="M 450 160 Q 450 175 620 175 Q 640 175 640 192" stroke="#d2a8ff" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
-  <text x="300" y="168" text-anchor="middle" class="sub" fill="#d2a8ff">calcite supply</text>
+  <!-- Loop back -->
+  <path d="M 795 80 Q 795 50 400 50 Q 120 50 120 80" stroke="#3fb950" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#v3)"/>
+  <text x="450" y="45" text-anchor="middle" style="font-size:11px;fill:#3fb950">Calcite Loop</text>
 
-  <!-- ===================== LEFT: Iron/Steel Foundry ===================== -->
-  <text x="180" y="216" text-anchor="middle" class="ttl" fill="#58a6ff">Foundry — Iron &amp; Steel</text>
+  <!-- Bottom: Module 4 -->
+  <rect x="50" y="260" width="800" height="160" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="292" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#e6edf3">Endgame: Tungsten Carbide → Module 4</text>
+  <line x1="70" y1="305" x2="830" y2="305" stroke="#21262d"/>
 
-  <!-- Iron ore -->
-  <ellipse cx="100" cy="260" rx="26" ry="18" fill="#2d5020" stroke="#3fb950" stroke-width="1.5"/>
-  <text x="100" y="264" text-anchor="middle" font-size="9" fill="#c9d1d9">Fe ore</text>
-  <text x="100" y="286" text-anchor="middle" class="lbl">Iron Ore</text>
+  <rect x="80" y="320" width="350" height="85" rx="6" fill="#0d1117" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="255" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#79c0ff">Tungsten Carbide</text>
+  <text x="255" y="378" text-anchor="middle" class="sub">5 tungsten ore + 5 iron + 5 coke</text>
+  <text x="255" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">Unique to Vulcanus</text>
 
-  <!-- Calcite arrow to foundry -->
-  <line x1="180" y1="192" x2="180" y2="235" stroke="#d2a8ff" stroke-width="1.5" marker-end="url(#ap)"/>
-  <text x="190" y="215" class="sub" fill="#d2a8ff">+calcite</text>
-
-  <!-- Foundry Iron/Steel -->
-  <rect x="130" y="238" width="100" height="80" rx="5" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
-  <text x="180" y="256" text-anchor="middle" class="lbl" fill="#58a6ff">Foundry</text>
-  <!-- Molten iron slot -->
-  <rect x="140" y="262" width="28" height="20" rx="2" fill="#da3633" opacity="0.3" stroke="#da3633" stroke-width="1"/>
-  <text x="154" y="275" text-anchor="middle" font-size="8" fill="#da3633">molten</text>
-  <!-- Steel slot -->
-  <rect x="192" y="262" width="28" height="20" rx="2" fill="#6e7681" opacity="0.5" stroke="#6e7681" stroke-width="1"/>
-  <text x="206" y="275" text-anchor="middle" font-size="8" fill="#c9d1d9">steel</text>
-  <text x="180" y="296" text-anchor="middle" class="mono" fill="#ffa657">ore+calcite→molten</text>
-  <text x="180" y="308" text-anchor="middle" class="mono" fill="#8b949e">molten+calcite→steel</text>
-
-  <!-- Arrow iron ore → foundry -->
-  <line x1="126" y1="260" x2="130" y2="270" stroke="#3fb950" stroke-width="1.5" marker-end="url(#ag)"/>
-  <text x="108" y="256" class="sub">ore</text>
-
-  <!-- Molten iron output -->
-  <line x1="230" y1="260" x2="270" y2="260" stroke="#da3633" stroke-width="2" marker-end="url(#af)"/>
-  <text x="250" y="252" text-anchor="middle" class="mono" fill="#da3633">molten iron</text>
-
-  <!-- Steel plate output -->
-  <line x1="180" y1="318" x2="180" y2="355" stroke="#6e7681" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="188" y="338" class="mono" fill="#8b949e">steel plate</text>
-
-  <!-- Steel plate box -->
-  <rect x="148" y="357" width="64" height="28" rx="3" fill="#161b22" stroke="#6e7681" stroke-width="1.5"/>
-  <text x="180" y="375" text-anchor="middle" class="lbl">Steel Plates</text>
-
-  <!-- Arrow molten iron to copper foundry (circular dep!) -->
-  <path d="M 270 260 Q 310 260 320 300 Q 330 340 370 340" stroke="#da3633" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#af)"/>
-  <text x="310" y="250" class="sub" fill="#da3633">molten iron feed →</text>
-
-  <!-- ===================== CENTER: Copper Foundry ===================== -->
-  <text x="410" y="216" text-anchor="middle" class="ttl" fill="#f0883e">Foundry — Copper</text>
-
-  <!-- Copper ore -->
-  <ellipse cx="330" cy="260" rx="26" ry="18" fill="#1a4a2a" stroke="#f0883e" stroke-width="1.5"/>
-  <text x="330" y="264" text-anchor="middle" font-size="9" fill="#f0883e">Cu ore</text>
-  <text x="330" y="286" text-anchor="middle" class="lbl">Copper Ore</text>
-
-  <!-- Calcite arrow to foundry -->
-  <line x1="390" y1="192" x2="390" y2="235" stroke="#d2a8ff" stroke-width="1.5" marker-end="url(#ap)"/>
-
-  <!-- Molten iron from iron foundry (circular dep!) -->
-  <path d="M 370 340 Q 360 360 370 380 Q 380 400 390 400 Q 400 400 400 385 Q 400 370 400 340 L 400 290" stroke="#da3633" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#af)"/>
-  <text x="375" y="370" class="sub" fill="#da3633">molten iron</text>
-
-  <!-- Foundry Copper -->
-  <rect x="360" y="238" width="100" height="80" rx="5" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
-  <text x="410" y="256" text-anchor="middle" class="lbl" fill="#f0883e">Foundry</text>
-  <rect x="370" y="262" width="28" height="20" rx="2" fill="#da3633" opacity="0.3" stroke="#da3633" stroke-width="1"/>
-  <text x="384" y="275" text-anchor="middle" font-size="8" fill="#da3633">molten</text>
-  <rect x="422" y="262" width="28" height="20" rx="2" fill="#c4721a" opacity="0.4" stroke="#f0883e" stroke-width="1"/>
-  <text x="436" y="275" text-anchor="middle" font-size="8" fill="#ffa657">Cu</text>
-  <text x="410" y="296" text-anchor="middle" class="mono" fill="#ffa657">Cu+molten+calcite</text>
-  <text x="410" y="308" text-anchor="middle" class="mono" fill="#8b949e">→ molten copper</text>
-
-  <!-- Arrow copper ore → foundry -->
-  <line x1="356" y1="260" x2="360" y2="270" stroke="#f0883e" stroke-width="1.5" marker-end="url(#af)"/>
-
-  <!-- Molten copper output -->
-  <line x1="460" y1="260" x2="500" y2="260" stroke="#ffa657" stroke-width="2" marker-end="url(#ay)"/>
-  <text x="480" y="252" text-anchor="middle" class="mono" fill="#ffa657">molten Cu</text>
-
-  <!-- Copper plate output -->
-  <line x1="410" y1="318" x2="410" y2="355" stroke="#ffa657" stroke-width="2" marker-end="url(#ay)"/>
-  <text x="418" y="338" class="mono" fill="#ffa657">copper plate</text>
-  <rect x="378" y="357" width="64" height="28" rx="3" fill="#161b22" stroke="#ffa657" stroke-width="1.5"/>
-  <text x="410" y="375" text-anchor="middle" class="lbl">Copper Plates</text>
-
-  <!-- ===================== RIGHT: Tungsten Carbide & Sci ===================== -->
-  <text x="640" y="216" text-anchor="middle" class="ttl" fill="#d2a8ff">Tungsten + Science</text>
-
-  <!-- Tungsten ore -->
-  <ellipse cx="600" cy="260" rx="24" ry="16" fill="#1a1a4a" stroke="#79c0ff" stroke-width="1.5"/>
-  <text x="600" y="264" text-anchor="middle" font-size="9" fill="#79c0ff">W ore</text>
-  <text x="600" y="284" text-anchor="middle" class="lbl">Tungsten Ore</text>
-  <text x="600" y="296" text-anchor="middle" class="sub">Vulcanus rare</text>
-
-  <!-- Assembler: Tungsten Carbide -->
-  <rect x="640" y="240" width="80" height="56" rx="4" fill="#161b22" stroke="#79c0ff" stroke-width="2"/>
-  <text x="680" y="258" text-anchor="middle" class="lbl" fill="#79c0ff">Assembler 3</text>
-  <text x="680" y="272" text-anchor="middle" class="mono" fill="#ffa657">W+coke+Fe</text>
-  <text x="680" y="284" text-anchor="middle" class="mono" fill="#8b949e">→ tungsten carbide</text>
-
-  <!-- Arrow tungsten ore → assembler -->
-  <line x1="624" y1="260" x2="640" y2="265" stroke="#79c0ff" stroke-width="1.5" marker-end="url(#ab)"/>
-  <!-- Arrow calcite (top) to foundry -->
-  <line x1="640" y1="192" x2="640" y2="240" stroke="#d2a8ff" stroke-width="1.5" marker-end="url(#ap)"/>
-
-  <!-- Tungsten carbide output -->
-  <line x1="720" y1="268" x2="750" y2="268" stroke="#79c0ff" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="735" y="260" text-anchor="middle" class="mono" fill="#79c0ff">W carbide</text>
-
-  <!-- TC storage -->
-  <rect x="752" y="252" width="50" height="32" rx="3" fill="#161b22" stroke="#79c0ff" stroke-width="1.5"/>
-  <text x="777" y="263" text-anchor="middle" class="sub" fill="#79c0ff">Module 4</text>
-  <text x="777" y="275" text-anchor="middle" class="mono" fill="#79c0ff">PM4 / SM4</text>
-
-  <!-- ===================== BOTTOM KEY ===================== -->
-  <line x1="20" y1="432" x2="800" y2="432" stroke="#21262d"/>
-  <text x="25" y="447" class="sub" fill="#6e7681">The Foundry's circular dependency: iron foundry needs molten iron for copper, copper foundry needs molten iron from iron foundry. Break the cycle with sufficient buffer stock.</text>
-  <rect x="620" y="437" width="170" height="32" rx="4" fill="#21262d" stroke="#da3633" stroke-width="1"/>
-  <text x="630" y="453" class="mono" fill="#da3633">⚠ calcite runs out = chain halts</text>
-  <text x="630" y="464" class="sub" fill="#8b949e">Always maintain 500+ calcite buffer</text>
+  <rect x="470" y="320" width="360" height="85" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="650" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#f0883e">Productivity Module 4</text>
+  <text x="650" y="378" text-anchor="middle" class="sub">5 TC + 5 PM3 + 1 advanced circuit</text>
+  <text x="650" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">+30% productivity (vs PM3's +10%)</text>
 </svg>

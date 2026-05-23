@@ -117,22 +117,162 @@
     
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content"><h2 id="base-design-in-factorio">Base Design in Factorio</h2>
+<p>A great factory isn't just about producing items — it's about producing them <strong>in a way that's organized, expandable, and repairable</strong>. Base design is the art of organizing production chains spatially.</p>
+<hr>
+<h2 id="main-bus-architecture">Main Bus Architecture</h2>
+<p>The <strong>main bus</strong> is the most popular mid-game factory architecture. A set of parallel bus lanes runs down the center of the factory, and each production line pulls from the bus.</p>
+<h3 id="what-goes-on-the-main-bus-in-order">What Goes on the Main Bus (in order)</h3>
+<ol>
+<li><strong>Iron plates</strong> — 2 to 4 lanes</li>
+<li><strong>Copper plates</strong> — 1 to 2 lanes</li>
+<li><strong>Gears</strong> — 1 lane</li>
+<li><strong>Electronic circuits (green)</strong> — 1 lane</li>
+<li><strong>Steel plates</strong> — 1 lane</li>
+<li><strong>Advanced circuits (red)</strong> — 1 lane</li>
+<li><strong>Plastic bars</strong> — 1 lane</li>
+</ol>
+<h3 id="bus-width-recommendations">Bus Width Recommendations</h3>
+<ul>
+<li><strong>Iron:</strong> 4 lanes minimum (you'll need it for green circuits + gears + blue science)</li>
+<li><strong>Copper:</strong> 2 lanes minimum (green circuits + red circuits)</li>
+<li><strong>Gears:</strong> 1 lane (very low total consumption)</li>
+<li><strong>Green circuits:</strong> 1 lane (high consumption, but compact)</li>
+</ul>
+<h3 id="when-not-to-use-a-main-bus">When NOT to Use a Main Bus</h3>
+<ul>
+<li>When you need to ship items <strong>backward</strong> up the factory (bus only works for forward flow)</li>
+<li>When you want absolute UPS efficiency (bus architectures have dead walking sections)</li>
+<li>When playing <strong>Space Age</strong> — Gleba and Fulgora require completely different layouts</li>
+</ul>
+<hr>
+<h2 id="city-block-design">City Block Design</h2>
+<p><strong>City blocks</strong> are the gold standard for large and megabase builds. Each block is a uniform square (e.g., 64x64 tiles), and every production facility fits inside a block.</p>
+<h3 id="advantages-of-city-blocks">Advantages of City Blocks</h3>
+<ul>
+<li>Uniform layout = easy to expand</li>
+<li>Trains can navigate using the same intersections</li>
+<li>Simple to copy/paste with blueprints</li>
+<li>Easy to calculate throughput per block</li>
+</ul>
+<h3 id="standard-block-sizes">Standard Block Sizes</h3>
+<ul>
+<li><strong>64x64</strong> — popular for vanilla megabases</li>
+<li><strong>48x48</strong> — tighter, more compact</li>
+<li><strong>32x32</strong> — for tighter resource areas</li>
+</ul>
+<h3 id="main-bus--city-block-hybrid">Main Bus + City Block Hybrid</h3>
+<p>Many players use a main bus for early/mid game, then transition to city blocks for late game megabase builds.</p>
+<hr>
+<h2 id="smelting-setups">Smelting Setups</h2>
+<h3 id="stone-vs-steel-vs-electric-furnaces">Stone vs. Steel vs. Electric Furnaces</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Speed</th>
+          <th>Fuel</th>
+          <th>Best For</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Stone</td>
+          <td>0.3125/s</td>
+          <td>Coal</td>
+          <td>Very early game</td>
+      </tr>
+      <tr>
+          <td>Steel</td>
+          <td>0.5/s</td>
+          <td>Coal</td>
+          <td>Early to mid game</td>
+      </tr>
+      <tr>
+          <td>Electric</td>
+          <td>0.5/s</td>
+          <td>None</td>
+          <td>Mid to late game</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="smelting-array-ratios">Smelting Array Ratios</h3>
+<ul>
+<li><strong>12 steel furnaces</strong> on a full yellow belt of ore = 1 full yellow belt of plates</li>
+<li><strong>12 electric furnaces</strong> = same output, zero fuel management</li>
+<li><strong>24 electric furnaces</strong> = 2 full belts of plates</li>
+</ul>
+<hr>
+<h2 id="nuclear-power-layouts">Nuclear Power Layouts</h2>
+<p>Nuclear is more complex than steam but produces 25x more power per building.</p>
+<h3 id="basic-nuclear-setup">Basic Nuclear Setup</h3>
+<ul>
+<li>1 Reactor produces <strong>40 MW</strong> of heat</li>
+<li>Reactors can be adjacent — each neighbor adds 100% bonus heat exchange</li>
+<li><strong>2-reactor adjacent</strong> = 120 MW total (each reactor 60 MW effective)</li>
+<li><strong>N-reactor row:</strong> <code>(N × 40) + ((N-1) × 40)</code> MW effective</li>
+</ul>
+<h3 id="kovarex-enrichment">Kovarex Enrichment</h3>
+<p>A single Kovarex loop (2 centrifuges with 5% productivity) sustains unlimited nuclear fuel once started.</p>
+<hr>
+<h2 id="beacon--module-setups">Beacon &amp; Module Setups</h2>
+<h3 id="speed-beacon-layout">Speed Beacon Layout</h3>
+<ul>
+<li><strong>8 beacons</strong> per assembler (optimal) — beacons on all 8 adjacent tiles</li>
+<li>Speed Module 3 in both beacons and assembler: 700% base speed</li>
+<li>1 beaconed blue circuit assembler = ~10 unbeaconed assemblers in terms of output</li>
+</ul>
+<h3 id="productivity-beacon-layout">Productivity Beacon Layout</h3>
+<ul>
+<li><strong>8 beacons</strong> with Productivity Module 3</li>
+<li>Reduces total packs needed by 30% per tier</li>
+<li>Essential for reducing the scale of high-tier science (purple, yellow, space)</li>
+</ul>
+<h3 id="mixed-setup-speed--productivity">Mixed Setup (Speed + Productivity)</h3>
+<ul>
+<li>Beacons have 2 module slots — can mix Speed 3 + Productivity 3</li>
+<li><strong>Most efficient late-game setup:</strong> 4 Speed 3 + 4 Productivity 3 per beacon</li>
+</ul>
+<hr>
+<h2 id="megabase-layouts">Megabase Layouts</h2>
+<p>A <strong>megabase</strong> produces 1,000+ SPM (science per minute). The architecture matters enormously for UPS (updates per second).</p>
+<h3 id="ups-friendly-designs">UPS-Friendly Designs</h3>
+<ul>
+<li><strong>Beacon-strip layouts:</strong> Production lines in rows with beacons between</li>
+<li><strong>Balancer-based</strong> city blocks with train throughput matching production</li>
+<li><strong>Bot-based megabases:</strong> Less UPS-efficient but simpler to build</li>
+</ul>
+<h3 id="spm-calculation">SPM Calculation</h3>
+<ul>
+<li>1 SPM = 1 of each science pack per minute</li>
+<li><strong>1,000 SPM</strong> requires roughly 5,000 assembling machine 3s (unbeaconed)</li>
+<li>With heavy beaconing: 1,000 SPM can be achieved with ~500 assemblers</li>
+</ul>
+<hr>
+<h2 id="expandable-base-guide">Expandable Base Guide</h2>
+<p><strong>The number one rule:</strong> Design your first factory assuming you'll want to expand it.</p>
+<p>Signs your base is getting cramped:</p>
+<ul>
+<li>Green circuit production can't keep up with demand</li>
+<li>Your bus has more splitters than lanes</li>
+<li>You can't find space to add a new production line</li>
+</ul>
+<p><strong>When to rebuild:</strong></p>
+<ul>
+<li>Once your first green circuit line is full, plan a second before adding blue science</li>
+<li>The moment biters start eating your production lines, redesign the defense</li>
+</ul>
+<hr>
+<h2 id="related-guides">Related Guides</h2>
+<ul>
+<li><strong><a href="/base-design/factorio-main-bus-guide/">Main Bus Guide</a></strong> — Full bus architecture walkthrough</li>
+<li><strong><a href="/base-design/factorio-beacon-setup/">Beacon Setup Guide</a></strong> — Module and beacon math</li>
+<li><strong><a href="/base-design/factorio-city-block-guide/">City Block Guide</a></strong> — Uniform megabase tiles</li>
+<li><strong><a href="/base-design/factorio-nuclear-setup-layout/">Nuclear Setup Layout</a></strong> — Full reactor blueprints</li>
+</ul>
+</div>
       </div>
     </main>
-
-    
-    <div class="article-ad-right">
-      <div class="ad-placeholder">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
-          <rect x="2" y="2" width="20" height="20" rx="3"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-          <line x1="8" y1="12" x2="16" y2="12"/>
-        </svg>
-        <span class="ad-placeholder-label">Advertisement</span>
-        <span class="ad-placeholder-size">160 × 600</span>
-      </div>
-    </div>
 
   </div>
 </div>
