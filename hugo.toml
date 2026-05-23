@@ -31,3 +31,4 @@ buildDrafts = false
   steam_url = 'https://store.steampowered.com/app/427520/Factorio/'
   google_analytics = 'G-06QHTM40LG'
   # adsense_client = 'ca-pub-7551387157478980'  # 暂时注销，等 Google AdSense 审核通过后再启用
+  show_ads = false  # 关闭文章页广告位，改为 true 即可恢复

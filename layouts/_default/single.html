@@ -43,7 +43,7 @@
   <!-- ── Main Layout: [ad] [content+toc] [ad] ── -->
   <div class="article-layout">
 
-    <!-- Left Ad Slot -->
+    <!-- Left Ad Slot -->{{- if .Site.Params.show_ads }}
     <div class="article-ad-left">
       <div class="ad-placeholder">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
@@ -54,7 +54,7 @@
         <span class="ad-placeholder-label">Advertisement</span>
         <span class="ad-placeholder-size">160 × 600</span>
       </div>
-    </div>
+    </div>{{- end }}
 
     <!-- Center: TOC + Content -->
     <div class="article-center">
@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <!-- Right Ad Slot -->
+    <!-- Right Ad Slot -->{{- if .Site.Params.show_ads }}
     <div class="article-ad-right">
       <div class="ad-placeholder">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
@@ -127,7 +127,7 @@
         <span class="ad-placeholder-label">Advertisement</span>
         <span class="ad-placeholder-size">160 × 600</span>
       </div>
-    </div>
+    </div>{{- end }}
 
   </div>
 </div>
