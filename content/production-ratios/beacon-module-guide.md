@@ -1,5 +1,5 @@
 ---
-title: "Beacon and Module Layout 鈥?8-Beacon Setup"
+title: "Beacon and Module Layout —8-Beacon Setup"
 description: "Beacon and module guide for Factorio. The 8-beacon layout that maximizes productivity and speed. Module combinations, power costs, and the math behind efficient factory design."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
@@ -11,7 +11,7 @@ emoji: ""
 version: "2.0"
 ---
 
-Beacons amplify module effects across multiple buildings. {{< material "beacon" >}} One beacon with {{< material "productivity_module_3" >}} speed modules can boost 8 nearby assemblers 鈥?if you lay them out correctly.
+Beacons amplify module effects across multiple buildings. {{< material "beacon" >}} One beacon with {{< material "productivity_module_3" >}} speed modules can boost 8 nearby assemblers —if you lay them out correctly.
 
 {{< callout "tip" >}}
 **TL;DR:** 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.
@@ -24,7 +24,7 @@ Beacons amplify module effects across multiple buildings. {{< material "beacon" 
 Beacons transmit module effects to nearby buildings:
 
 - **Range:** 9 tiles (affects buildings in 9脳9 area)
-- **Distribution:** Effect is split 鈥?50% transmission to each building
+- **Distribution:** Effect is split —50% transmission to each building
 - **Stacking:** Multiple beacons stack additively
 - **Limit:** Maximum 12 beacons can affect one building
 
@@ -73,10 +73,10 @@ Beacons and modules draw massive power:
 
 ## What Veterans Learn the Hard Way
 
-- **12-beacon is overkill** 鈥?8 beacons hits the sweet spot. 12 beacons = marginal gains, massive power cost.
-- **PM3 first, then beacons** 鈥?productivity modules reduce resource cost. Speed beacons fix the speed penalty.
-- **Not for everything** 鈥?8-beacon setups are overkill for cheap items. Use for expensive recipes only.
-- **Power grid matters** 鈥?100 beaconed assemblers = 2.5 GW. Plan your nuclear setup accordingly.
+- **12-beacon is overkill** —8 beacons hits the sweet spot. 12 beacons = marginal gains, massive power cost.
+- **PM3 first, then beacons** —productivity modules reduce resource cost. Speed beacons fix the speed penalty.
+- **Not for everything** —8-beacon setups are overkill for cheap items. Use for expensive recipes only.
+- **Power grid matters** —100 beaconed assemblers = 2.5 GW. Plan your nuclear setup accordingly.
 
 ## Common Mistakes
 
@@ -84,7 +84,7 @@ Beacons and modules draw massive power:
 |---------|-------------|
 | 12-beacon layouts | Diminishing returns, power grid collapse |
 | SM3 in assemblers | Wasted productivity potential |
-| Beaconed smelters | Furnaces are cheap 鈥?beacons are overkill |
+| Beaconed smelters | Furnaces are cheap —beacons are overkill |
 | Ignoring power costs | Brownouts when factory scales up |
 
 ## The Bottom Line

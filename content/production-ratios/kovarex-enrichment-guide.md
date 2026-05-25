@@ -1,5 +1,5 @@
 ---
-title: "Kovarex Enrichment 鈥?Uranium Processing Loop"
+title: "Kovarex Enrichment —Uranium Processing Loop"
 description: "Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
@@ -11,13 +11,13 @@ emoji: ""
 version: "2.0"
 ---
 
-Kovarex enrichment is the uranium processing upgrade that turns waste into fuel. Without it, {{< material "uranium_ore" >}} uranium ore yields mostly U-238 鈥?barely enough U-235 to keep a single reactor running.
+Kovarex enrichment is the uranium processing upgrade that turns waste into fuel. Without it, {{< material "uranium_ore" >}} uranium ore yields mostly U-238 —barely enough U-235 to keep a single reactor running.
 
 {{< callout "tip" >}}
 **TL;DR:** Kovarex centrifuges convert 40 U-238 + 40 U-235 鈫?41 U-238 + 1 U-235. Net: -40 U-238, +1 U-235 per cycle. Build 3 centrifuges per reactor. Kickstart requires 40 U-235 accumulated first.
 {{< /callout >}}
 
-{{< diagram "diagrams/kovarex-loop.svg" "Kovarex enrichment loop 鈥?uranium ore processing, enrichment centrifuge, and fuel cell production" "900" >}}
+{{< diagram "diagrams/kovarex-loop.svg" "Kovarex enrichment loop —uranium ore processing, enrichment centrifuge, and fuel cell production" "900" >}}
 
 ## The Enrichment Loop
 
@@ -32,11 +32,11 @@ This turns your U-238 stockpile (the waste product) into additional U-235 (the f
 
 ## The Kickstart Problem
 
-Kovarex centrifuges need 40 U-235 to start. Standard uranium processing yields U-235 at 0.7% 鈥?roughly 1 per 143 ore processed.
+Kovarex centrifuges need 40 U-235 to start. Standard uranium processing yields U-235 at 0.7% —roughly 1 per 143 ore processed.
 
 **The math:** To get 40 U-235 from normal processing, you need ~5,700 uranium ore. At 1 ore/sec, that's 95 minutes of pure processing before your first Kovarex centrifuge can run.
 
-**Strategy:** Build standard centrifuges first. Accumulate U-235. Only then add Kovarex centrifuges. Don't build them early 鈥?they'll sit idle.
+**Strategy:** Build standard centrifuges first. Accumulate U-235. Only then add Kovarex centrifuges. Don't build them early —they'll sit idle.
 
 ## The Golden Ratio
 
@@ -62,10 +62,10 @@ This prevents draining your U-238 buffer below fuel cell production needs.
 
 ## What Veterans Learn the Hard Way
 
-- **Don't rush Kovarex** 鈥?build it after you have 40+ U-235 stockpiled
-- **Keep U-238 buffer** 鈥?Kovarex drains it fast. 500+ minimum.
-- **Prioritize fuel cells** 鈥?Kovarex is bonus fuel, not primary. Fuel cells come first.
-- **Expand centrifuges gradually** 鈥?3 per reactor is plenty until you're running 4+ reactors
+- **Don't rush Kovarex** —build it after you have 40+ U-235 stockpiled
+- **Keep U-238 buffer** —Kovarex drains it fast. 500+ minimum.
+- **Prioritize fuel cells** —Kovarex is bonus fuel, not primary. Fuel cells come first.
+- **Expand centrifuges gradually** —3 per reactor is plenty until you're running 4+ reactors
 
 ## Common Mistakes
 

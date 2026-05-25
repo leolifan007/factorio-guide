@@ -65,11 +65,11 @@
         <!-- Breadcrumb -->
         <nav class="breadcrumb">
           <a href="{{ `/` | relURL }}">Home</a>
-          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-sep">&rsaquo;</span>
           {{ with .Parent }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ end }}
-          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-sep">&rsaquo;</span>
           <span class="breadcrumb-current">{{ .Title }}</span>
         </nav>
 
