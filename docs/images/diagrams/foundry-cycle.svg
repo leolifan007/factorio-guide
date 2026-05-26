@@ -1,47 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440">
-  <defs><marker id="v1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e"/></marker><marker id="v2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#79c0ff"/></marker><marker id="v3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#3fb950"/></marker></defs>
+  <defs><marker id="v1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e" /></marker><marker id="v2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#79c0ff" /></marker><marker id="v3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#3fb950" /></marker></defs>
   <style>.bg{fill:#0d1117}.box{fill:#161b22;stroke-width:2;rx:8}.lbl{font-family:'Segoe UI',sans-serif;font-size:17px;font-weight:bold;fill:#e6edf3}.sub{font-family:'Segoe UI',sans-serif;font-size:13px;fill:#8b949e}.arr{stroke-width:3;fill:none}</style>
-  <rect width="900" height="440" class="bg" rx="10"/>
+  <rect width="900" height="440" class="bg" rx="10" />
   <text x="450" y="38" text-anchor="middle" style="font-family:'Segoe UI';font-size:22px;font-weight:bold;fill:#e6edf3">Vulcanus Foundry System</text>
-  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d"/>
+  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d" />
 
-  <!-- Iron Ore -->
-  <rect x="50" y="80" width="140" height="75" class="box" stroke="#79c0ff"/><text x="120" y="110" text-anchor="middle" class="lbl">Iron Ore</text><text x="120" y="132" text-anchor="middle" class="sub">+ Calcite</text>
-  <line x1="190" y1="117" x2="250" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/>
+  
+  <rect x="50" y="80" width="140" height="75" class="box" stroke="#79c0ff" /><text x="120" y="110" text-anchor="middle" class="lbl">Iron Ore</text><text x="120" y="132" text-anchor="middle" class="sub">+ Calcite</text>
+  <line x1="190" y1="117" x2="250" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)" />
 
-  <!-- Foundry A -->
-  <rect x="260" y="75" width="160" height="85" class="box" stroke="#f0883e"/><text x="340" y="108" text-anchor="middle" class="lbl">Foundry A</text><text x="340" y="133" text-anchor="middle" class="sub">Iron → Molten Iron</text><text x="340" y="148" text-anchor="middle" style="font-size:11px;fill:#8b949e">+ Volcanic Ash</text>
+  
+  <rect x="260" y="75" width="160" height="85" class="box" stroke="#f0883e" /><text x="340" y="108" text-anchor="middle" class="lbl">Foundry A</text><text x="340" y="133" text-anchor="middle" class="sub">Iron → Molten Iron</text><text x="340" y="148" text-anchor="middle" style="font-size:15px;fill:#8b949e">+ Volcanic Ash</text>
 
-  <!-- Molten Iron -->
-  <line x1="420" y1="117" x2="480" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/><text x="450" y="107" text-anchor="middle" style="font-size:12px;fill:#c9d1d9">Molten Iron</text>
+  
+  <line x1="420" y1="117" x2="480" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)" /><text x="450" y="107" text-anchor="middle" style="font-size:15px;fill:#c9d1d9">Molten Iron</text>
 
-  <!-- Split -->
-  <rect x="490" y="75" width="160" height="85" class="box" stroke="#da3633"/><text x="570" y="108" text-anchor="middle" class="lbl">Foundry B</text><text x="570" y="133" text-anchor="middle" class="sub">Steel Plates</text><text x="570" y="148" text-anchor="middle" style="font-size:11px;fill:#8b949e">+ Calcite</text>
+  
+  <rect x="490" y="75" width="160" height="85" class="box" stroke="#da3633" /><text x="570" y="108" text-anchor="middle" class="lbl">Foundry B</text><text x="570" y="133" text-anchor="middle" class="sub">Steel Plates</text><text x="570" y="148" text-anchor="middle" style="font-size:15px;fill:#8b949e">+ Calcite</text>
 
-  <!-- Copper branch -->
-  <line x1="420" y1="135" x2="480" y2="165" class="arr" stroke="#f0883e" marker-end="url(#v1)" stroke-dasharray="4,2"/>
-  <rect x="490" y="150" width="160" height="80" class="box" stroke="#79c0ff"/><text x="570" y="178" text-anchor="middle" class="lbl">Foundry C</text><text x="570" y="200" text-anchor="middle" class="sub">Copper + Molten Iron</text><text x="570" y="218" text-anchor="middle" style="font-size:11px;fill:#8b949e">→ Molten Copper</text>
+  
+  <line x1="420" y1="135" x2="480" y2="165" class="arr" stroke="#f0883e" marker-end="url(#v1)" stroke-dasharray="4,2" />
+  <rect x="490" y="150" width="160" height="80" class="box" stroke="#79c0ff" /><text x="570" y="178" text-anchor="middle" class="lbl">Foundry C</text><text x="570" y="200" text-anchor="middle" class="sub">Copper + Molten Iron</text><text x="570" y="218" text-anchor="middle" style="font-size:15px;fill:#8b949e">→ Molten Copper</text>
 
-  <!-- Ash Recycling -->
-  <line x1="650" y1="117" x2="710" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)"/>
-  <rect x="720" y="80" width="150" height="75" class="box" stroke="#3fb950"/><text x="795" y="110" text-anchor="middle" class="lbl">Ash Recycler</text><text x="795" y="135" text-anchor="middle" class="sub">→ Calcite</text>
+  
+  <line x1="650" y1="117" x2="710" y2="117" class="arr" stroke="#f0883e" marker-end="url(#v1)" />
+  <rect x="720" y="80" width="150" height="75" class="box" stroke="#3fb950" /><text x="795" y="110" text-anchor="middle" class="lbl">Ash Recycler</text><text x="795" y="135" text-anchor="middle" class="sub">→ Calcite</text>
 
-  <!-- Loop back -->
-  <path d="M 795 80 Q 795 50 400 50 Q 120 50 120 80" stroke="#3fb950" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#v3)"/>
-  <text x="450" y="45" text-anchor="middle" style="font-size:11px;fill:#3fb950">Calcite Loop</text>
+  
+  <path d="M 795 80 Q 795 50 400 50 Q 120 50 120 80" stroke="#3fb950" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#v3)" />
+  <text x="450" y="45" text-anchor="middle" style="font-size:15px;fill:#3fb950">Calcite Loop</text>
 
-  <!-- Bottom: Module 4 -->
-  <rect x="50" y="260" width="800" height="160" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  
+  <rect x="50" y="260" width="800" height="160" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="450" y="292" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#e6edf3">Endgame: Tungsten Carbide → Module 4</text>
-  <line x1="70" y1="305" x2="830" y2="305" stroke="#21262d"/>
+  <line x1="70" y1="305" x2="830" y2="305" stroke="#21262d" />
 
-  <rect x="80" y="320" width="350" height="85" rx="6" fill="#0d1117" stroke="#79c0ff" stroke-width="1.5"/>
+  <rect x="80" y="320" width="350" height="85" rx="6" fill="#0d1117" stroke="#79c0ff" stroke-width="1.5" />
   <text x="255" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#79c0ff">Tungsten Carbide</text>
   <text x="255" y="378" text-anchor="middle" class="sub">5 tungsten ore + 5 iron + 5 coke</text>
-  <text x="255" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">Unique to Vulcanus</text>
+  <text x="255" y="395" text-anchor="middle" style="font-size:15px;fill:#8b949e">Unique to Vulcanus</text>
 
-  <rect x="470" y="320" width="360" height="85" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <rect x="470" y="320" width="360" height="85" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5" />
   <text x="650" y="352" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#f0883e">Productivity Module 4</text>
   <text x="650" y="378" text-anchor="middle" class="sub">5 TC + 5 PM3 + 1 advanced circuit</text>
-  <text x="650" y="395" text-anchor="middle" style="font-size:11px;fill:#8b949e">+30% productivity (vs PM3's +10%)</text>
+  <text x="650" y="395" text-anchor="middle" style="font-size:15px;fill:#8b949e">+30% productivity (vs PM3's +10%)</text>
 </svg>

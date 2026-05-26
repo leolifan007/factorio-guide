@@ -1,43 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" style="background:#111;font-family:system-ui,sans-serif;">
-  <!-- Red Wire Network -->
-  <rect x="15" y="15" width="370" height="350" rx="6" fill="none" stroke="#c9463d" stroke-width="2.5" stroke-dasharray="8,4"/>
+  
+  <rect x="15" y="15" width="370" height="350" rx="6" fill="none" stroke="#c9463d" stroke-width="2.5" stroke-dasharray="8,4" />
   <text x="200" y="340" fill="#c9463d" font-size="16" text-anchor="middle" font-weight="bold">Red Wire Network</text>
 
-  <circle cx="100" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="100" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="100" y="114" fill="#e8e8e8" font-size="13" text-anchor="middle">Storage</text>
   <text x="100" y="132" fill="#e8e8e8" font-size="13" text-anchor="middle">Tank</text>
 
-  <circle cx="260" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="260" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="260" y="118" fill="#e8e8e8" font-size="13" text-anchor="middle">Pump</text>
 
-  <line x1="130" y1="120" x2="230" y2="120" stroke="#c9463d" stroke-width="3.5"/>
+  <line x1="130" y1="120" x2="230" y2="120" stroke="#c9463d" stroke-width="3.5" />
 
-  <circle cx="100" cy="250" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="100" cy="250" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="100" y="248" fill="#e8e8e8" font-size="13" text-anchor="middle">Decider</text>
 
-  <line x1="100" y1="150" x2="100" y2="220" stroke="#c9463d" stroke-width="3.5"/>
+  <line x1="100" y1="150" x2="100" y2="220" stroke="#c9463d" stroke-width="3.5" />
 
-  <!-- Green Wire Network -->
-  <rect x="415" y="15" width="370" height="350" rx="6" fill="none" stroke="#6abe30" stroke-width="2.5" stroke-dasharray="8,4"/>
+  
+  <rect x="415" y="15" width="370" height="350" rx="6" fill="none" stroke="#6abe30" stroke-width="2.5" stroke-dasharray="8,4" />
   <text x="600" y="340" fill="#6abe30" font-size="16" text-anchor="middle" font-weight="bold">Green Wire Network</text>
 
-  <circle cx="520" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="520" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="520" y="118" fill="#e8e8e8" font-size="13" text-anchor="middle">Chest</text>
 
-  <circle cx="680" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="680" cy="120" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="680" y="118" fill="#e8e8e8" font-size="13" text-anchor="middle">Inserter</text>
 
-  <line x1="550" y1="120" x2="650" y2="120" stroke="#6abe30" stroke-width="3.5"/>
+  <line x1="550" y1="120" x2="650" y2="120" stroke="#6abe30" stroke-width="3.5" />
 
-  <circle cx="600" cy="250" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5"/>
+  <circle cx="600" cy="250" r="30" fill="none" stroke="#e8e8e8" stroke-width="2.5" />
   <text x="600" y="248" fill="#e8e8e8" font-size="13" text-anchor="middle">Arithmetic</text>
 
-  <line x1="600" y1="150" x2="600" y2="220" stroke="#6abe30" stroke-width="3.5"/>
+  <line x1="600" y1="150" x2="600" y2="220" stroke="#6abe30" stroke-width="3.5" />
 
-  <!-- Separator -->
+  
   <text x="400" y="188" fill="#888" font-size="28" text-anchor="middle">×</text>
 
-  <!-- Bottom notes -->
-  <text x="200" y="378" fill="#555" font-size="12" text-anchor="middle">Red: production logic (tanks, belts, chests)</text>
-  <text x="600" y="378" fill="#555" font-size="12" text-anchor="middle">Green: global signals (trains, logistics)</text>
+  
+  <text x="200" y="378" fill="#555" font-size="13" text-anchor="middle">Red: production logic (tanks, belts, chests)</text>
+  <text x="600" y="378" fill="#555" font-size="13" text-anchor="middle">Green: global signals (trains, logistics)</text>
 </svg>

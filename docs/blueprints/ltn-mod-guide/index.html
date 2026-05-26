@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.">
-  <title>LTN 鈥?Logistic Train Network Setup | Factorio Guide</title>
+  <title>LTN —Logistic Train Network Setup | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1313/blueprints/ltn-mod-guide/">
+  <link rel="canonical" href="https://factorioguides.com/blueprints/ltn-mod-guide/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,10 +26,10 @@
   
 
   
-  <meta property="og:title" content="LTN 鈥?Logistic Train Network Setup">
+  <meta property="og:title" content="LTN —Logistic Train Network Setup">
   <meta property="og:description" content="LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1313/blueprints/ltn-mod-guide/">
+  <meta property="og:url" content="https://factorioguides.com/blueprints/ltn-mod-guide/">
 </head>
 <body>
 
@@ -59,7 +59,7 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>LTN 鈥?Logistic Train Network Setup</h1><p class="article-desc">LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.</p>
+      <h1>LTN —Logistic Train Network Setup</h1><p class="article-desc">LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.</p>
       <div class="article-meta">
         <span class="meta-item">
           
@@ -106,21 +106,21 @@
         
         <nav class="breadcrumb">
           <a href="/">Home</a>
-          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-sep">&rsaquo;</span>
           
           <a href="/blueprints/">Blueprints and Blueprint Books</a>
           
-          <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">LTN 鈥?Logistic Train Network Setup</span>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">LTN —Logistic Train Network Setup</span>
         </nav>
 
         <p>LTN (Logistic Train Network) turns trains into logistic bots. <div class="game-slot"><img src="/images/icon/rail.png" alt="rail" class="game-img" loading="lazy">
   <span class="game-name">Rail</span>
 </div>
- Trains automatically travel from providers to requesters based on supply and demand 鈥?no schedules needed.</p>
+ Trains automatically travel from providers to requesters based on supply and demand —no schedules needed.</p>
 <div class="pro-tip"><strong>TL;DR:</strong> Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.</div>
 
-<img src="/images/diagrams/ltn-3stop.svg" alt="LTN 3-stop system 鈥?depot, provider stop, and requester stop with train flow" class="schema-diagram" loading="lazy" width="900">
+<img src="/images/diagrams/ltn-3stop.svg" alt="LTN 3-stop system —depot, provider stop, and requester stop with train flow" class="schema-diagram" loading="lazy" width="900">
 
 <h2 id="the-3-stop-system">The 3-Stop System</h2>
 <p>LTN requires three stop types:</p>
@@ -161,9 +161,9 @@
 <h2 id="depot-setup">Depot Setup</h2>
 <p>The depot is where idle trains park. Critical rules:</p>
 <ul>
-<li><strong>Minimum 2 trains</strong> 鈥?one loading/unloading, one waiting</li>
-<li><strong>No schedule</strong> 鈥?LTN assigns temporary schedules</li>
-<li><strong>Fuel station</strong> 鈥?trains refuel at depot automatically</li>
+<li><strong>Minimum 2 trains</strong> —one loading/unloading, one waiting</li>
+<li><strong>No schedule</strong> —LTN assigns temporary schedules</li>
+<li><strong>Fuel station</strong> —trains refuel at depot automatically</li>
 </ul>
 <p>Place depots centrally on your rail network. Every train should reach a depot within 30 seconds of emptying.</p>
 <h2 id="provider-stops">Provider Stops</h2>
@@ -184,10 +184,10 @@
 <p><strong>Best practice:</strong> Use requester chests with high request counts. LTN batches deliveries to minimize train trips.</p>
 <h2 id="what-veterans-learn-the-hard-way">What Veterans Learn the Hard Way</h2>
 <ul>
-<li><strong>Depot trains must be empty</strong> 鈥?LTN can't assign a train carrying cargo</li>
-<li><strong>Wire every stop</strong> 鈥?unwired stops break the network</li>
-<li><strong>Thresholds matter</strong> 鈥?too low = train spam; too high = stockouts</li>
-<li><strong>One item type per provider</strong> 鈥?mixed providers confuse LTN</li>
+<li><strong>Depot trains must be empty</strong> —LTN can't assign a train carrying cargo</li>
+<li><strong>Wire every stop</strong> —unwired stops break the network</li>
+<li><strong>Thresholds matter</strong> —too low = train spam; too high = stockouts</li>
+<li><strong>One item type per provider</strong> —mixed providers confuse LTN</li>
 </ul>
 <h2 id="common-mistakes">Common Mistakes</h2>
 <table>
@@ -219,7 +219,7 @@
 <h2 id="the-bottom-line">The Bottom Line</h2>
 <p>LTN automates train logistics. Build depots with 2+ trains. Wire providers to storage chests. Wire requesters to requester chests. Set thresholds. Let LTN handle the rest.</p>
 <hr>
-<p><strong>Related:</strong> <a href="http://localhost:1313/trains-logistics/basic-rail-network/">Basic Rail Network</a> | <a href="http://localhost:1313/blueprints/circuit-network-guide/">Circuit Network Guide</a></p>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/trains-logistics/basic-rail-network/">Basic Rail Network</a> | <a href="https://factorioguides.com/blueprints/circuit-network-guide/">Circuit Network Guide</a></p>
 
 
         

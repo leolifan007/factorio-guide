@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
-  <defs><marker id="m1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e"/></marker></defs>
+  <defs><marker id="m1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#f0883e" /></marker></defs>
   <style>.bg{fill:#0d1117}.box{fill:#161b22;stroke-width:2;rx:4}.lbl{font-family:'Segoe UI',sans-serif;font-size:17px;font-weight:bold;fill:#e6edf3}.sub{font-family:'Segoe UI',sans-serif;font-size:13px;fill:#8b949e}.arr{stroke-width:3;fill:none}</style>
-  <rect width="900" height="420" class="bg" rx="10"/>
+  <rect width="900" height="420" class="bg" rx="10" />
   <text x="450" y="38" text-anchor="middle" style="font-family:'Segoe UI';font-size:22px;font-weight:bold;fill:#e6edf3">8-Beacon Layout</text>
-  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d"/>
+  <line x1="30" y1="52" x2="870" y2="52" stroke="#21262d" />
 
-  <!-- Grid showing 7-tile spacing -->
+  
   <g transform="translate(100,80)">
-    <!-- Beacons around assembler -->
-    <rect x="0" y="0" width="40" height="40" class="box" stroke="#f0883e"/><text x="20" y="25" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <rect x="50" y="0" width="40" height="40" class="box" stroke="#f0883e"/><text x="70" y="25" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <rect x="100" y="0" width="40" height="40" class="box" stroke="#f0883e"/><text x="120" y="25" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
+    
+    <rect x="0" y="0" width="40" height="40" class="box" stroke="#f0883e" /><text x="20" y="25" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    <rect x="50" y="0" width="40" height="40" class="box" stroke="#f0883e" /><text x="70" y="25" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    <rect x="100" y="0" width="40" height="40" class="box" stroke="#f0883e" /><text x="120" y="25" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
 
-    <rect x="0" y="50" width="40" height="40" class="box" stroke="#f0883e"/><text x="20" y="75" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <!-- Assembler (3x3) -->
-    <rect x="50" y="50" width="90" height="90" class="box" stroke="#58a6ff" stroke-width="3"/><text x="95" y="95" text-anchor="middle" class="lbl" style="font-size:14px">Assembler</text><text x="95" y="115" text-anchor="middle" class="sub" style="font-size:10px">4× PM3</text>
-    <rect x="100" y="50" width="40" height="40" class="box" stroke="#f0883e"/><text x="120" y="75" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
+    <rect x="0" y="50" width="40" height="40" class="box" stroke="#f0883e" /><text x="20" y="75" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    
+    <rect x="50" y="50" width="90" height="90" class="box" stroke="#58a6ff" stroke-width="3" /><text x="95" y="95" text-anchor="middle" class="lbl" style="font-size:15px">Assembler</text><text x="95" y="115" text-anchor="middle" class="sub" style="font-size:15px">4× PM3</text>
+    <rect x="100" y="50" width="40" height="40" class="box" stroke="#f0883e" /><text x="120" y="75" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
 
-    <rect x="0" y="100" width="40" height="40" class="box" stroke="#f0883e"/><text x="20" y="125" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <rect x="100" y="100" width="40" height="40" class="box" stroke="#f0883e"/><text x="120" y="125" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
+    <rect x="0" y="100" width="40" height="40" class="box" stroke="#f0883e" /><text x="20" y="125" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    <rect x="100" y="100" width="40" height="40" class="box" stroke="#f0883e" /><text x="120" y="125" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
 
-    <rect x="0" y="150" width="40" height="40" class="box" stroke="#f0883e"/><text x="20" y="175" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <rect x="50" y="150" width="40" height="40" class="box" stroke="#f0883e"/><text x="70" y="175" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
-    <rect x="100" y="150" width="40" height="40" class="box" stroke="#f0883e"/><text x="120" y="175" text-anchor="middle" style="font-size:10px;fill:#f0883e">B</text>
+    <rect x="0" y="150" width="40" height="40" class="box" stroke="#f0883e" /><text x="20" y="175" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    <rect x="50" y="150" width="40" height="40" class="box" stroke="#f0883e" /><text x="70" y="175" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
+    <rect x="100" y="150" width="40" height="40" class="box" stroke="#f0883e" /><text x="120" y="175" text-anchor="middle" style="font-size:15px;fill:#f0883e">B</text>
 
     <text x="70" y="210" text-anchor="middle" class="sub">8 Beacons × SM3 = +400% speed</text>
   </g>
 
-  <!-- Math explanation -->
-  <rect x="450" y="80" width="400" height="280" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  
+  <rect x="450" y="80" width="400" height="280" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="650" y="115" text-anchor="middle" style="font-family:'Segoe UI';font-size:18px;font-weight:bold;fill:#e6edf3">The Math</text>
-  <line x1="470" y1="128" x2="830" y2="128" stroke="#21262d"/>
+  <line x1="470" y1="128" x2="830" y2="128" stroke="#21262d" />
 
   <text x="480" y="160" style="font-family:'Segoe UI';font-size:15px;font-weight:bold;fill:#58a6ff">Productivity Module 3</text>
   <text x="480" y="185" class="sub">-40% speed, +30% items per craft</text>
@@ -41,6 +41,6 @@
   <text x="480" y="280" style="font-family:'Segoe UI';font-size:15px;font-weight:bold;fill:#3fb950">Net Result</text>
   <text x="480" y="305" class="sub">+30% productivity at +10% speed</text>
 
-  <rect x="470" y="330" width="360" height="20" rx="4" fill="#da3633" fill-opacity="0.15"/>
-  <text x="650" y="345" text-anchor="middle" style="font-size:13px;fill:#f85149">Fewer than 8 beacons = incomplete speed cancellation</text>
+  <rect x="470" y="330" width="360" height="20" rx="4" fill="#da3633" fill-opacity="0.15" />
+  <text x="650" y="345" text-anchor="middle" style="font-size:15px;fill:#f85149">Fewer than 8 beacons = incomplete speed cancellation</text>
 </svg>

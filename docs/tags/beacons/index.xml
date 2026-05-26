@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beacons on Factorio Guide</title>
-    <link>http://localhost:1313/tags/beacons/</link>
+    <link>https://factorioguides.com/tags/beacons/</link>
     <description>Recent content in Beacons on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/beacons/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://factorioguides.com/tags/beacons/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Beacon and Module Layout 鈥?8-Beacon Setup</title>
-      <link>http://localhost:1313/production-ratios/beacon-module-guide/</link>
+      <title>Beacon and Module Layout —8-Beacon Setup</title>
+      <link>https://factorioguides.com/production-ratios/beacon-module-guide/</link>
       <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
-      <guid>http://localhost:1313/production-ratios/beacon-module-guide/</guid>
-      <description>&lt;p&gt;Beacons amplify module effects across multiple buildings. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/icon/beacon.png&#34; alt=&#34;beacon&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Beacon&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; One beacon with &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/icon/productivity_module_3.png&#34; alt=&#34;productivity_module_3&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Productivity&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; speed modules can boost 8 nearby assemblers 鈥?if you lay them out correctly.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/diagrams/8-beacon-layout.svg&#34; alt=&#34;8-beacon layout showing assembler surrounded by 8 beacons with module distribution&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-beacons-work&#34;&gt;How Beacons Work&lt;/h2&gt;&#xA;&lt;p&gt;Beacons transmit module effects to nearby buildings:&lt;/p&gt;</description>
+      <guid>https://factorioguides.com/production-ratios/beacon-module-guide/</guid>
+      <description>&lt;p&gt;Beacons amplify module effects across multiple buildings. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/beacon.png&#34; alt=&#34;beacon&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Beacon&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; One beacon with &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/productivity_module_3.png&#34; alt=&#34;productivity_module_3&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Productivity&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; speed modules can boost 8 nearby assemblers —if you lay them out correctly.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/8-beacon-layout.svg&#34; alt=&#34;8-beacon layout showing assembler surrounded by 8 beacons with module distribution&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-beacons-work&#34;&gt;How Beacons Work&lt;/h2&gt;&#xA;&lt;p&gt;Beacons transmit module effects to nearby buildings:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

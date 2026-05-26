@@ -1,183 +1,183 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1100px;background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
   <defs>
-    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
   </defs>
 
-  <!-- Title -->
-  <rect x="0" y="0" width="1100" height="60" fill="#252525" rx="8"/>
-  <rect x="0" y="52" width="1100" height="8" fill="#252525"/>
+  
+  <rect x="0" y="0" width="1100" height="60" fill="#252525" rx="8" />
+  <rect x="0" y="52" width="1100" height="8" fill="#252525" />
   <text x="550" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017" filter="url(#glow)">🏭 OIL REFINERY — PIPE MANIFOLD LAYOUT</text>
 
-  <!-- ===== WATER SUPPLY ===== -->
-  <rect x="40" y="72" width="1020" height="30" rx="4" fill="#0a1a2a" stroke="#44aaff" stroke-width="1.5"/>
-  <text x="550" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#44aaff">=== Water Supply Pipe (4 Offshore Pumps) ===</text>
+  
+  <rect x="40" y="72" width="1020" height="30" rx="4" fill="#0a1a2a" stroke="#44aaff" stroke-width="1.5" />
+  <text x="550" y="91" text-anchor="middle" font-size="18" font-weight="600" fill="#44aaff">=== Water Supply Pipe (4 Offshore Pumps) ===</text>
 
-  <rect x="1050" y="74" width="22" height="26" rx="4" fill="#44aaff" opacity="0.3"/>
-  <text x="1061" y="91" text-anchor="middle" font-size="10" fill="#44aaff">H₂O</text>
+  <rect x="1050" y="74" width="22" height="26" rx="4" fill="#44aaff" opacity="0.3" />
+  <text x="1061" y="91" text-anchor="middle" font-size="18" fill="#44aaff">H₂O</text>
 
-  <!-- ===== REFINERY ROW ===== -->
-  <rect x="40" y="108" width="1020" height="30" rx="4" fill="#151515" stroke="#333" stroke-width="1"/>
-  <text x="550" y="127" text-anchor="middle" font-size="12" font-weight="600" fill="#888">REFINERY ROW — Advanced Processing | Input: Crude + Water → Output: 3 Products</text>
+  
+  <rect x="40" y="108" width="1020" height="30" rx="4" fill="#151515" stroke="#333" stroke-width="1" />
+  <text x="550" y="127" text-anchor="middle" font-size="18" font-weight="600" fill="#888">REFINERY ROW — Advanced Processing | Input: Crude + Water → Output: 3 Products</text>
 
-  <!-- 8 refineries in a row -->
-  <rect x="50" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="106" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="106" y="185" text-anchor="middle" font-size="10" fill="#888">#1</text>
-  <!-- Water drop from above -->
-  <line x1="106" y1="102" x2="106" y2="144" stroke="#44aaff" stroke-width="2"/>
+  
+  <rect x="50" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="106" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="106" y="185" text-anchor="middle" font-size="18" fill="#888">#1</text>
+  
+  <line x1="106" y1="102" x2="106" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <rect x="180" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="236" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="236" y="185" text-anchor="middle" font-size="10" fill="#888">#2</text>
-  <line x1="236" y1="102" x2="236" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="180" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="236" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="236" y="185" text-anchor="middle" font-size="18" fill="#888">#2</text>
+  <line x1="236" y1="102" x2="236" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <rect x="310" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="366" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="366" y="185" text-anchor="middle" font-size="10" fill="#888">#3</text>
-  <line x1="366" y1="102" x2="366" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="310" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="366" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="366" y="185" text-anchor="middle" font-size="18" fill="#888">#3</text>
+  <line x1="366" y1="102" x2="366" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <rect x="440" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="496" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="496" y="185" text-anchor="middle" font-size="10" fill="#888">#4</text>
-  <line x1="496" y1="102" x2="496" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="440" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="496" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="496" y="185" text-anchor="middle" font-size="18" fill="#888">#4</text>
+  <line x1="496" y1="102" x2="496" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <text x="600" y="182" text-anchor="middle" font-size="15" fill="#555">…</text>
+  <text x="600" y="182" text-anchor="middle" font-size="18" fill="#555">…</text>
 
-  <rect x="650" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="706" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="706" y="185" text-anchor="middle" font-size="10" fill="#888">#5</text>
-  <line x1="706" y1="102" x2="706" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="650" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="706" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="706" y="185" text-anchor="middle" font-size="18" fill="#888">#5</text>
+  <line x1="706" y1="102" x2="706" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <rect x="780" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="836" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="836" y="185" text-anchor="middle" font-size="10" fill="#888">#6</text>
-  <line x1="836" y1="102" x2="836" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="780" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="836" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="836" y="185" text-anchor="middle" font-size="18" fill="#888">#6</text>
+  <line x1="836" y1="102" x2="836" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <rect x="910" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2"/>
-  <text x="966" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#d4a017">Refinery</text>
-  <text x="966" y="185" text-anchor="middle" font-size="10" fill="#888">#7</text>
-  <line x1="966" y1="102" x2="966" y2="144" stroke="#44aaff" stroke-width="2"/>
+  <rect x="910" y="144" width="112" height="60" rx="4" fill="#1a1a0a" stroke="#d4a017" stroke-width="2" />
+  <text x="966" y="167" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">Refinery</text>
+  <text x="966" y="185" text-anchor="middle" font-size="18" fill="#888">#7</text>
+  <line x1="966" y1="102" x2="966" y2="144" stroke="#44aaff" stroke-width="2" />
 
-  <!-- #8 shown separately with "4 more" note -->
-  <text x="550" y="198" text-anchor="middle" font-size="10" fill="#555">(4 refineries shown in middle → total of 8)</text>
+  
+  <text x="550" y="198" text-anchor="middle" font-size="18" fill="#555">(4 refineries shown in middle → total of 8)</text>
 
-  <!-- ===== OUTPUT PIPE MANIFOLD ===== -->
+  
 
-  <!-- Heavy Oil Pipe -->
-  <rect x="30" y="218" width="890" height="24" rx="4" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
-  <text x="920" y="222" text-anchor="end" font-size="12" fill="#8b4513">=== Heavy Oil → Lube + Cracker</text>
-  <circle cx="920" cy="230" r="6" fill="none" stroke="#d4a017" stroke-width="1.5"/>
+  
+  <rect x="30" y="218" width="890" height="24" rx="4" fill="#1a0f00" stroke="#8b4513" stroke-width="2" />
+  <text x="920" y="222" text-anchor="end" font-size="18" fill="#8b4513">=== Heavy Oil → Lube + Cracker</text>
+  <circle cx="920" cy="230" r="6" fill="none" stroke="#d4a017" stroke-width="1.5" />
 
-  <!-- Drop pipes from refineries to heavy -->
-  <line x1="106" y1="204" x2="106" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="106" cy="212" r="3" fill="#8b4513"/>
-  <line x1="236" y1="204" x2="236" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="236" cy="212" r="3" fill="#8b4513"/>
-  <line x1="366" y1="204" x2="366" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="366" cy="212" r="3" fill="#8b4513"/>
-  <line x1="496" y1="204" x2="496" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="496" cy="212" r="3" fill="#8b4513"/>
-  <line x1="706" y1="204" x2="706" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="706" cy="212" r="3" fill="#8b4513"/>
-  <line x1="836" y1="204" x2="836" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="836" cy="212" r="3" fill="#8b4513"/>
-  <line x1="966" y1="204" x2="966" y2="218" stroke="#8b4513" stroke-width="2.5"/>
-  <circle cx="966" cy="212" r="3" fill="#8b4513"/>
+  
+  <line x1="106" y1="204" x2="106" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="106" cy="212" r="3" fill="#8b4513" />
+  <line x1="236" y1="204" x2="236" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="236" cy="212" r="3" fill="#8b4513" />
+  <line x1="366" y1="204" x2="366" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="366" cy="212" r="3" fill="#8b4513" />
+  <line x1="496" y1="204" x2="496" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="496" cy="212" r="3" fill="#8b4513" />
+  <line x1="706" y1="204" x2="706" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="706" cy="212" r="3" fill="#8b4513" />
+  <line x1="836" y1="204" x2="836" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="836" cy="212" r="3" fill="#8b4513" />
+  <line x1="966" y1="204" x2="966" y2="218" stroke="#8b4513" stroke-width="2.5" />
+  <circle cx="966" cy="212" r="3" fill="#8b4513" />
 
-  <!-- Light Oil Pipe -->
-  <rect x="30" y="246" width="890" height="24" rx="4" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
-  <text x="920" y="250" text-anchor="end" font-size="12" fill="#d4a017">=== Light Oil → Fuel + Cracker</text>
-  <circle cx="920" cy="258" r="6" fill="none" stroke="#d4a017" stroke-width="1.5"/>
+  
+  <rect x="30" y="246" width="890" height="24" rx="4" fill="#1a1a00" stroke="#d4a017" stroke-width="2" />
+  <text x="920" y="250" text-anchor="end" font-size="18" fill="#d4a017">=== Light Oil → Fuel + Cracker</text>
+  <circle cx="920" cy="258" r="6" fill="none" stroke="#d4a017" stroke-width="1.5" />
 
-  <!-- Drop pipes from refineries to light -->
-  <line x1="106" y1="204" x2="106" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="106" cy="232" r="3" fill="#d4a017"/>
-  <line x1="236" y1="204" x2="236" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="236" cy="232" r="3" fill="#d4a017"/>
-  <line x1="366" y1="204" x2="366" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="366" cy="232" r="3" fill="#d4a017"/>
-  <line x1="496" y1="204" x2="496" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="496" cy="232" r="3" fill="#d4a017"/>
-  <line x1="706" y1="204" x2="706" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="706" cy="232" r="3" fill="#d4a017"/>
-  <line x1="836" y1="204" x2="836" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="836" cy="232" r="3" fill="#d4a017"/>
-  <line x1="966" y1="204" x2="966" y2="246" stroke="#d4a017" stroke-width="2.5"/>
-  <circle cx="966" cy="232" r="3" fill="#d4a017"/>
+  
+  <line x1="106" y1="204" x2="106" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="106" cy="232" r="3" fill="#d4a017" />
+  <line x1="236" y1="204" x2="236" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="236" cy="232" r="3" fill="#d4a017" />
+  <line x1="366" y1="204" x2="366" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="366" cy="232" r="3" fill="#d4a017" />
+  <line x1="496" y1="204" x2="496" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="496" cy="232" r="3" fill="#d4a017" />
+  <line x1="706" y1="204" x2="706" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="706" cy="232" r="3" fill="#d4a017" />
+  <line x1="836" y1="204" x2="836" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="836" cy="232" r="3" fill="#d4a017" />
+  <line x1="966" y1="204" x2="966" y2="246" stroke="#d4a017" stroke-width="2.5" />
+  <circle cx="966" cy="232" r="3" fill="#d4a017" />
 
-  <!-- Petroleum Pipe -->
-  <rect x="30" y="274" width="890" height="24" rx="4" fill="#000d1a" stroke="#5599ee" stroke-width="2"/>
-  <text x="920" y="278" text-anchor="end" font-size="12" fill="#5599ee">=== Petroleum Gas → Plastic + Sulfur</text>
-  <circle cx="920" cy="286" r="6" fill="none" stroke="#5599ee" stroke-width="1.5"/>
+  
+  <rect x="30" y="274" width="890" height="24" rx="4" fill="#000d1a" stroke="#5599ee" stroke-width="2" />
+  <text x="920" y="278" text-anchor="end" font-size="18" fill="#5599ee">=== Petroleum Gas → Plastic + Sulfur</text>
+  <circle cx="920" cy="286" r="6" fill="none" stroke="#5599ee" stroke-width="1.5" />
 
-  <!-- Drop pipes from refineries to petroleum -->
-  <line x1="106" y1="204" x2="106" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="106" cy="260" r="3" fill="#5599ee"/>
-  <line x1="236" y1="204" x2="236" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="236" cy="260" r="3" fill="#5599ee"/>
-  <line x1="366" y1="204" x2="366" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="366" cy="260" r="3" fill="#5599ee"/>
-  <line x1="496" y1="204" x2="496" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="496" cy="260" r="3" fill="#5599ee"/>
-  <line x1="706" y1="204" x2="706" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="706" cy="260" r="3" fill="#5599ee"/>
-  <line x1="836" y1="204" x2="836" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="836" cy="260" r="3" fill="#5599ee"/>
-  <line x1="966" y1="204" x2="966" y2="274" stroke="#5599ee" stroke-width="2.5"/>
-  <circle cx="966" cy="260" r="3" fill="#5599ee"/>
+  
+  <line x1="106" y1="204" x2="106" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="106" cy="260" r="3" fill="#5599ee" />
+  <line x1="236" y1="204" x2="236" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="236" cy="260" r="3" fill="#5599ee" />
+  <line x1="366" y1="204" x2="366" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="366" cy="260" r="3" fill="#5599ee" />
+  <line x1="496" y1="204" x2="496" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="496" cy="260" r="3" fill="#5599ee" />
+  <line x1="706" y1="204" x2="706" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="706" cy="260" r="3" fill="#5599ee" />
+  <line x1="836" y1="204" x2="836" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="836" cy="260" r="3" fill="#5599ee" />
+  <line x1="966" y1="204" x2="966" y2="274" stroke="#5599ee" stroke-width="2.5" />
+  <circle cx="966" cy="260" r="3" fill="#5599ee" />
 
-  <!-- ===== CONSUMERS: Crackers & Production ===== -->
-  <rect x="40" y="310" width="1020" height="30" rx="4" fill="#151515" stroke="#333" stroke-width="1"/>
-  <text x="550" y="329" text-anchor="middle" font-size="12" font-weight="600" fill="#888">DOWNSTREAM CONSUMERS</text>
+  
+  <rect x="40" y="310" width="1020" height="30" rx="4" fill="#151515" stroke="#333" stroke-width="1" />
+  <text x="550" y="329" text-anchor="middle" font-size="18" font-weight="600" fill="#888">DOWNSTREAM CONSUMERS</text>
 
-  <!-- Heavy Oil Consumer: Lubricant -->
-  <rect x="50" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#44aa77" stroke-width="1.5"/>
-  <text x="120" y="370" text-anchor="middle" font-size="13" font-weight="600" fill="#66cc99">Lubricant</text>
-  <text x="120" y="390" text-anchor="middle" font-size="10" fill="#888">1 Heavy → 10 Lube</text>
-  <line x1="50" y1="242" x2="50" y2="348" stroke="#8b4513" stroke-width="2"/>
+  
+  <rect x="50" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#44aa77" stroke-width="1.5" />
+  <text x="120" y="370" text-anchor="middle" font-size="18" font-weight="600" fill="#66cc99">Lubricant</text>
+  <text x="120" y="390" text-anchor="middle" font-size="18" fill="#888">1 Heavy → 10 Lube</text>
+  <line x1="50" y1="242" x2="50" y2="348" stroke="#8b4513" stroke-width="2" />
 
-  <!-- Heavy → Light Cracker -->
-  <rect x="210" y="348" width="155" height="50" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
-  <text x="287" y="368" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">H→L Cracker</text>
-  <text x="287" y="388" text-anchor="middle" font-size="11" fill="#888">× 1  |  40→30 / 2s</text>
-  <!-- Arrow: Heavy pipe → H→L Cracker -->
-  <line x1="190" y1="242" x2="210" y2="242" stroke="#8b4513" stroke-width="2"/>
-  <line x1="210" y1="242" x2="210" y2="348" stroke="#8b4513" stroke-width="2"/>
-  <polygon points="287,398 282,408 292,408" fill="#d4a017"/>
+  
+  <rect x="210" y="348" width="155" height="50" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2" />
+  <text x="287" y="368" text-anchor="middle" font-size="18" font-weight="700" fill="#d4a017">H→L Cracker</text>
+  <text x="287" y="388" text-anchor="middle" font-size="18" fill="#888">× 1  |  40→30 / 2s</text>
+  
+  <line x1="190" y1="242" x2="210" y2="242" stroke="#8b4513" stroke-width="2" />
+  <line x1="210" y1="242" x2="210" y2="348" stroke="#8b4513" stroke-width="2" />
+  <polygon points="287,398 282,408 292,408" fill="#d4a017" />
 
-  <!-- Light → Petro Crackers -->
-  <rect x="400" y="348" width="155" height="50" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
-  <text x="477" y="368" text-anchor="middle" font-size="13" font-weight="700" fill="#f0c040">L→P Cracker</text>
-  <text x="477" y="388" text-anchor="middle" font-size="11" fill="#888">× 7  |  30→20 / 2s</text>
-  <line x1="380" y1="258" x2="400" y2="258" stroke="#d4a017" stroke-width="2"/>
-  <line x1="400" y1="258" x2="400" y2="348" stroke="#d4a017" stroke-width="2"/>
-  <!-- Arrow down -->
-  <polygon points="477,398 472,408 482,408" fill="#5599ee"/>
+  
+  <rect x="400" y="348" width="155" height="50" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2" />
+  <text x="477" y="368" text-anchor="middle" font-size="18" font-weight="700" fill="#f0c040">L→P Cracker</text>
+  <text x="477" y="388" text-anchor="middle" font-size="18" fill="#888">× 7  |  30→20 / 2s</text>
+  <line x1="380" y1="258" x2="400" y2="258" stroke="#d4a017" stroke-width="2" />
+  <line x1="400" y1="258" x2="400" y2="348" stroke="#d4a017" stroke-width="2" />
+  
+  <polygon points="477,398 472,408 482,408" fill="#5599ee" />
 
-  <!-- Plastic -->
-  <rect x="590" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2"/>
-  <text x="660" y="370" text-anchor="middle" font-size="13" font-weight="600" fill="#88bbff">Plastic</text>
-  <text x="660" y="390" text-anchor="middle" font-size="10" fill="#888">20 Petro + Coal</text>
-  <line x1="590" y1="286" x2="590" y2="348" stroke="#5599ee" stroke-width="2"/>
+  
+  <rect x="590" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2" />
+  <text x="660" y="370" text-anchor="middle" font-size="18" font-weight="600" fill="#88bbff">Plastic</text>
+  <text x="660" y="390" text-anchor="middle" font-size="18" fill="#888">20 Petro + Coal</text>
+  <line x1="590" y1="286" x2="590" y2="348" stroke="#5599ee" stroke-width="2" />
 
-  <!-- Sulfur -->
-  <rect x="755" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2"/>
-  <text x="825" y="370" text-anchor="middle" font-size="13" font-weight="600" fill="#88bbff">Sulfur</text>
-  <text x="825" y="390" text-anchor="middle" font-size="10" fill="#888">30 Petro + Water</text>
-  <line x1="755" y1="286" x2="755" y2="348" stroke="#5599ee" stroke-width="2"/>
+  
+  <rect x="755" y="348" width="140" height="50" rx="5" fill="#0a1f0a" stroke="#5599ee" stroke-width="2" />
+  <text x="825" y="370" text-anchor="middle" font-size="18" font-weight="600" fill="#88bbff">Sulfur</text>
+  <text x="825" y="390" text-anchor="middle" font-size="18" fill="#888">30 Petro + Water</text>
+  <line x1="755" y1="286" x2="755" y2="348" stroke="#5599ee" stroke-width="2" />
 
-  <!-- ===== LEGEND ===== -->
-  <rect x="50" y="415" width="500" height="40" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
-  <rect x="60" y="424" width="18" height="18" rx="2" fill="#8b4513"/>
-  <text x="84" y="438" font-size="11" fill="#ccc">Heavy Oil Pipe</text>
-  <rect x="190" y="424" width="18" height="18" rx="2" fill="#d4a017"/>
-  <text x="214" y="438" font-size="11" fill="#ccc">Light Oil Pipe</text>
-  <rect x="320" y="424" width="18" height="18" rx="2" fill="#5599ee"/>
-  <text x="344" y="438" font-size="11" fill="#ccc">Petroleum Pipe</text>
-  <rect x="460" y="424" width="18" height="18" rx="2" fill="#44aaff"/>
-  <text x="484" y="438" font-size="11" fill="#ccc">Water Pipe</text>
+  
+  <rect x="50" y="415" width="500" height="40" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1" />
+  <rect x="60" y="424" width="18" height="18" rx="2" fill="#8b4513" />
+  <text x="84" y="438" font-size="18" fill="#ccc">Heavy Oil Pipe</text>
+  <rect x="190" y="424" width="18" height="18" rx="2" fill="#d4a017" />
+  <text x="214" y="438" font-size="18" fill="#ccc">Light Oil Pipe</text>
+  <rect x="320" y="424" width="18" height="18" rx="2" fill="#5599ee" />
+  <text x="344" y="438" font-size="18" fill="#ccc">Petroleum Pipe</text>
+  <rect x="460" y="424" width="18" height="18" rx="2" fill="#44aaff" />
+  <text x="484" y="438" font-size="18" fill="#ccc">Water Pipe</text>
 
-  <rect x="580" y="415" width="470" height="40" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
-  <text x="815" y="434" text-anchor="middle" font-size="12" fill="#888">Use underground pipes between refineries for walkability</text>
-  <text x="815" y="450" text-anchor="middle" font-size="11" fill="#555">Pump-controlled cracking prevents pipe backpressure</text>
+  <rect x="580" y="415" width="470" height="40" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1" />
+  <text x="815" y="434" text-anchor="middle" font-size="18" fill="#888">Use underground pipes between refineries for walkability</text>
+  <text x="815" y="450" text-anchor="middle" font-size="18" fill="#555">Pump-controlled cracking prevents pipe backpressure</text>
 </svg>

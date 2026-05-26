@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" style="background:#111;font-family:system-ui,sans-serif;">
   <text x="300" y="30" fill="#e8941c" font-size="16" text-anchor="middle" font-weight="bold">City Block Size Comparison</text>
-  <rect x="30" y="65" width="120" height="120" rx="2" fill="#1a1a1a" stroke="#888" stroke-width="1.5"/>
-  <rect x="40" y="75" width="100" height="100" rx="2" fill="#252525"/>
+  <rect x="30" y="65" width="120" height="120" rx="2" fill="#1a1a1a" stroke="#888" stroke-width="1.5" />
+  <rect x="40" y="75" width="100" height="100" rx="2" fill="#252525" />
   <text x="90" y="145" fill="#6abe30" font-size="11" text-anchor="middle">3-chunk</text>
-  <text x="90" y="160" fill="#888" font-size="9" text-anchor="middle">60x60 usable</text>
-  <text x="90" y="175" fill="#777" font-size="8" text-anchor="middle">Outposts</text>
-  <rect x="200" y="55" width="180" height="180" rx="2" fill="#1a1a1a" stroke="#f5aa2e" stroke-width="2"/>
-  <rect x="215" y="70" width="150" height="150" rx="2" fill="#252525" stroke="#f5aa2e" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="90" y="160" fill="#888" font-size="12" text-anchor="middle">60x60 usable</text>
+  <text x="90" y="175" fill="#777" font-size="12" text-anchor="middle">Outposts</text>
+  <rect x="200" y="55" width="180" height="180" rx="2" fill="#1a1a1a" stroke="#f5aa2e" stroke-width="2" />
+  <rect x="215" y="70" width="150" height="150" rx="2" fill="#252525" stroke="#f5aa2e" stroke-width="1" stroke-dasharray="4,2" />
   <text x="290" y="135" fill="#f5aa2e" font-size="16" text-anchor="middle" font-weight="bold">4-chunk</text>
   <text x="290" y="155" fill="#f5aa2e" font-size="11" text-anchor="middle">90x90 usable</text>
-  <text x="290" y="195" fill="#888" font-size="9" text-anchor="middle">Best for first megabase</text>
-  <rect x="430" y="45" width="150" height="220" rx="2" fill="#1a1a1a" stroke="#3778c8" stroke-width="1.5"/>
-  <rect x="445" y="60" width="120" height="190" rx="2" fill="#252525"/>
+  <text x="290" y="195" fill="#888" font-size="12" text-anchor="middle">Best for first megabase</text>
+  <rect x="430" y="45" width="150" height="220" rx="2" fill="#1a1a1a" stroke="#3778c8" stroke-width="1.5" />
+  <rect x="445" y="60" width="120" height="190" rx="2" fill="#252525" />
   <text x="505" y="145" fill="#3778c8" font-size="11" text-anchor="middle">6-chunk</text>
-  <text x="505" y="160" fill="#888" font-size="9" text-anchor="middle">150x150 usable</text>
-  <text x="505" y="175" fill="#777" font-size="8" text-anchor="middle">Massive builds</text>
-  <rect x="30" y="250" width="120" height="4" fill="#6abe30"/>
-  <text x="30" y="275" fill="#6abe30" font-size="8">96 tiles</text>
-  <rect x="200" y="245" width="180" height="4" fill="#f5aa2e"/>
-  <text x="200" y="275" fill="#f5aa2e" font-size="8">128 tiles</text>
-  <rect x="430" y="245" width="150" height="4" fill="#3778c8"/>
-  <text x="430" y="275" fill="#3778c8" font-size="8">192 tiles</text>
+  <text x="505" y="160" fill="#888" font-size="12" text-anchor="middle">150x150 usable</text>
+  <text x="505" y="175" fill="#777" font-size="12" text-anchor="middle">Massive builds</text>
+  <rect x="30" y="250" width="120" height="4" fill="#6abe30" />
+  <text x="30" y="275" fill="#6abe30" font-size="12">96 tiles</text>
+  <rect x="200" y="245" width="180" height="4" fill="#f5aa2e" />
+  <text x="200" y="275" fill="#f5aa2e" font-size="12">128 tiles</text>
+  <rect x="430" y="245" width="150" height="4" fill="#3778c8" />
+  <text x="430" y="275" fill="#3778c8" font-size="12">192 tiles</text>
 </svg>
