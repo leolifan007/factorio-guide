@@ -1,6 +1,6 @@
 ---
-title: "Quality Modules — Space Age New Mechanic Explained"
-description: "How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line."
+title: "Factorio Quality Module Guide - Space Age Quality Mechanic Explained"
+description: "How the Quality module system works in Factorio Space Age: quality tiers, probability math, quality module insertion strategy, and how to build a quality production line that actually pays off."
 date: 2026-05-18
 tags: ["space-age", "quality", "modules", "space-age"]
 emoji: "💎"

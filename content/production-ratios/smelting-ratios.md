@@ -1,6 +1,6 @@
 ---
-title: "Smelting Ratios — How Many Furnaces Per Belt"
-description: "Exact smelting ratios for iron, copper, steel, and stone. Never waste furnaces or belt capacity again."
+title: "Factorio Smelting Ratios - How Many Furnaces Per Belt (Iron/Copper/Steel)"
+description: "Exact smelting ratios for Factorio: how many furnaces per yellow/red/blue belt of iron, copper, steel, and stone. Electric furnace vs steel furnace math - never waste furnaces or belt capacity again."
 date: 2026-05-18
 tags: ["production-ratios", "smelting", "belts"]
 emoji: "🔥"

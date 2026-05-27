@@ -1,6 +1,6 @@
 ---
-title: "Artillery —Range, Shells, and Outpost Setup"
-description: "Artillery guide for Factorio. Shell production, range research, outpost placement, and the logistics chain that keeps your perimeter safe from biter attacks."
+title: "Factorio Artillery Guide - Range, Shells and Outpost Setup"
+description: "Artillery guide for Factorio: artillery range research, shell production automation, outpost placement strategy, and the logistics chain that keeps biters away from your base."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
 publishDate: 2026-05-27T16:52:00+08:00

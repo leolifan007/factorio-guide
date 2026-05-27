@@ -1,6 +1,6 @@
 ---
-title: "Flamethrower Turret Defense Guide"
-description: "Flamethrower turret guide for Factorio. Highest DPS turret, oil-based ammo, wall synergy with dragons teeth, and circuit-controlled ammo conservation for Space Age."
+title: "Factorio Flamethrower Turret Defense - Highest DPS Weapon Guide"
+description: "Flamethrower turret guide for Factorio: highest DPS turret in the game, oil-based ammo logistics, wall synergy with dragons teeth, and circuit-controlled ammo conservation."
 date: 2026-05-21
 tags: ["defense", "beginner"]
 draft: false

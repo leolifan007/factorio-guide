@@ -1,6 +1,6 @@
 ---
-title: "Space Platform Design Guide"
-description: "Space platform design for Factorio Space Age. Thruster ratio, platform weight, asteroid defense, platform hub setup, and the 3-stage build order that gets you to Gleba alive."
+title: "Factorio Space Platform Guide - Design, Thrusters and Asteroid Defense"
+description: "Space platform design guide for Factorio Space Age: thruster-to-asteroid-catcher ratio, platform weight limits, asteroid defense turret placement, hub setup, and the 3-stage build order that gets you to Gleba alive."
 date: 2026-05-21
 tags: ["space-age", "space-platform"]
 draft: false

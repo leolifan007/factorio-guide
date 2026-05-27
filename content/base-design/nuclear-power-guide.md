@@ -1,6 +1,6 @@
 ---
-title: "Nuclear Power — Complete Setup Guide"
-description: "Complete Factorio nuclear power guide: reactor layout, heat pipe physics, steam turbine ratios, Kovarex enrichment, and fuel efficiency from 40 MW to multi-GW."
+title: "Nuclear Reactor Ratios & Tileable Design — The Only Setup You Need"
+description: "Step-by-step Factorio nuclear reactor setup with exact tileable layouts, heat pipe ratios (1:20:40), steam turbine math, Kovarex enrichment loop, and fuel efficiency from 40 MW to multi-GW. Copy-paste ready for your megabase."
 date: 2026-05-21
 tags: ["base-design", "production-ratios"]
 draft: false

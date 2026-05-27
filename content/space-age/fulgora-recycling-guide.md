@@ -1,6 +1,6 @@
 ---
-title: "Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power"
-description: "Fulgora guide for Factorio Space Age. Scrap recycling sorter design, holmium processing, lightning power, and the recycler loop that doesn't deadlock."
+title: "Factorio Fulgora Guide - Scrap Recycling, Holmium and Lightning Power"
+description: "Fulgora guide for Factorio Space Age: scrap recycling sorter design, holmium processing, lightning power collection, and the recycler loop that does not deadlock."
 date: 2026-05-21
 tags: ["space-age", "fulgora"]
 draft: false

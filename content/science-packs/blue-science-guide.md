@@ -1,6 +1,6 @@
 ---
-title: "Chemical Science Pack — Blue Science Guide"
-description: "Complete blue science guide for Factorio: oil processing, recipe ratios, sulfur production, and plastic automation for chemical science packs."
+title: "Factorio Blue Science Guide - Chemical Science Pack Setup and Ratios"
+description: "Complete blue science (chemical science pack) guide for Factorio: oil processing setup, sulfur production, plastic automation, and the exact assembler ratios that scale to megabase."
 date: 2026-05-18
 tags: ["science-packs", "production-ratios"]
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: Circuit Network Beginner Guide
-description: Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.
+title: "Factorio Circuit Network Guide - Wires, Combinators and SR Latch"
+description: "Learn Factorio circuit network from scratch: red/green wires, decider combinator, arithmetic combinator, SR latch, and automated oil cracking control."
 date: 2026-05-21
 tags: ["blueprints", "circuit-network"]
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: "LTN —Logistic Train Network Setup"
-description: "LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics."
+title: "LTN Mod Guide - Logistic Train Network Setup for Factorio"
+description: "LTN (Logistic Train Network) mod guide for Factorio. Provider stops, requester stops, depot configuration, and the 3-stop system that automates your entire rail network."
 date: 2026-05-23
 lastmod: 2026-05-23T19:09:00+08:00
 publishDate: 2026-05-27T16:52:00+08:00

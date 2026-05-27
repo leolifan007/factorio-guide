@@ -1,6 +1,6 @@
 ---
-title: City Block Design Guide — Modular Megabase Layout
-description: City block guide for Factorio. Block sizes, train grid design, intersection types, resource distribution, UPS impact, and Space Age building integration for scalable megabases.
+title: "Factorio City Block Design - Megabase Layout Guide"
+description: "Learn Factorio city block design: optimal block sizes, train grid layouts, roundabout intersections, and how to scale to 1000+ SPM megabases."
 date: 2026-05-21
 tags: ["base-design", "city-block"]
 draft: false
