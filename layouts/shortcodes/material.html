@@ -3,8 +3,7 @@
 {{- $result := .Get "result" | default false -}}
 {{- $class := cond $result " result" "" -}}
 {{- $label := $name | humanize | truncate 12 "" -}}
-<div class="game-slot{{ $class }}">
+<span class="game-slot-inline{{ $class }}">
   {{- with $qty }}<span class="game-qty">{{ . }}</span>{{ end -}}
-  <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="game-img" loading="lazy">
-  <span class="game-name">{{ $label }}</span>
-</div>
+  <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="game-icon-inline" title="{{ $label }}" loading="lazy">
+</span>

@@ -1566,8 +1566,9 @@ About/CTA Section ── */
 }
 .game-slot {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  vertical-align: middle;
   gap: 0.35rem;
   padding: 0.5rem 0.65rem;
   background: var(--bg-surface);
@@ -1597,6 +1598,20 @@ About/CTA Section ── */
   max-width: 90px;
   word-break: break-word;
 }
+
+/* Inline material icons in paragraphs (shortcode {{< material >}}) */
+.game-slot-inline {
+  display: inline;
+  white-space: nowrap;
+}
+.game-icon-inline {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 2px;
+  object-fit: contain;
+}
+
 .game-plus {
   font-size: 1.1rem;
   color: var(--text-dim);
