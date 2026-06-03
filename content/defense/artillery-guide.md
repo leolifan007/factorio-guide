@@ -2,8 +2,8 @@
 title: "Artillery —Range, Shells, and Outpost Setup"
 description: "Artillery guide for Factorio. Shell production, range research, outpost placement, and the logistics chain that keeps your perimeter safe from biter attacks."
 date: 2026-05-23
-lastmod: 2026-06-03T22:40:00+08:00
-publishDate: 2026-06-05T00:00:00+08:00
+lastmod: 2026-06-03T22:51:00+08:00
+publishDate: 2026-06-07T00:00:00+08:00
 tags: ["defense", "artillery", "military"]
 draft: false
 hidden: true

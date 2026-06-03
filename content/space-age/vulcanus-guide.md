@@ -2,8 +2,8 @@
 title: "Vulcanus —The Volcanic Planet Foundry Guide"
 description: "Vulcanus guide for Factorio Space Age. Foundry mechanics, volcanic ash recycling, tungsten carbide production, and Productivity Module 4 unlocks."
 date: 2026-05-23
-lastmod: 2026-06-03T22:40:00+08:00
-publishDate: 2026-06-11T00:00:00+08:00
+lastmod: 2026-06-03T22:51:00+08:00
+publishDate: 2026-06-19T00:00:00+08:00
 tags: ["space-age", "vulcanus", "space-platform"]
 draft: false
 hidden: true

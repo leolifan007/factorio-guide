@@ -2,8 +2,8 @@
 title: "Kovarex Enrichment —Uranium Processing Loop"
 description: "Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem."
 date: 2026-05-23
-lastmod: 2026-06-03T22:40:00+08:00
-publishDate: 2026-06-08T00:00:00+08:00
+lastmod: 2026-06-03T22:51:00+08:00
+publishDate: 2026-06-13T00:00:00+08:00
 tags: ["production-ratios", "nuclear", "uranium"]
 draft: false
 hidden: true
