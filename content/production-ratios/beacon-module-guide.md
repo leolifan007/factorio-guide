@@ -2,8 +2,8 @@
 title: "Beacon and Module Layout —8-Beacon Setup"
 description: "Beacon and module guide for Factorio. The 8-beacon layout that maximizes productivity and speed. Module combinations, power costs, and the math behind efficient factory design."
 date: 2026-05-23
-lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-27T16:52:00+08:00
+lastmod: 2026-06-03T22:40:00+08:00
+publishDate: 2026-06-07T00:00:00+08:00
 tags: ["production-ratios", "modules", "beacons"]
 draft: false
 hidden: true
