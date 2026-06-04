@@ -1,0 +1,48 @@
+{{- /* latest-articles.html — Dynamic Homepage Article Cards */ -}}
+{{- $pages := where .Site.RegularPages "Section" "not in" (slice "categories" "tags" "contact" "privacy") }}
+{{- $pages = where $pages "Params.hidden" "ne" true }}
+{{- $pages = sort $pages "Date" "desc" }}
+{{- $latest := first 12 $pages }}
+
+{{- /* Section → color mapping */}}
+{{- $colors := dict
+  "getting-started"   (dict "tag" ""          "thumb" "#2a2a2a,#3d3d20" )
+  "production-ratios" (dict "tag" "yellow"    "thumb" "#1a1a2a,#2a3a4a" )
+  "trains-logistics"  (dict "tag" "red"       "thumb" "#1a0a0a,#3a1a1a" )
+  "base-design"       (dict "tag" "green"     "thumb" "#0a1a0a,#1a3a1a" )
+  "science-packs"     (dict "tag" "purple"    "thumb" "#1a1a0a,#3a3010" )
+  "space-age"         (dict "tag" "cyan"      "thumb" "#0a0a1a,#101030" )
+  "defense"           (dict "tag" ""          "thumb" "#1a1a2a,#2a3a3a" )
+  "blueprints"        (dict "tag" ""          "thumb" "#1a1a1a,#2a2a2a" )
+}}
+
+<div class="guide-grid">
+{{- range $page := $latest }}
+  {{- $section := $page.Section }}
+  {{- $color := index $colors $section | default (dict "tag" "" "thumb" "#2a2a2a,#3d3d20") }}
+  {{- $daysOld := div (sub now.Unix $page.Date.Unix) 86400 }}
+  <a href="{{ $page.RelPermalink }}" class="guide-card"{{ if eq $section "space-age" }} style="position:relative;"{{ end }}>
+    {{- if lt $daysOld 14 }}
+    <span class="guide-card-new-badge">NEW</span>
+    {{- end }}
+    {{- if eq $section "space-age" }}
+    <span class="guide-card-badge">&#128640; Space Age</span>
+    {{- end }}
+    <div class="card-thumb" style="background:linear-gradient(135deg,{{ $color.thumb }});">
+      {{- $thumb := printf "images/featured/%s.jpg" ($page.File.ContentBaseName | replaceRE "-guide$" "") }}
+      <img src="{{ $thumb | relURL }}" alt="{{ $page.Title }}" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+    </div>
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="card-tag{{ with $color.tag }} {{ . }}{{ end }}">{{ $section | humanize }}</span>
+      </div>
+      <h3>{{ $page.Title }}</h3>
+      <p>{{ $page.Description | default ($page.Summary | plainify | truncate 150) }}</p>
+    </div>
+    <div class="card-footer">
+      <span class="card-read">Read Guide →</span>
+      <span class="card-date">Updated {{ $page.Lastmod.Format "Jan 2006" }}</span>
+    </div>
+  </a>
+{{- end }}
+</div>
