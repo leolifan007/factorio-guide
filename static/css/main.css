@@ -552,6 +552,7 @@ blockquote::before {
 
 .guide-card {
   display: block;
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--steel-border);
   border-radius: var(--radius);
