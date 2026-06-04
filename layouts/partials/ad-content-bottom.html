@@ -1,8 +1,8 @@
-{{- /* Adsterra Content-Bottom Ad – appears after article content */ -}}
+{{- /* Adsterra Content-Bottom Ad – 728×90 Leaderboard + 3rd CPM unit */ -}}
 {{- if and .Site.Params.show_ads .Site.Params.adsterra_bottom_enabled }}
 <div class="adsterra-content-bottom">
   <div class="adsterra-content-bottom-inner">
-    {{- /* iframe banner (728×90) */ -}}
+    {{- /* 728×90 iframe banner */ -}}
     {{- with .Site.Params.adsterra_iframe_key }}
     <div class="adsterra-iframe-bottom-wrap">
       <script>
@@ -18,10 +18,10 @@
     </div>
     {{- end }}
 
-    {{- /* effectivecpmnetwork bottom */ -}}
-    {{- with .Site.Params.adsterra_bottom_cpm }}
+    {{- /* 3rd CPM unit */ -}}
+    {{- with .Site.Params.adsterra_cpm_js }}
     <div class="adsterra-cpm-bottom-wrap">
-      {{ . | safeHTML }}
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
     </div>
     {{- end }}
   </div>

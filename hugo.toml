@@ -34,6 +34,7 @@ buildDrafts = false
   show_ads = false  # 改为 true 开启广告显示
 
   # Adsterra 广告配置
-  adsterra_iframe_key = '9213e2c1db53a2eec6ab8a2f81e72c72'
-  adsterra_cpm_script = '<script async="async" data-cfasync="false" src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script><div id="container-04e2732f2ca38aec2b69155cb083a610"></div><script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>'
-  adsterra_bottom_enabled = false  # 改为 true 开启文章底部广告
+  adsterra_iframe_key = '9213e2c1db53a2eec6ab8a2f81e72c72'  # 728×90 iframe key
+  adsterra_cpm_invoke = true   # 侧栏 CPM 第一单元（effectivecpmnetwork invoke）
+  adsterra_cpm_js = true      # 侧栏 CPM 第二单元 + 底部 CPM 第三单元
+  adsterra_bottom_enabled = false  # 改为 true 开启文章底部广告（728×90 + CPM 第三单元）
