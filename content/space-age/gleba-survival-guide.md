@@ -1,6 +1,6 @@
 ---
-title: "Gleba Survival Guide — Spoilage, Nutrients, and Science"
-description: "Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base."
+title: "Factorio Gleba Guide - Stop Spoilage, Farm Spores and Survive Enemies"
+description: "Gleba guide for Factorio Space Age: how to stop spoilage waste, jellynut and yumako farming, spore production, enemy defense, bioflux ratios, and the science production chain that actually works."
 date: 2026-05-21
 tags: ["space-age", "gleba"]
 draft: false

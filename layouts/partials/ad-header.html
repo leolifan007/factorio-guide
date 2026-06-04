@@ -1,0 +1,19 @@
+{{- /* Adsterra Header Ad – 728×90 Leaderboard */ -}}
+{{- if .Site.Params.show_ads }}
+{{- with .Site.Params.adsterra_iframe_key }}
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '{{ . }}',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/{{ . }}/invoke.js"></script>
+  </div>
+</div>
+{{- end }}
+{{- end }}

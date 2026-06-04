@@ -1,6 +1,6 @@
 ---
-title: "Green Science Guide — Logistics Science Pack Setup"
-description: "Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks."
+title: "Factorio Green Science Guide - Logistics Science Pack Setup and Ratios"
+description: "Green science (logistics science pack) in Factorio: exact assembler ratios, compact layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks."
 date: 2026-05-21
 tags: ["getting-started", "science-packs"]
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: "Aquilo 閳?The Frozen Planet Survival and Research Guide"
-description: "Aquilo guide for Factorio Space Age. Ice power mechanics, heat management systems, lithium supply chains, cryogenic science packs, and the strategy that keeps your base alive on the coldest planet."
+title: "Factorio Aquilo Guide - Frozen Planet Survival and Cryogenic Science"
+description: "Aquilo guide for Factorio Space Age: ice power mechanics, heat management systems, lithium supply chains, cryogenic science packs, and the strategy that keeps your base alive on the coldest planet."
 date: 2026-05-23
 lastmod: 2026-06-03T22:51:00+08:00
 publishDate: 2026-06-16T00:00:00+08:00

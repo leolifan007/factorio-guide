@@ -1,0 +1,104 @@
+# ============================================================
+# Scheduled Content Release — 定时自动发布新文章
+#
+# SOP 08 定时发布机制：
+# - 每天 09:11 CST — 检查到期文章
+# - 周一三五 13:48 CST — 补充检查
+# - 周二四 17:23 CST — 补充检查
+# - auto-publish.py 扫描 hidden:true + publishDate 到期文章
+# - 到期文章自动发布后合并到 main 触发 GitHub Pages 部署
+# ============================================================
+name: 📅 Scheduled Content Release
+
+on:
+  schedule:
+    # UTC → CST = UTC+8
+    # 01:11 UTC = 09:11 CST（每天）
+    - cron: '11 1 * * *'
+    # 05:48 UTC = 13:48 CST（周一、三、五）
+    - cron: '48 5 * * 1,3,5'
+    # 09:23 UTC = 17:23 CST（周二、四）
+    - cron: '23 9 * * 2,4'
+  workflow_dispatch:
+    inputs:
+      force_publish:
+        description: '强制发布全部到期文章 (true/false)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout content-polishing 分支
+        uses: actions/checkout@v4
+        with:
+          ref: content-polishing
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔄 Sync with main
+        run: |
+          git config user.name "Factorio Guide Bot"
+          git config user.email "bot@factorioguides.com"
+          git fetch origin main
+          if git merge origin/main --no-edit 2>/dev/null; then
+            echo "Merge succeeded"
+          else
+            echo "Merge failed, trying rebase..."
+            git rebase origin/main 2>/dev/null || {
+              echo "Rebase also failed — please resolve conflicts manually"
+              exit 1
+            }
+          fi
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 🔍 Run auto-publish script
+        id: publish
+        run: |
+          python3 .github/scripts/auto-publish.py 2>&1 | tee publish-log.txt
+          # Check if any articles were published
+          if grep -q "Total published:" publish-log.txt; then
+            COUNT=$(grep "Total published:" publish-log.txt | grep -oP '\d+')
+            echo "published=true" >> $GITHUB_OUTPUT
+            echo "count=$COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "published=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 📝 Commit published articles (if any)
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          TIMESTAMP=$(date +%s)
+          HASH=$(echo "$TIMESTAMP$RANDOM" | md5sum | head -c 6)
+          git add -A
+          git diff --cached --quiet || git commit -m "auto-publish: ${{ steps.publish.outputs.count }} article(s) released [$HASH]"
+          git push origin content-polishing --no-verify 2>&1
+
+      - name: 🤝 Merge to main
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          git checkout -b main-temp origin/main
+          git merge origin/content-polishing --no-edit 2>/dev/null || {
+            echo "Merge conflict — aborting merge, keeping content-polishing intact"
+            exit 1
+          }
+          git push origin main-temp:main 2>&1
+
+      - name: 📊 Status report
+        if: always()
+        run: |
+          if [ "${{ steps.publish.outputs.published }}" == "true" ]; then
+            echo "🎉 Published ${{ steps.publish.outputs.count }} article(s) successfully"
+          else
+            echo "📭 No articles ready for publishing"
+          fi

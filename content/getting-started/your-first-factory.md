@@ -1,6 +1,6 @@
 ---
-title: "Your First Factory — Factorio Beginner Guide"
-description: "Factorio beginner guide: building your first factory from scratch. Automation, red+green science, furnace columns, mall setup, and the expansion path to mid-game."
+title: "Factorio Beginner Guide - How to Build Your First Factory"
+description: "Factorio beginner guide: building your first factory from scratch. Automation basics, red and green science setup, electric furnace columns, mall setup, and the expansion path to mid-game."
 date: 2026-05-21
 tags: ["getting-started", "beginner"]
 draft: false

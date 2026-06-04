@@ -1,6 +1,6 @@
 ---
-title: "Basic Rail Network — Signalling, Junctions, and Train Management"
-description: "Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase."
+title: "Factorio Train Network Guide - Signals, Junctions and Deadlock Prevention"
+description: "Factorio train network guide: rail signals vs chain signals explained, 2-lane and 4-lane rail grid design, intersection blueprints, train limits, and deadlock prevention for beginner to megabase."
 date: 2026-05-20
 tags: ["trains-logistics", "beginner"]
 draft: false

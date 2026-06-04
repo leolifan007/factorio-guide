@@ -1,6 +1,6 @@
 ---
-title: "Oil Processing — Ratios, Cracking, and Refinery Setup"
-description: "Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks."
+title: "Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup"
+description: "Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks."
 date: 2026-05-21
 tags: ["production-ratios", "getting-started"]
 draft: false

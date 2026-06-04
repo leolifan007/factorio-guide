@@ -1,6 +1,6 @@
 ---
-title: "Early Game Defense — Surviving Your First Biter Attacks"
-description: "How to defend your factory in the first few hours of Factorio. Walls, gun turrets, and ammo management."
+title: "Factorio Early Game Defense - Survive Your First Biter Attacks"
+description: "How to defend your factory in the first few hours of Factorio. Wall layouts, gun turret placement, ammo belt management, and biter evolution factor control."
 date: 2026-05-18
 tags: ["defense", "beginner", "biters"]
 emoji: "🛡️"

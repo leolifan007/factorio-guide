@@ -31,7 +31,13 @@ on:
 
 jobs:
   deploy:
-    if: github.ref == 'refs/heads/content-fixes-staged'
+    # schedule: always run (checkout fixes branch below)
+    # push: only on content-fixes-staged
+    # dispatch: always run
+    if: >
+      github.event_name == 'schedule'
+      || github.event_name == 'workflow_dispatch'
+      || (github.event_name == 'push' && github.ref == 'refs/heads/content-fixes-staged')
     runs-on: ubuntu-latest
     steps:
       - name: ⏳ 随机延迟（避免固定执行模式）
@@ -65,10 +71,11 @@ jobs:
           echo "Secondary delay ${SLEEP2}s..."
           sleep $SLEEP2
 
-      - name: 📥 Checkout 分支 + main
+      - name: 📥 Checkout content-fixes-staged 分支
         if: steps.coinflip.outputs.skip == 'false'
         uses: actions/checkout@v4
         with:
+          ref: content-fixes-staged
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 

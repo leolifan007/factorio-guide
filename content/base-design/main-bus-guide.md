@@ -1,6 +1,6 @@
 ---
-title: "Main Bus Design — The Classic Factorio Base Layout"
-description: "How to build a main bus base in Factorio: bus width, lane allocation, and expansion strategy."
+title: "Factorio Main Bus Design - Classic Base Layout Guide"
+description: "How to build a main bus base in Factorio. Bus width planning, lane allocation for iron/copper/steel/oil, and expansion strategy for mid-to-late game."
 date: 2026-05-18
 tags: ["base-design", "main-bus", "layout"]
 emoji: "🚌"
