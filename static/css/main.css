@@ -990,6 +990,33 @@ About/CTA Section ── */
 }
 .ad-placeholder-size { font-size: 0.7rem; color: var(--text-dim); }
 
+/* ── Adsterra Partial Styles ── */
+.adsterra-sidebar { display: flex; flex-direction: column; gap: 0.75rem; width: 100%; }
+
+.adsterra-iframe-wrap {
+  width: 160px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  line-height: 0;
+}
+.adsterra-iframe-wrap iframe { width: 728px !important; height: 90px !important; transform: scale(0.220); transform-origin: top left; }
+
+.adsterra-cpm-wrap { width: 160px; }
+.adsterra-cpm-wrap iframe { width: 160px !important; }
+.adsterra-cpm-wrap > div > iframe { max-width: 100%; }
+
+/* Content-bottom ad area */
+.adsterra-content-bottom {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--steel-border);
+  display: flex;
+  justify-content: center;
+}
+.adsterra-content-bottom-inner { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.adsterra-iframe-bottom-wrap iframe { border-radius: var(--radius); }
+.adsterra-cpm-bottom-wrap { display: flex; justify-content: center; }
+
 /* Center Content */
 .article-center {
   flex: 1;

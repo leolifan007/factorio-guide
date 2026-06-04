@@ -31,4 +31,9 @@ buildDrafts = false
   steam_url = 'https://store.steampowered.com/app/427520/Factorio/'
   google_analytics = 'G-06QHTM40LG'
   # adsense_client = 'ca-pub-7551387157478980'  # 暂时注销，等 Google AdSense 审核通过后再启用
-  show_ads = false  # 关闭文章页广告位，改为 true 即可恢复
+  show_ads = false  # 改为 true 开启广告显示
+
+  # Adsterra 广告配置
+  adsterra_iframe_key = '9213e2c1db53a2eec6ab8a2f81e72c72'
+  adsterra_cpm_script = '<script async="async" data-cfasync="false" src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script><div id="container-04e2732f2ca38aec2b69155cb083a610"></div><script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>'
+  adsterra_bottom_enabled = false  # 改为 true 开启文章底部广告

@@ -1,0 +1,27 @@
+{{- /* Adsterra Sidebar Ad – appears in .article-ad-left / .article-ad-right */ -}}
+{{- if .Site.Params.show_ads }}
+<div class="adsterra-sidebar">
+  {{- /* ── iframe 横幅 (728×90，缩放至 160px 宽) ── */ -}}
+  {{- with .Site.Params.adsterra_iframe_key }}
+  <div class="adsterra-iframe-wrap">
+    <script>
+      var atOptions = {
+        'key' : '{{ . }}',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/{{ . }}/invoke.js"></script>
+  </div>
+  {{- end }}
+
+  {{- /* ── effectivecpmnetwork 侧栏单元 ── */ -}}
+  {{- with .Site.Params.adsterra_cpm_script }}
+  <div class="adsterra-cpm-wrap">
+    {{ . | safeHTML }}
+  </div>
+  {{- end }}
+</div>
+{{- end }}

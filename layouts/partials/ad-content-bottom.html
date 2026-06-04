@@ -1,0 +1,29 @@
+{{- /* Adsterra Content-Bottom Ad – appears after article content */ -}}
+{{- if and .Site.Params.show_ads .Site.Params.adsterra_bottom_enabled }}
+<div class="adsterra-content-bottom">
+  <div class="adsterra-content-bottom-inner">
+    {{- /* iframe banner (728×90) */ -}}
+    {{- with .Site.Params.adsterra_iframe_key }}
+    <div class="adsterra-iframe-bottom-wrap">
+      <script>
+        var atOptions = {
+          'key' : '{{ . }}',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/{{ . }}/invoke.js"></script>
+    </div>
+    {{- end }}
+
+    {{- /* effectivecpmnetwork bottom */ -}}
+    {{- with .Site.Params.adsterra_bottom_cpm }}
+    <div class="adsterra-cpm-bottom-wrap">
+      {{ . | safeHTML }}
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}
