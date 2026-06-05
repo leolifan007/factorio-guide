@@ -7,141 +7,226 @@
       "id": "contact-privacy",
       "priority": 1,
       "files": {
-        "content": ["content/contact/index.md", "content/privacy/index.md"],
-        "docs": ["docs/contact/index.html", "docs/privacy/index.html"]
+        "content": [
+          "content/contact/index.md",
+          "content/privacy/index.md"
+        ],
+        "docs": [
+          "docs/contact/index.html",
+          "docs/privacy/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "添加联系页面和隐私政策页面（替换占位符）"
+      "deployed": true,
+      "message": "\u6dfb\u52a0\u8054\u7cfb\u9875\u9762\u548c\u9690\u79c1\u653f\u7b56\u9875\u9762\uff08\u66ff\u6362\u5360\u4f4d\u7b26\uff09",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "city-block-guide",
       "priority": 1,
       "files": {
-        "content": ["content/base-design/city-block-guide.md"],
-        "docs": ["docs/base-design/city-block-guide/index.html", "docs/base-design/index.html", "docs/base-design/index.xml"]
+        "content": [
+          "content/base-design/city-block-guide.md"
+        ],
+        "docs": [
+          "docs/base-design/city-block-guide/index.html",
+          "docs/base-design/index.html",
+          "docs/base-design/index.xml"
+        ]
       },
-      "deployed": false,
-      "message": "修复 City Block Guide 空页面：补充完整攻略"
+      "deployed": true,
+      "message": "\u4fee\u590d City Block Guide \u7a7a\u9875\u9762\uff1a\u8865\u5145\u5b8c\u6574\u653b\u7565",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "science-packs-index",
       "priority": 1,
       "files": {
-        "content": ["content/science-packs/_index.md"],
-        "docs": ["docs/science-packs/index.html", "docs/science-packs/index.xml", "docs/science-packs/blue-science-guide/index.html", "docs/science-packs/red-science-guide/index.html"]
+        "content": [
+          "content/science-packs/_index.md"
+        ],
+        "docs": [
+          "docs/science-packs/index.html",
+          "docs/science-packs/index.xml",
+          "docs/science-packs/blue-science-guide/index.html",
+          "docs/science-packs/red-science-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "修正科技瓶页面配方错误（删除 Satisfactory 注入的 Heavy Modular Frame），更新所有配方数据"
+      "deployed": true,
+      "message": "\u4fee\u6b63\u79d1\u6280\u74f6\u9875\u9762\u914d\u65b9\u9519\u8bef\uff08\u5220\u9664 Satisfactory \u6ce8\u5165\u7684 Heavy Modular Frame\uff09\uff0c\u66f4\u65b0\u6240\u6709\u914d\u65b9\u6570\u636e",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "production-ratios-index",
       "priority": 1,
       "files": {
-        "content": ["content/production-ratios/_index.md"],
-        "docs": ["docs/production-ratios/index.html", "docs/production-ratios/index.xml"]
+        "content": [
+          "content/production-ratios/_index.md"
+        ],
+        "docs": [
+          "docs/production-ratios/index.html",
+          "docs/production-ratios/index.xml"
+        ]
       },
-      "deployed": false,
-      "message": "修正 Production Ratios 页面 'wait, no' AI 自纠正语句和 Blue Circuit 配方比例"
+      "deployed": true,
+      "message": "\u4fee\u6b63 Production Ratios \u9875\u9762 'wait, no' AI \u81ea\u7ea0\u6b63\u8bed\u53e5\u548c Blue Circuit \u914d\u65b9\u6bd4\u4f8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "circuit-network",
       "priority": 2,
       "files": {
-        "content": ["content/blueprints/circuit-network-guide.md"],
-        "docs": ["docs/blueprints/circuit-network-guide/index.html", "docs/blueprints/index.html", "docs/blueprints/index.xml"]
+        "content": [
+          "content/blueprints/circuit-network-guide.md"
+        ],
+        "docs": [
+          "docs/blueprints/circuit-network-guide/index.html",
+          "docs/blueprints/index.html",
+          "docs/blueprints/index.xml"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Circuit Network Guide 开头：移除 AI 第一人称叙事故事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Circuit Network Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b\u6545\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "nuclear-power",
       "priority": 2,
       "files": {
-        "content": ["content/base-design/nuclear-power-guide.md"],
-        "docs": ["docs/base-design/nuclear-power-guide/index.html"]
+        "content": [
+          "content/base-design/nuclear-power-guide.md"
+        ],
+        "docs": [
+          "docs/base-design/nuclear-power-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Nuclear Power Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Nuclear Power Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "flamethrower-defense",
       "priority": 2,
       "files": {
-        "content": ["content/defense/flamethrower-defense-guide.md"],
-        "docs": ["docs/defense/flamethrower-defense-guide/index.html", "docs/defense/index.html", "docs/defense/index.xml"]
+        "content": [
+          "content/defense/flamethrower-defense-guide.md"
+        ],
+        "docs": [
+          "docs/defense/flamethrower-defense-guide/index.html",
+          "docs/defense/index.html",
+          "docs/defense/index.xml"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Flamethrower Defense Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Flamethrower Defense Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "oil-processing",
       "priority": 2,
       "files": {
-        "content": ["content/production-ratios/oil-processing-guide.md"],
-        "docs": ["docs/production-ratios/oil-processing-guide/index.html"]
+        "content": [
+          "content/production-ratios/oil-processing-guide.md"
+        ],
+        "docs": [
+          "docs/production-ratios/oil-processing-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Oil Processing Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Oil Processing Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "green-science",
       "priority": 2,
       "files": {
-        "content": ["content/getting-started/green-science-guide.md"],
-        "docs": ["docs/getting-started/green-science-guide/index.html", "docs/getting-started/index.html", "docs/getting-started/index.xml"]
+        "content": [
+          "content/getting-started/green-science-guide.md"
+        ],
+        "docs": [
+          "docs/getting-started/green-science-guide/index.html",
+          "docs/getting-started/index.html",
+          "docs/getting-started/index.xml"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Green Science Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Green Science Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "space-platform",
       "priority": 2,
       "files": {
-        "content": ["content/space-age/space-platform-guide.md"],
-        "docs": ["docs/space-age/space-platform-guide/index.html"]
+        "content": [
+          "content/space-age/space-platform-guide.md"
+        ],
+        "docs": [
+          "docs/space-age/space-platform-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Space Platform Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Space Platform Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "your-first-factory",
       "priority": 2,
       "files": {
-        "content": ["content/getting-started/your-first-factory.md"],
-        "docs": ["docs/getting-started/your-first-factory/index.html"]
+        "content": [
+          "content/getting-started/your-first-factory.md"
+        ],
+        "docs": [
+          "docs/getting-started/your-first-factory/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "修正 Your First Factory 目标为红绿瓶、更新配方表"
+      "deployed": true,
+      "message": "\u4fee\u6b63 Your First Factory \u76ee\u6807\u4e3a\u7ea2\u7eff\u74f6\u3001\u66f4\u65b0\u914d\u65b9\u8868",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "fulgora-recycling",
       "priority": 2,
       "files": {
-        "content": ["content/space-age/fulgora-recycling-guide.md"],
-        "docs": ["docs/space-age/fulgora-recycling-guide/index.html"]
+        "content": [
+          "content/space-age/fulgora-recycling-guide.md"
+        ],
+        "docs": [
+          "docs/space-age/fulgora-recycling-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Fulgora Recycling Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Fulgora Recycling Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "gleba-survival",
       "priority": 2,
       "files": {
-        "content": ["content/space-age/gleba-survival-guide.md"],
-        "docs": ["docs/space-age/gleba-survival-guide/index.html"]
+        "content": [
+          "content/space-age/gleba-survival-guide.md"
+        ],
+        "docs": [
+          "docs/space-age/gleba-survival-guide/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "重写 Gleba Survival Guide 开头：移除 AI 第一人称叙事"
+      "deployed": true,
+      "message": "\u91cd\u5199 Gleba Survival Guide \u5f00\u5934\uff1a\u79fb\u9664 AI \u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b",
+      "deployed_at": "2026-06-05T21:20+08:00"
     },
     {
       "id": "basic-rail-network",
       "priority": 3,
       "files": {
-        "content": ["content/trains-logistics/basic-rail-network.md"],
-        "docs": ["docs/trains-logistics/basic-rail-network/index.html"]
+        "content": [
+          "content/trains-logistics/basic-rail-network.md"
+        ],
+        "docs": [
+          "docs/trains-logistics/basic-rail-network/index.html"
+        ]
       },
-      "deployed": false,
-      "message": "修正 Basic Rail Network 提及过时的 LTN 模组引用"
+      "deployed": true,
+      "message": "\u4fee\u6b63 Basic Rail Network \u63d0\u53ca\u8fc7\u65f6\u7684 LTN \u6a21\u7ec4\u5f15\u7528",
+      "deployed_at": "2026-06-05T21:20+08:00"
     }
-  ]
+  ],
+  "updated": "2026-06-05T21:20+08:00"
 }
