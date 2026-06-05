@@ -1,0 +1,123 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <title>Main Bus Layout — Factorio Guide</title>
+  <rect x="0" y="0" width="900" height="48" fill="#1f1f1f" rx="8"/>
+  <rect x="0" y="42" width="900" height="6" fill="#1f1f1f"/>
+  <text x="450" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#e8941c">MAIN BUS LAYOUT — FACTORY OVERVIEW</text>
+
+  <!-- ===== Left: Furnace Area ===== -->
+  <rect x="10" y="60" width="180" height="300" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="100" y="82" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">SMELTING COLUMN</text>
+
+  <!-- Furnace icons -->
+  <rect x="20" y="95" width="20" height="18" rx="2" fill="#3a2a1a" stroke="#aa6622" stroke-width="1"/>
+  <rect x="45" y="95" width="20" height="18" rx="2" fill="#3a2a1a" stroke="#aa6622" stroke-width="1"/>
+  <rect x="70" y="95" width="20" height="18" rx="2" fill="#3a2a1a" stroke="#aa6622" stroke-width="1"/>
+  <text x="95" y="108" font-size="15" fill="#886633">24x Iron</text>
+
+  <rect x="20" y="125" width="20" height="18" rx="2" fill="#3a1a1a" stroke="#aa4433" stroke-width="1"/>
+  <rect x="45" y="125" width="20" height="18" rx="2" fill="#3a1a1a" stroke="#aa4433" stroke-width="1"/>
+  <rect x="70" y="125" width="20" height="18" rx="2" fill="#3a1a1a" stroke="#aa4433" stroke-width="1"/>
+  <text x="95" y="138" font-size="15" fill="#aa4433">24x Copper</text>
+
+  <!-- Belt outputs from furnaces -->
+  <line x1="30" y1="160" x2="50" y2="200" stroke="#888" stroke-width="2"/>
+  <line x1="55" y1="160" x2="70" y2="200" stroke="#888" stroke-width="2"/>
+  <line x1="80" y1="160" x2="90" y2="200" stroke="#888" stroke-width="2"/>
+
+  <!-- Balancer -->
+  <rect x="30" y="200" width="90" height="70" rx="4" fill="#252525" stroke="#e8941c" stroke-width="1.5"/>
+  <text x="75" y="225" text-anchor="middle" font-size="15" fill="#e8941c" font-weight="bold">Belt</text>
+  <text x="75" y="242" text-anchor="middle" font-size="15" fill="#e8941c" font-weight="bold">Balancer</text>
+  <text x="75" y="258" text-anchor="middle" font-size="15" fill="#888">4-to-4</text>
+
+  <!-- Arrow to bus -->
+  <line x1="120" y1="235" x2="190" y2="145" stroke="#e8941c" stroke-width="2"/>
+  <polygon points="190,145 183,150 187,140" fill="#e8941c"/>
+
+  <!-- ===== Main Bus (Center) ===== -->
+  <rect x="190" y="60" width="400" height="300" rx="6" fill="#1a1a1a" stroke="#e8941c" stroke-width="1.5"/>
+  <text x="390" y="82" text-anchor="middle" font-size="15" fill="#e8941c" font-weight="bold" filter="url(#glow2)">MAIN BUS — 4+2+1+1 LANES</text>
+
+  <!-- Bus lanes -->
+  <rect x="200" y="100" width="380" height="22" rx="2" fill="#2a2a2a" stroke="#888" stroke-width="1"/>
+  <rect x="200" y="126" width="380" height="22" rx="2" fill="#2a2a2a" stroke="#888" stroke-width="1"/>
+  <rect x="200" y="152" width="380" height="22" rx="2" fill="#2a2a2a" stroke="#888" stroke-width="1"/>
+  <rect x="200" y="178" width="380" height="22" rx="2" fill="#2a2a2a" stroke="#888" stroke-width="1"/>
+  <text x="205" y="115" font-size="15" fill="#ccc">Iron #1</text>
+  <text x="205" y="141" font-size="15" fill="#ccc">Iron #2</text>
+  <text x="205" y="167" font-size="15" fill="#ccc">Iron #3</text>
+  <text x="205" y="193" font-size="15" fill="#ccc">Iron #4</text>
+
+  <rect x="200" y="215" width="380" height="22" rx="2" fill="#3a1a1a" stroke="#aa4433" stroke-width="1"/>
+  <rect x="200" y="241" width="380" height="22" rx="2" fill="#3a1a1a" stroke="#aa4433" stroke-width="1"/>
+  <text x="205" y="230" font-size="15" fill="#cc8866">Copper #1</text>
+  <text x="205" y="256" font-size="15" fill="#cc8866">Copper #2</text>
+
+  <rect x="200" y="278" width="380" height="22" rx="2" fill="#2a3a2a" stroke="#6abe30" stroke-width="1"/>
+  <text x="205" y="293" font-size="15" fill="#6abe30">Iron Gears</text>
+
+  <rect x="200" y="305" width="380" height="22" rx="2" fill="#1a2a3a" stroke="#4488dd" stroke-width="1"/>
+  <text x="205" y="320" font-size="15" fill="#4488dd">Green Circuits</text>
+
+  <!-- Gap labels -->
+  <text x="450" y="212" font-size="15" fill="#777" text-anchor="middle">⬇ gap (2 tiles)</text>
+  <text x="450" y="276" font-size="15" fill="#777" text-anchor="middle">⬇ gap</text>
+
+  <!-- ===== Right: Production Lines Off Bus ===== -->
+  <rect x="600" y="60" width="290" height="300" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="745" y="82" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">OFF-BUS PRODUCTION</text>
+
+  <!-- Arrows from bus to production -->
+  <line x1="580" y1="115" x2="610" y2="130" stroke="#6abe30" stroke-width="1.5"/>
+  <line x1="580" y1="193" x2="610" y2="170" stroke="#6abe30" stroke-width="1.5"/>
+
+  <!-- Production blocks -->
+  <rect x="610" y="95" width="130" height="44" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1"/>
+  <text x="675" y="112" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Line 1</text>
+  <text x="675" y="128" text-anchor="middle" font-size="15" fill="#888">🔴 Red Science</text>
+
+  <rect x="610" y="150" width="130" height="44" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1"/>
+  <text x="675" y="167" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Line 2</text>
+  <text x="675" y="183" text-anchor="middle" font-size="15" fill="#888">🧩 Green Circuits</text>
+
+  <rect x="610" y="205" width="130" height="44" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1"/>
+  <text x="675" y="222" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Line 3</text>
+  <text x="675" y="238" text-anchor="middle" font-size="15" fill="#888">🏗️ Mall</text>
+
+  <rect x="610" y="260" width="130" height="44" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1"/>
+  <text x="675" y="277" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Line 4</text>
+  <text x="675" y="293" text-anchor="middle" font-size="15" fill="#888">🧪 Green Science</text>
+
+  <!-- Science output belt direction -->
+  <rect x="755" y="150" width="40" height="150" rx="3" fill="#2a1f0a" stroke="#e8941c" stroke-width="1.5"/>
+  <text x="775" y="210" text-anchor="middle" font-size="15" fill="#e8941c" font-weight="bold" writing-mode="tb">Science → Labs</text>
+  <polygon points="775,150 770,160 780,160" fill="#e8941c"/>
+
+  <!-- ===== Bottom: Key Stats ===== -->
+  <rect x="10" y="375" width="880" height="155" rx="8" fill="#1f1f1f" stroke="#333" stroke-width="1"/>
+  <text x="450" y="400" text-anchor="middle" font-size="15" font-weight="700" fill="#ccc">KEY RULES</text>
+
+  <rect x="25" y="415" width="275" height="100" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="45" cy="435" r="10" fill="#e8941c"/>
+  <text x="45" y="439" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">1</text>
+  <text x="65" y="438" font-size="15" fill="#ccc" font-weight="bold">Bus First, Build Later</text>
+  <text x="38" y="458" font-size="15" fill="#999" text-anchor="middle">Run the main bus lanes first,</text>
+  <text x="38" y="474" font-size="15" fill="#999" text-anchor="middle">then build production lines on</text>
+  <text x="38" y="490" font-size="15" fill="#999" text-anchor="middle">the side. Never inline.</text>
+
+  <rect x="315" y="415" width="275" height="100" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="335" cy="435" r="10" fill="#e8941c"/>
+  <text x="335" y="439" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">2</text>
+  <text x="355" y="438" font-size="15" fill="#ccc" font-weight="bold">Science Off-Bus</text>
+  <text x="328" y="458" font-size="15" fill="#999" text-anchor="middle">Science assemblers output on</text>
+  <text x="328" y="474" font-size="15" fill="#999" text-anchor="middle">a dedicated belt to labs.</text>
+  <text x="328" y="490" font-size="15" fill="#999" text-anchor="middle">Never mix science on the bus.</text>
+
+  <rect x="605" y="415" width="270" height="100" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="625" cy="435" r="10" fill="#e8941c"/>
+  <text x="625" y="439" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">3</text>
+  <text x="645" y="438" font-size="15" fill="#ccc" font-weight="bold">Leave Gaps in Bus</text>
+  <text x="618" y="458" font-size="15" fill="#999" text-anchor="middle">2-tile gaps between lane</text>
+  <text x="618" y="474" font-size="15" fill="#999" text-anchor="middle">pairs for underground belts</text>
+  <text x="618" y="490" font-size="15" fill="#999" text-anchor="middle">and power poles.</text>
+</svg>

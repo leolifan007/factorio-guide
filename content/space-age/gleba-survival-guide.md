@@ -61,6 +61,8 @@ Without this, any production line that backs up (say you have enough iron) will 
 **Quick Tip:** Spoilage is useful. It feeds nutrient production (1 spoilage → 1 nutrient in a biochamber). It feeds heating towers for power. It makes fertilizer for more fruit production. The only "bad" spoilage is spoilage sitting on a belt blocking production. If it can't be used: heating tower.
 {{< /callout >}}
 
+{{< diagram "diagrams/gleba-bioflux-flow.svg" "Gleba production chain from fruit to ore — three stages: fruit to mash, mash to bioflux, bioflux to nutrients to bacteria to ore" "760" >}}
+
 ## The Production Chain — What Goes Where
 
 **Yumako → Yumako mash → Bioflux:**

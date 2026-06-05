@@ -17,11 +17,7 @@ Your coal power graph is in the red. You expanded three new outposts and the ste
 
 At 40+ steam engines you're spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.
 
-| Power Source | MW per tile | Fuel cost | UPS impact | When to switch |
-|-------------|:-----------:|:---------:|:----------:|:--------------|
-| Steam engines | ~0.3 | Free (coal) | Low | Early game |
-| Solar panels | ~0.06 | Free | Best | Mid game if patient |
-| Nuclear | ~5 | Uranium | Good | **Mid game — this one** |
+{{< diagram "diagrams/power-comparison.svg" "Power source comparison — steam engine vs solar panel vs nuclear reactor" "760" >}}
 
 A single 2×2 nuclear block delivers roughly 55 MW per tile loaded. For comparison, the same tile footprint with solar would net you 0.6 MW on a good day.
 

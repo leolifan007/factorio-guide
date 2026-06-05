@@ -1,33 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Base-Design on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/base-design/</link>
-    <description>Recent content in Base-Design on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/base-design/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>City Block Design Guide — Modular Megabase Layout</title>
-      <link>https://factorioguides.com/base-design/city-block-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/base-design/city-block-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are City Blocks?&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;A &lt;strong&gt;city block&lt;/strong&gt; is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nuclear Power — Complete Setup Guide</title>
-      <link>https://factorioguides.com/base-design/nuclear-power-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/base-design/nuclear-power-guide/</guid>
-      <description>&lt;p&gt;Your coal power graph is in the red. You expanded three new outposts and the steam engines are barely keeping up. Before you paste 10,000 solar panels — nuclear: 480 MW fits in the space of 8 solar panels, one uranium patch lasts hundreds of hours, and the UPS hit is negligible.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 2×2 reactor = 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps, and one centrifuge running Kovarex. Build it once, never think about power again.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-coal-eventually-caps-out&#34;&gt;The Root Cause — Why Coal Eventually Caps Out&lt;/h2&gt;&#xA;&lt;p&gt;At 40+ steam engines you&#39;re spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Main Bus Design — The Classic Factorio Base Layout</title>
-      <link>https://factorioguides.com/base-design/main-bus-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/base-design/main-bus-guide/</guid>
-      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;&#34;&gt;MAIN BUS LAYOUT&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-a-main-bus&#34;&gt;What Is a Main Bus?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;main bus&lt;/strong&gt; is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong&gt;pull&lt;/strong&gt; from the bus and &lt;strong&gt;push&lt;/strong&gt; finished products back onto it.&lt;/p&gt;&#xA;&lt;p&gt;Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recommended-bus-width&#34;&gt;Recommended Bus Width&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Material&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Basic Belt)&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Fast/Express)&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Iron plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Copper plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Steel plates&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Green circuits&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Plastic bars&lt;/td&gt;&#xA;          &lt;td&gt;1-2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coal&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Stone&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Pro tip:&lt;/strong&gt; Build your bus with &lt;strong&gt;space between lanes&lt;/strong&gt;. You need room for underground belts to cross lanes and for inserters to pull items off the bus.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;how-to-build-it&#34;&gt;How to Build It&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-clear-a-large-area&#34;&gt;Step 1: Clear a Large Area&lt;/h3&gt;&#xA;&lt;p&gt;You need at least &lt;strong&gt;200 tiles wide&lt;/strong&gt; and &lt;strong&gt;unlimited depth&lt;/strong&gt;. The bus grows as you research more technologies.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Base-Design on Factorio Guide</title><link>https://factorioguides.com/tags/base-design/</link><description>Recent content in Base-Design on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/base-design/index.xml" rel="self" type="application/rss+xml"/><item><title>City Block Design Guide — Modular Megabase Layout</title><link>https://factorioguides.com/base-design/city-block-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/city-block-guide/</guid><description>&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div>
+
+&lt;div class="section-head">&lt;h2>What Are City Blocks?&lt;/h2>&lt;/div>
+
+&lt;p>A &lt;strong>city block&lt;/strong> is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p></description></item><item><title>Nuclear Power — Complete Setup Guide</title><link>https://factorioguides.com/base-design/nuclear-power-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/nuclear-power-guide/</guid><description>&lt;p>Your coal power graph is in the red. You expanded three new outposts and the steam engines are barely keeping up. Before you paste 10,000 solar panels — nuclear: 480 MW fits in the space of 8 solar panels, one uranium patch lasts hundreds of hours, and the UPS hit is negligible.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> 2×2 reactor = 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps, and one centrifuge running Kovarex. Build it once, never think about power again.&lt;/div>
+
+&lt;h2 id="the-root-cause--why-coal-eventually-caps-out">The Root Cause — Why Coal Eventually Caps Out&lt;/h2>
+&lt;p>At 40+ steam engines you're spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.&lt;/p></description></item><item><title>Main Bus Design — The Classic Factorio Base Layout</title><link>https://factorioguides.com/base-design/main-bus-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/main-bus-guide/</guid><description>&lt;!-- Article Hero -->
+&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;">MAIN BUS LAYOUT&lt;/span>
+&lt;/div>
+&lt;h2 id="what-is-a-main-bus">What Is a Main Bus?&lt;/h2>
+&lt;p>A &lt;strong>main bus&lt;/strong> is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong>pull&lt;/strong> from the bus and &lt;strong>push&lt;/strong> finished products back onto it.&lt;/p>
+&lt;p>Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p>
+&lt;h2 id="recommended-bus-width">Recommended Bus Width&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Material&lt;/th>
+ &lt;th>Lanes (Basic Belt)&lt;/th>
+ &lt;th>Lanes (Fast/Express)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Iron plates&lt;/td>
+ &lt;td>4-6&lt;/td>
+ &lt;td>2-3&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Copper plates&lt;/td>
+ &lt;td>4-6&lt;/td>
+ &lt;td>2-3&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Steel plates&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Green circuits&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Plastic bars&lt;/td>
+ &lt;td>1-2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coal&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Stone&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="tip-box">
+&lt;strong>Pro tip:&lt;/strong> Build your bus with &lt;strong>space between lanes&lt;/strong>. You need room for underground belts to cross lanes and for inserters to pull items off the bus.
+&lt;/div>
+&lt;h2 id="how-to-build-it">How to Build It&lt;/h2>
+&lt;h3 id="step-1-clear-a-large-area">Step 1: Clear a Large Area&lt;/h3>
+&lt;p>You need at least &lt;strong>200 tiles wide&lt;/strong> and &lt;strong>unlimited depth&lt;/strong>. The bus grows as you research more technologies.&lt;/p></description></item></channel></rss>

@@ -13,6 +13,8 @@ Your first factory is a mess. That's normal. The inserter grabbing from the furn
 **TL;DR:** Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.
 {{< /callout >}}
 
+{{< diagram "diagrams/main-bus-layout.svg" "Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines" "760" >}}
+
 ## The Root Cause — Why First Factories Stall
 
 The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.

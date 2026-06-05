@@ -6,7 +6,7 @@
     <div class="article-hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>{{ .Title }}</h1>
+      <h1>{{ .Title }}{{ with .Params.version }} <span class="version-badge">[{{ . }}]</span>{{ end }}</h1>
       {{- with .Description }}<p class="article-desc">{{ . }}</p>{{ end }}
       <div class="article-meta">
         <span class="meta-item">

@@ -1,0 +1,147 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" height="540" style="background:#1a1a1a;border-radius:8px;font-family:sans-serif">
+  <title>Gleba Nutrient Grid — Factorio Guide</title>
+  <rect x="0" y="0" height="48" fill="#1f1f1f" rx="8"/>
+  <rect x="0" y="42" height="6" fill="#1f1f1f"/>
+  <text x="480" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#6abe30">GLEBA NUTRIENT GRID — LOCAL PRODUCTION ZONES</text>
+
+  <!-- Zone A: Fruit Processing -->
+  <rect x="20" y="60" height="220" rx="8" fill="#1a2e1a" stroke="#3a7e3a" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="165" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#6abe30">Zone A: Fruit Processing</text>
+
+  <!-- Fruit icon -->
+  <circle cx="70" cy="140" r="20" fill="#4a3a1a" stroke="#dd8822" stroke-width="2"/>
+  <text x="70" y="145" text-anchor="middle" font-size="16" fill="#dd8822">🍇</text>
+  <text x="70" y="172" text-anchor="middle" font-size="16" fill="#aa8844">Yumako</text>
+
+  <circle cx="130" cy="140" r="20" fill="#3a2a1a" stroke="#aa6622" stroke-width="2"/>
+  <text x="130" y="145" text-anchor="middle" font-size="16" fill="#aa6622">🌰</text>
+  <text x="130" y="172" text-anchor="middle" font-size="16" fill="#886633">Jellynut</text>
+
+  <!-- Arrow -->
+  <line x1="160" y1="140" x2="190" y2="140" stroke="#555" stroke-width="2"/>
+  <polygon points="190,135 200,140 190,145" fill="#555"/>
+
+  <!-- Biochamber / Assembler -->
+  <rect x="200" y="118" height="44" rx="4" fill="#2a3a2a" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="225" y="135" text-anchor="middle" font-size="16" fill="#6abe30" font-weight="bold">Bioflux</text>
+  <text x="225" y="150" text-anchor="middle" font-size="16" fill="#88aa88">Assembly</text>
+
+  <!-- Belt to nutrients -->
+  <line x1="250" y1="140" x2="280" y2="190" stroke="#6abe30" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="278,190 275,185 280,190 275,195" fill="#6abe30"/>
+
+  <!-- Nutrient maker -->
+  <rect x="220" y="190" height="40" rx="4" fill="#2a4a2a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="243" y="208" text-anchor="middle" font-size="16" fill="#88dd44" font-weight="bold">Nutrients</text>
+  <text x="243" y="222" text-anchor="middle" font-size="16" fill="#88aa88">→ Bioflux</text>
+
+  <!-- Distance label -->
+  <text x="115" y="260" text-anchor="middle" font-size="16" fill="#888" font-style="italic">—?15 tiles to consumer —?/text>
+
+  <!-- Zone B: Bacteria Vats -->
+  <rect x="335" y="60" height="220" rx="8" fill="#1a1a2e" stroke="#3a3a7e" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="480" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#6688ee">Zone B: Bacteria Vats</text>
+
+  <!-- Bioflux Chest -->
+  <rect x="355" y="118" height="36" rx="3" fill="#2a3a2a" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="373" y="136" text-anchor="middle" font-size="16" fill="#6abe30" font-weight="bold">Bioflux</text>
+  <text x="373" y="148" text-anchor="middle" font-size="16" fill="#88aa88">Chest</text>
+
+  <!-- Arrow -->
+  <line x1="391" y1="136" x2="410" y2="136" stroke="#555" stroke-width="2"/>
+  <polygon points="410,131 420,136 410,141" fill="#555"/>
+
+  <!-- Bacteria Vat -->
+  <rect x="420" y="108" height="56" rx="4" fill="#1e1e3e" stroke="#6688ee" stroke-width="1.5"/>
+  <text x="450" y="128" text-anchor="middle" font-size="16" fill="#6688ee" font-weight="bold">Bacteria</text>
+  <text x="450" y="142" text-anchor="middle" font-size="16" fill="#8899cc">Vat</text>
+  <text x="450" y="155" text-anchor="middle" font-size="16" fill="#6677aa">N+Bf+H₂O</text>
+
+  <!-- Output -->
+  <line x1="480" y1="140" x2="510" y2="140" stroke="#555" stroke-width="2"/>
+  <polygon points="510,135 520,140 510,145" fill="#555"/>
+
+  <rect x="520" y="120" height="36" rx="3" fill="#3a2a1a" stroke="#aa8844" stroke-width="1.5"/>
+  <text x="538" y="138" text-anchor="middle" font-size="16" fill="#aa8844" font-weight="bold">Iron</text>
+  <text x="538" y="150" text-anchor="middle" font-size="16" fill="#aa8844">Ore</text>
+
+  <!-- Local nutrient line -->
+  <rect x="420" y="194" height="36" rx="4" fill="#2a4a2a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="443" y="210" text-anchor="middle" font-size="16" fill="#88dd44" font-weight="bold">Nutrient</text>
+  <text x="443" y="224" text-anchor="middle" font-size="16" fill="#88aa88">Maker</text>
+
+  <line x1="443" y1="194" x2="443" y2="164" stroke="#88dd44" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="448,164 443,158 438,164" fill="#88dd44"/>
+
+  <!-- Distance label -->
+  <text x="430" y="260" text-anchor="middle" font-size="16" fill="#888" font-style="italic">—?15 tiles —?/text>
+
+  <!-- Zone C: Science -->
+  <rect x="650" y="60" height="220" rx="8" fill="#1a1a1a" stroke="#7e5e3a" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="795" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#ee8844">Zone C: Science Production</text>
+
+  <!-- Bioflux Chest -->
+  <rect x="670" y="118" height="36" rx="3" fill="#2a3a2a" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="688" y="136" text-anchor="middle" font-size="16" fill="#6abe30" font-weight="bold">Bioflux</text>
+  <text x="688" y="148" text-anchor="middle" font-size="16" fill="#88aa88">Chest</text>
+
+  <!-- Arrow -->
+  <line x1="706" y1="136" x2="725" y2="136" stroke="#555" stroke-width="2"/>
+  <polygon points="725,131 735,136 725,141" fill="#555"/>
+
+  <!-- Nutrient Maker -->
+  <rect x="735" y="110" height="44" rx="4" fill="#2a4a2a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="760" y="128" text-anchor="middle" font-size="16" fill="#88dd44" font-weight="bold">Nutrient</text>
+  <text x="760" y="142" text-anchor="middle" font-size="16" fill="#88aa88">Maker</text>
+
+  <!-- Arrow -->
+  <line x1="785" y1="132" x2="810" y2="132" stroke="#555" stroke-width="2"/>
+  <polygon points="810,127 820,132 810,137" fill="#555"/>
+
+  <!-- Science assembler -->
+  <rect x="820" y="106" height="52" rx="4" fill="#3a2a1a" stroke="#ee8844" stroke-width="1.5"/>
+  <text x="850" y="126" text-anchor="middle" font-size="16" fill="#ee8844" font-weight="bold">Science</text>
+  <text x="850" y="140" text-anchor="middle" font-size="16" fill="#ccaa66">Assembly</text>
+  <text x="850" y="152" text-anchor="middle" font-size="16" fill="#aa8844">Agri + Biof</text>
+
+  <!-- Distance label -->
+  <text x="740" y="260" text-anchor="middle" font-size="16" fill="#888" font-style="italic">—?15 tiles —?/text>
+
+  <!-- ===== Bottom Info Panel ===== -->
+  <rect x="20" y="295" height="225" rx="8" fill="#1f1f1f" stroke="#333" stroke-width="1"/>
+
+  <text x="480" y="322" text-anchor="middle" font-size="16" font-weight="700" fill="#ccc">KEY PRINCIPLES</text>
+
+  <!-- Rule 1 -->
+  <rect x="40" y="338" height="165" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="60" cy="358" r="10" fill="#6abe30"/>
+  <text x="60" y="362" text-anchor="middle" font-size="16" fill="#111" font-weight="bold">1</text>
+  <text x="80" y="360" font-size="16" fill="#ccc" font-weight="bold">Local Nutrients</text>
+  <text x="55" y="380" font-size="16" fill="#999" text-anchor="middle">Each production cluster</text>
+  <text x="55" y="396" font-size="16" fill="#999" text-anchor="middle">needs its own nutrient</text>
+  <text x="55" y="412" font-size="16" fill="#999" text-anchor="middle">source. Never belt nutrients</text>
+  <text x="55" y="428" font-size="16" fill="#999" text-anchor="middle">across the base → they spoil</text>
+  <text x="55" y="444" font-size="16" fill="#999" text-anchor="middle">in 5 minutes.</text>
+
+  <!-- Rule 2 -->
+  <rect x="340" y="338" height="165" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="360" cy="358" r="10" fill="#6688ee"/>
+  <text x="360" y="362" text-anchor="middle" font-size="16" fill="#111" font-weight="bold">2</text>
+  <text x="380" y="360" font-size="16" fill="#ccc" font-weight="bold">→ 5 Tiles Belt</text>
+  <text x="355" y="380" font-size="16" fill="#999" text-anchor="middle">Any belt carrying nutrients</text>
+  <text x="355" y="396" font-size="16" fill="#999" text-anchor="middle">must be under 15 tiles long.</text>
+  <text x="355" y="412" font-size="16" fill="#999" text-anchor="middle">After that, the leading edge</text>
+  <text x="355" y="428" font-size="16" fill="#999" text-anchor="middle">spoils before reaching the</text>
+  <text x="355" y="444" font-size="16" fill="#999" text-anchor="middle">consumer.</text>
+
+  <!-- Rule 3 -->
+  <rect x="640" y="338" height="165" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="660" cy="358" r="10" fill="#ee8844"/>
+  <text x="660" y="362" text-anchor="middle" font-size="16" fill="#111" font-weight="bold">3</text>
+  <text x="680" y="360" font-size="16" fill="#ccc" font-weight="bold">Burn Excess</text>
+  <text x="655" y="380" font-size="16" fill="#999" text-anchor="middle">Any production line that</text>
+  <text x="655" y="396" font-size="16" fill="#999" text-anchor="middle">backs up will let items spoil</text>
+  <text x="655" y="412" font-size="16" fill="#999" text-anchor="middle">on the belt. Circuit-controlled</text>
+  <text x="655" y="428" font-size="16" fill="#999" text-anchor="middle">splitters → heating tower</text>
+  <text x="655" y="444" font-size="16" fill="#999" text-anchor="middle">for destruction.</text>
+</svg>
