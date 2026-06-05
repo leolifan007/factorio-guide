@@ -1,0 +1,133 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" height="500" style="background:#1a1a1a;border-radius:8px;font-family:sans-serif">
+  <title>Fulgora Scrap Sorter — Factorio Guide</title>
+  <rect x="0" y="0" height="48" fill="#1f1f1f" rx="8"/>
+  <rect x="0" y="42" height="6" fill="#1f1f1f"/>
+  <text x="460" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#f5aa2e">FULGORA SCRAP SORTER — SUSHI BELT + FILTER SPLITTER</text>
+
+  <!-- Scrap Recyclers Row -->
+  <rect x="20" y="60" height="60" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="460" y="80" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">Scrap Recyclers (feeding from above)</text>
+
+  <!-- Recycler icons -->
+  <rect x="40" y="88" height="24" rx="3" fill="#2a1f0a" stroke="#f5aa2e" stroke-width="1.5"/>
+  <text x="58" y="103" text-anchor="middle" font-size="15" fill="#f5aa2e">R1</text>
+
+  <rect x="120" y="88" height="24" rx="3" fill="#2a1f0a" stroke="#f5aa2e" stroke-width="1.5"/>
+  <text x="138" y="103" text-anchor="middle" font-size="15" fill="#f5aa2e">R2</text>
+
+  <rect x="200" y="88" height="24" rx="3" fill="#2a1f0a" stroke="#f5aa2e" stroke-width="1.5"/>
+  <text x="218" y="103" text-anchor="middle" font-size="15" fill="#f5aa2e">R3</text>
+
+  <text x="290" y="103" text-anchor="middle" font-size="15" fill="#555">••—?/text>
+
+  <rect x="340" y="88" height="24" rx="3" fill="#2a1f0a" stroke="#f5aa2e" stroke-width="1.5"/>
+  <text x="358" y="103" text-anchor="middle" font-size="15" fill="#f5aa2e">Rn</text>
+
+  <!-- Arrow from recyclers down -->
+  <polygon points="350,112 340,118 360,118" fill="#555"/>
+  <line x1="350" y1="112" x2="350" y2="140" stroke="#555" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ===== SUSHI BELT (main horizontal) ===== -->
+  <rect x="20" y="140" height="38" rx="6" fill="#2a2a2a" stroke="#f5aa2e" stroke-width="2"/>
+  <text x="50" y="164" font-size="15" fill="#f5aa2e" font-weight="bold">→ SUSHI BELT (red belt → carries ALL scrap output)</text>
+
+  <!-- Mixed items on belt -->
+  <circle cx="130" cy="159" r="8" fill="#c9463d" opacity="0.7"/>
+  <rect x="190" y="153" height="12" rx="2" fill="#888" opacity="0.7"/>
+  <circle cx="250" cy="159" r="8" fill="#6abe30" opacity="0.7"/>
+  <rect x="310" y="153" height="12" rx="2" fill="#ee8844" opacity="0.7"/>
+  <circle cx="370" cy="159" r="8" fill="#6688ee" opacity="0.7"/>
+  <rect x="430" y="153" height="12" rx="2" fill="#aaa" opacity="0.6"/>
+  <circle cx="490" cy="159" r="8" fill="#55bbbb" opacity="0.6"/>
+  <rect x="550" y="153" height="12" rx="2" fill="#888" opacity="0.6"/>
+  <circle cx="610" cy="159" r="8" fill="#c9463d" opacity="0.5"/>
+
+  <!-- ===== FILTER SPLITTERS ===== -->
+
+  <!-- Splitter 1: Holmium -->
+  <rect x="70" y="200" height="24" rx="4" fill="#1a1a3e" stroke="#6688ee" stroke-width="2"/>
+  <text x="100" y="215" text-anchor="middle" font-size="15" fill="#6688ee" font-weight="bold">Filter</text>
+  <polygon points="100,190 95,200 105,200" fill="#6688ee"/>
+  <line x1="100" y1="190" x2="100" y2="200" stroke="#6688ee" stroke-width="2"/>
+
+  <rect x="145" y="200" height="24" rx="3" fill="#1e1e3e" stroke="#6688ee" stroke-width="1.5"/>
+  <text x="180" y="215" text-anchor="middle" font-size="15" fill="#6688ee">→ Holmium</text>
+  <rect x="145" y="230" height="20" rx="2" fill="#2a1f0a" stroke="#888" stroke-width="1"/>
+  <text x="180" y="244" text-anchor="middle" font-size="15" fill="#888">Storage → Proc</text>
+
+  <!-- Splitter 2: Blue Circuit -->
+  <rect x="270" y="200" height="24" rx="4" fill="#1a1a3e" stroke="#6688ee" stroke-width="2"/>
+  <text x="300" y="215" text-anchor="middle" font-size="15" fill="#6688ee" font-weight="bold">Filter</text>
+  <polygon points="300,190 295,200 305,200" fill="#6688ee"/>
+  <line x1="300" y1="190" x2="300" y2="200" stroke="#6688ee" stroke-width="2"/>
+
+  <rect x="345" y="200" height="24" rx="3" fill="#1e1e3e" stroke="#6688ee" stroke-width="1.5"/>
+  <text x="385" y="215" text-anchor="middle" font-size="15" fill="#6688ee">→ Blue Circuit</text>
+  <rect x="345" y="230" height="20" rx="2" fill="#2a1f0a" stroke="#888" stroke-width="1"/>
+  <text x="385" y="244" text-anchor="middle" font-size="15" fill="#888">Module Prod.</text>
+
+  <!-- Splitter 3: Ice -->
+  <rect x="470" y="200" height="24" rx="4" fill="#1a1a3e" stroke="#6688ee" stroke-width="2"/>
+  <text x="500" y="215" text-anchor="middle" font-size="15" fill="#6688ee" font-weight="bold">Filter</text>
+  <polygon points="500,190 495,200 505,200" fill="#6688ee"/>
+  <line x1="500" y1="190" x2="500" y2="200" stroke="#6688ee" stroke-width="2"/>
+
+  <rect x="545" y="200" height="24" rx="3" fill="#1e1e3e" stroke="#6688ee" stroke-width="1.5"/>
+  <text x="575" y="215" text-anchor="middle" font-size="15" fill="#6688ee">→ Ice</text>
+  <rect x="545" y="230" height="20" rx="2" fill="#2a1f0a" stroke="#888" stroke-width="1"/>
+  <text x="575" y="244" text-anchor="middle" font-size="15" fill="#888">Steam → Power</text>
+
+  <!-- Splitter 4: Everything else —?void -->
+  <rect x="670" y="200" height="24" rx="4" fill="#3a1a1a" stroke="#c9463d" stroke-width="2"/>
+  <text x="708" y="215" text-anchor="middle" font-size="15" fill="#c9463d" font-weight="bold">Void</text>
+  <polygon points="708,190 703,200 713,200" fill="#c9463d"/>
+  <line x1="708" y1="190" x2="708" y2="200" stroke="#c9463d" stroke-width="2"/>
+
+  <rect x="760" y="200" height="24" rx="3" fill="#3a1a1a" stroke="#c9463d" stroke-width="1.5"/>
+  <text x="800" y="215" text-anchor="middle" font-size="15" fill="#c9463d">→ Recycler</text>
+  <rect x="760" y="230" height="20" rx="2" fill="#2a1f0a" stroke="#888" stroke-width="1"/>
+  <text x="800" y="244" text-anchor="middle" font-size="15" fill="#888">Excess → Void</text>
+
+  <!-- Belt directional arrows -->
+  <polygon points="890,159 880,155 880,163" fill="#f5aa2e" opacity="0.5"/>
+
+  <!-- ===== Legend Panel ===== -->
+  <rect x="20" y="275" height="210" rx="8" fill="#1f1f1f" stroke="#333" stroke-width="1"/>
+  <text x="460" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#ccc">HOW IT WORKS</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="315" height="155" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="60" cy="335" r="10" fill="#f5aa2e"/>
+  <text x="60" y="339" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">1</text>
+  <text x="80" y="338" font-size="15" fill="#ccc" font-weight="bold">Recycle Everything</text>
+  <text x="55" y="358" font-size="15" fill="#999" text-anchor="middle">Feed scrap into a row of</text>
+  <text x="55" y="374" font-size="15" fill="#999" text-anchor="middle">recyclers. All output goes</text>
+  <text x="55" y="390" font-size="15" fill="#999" text-anchor="middle">onto a single sushi belt.</text>
+  <text x="55" y="410" font-size="15" fill="#999" text-anchor="middle">Every item type must have</text>
+  <text x="55" y="426" font-size="15" fill="#999" text-anchor="middle">a destination or the belt</text>
+  <text x="55" y="442" font-size="15" fill="#999" text-anchor="middle">deadlocks.</text>
+
+  <!-- Step 2 -->
+  <rect x="325" y="315" height="155" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="345" cy="335" r="10" fill="#6688ee"/>
+  <text x="345" y="339" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">2</text>
+  <text x="365" y="338" font-size="15" fill="#ccc" font-weight="bold">Filter Split by Item</text>
+  <text x="340" y="358" font-size="15" fill="#999" text-anchor="middle">Filter splitters pull each</text>
+  <text x="340" y="374" font-size="15" fill="#999" text-anchor="middle">item type off the sushi</text>
+  <text x="340" y="390" font-size="15" fill="#999" text-anchor="middle">belt onto dedicated side</text>
+  <text x="340" y="406" font-size="15" fill="#999" text-anchor="middle">belts. Priority: Holmium</text>
+  <text x="340" y="422" font-size="15" fill="#999" text-anchor="middle">→ Blue Circuits → Ice —?/text>
+  <text x="340" y="438" font-size="15" fill="#999" text-anchor="middle">Everything else.</text>
+
+  <!-- Step 3 -->
+  <rect x="610" y="315" height="155" rx="6" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="630" cy="335" r="10" fill="#c9463d"/>
+  <text x="630" y="339" text-anchor="middle" font-size="15" fill="#111" font-weight="bold">3</text>
+  <text x="650" y="338" font-size="15" fill="#ccc" font-weight="bold">Void the Excess</text>
+  <text x="625" y="358" font-size="15" fill="#999" text-anchor="middle">Any item not claimed by</text>
+  <text x="625" y="374" font-size="15" fill="#999" text-anchor="middle">a filter splitter reaches</text>
+  <text x="625" y="390" font-size="15" fill="#999" text-anchor="middle">the end → recycler for</text>
+  <text x="625" y="406" font-size="15" fill="#999" text-anchor="middle">destruction. This prevents</text>
+  <text x="625" y="422" font-size="15" fill="#999" text-anchor="middle">belt backup and ensures</text>
+  <text x="625" y="438" font-size="15" fill="#999" text-anchor="middle">holmium keeps flowing.</text>
+</svg>

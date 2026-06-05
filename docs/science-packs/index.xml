@@ -1,26 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</title>
-    <link>https://factorioguides.com/science-packs/</link>
-    <description>Recent content in Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/science-packs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chemical Science Pack — Blue Science Guide</title>
-      <link>https://factorioguides.com/science-packs/blue-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/science-packs/blue-science-guide/</guid>
-      <description>&lt;p&gt;Blue science is the first real complexity spike in Factorio. It&#39;s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I&#39;ve seen countless factory tours stall right here because the oil setup wasn&#39;t thought through.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Red Science Pack — Automation Science Guide</title>
-      <link>https://factorioguides.com/science-packs/red-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/science-packs/red-science-guide/</guid>
-      <description>&lt;h2 id=&#34;recipe&#34;&gt;Recipe&lt;/h2&gt;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/iron_gear.png&#34; alt=&#34;iron_gear&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Iron gear&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/iron_plate.png&#34; alt=&#34;iron_plate&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Iron plate&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/automation_science.png&#34; alt=&#34;automation_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Automation science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;assembler-math&#34;&gt;Assembler Math&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Production Goal&lt;/th&gt;&#xA;          &lt;th&gt;Assemblers Needed&lt;/th&gt;&#xA;          &lt;th&gt;Notes&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1 SP (science pack) per second&lt;/td&gt;&#xA;          &lt;td&gt;1 assembler&lt;/td&gt;&#xA;          &lt;td&gt;Slow, hand-fed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;5 SPM (sustainable)&lt;/td&gt;&#xA;          &lt;td&gt;5 assemblers&lt;/td&gt;&#xA;          &lt;td&gt;Needs iron plate belt&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10 SPM&lt;/td&gt;&#xA;          &lt;td&gt;10 assemblers + 1 gear assembler&lt;/td&gt;&#xA;          &lt;td&gt;Typical early game&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Red science is cheap. Don&#39;t overthink it. 10 assemblers producing red science is more than enough for the entire early game research queue.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;how-to-automate&#34;&gt;How to Automate&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Belt &lt;strong&gt;iron plates&lt;/strong&gt; into the assembler&lt;/li&gt;&#xA;&lt;li&gt;Belt &lt;strong&gt;iron gears&lt;/strong&gt; into the assembler (or hand-craft a few stacks)&lt;/li&gt;&#xA;&lt;li&gt;Use an &lt;strong&gt;inserter&lt;/strong&gt; to pull completed science packs into a &lt;strong&gt;chest&lt;/strong&gt; or directly into &lt;strong&gt;lab&lt;/strong&gt; input&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;warning-box&#34;&gt;&#xA;&lt;strong&gt;Common mistake:&lt;/strong&gt; New players often forget that labs need &lt;em&gt;both&lt;/em&gt; science packs AND power. Check that your lab has an inserter feeding it!&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;research-priority-after-red-science&#34;&gt;Research Priority After Red Science&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Steel processing&lt;/strong&gt; — unlocks steel plates&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Engine&lt;/strong&gt; — unlocks engine units (needed for blue science)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automation 2&lt;/strong&gt; — unlocks electric mining drill&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Logistics&lt;/strong&gt; — unlocks green science (electronic circuit + iron gear)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;Next:&lt;/strong&gt; &lt;a href=&#34;https://factorioguides.com/science-packs/&#34;&gt;Green Science Guide&lt;/a&gt; — the second tier.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</title><link>https://factorioguides.com/science-packs/</link><description>Recent content in Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/science-packs/index.xml" rel="self" type="application/rss+xml"/><item><title>Chemical Science Pack — Blue Science Guide</title><link>https://factorioguides.com/science-packs/blue-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/blue-science-guide/</guid><description>&lt;p>Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div>
+
+&lt;div class="section-head">&lt;h2>Recipe and Requirements&lt;/h2>&lt;/div>
+
+&lt;p>Each chemical science pack needs three components:&lt;/p></description></item><item><title>Red Science Pack — Automation Science Guide</title><link>https://factorioguides.com/science-packs/red-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/red-science-guide/</guid><description>&lt;h2 id="recipe">Recipe&lt;/h2>
+&lt;div class="game-row">&lt;div class="game-slot">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/iron_gear.png" alt="iron_gear" class="game-img" loading="lazy">&lt;span class="game-name">Iron gear&lt;/span>&lt;/div>&lt;span class="game-plus">+&lt;/span>&lt;div class="game-slot">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/iron_plate.png" alt="iron_plate" class="game-img" loading="lazy">&lt;span class="game-name">Iron plate&lt;/span>&lt;/div>&lt;span class="game-plus">&amp;rarr;&lt;/span>&lt;div class="game-slot result">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/automation_science.png" alt="automation_science" class="game-img" loading="lazy">&lt;span class="game-name">Automation science&lt;/span>&lt;/div>&lt;/div>
+&lt;h2 id="assembler-math">Assembler Math&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Production Goal&lt;/th>
+ &lt;th>Assemblers Needed&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1 SP (science pack) per second&lt;/td>
+ &lt;td>1 assembler&lt;/td>
+ &lt;td>Slow, hand-fed&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5 SPM (sustainable)&lt;/td>
+ &lt;td>5 assemblers&lt;/td>
+ &lt;td>Needs iron plate belt&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>10 SPM&lt;/td>
+ &lt;td>10 assemblers + 1 gear assembler&lt;/td>
+ &lt;td>Typical early game&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>&lt;strong>Tip:&lt;/strong> Red science is cheap. Don't overthink it. 10 assemblers producing red science is more than enough for the entire early game research queue.&lt;/p>&lt;/blockquote>
+&lt;h2 id="how-to-automate">How to Automate&lt;/h2>
+&lt;ol>
+&lt;li>Belt &lt;strong>iron plates&lt;/strong> into the assembler&lt;/li>
+&lt;li>Belt &lt;strong>iron gears&lt;/strong> into the assembler (or hand-craft a few stacks)&lt;/li>
+&lt;li>Use an &lt;strong>inserter&lt;/strong> to pull completed science packs into a &lt;strong>chest&lt;/strong> or directly into &lt;strong>lab&lt;/strong> input&lt;/li>
+&lt;/ol>
+&lt;div class="warning-box">
+&lt;strong>Common mistake:&lt;/strong> New players often forget that labs need &lt;em>both&lt;/em> science packs AND power. Check that your lab has an inserter feeding it!
+&lt;/div>
+&lt;h2 id="research-priority-after-red-science">Research Priority After Red Science&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Steel processing&lt;/strong> — unlocks steel plates&lt;/li>
+&lt;li>&lt;strong>Engine&lt;/strong> — unlocks engine units (needed for blue science)&lt;/li>
+&lt;li>&lt;strong>Automation 2&lt;/strong> — unlocks electric mining drill&lt;/li>
+&lt;li>&lt;strong>Logistics&lt;/strong> — unlocks green science (electronic circuit + iron gear)&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Next:&lt;/strong> &lt;a href="https://factorioguides.com/science-packs/">Green Science Guide&lt;/a> — the second tier.&lt;/p></description></item></channel></rss>

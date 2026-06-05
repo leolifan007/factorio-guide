@@ -27,6 +27,8 @@ You only need three circuit patterns. Everything else is a variation.
 
 What you need: red wire, decider combinator, pump per fluid type.
 
+{{< diagram "diagrams/circuit-wires.svg" "Red wire and green wire circuit network — red for production control, green for train/logistics" "760" >}}
+
 1. Run red wire from a heavy oil tank to a decider combinator
 2. Set decider: heavy_oil > 20000 → output P = 1
 3. Connect decider output to the pump feeding heavy→light cracking

@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1000px;background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="auto" style="background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
+  <title>Green Science Flow — Factorio Guide</title>
   <defs>
     <filter id="glow"><feGaussianBlur stdDeviation="2" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
     <marker id="arr-green" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#6abe30" /></marker>
@@ -10,29 +11,29 @@
   <rect x="0" y="52" width="1000" height="8" fill="#252525" />
   <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#6abe30" filter="url(#glow)">🧪 GREEN SCIENCE — PRODUCTION FLOW</text>
 
-  
-  <rect x="40" y="85" width="270" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1" />
+  <!-- ==================== RAW MATERIALS ZONE ==================== -->
+  <rect x="40" y="85" width="270" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
   <text x="175" y="108" text-anchor="middle" font-size="16" font-weight="600" fill="#888">RAW MATERIALS</text>
 
-  
-  <rect x="60" y="130" width="100" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5" />
-  <rect x="75" y="140" width="70" height="20" rx="3" fill="#888" />
+  <!-- Iron Plate -->
+  <rect x="60" y="130" width="100" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5"/>
+  <rect x="75" y="140" width="70" height="20" rx="3" fill="#888"/>
   <text x="110" y="155" text-anchor="middle" font-size="16" fill="#111" font-weight="700">IRON</text>
   <text x="110" y="180" text-anchor="middle" font-size="16" fill="#999">Iron Plate</text>
   <text x="110" y="200" text-anchor="middle" font-size="16" fill="#666">× 3</text>
 
-  
-  <rect x="180" y="130" width="100" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5" />
-  <circle cx="230" cy="155" r="12" fill="none" stroke="#aaa" stroke-width="2" />
-  <circle cx="230" cy="155" r="4" fill="#aaa" />
+  <!-- Gear -->
+  <rect x="180" y="130" width="100" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5"/>
+  <circle cx="230" cy="155" r="12" fill="none" stroke="#aaa" stroke-width="2"/>
+  <circle cx="230" cy="155" r="4" fill="#aaa"/>
   <text x="230" y="180" text-anchor="middle" font-size="16" fill="#999">Iron Gear</text>
   <text x="230" y="200" text-anchor="middle" font-size="16" fill="#666">× 2</text>
 
-  
-  <rect x="60" y="240" width="220" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5" />
-  <circle cx="115" cy="260" r="5" fill="#6abe30" />
-  <rect x="130" y="252" width="28" height="16" rx="2" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
-  <circle cx="158" cy="260" r="5" fill="#6abe30" />
+  <!-- Green Circuit -->
+  <rect x="60" y="240" width="220" height="90" rx="5" fill="#2a2a2a" stroke="#888" stroke-width="1.5"/>
+  <circle cx="115" cy="260" r="5" fill="#6abe30"/>
+  <rect x="130" y="252" width="28" height="16" rx="2" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
+  <circle cx="158" cy="260" r="5" fill="#6abe30"/>
   <text x="170" y="270" text-anchor="middle" font-size="16" fill="#999">Green Circuit</text>
   <text x="170" y="295" text-anchor="middle" font-size="16" fill="#666">× 1</text>
   <text x="170" y="315" text-anchor="middle" font-size="16" fill="#555">(shared with Red Science)</text>
@@ -41,19 +42,19 @@
   <line x1="310" y1="175" x2="345" y2="175" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
   <line x1="310" y1="285" x2="345" y2="285" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
 
-  
-  <rect x="365" y="85" width="280" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1" />
+  <!-- ==================== SUB-ASSEMBLERS ==================== -->
+  <rect x="365" y="85" width="280" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
   <text x="505" y="108" text-anchor="middle" font-size="16" font-weight="600" fill="#888">SUB-ASSEMBLERS</text>
 
-  
-  <rect x="385" y="130" width="240" height="110" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="1.5" />
+  <!-- Inserter Assembly -->
+  <rect x="385" y="130" width="240" height="110" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="1.5"/>
   <text x="505" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#6abe30">Inserter Assembler × 1</text>
   <text x="505" y="175" text-anchor="middle" font-size="16" fill="#888">Recipes: 1 Gear + 1 Circuit + 1 Iron</text>
   <text x="505" y="195" text-anchor="middle" font-size="16" fill="#6abe30">Output: 2 inserters / second</text>
   <text x="505" y="215" text-anchor="middle" font-size="16" fill="#666">Feeds up to 12 science assemblers</text>
 
-  
-  <rect x="385" y="260" width="240" height="110" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="1.5" />
+  <!-- Belt Assembly -->
+  <rect x="385" y="260" width="240" height="110" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="1.5"/>
   <text x="505" y="285" text-anchor="middle" font-size="16" font-weight="600" fill="#6abe30">Belt Assembler × 1</text>
   <text x="505" y="305" text-anchor="middle" font-size="16" fill="#888">Recipes: 1 Iron Plate</text>
   <text x="505" y="325" text-anchor="middle" font-size="16" fill="#6abe30">Output: 4 belts / second</text>
@@ -67,29 +68,29 @@
   <circle cx="505" cy="400" r="8" fill="#6abe30" />
   <line x1="505" y1="408" x2="505" y2="420" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
 
-  
-  <rect x="665" y="85" width="295" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1" />
+  <!-- ==================== MAIN PRODUCTION ==================== -->
+  <rect x="665" y="85" width="295" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
   <text x="812" y="108" text-anchor="middle" font-size="16" font-weight="600" fill="#888">PRODUCTION → RESEARCH</text>
 
-  
-  <rect x="685" y="130" width="255" height="200" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="2" />
+  <!-- Green Science Array -->
+  <rect x="685" y="130" width="255" height="200" rx="6" fill="#1a2a1a" stroke="#6abe30" stroke-width="2"/>
   <text x="812" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#6abe30">Green Science Assemblers</text>
   <text x="812" y="180" text-anchor="middle" font-size="16" fill="#888">× 10</text>
-  <line x1="705" y1="195" x2="920" y2="195" stroke="#6abe30" stroke-opacity="0.3" stroke-width="1" />
+  <line x1="705" y1="195" x2="920" y2="195" stroke="#6abe30" stroke-opacity="0.3" stroke-width="1"/>
 
-  
-  <rect x="700" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <!-- Mini assembler icons -->
+  <rect x="700" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="714" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A1</text>
-  <rect x="734" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <rect x="734" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="748" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A2</text>
-  <rect x="768" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <rect x="768" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="782" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A3</text>
   <text x="812" y="223" text-anchor="middle" font-size="16" fill="#555">…</text>
-  <rect x="822" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <rect x="822" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="836" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A8</text>
-  <rect x="856" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <rect x="856" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="870" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A9</text>
-  <rect x="890" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1" />
+  <rect x="890" y="208" width="28" height="22" rx="3" fill="#2d5a2d" stroke="#6abe30" stroke-width="1"/>
   <text x="904" y="223" text-anchor="middle" font-size="16" fill="#6abe30">A10</text>
 
   <text x="812" y="250" text-anchor="middle" font-size="16" fill="#888">Recipe: 1 Inserter + 1 Belt / 6s</text>
@@ -99,13 +100,13 @@
   
   <line x1="812" y1="330" x2="812" y2="358" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
 
-  
-  <rect x="710" y="360" width="205" height="70" rx="6" fill="#1a1a2a" stroke="#4488dd" stroke-width="1.5" />
+  <!-- Labs -->
+  <rect x="710" y="360" width="205" height="70" rx="6" fill="#1a1a2a" stroke="#4488dd" stroke-width="1.5"/>
   <text x="812" y="385" text-anchor="middle" font-size="16" font-weight="600" fill="#4488dd">Labs</text>
   <text x="812" y="405" text-anchor="middle" font-size="16" fill="#888">Researches Red + Green Science</text>
   <text x="812" y="420" text-anchor="middle" font-size="16" fill="#666">Output belt feeds from the bottom</text>
 
-  
-  <rect x="40" y="470" width="920" height="36" rx="5" fill="#181818" stroke="#333" stroke-width="1" />
+  <!-- ==================== BOTTOM SUMMARY ==================== -->
+  <rect x="40" y="470" width="920" height="36" rx="5" fill="#181818" stroke="#333" stroke-width="1"/>
   <text x="500" y="495" text-anchor="middle" font-size="16" font-weight="600" fill="#6abe30">★ Ratio Summary: 1 Inserter Asm + 1 Belt Asm → 10 Green Science Assemblers → Labs</text>
 </svg>

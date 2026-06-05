@@ -62,6 +62,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: ⎔ Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
       - name: 🔍 Run auto-publish script
         id: publish
         run: |
@@ -95,6 +100,18 @@ jobs:
           git push origin main-temp:main 2>&1
 
       - name: 📊 Status report
+
+      - name: 🔍 Verify sitemap
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          # Wait for GitHub Pages build to complete (up to 2 min)
+          sleep 60
+          SITEMAP_URL="https://factorioguides.com/sitemap.xml"
+          if curl -sf "$SITEMAP_URL" | grep -q "<loc>"; then
+            echo "✅ Sitemap is accessible"
+          else
+            echo "⚠️ Sitemap check: unable to verify (may still be building)"
+          fi
         if: always()
         run: |
           if [ "${{ steps.publish.outputs.published }}" == "true" ]; then

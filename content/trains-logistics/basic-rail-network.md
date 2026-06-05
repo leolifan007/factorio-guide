@@ -13,6 +13,8 @@ You placed your first train stop, sent a locomotive to pick up iron ore, and now
 **TL;DR:** Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.
 {{< /callout >}}
 
+{{< diagram "diagrams/rail-signaling.svg" "Rail signal placement rules — chain signal before intersection, rail signal after" "760" >}}
+
 ## The Mechanics Behind Train Deadlocks
 
 Factorio's rail system uses **blocks**. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.

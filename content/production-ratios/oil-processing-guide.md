@@ -29,6 +29,8 @@ The solution is controlled cracking: convert excess heavy to light, excess light
 | Heavy→light crackers | 1 | Converts excess heavy oil to light |
 | Light→petroleum crackers | 7 | Converts excess light oil to petroleum |
 
+{{< diagram "diagrams/oil-cracking-flow.svg" "Oil processing 8:1:7 cracking ratio — refineries to heavy cracker to light crackers and petroleum output" "760" >}}
+
 **How the math works:**
 - 8 refineries produce: 40 heavy + 40 light + 80 petroleum per 5-second cycle
 - 1 heavy cracker consumes 40 heavy → 30 light per cycle (clears all heavy if needed)
@@ -37,6 +39,8 @@ The solution is controlled cracking: convert excess heavy to light, excess light
 The system can handle any consumption pattern because the cracking ratios match the production ratios.
 
 **Circuit control (prevents the deadlock):**
+
+{{< diagram "diagrams/circuit-control.svg" "Circuit-controlled cracking — red wire from storage tanks to decider combinators controlling pumps" "760" >}}
 
 1. Run red wire from heavy oil storage tank to decider combinator
 2. Decider: heavy_oil > 20000 → output H = 1

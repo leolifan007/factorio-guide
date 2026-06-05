@@ -1,47 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Beginner on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/beginner/</link>
-    <description>Recent content in Beginner on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Flamethrower Turret Defense Guide</title>
-      <link>https://factorioguides.com/defense/flamethrower-defense-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid>
-      <description>&lt;p&gt;Your gun turrets chew through 10 magazines per biter wave and you&#39;re spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place flamethrower turrets behind a wall with dragon&#39;s teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;why-gun-turrets-alone-dont-scale&#34;&gt;Why Gun Turrets Alone Don&#39;t Scale&lt;/h2&gt;&#xA;&lt;p&gt;Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Your First Factory — Factorio Beginner Guide</title>
-      <link>https://factorioguides.com/getting-started/your-first-factory/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/getting-started/your-first-factory/</guid>
-      <description>&lt;p&gt;Your first factory is a mess. That&#39;s normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that&#39;s feeding the red science — but the belt looped back and now everything&#39;s on the same belt and nothing reaches the lab. Here&#39;s a cleaner starting setup.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don&#39;t belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-first-factories-stall&#34;&gt;The Root Cause — Why First Factories Stall&lt;/h2&gt;&#xA;&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Basic Rail Network — Signalling, Junctions, and Train Management</title>
-      <link>https://factorioguides.com/trains-logistics/basic-rail-network/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid>
-      <description>&lt;p&gt;You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here&#39;s the one-rule fix that prevents deadlocks entirely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-train-deadlocks&#34;&gt;The Mechanics Behind Train Deadlocks&lt;/h2&gt;&#xA;&lt;p&gt;Factorio&#39;s rail system uses &lt;strong&gt;blocks&lt;/strong&gt;. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Early Game Defense — Surviving Your First Biter Attacks</title>
-      <link>https://factorioguides.com/defense/early-game-defense/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/defense/early-game-defense/</guid>
-      <description>&lt;h2 id=&#34;when-do-biters-attack&#34;&gt;When Do Biters Attack?&lt;/h2&gt;&#xA;&lt;p&gt;Biters attack when:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pollution&lt;/strong&gt; reaches their nest (they become angry)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;You destroy a nest&lt;/strong&gt; (immediate retaliation)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Evolution factor&lt;/strong&gt; is high enough (time + pollution)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Peaceful mode:&lt;/strong&gt; Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-minimum-viable-defense&#34;&gt;The Minimum Viable Defense&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stone-wall-priority-1&#34;&gt;Step 1: Stone Wall (Priority 1)&lt;/h3&gt;&#xA;&lt;p&gt;Place &lt;strong&gt;stone walls&lt;/strong&gt; in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Use Blueprints — Complete Guide</title>
-      <link>https://factorioguides.com/blueprints/how-to-use-blueprints/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/blueprints/how-to-use-blueprints/</guid>
-      <description>&lt;h2 id=&#34;what-are-blueprints&#34;&gt;What Are Blueprints?&lt;/h2&gt;&#xA;&lt;p&gt;Blueprints let you &lt;strong&gt;copy&lt;/strong&gt; a factory design, &lt;strong&gt;save&lt;/strong&gt; it for later, and &lt;strong&gt;paste&lt;/strong&gt; it anywhere. They are essential for scaling your base.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basic-blueprint-workflow&#34;&gt;Basic Blueprint Workflow&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-copy-a-design&#34;&gt;1. Copy a Design&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;G&lt;/strong&gt; (blueprint tool)&lt;/li&gt;&#xA;&lt;li&gt;Drag a rectangle around the area you want to copy&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your cursor — place it in your &lt;strong&gt;inventory&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-save-to-a-blueprint-book&#34;&gt;2. Save to a Blueprint Book&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the blueprint&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; right arrow choose a &lt;strong&gt;Blueprint Book&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Give it a &lt;strong&gt;descriptive name&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Naming convention:&lt;/strong&gt; Use format &lt;code&gt;[Category] Description&lt;/code&gt; — e.g., &lt;code&gt;[Smelting] Iron 12x Furnace&lt;/code&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;3-import-a-blueprint-string&#34;&gt;3. Import a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Copy a blueprint string (from the web or a friend)&lt;/li&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;Ctrl+V&lt;/strong&gt; while the blueprint tool (G) is selected&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your inventory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;4-export-a-blueprint-string&#34;&gt;4. Export a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select a blueprint in your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;export&lt;/strong&gt; button (top-right)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; to copy the string&lt;/li&gt;&#xA;&lt;li&gt;Share it!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;blueprint-books-organization&#34;&gt;Blueprint Books Organization&lt;/h2&gt;&#xA;&lt;p&gt;A well-organized blueprint book saves hours of searching:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Beginner on Factorio Guide</title><link>https://factorioguides.com/tags/beginner/</link><description>Recent content in Beginner on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/beginner/index.xml" rel="self" type="application/rss+xml"/><item><title>Flamethrower Turret Defense Guide</title><link>https://factorioguides.com/defense/flamethrower-defense-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid><description>&lt;p>Your gun turrets chew through 10 magazines per biter wave and you're spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Place flamethrower turrets behind a wall with dragon's teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div>
+
+&lt;h2 id="why-gun-turrets-alone-dont-scale">Why Gun Turrets Alone Don't Scale&lt;/h2>
+&lt;p>Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p></description></item><item><title>Your First Factory — Factorio Beginner Guide</title><link>https://factorioguides.com/getting-started/your-first-factory/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/your-first-factory/</guid><description>&lt;p>Your first factory is a mess. That's normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that's feeding the red science — but the belt looped back and now everything's on the same belt and nothing reaches the lab. Here's a cleaner starting setup.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div>
+
+&lt;img src="https://factorioguides.com/images/diagrams/main-bus-layout.svg" alt="Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines" class="schema-diagram" loading="lazy" width="760">
+
+&lt;h2 id="the-root-cause--why-first-factories-stall">The Root Cause — Why First Factories Stall&lt;/h2>
+&lt;p>The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p></description></item><item><title>Basic Rail Network — Signalling, Junctions, and Train Management</title><link>https://factorioguides.com/trains-logistics/basic-rail-network/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid><description>&lt;p>You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div>
+
+&lt;img src="https://factorioguides.com/images/diagrams/rail-signaling.svg" alt="Rail signal placement rules — chain signal before intersection, rail signal after" class="schema-diagram" loading="lazy" width="760">
+
+&lt;h2 id="the-mechanics-behind-train-deadlocks">The Mechanics Behind Train Deadlocks&lt;/h2>
+&lt;p>Factorio's rail system uses &lt;strong>blocks&lt;/strong>. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p></description></item><item><title>Early Game Defense — Surviving Your First Biter Attacks</title><link>https://factorioguides.com/defense/early-game-defense/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/early-game-defense/</guid><description>&lt;h2 id="when-do-biters-attack">When Do Biters Attack?&lt;/h2>
+&lt;p>Biters attack when:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Pollution&lt;/strong> reaches their nest (they become angry)&lt;/li>
+&lt;li>&lt;strong>You destroy a nest&lt;/strong> (immediate retaliation)&lt;/li>
+&lt;li>&lt;strong>Evolution factor&lt;/strong> is high enough (time + pollution)&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&lt;strong>Peaceful mode:&lt;/strong> Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p>&lt;/blockquote>
+&lt;h2 id="the-minimum-viable-defense">The Minimum Viable Defense&lt;/h2>
+&lt;h3 id="step-1-stone-wall-priority-1">Step 1: Stone Wall (Priority 1)&lt;/h3>
+&lt;p>Place &lt;strong>stone walls&lt;/strong> in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p></description></item><item><title>How to Use Blueprints — Complete Guide</title><link>https://factorioguides.com/blueprints/how-to-use-blueprints/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/blueprints/how-to-use-blueprints/</guid><description>&lt;h2 id="what-are-blueprints">What Are Blueprints?&lt;/h2>
+&lt;p>Blueprints let you &lt;strong>copy&lt;/strong> a factory design, &lt;strong>save&lt;/strong> it for later, and &lt;strong>paste&lt;/strong> it anywhere. They are essential for scaling your base.&lt;/p>
+&lt;h2 id="basic-blueprint-workflow">Basic Blueprint Workflow&lt;/h2>
+&lt;h3 id="1-copy-a-design">1. Copy a Design&lt;/h3>
+&lt;ol>
+&lt;li>Press &lt;strong>G&lt;/strong> (blueprint tool)&lt;/li>
+&lt;li>Drag a rectangle around the area you want to copy&lt;/li>
+&lt;li>The blueprint appears in your cursor — place it in your &lt;strong>inventory&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;h3 id="2-save-to-a-blueprint-book">2. Save to a Blueprint Book&lt;/h3>
+&lt;ol>
+&lt;li>Open your inventory&lt;/li>
+&lt;li>Click the blueprint&lt;/li>
+&lt;li>Click &lt;strong>Save&lt;/strong> right arrow choose a &lt;strong>Blueprint Book&lt;/strong>&lt;/li>
+&lt;li>Give it a &lt;strong>descriptive name&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;div class="tip-box">
+&lt;strong>Naming convention:&lt;/strong> Use format &lt;code>[Category] Description&lt;/code> — e.g., &lt;code>[Smelting] Iron 12x Furnace&lt;/code>
+&lt;/div>
+&lt;h3 id="3-import-a-blueprint-string">3. Import a Blueprint String&lt;/h3>
+&lt;ol>
+&lt;li>Copy a blueprint string (from the web or a friend)&lt;/li>
+&lt;li>Press &lt;strong>Ctrl+V&lt;/strong> while the blueprint tool (G) is selected&lt;/li>
+&lt;li>The blueprint appears in your inventory&lt;/li>
+&lt;/ol>
+&lt;h3 id="4-export-a-blueprint-string">4. Export a Blueprint String&lt;/h3>
+&lt;ol>
+&lt;li>Select a blueprint in your inventory&lt;/li>
+&lt;li>Click the &lt;strong>export&lt;/strong> button (top-right)&lt;/li>
+&lt;li>&lt;strong>Ctrl+C&lt;/strong> to copy the string&lt;/li>
+&lt;li>Share it!&lt;/li>
+&lt;/ol>
+&lt;h2 id="blueprint-books-organization">Blueprint Books Organization&lt;/h2>
+&lt;p>A well-organized blueprint book saves hours of searching:&lt;/p></description></item></channel></rss>

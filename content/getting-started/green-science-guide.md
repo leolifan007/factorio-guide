@@ -34,6 +34,8 @@ The solution is simple math: gear production is your limiting factor, not belt s
 4. Both feed into one belt going to the science line
 5. 12 science assemblers in two rows of 6, input belt between them, output belt on the far side
 
+{{< diagram "diagrams/green-science-flow.svg" "Green science production flow — from iron plates to belt and inserter sub-factories to science assemblers and labs" "760" >}}
+
 {{< callout type="info" >}}
 **Quick Tip:** Don't put green science production on your main bus. Build it as a standalone side-factory that pulls iron plates from the bus and outputs science packs on a dedicated belt to the labs. It keeps your bus clean and expansion is as simple as copying the side-factory.
 {{< /callout >}}

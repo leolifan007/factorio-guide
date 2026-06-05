@@ -1,19 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Belts on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/belts/</link>
-    <description>Recent content in Belts on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/belts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Smelting Ratios — How Many Furnaces Per Belt</title>
-      <link>https://factorioguides.com/production-ratios/smelting-ratios/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid>
-      <description>&lt;h2 id=&#34;the-core-concept&#34;&gt;The Core Concept&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.&#xA;An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iron-and-copper-smelting&#34;&gt;Iron and Copper Smelting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Belt Type&lt;/th&gt;&#xA;          &lt;th&gt;Plates/sec&lt;/th&gt;&#xA;          &lt;th&gt;Stone Furnaces&lt;/th&gt;&#xA;          &lt;th&gt;Electric Furnaces&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (half)&lt;/td&gt;&#xA;          &lt;td&gt;3.75&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (full)&lt;/td&gt;&#xA;          &lt;td&gt;7.5&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fast belt&lt;/td&gt;&#xA;          &lt;td&gt;15&lt;/td&gt;&#xA;          &lt;td&gt;48&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Express belt&lt;/td&gt;&#xA;          &lt;td&gt;22.5&lt;/td&gt;&#xA;          &lt;td&gt;72&lt;/td&gt;&#xA;          &lt;td&gt;36&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;steel-smelting&#34;&gt;Steel Smelting&lt;/h2&gt;&#xA;&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Belts on Factorio Guide</title><link>https://factorioguides.com/tags/belts/</link><description>Recent content in Belts on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/belts/index.xml" rel="self" type="application/rss+xml"/><item><title>Smelting Ratios — How Many Furnaces Per Belt</title><link>https://factorioguides.com/production-ratios/smelting-ratios/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid><description>&lt;h2 id="the-core-concept">The Core Concept&lt;/h2>
+&lt;p>A &lt;strong>transport belt&lt;/strong> carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p>
+&lt;p>A &lt;strong>stone furnace&lt;/strong> smelts 1 plate per 3.2 seconds = &lt;strong>0.3125 plates/second&lt;/strong>.
+An &lt;strong>electric furnace&lt;/strong> smelts 1 plate per 1.6 seconds = &lt;strong>0.625 plates/second&lt;/strong>.&lt;/p>
+&lt;h2 id="iron-and-copper-smelting">Iron and Copper Smelting&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Belt Type&lt;/th>
+ &lt;th>Plates/sec&lt;/th>
+ &lt;th>Stone Furnaces&lt;/th>
+ &lt;th>Electric Furnaces&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Basic belt (half)&lt;/td>
+ &lt;td>3.75&lt;/td>
+ &lt;td>12&lt;/td>
+ &lt;td>6&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Basic belt (full)&lt;/td>
+ &lt;td>7.5&lt;/td>
+ &lt;td>24&lt;/td>
+ &lt;td>12&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Fast belt&lt;/td>
+ &lt;td>15&lt;/td>
+ &lt;td>48&lt;/td>
+ &lt;td>24&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Express belt&lt;/td>
+ &lt;td>22.5&lt;/td>
+ &lt;td>72&lt;/td>
+ &lt;td>36&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="tip-box">
+&lt;strong>Rule of thumb:&lt;/strong> 1 full basic belt of iron ore needs exactly &lt;strong>24 stone furnaces&lt;/strong> (or 12 electric furnaces) to consume it entirely.
+&lt;/div>
+&lt;h2 id="steel-smelting">Steel Smelting&lt;/h2>
+&lt;p>Steel needs &lt;strong>5 iron plates&lt;/strong> and takes &lt;strong>17.5 seconds&lt;/strong> in a stone furnace.&lt;/p></description></item></channel></rss>

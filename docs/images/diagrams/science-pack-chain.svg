@@ -1,0 +1,134 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="100%" height="auto" style="background:#151515;font-family:system-ui,-apple-system,sans-serif">
+  <title>Science Pack Production Chain — Factorio Guide</title>
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr-fwd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#666"/></marker>
+  </defs>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="960" height="46" fill="#1f1f1f" rx="6"/>
+  <rect x="0" y="40" width="960" height="6" fill="#1f1f1f"/>
+  <text x="480" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#e8941c" filter="url(#glow)">SCIENCE PACK PRODUCTION CHAIN — All 7 Tiers</text>
+
+  <!-- ===== SCIENCE PACK BLOCKS ===== -->
+  <!-- Red Science -->
+  <rect x="15" y="62" width="120" height="100" rx="5" fill="#2a1a1a" stroke="#cc4444" stroke-width="2"/>
+  <rect x="15" y="62" width="120" height="30" rx="5" fill="#cc4444"/>
+  <rect x="15" y="84" width="120" height="8" fill="#cc4444"/>
+  <text x="75" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Red Science</text>
+  <text x="75" y="108" text-anchor="middle" font-size="16" fill="#ddd">Gear × 1</text>
+  <text x="75" y="126" text-anchor="middle" font-size="16" fill="#ddd">Plate × 1</text>
+  <text x="75" y="148" text-anchor="middle" font-size="16" fill="#777">5s</text>
+
+  <line x1="135" y1="120" x2="158" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Green Science -->
+  <rect x="162" y="62" width="120" height="100" rx="5" fill="#1a2a1a" stroke="#44cc44" stroke-width="2"/>
+  <rect x="162" y="62" width="120" height="30" rx="5" fill="#44cc44"/>
+  <rect x="162" y="84" width="120" height="8" fill="#44cc44"/>
+  <text x="222" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Green Science</text>
+  <text x="222" y="108" text-anchor="middle" font-size="16" fill="#ddd">Inserter × 1</text>
+  <text x="222" y="126" text-anchor="middle" font-size="16" fill="#ddd">Belt × 1</text>
+  <text x="222" y="148" text-anchor="middle" font-size="16" fill="#777">6s</text>
+
+  <line x1="282" y1="120" x2="305" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Blue Science -->
+  <rect x="309" y="62" width="120" height="100" rx="5" fill="#1a1a2a" stroke="#4488ff" stroke-width="2"/>
+  <rect x="309" y="62" width="120" height="30" rx="5" fill="#4488ff"/>
+  <rect x="309" y="84" width="120" height="8" fill="#4488ff"/>
+  <text x="369" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Blue Science</text>
+  <text x="369" y="108" text-anchor="middle" font-size="16" fill="#ddd">Red Cir × 3</text>
+  <text x="369" y="126" text-anchor="middle" font-size="16" fill="#ddd">Engine × 2</text>
+  <text x="369" y="148" text-anchor="middle" font-size="16" fill="#777">24s</text>
+
+  <line x1="429" y1="120" x2="452" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Military Science -->
+  <rect x="456" y="62" width="120" height="100" rx="5" fill="#2a1a0a" stroke="#ddaa33" stroke-width="2"/>
+  <rect x="456" y="62" width="120" height="30" rx="5" fill="#ddaa33"/>
+  <rect x="456" y="84" width="120" height="8" fill="#ddaa33"/>
+  <text x="516" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Military Science</text>
+  <text x="516" y="108" text-anchor="middle" font-size="16" fill="#ddd">Piercing × 1</text>
+  <text x="516" y="126" text-anchor="middle" font-size="16" fill="#ddd">Grenade × 1</text>
+  <text x="516" y="148" text-anchor="middle" font-size="16" fill="#777">10s</text>
+
+  <line x1="576" y1="120" x2="599" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Purple Science -->
+  <rect x="603" y="62" width="120" height="100" rx="5" fill="#1a1a2a" stroke="#9966cc" stroke-width="2"/>
+  <rect x="603" y="62" width="120" height="30" rx="5" fill="#9966cc"/>
+  <rect x="603" y="84" width="120" height="8" fill="#9966cc"/>
+  <text x="663" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Purple Science</text>
+  <text x="663" y="108" text-anchor="middle" font-size="16" fill="#ddd">Prod Mod × 2</text>
+  <text x="663" y="126" text-anchor="middle" font-size="16" fill="#ddd">E Eng × 2</text>
+  <text x="663" y="148" text-anchor="middle" font-size="16" fill="#777">21s</text>
+
+  <line x1="723" y1="120" x2="746" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Yellow Science -->
+  <rect x="750" y="62" width="105" height="100" rx="5" fill="#1a2a2a" stroke="#44cccc" stroke-width="2"/>
+  <rect x="750" y="62" width="105" height="30" rx="5" fill="#44cccc"/>
+  <rect x="750" y="84" width="105" height="8" fill="#44cccc"/>
+  <text x="802" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Yellow Science</text>
+  <text x="802" y="108" text-anchor="middle" font-size="16" fill="#ddd">Fly Frame</text>
+  <text x="802" y="126" text-anchor="middle" font-size="16" fill="#ddd">Speed × 2</text>
+  <text x="802" y="148" text-anchor="middle" font-size="16" fill="#777">21s</text>
+
+  <line x1="855" y1="120" x2="868" y2="148" stroke="#666" stroke-width="2" marker-end="url(#arr-fwd)"/>
+
+  <!-- Space Science (below yellow) -->
+  <rect x="830" y="172" width="115" height="80" rx="5" fill="#2a1a2a" stroke="#cc66cc" stroke-width="2"/>
+  <rect x="830" y="172" width="115" height="28" rx="5" fill="#cc66cc"/>
+  <rect x="830" y="192" width="115" height="8" fill="#cc66cc"/>
+  <text x="887" y="193" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Space Science</text>
+  <text x="887" y="217" text-anchor="middle" font-size="16" fill="#ddd">Rocket</text>
+  <text x="887" y="235" text-anchor="middle" font-size="16" fill="#ddd">Parts</text>
+
+  <!-- ===== RAW MATERIAL TIERS ===== -->
+  <text x="480" y="190" text-anchor="middle" font-size="16" font-weight="700" fill="#555">⟶ RAW MATERIAL SUPPLY CHAIN ⟶</text>
+  <line x1="15" y1="198" x2="945" y2="198" stroke="#333" stroke-width="1"/>
+
+  <!-- Tier 1 -->
+  <rect x="15" y="212" width="225" height="110" rx="5" fill="#111" stroke="#444" stroke-width="1"/>
+  <text x="127" y="235" text-anchor="middle" font-size="16" font-weight="600" fill="#ccc">Tier 1 — Smelting</text>
+  <rect x="28" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#cc8844" stroke-width="1.5"/>
+  <text x="75" y="269" text-anchor="middle" font-size="16" fill="#cc8844">Iron Furnace</text>
+  <rect x="132" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#cc6644" stroke-width="1.5"/>
+  <text x="179" y="269" text-anchor="middle" font-size="16" fill="#cc6644">Copper Furnace</text>
+  <text x="127" y="300" text-anchor="middle" font-size="16" fill="#777">Plate → Gears → Red Sci</text>
+  <text x="127" y="316" text-anchor="middle" font-size="16" fill="#777">Copper → Green &amp; Red</text>
+
+  <!-- Tier 2 -->
+  <rect x="252" y="212" width="225" height="110" rx="5" fill="#111" stroke="#444" stroke-width="1"/>
+  <text x="364" y="235" text-anchor="middle" font-size="16" font-weight="600" fill="#ccc">Tier 2 — Oil &amp; Circuits</text>
+  <rect x="265" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#4488ff" stroke-width="1.5"/>
+  <text x="312" y="269" text-anchor="middle" font-size="16" fill="#4488ff">Oil Refinery</text>
+  <rect x="370" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#cc4466" stroke-width="1.5"/>
+  <text x="417" y="269" text-anchor="middle" font-size="16" fill="#cc4466">Circuit Fab</text>
+  <text x="364" y="300" text-anchor="middle" font-size="16" fill="#777">Petro → Plastic → R Cir</text>
+  <text x="364" y="316" text-anchor="middle" font-size="16" fill="#777">Sulfur → Acid → Battery</text>
+
+  <!-- Tier 3 -->
+  <rect x="490" y="212" width="225" height="110" rx="5" fill="#111" stroke="#444" stroke-width="1"/>
+  <text x="602" y="235" text-anchor="middle" font-size="16" font-weight="600" fill="#ccc">Tier 3 — Advanced</text>
+  <rect x="503" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#9966cc" stroke-width="1.5"/>
+  <text x="550" y="269" text-anchor="middle" font-size="16" fill="#9966cc">Module Prod</text>
+  <rect x="608" y="248" width="95" height="32" rx="3" fill="#1a1a1a" stroke="#44cccc" stroke-width="1.5"/>
+  <text x="655" y="269" text-anchor="middle" font-size="16" fill="#44cccc">Rocket Parts</text>
+  <text x="602" y="300" text-anchor="middle" font-size="16" fill="#777">Mods → Purple + Yellow</text>
+  <text x="602" y="316" text-anchor="middle" font-size="16" fill="#777">Silo → Space Science</text>
+
+  <!-- Key -->
+  <rect x="15" y="340" width="930" height="50" rx="5" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="480" y="364" text-anchor="middle" font-size="16" font-weight="700" fill="#e8941c">★ Production Flow</text>
+  <rect x="35" y="375" width="14" height="14" rx="2" fill="#cc4444"/><text x="55" y="387" font-size="16" fill="#999">Red</text>
+  <rect x="130" y="375" width="14" height="14" rx="2" fill="#44cc44"/><text x="150" y="387" font-size="16" fill="#999">Green</text>
+  <rect x="240" y="375" width="14" height="14" rx="2" fill="#4488ff"/><text x="260" y="387" font-size="16" fill="#999">Blue</text>
+  <rect x="345" y="375" width="14" height="14" rx="2" fill="#ddaa33"/><text x="365" y="387" font-size="16" fill="#999">Military</text>
+  <rect x="465" y="375" width="14" height="14" rx="2" fill="#9966cc"/><text x="485" y="387" font-size="16" fill="#999">Purple</text>
+  <rect x="575" y="375" width="14" height="14" rx="2" fill="#44cccc"/><text x="595" y="387" font-size="16" fill="#999">Yellow</text>
+  <rect x="685" y="375" width="14" height="14" rx="2" fill="#cc66cc"/><text x="705" y="387" font-size="16" fill="#999">Space</text>
+
+  <text x="480" y="430" text-anchor="middle" font-size="16" fill="#555">Arrows show tech tree progression. Each science tier unlocks the next.</text>
+</svg>

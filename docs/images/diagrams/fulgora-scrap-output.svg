@@ -1,43 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" style="background:#111;font-family:system-ui,sans-serif;">
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Fulgora Scrap Output — Factorio Guide</title>
   <text x="440" y="40" fill="#e8941c" font-size="18" text-anchor="middle" font-weight="bold">Scrap Output Distribution (per 1000 scrap)</text>
 
-  
-  <rect x="60" y="60" width="60" height="210" rx="3" fill="#6abe30" opacity="0.85" />
+  <!-- Ice: 250 -->
+  <rect x="60" y="60" width="60" height="210" rx="3" fill="#6abe30" opacity="0.85"/>
   <text x="90" y="290" fill="#6abe30" font-size="14" text-anchor="middle" font-weight="bold">Ice</text>
   <text x="90" y="308" fill="#6abe30" font-size="14" text-anchor="middle">250</text>
 
-  
-  <rect x="155" y="115" width="60" height="155" rx="3" fill="#888" opacity="0.85" />
+  <!-- IronGr: 150 -->
+  <rect x="155" y="115" width="60" height="155" rx="3" fill="#888" opacity="0.85"/>
   <text x="185" y="290" fill="#888" font-size="14" text-anchor="middle" font-weight="bold">Iron Gr</text>
   <text x="185" y="308" fill="#888" font-size="14" text-anchor="middle">150</text>
 
-  
-  <rect x="250" y="142" width="60" height="128" rx="3" fill="#c8824c" opacity="0.85" />
+  <!-- IronPl: 120 -->
+  <rect x="250" y="142" width="60" height="128" rx="3" fill="#c8824c" opacity="0.85"/>
   <text x="280" y="290" fill="#c8824c" font-size="14" text-anchor="middle" font-weight="bold">Iron Pl</text>
   <text x="280" y="308" fill="#c8824c" font-size="14" text-anchor="middle">120</text>
 
-  
-  <rect x="345" y="160" width="60" height="110" rx="3" fill="#c9463d" opacity="0.85" />
+  <!-- CuPl: 100 -->
+  <rect x="345" y="160" width="60" height="110" rx="3" fill="#c9463d" opacity="0.85"/>
   <text x="375" y="290" fill="#c9463d" font-size="14" text-anchor="middle" font-weight="bold">Cu Pl</text>
   <text x="375" y="308" fill="#c9463d" font-size="14" text-anchor="middle">100</text>
 
-  
-  <rect x="440" y="178" width="60" height="92" rx="3" fill="#777" opacity="0.85" />
+  <!-- Concrete: 80 -->
+  <rect x="440" y="178" width="60" height="92" rx="3" fill="#777" opacity="0.85"/>
   <text x="470" y="290" fill="#777" font-size="14" text-anchor="middle" font-weight="bold">Concrete</text>
   <text x="470" y="308" fill="#777" font-size="14" text-anchor="middle">80</text>
 
-  
-  <rect x="535" y="188" width="60" height="82" rx="3" fill="#3778c8" opacity="0.85" />
+  <!-- Stone: 70 -->
+  <rect x="535" y="188" width="60" height="82" rx="3" fill="#3778c8" opacity="0.85"/>
   <text x="565" y="290" fill="#3778c8" font-size="14" text-anchor="middle" font-weight="bold">Stone</text>
   <text x="565" y="308" fill="#3778c8" font-size="14" text-anchor="middle">70</text>
 
-  
-  <rect x="630" y="220" width="60" height="50" rx="3" fill="#9d4edd" opacity="0.85" />
+  <!-- Holmium: 50 -->
+  <rect x="630" y="220" width="60" height="50" rx="3" fill="#9d4edd" opacity="0.85"/>
   <text x="660" y="290" fill="#9d4edd" font-size="14" text-anchor="middle" font-weight="bold">Holmium</text>
   <text x="660" y="308" fill="#9d4edd" font-size="14" text-anchor="middle">50</text>
 
-  
-  <rect x="725" y="245" width="60" height="25" rx="3" fill="#d7b940" opacity="0.85" />
+  <!-- Blue Ckt: 25 -->
+  <rect x="725" y="245" width="60" height="25" rx="3" fill="#d7b940" opacity="0.85"/>
   <text x="755" y="290" fill="#d7b940" font-size="14" text-anchor="middle" font-weight="bold">Blue Ckt</text>
   <text x="755" y="308" fill="#d7b940" font-size="14" text-anchor="middle">25</text>
 
@@ -47,6 +48,6 @@
   
   <text x="440" y="355" fill="#777" font-size="14" text-anchor="middle">Holmium is rare at 50/1000 scrap (5%). Need 20+ recyclers for steady output.</text>
 
-  
+  <!-- Y-axis label -->
   <text x="25" y="175" fill="#666" font-size="14" text-anchor="middle" transform="rotate(-90,25,175)">Items per 1000 scrap</text>
 </svg>
