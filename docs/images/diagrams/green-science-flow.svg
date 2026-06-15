@@ -1,14 +1,14 @@
 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="auto" style="background:#1f1f1f;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
   <title>Green Science Flow — Factorio Guide</title>
   <defs>
-    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
-    <marker id="arr-green" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#6abe30" /></marker>
-    <marker id="arr-gray" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#666" /></marker>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr-green" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#6abe30"/></marker>
+    <marker id="arr-gray" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 Z" fill="#666"/></marker>
   </defs>
 
-  
-  <rect x="0" y="0" width="1000" height="60" fill="#252525" rx="8" />
-  <rect x="0" y="52" width="1000" height="8" fill="#252525" />
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1000" height="60" fill="#252525" rx="8"/>
+  <rect x="0" y="52" width="1000" height="8" fill="#252525"/>
   <text x="500" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#6abe30" filter="url(#glow)">🧪 GREEN SCIENCE — PRODUCTION FLOW</text>
 
   <!-- ==================== RAW MATERIALS ZONE ==================== -->
@@ -38,9 +38,9 @@
   <text x="170" y="295" text-anchor="middle" font-size="16" fill="#666">× 1</text>
   <text x="170" y="315" text-anchor="middle" font-size="16" fill="#555">(shared with Red Science)</text>
 
-  
-  <line x1="310" y1="175" x2="345" y2="175" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
-  <line x1="310" y1="285" x2="345" y2="285" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
+  <!-- Arrow from materials -->
+  <line x1="310" y1="175" x2="345" y2="175" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)"/>
+  <line x1="310" y1="285" x2="345" y2="285" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)"/>
 
   <!-- ==================== SUB-ASSEMBLERS ==================== -->
   <rect x="365" y="85" width="280" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
@@ -60,13 +60,13 @@
   <text x="505" y="325" text-anchor="middle" font-size="16" fill="#6abe30">Output: 4 belts / second</text>
   <text x="505" y="345" text-anchor="middle" font-size="16" fill="#666">Feeds up to 24 science assemblers</text>
 
-  
-  <line x1="505" y1="240" x2="505" y2="255" stroke="#6abe30" stroke-width="2" marker-end="url(#arr-green)" />
-  <line x1="505" y1="370" x2="505" y2="385" stroke="#6abe30" stroke-width="2" />
+  <!-- Merging arrows -->
+  <line x1="505" y1="240" x2="505" y2="255" stroke="#6abe30" stroke-width="2" marker-end="url(#arr-green)"/>
+  <line x1="505" y1="370" x2="505" y2="385" stroke="#6abe30" stroke-width="2"/>
 
-  
-  <circle cx="505" cy="400" r="8" fill="#6abe30" />
-  <line x1="505" y1="408" x2="505" y2="420" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
+  <!-- Vertical merge node -->
+  <circle cx="505" cy="400" r="8" fill="#6abe30"/>
+  <line x1="505" y1="408" x2="505" y2="420" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)"/>
 
   <!-- ==================== MAIN PRODUCTION ==================== -->
   <rect x="665" y="85" width="295" height="370" rx="6" fill="#151515" stroke="#444" stroke-width="1"/>
@@ -97,8 +97,8 @@
   <text x="812" y="270" text-anchor="middle" font-size="16" fill="#888">Output: 1 science pack / 6s each</text>
   <text x="812" y="290" text-anchor="middle" font-size="16" fill="#888">Total: ~10 packs / 6s</text>
 
-  
-  <line x1="812" y1="330" x2="812" y2="358" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)" />
+  <!-- Output arrow to Labs -->
+  <line x1="812" y1="330" x2="812" y2="358" stroke="#6abe30" stroke-width="2.5" marker-end="url(#arr-green)"/>
 
   <!-- Labs -->
   <rect x="710" y="360" width="205" height="70" rx="6" fill="#1a1a2a" stroke="#4488dd" stroke-width="1.5"/>

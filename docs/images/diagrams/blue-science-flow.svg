@@ -10,8 +10,8 @@
   <text x="120" y="128" text-anchor="middle" font-size="16" fill="#888">Oil Well × 4+</text>
   <text x="120" y="152" text-anchor="middle" font-size="16" fill="#666">Crude Oil Output</text>
 
-  <line x1="200" y1="140" x2="260" y2="140" stroke="#3778c8" stroke-width="2.5" />
-  <polygon points="260,135 275,140 260,145" fill="#3778c8" />
+  <line x1="200" y1="140" x2="260" y2="140" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="260,135 275,140 260,145" fill="#3778c8"/>
 
   <!-- ===== Refinery ===== -->
   <rect x="278" y="95" width="160" height="92" rx="5" fill="#2a2a2a" stroke="#555"/>
@@ -52,35 +52,35 @@
   <text x="120" y="252" text-anchor="middle" font-size="16" fill="#888">Engine Assembly</text>
   <text x="120" y="276" text-anchor="middle" font-size="16" fill="#666">2 Steel + Gear + Pipe</text>
 
-  <line x1="200" y1="262" x2="280" y2="262" stroke="#3778c8" stroke-width="2.5" />
-  <polygon points="280,257 295,262 280,267" fill="#3778c8" />
+  <line x1="200" y1="262" x2="280" y2="262" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="280,257 295,262 280,267" fill="#3778c8"/>
 
   <!-- ===== Sulfur Plant ===== -->
   <rect x="40" y="325" width="160" height="75" rx="5" fill="#2a2a2a" stroke="#444"/>
   <text x="120" y="352" text-anchor="middle" font-size="16" fill="#888">Sulfur Production</text>
   <text x="120" y="376" text-anchor="middle" font-size="16" fill="#666">Petro + Water → Sulfur</text>
 
-  <line x1="200" y1="362" x2="280" y2="362" stroke="#3778c8" stroke-width="2.5" />
-  <polygon points="280,357 295,362 280,367" fill="#3778c8" />
+  <line x1="200" y1="362" x2="280" y2="362" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="280,357 295,362 280,367" fill="#3778c8"/>
 
-  
-  <rect x="298" y="232" width="260" height="195" rx="6" fill="#1a3a5c" stroke="#3778c8" stroke-width="2" />
+  <!-- ===== Blue Science Assembly (centerpiece) ===== -->
+  <rect x="298" y="232" width="260" height="195" rx="6" fill="#1a3a5c" stroke="#3778c8" stroke-width="2"/>
   <text x="428" y="262" text-anchor="middle" font-size="16" fill="#3778c8" font-weight="700">Chemical Science Pack</text>
   <text x="428" y="288" text-anchor="middle" font-size="16" fill="#88ccff">Assembler × 5</text>
 
-  <line x1="298" y1="302" x2="558" y2="302" stroke="#3778c8" stroke-width="0.5" opacity="0.4" />
+  <line x1="298" y1="302" x2="558" y2="302" stroke="#3778c8" stroke-width="0.5" opacity="0.4"/>
 
   <text x="428" y="322" text-anchor="middle" font-size="16" fill="#999">×1 Red Circuit (from bus)</text>
   <text x="428" y="342" text-anchor="middle" font-size="16" fill="#999">×1 Engine Unit</text>
   <text x="428" y="362" text-anchor="middle" font-size="16" fill="#999">×1 Sulfur</text>
 
-  <line x1="298" y1="376" x2="558" y2="376" stroke="#3778c8" stroke-width="0.5" opacity="0.4" />
+  <line x1="298" y1="376" x2="558" y2="376" stroke="#3778c8" stroke-width="0.5" opacity="0.4"/>
 
   <text x="428" y="400" text-anchor="middle" font-size="16" fill="#555">12s craft time per pack</text>
 
-  
-  <line x1="558" y1="310" x2="645" y2="310" stroke="#3778c8" stroke-width="2.5" />
-  <polygon points="645,305 660,310 645,315" fill="#3778c8" />
+  <!-- ===== Output to Labs ===== -->
+  <line x1="558" y1="310" x2="645" y2="310" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="645,305 660,310 645,315" fill="#3778c8"/>
 
   <rect x="663" y="285" width="140" height="64" rx="5" fill="#2a2a2a" stroke="#444"/>
   <text x="733" y="314" text-anchor="middle" font-size="16" fill="#999">Labs</text>

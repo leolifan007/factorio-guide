@@ -42,10 +42,10 @@
   <text x="755" y="290" fill="#d7b940" font-size="14" text-anchor="middle" font-weight="bold">Blue Ckt</text>
   <text x="755" y="308" fill="#d7b940" font-size="14" text-anchor="middle">25</text>
 
-  
-  <line x1="60" y1="270" x2="785" y2="270" stroke="#444" stroke-width="1" />
+  <!-- Baseline -->
+  <line x1="60" y1="270" x2="785" y2="270" stroke="#444" stroke-width="1"/>
 
-  
+  <!-- Footnote -->
   <text x="440" y="355" fill="#777" font-size="14" text-anchor="middle">Holmium is rare at 50/1000 scrap (5%). Need 20+ recyclers for steady output.</text>
 
   <!-- Y-axis label -->

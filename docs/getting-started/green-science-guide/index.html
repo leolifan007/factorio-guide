@@ -1,20 +1,311 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks."><title>Green Science Guide — Logistics Science Pack Setup | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/getting-started/green-science-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Green Science Guide — Logistics Science Pack Setup"><meta property="og:description" content="Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/getting-started/green-science-guide/"></head><body><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Green Science Guide — Logistics Science Pack Setup</h1><p class=article-desc>Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 21, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-4 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/getting-started/>Factorio Beginner's Guide — Your First 10 Hours</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Green Science Guide — Logistics Science Pack Setup</span></nav><p>Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.</p><div class=pro-tip><strong>TL;DR:</strong> 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.</div><h2 id=the-root-cause--why-green-science-feels-like-a-wall>The Root Cause — Why Green Science Feels Like a Wall</h2><p>Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.</p><p>The solution is simple math: gear production is your limiting factor, not belt speed.</p><h2 id=the-exact-setup-that-works>The Exact Setup That Works</h2><p><strong>The formula:</strong></p><ul><li><strong>Green science assemblers:</strong> 12 (two rows of 6 facing each other)</li><li><strong>Belt assemblers:</strong> 6 (one belt assembler feeds 2 science assemblers)</li><li><strong>Inserter assemblers:</strong> 1 (one inserter assembler feeds 12 science assemblers)</li></ul><p><strong>Layout (left to right):</strong></p><ol><li>Iron plate line runs past both sub-factories</li><li>First sub-factory: 1 inserter assembler. Output belt feeds toward the science line</li><li>Second sub-factory: 6 belt assemblers. Output belt merges with the inserter belt</li><li>Both feed into one belt going to the science line</li><li>12 science assemblers in two rows of 6, input belt between them, output belt on the far side</li></ol><img src=/images/diagrams/green-science-flow.svg alt="Green science production flow — from iron plates to belt and inserter sub-factories to science assemblers and labs" class=schema-diagram loading=lazy width=760><div class=pro-tip><strong>Quick Tip:</strong> Don't put green science production on your main bus. Build it as a standalone side-factory that pulls iron plates from the bus and outputs science packs on a dedicated belt to the labs. It keeps your bus clean and expansion is as simple as copying the side-factory.</div><h2 id=where-most-players-mess-this-up>Where Most Players Mess This Up</h2><p><strong>Under-building belt assemblers.</strong> One belt assembler produces 0.5 belts per second. A green science assembler consumes 0.17 belts per second (one pack every 6 seconds). The ratio: 1 belt assembler feeds 3 science assemblers. Many builds use 1 belt assembler for every 6 science assemblers — leads to belt starvation.</p><p><strong>Inserters on the bus.</strong> The inserter recipe produces 1 inserter per 0.5 seconds. One inserter assembler running non-stop produces more than enough for 12+ science assemblers (each needs 0.17 inserters/sec). Don't build three.</p><p><strong>One-sided feeding.</strong> If all ingredients come from one side of the science line, the first assembler hoards materials and the last one runs dry. Use a belt balancer or feed from both ends.</p><h2 id=the-hidden-bottleneck--gear-consumption>The Hidden Bottleneck — Gear Consumption</h2><p>Each inserter needs 1 iron gear. Green science at full tilt (12 packs/sec from 12 assemblers) consumes 2 inserters/sec = 2 gears/sec. Your red science assemblers (assuming 10) need 2 gears/sec too.</p><p>That's 4 gears/sec — a full yellow belt of gears. Most builds underestimate this and wonder why the inserter assembler keeps starving even though iron plates are flowing.</p><p><strong>Fix:</strong> Dedicate one gear assembler to green science that doesn't share with red science. 2 gear assemblers on iron will feed both comfortably.</p><h2 id=scaling-it-up>Scaling It Up</h2><p>Green science at 60 SPM needs 12 assemblers. For 120 SPM (typical mid-game target):</p><ul><li>24 science assemblers (4 rows of 6)</li><li>12 belt assemblers</li><li>2 inserter assemblers (redundancy helps)</li><li>4 gear assemblers (2 for inserters, 2 shared)</li></ul><p>The footprint stays compact because belt and inserter production is tiny — roughly 1/10th the space of the science line itself.</p><p><strong>Material requirements at 120 SPM:</strong></p><ul><li>Iron plates: ~45/sec (one compressed yellow belt)</li><li>Copper plates: ~10/sec</li><li>Green circuits: ~20/sec</li></ul><p>All fit on a single main bus with room to spare.</p><hr><h2 id=community-verification--resources>Community Verification & Resources</h2><ul><li><a href=https://wiki.factorio.com/Logistics_science_pack>Official Wiki — Logistics Science Pack</a> — exact recipe timings and crafting speed tables</li><li><a href=https://factoriolab.github.io/>FactorioLab Calculator</a> — input/output ratios for any SPM target</li><li><a href=https://www.reddit.com/r/factorio/>Reddit — Green Science Builds</a> — community blueprints and layout examples for compact designs</li></ul><div class=back-to-section><a href=/getting-started/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Factorio Beginner's Guide — Your First 10 Hours</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/getting-started/your-first-factory/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Y</text></svg></div><div class=related-body><h4>Your First Factory — Factorio Beginner Guide</h4><p>Factorio beginner guide: building your first factory from scratch. Automation, red+green science, furnace columns, mall setup, and the expansion path to mid-game.</p></div></a></div></div></div></div><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Green science (logistics science pack) in Factorio: exact assembler ratios, compact layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks.">
+  <title>Factorio Green Science Guide - Logistics Science Pack Setup and Ratios | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1318/getting-started/green-science-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Factorio Green Science Guide - Logistics Science Pack Setup and Ratios">
+  <meta property="og:description" content="Green science (logistics science pack) in Factorio: exact assembler ratios, compact layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1318/getting-started/green-science-guide/">
+</head>
+<body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Factorio Green Science Guide - Logistics Science Pack Setup and Ratios</h1><p class="article-desc">Green science (logistics science pack) in Factorio: exact assembler ratios, compact layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 21, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          4 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/getting-started/">Factorio Beginner&#39;s Guide — Your First 10 Hours</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">Factorio Green Science Guide - Logistics Science Pack Setup and Ratios</span>
+        </nav>
+
+        <p>Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins -- you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.</div>
+
+<h2 id="the-root-cause----why-green-science-feels-like-a-wall">The Root Cause -- Why Green Science Feels Like a Wall</h2>
+<p>Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it -- and those gears compete directly with red science for your gear supply.</p>
+<p>The solution is simple math: gear production is your limiting factor, not belt speed.</p>
+<h2 id="the-exact-setup-that-works">The Exact Setup That Works</h2>
+<p><strong>The formula:</strong></p>
+<ul>
+<li><strong>Green science assemblers:</strong> 12 (two rows of 6 facing each other)</li>
+<li><strong>Belt assemblers:</strong> 6 (one belt assembler feeds 2 science assemblers)</li>
+<li><strong>Inserter assemblers:</strong> 1 (one inserter assembler feeds 12 science assemblers)</li>
+</ul>
+<p><strong>Layout (left to right):</strong></p>
+<ol>
+<li>Iron plate line runs past both sub-factories</li>
+<li>First sub-factory: 1 inserter assembler. Output belt feeds toward the science line</li>
+<li>Second sub-factory: 6 belt assemblers. Output belt merges with the inserter belt</li>
+<li>Both feed into one belt going to the science line</li>
+<li>12 science assemblers in two rows of 6, input belt between them, output belt on the far side</li>
+</ol>
+<img src="/images/diagrams/green-science-flow.svg" alt="Green science production flow — from iron plates to belt and inserter sub-factories to science assemblers and labs" class="schema-diagram" loading="lazy" width="760">
+
+<div class="pro-tip"><strong>Quick Tip:</strong> Don't put green science production on your main bus. Build it as a standalone side-factory that pulls iron plates from the bus and outputs science packs on a dedicated belt to the labs. It keeps your bus clean and expansion is as simple as copying the side-factory.</div>
+
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>Under-building belt assemblers.</strong> One belt assembler produces 0.5 belts per second. A green science assembler consumes 0.17 belts per second (one pack every 6 seconds). The ratio: 1 belt assembler feeds 3 science assemblers. Many builds use 1 belt assembler for every 6 science assemblers -- leads to belt starvation.</p>
+<p><strong>Inserters on the bus.</strong> The inserter recipe produces 1 inserter per 0.5 seconds. One inserter assembler running non-stop produces more than enough for 12+ science assemblers (each needs 0.17 inserters/sec). Don't build three.</p>
+<p><strong>One-sided feeding.</strong> If all ingredients come from one side of the science line, the first assembler hoards materials and the last one runs dry. Use a belt balancer or feed from both ends.</p>
+<h2 id="the-hidden-bottleneck----gear-consumption">The Hidden Bottleneck -- Gear Consumption</h2>
+<p>Each inserter needs 1 iron gear. Green science at full tilt (12 packs/sec from 12 assemblers) consumes 2 inserters/sec = 2 gears/sec. Your red science assemblers (assuming 10) need 2 gears/sec too.</p>
+<p>That's 4 gears/sec -- a full yellow belt of gears. Most builds underestimate this and wonder why the inserter assembler keeps starving even though iron plates are flowing.</p>
+<p><strong>Fix:</strong> Dedicate one gear assembler to green science that doesn't share with red science. 2 gear assemblers on iron will feed both comfortably.</p>
+<h2 id="scaling-it-up">Scaling It Up</h2>
+<p>Green science at 60 SPM needs 12 assemblers. For 120 SPM (typical mid-game target):</p>
+<ul>
+<li>24 science assemblers (4 rows of 6)</li>
+<li>12 belt assemblers</li>
+<li>2 inserter assemblers (redundancy helps)</li>
+<li>4 gear assemblers (2 for inserters, 2 shared)</li>
+</ul>
+<p>The footprint stays compact because belt and inserter production is tiny -- roughly 1/10th the space of the science line itself.</p>
+<p><strong>Material requirements at 120 SPM:</strong></p>
+<ul>
+<li>Iron plates: ~45/sec (one compressed yellow belt)</li>
+<li>Copper plates: ~10/sec</li>
+<li>Green circuits: ~20/sec</li>
+</ul>
+<p>All fit on a single main bus with room to spare.</p>
+<hr>
+<p>I overbuilt my first green science setup. My iron gear wheel setup had 6 green circuit assemblers for 60 SPM. After 5 minutes the belt backed up and produced nothing. 3 is enough.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Resource</th>
+          <th style="text-align: center">Rate (10 sci/min)</th>
+          <th style="text-align: left">Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Green circuits</td>
+          <td style="text-align: center">6/sec</td>
+          <td style="text-align: left">3 assemblers</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Iron plates</td>
+          <td style="text-align: center">8/sec</td>
+          <td style="text-align: left">10 stone furnaces</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inserters</td>
+          <td style="text-align: center">1/sec</td>
+          <td style="text-align: left">2 assemblers</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Logistics_science_pack">Official Wiki -- Logistics Science Pack</a> -- exact recipe timings and crafting speed tables</li>
+<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> -- input/output ratios for any SPM target</li>
+<li><a href="https://www.reddit.com/r/factorio/">Reddit -- Green Science Builds</a> -- community blueprints and layout examples for compact designs</li>
+</ul>
+<p><strong>Related:</strong> <a href="http://localhost:1318/getting-started/your-first-factory/">Your First Factory</a> | <a href="http://localhost:1318/science-packs/blue-science-guide/">Blue Science Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/getting-started/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Factorio Beginner&#39;s Guide — Your First 10 Hours
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/getting-started/your-first-factory/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Factorio Beginner Guide - How to Build Your First Factory</h4>
+                <p>Factorio beginner guide: building your first factory from scratch. Automation basics, red and green science setup, electric furnace columns, mall setup, and the expansion path to mid-game.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+
+        
+        
+
+      </div>
+    </div>
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

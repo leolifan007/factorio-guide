@@ -11,9 +11,9 @@
   <rect x="30" y="110" width="150" height="32" rx="3" fill="#5599ee" opacity="0.2" stroke="#5599ee" stroke-width="1"/>
   <text x="105" y="132" text-anchor="middle" font-size="16" fill="#5599ee">Petroleum Pipe</text>
 
-  
-  <line x1="180" y1="140" x2="180" y2="160" stroke="#555" stroke-width="2" />
-  <line x1="180" y1="160" x2="270" y2="160" stroke="#555" stroke-width="2" />
+  <!-- Pull-offs from Bus -->
+  <line x1="180" y1="140" x2="180" y2="160" stroke="#555" stroke-width="2"/>
+  <line x1="180" y1="160" x2="270" y2="160" stroke="#555" stroke-width="2"/>
 
   <!-- ===== Engine Assembly ===== -->
   <rect x="272" y="135" width="150" height="60" rx="5" fill="#2a2a2a" stroke="#3778c8" stroke-width="1.5"/>
@@ -25,9 +25,9 @@
   <text x="555" y="160" text-anchor="middle" font-size="16" fill="#888" font-weight="bold">Sulfur</text>
   <text x="555" y="182" text-anchor="middle" font-size="16" fill="#666">Chemical Plant × 1</text>
 
-  
-  <line x1="347" y1="195" x2="347" y2="215" stroke="#555" stroke-width="1.5" />
-  <line x1="555" y1="195" x2="555" y2="215" stroke="#555" stroke-width="1.5" />
+  <!-- Feed lines to science area -->
+  <line x1="347" y1="195" x2="347" y2="215" stroke="#555" stroke-width="1.5"/>
+  <line x1="555" y1="195" x2="555" y2="215" stroke="#555" stroke-width="1.5"/>
 
   <!-- ===== Belt Input Row ===== -->
   <rect x="50" y="215" width="130" height="30" rx="3" fill="#444"/>
@@ -58,11 +58,11 @@
   <text x="548" y="276" text-anchor="middle" font-size="16" fill="#88ccff">Science 5</text>
   <text x="548" y="296" text-anchor="middle" font-size="16" fill="#666">Assembler</text>
 
-  
-  <rect x="50" y="315" width="548" height="6" rx="2" fill="#3778c8" />
+  <!-- ===== Output Belt ===== -->
+  <rect x="50" y="315" width="548" height="6" rx="2" fill="#3778c8"/>
 
-  <line x1="598" y1="318" x2="670" y2="318" stroke="#3778c8" stroke-width="2.5" />
-  <polygon points="670,313 685,318 670,323" fill="#3778c8" />
+  <line x1="598" y1="318" x2="670" y2="318" stroke="#3778c8" stroke-width="2.5"/>
+  <polygon points="670,313 685,318 670,323" fill="#3778c8"/>
 
   <!-- ===== Labs ===== -->
   <rect x="688" y="293" width="120" height="52" rx="5" fill="#2a2a2a" stroke="#555"/>

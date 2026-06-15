@@ -1,20 +1,293 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase."><title>Basic Rail Network — Signalling, Junctions, and Train Management | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/trains-logistics/basic-rail-network/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Basic Rail Network — Signalling, Junctions, and Train Management"><meta property="og:description" content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/trains-logistics/basic-rail-network/"></head><body><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Basic Rail Network — Signalling, Junctions, and Train Management</h1><p class=article-desc>Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 20, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-4 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/trains-logistics/>Trains and Logistics Guide</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Basic Rail Network — Signalling, Junctions, and Train Management</span></nav><p>You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.</p><div class=pro-tip><strong>TL;DR:</strong> Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.</div><img src=/images/diagrams/rail-signaling.svg alt="Rail signal placement rules — chain signal before intersection, rail signal after" class=schema-diagram loading=lazy width=760><h2 id=the-mechanics-behind-train-deadlocks>The Mechanics Behind Train Deadlocks</h2><p>Factorio's rail system uses <strong>blocks</strong>. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.</p><p><strong>The two signals and when to use them:</strong></p><table><thead><tr><th style=text-align:left>Signal</th><th style=text-align:left>What it does</th><th style=text-align:left>Where to place it</th></tr></thead><tbody><tr><td style=text-align:left>Rail signal</td><td style=text-align:left>Shows green if block ahead is clear</td><td style=text-align:left><strong>After</strong> intersections, on straight track</td></tr><tr><td style=text-align:left>Chain signal</td><td style=text-align:left>Shows green only if the NEXT block after it is also clear</td><td style=text-align:left><strong>Before</strong> intersections, before rail crossings</td></tr></tbody></table><p><strong>The rule:</strong> Chain before intersection, rail after intersection. If there's a string of intersections close together, chain signal before the first one and rail after the last one, with chain signals between them.</p><h2 id=the-proven-fix--2-lane-rail-grid>The Proven Fix — 2-Lane Rail Grid</h2><p><strong>Step 1 — Right-hand drive layout.</strong></p><p>Run two rails: trains travel on the right. That means:</p><ul><li>Outer rail on each side → direction of travel</li><li>Space between rails: 4 tiles (enough for signals between tracks)</li></ul><p><strong>Step 2 — Intersection signals.</strong></p><p>For a simple T-junction:</p><ol><li>Before each entrance: chain signal on the right rail</li><li>After each exit: rail signal on the right rail</li><li>Inside the junction: no signals (trains should pass through without stopping)</li></ol><p>For a 4-way intersection (crossing):</p><ol><li>Chain signals at all four entrances</li><li>Rail signals at all four exits</li><li>If the intersection is compact, chain signals inside any branching path</li></ol><p><strong>Step 3 — Train stops.</strong></p><p>Each station needs:</p><ol><li>A rail signal immediately after the station (defines the station block)</li><li>A chain signal before the first turn into the station (prevents trains blocking the main line while waiting)</li><li>Station name: <code>[Resource] Location Function</code> (e.g. <code>[Iron] Smelter Input</code>)</li></ol><div class=pro-tip><strong>Quick Tip:</strong> Use train limits (the number in the station UI) instead of disabling stations via circuit network. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).</div><h2 id=where-most-players-mess-this-up>Where Most Players Mess This Up</h2><p><strong>Rail signal inside the intersection.</strong> A train stops on the rail signal, which is inside the intersection, blocking all crossing paths. Fix: chain signals at entrances ensure trains don't enter unless they can clear the entire intersection.</p><p><strong>Roundabout without chain signals.</strong> A single-track roundabout with rail signals at each exit. A train enters, then stops because the exit is blocked — jams the entire roundabout. Fix: chain signal at every roundabout entrance.</p><p><strong>One-way tracks in a two-way network.</strong> Every piece of track should be assigned one direction. If you place a locomotive facing the wrong way, the station may not work, or the train may try to reverse. Solution: use one-way rails exclusively for large networks.</p><p><strong>Too few stackers.</strong> A station with limit 3 and 3 trains: when all 3 are at the station, the third waits on the main line, blocking everything. Build a stacker (waiting area with multiple parallel tracks) outside each high-traffic station.</p><h2 id=pushing-it-further--megabase-rail-networks>Pushing It Further — Megabase Rail Networks</h2><p>At 500+ SPM, your rail grid needs:</p><p><strong>4-lane tracks</strong> — 2 lanes per direction. Dedicated passing lane for faster trains.</p><p><strong>Buffered intersections</strong> — Intersections with waiting bays for turning traffic. Prevents a turning train from blocking the straight-through lane.</p><p><strong>Train fuel depots</strong> — 1-minute refuel stop in the center of the grid. Every train's schedule starts with: Depot (fuel stop, 5s) → Pickup → Drop-off → Back to Depot.</p><p><strong>Centralized train control</strong> — Use circuit network to broadcast open station slots. A "train manager" constant combinator at each station sends its availability to a central signal, which dynamically reroutes trains.</p><p><strong>Key metrics to track:</strong></p><ul><li>If trains wait more than 30 seconds at any intersection: upgrade that junction</li><li>If stacker fills up regularly: add more stacker capacity</li><li>If fuel trains cannot reach depots: the grid is too congested</li></ul><hr><h2 id=community-verification--resources>Community Verification & Resources</h2><ul><li><a href=https://wiki.factorio.com/Rail_signals>Official Wiki — Rail Signals</a> — signal placement rules, chain signal behavior, and block mechanics</li><li><a href=https://wiki.factorio.com/Tutorial:Train_signals>Official Wiki — Train Automation</a> — interactive tutorial on chain and rail signal logic</li><li><a href="https://forums.factorio.com/viewforum.php?f=18">Factorio Forums — Rail Design</a> — community blueprints for 4-lane intersections and train stackers</li><li><a href=https://factorioprints.com/>Factorio Blueprint Library — Train Grids</a> — ready-to-use 2-lane and 4-lane City Block rail grids</li></ul><div class=back-to-section><a href=/trains-logistics/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Trains and Logistics Guide</a></div></div></div><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Factorio train network guide: rail signals vs chain signals explained, 2-lane and 4-lane rail grid design, intersection blueprints, train limits, and deadlock prevention for beginner to megabase.">
+  <title>Factorio Train Network Guide - Signals, Junctions and Deadlock Prevention | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1318/trains-logistics/basic-rail-network/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Factorio Train Network Guide - Signals, Junctions and Deadlock Prevention">
+  <meta property="og:description" content="Factorio train network guide: rail signals vs chain signals explained, 2-lane and 4-lane rail grid design, intersection blueprints, train limits, and deadlock prevention for beginner to megabase.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1318/trains-logistics/basic-rail-network/">
+</head>
+<body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Factorio Train Network Guide - Signals, Junctions and Deadlock Prevention</h1><p class="article-desc">Factorio train network guide: rail signals vs chain signals explained, 2-lane and 4-lane rail grid design, intersection blueprints, train limits, and deadlock prevention for beginner to megabase.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 20, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          4 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/trains-logistics/">Trains and Logistics Guide</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">Factorio Train Network Guide - Signals, Junctions and Deadlock Prevention</span>
+        </nav>
+
+        <p>You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.</div>
+
+<img src="/images/diagrams/rail-signaling.svg" alt="Rail signal placement rules — chain signal before intersection, rail signal after" class="schema-diagram" loading="lazy" width="760">
+
+<h2 id="the-mechanics-behind-train-deadlocks">The Mechanics Behind Train Deadlocks</h2>
+<p>Factorio's rail system uses <strong>blocks</strong>. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections -- blocking all other traffic.</p>
+<p><strong>The two signals and when to use them:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Signal</th>
+          <th style="text-align: left">What it does</th>
+          <th style="text-align: left">Where to place it</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Rail signal</td>
+          <td style="text-align: left">Shows green if block ahead is clear</td>
+          <td style="text-align: left"><strong>After</strong> intersections, on straight track</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Chain signal</td>
+          <td style="text-align: left">Shows green only if the NEXT block after it is also clear</td>
+          <td style="text-align: left"><strong>Before</strong> intersections, before rail crossings</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>The rule:</strong> Chain before intersection, rail after intersection. If there's a string of intersections close together, chain signal before the first one and rail after the last one, with chain signals between them.</p>
+<h2 id="the-proven-fix----2-lane-rail-grid">The Proven Fix -- 2-Lane Rail Grid</h2>
+<p><strong>Step 1 -- Right-hand drive layout.</strong></p>
+<p>Run two rails: trains travel on the right. That means:</p>
+<ul>
+<li>Outer rail on each side → direction of travel</li>
+<li>Space between rails: 4 tiles (enough for signals between tracks)</li>
+</ul>
+<p><strong>Step 2 -- Intersection signals.</strong></p>
+<p>For a simple T-junction:</p>
+<ol>
+<li>Before each entrance: chain signal on the right rail</li>
+<li>After each exit: rail signal on the right rail</li>
+<li>Inside the junction: no signals (trains should pass through without stopping)</li>
+</ol>
+<p>For a 4-way intersection (crossing):</p>
+<ol>
+<li>Chain signals at all four entrances</li>
+<li>Rail signals at all four exits</li>
+<li>If the intersection is compact, chain signals inside any branching path</li>
+</ol>
+<p><strong>Step 3 -- Train stops.</strong></p>
+<p>Each station needs:</p>
+<ol>
+<li>A rail signal immediately after the station (defines the station block)</li>
+<li>A chain signal before the first turn into the station (prevents trains blocking the main line while waiting)</li>
+<li>Station name: <code>[Resource] Location Function</code> (e.g. <code>[Iron] Smelter Input</code>)</li>
+</ol>
+<div class="pro-tip"><strong>Quick Tip:</strong> Use train limits (the number in the station UI) instead of disabling stations via circuit network. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).</div>
+
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>Rail signal inside the intersection.</strong> A train stops on the rail signal, which is inside the intersection, blocking all crossing paths. Fix: chain signals at entrances ensure trains don't enter unless they can clear the entire intersection.</p>
+<p><strong>Roundabout without chain signals.</strong> A single-track roundabout with rail signals at each exit. A train enters, then stops because the exit is blocked -- jams the entire roundabout. Fix: chain signal at every roundabout entrance.</p>
+<p><strong>One-way tracks in a two-way network.</strong> Every piece of track should be assigned one direction. If you place a locomotive facing the wrong way, the station may not work, or the train may try to reverse. Solution: use one-way rails exclusively for large networks.</p>
+<p><strong>Too few stackers.</strong> A station with limit 3 and 3 trains: when all 3 are at the station, the third waits on the main line, blocking everything. Build a stacker (waiting area with multiple parallel tracks) outside each high-traffic station.</p>
+<h2 id="pushing-it-further----megabase-rail-networks">Pushing It Further -- Megabase Rail Networks</h2>
+<p>At 500+ SPM, your rail grid needs:</p>
+<p><strong>4-lane tracks</strong> -- 2 lanes per direction. Dedicated passing lane for faster trains.</p>
+<p><strong>Buffered intersections</strong> -- Intersections with waiting bays for turning traffic. Prevents a turning train from blocking the straight-through lane.</p>
+<p><strong>Train fuel depots</strong> -- 1-minute refuel stop in the center of the grid. Every train's schedule starts with: Depot (fuel stop, 5s) → Pickup → Drop-off → Back to Depot.</p>
+<p><strong>Centralized train control</strong> -- Use circuit network to broadcast open station slots. A &quot;train manager&quot; constant combinator at each station sends its availability to a central signal, which dynamically reroutes trains.</p>
+<p><strong>Key metrics to track:</strong></p>
+<ul>
+<li>If trains wait more than 30 seconds at any intersection: upgrade that junction</li>
+<li>If stacker fills up regularly: add more stacker capacity</li>
+<li>If fuel trains cannot reach depots: the grid is too congested</li>
+</ul>
+<hr>
+<p>My first 4-way intersection deadlocked 3 trains in under 2 minutes because I used chain signals instead of rail signals at the wrong place.</p>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Rail_signals">Official Wiki -- Rail Signals</a> -- signal placement rules, chain signal behavior, and block mechanics</li>
+<li><a href="https://wiki.factorio.com/Tutorial:Train_signals">Official Wiki -- Train Automation</a> -- interactive tutorial on chain and rail signal logic</li>
+<li><a href="https://forums.factorio.com/viewforum.php?f=18">Factorio Forums -- Rail Design</a> -- community blueprints for 4-lane intersections and train stackers</li>
+<li><a href="https://factorioprints.com/">Factorio Blueprint Library -- Train Grids</a> -- ready-to-use 2-lane and 4-lane City Block rail grids</li>
+</ul>
+<p><strong>Related:</strong> <a href="http://localhost:1318/base-design/city-block-guide/">City Block Guide</a> | <a href="http://localhost:1318/blueprints/ltn-mod-guide/">LTN Mod Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/trains-logistics/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Trains and Logistics Guide
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+
+      </div>
+    </div>
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>
