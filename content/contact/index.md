@@ -3,6 +3,7 @@ title: "Contact"
 description: "Get in touch with the Factorio Guide team."
 date: "2026-05-21"
 draft: false
+sitemap_disable: true
 ---
 
 ## Contact Us

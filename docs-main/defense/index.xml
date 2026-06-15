@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Defense Guide on Factorio Guide</title>
+    <link>https://factorioguides.com/defense/</link>
+    <description>Recent content in Defense Guide on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate>
+    <atom:link href="https://factorioguides.com/defense/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artillery 鈥?Range, Shells, and Outpost Setup</title>
+      <link>https://factorioguides.com/defense/artillery-guide/</link>
+      <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
+      <guid>https://factorioguides.com/defense/artillery-guide/</guid>
+      <description>&lt;p&gt;Artillery is the endgame solution to biter bases. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/gun_turret.png&#34; alt=&#34;gun_turret&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Gun turret&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; Gun turrets and &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/laser_turret.png&#34; alt=&#34;laser_turret&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Laser turret&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; laser turrets defend your walls. Artillery deletes the threat before it reaches you.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build artillery turrets at outposts, connect them to your rail network, and supply shells via trains. Research range to extend coverage. One shell destroys most biter bases in 2-3 shots.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/artillery-outpost.svg&#34; alt=&#34;Artillery outpost logistics chain 鈥?main base shell production, train delivery, and targeting range&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-artillery-works&#34;&gt;How Artillery Works&lt;/h2&gt;&#xA;&lt;p&gt;The artillery turret fires explosive shells at biter bases within range. Each shell deals massive area damage, destroying nests, worms, and biters in the blast radius.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flamethrower Turret Defense Guide</title>
+      <link>https://factorioguides.com/defense/flamethrower-defense-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid>
+      <description>&lt;p&gt;Your gun turrets chew through 10 magazines per biter wave and you&#39;re spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place flamethrower turrets behind a wall with dragon&#39;s teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;why-gun-turrets-alone-dont-scale&#34;&gt;Why Gun Turrets Alone Don&#39;t Scale&lt;/h2&gt;&#xA;&lt;p&gt;Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Early Game Defense — Surviving Your First Biter Attacks</title>
+      <link>https://factorioguides.com/defense/early-game-defense/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/defense/early-game-defense/</guid>
+      <description>&lt;h2 id=&#34;when-do-biters-attack&#34;&gt;When Do Biters Attack?&lt;/h2&gt;&#xA;&lt;p&gt;Biters attack when:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pollution&lt;/strong&gt; reaches their nest (they become angry)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;You destroy a nest&lt;/strong&gt; (immediate retaliation)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Evolution factor&lt;/strong&gt; is high enough (time + pollution)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Peaceful mode:&lt;/strong&gt; Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-minimum-viable-defense&#34;&gt;The Minimum Viable Defense&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stone-wall-priority-1&#34;&gt;Step 1: Stone Wall (Priority 1)&lt;/h3&gt;&#xA;&lt;p&gt;Place &lt;strong&gt;stone walls&lt;/strong&gt; in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -4,16 +4,16 @@ description: "Complete blue science (chemical science pack) guide for Factorio: 
 date: 2026-05-18
 tags: ["science-packs", "production-ratios"]
 draft: false
-emoji: "🔵"
+
 ---
 
-Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
+Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient -- it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
 
 {{< callout "tip" >}}
 **TL;DR:** Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.
 {{< /callout >}}
 
-{{< section "Recipe and Requirements" >}}
+## Recipe and Requirements
 
 Each chemical science pack needs three components:
 
@@ -21,7 +21,7 @@ Each chemical science pack needs three components:
 
 Two of these three require oil products. Red circuits need plastic (petroleum + coal). Sulfur needs petroleum gas and water. That means you can't automate blue science until you have a working oil refinery setup.
 
-{{< section "Oil Refining — The Hard Part" >}}
+## Oil Refining -- The Hard Part
 
 Here's the chain from well to blue science:
 
@@ -39,7 +39,7 @@ The critical path is petroleum. You need enough refineries producing petroleum g
 
 {{< diagram "diagrams/blue-science-flow.svg" "Blue science production chain from oil wells through refineries to chemical science packs" "760" >}}
 
-{{< section "Optimal Ratios for 5 SPM" >}}
+## Optimal Ratios for 5 SPM
 
 Here's the ratio that works for a stable 5 blue science per minute setup:
 
@@ -57,7 +57,7 @@ Here's the ratio that works for a stable 5 blue science per minute setup:
 The most common mistake is not enough refineries. With basic processing, one refinery outputs 40 petroleum gas per second. Plastic uses 20/s, sulfur uses 30/s. One refinery can't keep up with both. Build two refineries early.
 {{< /callout >}}
 
-{{< section "Layout — Compact Blue Science Cell" >}}
+## Layout -- Compact Blue Science Cell
 
 A compact blue science array fits in roughly 15×30 tiles. Here's the layout pattern:
 
@@ -65,7 +65,7 @@ A compact blue science array fits in roughly 15×30 tiles. Here's the layout pat
 
 The engine assemblers sit next to the bus, pulling steel, iron, gears, and pipes. The sulfur plant takes petroleum from the pipe and outputs to a belt. Red circuits come from an existing production line.
 
-{{< section "Transitioning to Advanced Oil Processing" >}}
+## Transitioning to Advanced Oil Processing
 
 Once you research advanced oil processing, your refinery setup changes significantly:
 
@@ -79,15 +79,15 @@ Once you research advanced oil processing, your refinery setup changes significa
 
 The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Without cracking, your refineries stall from heavy oil backup.
 
-{{< section "Common Pitfalls" >}}
+## Common Pitfalls
 
 **Heavy oil backup.** Advanced refining without cracking. The refineries fill up with heavy oil, stop producing, and suddenly your entire base runs out of plastic. Solution: crack heavy oil to light, and light to petroleum. Use a circuit condition to only crack when heavy > 1k.
 
 **Running out of water.** Sulfur and advanced refining both consume water. A single offshore pump feeds about 10 chemical plants. If your sulfur production stalls, check water first.
 
-**Petroleum vs. plastic balance.** One plastic bar needs 20 petroleum gas. At 5 SPM, you need roughly 10 plastic per minute. That's one chemical plant running full time. If red circuit production backs up, plastic is the bottleneck — not copper.
+**Petroleum vs. plastic balance.** One plastic bar needs 20 petroleum gas. At 5 SPM, you need roughly 10 plastic per minute. That's one chemical plant running full time. If red circuit production backs up, plastic is the bottleneck -- not copper.
 
-{{< section "Scaling Blue Science" >}}
+## Scaling Blue Science
 
 To go from 5 SPM to 30 SPM:
 
@@ -98,7 +98,7 @@ To go from 5 SPM to 30 SPM:
 
 The refinery setup scales linearly. With advanced processing and cracking, 8 refineries plus 1 heavy→light and 7 light→petroleum crackers provide perfect balance for large-scale production.
 
-{{< section "Bottom Line" >}}
+## Bottom Line
 
 Blue science is the first multi-fluid production chain in Factorio. The key takeaway: petroleum is always the constraint. Build more refineries than you think you need, set up cracking before your tanks fill with heavy oil, and keep water flowing.
 
@@ -109,3 +109,11 @@ Blue science is the first multi-fluid production chain in Factorio. The key take
 
 **Previous:** [Green Science Guide]({{< ref "/getting-started/green-science-guide" >}})
 **Next:** [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}})
+
+## Community Verification & Resources
+
+- [Official Factorio Wiki -- Blue science](https://wiki.factorio.com/Blue_science_pack) -- recipe timings and crafting speed formulas
+- [FactorioLab Calculator](https://factoriolab.github.io/) -- SPM-optimized blue science builds
+- [Reddit -- Oil Processing Layouts](https://www.reddit.com/r/factorio/) -- popular pipe manifold designs
+
+**Related:** [Chemical Science Pack]({{< ref "/science-packs/red-science-guide" >}}) | [Oil Processing Ratio]({{< ref "/production-ratios/oil-processing-guide" >}})

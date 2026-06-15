@@ -4,28 +4,28 @@ description: "Learn Factorio city block design: optimal block sizes, train grid 
 date: 2026-05-21
 tags: ["base-design", "city-block"]
 draft: false
-emoji: "🏗️"
+
 ---
 
 {{< callout "tip" >}}
 **TL;DR:** Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.
 {{< /callout >}}
 
-{{< section "What Are City Blocks?" >}}
+## What Are City Blocks?
 
-A **city block** is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.
+A **city block** is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain -- iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.
 
 This modular approach lets you scale your factory by copying blocks. Running low on green circuits? Stamp down another circuit block. Need more science? Add a science block. The rail network connects everything.
 
 The key difference from a main bus is that city blocks use **trains as the backbone**, not belts. This makes them ideal for megabases (500+ SPM) where belt throughput becomes a bottleneck.
 
-{{< section "Block Sizes — Which One to Use" >}}
+## Block Sizes -- Which One to Use
 
 | Size | Best For | Train Station Fit | UPS Impact |
 |------|----------|:-----------------:|:----------:|
 | 32×32 | Tight resource processing, outposts | 1-2 cargo wagons | Best |
 | 48×48 | Compact megabases | 2-3 cargo wagons | Good |
-| **64×64** | **Standard megabase — recommended** | **3-4 cargo wagons** | **Good** |
+| **64×64** | **Standard megabase -- recommended** | **3-4 cargo wagons** | **Good** |
 | 100×100 | Large production chains, multi-smelting | 4-6 cargo wagons | Moderate |
 
 **64×64** is the gold standard. It fits a full smelting column (24 electric furnaces) plus a train station with 3 cargo wagons. It's small enough to keep UPS impact low but large enough to produce meaningful throughput per block.
@@ -34,7 +34,7 @@ The key difference from a main bus is that city blocks use **trains as the backb
 Don't mix production chains inside one block. Each block should do exactly one thing. A block that tries to smelt iron and make gears will either run out of space or create logistics chaos.
 {{< /callout >}}
 
-{{< section "Rail Grid Design" >}}
+## Rail Grid Design
 
 City blocks form a rail grid. Every block is surrounded by tracks, typically in a 2-lane or 4-lane configuration.
 
@@ -66,7 +66,7 @@ Roundabouts are fine for 2-lane grids with fewer than 15 trains. Above that, upg
 Place chain signals BEFORE every intersection entrance. Place rail signals AFTER every intersection exit. This single rule prevents 90% of train deadlocks in a city block grid.
 {{< /callout >}}
 
-{{< section "What Goes Inside a Block" >}}
+## What Goes Inside a Block
 
 Each block should fit one production chain. Here are typical block layouts for a 64×64 grid:
 
@@ -87,7 +87,7 @@ Each block should fit one production chain. Here are typical block layouts for a
 - 10 red science + 10 green science assemblers
 - Output: direct to lab array
 
-{{< section "Train Station Design per Block" >}}
+## Train Station Design per Block
 
 Every block needs a train station that fits within the block boundaries. For a 64×64 block:
 
@@ -99,8 +99,8 @@ Every block needs a train station that fits within the block boundaries. For a 6
 5. Production area
 
 **Station naming convention:**
-- `[Iron] Smelting Input` — "train stop name" close to the "wagon wait area"
-- `[Iron] Smelting Output` — "output name" for the pickup station
+- `[Iron] Smelting Input` -- "train stop name" close to the "wagon wait area"
+- `[Iron] Smelting Output` -- "output name" for the pickup station
 - `[Green Circuit] Input`
 - `[Green Circuit] Output`
 
@@ -108,7 +108,7 @@ Using consistent naming makes train schedule management much easier.
 
 {{< diagram "diagrams/city-block-sizes.svg" "City block station and layout dimensions for different block sizes" "760" >}}
 
-{{< section "Power Distribution" >}}
+## Power Distribution
 
 Run a dedicated power line along the rail grid. Each block taps power from the nearest rail-side power pole.
 
@@ -117,11 +117,11 @@ Run a dedicated power line along the rail grid. Each block taps power from the n
 - Each block gets 2 medium electric poles for internal distribution
 - Nuclear power is the recommended source for city block bases
 
-**UPS note:** Large power grids cause minor UPS impact. Use substations instead of power poles where possible — fewer entities to track.
+**UPS note:** Large power grids cause minor UPS impact. Use substations instead of power poles where possible -- fewer entities to track.
 
-{{< section "Resources Distribution — Balancing the Grid" >}}
+## Resources Distribution -- Balancing the Grid
 
-The challenge with city blocks is resource distribution. You can't just send iron to every block that needs it — you need a system.
+The challenge with city blocks is resource distribution. You can't just send iron to every block that needs it -- you need a system.
 
 **Approach 1: Dedicated train pairs (simplest)**
 Each block has a dedicated train that shuttles between a supply block and a demand block. Simple to set up, but doesn't scale.
@@ -135,7 +135,7 @@ Use train limit signals. Each station broadcasts how many trains it can accept.
 **Approach 3: Circuit network controlled**
 Wire each station to a circuit network. Stations request trains based on buffer chest levels. Most efficient but requires circuit network knowledge.
 
-{{< section "Space Age Integration" >}}
+## Space Age Integration
 
 City blocks work well with Space Age expansion, but with adjustments:
 
@@ -145,7 +145,7 @@ City blocks work well with Space Age expansion, but with adjustments:
 
 **Platform supply blocks:** Dedicate 1-2 blocks near the rocket silo for space platform materials (thruster fuel components, ammo, repair packs).
 
-{{< section "Common Mistakes" >}}
+## Common Mistakes
 
 **Blocks too small.** A 32×32 block can't fit a proper train station and production line. Minimum viable size is 48×48.
 
@@ -157,7 +157,7 @@ City blocks work well with Space Age expansion, but with adjustments:
 
 **Building blocks too close.** Leave at least 2 tiles of clearance between blocks for signals, power poles, and future expansion.
 
-{{< section "Bottom Line" >}}
+## Bottom Line
 
 City blocks are the foundation of every Factorio megabase. Start with 64×64 blocks, 2-lane rail grid, and roundabout intersections. Build one block at a time, and don't scale up until each block is working independently.
 
@@ -168,4 +168,15 @@ City blocks are the foundation of every Factorio megabase. Start with 64×64 blo
 - Roundabout intersections for grids under 15 trains
 - Station naming: `[Product] Function` (e.g. `[Iron] Smelting Output`)
 
-**Related:** [Main Bus Guide]({{< ref "/base-design/main-bus-guide" >}}) — transition from bus to blocks, [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}}) — signals for your block grid.
+**Related:** [Main Bus Guide]({{< ref "/base-design/main-bus-guide" >}}) -- transition from bus to blocks, [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}}) -- signals for your block grid.
+
+
+I started with 50×50 blocks and they were too small for any single production chain. 64×64 is the minimum that fits a full smelting column with train station.
+
+## Community Verification & Resources
+
+- [Official Factorio Wiki -- Megabase](https://wiki.factorio.com/Guide:Megabase) -- scaling from starter base to city block factory
+- [Factorio Prints -- City Block Blueprints](https://factorioprints.com/) -- ready-to-use city block designs with rail integration
+- [Reddit -- City Block Discussion](https://www.reddit.com/r/factorio/) -- popular block sizes and layout strategies
+
+**Related:** [Main Bus Guide]({{< ref "/base-design/main-bus-guide" >}}) | [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}})

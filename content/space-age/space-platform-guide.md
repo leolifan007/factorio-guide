@@ -4,7 +4,7 @@ description: "Space platform design guide for Factorio Space Age: thruster-to-as
 date: 2026-05-21
 tags: ["space-age", "space-platform"]
 draft: false
-emoji: "🚀"
+
 ---
 
 The space platform you just launched is drifting toward Gleba without enough fuel to brake. The thrusters are starved, the crushers aren't running, and the asteroids have punched a hole through your ammo belt. Here's the build order that prevents that from happening: build the hub → fuel plant → ammo production → thrusters → go.
@@ -27,23 +27,23 @@ Space platforms are ships that fly between planets. They have five essential sys
 
 {{< diagram "diagrams/space-platform-layout.svg" "Space platform layout with hub, crushers, ammo line, and thruster row" "760" >}}
 
-## The Proven Fix — Stage 1 Build Order (First Platform)
+## The Proven Fix -- Stage 1 Build Order (First Platform)
 
 Build in this exact order on Nauvis orbit:
 
-**Stage 1 — The hub and foundation.**
+**Stage 1 -- The hub and foundation.**
 Place the hub. Extend a row of foundation tiles forward (direction of travel). This is your spine. Start with 20 tiles.
 
-**Stage 2 — Fuel production (crushers + chemical plants).**
+**Stage 2 -- Fuel production (crushers + chemical plants).**
 Place 3 asteroid collectors on the front edge. Behind them, 2 crushers (set to ice crushing). Behind crushers, 2 chemical plants making thruster fuel. Run pipes: ice → crusher → water → chemical plant → fuel → thruster.
 
-**Stage 3 — Ammo production.**
+**Stage 3 -- Ammo production.**
 Behind the fuel line: 2 more crushers (iron ore crushing) feeding 1 assembling machine making magazines. Run ammo belt forward to the turrets.
 
-**Stage 4 — Turrets.**
+**Stage 4 -- Turrets.**
 Place 3-4 gun turrets on the front edge of the platform, overlapping fields of fire. Feed them from the ammo belt.
 
-**Stage 5 — Thrusters and go.**
+**Stage 5 -- Thrusters and go.**
 2 thrusters at the back. Start with 1 thruster fuel tank (5 storage). Set target: first planet fuel stop. Launch.
 
 {{< callout type="info" >}}
@@ -70,13 +70,13 @@ Platform weight is the #1 killer of first platforms. Each tile of foundation add
 | Gun turret | 4 | 4 |
 | Thruster | 12 | 2 |
 | Accumulators | 1 | 10 |
-| Bulk (belts/pipes/inserters) | ~4 | — |
+| Bulk (belts/pipes/inserters) | ~4 | -- |
 | **Total** | **~85-95** | |
 
 Under 100 tons, 2 thrusters, plenty of room for cargo.
 
 {{< callout type="warning" >}}
-**Traps People Keep Falling Into:** Ammo production is the silent killer. You calculate: "I have 100 red ammo, trip takes 2 minutes, turret fires once per second... I need 120 rounds" — but asteroids come in waves, not steady stream. Build for 3× your calculated ammo consumption for the trip length. Better to build a bigger ammo factory than to deadstick halfway to Gleba.
+**Traps People Keep Falling Into:** Ammo production is the silent killer. You calculate: "I have 100 red ammo, trip takes 2 minutes, turret fires once per second... I need 120 rounds" -- but asteroids come in waves, not steady stream. Build for 3× your calculated ammo consumption for the trip length. Better to build a bigger ammo factory than to deadstick halfway to Gleba.
 {{< /callout >}}
 
 ## Where Most Players Mess This Up
@@ -93,15 +93,17 @@ Under 100 tons, 2 thrusters, plenty of room for cargo.
 
 **Inner planet routes** (Nauvis → Vulcanus/Fulgora): 100-ton platform, 2 thrusters, 4 turrets. Simple.
 
-**Outer planet routes** (to Gleba/Aquilo): Need 300+ tons, 6+ thrusters, 12+ turrets. Build a second, larger platform. Don't try to retrofit the first one — the weight penalty kills speed.
+**Outer planet routes** (to Gleba/Aquilo): Need 300+ tons, 6+ thrusters, 12+ turrets. Build a second, larger platform. Don't try to retrofit the first one -- the weight penalty kills speed.
 
-**Rocket transport:** Already launched a platform and forgot something? Pack it in a rocket. Launched platforms are persistent — they stay in orbit of whatever planet they're at. Just launch a resupply rocket.
+**Rocket transport:** Already launched a platform and forgot something? Pack it in a rocket. Launched platforms are persistent -- they stay in orbit of whatever planet they're at. Just launch a resupply rocket.
 
 ---
 
 ## Community Verification & Resources
 
-- [Official Wiki — Space Platform](https://wiki.factorio.com/Space_platform) — exact thruster fuel formulas, speed calculations, and platform hub mechanics
-- [Factorio Forums — Space Age Discussion](https://forums.factorio.com/viewforum.php?f=69) — community platform blueprints and bug reports
-- [Steam Guide — Platform Design Compendium](https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547) — tested builds for all planet routes including Aquilo
-- [Alt-F4 Blog](https://alt-f4.blog/) — deep dives on Space Age mechanics and platform optimization
+- [Official Wiki -- Space Platform](https://wiki.factorio.com/Space_platform) -- exact thruster fuel formulas, speed calculations, and platform hub mechanics
+- [Factorio Forums -- Space Age Discussion](https://forums.factorio.com/viewforum.php?f=69) -- community platform blueprints and bug reports
+- [Steam Guide -- Platform Design Compendium](https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547) -- tested builds for all planet routes including Aquilo
+- [Alt-F4 Blog](https://alt-f4.blog/) -- deep dives on Space Age mechanics and platform optimization
+
+**Related:** [Quality Module Guide]({{< ref "/space-age/quality-module-guide" >}}) | [Vulcanus Guide]({{< ref "/space-age/vulcanus-guide" >}})

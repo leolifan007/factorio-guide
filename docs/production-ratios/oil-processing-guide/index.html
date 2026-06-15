@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
-  <title>Oil Processing — Ratios, Cracking, and Refinery Setup | Factorio Guide</title>
+  <meta name="description" content="Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
+  <title>Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup | Factorio Guide</title>
 
   
   <link rel="canonical" href="https://factorioguides.com/production-ratios/oil-processing-guide/">
@@ -26,12 +26,30 @@
   
 
   
-  <meta property="og:title" content="Oil Processing — Ratios, Cracking, and Refinery Setup">
-  <meta property="og:description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
+  <meta property="og:title" content="Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup">
+  <meta property="og:description" content="Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://factorioguides.com/production-ratios/oil-processing-guide/">
 </head>
 <body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
 
 
 <header class="site-header">
@@ -59,10 +77,9 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>Oil Processing — Ratios, Cracking, and Refinery Setup</h1><p class="article-desc">Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
+      <h1>Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup</h1><p class="article-desc">Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
       <div class="article-meta">
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="1" y="3" width="12" height="10" rx="1"/>
             <line x1="1" y1="7" x2="13" y2="7"/>
@@ -72,7 +89,6 @@
           Updated: May 21, 2026
         </span>
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="7" cy="7" r="6"/>
             <line x1="7" y1="4" x2="7" y2="7"/>
@@ -81,7 +97,6 @@
           4 min read
         </span>
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
             <circle cx="4" cy="4" r="1" fill="currentColor"/>
@@ -96,6 +111,18 @@
   <div class="article-layout">
 
     
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
 
     
     <div class="article-center">
@@ -111,16 +138,16 @@
           <a href="/production-ratios/">Production Ratios — Factorio Ratio Reference</a>
           
           <span class="breadcrumb-sep">&rsaquo;</span>
-          <span class="breadcrumb-current">Oil Processing — Ratios, Cracking, and Refinery Setup</span>
+          <span class="breadcrumb-current">Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup</span>
         </nav>
 
         <p>Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.</p>
 <div class="pro-tip"><strong>TL;DR:</strong> For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &gt; 20000 → crack. This setup never deadlocks.</div>
 
 <h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck</h2>
-<p>Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.</p>
+<p>Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops -- stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.</p>
 <p>The solution is controlled cracking: convert excess heavy to light, excess light to petroleum, and let petroleum run through to solid fuel or rocket fuel when backed up.</p>
-<h2 id="the-proven-fix--ratios-first-pipes-second">The Proven Fix — Ratios First, Pipes Second</h2>
+<h2 id="the-proven-fix----ratios-first-pipes-second">The Proven Fix -- Ratios First, Pipes Second</h2>
 <p><strong>Basic ratio: 8:1:7</strong></p>
 <table>
   <thead>
@@ -201,7 +228,7 @@
       </tr>
   </tbody>
 </table>
-<h2 id="advanced-oil--heavy-oil-management">Advanced Oil — Heavy Oil Management</h2>
+<h2 id="advanced-oil----heavy-oil-management">Advanced Oil -- Heavy Oil Management</h2>
 <p>Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If you crack all of it, you lose access to both:</p>
 <ul>
 <li><strong>Lubricant:</strong> Needed for electric engines (purple science). Each engine unit uses 1 lubricant.</li>
@@ -214,9 +241,9 @@
 <li>If lubricant tank is full (maybe you're not building electric engines yet), route heavy to cracking</li>
 <li>Circuit condition on the lubricant tank: heavy &gt; 5000 → send to cracking</li>
 </ul>
-<div class="pro-tip"><strong>Quick Tip:</strong> Before advanced oil processing (which gives you full control over output ratios), you're stuck with basic processing. Build the circuit cracking setup from day one of oil — you won't need it until you've researched advanced oil, but having it ready prevents long debugging sessions later.</div>
+<div class="pro-tip"><strong>Quick Tip:</strong> Before advanced oil processing (which gives you full control over output ratios), you're stuck with basic processing. Build the circuit cracking setup from day one of oil -- you won't need it until you've researched advanced oil, but having it ready prevents long debugging sessions later.</div>
 
-<h2 id="scaling-up--refinery-blocks-at-megabase-scale">Scaling Up — Refinery Blocks at Megabase Scale</h2>
+<h2 id="scaling-up----refinery-blocks-at-megabase-scale">Scaling Up -- Refinery Blocks at Megabase Scale</h2>
 <p>For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly:</p>
 <p><strong>100 SPM base:</strong></p>
 <ul>
@@ -230,17 +257,19 @@
 <li>80 refineries (10× 8-reactor modules)</li>
 <li>10 heavy crackers + 70 light crackers</li>
 <li>Dedicated crude oil train station per module</li>
-<li>Circuit control per module (not shared — independent pipe networks)</li>
+<li>Circuit control per module (not shared -- independent pipe networks)</li>
 </ul>
 <p>The per-module design ensures your oil base scales predictably: copy the blueprint, connect a crude oil train stop, done.</p>
 <hr>
+<p>I spent an hour debugging a stalled refinery before realizing heavy oil pipe had backed up because my cracking circuit wasn't reading any tank.</p>
 <h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
 <ul>
-<li><a href="https://wiki.factorio.com/Oil_processing">Official Wiki — Oil Processing</a> — exact cracking ratios and fluid system mechanics</li>
-<li><a href="https://forums.factorio.com/viewtopic.php?t=6926">Factorio Forums — Fluid Mechanics &amp; Pipe Throughput</a> — community testing on pipe diameters, lengths, and flow rates</li>
-<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> — set SPM target, get exact refinery/building counts including cracking modules</li>
-<li><a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald's Calculator</a> — oil processing ratio calculator for any target configuration</li>
+<li><a href="https://wiki.factorio.com/Oil_processing">Official Wiki -- Oil Processing</a> -- exact cracking ratios and fluid system mechanics</li>
+<li><a href="https://forums.factorio.com/viewtopic.php?t=6926">Factorio Forums -- Fluid Mechanics &amp; Pipe Throughput</a> -- community testing on pipe diameters, lengths, and flow rates</li>
+<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> -- set SPM target, get exact refinery/building counts including cracking modules</li>
+<li><a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald's Calculator</a> -- oil processing ratio calculator for any target configuration</li>
 </ul>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/science-packs/blue-science-guide/">Blue Science Guide</a> | <a href="https://factorioguides.com/production-ratios/smelting-ratios/">Smelting Ratios</a></p>
 
 
         
@@ -268,12 +297,12 @@
               <div class="related-icon">
                 <svg viewBox="0 0 32 32" width="32" height="32">
                   <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
-                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">B</text>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
                 </svg>
               </div>
               <div class="related-body">
-                <h4>Beacon and Module Layout —8-Beacon Setup</h4>
-                <p>Beacon and module guide for Factorio. The 8-beacon layout that maximizes productivity and speed. Module combinations, power costs, and the math behind efficient factory design.</p>
+                <h4>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</h4>
+                <p>Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.</p>
               </div>
             </a>
             
@@ -281,12 +310,12 @@
               <div class="related-icon">
                 <svg viewBox="0 0 32 32" width="32" height="32">
                   <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
-                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">K</text>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
                 </svg>
               </div>
               <div class="related-body">
-                <h4>Kovarex Enrichment —Uranium Processing Loop</h4>
-                <p>Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem.</p>
+                <h4>Factorio Kovarex Enrichment Guide - Nuclear Fuel Processing</h4>
+                <p>How to set up Kovarex enrichment in Factorio: circuit-controlled centrifuges, 40-40 initial buffer, enrichment loop ratio, and the exact blueprint that produces 100&#43; U-235 per minute.</p>
               </div>
             </a>
             
@@ -294,12 +323,12 @@
               <div class="related-icon">
                 <svg viewBox="0 0 32 32" width="32" height="32">
                   <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
-                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
                 </svg>
               </div>
               <div class="related-body">
-                <h4>Smelting Ratios — How Many Furnaces Per Belt</h4>
-                <p>Exact smelting ratios for iron, copper, steel, and stone. Never waste furnaces or belt capacity again.</p>
+                <h4>Factorio Smelting Ratios - How Many Furnaces Per Belt (Iron/Copper/Steel)</h4>
+                <p>Exact smelting ratios for Factorio: how many furnaces per yellow/red/blue belt of iron, copper, steel, and stone. Electric furnace vs steel furnace math - never waste furnaces or belt capacity again.</p>
               </div>
             </a>
             
@@ -307,10 +336,26 @@
         </div>
         
         
+
+        
+        
+
       </div>
     </div>
 
     
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
 
   </div>
 </div>

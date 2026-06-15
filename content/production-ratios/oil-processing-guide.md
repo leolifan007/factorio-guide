@@ -4,7 +4,7 @@ description: "Oil processing ratios for Factorio: exact refinery-to-cracking rat
 date: 2026-05-21
 tags: ["production-ratios", "getting-started"]
 draft: false
-emoji: "🛢️"
+
 ---
 
 Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.
@@ -15,11 +15,11 @@ Your refineries are flashing yellow again. Heavy oil backed up → no light oil 
 
 ## The Mechanics Behind This Bottleneck
 
-Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.
+Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops -- stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.
 
 The solution is controlled cracking: convert excess heavy to light, excess light to petroleum, and let petroleum run through to solid fuel or rocket fuel when backed up.
 
-## The Proven Fix — Ratios First, Pipes Second
+## The Proven Fix -- Ratios First, Pipes Second
 
 **Basic ratio: 8:1:7**
 
@@ -66,7 +66,7 @@ For oil processing, keep pipe runs under 30 segments (about 60 tiles). Beyond th
 | 2 pipes wide | ~50 segments (100 tiles) | ~90% of max |
 | 3 pipes wide | ~80 segments (160 tiles) | ~95% of max |
 
-## Advanced Oil — Heavy Oil Management
+## Advanced Oil -- Heavy Oil Management
 
 Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If you crack all of it, you lose access to both:
 
@@ -80,10 +80,10 @@ Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If 
 - Circuit condition on the lubricant tank: heavy > 5000 → send to cracking
 
 {{< callout type="info" >}}
-**Quick Tip:** Before advanced oil processing (which gives you full control over output ratios), you're stuck with basic processing. Build the circuit cracking setup from day one of oil — you won't need it until you've researched advanced oil, but having it ready prevents long debugging sessions later.
+**Quick Tip:** Before advanced oil processing (which gives you full control over output ratios), you're stuck with basic processing. Build the circuit cracking setup from day one of oil -- you won't need it until you've researched advanced oil, but having it ready prevents long debugging sessions later.
 {{< /callout >}}
 
-## Scaling Up — Refinery Blocks at Megabase Scale
+## Scaling Up -- Refinery Blocks at Megabase Scale
 
 For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly:
 
@@ -97,15 +97,20 @@ For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly
 - 80 refineries (10× 8-reactor modules)
 - 10 heavy crackers + 70 light crackers
 - Dedicated crude oil train station per module
-- Circuit control per module (not shared — independent pipe networks)
+- Circuit control per module (not shared -- independent pipe networks)
 
 The per-module design ensures your oil base scales predictably: copy the blueprint, connect a crude oil train stop, done.
 
 ---
 
+
+I spent an hour debugging a stalled refinery before realizing heavy oil pipe had backed up because my cracking circuit wasn't reading any tank.
+
 ## Community Verification & Resources
 
-- [Official Wiki — Oil Processing](https://wiki.factorio.com/Oil_processing) — exact cracking ratios and fluid system mechanics
-- [Factorio Forums — Fluid Mechanics & Pipe Throughput](https://forums.factorio.com/viewtopic.php?t=6926) — community testing on pipe diameters, lengths, and flow rates
-- [FactorioLab Calculator](https://factoriolab.github.io/) — set SPM target, get exact refinery/building counts including cracking modules
-- [Kirk McDonald's Calculator](https://kirkmcdonald.github.io/calc.html) — oil processing ratio calculator for any target configuration
+- [Official Wiki -- Oil Processing](https://wiki.factorio.com/Oil_processing) -- exact cracking ratios and fluid system mechanics
+- [Factorio Forums -- Fluid Mechanics & Pipe Throughput](https://forums.factorio.com/viewtopic.php?t=6926) -- community testing on pipe diameters, lengths, and flow rates
+- [FactorioLab Calculator](https://factoriolab.github.io/) -- set SPM target, get exact refinery/building counts including cracking modules
+- [Kirk McDonald's Calculator](https://kirkmcdonald.github.io/calc.html) -- oil processing ratio calculator for any target configuration
+
+**Related:** [Blue Science Guide]({{< ref "/science-packs/blue-science-guide" >}}) | [Smelting Ratios]({{< ref "/production-ratios/smelting-ratios" >}})

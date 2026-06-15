@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="auto" style="display:block;margin:0 auto;max-width:760px;background:#1a1a2e;border-radius:8px;font-family:system-ui,-apple-system,sans-serif">
+  <defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#e94560"/></marker></defs>
+  <rect x="0" y="0" width="760" height="50" fill="#16213e" rx="8"/><rect x="0" y="44" width="760" height="6" fill="#16213e"/>
+  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#e94560">ARTILLERY OUTPOST</text>
+
+  <rect x="20" y="65" width="230" height="310" rx="6" fill="#151515" stroke="#333" stroke-width="1"/>
+  <text x="135" y="90" text-anchor="middle" font-size="15" font-weight="600" fill="#aaa">COMPONENTS</text>
+
+  <rect x="30" y="105" width="210" height="50" rx="4" fill="#1a1a2e" stroke="#e94560" stroke-width="1.5"/>
+  <text x="135" y="128" text-anchor="middle" font-size="15" fill="#e94560">Artillery Turret</text>
+  <text x="135" y="145" text-anchor="middle" font-size="12" fill="#888">2-4 per outpost</text>
+
+  <rect x="30" y="165" width="210" height="50" rx="4" fill="#1a1a2e" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="135" y="188" text-anchor="middle" font-size="15" fill="#f5a623">Supply System</text>
+  <text x="135" y="205" text-anchor="middle" font-size="12" fill="#888">Bot-based ammo delivery</text>
+
+  <rect x="30" y="225" width="210" height="50" rx="4" fill="#1a1a2e" stroke="#00d2ff" stroke-width="1.5"/>
+  <text x="135" y="248" text-anchor="middle" font-size="15" fill="#00d2ff">Wall and Gates</text>
+  <text x="135" y="265" text-anchor="middle" font-size="12" fill="#888">Double-layer + dragon teeth</text>
+
+  <rect x="30" y="285" width="210" height="50" rx="4" fill="#1a1a2e" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="135" y="308" text-anchor="middle" font-size="15" fill="#2ecc71">Power Supply</text>
+  <text x="135" y="325" text-anchor="middle" font-size="12" fill="#888">Solar + accumulator bank</text>
+
+  <rect x="270" y="65" width="470" height="310" rx="6" fill="#151515" stroke="#333" stroke-width="1"/>
+  <text x="505" y="90" text-anchor="middle" font-size="15" font-weight="600" fill="#aaa">TYPICAL LAYOUT</text>
+
+  <rect x="290" y="105" width="430" height="20" rx="3" fill="#444" stroke="#666" stroke-width="1"/>
+  <text x="505" y="119" text-anchor="middle" font-size="12" fill="#aaa">Outer Wall (Stone/Brick)</text>
+
+  <rect x="300" y="130" width="20" height="15" rx="2" fill="#555"/><rect x="330" y="130" width="20" height="15" rx="2" fill="#555"/>
+  <rect x="360" y="130" width="20" height="15" rx="2" fill="#555"/><rect x="400" y="130" width="20" height="15" rx="2" fill="#555"/>
+  <rect x="440" y="130" width="20" height="15" rx="2" fill="#555"/><rect x="480" y="130" width="20" height="15" rx="2" fill="#555"/>
+  <rect x="520" y="130" width="20" height="15" rx="2" fill="#555"/><rect x="600" y="130" width="20" height="15" rx="2" fill="#555"/>
+  <rect x="640" y="130" width="20" height="15" rx="2" fill="#555"/>
+  <text x="505" y="155" text-anchor="middle" font-size="12" fill="#888">Dragon Teeth</text>
+
+  <rect x="290" y="165" width="430" height="20" rx="3" fill="#555" stroke="#888" stroke-width="1"/>
+  <text x="505" y="179" text-anchor="middle" font-size="12" fill="#aaa">Inner Wall</text>
+
+  <rect x="310" y="195" width="100" height="50" rx="5" fill="#2a1010" stroke="#e94560" stroke-width="1.5"/>
+  <text x="360" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#e94560">Turret</text>
+  <rect x="440" y="195" width="100" height="50" rx="5" fill="#2a1010" stroke="#e94560" stroke-width="1.5"/>
+  <text x="490" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#e94560">Turret</text>
+  <rect x="570" y="195" width="100" height="50" rx="5" fill="#2a1010" stroke="#e94560" stroke-width="1.5"/>
+  <text x="620" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#e94560">Turret</text>
+
+  <rect x="350" y="260" width="250" height="50" rx="5" fill="#1a1a0f" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="475" y="283" text-anchor="middle" font-size="14" font-weight="600" fill="#f5a623">Bot Supply Station</text>
+  <text x="475" y="300" text-anchor="middle" font-size="12" fill="#aaa">Req. Chest + Provider Chest</text>
+
+  <rect x="350" y="320" width="250" height="40" rx="5" fill="#1a1a0f" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="475" y="343" text-anchor="middle" font-size="14" fill="#2ecc71">Solar + Accumulators</text>
+</svg>

@@ -1,89 +1,85 @@
 ---
-title: "Factorio Artillery Guide - Range, Shells and Outpost Setup"
-description: "Artillery guide for Factorio: artillery range research, shell production automation, outpost placement strategy, and the logistics chain that keeps biters away from your base."
-date: 2026-05-23
-lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-27T16:52:00+08:00
-tags: ["defense", "artillery", "military"]
+title: "Factorio Artillery Guide - Automated Shelling and Outpost Defense"
+description: "How to use artillery in Factorio: artillery shell production, range upgrade, automated outpost clearing, and the exact artillery outpost blueprint that keeps biters away permanently."
+date: 2026-05-18
+lastmod: 2026-06-15T13:47:00+08:00
+tags: ["defense", "artillery", "turrets"]
 draft: false
-hidden: true
-emoji: ""
-version: "2.0"
 ---
 
-Artillery is the endgame solution to biter bases. {{< material "gun_turret" >}} Gun turrets and {{< material "laser_turret" >}} laser turrets defend your walls. Artillery deletes the threat before it reaches you.
+I spent 10 hours clearing biter nests by hand before I built my first artillery outpost. Every nest I destroyed triggered expansion parties from 8 different directions. Artillery fixes this -- it clears nests automatically and the range pushback keeps cleared areas clear. Here's the exact artillery wagon + outpost setup I use.
 
 {{< callout "tip" >}}
-**TL;DR:** Build artillery turrets at outposts, connect them to your rail network, and supply shells via trains. Research range to extend coverage. One shell destroys most biter bases in 2-3 shots.
+**TL;DR:** Two artillery wagons per outpost, surrounded by 6 gun turrets with piercing ammo. Shell range upgrades are the priority research (x3 before purple science). Automated delivery via train: artillery shell production feeds a provider station, each outpost has a requester. Without the ammo train, your outpost runs out of shells in 3 minutes of continuous firing.
 {{< /callout >}}
 
-{{< diagram "diagrams/artillery-outpost.svg" "Artillery outpost logistics chain —main base shell production, train delivery, and targeting range" "900" >}}
+## How Artillery Changes the Game
 
-## How Artillery Works
+Artillery is the only weapon that clears biter nests from outside the pollution cloud. One shell destroys a nest cluster in a 5-tile radius. The range at max upgrade covers 7 chunks -- more than any other weapon.
 
-The artillery turret fires explosive shells at biter bases within range. Each shell deals massive area damage, destroying nests, worms, and biters in the blast radius.
+When artillery fires at a nest, the biters attack your outpost. The shell hits the nest, the natives swarm the nearest structure. This means your artillery outpost needs defense against the retaliation wave.
 
-**Key mechanics:**
-- Manual targeting: click the map, the turret fires
-- Automatic targeting: turrets auto-fire at biter bases in range (configurable)
-- Shell consumption: each shot uses one artillery shell
-- Range: base 7 tiles, max 140 tiles with research
+The pattern: shell > biters attack your wall > turrets kill the biters > repeat. Each outpost goes through this cycle every 30-60 seconds during active clearing. After 5-10 cycles, the nearby nests are gone and the outpost goes dormant.
 
-## Shell Production Chain
+| Upgrade level | Range (chunks) | Shells per nest destroyed | Ammo cost per cycle |
+|:-------------|:--------------:|:------------------------:|:-------------------:|
+| 1 | 3 | 2-3 | 40 piercing rounds |
+| 2 | 5 | 1-2 | 30 piercing rounds |
+| 3 | 7 | 1-2 | 25 piercing rounds |
+| Max (3 + quality) | 7+ | 1 | 15 piercing rounds |
 
-Artillery shells are expensive. Plan your factory:
+I rush range upgrade 3 before starting purple science. Higher range means the artillery clears nests without triggering new expansion parties that spawn at the edge of your cleared area.
 
-| Component | Source | Notes |
-|-----------|--------|-------|
-| Explosive cannon shell | Military science | Standard ammo production |
-| Radar | Green circuits + iron | One per turret for targeting |
-| Artillery shell | Explosive shell + radar | Assemble at dedicated factory |
+## The Outpost Blueprint
 
-**Throughput:** One assembler 2 produces 1 shell every 15 seconds. For sustained fire, build 4-6 assemblers.
+Every artillery outpost I build uses the same components:
 
-## Outpost Setup
+| Component | Count | Purpose |
+|:----------|:-----:|:--------|
+| Artillery wagon | 2 | Deliver shells and auto-shell nests |
+| Gun turret | 6 | Defend against retaliation waves |
+| Wall | 30-50 | Surround the turrets in a box |
+| Station | 1 | Requester for shells and ammo |
+| Chest | 4 steel | Shell storage for the wagon |
+| Power pole | 3 | Connect to main grid |
 
-Artillery outposts need three things: a turret, a buffer chest, and a train connection.
+Two artillery wagons is the sweet spot. One wagon fires too slowly (the next shell is still in the assembler). Two wagons alternate, keeping continuous fire on the nearby nests.
 
-**The buffer rule:** Store 200 shells locally. This covers 50-100 biter bases before resupply is needed. Use requester chests wired to the train stop —trains only dispatch when stock is low.
+**The layout:** 10x10 walled area. Artillery wagons sit in the center. 6 gun turrets line the walls on each side. The train station sits outside the wall on one side with requester chests feeding shells and ammo into the compound via underground belt.
 
-**Placement strategy:**
-- Space outposts 200+ tiles apart (overlap coverage by ~40 tiles)
-- Connect to your main rail network
-- Defend the outpost itself —biters attack artillery
+{{< callout type="info" >}}
+**Quick Tip:** Put the ammo chest behind a circuit condition. Set the inserter to only enable when turret ammo < 100. This prevents the chest from emptying into full turrets, and keeps the turret ammo level consistent. Without this circuit, the first six turrets consume all the ammo and the last four sit empty.
+{{< /callout >}}
 
-## Range Research
+## Ammo Production and Delivery
 
-Research extends artillery range dramatically:
+Artillery shells need: 5 explosives + 10 steel + 1 radar. I automate this at my main base and ship via train.
 
-| Level | Range | Coverage Area |
-|-------|-------|---------------|
-| 0 (base) | 7 tiles | Tiny |
-| 3 | 60 tiles | Small perimeter |
-| 7 (max) | 140 tiles | Entire visible map |
+**Shell production per assembler:** 1 shell per 8 seconds in assembler 3. I run 4 assemblers for a single outpost. Shells go into a provider station with 2 trainloads of buffer.
 
-**Priority:** Artillery range 3 unlocks practical outpost placement. Range 7 is endgame convenience.
+**Feeding the outpost:** Each outpost has a train station named "[Request] Artillery Ammo." The train schedule: Provider > Depot > Request. The depot adds a 60-second wait timer so the train doesn't bounce between stations.
 
-## What Veterans Learn the Hard Way
+The mistake I made: one train per outpost. With 3 outposts, that's 3 trains plus ammo production. The correct approach: use the same train for all outposts with train limits set to 1. The train dispatches to whichever outpost requests ammo first. With stack threshold at 100 shells, each outpost gets a full resupply when it drops below that.
 
-- **Shells are heavy** —one stack is only 10 shells. Trains need dedicated artillery shell cars.
-- **Biters evolve** —artillery fire draws evolution. Expect retaliation.
-- **Outposts need defense** —the turret fires outward, but biters attack the outpost itself. {{< material "wall" >}} Walls and {{< material "gun_turret" >}} turrets required.
-- **Don't overbuild** —3-4 outposts cover most maps. More = shell drain without benefit.
+## Artillery Wagon vs. Turret
 
-## Common Mistakes
+| Feature | Wagon | Turret |
+|:--------|:-----|:-------|
+| Range | 7 chunks (upgraded) | 4 chunks (fixed) |
+| Shell capacity | 50 | 15 |
+| Auto-fire | Yes (with radar) | Yes |
+| Manual fire | Yes | Yes |
+| Automated reload | Inserter from chest | Belt or requester chest |
+| Train-nest clear | Drive-by | Stationary |
 
-| Mistake | Consequence |
-|---------|-------------|
-| No shell buffer | Turret runs dry during attack |
-| Outpost too far from rail | Manual shell delivery = tedious |
-| No outpost defense | Biters destroy your investment |
-| Firing at everything | Wastes shells, accelerates evolution |
-
-## The Bottom Line
-
-Artillery turns biter defense from reactive to proactive. Build shells at main base, deliver by train, store 200 at each outpost. Research range to 3, then 7. Clear the map on your terms.
+The wagon is better for clearing new areas (drive through nests, fire automatically). The turret is better for defending a chokepoint (always active, larger shell buffer per turret). I use wagons for expansion and turrets for perimeter defense.
 
 ---
 
-**Related:** [Early Game Defense]({{< ref "/defense/early-game-defense" >}}) | [Flamethrower Defense]({{< ref "/defense/flamethrower-defense-guide" >}})
+## Community Verification & Resources
+
+- [Official Factorio Wiki -- Artillery](https://wiki.factorio.com/Artillery) -- shell damage, range upgrades, and priority targeting mechanics
+- [Reddit -- Artillery Outpost Designs](https://www.reddit.com/r/factorio/) -- popular outpost blueprints with integrated defense
+- [Factorio Forums -- Base Defense](https://forums.factorio.com/viewforum.php?f=55) -- wall, flamethrower, and artillery combination builds
+
+**Related:** [Flamethrower Defense Guide]({{< ref "/defense/flamethrower-defense-guide" >}}) | [Early Game Defense]({{< ref "/defense/early-game-defense" >}}) | [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}})

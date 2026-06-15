@@ -1,91 +1,59 @@
 ---
-title: "LTN Mod Guide - Logistic Train Network Setup for Factorio"
-description: "LTN (Logistic Train Network) mod guide for Factorio. Provider stops, requester stops, depot configuration, and the 3-stop system that automates your entire rail network."
-date: 2026-05-23
-lastmod: 2026-05-23T19:09:00+08:00
-publishDate: 2026-05-27T16:52:00+08:00
-tags: ["blueprints", "trains", "logistics"]
+title: "Factorio LTN Mod Guide (Logistic Train Network)"
+description: "How to use the Logistic Train Network (LTN) mod for Factorio: setup, depot design, station naming, requester/provider stations, and common LTN circuit configurations."
+date: 2026-05-18
+lastmod: 2026-06-15T13:46:00+08:00
+tags: ["blueprints", "mods", "trains"]
 draft: false
-hidden: true
-emoji: ""
-version: "2.0"
 ---
 
-LTN (Logistic Train Network) turns trains into logistic bots. {{< material "rail" >}} Trains automatically travel from providers to requesters based on supply and demand —no schedules needed.
+You've got 50 trains running across a megabase and every one of them is either waiting at a full station or blocking an intersection. Vanilla train limits work for small bases, but I hit the wall around 30 trains. LTN (Logistic Train Network) is the mod that automates train dispatch. Here's how I set it up without the head-scratching.
 
 {{< callout "tip" >}}
-**TL;DR:** Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.
+**TL;DR:** LTN works like a logistics network but for trains. Build a depot of waiting trains. Build requester stations (need items) and provider stations (have items). LTN dispatches a train when a requester's threshold is met. Key settings: train limit = 1 per station, stack threshold = at least 1 trainload, network ID filtering for separated grids.
 {{< /callout >}}
 
-{{< diagram "diagrams/ltn-3stop.svg" "LTN 3-stop system —depot, provider stop, and requester stop with train flow" "900" >}}
+## How LTN Is Different From Vanilla
 
-## The 3-Stop System
+In vanilla Factorio, you set a train schedule manually (Station A > Station B). If Station B is full, the train waits. If a new outpost opens, you add a new schedule. This works for 5 trains. At 30 trains, you spend more time editing schedules than building factories.
 
-LTN requires three stop types:
+LTN replaces this with an automated dispatcher. You define stations as providers or requesters. The depot holds idle trains. When a requester station signals "I need 2,000 iron plates," LTN finds a provider with iron, dispatches the nearest idle train, and the train does the trip automatically.
 
-| Stop Type | Purpose | Circuit Connection |
-|-----------|---------|-------------------|
-| **Depot** | Idle trains wait here | None (LTN manages) |
-| **Provider** | Items available for pickup | Storage chest 鈫?stop |
-| **Requester** | Items needed for delivery | Requester chest 鈫?stop |
+The magic is one-way only: providers and requesters are separate. A train picks up from a provider, drops at a requester, returns to depot. No complex schedules to maintain.
 
-**How it works:**
-1. Provider signals available items to LTN
-2. Requester signals needed items to LTN
-3. LTN dispatches idle train from depot
-4. Train loads at provider, unloads at requester
-5. Empty train returns to depot
+{{< callout type="info" >}}
+**Quick Tip:** Start with one depot and 3 trains. Add more trains as you add stations. A good rule: 1 train per 3 requester stations. With stack threshold set to 1 trainload, a single train can serve iron outpost > iron requester > steel outpost > steel requester in a single trip.
+{{< /callout >}}
 
-## Depot Setup
+## The Setup (Blueprint Ready)
 
-The depot is where idle trains park. Critical rules:
+| Component | What it does | Signal needed |
+|:----------|:------------|:-------------|
+| Depot | Holds idle trains, refuels them | None |
+| Provider | Has items and reports them to LTN | Green wire from chest > constant combinator > lamp pole |
+| Requester | Needs items and requests a delivery | Green wire from chest > constant combinator > lamp pole |
+| LTN Combinator | Box at the station entrance, sets train load size | Red wire to lamp pole |
 
-- **Minimum 2 trains** —one loading/unloading, one waiting
-- **No schedule** —LTN assigns temporary schedules
-- **Fuel station** —trains refuel at depot automatically
+**Depot layout:** 4 stations in a row, each with a refueling inserter. Fuel belt runs behind all 4. Train limit = 1 per station (depot always wants empty trains).
 
-Place depots centrally on your rail network. Every train should reach a depot within 30 seconds of emptying.
+**Provider station:** 6 steel chests unload by stack inserter into a single belt that feeds the train. Circuit: green wire from a chest reads item count > constant combinator has the item icon with a negative value (-2000) > combined signal on green wire goes to the lamp pole. LTN sees negative combined signal = "I have items available."
 
-## Provider Stops
+**Requester station:** Same circuit but positive. Chest reads item count > constant combinator positive value (2000) > combined signal = "I need this many more."
 
-Provider stops announce available items:
+## Common Mistakes I Made
 
-1. Place stop next to production
-2. Wire storage chests to stop
-3. Set "provide threshold" (e.g., provide iron plates when >1000)
+**Stack threshold too low.** Default is 1. I set it to 10% of a trainload, and LTN dispatched a train for 200 iron plates. The train traveled 2 minutes for 1 second of unloading. Set stack threshold to 1 trainload minimum.
 
-**Best practice:** Use passive provider chests. LTN will dispatch trains when stock exceeds threshold.
+**No network ID filtering.** In a megabase with separate train networks (smelting grid, science grid), LTN will route a science-provider train to an iron-requester station in the wrong grid. Set network ID on each station to separate them.
 
-## Requester Stops
-
-Requester stops announce demand:
-
-1. Place stop next to consumption
-2. Wire requester chests to stop
-3. Set "request threshold" (e.g., request iron plates when <200)
-
-**Best practice:** Use requester chests with high request counts. LTN batches deliveries to minimize train trips.
-
-## What Veterans Learn the Hard Way
-
-- **Depot trains must be empty** —LTN can't assign a train carrying cargo
-- **Wire every stop** —unwired stops break the network
-- **Thresholds matter** —too low = train spam; too high = stockouts
-- **One item type per provider** —mixed providers confuse LTN
-
-## Common Mistakes
-
-| Mistake | Consequence |
-|---------|-------------|
-| Single train depot | Network stalls when train is busy |
-| Unwired stops | LTN doesn't see supply/demand |
-| Mixed provider chests | Trains load wrong items |
-| No fuel at depot | Trains strand mid-network |
-
-## The Bottom Line
-
-LTN automates train logistics. Build depots with 2+ trains. Wire providers to storage chests. Wire requesters to requester chests. Set thresholds. Let LTN handle the rest.
+**Depot too small.** Two depot tracks isn't enough for 20 requesters. I use 8 depot stations and let excess trains wait at their last station instead. Rule of thumb: depot capacity = total trains / 3.
 
 ---
 
-**Related:** [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}}) | [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}})
+## Community Verification & Resources
+
+- [LTN Mod Page (Factorio Mods)](https://mods.factorio.com/mod/LogisticTrainNetwork) -- official mod download, changelog, and documentation
+- [Reddit -- LTN Guide](https://www.reddit.com/r/factorio/) -- community circuit setups and station blueprints
+- [LTN Documentation (GitHub)](https://github.com/Optera/LogisticTrainNetwork/wiki) -- full circuit logic, depot sizing, and network ID documentation
+
+**Related:** [How to Use Blueprints]({{< ref "/blueprints/how-to-use-blueprints" >}}) | [Basic Rail Network]({{< ref "/trains-logistics/basic-rail-network" >}}) | [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}})

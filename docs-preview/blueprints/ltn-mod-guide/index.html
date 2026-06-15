@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.">
+  <title>LTN —Logistic Train Network Setup | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/blueprints/ltn-mod-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="LTN —Logistic Train Network Setup">
+  <meta property="og:description" content="LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/blueprints/ltn-mod-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>LTN —Logistic Train Network Setup</h1><p class="article-desc">LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 23, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          2 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/blueprints/">Blueprints and Blueprint Books</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">LTN —Logistic Train Network Setup</span>
+        </nav>
+
+        <p>LTN (Logistic Train Network) turns trains into logistic bots. <div class="game-slot"><img src="/images/icon/rail.png" alt="rail" class="game-img" loading="lazy">
+  <span class="game-name">Rail</span>
+</div>
+ Trains automatically travel from providers to requesters based on supply and demand —no schedules needed.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.</div>
+
+<img src="/images/diagrams/ltn-3stop.svg" alt="LTN 3-stop system —depot, provider stop, and requester stop with train flow" class="schema-diagram" loading="lazy" width="900">
+
+<h2 id="the-3-stop-system">The 3-Stop System</h2>
+<p>LTN requires three stop types:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Stop Type</th>
+          <th>Purpose</th>
+          <th>Circuit Connection</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Depot</strong></td>
+          <td>Idle trains wait here</td>
+          <td>None (LTN manages)</td>
+      </tr>
+      <tr>
+          <td><strong>Provider</strong></td>
+          <td>Items available for pickup</td>
+          <td>Storage chest 鈫?stop</td>
+      </tr>
+      <tr>
+          <td><strong>Requester</strong></td>
+          <td>Items needed for delivery</td>
+          <td>Requester chest 鈫?stop</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>Provider signals available items to LTN</li>
+<li>Requester signals needed items to LTN</li>
+<li>LTN dispatches idle train from depot</li>
+<li>Train loads at provider, unloads at requester</li>
+<li>Empty train returns to depot</li>
+</ol>
+<h2 id="depot-setup">Depot Setup</h2>
+<p>The depot is where idle trains park. Critical rules:</p>
+<ul>
+<li><strong>Minimum 2 trains</strong> —one loading/unloading, one waiting</li>
+<li><strong>No schedule</strong> —LTN assigns temporary schedules</li>
+<li><strong>Fuel station</strong> —trains refuel at depot automatically</li>
+</ul>
+<p>Place depots centrally on your rail network. Every train should reach a depot within 30 seconds of emptying.</p>
+<h2 id="provider-stops">Provider Stops</h2>
+<p>Provider stops announce available items:</p>
+<ol>
+<li>Place stop next to production</li>
+<li>Wire storage chests to stop</li>
+<li>Set &quot;provide threshold&quot; (e.g., provide iron plates when &gt;1000)</li>
+</ol>
+<p><strong>Best practice:</strong> Use passive provider chests. LTN will dispatch trains when stock exceeds threshold.</p>
+<h2 id="requester-stops">Requester Stops</h2>
+<p>Requester stops announce demand:</p>
+<ol>
+<li>Place stop next to consumption</li>
+<li>Wire requester chests to stop</li>
+<li>Set &quot;request threshold&quot; (e.g., request iron plates when &lt;200)</li>
+</ol>
+<p><strong>Best practice:</strong> Use requester chests with high request counts. LTN batches deliveries to minimize train trips.</p>
+<h2 id="what-veterans-learn-the-hard-way">What Veterans Learn the Hard Way</h2>
+<ul>
+<li><strong>Depot trains must be empty</strong> —LTN can't assign a train carrying cargo</li>
+<li><strong>Wire every stop</strong> —unwired stops break the network</li>
+<li><strong>Thresholds matter</strong> —too low = train spam; too high = stockouts</li>
+<li><strong>One item type per provider</strong> —mixed providers confuse LTN</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Mistake</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Single train depot</td>
+          <td>Network stalls when train is busy</td>
+      </tr>
+      <tr>
+          <td>Unwired stops</td>
+          <td>LTN doesn't see supply/demand</td>
+      </tr>
+      <tr>
+          <td>Mixed provider chests</td>
+          <td>Trains load wrong items</td>
+      </tr>
+      <tr>
+          <td>No fuel at depot</td>
+          <td>Trains strand mid-network</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>LTN automates train logistics. Build depots with 2+ trains. Wire providers to storage chests. Wire requesters to requester chests. Set thresholds. Let LTN handle the rest.</p>
+<hr>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/trains-logistics/basic-rail-network/">Basic Rail Network</a> | <a href="https://factorioguides.com/blueprints/circuit-network-guide/">Circuit Network Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/blueprints/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Blueprints and Blueprint Books
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/blueprints/circuit-network-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">C</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Circuit Network Beginner Guide</h4>
+                <p>Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.</p>
+              </div>
+            </a>
+            
+            <a href="/blueprints/how-to-use-blueprints/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">H</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>How to Use Blueprints — Complete Guide</h4>
+                <p>How to copy, import, export, and organize blueprints in Factorio. Includes blueprint string tutorial.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

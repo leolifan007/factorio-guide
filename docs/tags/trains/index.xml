@@ -6,14 +6,14 @@
     <description>Recent content in Trains on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 13:46:00 +0800</lastBuildDate>
     <atom:link href="https://factorioguides.com/tags/trains/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LTN —Logistic Train Network Setup</title>
+      <title>Factorio LTN Mod Guide (Logistic Train Network)</title>
       <link>https://factorioguides.com/blueprints/ltn-mod-guide/</link>
-      <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/blueprints/ltn-mod-guide/</guid>
-      <description>&lt;p&gt;LTN (Logistic Train Network) turns trains into logistic bots. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/rail.png&#34; alt=&#34;rail&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Rail&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; Trains automatically travel from providers to requesters based on supply and demand —no schedules needed.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/ltn-3stop.svg&#34; alt=&#34;LTN 3-stop system —depot, provider stop, and requester stop with train flow&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-3-stop-system&#34;&gt;The 3-Stop System&lt;/h2&gt;&#xA;&lt;p&gt;LTN requires three stop types:&lt;/p&gt;</description>
+      <description>&lt;p&gt;You&#39;ve got 50 trains running across a megabase and every one of them is either waiting at a full station or blocking an intersection. Vanilla train limits work for small bases, but I hit the wall around 30 trains. LTN (Logistic Train Network) is the mod that automates train dispatch. Here&#39;s how I set it up without the head-scratching.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; LTN works like a logistics network but for trains. Build a depot of waiting trains. Build requester stations (need items) and provider stations (have items). LTN dispatches a train when a requester&#39;s threshold is met. Key settings: train limit = 1 per station, stack threshold = at least 1 trainload, network ID filtering for separated grids.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-ltn-is-different-from-vanilla&#34;&gt;How LTN Is Different From Vanilla&lt;/h2&gt;&#xA;&lt;p&gt;In vanilla Factorio, you set a train schedule manually (Station A &amp;gt; Station B). If Station B is full, the train waits. If a new outpost opens, you add a new schedule. This works for 5 trains. At 30 trains, you spend more time editing schedules than building factories.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

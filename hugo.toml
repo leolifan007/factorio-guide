@@ -5,6 +5,7 @@ publishDir = 'docs'
 enableRobotsTXT = true
 buildFuture = true
 buildDrafts = false
+disableKinds = ['taxonomy', 'term']
 
 [markup]
   [markup.goldmark]
