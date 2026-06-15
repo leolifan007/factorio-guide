@@ -3,6 +3,7 @@ title: "Privacy Policy"
 description: "Privacy policy for Factorio Guide -- how we handle your data."
 date: "2026-05-21"
 draft: false
+hidden: true
 sitemap_disable: true
 ---
 

@@ -1,26 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</title>
-    <link>http://localhost:1318/science-packs/</link>
-    <description>Recent content in Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:41:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1318/science-packs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Blue Science Guide - Chemical Science Pack Setup and Ratios</title>
-      <link>http://localhost:1318/science-packs/blue-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1318/science-packs/blue-science-guide/</guid>
-      <description>&lt;p&gt;Blue science is the first real complexity spike in Factorio. It&#39;s not just about adding a new ingredient -- it introduces fluids, cracking, and multi-step production chains. I&#39;ve seen countless factory tours stall right here because the oil setup wasn&#39;t thought through.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;recipe-and-requirements&#34;&gt;Recipe and Requirements&lt;/h2&gt;&#xA;&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Red Science Guide - Automation Science Pack (First Science)</title>
-      <link>http://localhost:1318/science-packs/red-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1318/science-packs/red-science-guide/</guid>
-      <description>&lt;p&gt;You just placed your first assembling machine and fed it some iron plates, but the lab&#39;s been empty for 10 minutes and you&#39;re still hand-crafting research packs. I made the same mistake -- thinking one assembler of red science would carry me through the first hour. It won&#39;t. Here&#39;s what actually works.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 5-10 red science assemblers fed by a dedicated gear sub-factory. Use a splitter to give iron plates to both the gear assembler and the science line. Belt the finished science to 10+ labs in a row. That&#39;s it -- red science is your warmup.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-quirky-recipe-nobody-explains&#34;&gt;The Quirky Recipe Nobody Explains&lt;/h2&gt;&#xA;&lt;p&gt;Red science (automation science pack) takes two ingredients: iron gear wheels and iron plates. One pack takes 5 seconds in an un-moduled assembling machine 1.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</title><link>https://factorioguides.com/science-packs/</link><description>Recent content in Factorio Science Packs — Complete Recipes &amp; Ratios Guide on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Jun 2026 13:41:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/science-packs/index.xml" rel="self" type="application/rss+xml"/><item><title>Factorio Blue Science Guide - Chemical Science Pack Setup and Ratios</title><link>https://factorioguides.com/science-packs/blue-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/blue-science-guide/</guid><description>&lt;p&gt;Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient -- it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;
+
+&lt;h2 id="recipe-and-requirements"&gt;Recipe and Requirements&lt;/h2&gt;
+&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description></item><item><title>Factorio Red Science Guide - Automation Science Pack (First Science)</title><link>https://factorioguides.com/science-packs/red-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/red-science-guide/</guid><description>&lt;p&gt;You just placed your first assembling machine and fed it some iron plates, but the lab's been empty for 10 minutes and you're still hand-crafting research packs. I made the same mistake -- thinking one assembler of red science would carry me through the first hour. It won't. Here's what actually works.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 5-10 red science assemblers fed by a dedicated gear sub-factory. Use a splitter to give iron plates to both the gear assembler and the science line. Belt the finished science to 10+ labs in a row. That's it -- red science is your warmup.&lt;/div&gt;
+
+&lt;h2 id="the-quirky-recipe-nobody-explains"&gt;The Quirky Recipe Nobody Explains&lt;/h2&gt;
+&lt;p&gt;Red science (automation science pack) takes two ingredients: iron gear wheels and iron plates. One pack takes 5 seconds in an un-moduled assembling machine 1.&lt;/p&gt;</description></item></channel></rss>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uranium on Factorio Guide</title><link>https://factorioguides.com/tags/uranium/</link><description>Recent content in Uranium on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 03 Jun 2026 22:51:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/uranium/index.xml" rel="self" type="application/rss+xml"/><item><title>Factorio Kovarex Enrichment Guide - Nuclear Uranium Processing Loop</title><link>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</link><pubDate>Sat, 13 Jun 2026 00:00:00 +0800</pubDate><guid>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</guid><description>&lt;p>Kovarex enrichment is the uranium processing upgrade that turns waste into fuel. Without it, &lt;span class="game-slot-inline">&lt;img src="https://factorioguides.com/images/icon/uranium_ore.png" alt="uranium_ore" class="game-icon-inline" title="Uranium ore" loading="lazy">
-&lt;/span>
- uranium ore yields mostly U-238 —barely enough U-235 to keep a single reactor running.&lt;/p>
-&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Kovarex centrifuges convert 40 U-238 + 40 U-235 鈫?41 U-238 + 1 U-235. Net: -40 U-238, +1 U-235 per cycle. Build 3 centrifuges per reactor. Kickstart requires 40 U-235 accumulated first.&lt;/div>
-
-&lt;img src="https://factorioguides.com/images/diagrams/kovarex-loop.svg" alt="Kovarex enrichment loop —uranium ore processing, enrichment centrifuge, and fuel cell production" class="schema-diagram" loading="lazy" width="900">
-
-&lt;h2 id="the-enrichment-loop">The Enrichment Loop&lt;/h2>
-&lt;p>Kovarex centrifuges run a different recipe from standard uranium processing:&lt;/p></description></item></channel></rss>
