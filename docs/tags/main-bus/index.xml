@@ -1,19 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Main-Bus on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/main-bus/</link>
-    <description>Recent content in Main-Bus on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:44:00 +0800</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/main-bus/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Main Bus Guide - Standard Base Layout Explained</title>
-      <link>https://factorioguides.com/base-design/main-bus-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/base-design/main-bus-guide/</guid>
-      <description>&lt;p&gt;Your base is spaghetti. Belts cross each other in six directions, nothing reaches the right assembler, and you&#39;ve spent 2 hours chasing iron plates across the map. Every Factorio player builds spaghetti at first. The main bus is the upgrade that fixes it. Here&#39;s the exact bus layout I use -- 4 belts of iron, 4 of copper, with space for everything.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Run 4 lanes of iron, 4 of copper, 2 of steel, 2 of green circuits, 1 of plastic, 1 of coal, 1 of stone/brick, 1 of batteries, 2 of red/blue circuits. Leave 4 tiles between each group of 4 belts. Branch off with splitters, never steal from the bus directly. Carry fluids via underground pipes parallel to the bus. This layout scales to rocket launch without rework.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;what-a-main-bus-is&#34;&gt;What a Main Bus Is&lt;/h2&gt;&#xA;&lt;p&gt;A main bus is a set of parallel belt lanes carrying the most common materials through your factory. Production units branch off the bus on one side (or both), use what they need, and output finished goods. The bus never stops -- it flows from the furnace column at the start to the science pack assembly at the end.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Main-Bus on Factorio Guide</title><link>https://factorioguides.com/tags/main-bus/</link><description>Recent content in Main-Bus on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/main-bus/index.xml" rel="self" type="application/rss+xml"/><item><title>Main Bus Design — The Classic Factorio Base Layout</title><link>https://factorioguides.com/base-design/main-bus-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/main-bus-guide/</guid><description>&lt;!-- Article Hero -->
+&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;">MAIN BUS LAYOUT&lt;/span>
+&lt;/div>
+&lt;h2 id="what-is-a-main-bus">What Is a Main Bus?&lt;/h2>
+&lt;p>A &lt;strong>main bus&lt;/strong> is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong>pull&lt;/strong> from the bus and &lt;strong>push&lt;/strong> finished products back onto it.&lt;/p>
+&lt;p>Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p>
+&lt;h2 id="recommended-bus-width">Recommended Bus Width&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Material&lt;/th>
+ &lt;th>Lanes (Basic Belt)&lt;/th>
+ &lt;th>Lanes (Fast/Express)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Iron plates&lt;/td>
+ &lt;td>4-6&lt;/td>
+ &lt;td>2-3&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Copper plates&lt;/td>
+ &lt;td>4-6&lt;/td>
+ &lt;td>2-3&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Steel plates&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Green circuits&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Plastic bars&lt;/td>
+ &lt;td>1-2&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coal&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Stone&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="tip-box">
+&lt;strong>Pro tip:&lt;/strong> Build your bus with &lt;strong>space between lanes&lt;/strong>. You need room for underground belts to cross lanes and for inserters to pull items off the bus.
+&lt;/div>
+&lt;h2 id="how-to-build-it">How to Build It&lt;/h2>
+&lt;h3 id="step-1-clear-a-large-area">Step 1: Clear a Large Area&lt;/h3>
+&lt;p>You need at least &lt;strong>200 tiles wide&lt;/strong> and &lt;strong>unlimited depth&lt;/strong>. The bus grows as you research more technologies.&lt;/p></description></item></channel></rss>

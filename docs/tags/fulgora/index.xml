@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Fulgora on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/fulgora/</link>
-    <description>Recent content in Fulgora on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/fulgora/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Fulgora Guide - Scrap Recycling, Holmium and Lightning Power</title>
-      <link>https://factorioguides.com/space-age/fulgora-recycling-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/space-age/fulgora-recycling-guide/</guid>
-      <description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can&#39;t predict what comes out -- but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path -- either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fulgora on Factorio Guide</title><link>https://factorioguides.com/tags/fulgora/</link><description>Recent content in Fulgora on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/fulgora/index.xml" rel="self" type="application/rss+xml"/><item><title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title><link>https://factorioguides.com/space-age/fulgora-recycling-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/fulgora-recycling-guide/</guid><description>&lt;p>You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can't predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div>
+
+&lt;h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck&lt;/h2>
+&lt;p>Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p></description></item></channel></rss>

@@ -1,26 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Modules on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/modules/</link>
-    <description>Recent content in Modules on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:42:00 +0800</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/modules/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</title>
-      <link>https://factorioguides.com/production-ratios/beacon-module-guide/</link>
-      <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
-      <guid>https://factorioguides.com/production-ratios/beacon-module-guide/</guid>
-      <description>&lt;p&gt;Beacons amplify module effects across multiple buildings. &lt;span class=&#34;mat-card&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/beacon.png&#34; alt=&#34;beacon&#34; class=&#34;mat-card-img&#34; title=&#34;Beacon&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mat-name&#34;&gt;Beacon&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; One beacon with &lt;span class=&#34;mat-card&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/productivity_module_3.png&#34; alt=&#34;productivity_module_3&#34; class=&#34;mat-card-img&#34; title=&#34;Productivity&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mat-name&#34;&gt;Productivity&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; speed modules can boost 8 nearby assemblers --if you lay them out correctly.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/8-beacon-layout.svg&#34; alt=&#34;8-beacon layout showing assembler surrounded by 8 beacons with module distribution&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-beacons-work&#34;&gt;How Beacons Work&lt;/h2&gt;&#xA;&lt;p&gt;Beacons transmit module effects to nearby buildings:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Quality Module Guide - Space Age Quality Mechanic Explained</title>
-      <link>https://factorioguides.com/space-age/quality-module-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/space-age/quality-module-guide/</guid>
-      <description>&lt;p&gt;You built your first quality module, stuck it in an assembler, and nothing happened. I spent my first week in Space Age wondering why my rare quality modules never produced rare items. The mechanic isn&#39;t broken -- it just works differently than you think. Here&#39;s the actual system and how to exploit it.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Quality modules in assemblers give a % chance to upgrade the output tier. Quality 1 = 1%, Quality 2 = 5%, Quality 3 = 10%. The real trick is the recycler loop: recycle + assemble = infinite quality-upgrade attempts. Beacons are the highest-value quality upgrade target. Priority list: Beacons &amp;gt; Speed modules &amp;gt; Furnaces &amp;gt; Miners &amp;gt; Power armor.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-quality-tiers-actually-work&#34;&gt;How Quality Tiers Actually Work&lt;/h2&gt;&#xA;&lt;p&gt;Space Age introduced 5 quality tiers. Higher quality items are strictly better -- faster speed, lower energy, more range. The jump from common to uncommon alone is worth it for most production.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modules on Factorio Guide</title><link>https://factorioguides.com/tags/modules/</link><description>Recent content in Modules on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/modules/index.xml" rel="self" type="application/rss+xml"/><item><title>Quality Modules — Space Age New Mechanic Explained</title><link>https://factorioguides.com/space-age/quality-module-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/quality-module-guide/</guid><description>&lt;!-- Article Hero -->
+&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;">COMMON&lt;/span>
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;">UNCOMMON&lt;/span>
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;">RARE&lt;/span>
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;">EPIC&lt;/span>
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;">LEGENDARY&lt;/span>
+&lt;/div>
+&lt;h2 id="what-is-quality">What Is Quality?&lt;/h2>
+&lt;p>In Space Age, items can have &lt;strong>5 quality tiers&lt;/strong>. Higher quality items work better:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Tier&lt;/th>
+ &lt;th>Color&lt;/th>
+ &lt;th>Bonus&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Common (1)&lt;/td>
+ &lt;td>Gray&lt;/td>
+ &lt;td>Baseline&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Uncommon (2)&lt;/td>
+ &lt;td>Green&lt;/td>
+ &lt;td>Plus 20 percent speed, minus 20 percent energy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Rare (3)&lt;/td>
+ &lt;td>Blue&lt;/td>
+ &lt;td>Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Epic (4)&lt;/td>
+ &lt;td>Purple&lt;/td>
+ &lt;td>Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Legendary (5)&lt;/td>
+ &lt;td>Orange&lt;/td>
+ &lt;td>Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="how-quality-is-generated">How Quality Is Generated&lt;/h2>
+&lt;p>&lt;strong>Quality modules&lt;/strong> in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p></description></item></channel></rss>

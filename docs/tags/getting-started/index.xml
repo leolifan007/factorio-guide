@@ -1,40 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Getting-Started on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/getting-started/</link>
-    <description>Recent content in Getting-Started on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:41:00 +0800</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Beginner Guide - How to Build Your First Factory</title>
-      <link>https://factorioguides.com/getting-started/your-first-factory/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/getting-started/your-first-factory/</guid>
-      <description>&lt;p&gt;Your first factory is a mess. That&#39;s normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that&#39;s feeding the red science -- but the belt looped back and now everything&#39;s on the same belt and nothing reaches the lab. Here&#39;s a cleaner starting setup.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don&#39;t belt-engineer on the main bus -- build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause----why-first-factories-stall&#34;&gt;The Root Cause -- Why First Factories Stall&lt;/h2&gt;&#xA;&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Green Science Guide - Logistics Science Pack Setup and Ratios</title>
-      <link>https://factorioguides.com/getting-started/green-science-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/getting-started/green-science-guide/</guid>
-      <description>&lt;p&gt;Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins -- you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause----why-green-science-feels-like-a-wall&#34;&gt;The Root Cause -- Why Green Science Feels Like a Wall&lt;/h2&gt;&#xA;&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it -- and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup</title>
-      <link>https://factorioguides.com/production-ratios/oil-processing-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid>
-      <description>&lt;p&gt;Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn&#39;t more refineries. It&#39;s three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops -- stopping light oil and petroleum production too. The game doesn&#39;t prioritize outputs. It stalls everything.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Red Science Guide - Automation Science Pack (First Science)</title>
-      <link>https://factorioguides.com/science-packs/red-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/science-packs/red-science-guide/</guid>
-      <description>&lt;p&gt;You just placed your first assembling machine and fed it some iron plates, but the lab&#39;s been empty for 10 minutes and you&#39;re still hand-crafting research packs. I made the same mistake -- thinking one assembler of red science would carry me through the first hour. It won&#39;t. Here&#39;s what actually works.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 5-10 red science assemblers fed by a dedicated gear sub-factory. Use a splitter to give iron plates to both the gear assembler and the science line. Belt the finished science to 10+ labs in a row. That&#39;s it -- red science is your warmup.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-quirky-recipe-nobody-explains&#34;&gt;The Quirky Recipe Nobody Explains&lt;/h2&gt;&#xA;&lt;p&gt;Red science (automation science pack) takes two ingredients: iron gear wheels and iron plates. One pack takes 5 seconds in an un-moduled assembling machine 1.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting-Started on Factorio Guide</title><link>https://factorioguides.com/tags/getting-started/</link><description>Recent content in Getting-Started on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Green Science Guide — Logistics Science Pack Setup</title><link>https://factorioguides.com/getting-started/green-science-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/green-science-guide/</guid><description>&lt;p>Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div>
+
+&lt;h2 id="the-root-cause--why-green-science-feels-like-a-wall">The Root Cause — Why Green Science Feels Like a Wall&lt;/h2>
+&lt;p>Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p></description></item><item><title>Oil Processing — Ratios, Cracking, and Refinery Setup</title><link>https://factorioguides.com/production-ratios/oil-processing-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid><description>&lt;p>Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div>
+
+&lt;h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck&lt;/h2>
+&lt;p>Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.&lt;/p></description></item><item><title>Your First Factory — Factorio Beginner Guide</title><link>https://factorioguides.com/getting-started/your-first-factory/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/your-first-factory/</guid><description>&lt;p>Your first factory is a mess. That's normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that's feeding the red science — but the belt looped back and now everything's on the same belt and nothing reaches the lab. Here's a cleaner starting setup.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div>
+
+&lt;img src="https://factorioguides.com/images/diagrams/main-bus-layout.svg" alt="Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines" class="schema-diagram" loading="lazy" width="760">
+
+&lt;h2 id="the-root-cause--why-first-factories-stall">The Root Cause — Why First Factories Stall&lt;/h2>
+&lt;p>The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p></description></item><item><title>Red Science Pack — Automation Science Guide</title><link>https://factorioguides.com/science-packs/red-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/red-science-guide/</guid><description>&lt;h2 id="recipe">Recipe&lt;/h2>
+&lt;div class="game-row">&lt;div class="game-slot">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/iron_gear.png" alt="iron_gear" class="game-img" loading="lazy">&lt;span class="game-name">Iron gear&lt;/span>&lt;/div>&lt;span class="game-plus">+&lt;/span>&lt;div class="game-slot">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/iron_plate.png" alt="iron_plate" class="game-img" loading="lazy">&lt;span class="game-name">Iron plate&lt;/span>&lt;/div>&lt;span class="game-plus">&amp;rarr;&lt;/span>&lt;div class="game-slot result">&lt;span class="game-qty">1x&lt;/span>&lt;img src="https://factorioguides.com/images/icon/automation_science.png" alt="automation_science" class="game-img" loading="lazy">&lt;span class="game-name">Automation science&lt;/span>&lt;/div>&lt;/div>
+&lt;h2 id="assembler-math">Assembler Math&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Production Goal&lt;/th>
+ &lt;th>Assemblers Needed&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1 SP (science pack) per second&lt;/td>
+ &lt;td>1 assembler&lt;/td>
+ &lt;td>Slow, hand-fed&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5 SPM (sustainable)&lt;/td>
+ &lt;td>5 assemblers&lt;/td>
+ &lt;td>Needs iron plate belt&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>10 SPM&lt;/td>
+ &lt;td>10 assemblers + 1 gear assembler&lt;/td>
+ &lt;td>Typical early game&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>&lt;strong>Tip:&lt;/strong> Red science is cheap. Don't overthink it. 10 assemblers producing red science is more than enough for the entire early game research queue.&lt;/p>&lt;/blockquote>
+&lt;h2 id="how-to-automate">How to Automate&lt;/h2>
+&lt;ol>
+&lt;li>Belt &lt;strong>iron plates&lt;/strong> into the assembler&lt;/li>
+&lt;li>Belt &lt;strong>iron gears&lt;/strong> into the assembler (or hand-craft a few stacks)&lt;/li>
+&lt;li>Use an &lt;strong>inserter&lt;/strong> to pull completed science packs into a &lt;strong>chest&lt;/strong> or directly into &lt;strong>lab&lt;/strong> input&lt;/li>
+&lt;/ol>
+&lt;div class="warning-box">
+&lt;strong>Common mistake:&lt;/strong> New players often forget that labs need &lt;em>both&lt;/em> science packs AND power. Check that your lab has an inserter feeding it!
+&lt;/div>
+&lt;h2 id="research-priority-after-red-science">Research Priority After Red Science&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Steel processing&lt;/strong> — unlocks steel plates&lt;/li>
+&lt;li>&lt;strong>Engine&lt;/strong> — unlocks engine units (needed for blue science)&lt;/li>
+&lt;li>&lt;strong>Automation 2&lt;/strong> — unlocks electric mining drill&lt;/li>
+&lt;li>&lt;strong>Logistics&lt;/strong> — unlocks green science (electronic circuit + iron gear)&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Next:&lt;/strong> &lt;a href="https://factorioguides.com/science-packs/">Green Science Guide&lt;/a> — the second tier.&lt;/p></description></item></channel></rss>

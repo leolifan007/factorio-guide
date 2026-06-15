@@ -1,0 +1,20 @@
+{{- /* Adsterra Sidebar Ad – 300×250 × 2 stacked in 160px-wide sticky sidebar */ -}}
+{{- if .Site.Params.show_ads }}
+<div class="adsterra-sidebar">
+  {{- /* effectivecpmnetwork invoke.js – first unit */ -}}
+  {{- with .Site.Params.adsterra_cpm_invoke }}
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  {{- end }}
+
+  {{- /* effectivecpmnetwork .js – second unit */ -}}
+  {{- with .Site.Params.adsterra_cpm_js }}
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+  {{- end }}
+</div>
+{{- end }}

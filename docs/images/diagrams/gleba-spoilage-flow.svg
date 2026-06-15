@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" style="background:#111;font-family:system-ui,sans-serif;">
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Gleba Spoilage Flow — Factorio Guide</title>
   <text x="300" y="30" fill="#e8941c" font-size="16" text-anchor="middle" font-weight="bold">Gleba Spoilage Cycle</text>
   <rect x="50" y="70" width="100" height="50" rx="4" fill="#252525" stroke="#6abe30" stroke-width="2"/>
   <text x="100" y="95" fill="#ccc" font-size="12" text-anchor="middle">Yumako</text><text x="100" y="110" fill="#6abe30" font-size="9" text-anchor="middle">fresh: 100%</text>

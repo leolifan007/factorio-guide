@@ -1,93 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="100%" height="auto" style="display:block;margin:0 auto;max-width:1000px;background:#1f1f1f;border-radius:6px;font-family:system-ui,-apple-system,sans-serif">
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 390" width="100%" height="auto" style="background:#151515;font-family:system-ui,-apple-system,sans-serif">
+  <title>Circuit Control — Oil Cracking Automation</title>
   <defs>
-    <marker id="arr-gray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#888"/></marker>
+    <filter id="glow"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr-flow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#888"/></marker>
   </defs>
 
   <!-- Title -->
-  <rect x="0" y="0" width="1000" height="46" fill="#252525" rx="6"/>
-  <text x="500" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ff4400">🔌 CIRCUIT-CONTROLLED CRACKING — Red Wire Condition</text>
+  <rect x="0" y="0" width="950" height="44" fill="#1f1f1f" rx="6"/>
+  <rect x="0" y="38" width="950" height="6" fill="#1f1f1f"/>
+  <text x="475" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#e8941c" filter="url(#glow)">CIRCUIT-CONTROLLED CRACKING — Deadlock Prevention</text>
 
   <!-- ===== TOP ROW: Heavy Oil Control ===== -->
+  <rect x="12" y="55" width="455" height="150" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="1.5"/>
+  <text x="239" y="76" text-anchor="middle" font-size="16" font-weight="700" fill="#d4a017">Heavy Oil Control</text>
 
-  <!-- Heavy Tank -->
-  <rect x="40" y="60" width="100" height="70" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
-  <text x="90" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">Heavy</text>
-  <text x="90" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">Tank</text>
-  <!-- Fluid level indicator -->
-  <rect x="55" y="106" width="70" height="14" rx="2" fill="#0a0500" stroke="#8b4513" stroke-width="1"/>
-  <rect x="56" y="107" width="55" height="12" rx="1" fill="#8b4513" opacity="0.7"/>
-  <text x="90" y="117" text-anchor="middle" font-size="8" fill="#d4a017">25k / 25k</text>
+  <!-- Tank -->
+  <rect x="25" y="90" width="120" height="65" rx="5" fill="#1a0f00" stroke="#8b4513" stroke-width="2"/>
+  <rect x="25" y="90" width="120" height="22" rx="5" fill="#8b4513"/>
+  <rect x="25" y="105" width="120" height="7" fill="#8b4513"/>
+  <text x="85" y="107" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Storage Tank</text>
+  <!-- Fluid bar -->
+  <rect x="35" y="120" width="100" height="14" rx="2" fill="#0a0500" stroke="#8b4513" stroke-width="1"/>
+  <rect x="36" y="121" width="80" height="12" rx="1" fill="#8b4513" opacity="0.7"/>
+  <text x="85" y="145" text-anchor="middle" font-size="16" fill="#d4a017">Heavy: 24k / 25k</text>
 
-  <!-- Red wire from Heavy Tank to Pump -->
-  <line x1="200" y1="85" x2="230" y2="85" stroke="#ff3333" stroke-width="2" stroke-dasharray="6,3"/>
-  <text x="215" y="78" text-anchor="middle" font-size="9" fill="#ff4444">🔴 Red Wire</text>
+  <!-- Red Wire -->
+  <line x1="145" y1="120" x2="178" y2="120" stroke="#c9463d" stroke-width="3" stroke-dasharray="6,3"/>
+  <text x="161" y="112" text-anchor="middle" font-size="16" fill="#c9463d">🔴</text>
 
-  <!-- Pump 1 -->
-  <rect x="230" y="65" width="40" height="40" rx="4" fill="#2a1a00" stroke="#d4a017" stroke-width="1.5"/>
-  <text x="250" y="79" text-anchor="middle" font-size="11" font-weight="700" fill="#d4a017">⏏</text>
-  <text x="250" y="97" text-anchor="middle" font-size="9" fill="#888">Pump</text>
+  <!-- Decider Combinator -->
+  <rect x="182" y="90" width="145" height="65" rx="5" fill="#1a2a1a" stroke="#6abe30" stroke-width="2"/>
+  <rect x="182" y="90" width="145" height="22" rx="5" fill="#6abe30"/>
+  <rect x="182" y="105" width="145" height="7" fill="#6abe30"/>
+  <text x="254" y="107" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Decider</text>
 
-  <!-- Condition label on pump -->
-  <rect x="225" y="108" width="50" height="18" rx="3" fill="#2a0000" stroke="#ff3333" stroke-width="1"/>
-  <text x="250" y="121" text-anchor="middle" font-size="9" font-weight="600" fill="#ff4444">Heavy &gt; 20k</text>
+  <rect x="190" y="118" width="130" height="30" rx="3" fill="#0f0f0f" stroke="#555" stroke-width="1"/>
+  <text x="255" y="131" text-anchor="middle" font-size="16" fill="#6abe30" font-weight="600">heavy &gt; 20000</text>
+  <text x="255" y="148" text-anchor="middle" font-size="16" fill="#888">→ output H = 1</text>
 
-  <!-- Arrow from Pump to Cracker -->
-  <line x1="270" y1="85" x2="295" y2="85" stroke="#888" stroke-width="2" marker-end="url(#arr-gray)"/>
+  <!-- Wire -->
+  <line x1="327" y1="120" x2="355" y2="120" stroke="#c9463d" stroke-width="3" stroke-dasharray="6,3"/>
 
-  <!-- Cracker H→L -->
-  <rect x="295" y="60" width="130" height="70" rx="6" fill="#1a0f00" stroke="#d4a017" stroke-width="2"/>
-  <text x="360" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">Cracker H→L</text>
-  <text x="360" y="104" text-anchor="middle" font-size="11" fill="#888">40 Heavy → 30 Light</text>
-  <text x="360" y="120" text-anchor="middle" font-size="10" fill="#555">Enabled when Heavy &gt; 20k</text>
+  <!-- Pump -->
+  <rect x="358" y="95" width="35" height="40" rx="4" fill="#2a1a00" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="375" y="113" text-anchor="middle" font-size="16" font-weight="700" fill="#d4a017">⏏</text>
+  <text x="375" y="130" text-anchor="middle" font-size="16" fill="#888">Pump</text>
+
+  <!-- Arrow to right -->
+  <line x1="393" y1="115" x2="410" y2="115" stroke="#888" stroke-width="2" marker-end="url(#arr-flow)"/>
+  <text x="415" y="118" font-size="16" fill="#777">→ Cracker H→L</text>
 
   <!-- ===== BOTTOM ROW: Light Oil Control ===== -->
+  <rect x="12" y="215" width="455" height="150" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="239" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="#f0c040">Light Oil Control</text>
 
-  <!-- Light Tank -->
-  <rect x="40" y="145" width="100" height="65" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
-  <text x="90" y="167" text-anchor="middle" font-size="13" font-weight="700" fill="#f0c040">Light</text>
-  <text x="90" y="185" text-anchor="middle" font-size="13" font-weight="700" fill="#f0c040">Tank</text>
-  <rect x="55" y="193" width="70" height="12" rx="2" fill="#0a0a00" stroke="#d4a017" stroke-width="1"/>
-  <rect x="56" y="194" width="50" height="10" rx="1" fill="#d4a017" opacity="0.7"/>
-  <text x="90" y="202" text-anchor="middle" font-size="8" fill="#f0c040">22k / 25k</text>
+  <!-- Tank -->
+  <rect x="25" y="250" width="120" height="65" rx="5" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
+  <rect x="25" y="250" width="120" height="22" rx="5" fill="#d4a017"/>
+  <rect x="25" y="265" width="120" height="7" fill="#d4a017"/>
+  <text x="85" y="267" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Storage Tank</text>
+  <rect x="35" y="280" width="100" height="14" rx="2" fill="#0a0a00" stroke="#d4a017" stroke-width="1"/>
+  <rect x="36" y="281" width="70" height="12" rx="1" fill="#d4a017" opacity="0.7"/>
+  <text x="85" y="305" text-anchor="middle" font-size="16" fill="#f0c040">Light: 21k / 25k</text>
 
-  <!-- Red wire from Light Tank to Pump -->
-  <line x1="200" y1="170" x2="230" y2="170" stroke="#ff3333" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Red Wire -->
+  <line x1="145" y1="280" x2="178" y2="280" stroke="#c9463d" stroke-width="3" stroke-dasharray="6,3"/>
 
-  <!-- Pump 2 -->
-  <rect x="230" y="150" width="40" height="40" rx="4" fill="#2a1a00" stroke="#d4a017" stroke-width="1.5"/>
-  <text x="250" y="164" text-anchor="middle" font-size="11" font-weight="700" fill="#d4a017">⏏</text>
-  <text x="250" y="182" text-anchor="middle" font-size="9" fill="#888">Pump</text>
+  <!-- Decider -->
+  <rect x="182" y="250" width="145" height="65" rx="5" fill="#1a2a1a" stroke="#6abe30" stroke-width="2"/>
+  <rect x="182" y="250" width="145" height="22" rx="5" fill="#6abe30"/>
+  <rect x="182" y="265" width="145" height="7" fill="#6abe30"/>
+  <text x="254" y="267" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Decider</text>
 
-  <rect x="225" y="138" width="50" height="18" rx="3" fill="#2a0000" stroke="#ff3333" stroke-width="1"/>
-  <text x="250" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#ff4444">Light &gt; 20k</text>
+  <rect x="190" y="278" width="130" height="30" rx="3" fill="#0f0f0f" stroke="#555" stroke-width="1"/>
+  <text x="255" y="291" text-anchor="middle" font-size="16" fill="#6abe30" font-weight="600">light &gt; 20000</text>
+  <text x="255" y="308" text-anchor="middle" font-size="16" fill="#888">→ output L = 1</text>
 
-  <!-- Arrow from Pump to Cracker -->
-  <line x1="270" y1="170" x2="295" y2="170" stroke="#888" stroke-width="2" marker-end="url(#arr-gray)"/>
+  <!-- Wire -->
+  <line x1="327" y1="280" x2="355" y2="280" stroke="#c9463d" stroke-width="3" stroke-dasharray="6,3"/>
 
-  <!-- Cracker L→P -->
-  <rect x="295" y="145" width="130" height="65" rx="6" fill="#1a1a00" stroke="#d4a017" stroke-width="2"/>
-  <text x="360" y="169" text-anchor="middle" font-size="13" font-weight="700" fill="#f0c040">Cracker L→P</text>
-  <text x="360" y="189" text-anchor="middle" font-size="11" fill="#888">30 Light → 20 Petroleum</text>
-  <text x="360" y="203" text-anchor="middle" font-size="10" fill="#555">Enabled when Light &gt; 20k</text>
+  <!-- Pump -->
+  <rect x="358" y="255" width="35" height="40" rx="4" fill="#2a1a00" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="375" y="273" text-anchor="middle" font-size="16" font-weight="700" fill="#d4a017">⏏</text>
+  <text x="375" y="290" text-anchor="middle" font-size="16" fill="#888">Pump</text>
 
-  <!-- ===== RIGHT SIDE: Circuit Condition Info ===== -->
-  <rect x="470" y="55" width="500" height="160" rx="6" fill="#151515" stroke="#333" stroke-width="1"/>
+  <!-- Arrow -->
+  <line x1="393" y1="275" x2="410" y2="275" stroke="#888" stroke-width="2" marker-end="url(#arr-flow)"/>
+  <text x="415" y="278" font-size="16" fill="#777">→ Cracker L→P</text>
 
-  <text x="720" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#ff4400">Circuit Control Logic</text>
+  <!-- ===== RIGHT PANEL: LOGIC EXPLANATION ===== -->
+  <rect x="480" y="55" width="458" height="310" rx="6" fill="#1f1f1f" stroke="#333" stroke-width="1"/>
+  <text x="709" y="78" text-anchor="middle" font-size="16" font-weight="700" fill="#e8941c">Circuit Control Logic</text>
+  <line x1="495" y1="88" x2="923" y2="88" stroke="#333" stroke-width="1"/>
 
-  <line x1="490" y1="90" x2="950" y2="90" stroke="#333" stroke-width="1"/>
+  <!-- Step 1 -->
+  <rect x="495" y="100" width="428" height="55" rx="4" fill="#0a0f00" stroke="#8b4513" stroke-width="1"/>
+  <circle cx="515" cy="122" r="10" fill="#c9463d"/>
+  <text x="515" y="127" text-anchor="middle" font-size="16" fill="#111" font-weight="700">1</text>
+  <text x="535" y="120" font-size="16" fill="#ccc" font-weight="600">Connect Red Wire</text>
+  <text x="535" y="140" font-size="16" fill="#888">From heavy oil tank → decider combinator</text>
 
-  <!-- Heavy oil section -->
-  <rect x="490" y="100" width="460" height="50" rx="4" fill="#1a0f00" stroke="#333" stroke-width="1"/>
-  <circle cx="510" cy="120" r="5" fill="#8b4513"/>
-  <text x="525" y="118" font-size="12" fill="#d4a017" font-weight="600">Heavy Oil Control:</text>
-  <text x="525" y="138" font-size="11" fill="#888">Red wire from Heavy Tank → Pump. Enable pump when Heavy Oil &gt; 20,000.</text>
-  <text x="525" y="145" font-size="10" fill="#666">This ensures lubricant buffer is preserved before cracking kicks in.</text>
+  <!-- Step 2 -->
+  <rect x="495" y="165" width="428" height="55" rx="4" fill="#0a0f00" stroke="#d4a017" stroke-width="1"/>
+  <circle cx="515" cy="187" r="10" fill="#c9463d"/>
+  <text x="515" y="192" text-anchor="middle" font-size="16" fill="#111" font-weight="700">2</text>
+  <text x="535" y="185" font-size="16" fill="#ccc" font-weight="600">Set Condition</text>
+  <text x="535" y="205" font-size="16" fill="#888">heavy_oil &gt; 20000 → output H = 1</text>
 
-  <!-- Light oil section -->
-  <rect x="490" y="155" width="460" height="50" rx="4" fill="#1a1a00" stroke="#333" stroke-width="1"/>
-  <circle cx="510" cy="175" r="5" fill="#d4a017"/>
-  <text x="525" y="173" font-size="12" fill="#f0c040" font-weight="600">Light Oil Control:</text>
-  <text x="525" y="193" font-size="11" fill="#888">Red wire from Light Tank → Pump. Enable pump when Light Oil &gt; 20,000.</text>
-  <text x="525" y="200" font-size="10" fill="#666">Prevents total depletion of light oil needed for solid/rocket fuel.</text>
+  <!-- Step 3 -->
+  <rect x="495" y="230" width="428" height="55" rx="4" fill="#0a0f00" stroke="#5599ee" stroke-width="1"/>
+  <circle cx="515" cy="252" r="10" fill="#c9463d"/>
+  <text x="515" y="257" text-anchor="middle" font-size="16" fill="#111" font-weight="700">3</text>
+  <text x="535" y="250" font-size="16" fill="#ccc" font-weight="600">Connect to Pump</text>
+  <text x="535" y="270" font-size="16" fill="#888">Decoder output → pump feeding cracker</text>
+
+  <!-- Note -->
+  <rect x="495" y="300" width="428" height="50" rx="4" fill="#0a1f0a" stroke="#44aa77" stroke-width="1"/>
+  <text x="709" y="322" text-anchor="middle" font-size="16" font-weight="600" fill="#66cc99">Repeat for Light Oil: light &gt; 20000 → L = 1 → L→P pump</text>
+  <text x="709" y="340" text-anchor="middle" font-size="16" fill="#777">This prevents deadlock while preserving lubricant and fuel buffers</text>
 </svg>
