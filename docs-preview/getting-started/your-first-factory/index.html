@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Factorio beginner guide: building your first factory from scratch. Automation, red&#43;green science, furnace columns, mall setup, and the expansion path to mid-game.">
+  <title>Your First Factory — Factorio Beginner Guide | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/getting-started/your-first-factory/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Your First Factory — Factorio Beginner Guide">
+  <meta property="og:description" content="Factorio beginner guide: building your first factory from scratch. Automation, red&#43;green science, furnace columns, mall setup, and the expansion path to mid-game.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/getting-started/your-first-factory/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Your First Factory — Factorio Beginner Guide</h1><p class="article-desc">Factorio beginner guide: building your first factory from scratch. Automation, red&#43;green science, furnace columns, mall setup, and the expansion path to mid-game.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 21, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          4 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/getting-started/">Factorio Beginner&#39;s Guide — Your First 10 Hours</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">Your First Factory — Factorio Beginner Guide</span>
+        </nav>
+
+        <p>Your first factory is a mess. That's normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that's feeding the red science — but the belt looped back and now everything's on the same belt and nothing reaches the lab. Here's a cleaner starting setup.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.</div>
+
+<h2 id="the-root-cause--why-first-factories-stall">The Root Cause — Why First Factories Stall</h2>
+<p>The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.</p>
+<p>The fix is the <strong>main bus</strong>: a set of parallel belts running through the factory. Each production line pulls what it needs from the bus. The bus keeps flowing even if individual production lines stall.</p>
+<p><strong>Step 1 — Smelting column.</strong> Build 24 stone furnaces per ore type (12 each side of a belt). Iron on one belt, copper on another. Steel needs 5 iron per plate — build a dedicated steel column later.</p>
+<p><strong>Step 2 — The bus.</strong> Run 4 lanes of iron, 2 lanes of copper, 1 lane of gears, 1 lane of green circuits down the middle of your factory. Leave room to add more lanes.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Resource</th>
+          <th style="text-align: center">Lanes on bus</th>
+          <th style="text-align: left">Why this many</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Iron plates</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: left">Green circuits + gears + science + ammo</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Copper plates</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left">Green circuits + red circuits + science</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Iron gears</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Inserters + belts + red science</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Green circuits</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Everything past green science</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Step 3 — Science side-factory.</strong> Don't put science assemblers on the bus. Build them on the side, pulling resources from the bus:</p>
+<ul>
+<li>Red science: 5-10 assemblers on the side of the bus</li>
+<li>Green science: separate sub-factory with its own belt/inserter production</li>
+<li>Science packs output to a single belt → labs</li>
+</ul>
+<div class="pro-tip"><strong>Quick Tip:</strong> Your mall (building item production) is a separate thing from your science line. The mall produces belts, inserters, assemblers, furnaces — things you hand-place. Science produces research packs. Don't mix the two on one belt. If your belt assembler runs out of iron, you still want science running.</div>
+
+<h2 id="the-exact-setup-that-works">The Exact Setup That Works</h2>
+<p><strong>Furnace area</strong> (build first):</p>
+<ul>
+<li>48 stone furnaces: 24 iron (12 per side), 24 copper (12 per side)</li>
+<li>Output to 4 belts: 2 iron, 2 copper (upgrade to 4 iron lanes later)</li>
+</ul>
+<p><strong>Belt balancer</strong> (after furnaces):</p>
+<ul>
+<li>A 4-to-4 balancer at the start of the bus</li>
+<li>Keeps all lanes balanced even if some furnaces underproduce</li>
+</ul>
+<p><strong>Production off the bus</strong> (build in order):</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Off-bus line</th>
+          <th style="text-align: left">What it makes</th>
+          <th style="text-align: left">Resources from bus</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Line 1</td>
+          <td style="text-align: left">Red science</td>
+          <td style="text-align: left">Iron plates + gears</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Line 2</td>
+          <td style="text-align: left">Green circuits</td>
+          <td style="text-align: left">Iron + copper plates (needs its own copper cable first)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Line 3</td>
+          <td style="text-align: left">Mall: belts, inserters, assemblers</td>
+          <td style="text-align: left">Iron + copper + green circuits</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Line 4</td>
+          <td style="text-align: left">Green science</td>
+          <td style="text-align: left">Inserters + belts + green circuits</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Line 5</td>
+          <td style="text-align: left">Furnace upgrade (steel)</td>
+          <td style="text-align: left">Iron plates (separate column)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Lab area</strong> (at the end of the bus):</p>
+<ul>
+<li>20 labs in a 2×10 grid</li>
+<li>Feed science from one side</li>
+<li>Use inserters to pass science packs between labs</li>
+</ul>
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>No space between bus lanes.</strong> The bus needs gaps — 2 tiles between each lane pair. This is where underground belts, splitters, and power poles fit. No gaps means you can't pull from the bus without rebuilding it.</p>
+<p><strong>Science on the bus.</strong> If your science assemblers output back onto the bus, your labs will pull materials intended for other production. Science output needs its own dedicated belt.</p>
+<p><strong>Copper runs out.</strong> Green circuits need 3 iron + 1 copper per circuit. At scale, green circuits consume copper faster than anything else. 2 lanes of copper become 1 lane to circuits and 1 lane to everything else. Expand your copper supply early.</p>
+<h2 id="whats-next-after-red--green-science">What's Next After Red + Green Science</h2>
+<p>Once red and green are automated, the next milestones:</p>
+<ol>
+<li><strong>Steel production</strong> — 5 iron plates per steel -&gt; 4 steel furnaces for every 20 iron furnaces</li>
+<li><strong>Oil processing</strong> — plastic + sulfur for blue circuits + military science</li>
+<li><strong>Blue science</strong> — needs engines (steel + pipes + gears) and red circuits (green circuits + plastic)</li>
+<li><strong>Military science</strong> — walls + grenades + piercing ammo. Don't rush this unless biters are pressing</li>
+</ol>
+<p>Each milestone is a new side-factory pulling from the bus. The main bus design means you can build all of them without tearing down what already works.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Tutorials">Official Wiki — Tutorial</a> — beginner walkthroughs and progression guides</li>
+<li><a href="https://wiki.factorio.com/Main_bus">Official Factorio Wiki — Main Bus</a> — bus width recommendations and balancer designs</li>
+<li><a href="https://www.reddit.com/r/factorio/wiki/faq">Reddit — New Player FAQ</a> — community answers to common first-factory problems</li>
+<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> — plan your factory ratios before building</li>
+</ul>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/getting-started/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Factorio Beginner&#39;s Guide — Your First 10 Hours
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/getting-started/green-science-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Green Science Guide — Logistics Science Pack Setup</h4>
+                <p>Green science in Factorio: exact ratios, layout blueprint, belt balancing, and the sub-factory design that prevents early-game bottlenecks.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

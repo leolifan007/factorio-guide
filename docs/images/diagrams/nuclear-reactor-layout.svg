@@ -1,77 +1,200 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 459" width="820" height="459">
-  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
-  <rect width="820" height="459" fill="#1f1f1f" rx="6" />
-  <line x1="0" y1="60" x2="820" y2="60" stroke="#333" />
-  <text x="497" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#44ff88">NUCLEAR POWER — 2×2 REACTOR LAYOUT</text>
-  
-  <rect x="100" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126" />
-  <text x="170" y="116" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor A</text>
-  <text x="170" y="132" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  <rect x="263" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126" />
-  <text x="334" y="116" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor B</text>
-  <text x="334" y="132" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  
-  <rect x="228" y="96" width="42" height="55" rx="3" fill="#44ff88" fill-opacity="0.15" stroke="#44ff88" stroke-width="42" stroke-dasharray="3" />
-  <text x="252" y="124" text-anchor="middle" font-size="13" fill="#44ff88">+100%</text>
-  <rect x="100" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126" />
-  <text x="170" y="191" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor C</text>
-  <text x="170" y="207" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  <rect x="263" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126" />
-  <text x="334" y="191" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor D</text>
-  <text x="334" y="207" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  
-  <rect x="228" y="170" width="42" height="57" rx="3" fill="#44ff88" fill-opacity="0.25" stroke="#44ff88" stroke-width="42" stroke-dasharray="3" />
-  <text x="252" y="199" text-anchor="middle" font-size="13" fill="#44ff88">×3</text>
-  
-  <text x="170" y="158" text-anchor="middle" font-size="13" fill="#44ff88" opacity="0.7">+100%</text>
-  <text x="334" y="158" text-anchor="middle" font-size="13" fill="#44ff88" opacity="0.7">+100%</text>
-  <text x="170" y="236" text-anchor="middle" font-size="13" fill="#44ff88" opacity="0.7">+100%</text>
-  <text x="334" y="236" text-anchor="middle" font-size="13" fill="#44ff88" opacity="0.7">+100%</text>
-  
-  <rect x="30" y="96" width="57" height="108" rx="3" fill="#444" stroke="#ff6644" stroke-width="1.5" />
-  <text x="61" y="132" text-anchor="middle" font-size="13" fill="#ff6644">Heat</text>
-  <text x="61" y="148" text-anchor="middle" font-size="13" fill="#ff6644">Pipe</text>
-  <rect x="410" y="96" width="57" height="108" rx="3" fill="#444" stroke="#ff6644" stroke-width="1.5" />
-  <text x="441" y="132" text-anchor="middle" font-size="13" fill="#ff6644">Heat</text>
-  <text x="441" y="148" text-anchor="middle" font-size="13" fill="#ff6644">Pipe</text>
-  
-  <rect x="480" y="90" width="105" height="27" rx="3" fill="#2a2a2a" stroke="#ff6644" />
-  <text x="538" y="106" text-anchor="middle" font-size="13" fill="#ff6644">HeatEx × 12</text>
-  <rect x="480" y="118" width="105" height="27" rx="3" fill="#2a2a2a" stroke="#ff6644" />
-  <text x="538" y="134" text-anchor="middle" font-size="13" fill="#ff6644">HeatEx × 12</text>
-  <rect x="480" y="146" width="105" height="27" rx="3" fill="#2a2a2a" stroke="#ff6644" />
-  <text x="538" y="162" text-anchor="middle" font-size="13" fill="#ff6644">HeatEx × 12</text>
-  <rect x="480" y="174" width="105" height="27" rx="3" fill="#2a2a2a" stroke="#ff6644" />
-  <text x="538" y="190" text-anchor="middle" font-size="13" fill="#ff6644">HeatEx × 12</text>
-  
-  <text x="538" y="215" text-anchor="middle" font-size="13" fill="#888">Total: 48 Heat Exchangers</text>
-  
-  <rect x="614" y="85" width="105" height="25" rx="3" fill="#2a2a2a" stroke="#88ccff" />
-  <text x="673" y="100" text-anchor="middle" font-size="13" fill="#88ccff">Steam Turbine × 21</text>
-  <rect x="614" y="111" width="105" height="25" rx="3" fill="#2a2a2a" stroke="#88ccff" />
-  <text x="673" y="126" text-anchor="middle" font-size="13" fill="#88ccff">Steam Turbine × 21</text>
-  <rect x="614" y="137" width="105" height="25" rx="3" fill="#2a2a2a" stroke="#88ccff" />
-  <text x="673" y="152" text-anchor="middle" font-size="13" fill="#88ccff">Steam Turbine × 21</text>
-  <rect x="614" y="163" width="105" height="25" rx="3" fill="#2a2a2a" stroke="#88ccff" />
-  <text x="673" y="178" text-anchor="middle" font-size="13" fill="#88ccff">Steam Turbine × 21</text>
-  
-  <text x="673" y="215" text-anchor="middle" font-size="13" fill="#888">Total: 84 Turbines</text>
-  
-  <rect x="743" y="85" width="42" height="126" rx="3" fill="#2277cc" fill-opacity="0.2" stroke="#44aaff" />
-  <text x="766" y="145" text-anchor="middle" font-size="13" fill="#44aaff">H₂O</text>
-  
-  <rect x="170" y="260" width="399" height="63" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="399" />
-  <text x="392" y="280" text-anchor="middle" font-size="13" fill="#44ff88">2×2 Reactor: 480 MW total</text>
-  <text x="392" y="298" text-anchor="middle" font-size="13" fill="#888">Fuel: 72 cells/hr | 4 Offshore Pumps | 6.67 MW per cell</text>
-  
-  <rect x="170" y="330" width="94" height="34" rx="3" fill="#2a2a2a" stroke="#444" />
-  <text x="222" y="349" text-anchor="middle" font-size="13" fill="#888">Uranium Mining</text>
-  <line x1="275" y1="345" x2="293" y2="345" stroke="#444" stroke-width="1.5" />
-  <polygon points="293,341 300,345 293,349" fill="#444" />
-  <rect x="302" y="330" width="94" height="34" rx="3" fill="#2a2a2a" stroke="#444" />
-  <text x="355" y="349" text-anchor="middle" font-size="13" fill="#888">Centrifuge × 1</text>
-  <line x1="407" y1="345" x2="425" y2="345" stroke="#444" stroke-width="1.5" />
-  <polygon points="425,341 432,345 425,349" fill="#444" />
-  <rect x="434" y="330" width="115" height="34" rx="3" fill="#2a2a2a" stroke="#444" />
-  <text x="498" y="349" text-anchor="middle" font-size="13" fill="#888">Fuel Assembly → Reactor</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1400" width="760" height="1400">
+  <defs>
+    <style>.lbl { font-family: "Segoe UI", Arial, sans-serif; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="1400" fill="#12121f" rx="10"/>
+
+  <!-- ========== TITLE BAR ========== -->
+  <rect x="0" y="0" width="760" height="54" fill="#0a1628" rx="10"/>
+  <text x="380" y="35" text-anchor="middle" class="lbl" font-size="16" font-weight="900" fill="#44ff88" letter-spacing="2">NUCLEAR POWER - 2x2 REACTOR LAYOUT</text>
+
+  <!-- =================================================================================== -->
+  <!-- SECTION 1: REACTORS (y 70 - 310) -->
+  <!-- =================================================================================== -->
+  <text x="380" y="90" text-anchor="middle" class="lbl" font-size="13" fill="#cccccc" font-weight="700">1. REACTORS (4x) - Neighbor Bonus Math</text>
+
+  <!-- Section explanation -->
+  <text x="380" y="108" text-anchor="middle" class="lbl" font-size="9" fill="#888888">Touching reactors get +100% power per neighbor. Layout: 2x2 square.</text>
+
+  <!-- Reactor A (top-left) -->
+  <rect x="140" y="125" width="120" height="65" rx="6" fill="#0d1b2a" stroke="#44ff88" stroke-width="2.5"/>
+  <text x="200" y="158" text-anchor="middle" class="lbl" font-size="14" fill="#44ff88" font-weight="700">A</text>
+  <text x="200" y="178" text-anchor="middle" class="lbl" font-size="9" fill="#aaaaaa">1 neighbor = 80 MW</text>
+
+  <!-- Reactor B (top-right) -->
+  <rect x="290" y="125" width="120" height="65" rx="6" fill="#0d1b2a" stroke="#44ff88" stroke-width="2.5"/>
+  <text x="350" y="158" text-anchor="middle" class="lbl" font-size="14" fill="#44ff88" font-weight="700">B</text>
+  <text x="350" y="178" text-anchor="middle" class="lbl" font-size="9" fill="#ffaa44">2 nbr = 160 MW</text>
+
+  <!-- Reactor C (bottom-left) -->
+  <rect x="140" y="210" width="120" height="65" rx="6" fill="#0d1b2a" stroke="#44ff88" stroke-width="2.5"/>
+  <text x="200" y="243" text-anchor="middle" class="lbl" font-size="14" fill="#44ff88" font-weight="700">C</text>
+  <text x="200" y="263" text-anchor="middle" class="lbl" font-size="9" fill="#aaaaaa">1 neighbor = 80 MW</text>
+
+  <!-- Reactor D (bottom-right) -->
+  <rect x="290" y="210" width="120" height="65" rx="6" fill="#0d1b2a" stroke="#44ff88" stroke-width="2.5"/>
+  <text x="350" y="243" text-anchor="middle" class="lbl" font-size="14" fill="#44ff88" font-weight="700">D</text>
+  <text x="350" y="263" text-anchor="middle" class="lbl" font-size="9" fill="#ffaa44">2 nbr = 160 MW</text>
+
+  <!-- Neighbor bonus: A-B (horizontal) -->
+  <line x1="260" y1="145" x2="290" y2="145" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="5"/>
+  <text x="275" y="140" text-anchor="middle" class="lbl" font-size="8" fill="#44ff88">+100%</text>
+
+  <!-- Neighbor bonus: C-D (horizontal) -->
+  <line x1="260" y1="230" x2="290" y2="230" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="5"/>
+  <text x="275" y="225" text-anchor="middle" class="lbl" font-size="8" fill="#44ff88">+100%</text>
+
+  <!-- Neighbor bonus: A-C (vertical) -->
+  <line x1="200" y1="190" x2="200" y2="210" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="5"/>
+  <text x="212" y="203" class="lbl" font-size="8" fill="#44ff88">+100%</text>
+
+  <!-- Neighbor bonus: B-D (vertical) -->
+  <line x1="350" y1="190" x2="350" y2="210" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="5"/>
+  <text x="362" y="203" class="lbl" font-size="8" fill="#ffaa44">+300%</text>
+
+  <!-- Total output box -->
+  <rect x="140" y="290" width="270" height="28" rx="5" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
+  <text x="275" y="309" text-anchor="middle" class="lbl" font-size="13" fill="#ffaa44" font-weight="700">TOTAL: 480 MW (4 reactors, 2x2)</text>
+
+  <!-- Down arrow to next section -->
+  <line x1="380" y1="328" x2="380" y2="368" stroke="#555555" stroke-width="2.5"/>
+  <polygon points="376,362 380,370 384,362" fill="#555555"/>
+  <text x="396" y="352" class="lbl" font-size="9" fill="#888888">1000C heat output</text>
+
+  <!-- =================================================================================== -->
+  <!-- SECTION 2: HEAT FLOW - horizontal left to right (y 380 - 600) -->
+  <!-- Pure horizontal flow: Pipes -> HX -> Turbines -> Water -->
+  <!-- =================================================================================== -->
+  <text x="380" y="398" text-anchor="middle" class="lbl" font-size="13" fill="#cccccc" font-weight="700">2. HEAT FLOW (left to right)</text>
+
+  <!-- Heat Pipes block (left) -->
+  <rect x="40" y="418" width="160" height="85" rx="6" fill="#1a0a04" stroke="#cc7733" stroke-width="2"/>
+  <text x="120" y="445" text-anchor="middle" class="lbl" font-size="11" fill="#cc7733" font-weight="700">HEAT PIPES</text>
+  <text x="120" y="462" text-anchor="middle" class="lbl" font-size="9" fill="#aa7744">3 parallel pipes</text>
+  <text x="120" y="480" text-anchor="middle" class="lbl" font-size="8" fill="#cc7733">Input: 1000C from reactor</text>
+  <text x="120" y="497" text-anchor="middle" class="lbl" font-size="8" fill="#aa7744">Output: 500C to exchanger</text>
+
+  <!-- Arrow: Pipes -> HX -->
+  <line x1="202" y1="458" x2="244" y2="458" stroke="#cc7733" stroke-width="2.5"/>
+  <polygon points="242,454 248,458 242,462" fill="#cc7733"/>
+
+  <!-- Heat Exchangers block (center) -->
+  <rect x="250" y="418" width="200" height="85" rx="6" fill="#1a0a0a" stroke="#ff6644" stroke-width="2"/>
+  <text x="350" y="445" text-anchor="middle" class="lbl" font-size="11" fill="#ff6644" font-weight="700">HEAT EXCHANGERS</text>
+  <text x="350" y="462" text-anchor="middle" class="lbl" font-size="9" fill="#ff6644">x48 total (12 per reactor)</text>
+  <text x="350" y="480" text-anchor="middle" class="lbl" font-size="8" fill="#884422">Input: 1000C heat from pipes</text>
+  <text x="350" y="497" text-anchor="middle" class="lbl" font-size="8" fill="#884422">Output: 500C steam to turbines</text>
+
+  <!-- Arrow: HX -> Turbines -->
+  <line x1="452" y1="458" x2="494" y2="458" stroke="#ff6644" stroke-width="2.5"/>
+  <polygon points="492,454 498,458 492,462" fill="#ff6644"/>
+
+  <!-- Steam Turbines block (right) -->
+  <rect x="500" y="418" width="180" height="85" rx="6" fill="#0a1028" stroke="#88ccff" stroke-width="2"/>
+  <text x="590" y="445" text-anchor="middle" class="lbl" font-size="11" fill="#88ccff" font-weight="700">STEAM TURBINES</text>
+  <text x="590" y="462" text-anchor="middle" class="lbl" font-size="9" fill="#88ccff">x84 total (21 per reactor)</text>
+  <text x="590" y="480" text-anchor="middle" class="lbl" font-size="8" fill="#445566">Input: 500C steam</text>
+  <text x="590" y="497" text-anchor="middle" class="lbl" font-size="8" fill="#445566">Output: 480 MW total</text>
+
+  <!-- Water supply (far right, above turbines) -->
+  <rect x="692" y="435" width="40" height="50" rx="5" fill="#0a1a2a" stroke="#44aaff" stroke-width="1.5"/>
+  <text x="712" y="463" text-anchor="middle" class="lbl" font-size="9" fill="#44aaff" font-weight="700">H2O</text>
+  <text x="712" y="478" text-anchor="middle" class="lbl" font-size="7" fill="#4488cc">4x pumps</text>
+
+  <!-- Water arrow (dashed) -->
+  <line x1="668" y1="460" x2="692" y2="460" stroke="#44aaff" stroke-width="1.5" stroke-dasharray="4"/>
+  <polygon points="690,456 696,460 690,464" fill="#44aaff"/>
+
+  <!-- Down arrow to summary -->
+  <line x1="380" y1="515" x2="380" y2="555" stroke="#555555" stroke-width="2.5"/>
+  <polygon points="376,549 380,557 384,549" fill="#555555"/>
+
+  <!-- =================================================================================== -->
+  <!-- SECTION 3: SUMMARY BAR (y 565 - 668) -->
+  <!-- =================================================================================== -->
+  <rect x="40" y="565" width="680" height="103" rx="8" fill="#0a1628" stroke="#44ff88" stroke-width="2"/>
+
+  <text x="380" y="595" text-anchor="middle" class="lbl" font-size="15" fill="#44ff88" font-weight="900">2x2 REACTOR = 480 MW TOTAL</text>
+
+  <line x1="40" y1="610" x2="720" y2="610" stroke="#1a3a1a" stroke-width="0.8"/>
+
+  <!-- 5 stat columns, evenly spaced: 40 + i*160 -->
+  <text x="104" y="630" text-anchor="middle" class="lbl" font-size="9" fill="#888888">REACTORS</text>
+  <text x="104" y="652" text-anchor="middle" class="lbl" font-size="15" fill="#44ff88" font-weight="700">4</text>
+  <text x="104" y="666" text-anchor="middle" class="lbl" font-size="8" fill="#555555">+neighbor bonus</text>
+
+  <text x="264" y="630" text-anchor="middle" class="lbl" font-size="9" fill="#888888">HEAT EXCHANGERS</text>
+  <text x="264" y="652" text-anchor="middle" class="lbl" font-size="15" fill="#ff6644" font-weight="700">48</text>
+  <text x="264" y="666" text-anchor="middle" class="lbl" font-size="8" fill="#555555">12 per reactor</text>
+
+  <text x="424" y="630" text-anchor="middle" class="lbl" font-size="9" fill="#888888">STEAM TURBINES</text>
+  <text x="424" y="652" text-anchor="middle" class="lbl" font-size="15" fill="#88ccff" font-weight="700">84</text>
+  <text x="424" y="666" text-anchor="middle" class="lbl" font-size="8" fill="#555555">21 per reactor</text>
+
+  <text x="584" y="630" text-anchor="middle" class="lbl" font-size="9" fill="#888888">OFFSHORE PUMPS</text>
+  <text x="584" y="652" text-anchor="middle" class="lbl" font-size="15" fill="#44aaff" font-weight="700">4</text>
+  <text x="584" y="666" text-anchor="middle" class="lbl" font-size="8" fill="#555555">1 per 12 HX</text>
+
+  <text x="720" y="630" text-anchor="middle" class="lbl" font-size="9" fill="#888888">FUEL CELLS/HR</text>
+  <text x="720" y="652" text-anchor="middle" class="lbl" font-size="15" fill="#ffaa44" font-weight="700">~72</text>
+  <text x="720" y="666" text-anchor="middle" class="lbl" font-size="8" fill="#555555">18 per reactor</text>
+
+  <!-- Down arrow to fuel cycle -->
+  <line x1="380" y1="678" x2="380" y2="718" stroke="#555555" stroke-width="2"/>
+  <polygon points="376,712 380,720 384,712" fill="#555555"/>
+
+  <!-- =================================================================================== -->
+  <!-- SECTION 4: FUEL CYCLE (y 728 - 810) -->
+  <!-- =================================================================================== -->
+  <text x="380" y="748" text-anchor="middle" class="lbl" font-size="13" fill="#aaaaaa" font-weight="700">3. FUEL CYCLE</text>
+
+  <!-- Node 1: Mining -->
+  <rect x="90" y="765" width="120" height="42" rx="5" fill="#1a1a2e" stroke="#666666" stroke-width="1.2"/>
+  <text x="150" y="785" text-anchor="middle" class="lbl" font-size="9" fill="#cccccc">Uranium Mining</text>
+  <text x="150" y="800" text-anchor="middle" class="lbl" font-size="8" fill="#888888">1 drill enough</text>
+
+  <!-- Arrow 1->2 -->
+  <line x1="212" y1="786" x2="248" y2="786" stroke="#888888" stroke-width="2"/>
+  <polygon points="246,782 252,786 246,790" fill="#888888"/>
+
+  <!-- Node 2: Centrifuge -->
+  <rect x="254" y="765" width="120" height="42" rx="5" fill="#1a1a2e" stroke="#888888" stroke-width="1.2"/>
+  <text x="314" y="785" text-anchor="middle" class="lbl" font-size="9" fill="#cccccc">Centrifuge x5</text>
+  <text x="314" y="800" text-anchor="middle" class="lbl" font-size="8" fill="#888888">0.7% -> U-235</text>
+
+  <!-- Arrow 2->3 -->
+  <line x1="376" y1="786" x2="412" y2="786" stroke="#888888" stroke-width="2"/>
+  <polygon points="410,782 416,786 410,790" fill="#888888"/>
+
+  <!-- Node 3: Fuel Assembler -->
+  <rect x="418" y="765" width="130" height="42" rx="5" fill="#1a1a2e" stroke="#aa8800" stroke-width="1.2"/>
+  <text x="483" y="785" text-anchor="middle" class="lbl" font-size="9" fill="#cccccc">Fuel Assembler</text>
+  <text x="483" y="800" text-anchor="middle" class="lbl" font-size="8" fill="#aa8800">19 U-238 + 1 U-235</text>
+
+  <!-- Arrow 3->4 -->
+  <line x1="550" y1="786" x2="586" y2="786" stroke="#888888" stroke-width="2"/>
+  <polygon points="584,782 590,786 584,790" fill="#888888"/>
+
+  <!-- Node 4: Reactor -->
+  <rect x="592" y="765" width="110" height="42" rx="5" fill="#0a1a2a" stroke="#44ff88" stroke-width="2"/>
+  <text x="647" y="785" text-anchor="middle" class="lbl" font-size="9" fill="#44ff88" font-weight="700">-> Reactor</text>
+  <text x="647" y="800" text-anchor="middle" class="lbl" font-size="8" fill="#44ff88">200s per cell</text>
+
+  <!-- Kovarex note (right of fuel cycle) -->
+  <text x="730" y="780" class="lbl" font-size="8" fill="#ffaa44">Kovarex:</text>
+  <text x="730" y="795" class="lbl" font-size="8" fill="#ffaa44">needs 40 U-235</text>
+  <text x="730" y="808" class="lbl" font-size="8" fill="#ffaa44">then infinite fuel</text>
+
+  <!-- =================================================================================== -->
+  <!-- SECTION 5: NOTES (y 830 - 880) -->
+  <!-- =================================================================================== -->
+  <rect x="40" y="830" width="680" height="42" rx="5" fill="#0a0a18" stroke="#333333" stroke-width="0.8"/>
+  <text x="50" y="853" class="lbl" font-size="9" fill="#666666">Notes: 1 offshore pump feeds 12 heat exchangers. 3 parallel heat pipes minimum for 2x2. 50+ steam tanks before circuit-controlled fuel. Touching reactors get +100% each. Brownout if steam < 50 tanks.</text>
+
+  <!-- Footer -->
+  <text x="380" y="910" text-anchor="middle" class="lbl" font-size="8" fill="#444444">FactorioGuides.com - Nuclear Power Guide</text>
+
 </svg>

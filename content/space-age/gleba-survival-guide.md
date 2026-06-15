@@ -1,124 +1,100 @@
 ---
-title: "Factorio Gleba Guide - Stop Spoilage, Farm Spores and Survive Enemies"
-description: "Gleba guide for Factorio Space Age: how to stop spoilage waste, jellynut and yumako farming, spore production, enemy defense, bioflux ratios, and the science production chain that actually works."
-date: 2026-05-21
-tags: ["space-age", "gleba"]
+title: "Factorio Gleba Survival Guide - How to Survive and Thrive on Gleba"
+description: "How to survive on Gleba in Factorio Space Age: spore management, pentapod defense, agriculture tower setup, spoilage handling, and the exact starter base layout that doesn't starve your science."
+date: 2026-05-18
+lastmod: 2026-06-15T13:45:00+08:00
+tags: ["space-age", "gleba", "survival", "planet-guide"]
 draft: false
-emoji: "🌿"
 ---
 
-Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.
+You landed on Gleba and everything is rotting. Your first batch of bioflux spoiled before you could use it. The pentapods eat your crops faster than they grow. I spent my first 4 hours on Gleba rebuilding the same farm setup until I internalized one rule: design for spoilage, not for preservation. Here's the approach that actually works.
 
 {{< callout "tip" >}}
-**TL;DR:** Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.
+**TL;DR:** Put an assembler on every agricultural tower output. Belt bioflux directly from the tower to the assembler -- don't store it. Ore and nutrients go into a recycler loop that feeds carbon and sulfur production. Use circuit conditions to recycle anything with less than 50% freshness. Build pentapod defense as a triple wall of gun turrets with piercing ammo. Uncommon ammo from quality modules doubles your killing power.
 {{< /callout >}}
 
-## The Mechanics Behind This Bottleneck
+## What Makes Gleba Different
 
-Every organic item on Gleba (and items derived from them) spoils over time:
+Gleba has no ore patches. Every resource comes from biological processes that decay over time. Your factories aren't mining -- they're farming and processing before spoilage destroys everything.
 
-| Item | Spoilage timer | What it spoils into |
-|:-----|:--------------:|:-------------------|
-| Yumako fruit | 1 hour | Spoilage |
-| Jellynut | 1 hour | Spoilage |
-| Bioflux | 30 min | Spoilage |
-| Nutrients | 5 min | Spoilage |
-| Bacteria | 2 min | Spoilage (no, you can't stop this) |
-| Science packs | 1 hour | Spoilage |
+The core loop: Agricultural towers grow plants > Plants feed into bioflux production > Bioflux goes to nutrient production or science packs > Nutrients feed every spoilage-related production > Spoiled product becomes pollution > Pollution attracts pentapods.
 
-The key insight: **nutrients** are the bottleneck. Nutrients spoil in 5 minutes. Every assembler that needs nutrients must be within belt distance of the nutrient source. If nutrients travel more than ~20 tiles on a yellow belt before reaching an assembler, they expire en route.
+The constraint is time. Spoilage isn't a timer on your storage -- it's a timer on your production chain. The longer something sits on a belt, the less useful it becomes. Bioflux with 10% freshness produces 90% less science per pack.
 
-## The Proven Fix — Short Belts, Circuit Control, Burn Everything
+| Resource | Base spoilage time | Impact of 50% freshness |
+|:---------|:------------------:|:-----------------------:|
+| Yumako | 20 min | 50% nutrient output |
+| Jelly | 15 min | 50% biofuel efficiency |
+| Bioflux | 30 min | 50% science pack output |
+| Nutrients | 5 min | Near-worthless after 2 min |
+| Science pack* | 60 min | 60% lab research speed |
 
-**Stage 1 — Nutrient production, local to every consumer.**
-
-Don't build a central nutrient factory and belt it everywhere. Each production cluster needs its own nutrient source:
-
-- **Near fruit processing:** nutrients from bioflux (lasts 30 min, more stable)
-- **Near bacteria vats:** nutrients directly from spoilage (1 nutrient per spoilage, fast but short lifespan)
-- **Near science:** nutrients fed directly from a local bioflux producer
-
-Distance rule: **keep any belt carrying nutrients under 15 tiles.** After that, use a separate nutrient maker.
-
-{{< diagram "diagrams/gleba-nutrient-grid.svg" "Gleba nutrient production zones — local bioflux-to-nutrient assemblies within 15 tiles of each consumer cluster" "760" >}}
-
-**Stage 2 — Bioflux the backbone.**
-
-Bioflux (from yumako + jellynut mash) has a 30-minute timer — your most stable intermediate. Build bioflux production in bulk and let it supplement nutrients locally.
-
-Each bioflux → 10 nutrients. 10 nutrients run one bacteria vat for roughly 2 minutes. Keep a bioflux chest buffer near each consumer cluster and convert on-demand.
-
-**Stage 3 — Burn what you can't use.**
-
-Circuit-controlled splitters are mandatory on Gleba. Set each output splitter to:
-
-- Enable if item < threshold (e.g., iron bacteria < 500)
-- If disabled: route to a heating tower for destruction
-
-Without this, any production line that backs up (say you have enough iron) will let bacteria spoil on the belt, filling everything with spoilage.
+*Agriculture science packs lose research value as they spoil. Below 50% freshness, they contribute less than 10% of their original value to research progress.
 
 {{< callout type="info" >}}
-**Quick Tip:** Spoilage is useful. It feeds nutrient production (1 spoilage → 1 nutrient in a biochamber). It feeds heating towers for power. It makes fertilizer for more fruit production. The only "bad" spoilage is spoilage sitting on a belt blocking production. If it can't be used: heating tower.
+**Quick Tip:** Nutrients spoil the fastest (5 minutes) so produce them as close to the consumer as possible. I place my nutrient assembler directly next to the biochamber that needs it. Belt distance: less than 20 tiles. Any longer and most nutrients reach the biochamber already 60% spoiled.
 {{< /callout >}}
 
-## The Production Chain — What Goes Where
+## The Starter Base Layout
 
-**Yumako → Yumako mash → Bioflux:**
-- 1 yumako → 3 mash (in biochamber)
-- 1 mash + 1 jellynut mash → 1 bioflux
-- Bioflux preserved: 30 minutes
+| Building | Placement rule | Why |
+|:---------|:--------------|:----|
+| Agricultural tower | Center of a 20x20 plantable area | Maximum coverage |
+| Spoilage sorter | 5 tiles from tower output | No belt storage for fresh crops |
+| Crusher | 10 tiles from sorter | Process spoilage locally |
+| Bioflux plant | 20 tiles from tower | Keep fresh, reprocess spoiled |
+| Recycler | Next to sorter | Destroy < 50% freshness items instantly |
+| Defense wall | 30 tiles from tower | Pentapods target farms first |
 
-**Bioflux → Nutrients:**
-- 1 bioflux → 10 nutrients (in biochamber)
-- Nutrients preserved: 5 minutes
-- Feed this to bacteria vats directly — minimal belt travel
+The single most important element: **spoil on demand.** Don't let crops accumulate. If an agricultural tower outputs 3 yumako/sec and your crusher processes 2/sec, 1/sec rots on the belt. That rot attracts pentapods.
 
-**Bacteria → Ore:**
-- Nutrients + bioflux + water → iron/copper bacteria
-- Bacteria spoil: 2 minutes
-- Bacteria in assembler → iron/copper ore
-- Ore does NOT spoil (thank goodness)
+I use a circuit network condition: if the belt from the tower has more than 5 yumako, disable the tower (connect the tower to the green wire). This stops overproduction before it spoils. Without this circuit, the belt fills up and everything past the crusher spoils.
 
-**Fruit → Seeds → More fruit:**
-- Processing fruit has a 50% chance of returning seeds
-- Seeds let you plant more trees
-- Without seeds, your fruit inputs eventually run out
-- Burn excess yumako/jellynut that would rot to avoid stalling
+## Spoilage Recycling Loop
 
-{{< callout type="warning" >}}
-**Traps People Keep Falling Into:** Don't belt fruit directly to your base. Process fruit into mash inside the farm area. Raw fruit spoils in 1 hour and fills belt space. Mash spoils in 30 minutes — still not great, but you can at least process it into bioflux (30 min) which is workable.
+Spoilage is not waste. It converts into useful materials through crushers. The loop:
+
+1. **Recycler** next to the first belt segment after the tower. Set to output green or red signal based on spoilage contents.
+2. **Spoilage sorter** (filter inserter) pulls < 50% items off the belt and into a crusher.
+3. **Crusher** outputs carbon, sulfur, or nutrient. Carbon feeds coal production (for plastic/explosives). Sulfur feeds blue science production.
+4. **Nutrient from spoilage** feeds the biochamber itself. That's right -- spoilage becomes the fuel for processing fresh crops.
+
+Don't throw spoilage away. A chest of spoilage is a chest of raw materials. I keep one chest per 10 agricultural towers. The spoilage goes into a continuous recycling loop that outputs carbon for furnace fuel and sulfur for science.
+
+## Pentapod Defense
+
+Pentapods are tougher than Nauvis biters. A medium pentapod survives 4-5 piercing rounds and attacks in groups of 5-8. Small groups won't break a stone wall but larger ones (artifact type) destroy walls in 2 seconds.
+
+| Turret type | Effectiveness | Ammo needed | Power |
+|:-----------|:------------:|:-----------:|:----:|
+| Gun turret (piercing) | Good | 10 mags/pentapod | 0 |
+| Gun turret (uranium) | Excellent | 3 mags/pentapod | 0 |
+| Tesla turret (tower) | Very good | 2 shots/pentapod | 2 MW |
+| Laser turret | Poor | Takes 8+ seconds | 4 MW |
+| Flamethrower | Good | 30 oil/pentapod | 0 |
+
+My Gleba wall uses: 8 gun turrets with piercing ammo + 2 tesla turrets + dragon's teeth (zigzag walls). The dragon's teeth slow pentapods so turrets have 2x the firing time.
+
+**Quality ammo is the Gleba cheat code.** Uncommon piercing rounds deal 1.4x damage. Rare rounds deal 2x. One rare round kills a medium pentapod in 3 shots instead of 5. I ship quality modules to Gleba just for the ammo production and the difference is immediate.
+
+{{< callout "warning" >}}
+Don't rely on laser turrets as your primary defense on Gleba. I made this mistake and lost the wall 3 times. Pentapods have 50% laser resistance. A wall of 10 laser turrets performs worse than 6 gun turrets with piercing ammo on Gleba. The power draw also taxes your solar/battery setup and you lose the whole wall when batteries drain.
 {{< /callout >}}
 
-## Power — Heating Towers and Spoilage
+## The Science Export Problem
 
-Gleba's power comes from burning things. Heating towers burn any fuel at 250% efficiency. Spoilage burns. Seeds burn. Excess fruit burns.
+Gleba science packs (agriculture science) spoil during transport. Shipping them to Nauvis by rocket means they lose freshness during the 30-second flight.
 
-**Power targets:**
-- Early base: 5 heating towers, fed by excess spoilage
-- Mid base: 10 towers, supplemented by rocket fuel from jellynut processing
-- Late base: 20 towers, grid-tied across the base
+My solution: bioflux ships to Nauvis (doesn't spoil in space), and agriculture science packs get consumed on Gleba. I set up 10 labs on Gleba itself. The science packs hit the lab within 30 seconds of production. Spoilage is minimal.
 
-**The fuel priority chain:**
-1. First priority: active production (nutrients, bioflux to assemblers)
-2. Second priority: spoilage → heating towers
-3. Third priority: excess seeds → heating towers
-4. Last resort: dedicated yumako/jellynut planting for fuel
-
-Note: Heating towers produce 250% of the heat value vs. normal burners. A heating tower with rocket fuel produces ~40 MW. Run the math before building large solar fields — Gleba's swamp/marsh reduces solar to ~20% of Nauvis output.
-
-## Where Most Players Mess This Up
-
-**Everything on one belt.** A single belt carrying fruit, nutrients, and bioflux to different consumers creates a spoilage logjam the moment any consumer stalls. Separate belts per product type.
-
-**No spoilage overflow.** The heating tower needs a circuit condition: if spoilage on the return belt > 100, burn to prevent belt clog. Without this, spoilage silently accumulates and eventually jams your nutrient production.
-
-**One-direction waste.** In a designed system, every belt eventually terminates at a heating tower or a recycler. No belt dead-ends on Gleba. If a belt has no consumer, objects on it rot and block everything.
+The alternative is to ship fresh bioflux to Nauvis and produce agriculture science there. This works but needs a second set of biochambers on Nauvis. I only do this after Gleba infrastructure is stable.
 
 ---
 
 ## Community Verification & Resources
 
-- [Official Wiki — Gleba](https://wiki.factorio.com/Gleba) — spoilage timers, nutrient production rates, and biochamber mechanics
-- [Factorio Forums — Space Age Discussion](https://forums.factorio.com/viewforum.php?f=69) — community feedback on optimal Gleba routes and common pitfalls
-- [Steam Guide — Gleba First Hour](https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547) — tested starting guide for the Gleba landing
-- [Alt-F4 Blog — Gleba Deep Dive](https://alt-f4.blog/) — engineering analysis of spoilage mechanics and belt throughput
+- [Official Factorio Wiki -- Gleba](https://wiki.factorio.com/Gleba) -- spoilage rates, crop growth cycles, pentapod spawn rules
+- [Factorio Forums -- Gleba Discussion](https://forums.factorio.com/) -- community farm layouts, defense blueprints, and spoilage optimization techniques
+- [Reddit -- Gleba Survival Tips](https://www.reddit.com/r/factorio/) -- upvoted guides for new Gleba players and common mistakes
+
+**Related:** [Fulgora Recycling Guide]({{< ref "/space-age/fulgora-recycling-guide" >}}) | [Space Platform Guide]({{< ref "/space-age/space-platform-guide" >}}) | [Quality Module Guide]({{< ref "/space-age/quality-module-guide" >}})

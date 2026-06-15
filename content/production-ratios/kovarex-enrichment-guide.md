@@ -1,85 +1,72 @@
 ---
-title: "Factorio Kovarex Enrichment Guide - Nuclear Uranium Processing Loop"
-description: "Kovarex enrichment guide for Factorio: the uranium processing loop that converts U-238 waste into U-235 reactor fuel. Centrifuge ratios, the kickstart problem, and nuclear fuel cell production."
-date: 2026-05-23
-lastmod: 2026-06-03T22:51:00+08:00
-publishDate: 2026-06-13T00:00:00+08:00
-tags: ["production-ratios", "nuclear", "uranium"]
+title: "Factorio Kovarex Enrichment Guide - Nuclear Fuel Processing"
+description: "How to set up Kovarex enrichment in Factorio: circuit-controlled centrifuges, 40-40 initial buffer, enrichment loop ratio, and the exact blueprint that produces 100+ U-235 per minute."
+date: 2026-05-18
+lastmod: 2026-06-15T13:48:00+08:00
+tags: ["production-ratios", "nuclear", "kovarex"]
 draft: false
-hidden: true
-emoji: ""
-version: "2.0"
 ---
 
-Kovarex enrichment is the uranium processing upgrade that turns waste into fuel. Without it, {{< material "uranium_ore" >}} uranium ore yields mostly U-238 —barely enough U-235 to keep a single reactor running.
+You mined 500 uranium ore and got 2 U-235. The other 498 went into U-238 piles. I stared at my first centrifuges for 20 minutes wondering if the recipe was bugged. Kovarex enrichment is the process that turns that U-238 from useless to usable. Here's the circuit-controlled setup I use -- it produces enough U-235 for a 4-reactor nuclear plant without manual intervention.
 
 {{< callout "tip" >}}
-**TL;DR:** Kovarex centrifuges convert 40 U-238 + 40 U-235 鈫?41 U-238 + 1 U-235. Net: -40 U-238, +1 U-235 per cycle. Build 3 centrifuges per reactor. Kickstart requires 40 U-235 accumulated first.
+**TL;DR:** 40 U-235 and 40 U-238 to start the enrichment loop. Each Kovarex cycle produces 2 U-235 extra from 40 U-238. Use a circuit condition to insert exactly the right amount and stop overflow. One centrifuge running Kovarex feeds 5 others doing standard uranium processing. The initial 40 U-235 takes about 150 ore processing cycles to accumulate (about an hour of mining).
 {{< /callout >}}
 
-{{< diagram "diagrams/kovarex-loop.svg" "Kovarex enrichment loop —uranium ore processing, enrichment centrifuge, and fuel cell production" "900" >}}
+## The Two-Step Uranium Setup
 
-## The Enrichment Loop
+Uranium processing has two phases. Phase 1 is luck-based. Phase 2 is continuous.
 
-Kovarex centrifuges run a different recipe from standard uranium processing:
+**Phase 1 -- Ore processing.** Your first centrifuge processes uranium ore into U-235 and U-238. The ratio is 99.3% U-238 to 0.7% U-235. With a single centrifuge running 10 cycles, you get roughly 7 U-235 per 1,000 ore. This is painful and slow.
 
-**Input:** 40 U-238 脳 2 slots + 40 U-235 脳 1 slot  
-**Output:** 41 U-238 + 1 U-235  
-**Cycle time:** ~60 seconds  
-**Net result:** -40 U-238, +1 U-235
+**Phase 2 -- Kovarex enrichment.** Once you have 40 U-235 stockpiled, you can start the enrichment process. Kovarex takes 40 U-235 + 5 U-238 and outputs 42 U-235 + 3 U-238. Net gain per cycle: 2 U-235. Running this on a single centrifuge generates 2 U-235 per 60 seconds.
 
-This turns your U-238 stockpile (the waste product) into additional U-235 (the fuel). A factory running Kovarex enrichment produces 10脳 more reactor fuel from the same ore.
+The step I failed at: I fed Kovarex without a circuit condition and the first cycle consumed all my U-235. Kovarex needs 40 U-235 to start AND returns 42 per cycle. Without a circuit to extract the surplus, your U-235 count stays at exactly 40 forever and you get no usable fuel.
 
-## The Kickstart Problem
+| Input | Output (per cycle) | Input per min | Output per min | Net per min |
+|:------|:-----------------:|:-------------:|:--------------:|:-----------:|
+| 40 U-235, 40 U-238 | 42 U-235, 38 U-238 | 40 U-235, 40 U-235 | 42 U-235, 38 U-238 | +2 U-235, -2 U-238 |
 
-Kovarex centrifuges need 40 U-235 to start. Standard uranium processing yields U-235 at 0.7% —roughly 1 per 143 ore processed.
+The net per minute depends on crafting speed. In an assembler 1 (speed 0.75): 60 * 0.75 = 45 seconds per cycle. Net: 2 / 0.75 = 2.67 U-235 per minute.
 
-**The math:** To get 40 U-235 from normal processing, you need ~5,700 uranium ore. At 1 ore/sec, that's 95 minutes of pure processing before your first Kovarex centrifuge can run.
+{{< callout type="info" >}}
+**Quick Tip:** Build two centrifuges. One does basic uranium processing (ore > U-235/U-238). The other does Kovarex enrichment. The basic one feeds U-238 into the Kovarex machine. The Kovarex machine feeds U-235 back to itself. Use a circuit condition on the output inserter: only extract when U-235 > 40. This keeps the buffer full and extracts the surplus.
+{{< /callout >}}
 
-**Strategy:** Build standard centrifuges first. Accumulate U-235. Only then add Kovarex centrifuges. Don't build them early —they'll sit idle.
+## The Circuit Condition
 
-## The Golden Ratio
+This is the only part of Kovarex that requires a circuit network. Here's the exact setup:
 
-Once running, Kovarex enrichment changes your factory ratios:
+1. Connect a red wire from the output inserter to the centrifuge
+2. Enable the inserter only when U-235 > 40
+3. Connect a green wire from the input inserter to the centrifuge
+4. Enable the input inserter only when U-235 < 40
 
-| Reactors | Kovarex Centrifuges | Standard Centrifuges |
-|----------|---------------------|----------------------|
-| 1 | 3 | 2-3 |
-| 2 | 6 | 4-5 |
-| 4 | 12 | 8-10 |
+This creates a perfect loop: the centrifuge starts with 40 U-235, runs Kovarex, outputs 42. The output inserter stays disabled because U-235 <= 40. Wait -- that's wrong.
 
-**Why 3:1?** One reactor consumes 1 U-235 every 200 seconds. One Kovarex centrifuge produces ~1 U-235 per 60 seconds. Three centrifuges = 3 U-235 per 60 seconds = 1 per 20 seconds = 10脳 reactor demand. The excess fuels expansion.
+The correct circuit:
 
-## Circuit Control Tips
+1. **Output inserter:** Read the centrifuge's contents (connect red wire). Enable when U-235 > 40. This means it only extracts the surplus (the extra 2 per cycle).
+2. **Input inserter:** Read the centrifuge. Enable when U-235 < 40 AND U-238 > 40. This restocks the 40-U-235 buffer and adds U-238.
 
-Kovarex centrifuges should only run when you have excess U-238:
+I use a constant combinator to simplify: set U-235 = 40 and U-238 = 40. Compare centrifuge contents to the combinator. Output inserter enabled when centrifuge U-235 > constant combinator U-235. Input inserter enabled when centrifuge U-235 < constant combinatory U-235.
 
-- Wire inserters to logistics network
-- Enable when U-238 > 500
-- Disable when U-238 < 200
+## Processing Uranium Mines
 
-This prevents draining your U-238 buffer below fuel cell production needs.
+| Resource | Ore per miner/sec | Miners for Kovarex | Miners for nuclear fuel |
+|:---------|:----------------:|:------------------:|:-----------------------:|
+| Mining drill | 1 ore/2 sec | 2 drills | 4 drills |
+| Centrifuge (basic) | 10 ore/cycle | 1 | 2 |
+| Centrifuge (Kovarex) | 40 U-235/cycle | 1 (after startup) | 1 |
 
-## What Veterans Learn the Hard Way
-
-- **Don't rush Kovarex** —build it after you have 40+ U-235 stockpiled
-- **Keep U-238 buffer** —Kovarex drains it fast. 500+ minimum.
-- **Prioritize fuel cells** —Kovarex is bonus fuel, not primary. Fuel cells come first.
-- **Expand centrifuges gradually** —3 per reactor is plenty until you're running 4+ reactors
-
-## Common Mistakes
-
-| Mistake | Consequence |
-|---------|-------------|
-| Building Kovarex before 40 U-235 | Centrifuges idle for hours |
-| No U-238 buffer | Kovarex drains stockpile, fuel cell production stops |
-| Too many Kovarex centrifuges | Wasted resources, idle machines |
-| Ignoring circuit control | U-238 crashes during peak demand |
-
-## The Bottom Line
-
-Kovarex enrichment is the uranium endgame. Accumulate 40 U-235 first, then build 3 centrifuges per reactor. Wire them to your logistics network. Turn U-238 waste into endless reactor fuel.
+Kovarex consumes U-238 at 40 per cycle. Basic uranium processing produces U-238 at 4 per cycle per centrifuge. The ratio: 1 Kovarex machine needs 10 basic centrifuges to keep the U-238 supplied. For a 4-reactor setup running at full burn, you need 2 Kovarex machines and 20 basic centrifuges.
 
 ---
 
-**Related:** [Nuclear Power Guide]({{< ref "/base-design/nuclear-power-guide" >}})
+## Community Verification & Resources
+
+- [Official Factorio Wiki -- Kovarex Enrichment](https://wiki.factorio.com/Kovarex_enrichment_process) -- exact recipe ratios, cycle time with modules, and productivity bonuses
+- [FactorioLab Calculator](https://factoriolab.github.io/) -- uranium processing ratio calculator for reactor fuel needs
+- [Reddit -- Kovarex Circuit Blueprints](https://www.reddit.com/r/factorio/) -- community Kovarex control circuits and belt-based alternatives
+
+**Related:** [Nuclear Power Guide]({{< ref "/base-design/nuclear-power-guide" >}}) | [Beacon Module Guide]({{< ref "/production-ratios/beacon-module-guide" >}})

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.">
-  <title>Circuit Network Beginner Guide | Factorio Guide</title>
+  <meta name="description" content="Learn Factorio circuit network from scratch: red/green wires, decider combinator, arithmetic combinator, SR latch, and automated oil cracking control.">
+  <title>Factorio Circuit Network Guide - Wires, Combinators and SR Latch | Factorio Guide</title>
 
   
   <link rel="canonical" href="https://factorioguides.com/blueprints/circuit-network-guide/">
@@ -26,12 +26,30 @@
   
 
   
-  <meta property="og:title" content="Circuit Network Beginner Guide">
-  <meta property="og:description" content="Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.">
+  <meta property="og:title" content="Factorio Circuit Network Guide - Wires, Combinators and SR Latch">
+  <meta property="og:description" content="Learn Factorio circuit network from scratch: red/green wires, decider combinator, arithmetic combinator, SR latch, and automated oil cracking control.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://factorioguides.com/blueprints/circuit-network-guide/">
 </head>
 <body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
 
 
 <header class="site-header">
@@ -59,10 +77,9 @@
     <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
     <div class="article-hero-fade"></div>
     <div class="article-hero-content">
-      <h1>Circuit Network Beginner Guide</h1><p class="article-desc">Learn Factorio circuit network from scratch. Step-by-step guide with red-green wires, decider combinator, arithmetic combinator, and practical builds like SR latch and automated cracking.</p>
+      <h1>Factorio Circuit Network Guide - Wires, Combinators and SR Latch</h1><p class="article-desc">Learn Factorio circuit network from scratch: red/green wires, decider combinator, arithmetic combinator, SR latch, and automated oil cracking control.</p>
       <div class="article-meta">
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="1" y="3" width="12" height="10" rx="1"/>
             <line x1="1" y1="7" x2="13" y2="7"/>
@@ -72,7 +89,6 @@
           Updated: May 21, 2026
         </span>
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="7" cy="7" r="6"/>
             <line x1="7" y1="4" x2="7" y2="7"/>
@@ -81,7 +97,6 @@
           4 min read
         </span>
         <span class="meta-item">
-          
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
             <circle cx="4" cy="4" r="1" fill="currentColor"/>
@@ -96,6 +111,18 @@
   <div class="article-layout">
 
     
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
 
     
     <div class="article-center">
@@ -111,18 +138,18 @@
           <a href="/blueprints/">Blueprints and Blueprint Books</a>
           
           <span class="breadcrumb-sep">&rsaquo;</span>
-          <span class="breadcrumb-current">Circuit Network Beginner Guide</span>
+          <span class="breadcrumb-current">Factorio Circuit Network Guide - Wires, Combinators and SR Latch</span>
         </nav>
 
-        <p>Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up — and nobody noticed for three hours. The fix isn't more storage tanks. It's a single red wire, a decider combinator, and 30 seconds of configuration.</p>
-<div class="pro-tip"><strong>TL;DR:</strong> Connect a storage tank to a pump with red wire. Decider combinator: petroleum &gt; 20000 → output P = 1. Connect to pump. Done — automated cracking solves 90% of your fluid problems.</div>
+        <p>Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up -- and nobody noticed for three hours. The fix isn't more storage tanks. It's a single red wire, a decider combinator, and 30 seconds of configuration.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Connect a storage tank to a pump with red wire. Decider combinator: petroleum &gt; 20000 → output P = 1. Connect to pump. Done -- automated cracking solves 90% of your fluid problems.</div>
 
-<h2 id="the-root-cause--why-fluids-stall-without-circuits">The Root Cause — Why Fluids Stall Without Circuits</h2>
+<h2 id="the-root-cause----why-fluids-stall-without-circuits">The Root Cause -- Why Fluids Stall Without Circuits</h2>
 <p>Refineries produce heavy oil, light oil, and petroleum simultaneously. If any of the three outputs fills up, the refinery stops all production. No petroleum means no plastic. No plastic means no red circuits. No red circuits means your entire factory crawls to a halt.</p>
 <p>The solution is circuit-controlled cracking: convert excess heavy to light, excess light to petroleum. Three pumps, three decider combinators, zero deadlocks.</p>
-<h2 id="how-to-solve-it-properly--three-patterns-that-handle-everything">How to Solve It Properly — Three Patterns That Handle Everything</h2>
+<h2 id="how-to-solve-it-properly----three-patterns-that-handle-everything">How to Solve It Properly -- Three Patterns That Handle Everything</h2>
 <p>You only need three circuit patterns. Everything else is a variation.</p>
-<p><strong>Pattern 1 — Fluid cracking automation.</strong> This is the one that fixes refinery deadlocks.</p>
+<p><strong>Pattern 1 -- Fluid cracking automation.</strong> This is the one that fixes refinery deadlocks.</p>
 <p>What you need: red wire, decider combinator, pump per fluid type.</p>
 <ol>
 <li>Run red wire from a heavy oil tank to a decider combinator</li>
@@ -132,7 +159,7 @@
 <li>Skip petroleum → solid fuel. Petroleum backs up? Crack less. This handles itself.</li>
 </ol>
 <p>A red wire carries signal. A green wire is a separate network. If one wire shorts it doesn't corrupt the other. Convention: red for production, green for train control.</p>
-<p><strong>Pattern 2 — SR latch for power control.</strong> Insert fuel cells only when steam tanks are low.</p>
+<p><strong>Pattern 2 -- SR latch for power control.</strong> Insert fuel cells only when steam tanks are low.</p>
 <ul>
 <li>Wire all steam tanks to a decider combinator</li>
 <li>Set: steam &lt; 10000 → output S = 1 (set condition)</li>
@@ -141,7 +168,7 @@
 <li>Output drives the fuel inserter</li>
 </ul>
 <p>Result: fuel insertion only triggers when steam drops below threshold, stops when full. Cuts fuel consumption by 50-80%.</p>
-<p><strong>Pattern 3 — Belt item counting for balanced output.</strong></p>
+<p><strong>Pattern 3 -- Belt item counting for balanced output.</strong></p>
 <ul>
 <li>Place a red wire on a belt segment with read-hold mode</li>
 <li>Wire to an arithmetic combinator: each * -1 → each</li>
@@ -152,24 +179,56 @@
 <div class="pro-tip"><strong>Quick Tip:</strong> Constant combinators let you set fixed values. Use them as lookup tables: wire a constant with &quot;iron_plate = 500&quot; to a requester chest, and bots maintain exactly 500 iron plates in that chest. No fiddling with stack limits.</div>
 
 <h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
-<p><strong>Wire colors aren't decorative.</strong> Red and green are electrically isolated networks. If you run both on the same pole, they stay separate — the pole carries them as independent signals. This is useful: run red for level sensors and green for demand signals on the same power pole.</p>
+<p><strong>Wire colors aren't decorative.</strong> Red and green are electrically isolated networks. If you run both on the same pole, they stay separate -- the pole carries them as independent signals. This is useful: run red for level sensors and green for demand signals on the same power pole.</p>
 <p><strong>Output not connected.</strong> The most common bug: the combinator is configured correctly but its output port is unconnected. The output is on the right side of the combinator (small triangle), input on the left.</p>
-<p><strong>Everything on one wire.</strong> A single circuit network can carry every item signal simultaneously — each item type is a separate channel. A belt full of 20 item types produces 20 independent signals on one wire, not interference.</p>
-<h2 id="pushing-it-further--circuit-networks-at-megabase-scale">Pushing It Further — Circuit Networks at Megabase Scale</h2>
+<p><strong>Everything on one wire.</strong> A single circuit network can carry every item signal simultaneously -- each item type is a separate channel. A belt full of 20 item types produces 20 independent signals on one wire, not interference.</p>
+<h2 id="pushing-it-further----circuit-networks-at-megabase-scale">Pushing It Further -- Circuit Networks at Megabase Scale</h2>
 <p>Once you've mastered the three patterns, circuit networks scale to:</p>
 <ul>
-<li><strong>Train station limits</strong> — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed.</li>
-<li><strong>Solar accumulator ratios</strong> — circuit-controlled power switch that disconnects accumulators from the grid at a set charge level.</li>
-<li><strong>Kovarex smart centrifuge</strong> — only output U-235 when you have enough to sustain the reactor block.</li>
-<li><strong>Mall demand system</strong> — wire requester chests to constant combinators. Set chest to request exact counts. Bots deliver only what's needed.</li>
+<li><strong>Train station limits</strong> -- wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed.</li>
+<li><strong>Solar accumulator ratios</strong> -- circuit-controlled power switch that disconnects accumulators from the grid at a set charge level.</li>
+<li><strong>Kovarex smart centrifuge</strong> -- only output U-235 when you have enough to sustain the reactor block.</li>
+<li><strong>Mall demand system</strong> -- wire requester chests to constant combinators. Set chest to request exact counts. Bots deliver only what's needed.</li>
 </ul>
 <hr>
+<p>I taught myself circuits by building an oil cracking controller -- it's still the best learning project for beginners. Start with one decider and one pump.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: center">Input</th>
+          <th style="text-align: center">Output</th>
+          <th style="text-align: left">Best for</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Decider combinator</td>
+          <td style="text-align: center">Any signal</td>
+          <td style="text-align: center">Yes/no decision</td>
+          <td style="text-align: left">Oil cracking control</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Arithmetic combinator</td>
+          <td style="text-align: center">Number</td>
+          <td style="text-align: center">Result</td>
+          <td style="text-align: left">Belt throughput monitoring</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Constant combinator</td>
+          <td style="text-align: center">Manual</td>
+          <td style="text-align: center">Fixed values</td>
+          <td style="text-align: left">Reference signals</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
 <ul>
-<li><a href="https://wiki.factorio.com/Circuit_network">Official Factorio Wiki — Circuit Network</a> — complete combinator reference with all signal types</li>
-<li><a href="https://www.reddit.com/r/factorio/">Reddit r/factorio — Circuit Tutorials</a> — community blueprints for advanced contraptions</li>
-<li><a href="https://factorioprints.com/">Factorio Blueprint Library</a> — ready-to-use SR latch and fluid control blueprints</li>
+<li><a href="https://wiki.factorio.com/Circuit_network">Official Factorio Wiki -- Circuit Network</a> -- complete combinator reference with all signal types</li>
+<li><a href="https://www.reddit.com/r/factorio/">Reddit r/factorio -- Circuit Tutorials</a> -- community blueprints for advanced contraptions</li>
+<li><a href="https://factorioprints.com/">Factorio Blueprint Library</a> -- ready-to-use SR latch and fluid control blueprints</li>
 </ul>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/blueprints/how-to-use-blueprints/">How to Use Blueprints</a> | <a href="https://factorioguides.com/blueprints/ltn-mod-guide/">LTN Mod Guide</a></p>
 
 
         
@@ -197,12 +256,12 @@
               <div class="related-icon">
                 <svg viewBox="0 0 32 32" width="32" height="32">
                   <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
-                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">L</text>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
                 </svg>
               </div>
               <div class="related-body">
-                <h4>LTN —Logistic Train Network Setup</h4>
-                <p>LTN guide for Factorio. Logistic Train Network mod setup, provider and requester stops, depot configuration, and the 3-stop system that automates your rail logistics.</p>
+                <h4>Factorio LTN Mod Guide (Logistic Train Network)</h4>
+                <p>How to use the Logistic Train Network (LTN) mod for Factorio: setup, depot design, station naming, requester/provider stations, and common LTN circuit configurations.</p>
               </div>
             </a>
             
@@ -214,8 +273,8 @@
                 </svg>
               </div>
               <div class="related-body">
-                <h4>How to Use Blueprints — Complete Guide</h4>
-                <p>How to copy, import, export, and organize blueprints in Factorio. Includes blueprint string tutorial.</p>
+                <h4>How to Use Blueprints in Factorio - Complete Guide</h4>
+                <p>How to copy, import, export, and organize blueprints in Factorio. Includes blueprint string tutorial, blueprint library, and how to use community blueprints.</p>
               </div>
             </a>
             
@@ -223,10 +282,26 @@
         </div>
         
         
+
+        
+        
+
       </div>
     </div>
 
     
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
 
   </div>
 </div>

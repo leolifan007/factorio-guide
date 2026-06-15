@@ -6,14 +6,14 @@
     <description>Recent content in Vulcanus on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 13:49:00 +0800</lastBuildDate>
     <atom:link href="https://factorioguides.com/tags/vulcanus/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vulcanus —The Volcanic Planet Foundry Guide</title>
+      <title>Factorio Vulcanus Guide - Space Age Planet Strategy</title>
       <link>https://factorioguides.com/space-age/vulcanus-guide/</link>
-      <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
       <guid>https://factorioguides.com/space-age/vulcanus-guide/</guid>
-      <description>&lt;p&gt;Vulcanus is a volcanic wasteland where normal smelting doesn&#39;t work. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/steel_furnace.png&#34; alt=&#34;steel_furnace&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Steel&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; Stone furnaces and &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/steel_furnace.png&#34; alt=&#34;steel_furnace&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Steel&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; steel furnaces are useless here. The foundry is your only path to metal.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Foundries smelt ore using calcite (from volcanic ash recycling). Vulcanus yields tungsten carbide, the key to Productivity Module 4. Import everything else —Vulcanus is a specialized mining world.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/foundry-cycle.svg&#34; alt=&#34;Vulcanus foundry system —ore processing, ash recycling loop, and tungsten carbide production&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-foundry-system&#34;&gt;The Foundry System&lt;/h2&gt;&#xA;&lt;p&gt;Foundries replace furnaces on Vulcanus. They require three inputs: ore, calcite, and fuel.&lt;/p&gt;</description>
+      <description>&lt;p&gt;You land on Vulcanus and there are no ore patches. Just lava, cliffs, and demolisher worms that eat your buildings. I spent my first landing trying to build a furnace array before realizing Vulcanus doesn&#39;t need furnaces -- it uses foundries that cast molten metal directly. Here&#39;s how I set up iron and copper production from lava that never runs out.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Pump lava &amp;gt; Foundry &amp;gt; Cast iron/copper directly. Calcite is the only limiting resource (mine it and ship from orbit). Two pumps of lava + one strip of calcite belt = enough iron and copper for 60 SPM. Build underground from the lava edges and use elevated rails to cross worm territories. Dump stone from iron casting into the lava to clear your belts.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;what-makes-vulcanus-different&#34;&gt;What Makes Vulcanus Different&lt;/h2&gt;&#xA;&lt;p&gt;Vulcanus has infinite base resources. Lava wells never run dry. Calcite is finite but 5 rich patches last for hundreds of hours. There are no biters -- the threat is demolisher worms protecting resource-rich areas.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

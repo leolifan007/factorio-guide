@@ -126,7 +126,7 @@
   <line x1="966" y1="204" x2="966" y2="274" stroke="#5599ee" stroke-width="2.5"/>
   <circle cx="966" cy="260" r="3" fill="#5599ee"/>
 
-  <!-- ===== CONSUMERS: Crackers & Production ===== -->
+  <!-- ===== CONSUMERS: Crackers &amp; Production ===== -->
   <rect x="40" y="310" width="1020" height="30" rx="4" fill="#151515" stroke="#333" stroke-width="1"/>
   <text x="550" y="329" text-anchor="middle" font-size="12" font-weight="600" fill="#888">DOWNSTREAM CONSUMERS</text>
 

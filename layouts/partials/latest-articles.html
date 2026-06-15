@@ -22,7 +22,7 @@
   {{- $color := index $colors $section | default (dict "tag" "" "thumb" "#2a2a2a,#3d3d20") }}
   {{- $daysOld := div (sub now.Unix $page.Date.Unix) 86400 }}
   <a href="{{ $page.RelPermalink }}" class="guide-card"{{ if eq $section "space-age" }} style="position:relative;"{{ end }}>
-    {{- if lt $daysOld 14 }}
+    {{- if lt $daysOld 10 }}
     <span class="guide-card-new-badge">NEW</span>
     {{- end }}
     {{- if eq $section "space-age" }}

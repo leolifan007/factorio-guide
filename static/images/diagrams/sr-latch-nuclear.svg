@@ -28,7 +28,7 @@
   <text x="492" y="110" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Memory Latch</text>
   <text x="492" y="130" fill="#3778c8" font-size="12" text-anchor="middle">S > R, output S</text>
 
-  <!-- Output & feedback loop -->
+  <!-- Output &amp; feedback loop -->
   <line x1="562" y1="112" x2="610" y2="112" stroke="#c9463d" stroke-width="2.5"/>
   <!-- Feedback loop: output loops back to input -->
   <path d="M610,112 Q640,112 640,155 Q640,198 492,198" fill="none" stroke="#c9463d" stroke-width="2" stroke-dasharray="5,3"/>

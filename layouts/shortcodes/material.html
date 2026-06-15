@@ -1,9 +1,8 @@
 {{- $name := .Get 0 | default "" | lower -}}
 {{- $qty := .Get 1 | default "" -}}
-{{- $result := .Get "result" | default false -}}
-{{- $class := cond $result " result" "" -}}
 {{- $label := $name | humanize | truncate 12 "" -}}
-<span class="game-slot-inline{{ $class }}">
-  {{- with $qty }}<span class="game-qty">{{ . }}</span>{{ end -}}
-  <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="game-icon-inline" title="{{ $label }}" loading="lazy">
+<span class="mat-card">
+  {{- with $qty }}<span class="mat-qty">{{ . }}</span>{{ end -}}
+  <img src="{{ printf "images/icon/%s.png" $name | relURL }}" alt="{{ $name }}" class="mat-card-img" title="{{ $label }}" loading="lazy">
+  <span class="mat-name">{{ $label }}</span>
 </span>

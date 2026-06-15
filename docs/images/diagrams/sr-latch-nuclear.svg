@@ -1,57 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" style="background:#111;font-family:system-ui,sans-serif;">
   <text x="400" y="35" fill="#e8941c" font-size="18" text-anchor="middle" font-weight="bold">SR Latch for Nuclear Power</text>
 
-  
-  <rect x="25" y="75" width="130" height="70" rx="6" fill="#252525" stroke="#888" stroke-width="2.5" />
+  <!-- Steam Tank -->
+  <rect x="25" y="75" width="130" height="70" rx="6" fill="#252525" stroke="#888" stroke-width="2.5"/>
   <text x="90" y="104" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Steam Tank</text>
-  <text x="90" y="126" fill="#888" font-size="13" text-anchor="middle">steam: 10k</text>
+  <text x="90" y="126" fill="#888" font-size="12" text-anchor="middle">steam: 10k</text>
 
-  
-  <line x1="155" y1="100" x2="220" y2="85" stroke="#c9463d" stroke-width="2.5" />
-  
-  <line x1="155" y1="130" x2="220" y2="145" stroke="#6abe30" stroke-width="2.5" />
+  <!-- Red wire to S -->
+  <line x1="155" y1="100" x2="220" y2="85" stroke="#c9463d" stroke-width="2.5"/>
+  <!-- Green wire to R -->
+  <line x1="155" y1="130" x2="220" y2="145" stroke="#6abe30" stroke-width="2.5"/>
 
-  
-  <rect x="222" y="62" width="140" height="50" rx="5" fill="#252525" stroke="#6abe30" stroke-width="2" />
+  <!-- S Decider -->
+  <rect x="222" y="62" width="140" height="50" rx="5" fill="#252525" stroke="#6abe30" stroke-width="2"/>
   <text x="292" y="87" fill="#6abe30" font-size="13" text-anchor="middle" font-weight="bold">S: steam &lt; 10k</text>
 
-  
-  <rect x="222" y="128" width="140" height="50" rx="5" fill="#252525" stroke="#6abe30" stroke-width="2" />
+  <!-- R Decider -->
+  <rect x="222" y="128" width="140" height="50" rx="5" fill="#252525" stroke="#6abe30" stroke-width="2"/>
   <text x="292" y="153" fill="#6abe30" font-size="13" text-anchor="middle" font-weight="bold">R: steam &gt; 24k</text>
 
-  
-  <line x1="362" y1="87" x2="420" y2="105" stroke="#c9463d" stroke-width="2.5" />
-  <line x1="362" y1="153" x2="420" y2="145" stroke="#6abe30" stroke-width="2.5" />
+  <!-- Wires from S/R to Memory -->
+  <line x1="362" y1="87" x2="420" y2="105" stroke="#c9463d" stroke-width="2.5"/>
+  <line x1="362" y1="153" x2="420" y2="145" stroke="#6abe30" stroke-width="2.5"/>
 
-  
-  <rect x="422" y="82" width="140" height="60" rx="5" fill="#252525" stroke="#3778c8" stroke-width="2" />
+  <!-- Memory Latch -->
+  <rect x="422" y="82" width="140" height="60" rx="5" fill="#252525" stroke="#3778c8" stroke-width="2"/>
   <text x="492" y="110" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Memory Latch</text>
-  <text x="492" y="130" fill="#3778c8" font-size="13" text-anchor="middle">S &gt; R, output S</text>
+  <text x="492" y="130" fill="#3778c8" font-size="12" text-anchor="middle">S > R, output S</text>
 
-  
-  <line x1="562" y1="112" x2="610" y2="112" stroke="#c9463d" stroke-width="2.5" />
-  
-  <path d="M610,112 Q640,112 640,155 Q640,198 492,198" fill="none" stroke="#c9463d" stroke-width="2" stroke-dasharray="5,3" />
-  <line x1="492" y1="198" x2="492" y2="142" stroke="#c9463d" stroke-width="2" />
+  <!-- Output &amp; feedback loop -->
+  <line x1="562" y1="112" x2="610" y2="112" stroke="#c9463d" stroke-width="2.5"/>
+  <!-- Feedback loop: output loops back to input -->
+  <path d="M610,112 Q640,112 640,155 Q640,198 492,198" fill="none" stroke="#c9463d" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="492" y1="198" x2="492" y2="142" stroke="#c9463d" stroke-width="2"/>
 
-  
-  <line x1="610" y1="112" x2="660" y2="112" stroke="#c9463d" stroke-width="2.5" />
+  <!-- Output to Inserter -->
+  <line x1="610" y1="112" x2="660" y2="112" stroke="#c9463d" stroke-width="2.5"/>
 
-  
-  <rect x="662" y="92" width="60" height="40" rx="4" fill="#252525" stroke="#888" stroke-width="2" />
+  <!-- Inserter -->
+  <rect x="662" y="92" width="60" height="40" rx="4" fill="#252525" stroke="#888" stroke-width="2"/>
   <text x="692" y="117" fill="#ccc" font-size="14" text-anchor="middle" font-weight="bold">Inserter</text>
 
-  
-  <path d="M80,300 Q110,280 140,300 Q170,320 200,300 Q230,280 260,300 Q290,280 320,300" fill="none" stroke="#3778c8" stroke-width="2.5" opacity="0.5" />
+  <!-- Annotation: Steam level chart -->
+  <path d="M80,300 Q110,280 140,300 Q170,320 200,300 Q230,280 260,300 Q290,280 320,300" fill="none" stroke="#3778c8" stroke-width="2.5" opacity="0.5"/>
   <text x="200" y="330" fill="#3778c8" font-size="13" text-anchor="middle">Steam level over time</text>
 
-  <line x1="80" y1="310" x2="80" y2="355" stroke="#3778c8" stroke-width="1.5" />
+  <line x1="80" y1="310" x2="80" y2="355" stroke="#3778c8" stroke-width="1.5"/>
   <text x="60" y="375" fill="#6abe30" font-size="13" text-anchor="end">10k</text>
 
-  <line x1="320" y1="310" x2="320" y2="355" stroke="#3778c8" stroke-width="1.5" />
+  <line x1="320" y1="310" x2="320" y2="355" stroke="#3778c8" stroke-width="1.5"/>
   <text x="360" y="375" fill="#6abe30" font-size="13" text-anchor="end">24k</text>
 
-  
-  <text x="530" y="365" fill="#c9463d" font-size="13" text-anchor="middle">Set at 10k → fuel inserted</text>
-  <text x="530" y="385" fill="#555" font-size="13" text-anchor="middle">Reset at 24k → stops</text>
+  <!-- Legend -->
+  <text x="530" y="365" fill="#c9463d" font-size="12" text-anchor="middle">Set at 10k → fuel inserted</text>
+  <text x="530" y="385" fill="#555" font-size="12" text-anchor="middle">Reset at 24k → stops</text>
 </svg>

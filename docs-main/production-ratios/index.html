@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exact production ratios for every item in Factorio. Furnace ratios, circuit ratios, science ratios — optimized for any factory scale.">
+  <title>Production Ratios — Factorio Ratio Reference | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/production-ratios/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Production Ratios — Factorio Ratio Reference">
+  <meta property="og:description" content="Exact production ratios for every item in Factorio. Furnace ratios, circuit ratios, science ratios — optimized for any factory scale.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://factorioguides.com/production-ratios/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Production Ratios — Factorio Ratio Reference</h1><p class="article-desc">Exact production ratios for every item in Factorio. Furnace ratios, circuit ratios, science ratios — optimized for any factory scale.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          4 articles
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          Section
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section-layout">
+
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Production Ratios — Factorio Ratio Reference</div>
+      <div class="section-nav-list">
+        
+        <a href="#overview" class="section-nav-item" data-url="overview" data-target="overview">
+          <span class="section-nav-name">About this section</span>
+        </a>
+
+        
+        
+        <a href="/production-ratios/kovarex-enrichment-guide/" class="section-nav-item" data-url="/production-ratios/kovarex-enrichment-guide/" data-target="article">
+          <span class="section-nav-name">Kovarex Enrichment 鈥?Uranium Processing Loop</span>
+          <span class="section-nav-badge">LATEST</span>
+        </a>
+        
+        <a href="/production-ratios/beacon-module-guide/" class="section-nav-item" data-url="/production-ratios/beacon-module-guide/" data-target="article">
+          <span class="section-nav-name">Beacon and Module Layout 鈥?8-Beacon Setup</span>
+          <span class="section-nav-badge">NEW</span>
+        </a>
+        
+        <a href="/production-ratios/oil-processing-guide/" class="section-nav-item" data-url="/production-ratios/oil-processing-guide/" data-target="article">
+          <span class="section-nav-name">Oil Processing — Ratios, Cracking, and Refinery Setup</span>
+          
+        </a>
+        
+        <a href="/production-ratios/smelting-ratios/" class="section-nav-item" data-url="/production-ratios/smelting-ratios/" data-target="article">
+          <span class="section-nav-name">Smelting Ratios — How Many Furnaces Per Belt</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content"><h2 id="production-ratios">Production Ratios</h2>
+<p>The <strong>Production Ratios</strong> section is your reference guide for Factorio's math. Every recipe has a precise input/output ratio. Understanding these ratios lets you build factories that run at exactly the throughput you need — no overproduction, no starvation.</p>
+<hr>
+<h2 id="why-ratios-matter">Why Ratios Matter</h2>
+<p>Factorio's production chain is a system of ratios. If assemblers run faster than their upstream suppliers, they starve. If they run slower, you waste potential.</p>
+<p>For example: <strong>1 Green Circuit</strong> requires <strong>3 Iron Plates + 2 Copper Cable</strong> (made from 1 Copper Plate). If your iron supply is 60 items/min but your copper output is only enough for 30 items/min, green circuit production caps at copper throughput.</p>
+<p>Knowing ratios lets you <strong>balance your factory on paper before you build it</strong>.</p>
+<hr>
+<h2 id="core-smelting-ratios">Core Smelting Ratios</h2>
+<h3 id="furnace-ratio">Furnace Ratio</h3>
+<p>Stone furnace vs. steel furnace, ore to plate conversion rate:</p>
+<ul>
+<li><strong>1 Stone Furnace</strong> smelts ore at 0.3125 plates/second</li>
+<li><strong>1 Steel Furnace</strong> smelts ore at 0.5 plates/second (60% faster)</li>
+<li><strong>1 Electric Furnace</strong> smelts ore at 0.5 plates/second (same speed, no fuel needed)</li>
+</ul>
+<h3 id="steel-ratio">Steel Ratio</h3>
+<ul>
+<li><strong>1 Steel Plate</strong> requires <strong>5 Iron Plates</strong></li>
+<li><strong>Ratio:</strong> For every 1 steel plate/second, you need 5 iron plates/second dedicated to steel.</li>
+</ul>
+<hr>
+<h2 id="circuit-ratios">Circuit Ratios</h2>
+<h3 id="copper-cable-ratio">Copper Cable Ratio</h3>
+<ul>
+<li><strong>1 Copper Plate</strong> makes <strong>2 Copper Cable</strong></li>
+<li><strong>1 Electronic Circuit</strong> requires <strong>2 Copper Cable</strong></li>
+<li><strong>Net:</strong> 1 copper plate feeds 1 green circuit assembler</li>
+</ul>
+<h3 id="green-circuit-ratio">Green Circuit Ratio</h3>
+<ul>
+<li><strong>1 Electronic Circuit</strong> = 3 Iron Plates + 2 Copper Cable</li>
+<li>The 2 copper cables come from 1 copper plate</li>
+<li><strong>Standard ratio:</strong> 3 green circuit assemblers need ~1.5 belts of iron and ~1 belt of copper supply</li>
+</ul>
+<h3 id="red-circuit-ratio-advanced-circuit">Red Circuit Ratio (Advanced Circuit)</h3>
+<ul>
+<li><strong>1 Advanced Circuit</strong> = 2 Electronic Circuits + 2 Copper Cable + 1 Plastic Bar</li>
+<li><strong>Supply chain:</strong> 3 red circuit assemblers consume roughly 1 full belt of green circuits</li>
+</ul>
+<h3 id="blue-circuit-ratio-processing-unit">Blue Circuit Ratio (Processing Unit)</h3>
+<ul>
+<li><strong>1 Processing Unit</strong> = 2 Advanced Circuits + 20 Electronic Circuits</li>
+<li><strong>Total raw:</strong> 1 blue circuit needs ~40 iron plates + ~30 copper plates worth of intermediates</li>
+<li>Very high demand — always build dedicated blue circuit sub-factories</li>
+</ul>
+<hr>
+<h2 id="science-pack-ratios">Science Pack Ratios</h2>
+<h3 id="red-science-ratio">Red Science Ratio</h3>
+<ul>
+<li>1 Iron Gear + 1 Copper Plate → 1 Red Science Pack</li>
+<li>5 assemblers = ~1 red science per second</li>
+</ul>
+<h3 id="green-science-ratio">Green Science Ratio</h3>
+<ul>
+<li>1 Inserter + 1 Transport Belt → 1 Green Science Pack</li>
+<li>1 inserter assembler feeds ~12 science assemblers; 1 belt assembler feeds ~24</li>
+</ul>
+<h3 id="blue-science-ratio">Blue Science Ratio</h3>
+<ul>
+<li>1 Advanced Circuit + 1 Engine Unit → 1 Blue Science Pack</li>
+<li><strong>Bottleneck:</strong> Engine unit production (needs steel + pipes + gears)</li>
+</ul>
+<hr>
+<h2 id="module--beacon-ratios">Module &amp; Beacon Ratios</h2>
+<h3 id="speed-module-effect">Speed Module Effect</h3>
+<p>Speed modules increase assembler speed multiplicatively:</p>
+<ul>
+<li><strong>Speed Module 1:</strong> +20% speed per module</li>
+<li>With 8 speed beacons (Speed 3): assembler runs at ~700% base speed</li>
+</ul>
+<h3 id="productivity-module-effect">Productivity Module Effect</h3>
+<p>Productivity modules reduce total raw material cost:</p>
+<ul>
+<li><strong>Productivity Module 3:</strong> +10% productivity per module</li>
+<li><strong>Critical for:</strong> Rocket parts, blue circuits, science packs with high intermediate costs</li>
+</ul>
+<h3 id="beacon-density-20-update">Beacon Density (2.0 update)</h3>
+<p>In Factorio 2.0, the maximum beacons affecting a single machine is reduced compared to 1.1. Plan for <strong>6-8 beacons</strong> per machine for late-game layouts, not the old 12-beacon standard.</p>
+<hr>
+<h2 id="quick-reference-table">Quick Reference Table</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Recipe</th>
+          <th>Key Ratio</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron Plate</td>
+          <td>1 Iron Ore</td>
+          <td>1:1</td>
+      </tr>
+      <tr>
+          <td>Copper Plate</td>
+          <td>1 Copper Ore</td>
+          <td>1:1</td>
+      </tr>
+      <tr>
+          <td>Steel Plate</td>
+          <td>5 Iron Plate</td>
+          <td>5:1</td>
+      </tr>
+      <tr>
+          <td>Copper Cable</td>
+          <td>1 Copper Plate</td>
+          <td>2:1</td>
+      </tr>
+      <tr>
+          <td>Green Circuit</td>
+          <td>3 Iron + 2 Copper Cable</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Red Circuit</td>
+          <td>2 Green + 2 Cable + 1 Plastic</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Blue Circuit</td>
+          <td>2 Red + 20 Green</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Engine Unit</td>
+          <td>1 Steel + 1 Iron Gear + 1 Pipe</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Battery</td>
+          <td>1 Sulfuric Acid + 1 Iron Plate</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Low Density Structure</td>
+          <td>1 Steel + 2 Copper Plate</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="related-sections">Related Sections</h2>
+<ul>
+<li><strong><a href="/getting-started/">Getting Started</a></strong> — Use these ratios in context</li>
+<li><strong><a href="/base-design/">Base Design</a></strong> — Layout your factory around these ratios</li>
+</ul>
+</div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+
+<script>
+(function() {
+  'use strict';
+
+  const nav = document.getElementById('sectionNav');
+  const contentInner = document.getElementById('sectionContentInner');
+  if (!nav || !contentInner) return;
+
+  const items = nav.querySelectorAll('.section-nav-item');
+  const overviewHtml = `\u003ch2 id=\u0022production-ratios\u0022\u003eProduction Ratios\u003c\/h2\u003e\n\u003cp\u003eThe \u003cstrong\u003eProduction Ratios\u003c\/strong\u003e section is your reference guide for Factorio\u0027s math. Every recipe has a precise input\/output ratio. Understanding these ratios lets you build factories that run at exactly the throughput you need — no overproduction, no starvation.\u003c\/p\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022why-ratios-matter\u0022\u003eWhy Ratios Matter\u003c\/h2\u003e\n\u003cp\u003eFactorio\u0027s production chain is a system of ratios. If assemblers run faster than their upstream suppliers, they starve. If they run slower, you waste potential.\u003c\/p\u003e\n\u003cp\u003eFor example: \u003cstrong\u003e1 Green Circuit\u003c\/strong\u003e requires \u003cstrong\u003e3 Iron Plates \u002b 2 Copper Cable\u003c\/strong\u003e (made from 1 Copper Plate). If your iron supply is 60 items\/min but your copper output is only enough for 30 items\/min, green circuit production caps at copper throughput.\u003c\/p\u003e\n\u003cp\u003eKnowing ratios lets you \u003cstrong\u003ebalance your factory on paper before you build it\u003c\/strong\u003e.\u003c\/p\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022core-smelting-ratios\u0022\u003eCore Smelting Ratios\u003c\/h2\u003e\n\u003ch3 id=\u0022furnace-ratio\u0022\u003eFurnace Ratio\u003c\/h3\u003e\n\u003cp\u003eStone furnace vs. steel furnace, ore to plate conversion rate:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Stone Furnace\u003c\/strong\u003e smelts ore at 0.3125 plates\/second\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e1 Steel Furnace\u003c\/strong\u003e smelts ore at 0.5 plates\/second (60% faster)\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e1 Electric Furnace\u003c\/strong\u003e smelts ore at 0.5 plates\/second (same speed, no fuel needed)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022steel-ratio\u0022\u003eSteel Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Steel Plate\u003c\/strong\u003e requires \u003cstrong\u003e5 Iron Plates\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eRatio:\u003c\/strong\u003e For every 1 steel plate\/second, you need 5 iron plates\/second dedicated to steel.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022circuit-ratios\u0022\u003eCircuit Ratios\u003c\/h2\u003e\n\u003ch3 id=\u0022copper-cable-ratio\u0022\u003eCopper Cable Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Copper Plate\u003c\/strong\u003e makes \u003cstrong\u003e2 Copper Cable\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e1 Electronic Circuit\u003c\/strong\u003e requires \u003cstrong\u003e2 Copper Cable\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eNet:\u003c\/strong\u003e 1 copper plate feeds 1 green circuit assembler\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022green-circuit-ratio\u0022\u003eGreen Circuit Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Electronic Circuit\u003c\/strong\u003e = 3 Iron Plates \u002b 2 Copper Cable\u003c\/li\u003e\n\u003cli\u003eThe 2 copper cables come from 1 copper plate\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eStandard ratio:\u003c\/strong\u003e 3 green circuit assemblers need ~1.5 belts of iron and ~1 belt of copper supply\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022red-circuit-ratio-advanced-circuit\u0022\u003eRed Circuit Ratio (Advanced Circuit)\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Advanced Circuit\u003c\/strong\u003e = 2 Electronic Circuits \u002b 2 Copper Cable \u002b 1 Plastic Bar\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eSupply chain:\u003c\/strong\u003e 3 red circuit assemblers consume roughly 1 full belt of green circuits\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022blue-circuit-ratio-processing-unit\u0022\u003eBlue Circuit Ratio (Processing Unit)\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e1 Processing Unit\u003c\/strong\u003e = 2 Advanced Circuits \u002b 20 Electronic Circuits\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eTotal raw:\u003c\/strong\u003e 1 blue circuit needs ~40 iron plates \u002b ~30 copper plates worth of intermediates\u003c\/li\u003e\n\u003cli\u003eVery high demand — always build dedicated blue circuit sub-factories\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022science-pack-ratios\u0022\u003eScience Pack Ratios\u003c\/h2\u003e\n\u003ch3 id=\u0022red-science-ratio\u0022\u003eRed Science Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e1 Iron Gear \u002b 1 Copper Plate → 1 Red Science Pack\u003c\/li\u003e\n\u003cli\u003e5 assemblers = ~1 red science per second\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022green-science-ratio\u0022\u003eGreen Science Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e1 Inserter \u002b 1 Transport Belt → 1 Green Science Pack\u003c\/li\u003e\n\u003cli\u003e1 inserter assembler feeds ~12 science assemblers; 1 belt assembler feeds ~24\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022blue-science-ratio\u0022\u003eBlue Science Ratio\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e1 Advanced Circuit \u002b 1 Engine Unit → 1 Blue Science Pack\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eBottleneck:\u003c\/strong\u003e Engine unit production (needs steel \u002b pipes \u002b gears)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022module--beacon-ratios\u0022\u003eModule \u0026amp; Beacon Ratios\u003c\/h2\u003e\n\u003ch3 id=\u0022speed-module-effect\u0022\u003eSpeed Module Effect\u003c\/h3\u003e\n\u003cp\u003eSpeed modules increase assembler speed multiplicatively:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eSpeed Module 1:\u003c\/strong\u003e \u002b20% speed per module\u003c\/li\u003e\n\u003cli\u003eWith 8 speed beacons (Speed 3): assembler runs at ~700% base speed\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022productivity-module-effect\u0022\u003eProductivity Module Effect\u003c\/h3\u003e\n\u003cp\u003eProductivity modules reduce total raw material cost:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eProductivity Module 3:\u003c\/strong\u003e \u002b10% productivity per module\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eCritical for:\u003c\/strong\u003e Rocket parts, blue circuits, science packs with high intermediate costs\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022beacon-density-20-update\u0022\u003eBeacon Density (2.0 update)\u003c\/h3\u003e\n\u003cp\u003eIn Factorio 2.0, the maximum beacons affecting a single machine is reduced compared to 1.1. Plan for \u003cstrong\u003e6-8 beacons\u003c\/strong\u003e per machine for late-game layouts, not the old 12-beacon standard.\u003c\/p\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022quick-reference-table\u0022\u003eQuick Reference Table\u003c\/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth\u003eItem\u003c\/th\u003e\n          \u003cth\u003eRecipe\u003c\/th\u003e\n          \u003cth\u003eKey Ratio\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eIron Plate\u003c\/td\u003e\n          \u003ctd\u003e1 Iron Ore\u003c\/td\u003e\n          \u003ctd\u003e1:1\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eCopper Plate\u003c\/td\u003e\n          \u003ctd\u003e1 Copper Ore\u003c\/td\u003e\n          \u003ctd\u003e1:1\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eSteel Plate\u003c\/td\u003e\n          \u003ctd\u003e5 Iron Plate\u003c\/td\u003e\n          \u003ctd\u003e5:1\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eCopper Cable\u003c\/td\u003e\n          \u003ctd\u003e1 Copper Plate\u003c\/td\u003e\n          \u003ctd\u003e2:1\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eGreen Circuit\u003c\/td\u003e\n          \u003ctd\u003e3 Iron \u002b 2 Copper Cable\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eRed Circuit\u003c\/td\u003e\n          \u003ctd\u003e2 Green \u002b 2 Cable \u002b 1 Plastic\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eBlue Circuit\u003c\/td\u003e\n          \u003ctd\u003e2 Red \u002b 20 Green\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eEngine Unit\u003c\/td\u003e\n          \u003ctd\u003e1 Steel \u002b 1 Iron Gear \u002b 1 Pipe\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eBattery\u003c\/td\u003e\n          \u003ctd\u003e1 Sulfuric Acid \u002b 1 Iron Plate\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd\u003eLow Density Structure\u003c\/td\u003e\n          \u003ctd\u003e1 Steel \u002b 2 Copper Plate\u003c\/td\u003e\n          \u003ctd\u003e—\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022related-sections\u0022\u003eRelated Sections\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022\/getting-started\/\u0022\u003eGetting Started\u003c\/a\u003e\u003c\/strong\u003e — Use these ratios in context\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022\/base-design\/\u0022\u003eBase Design\u003c\/a\u003e\u003c\/strong\u003e — Layout your factory around these ratios\u003c\/li\u003e\n\u003c\/ul\u003e\n`;
+
+  function setActive(url) {
+    items.forEach(function(it) { it.classList.remove('is-active'); });
+    var active = nav.querySelector('[data-url="' + url + '"]');
+    if (active) active.classList.add('is-active');
+  }
+
+  function showLoading() {
+    contentInner.innerHTML = '<div class="section-loading"><div class="spinner"></div>Loading...</div>';
+  }
+
+  function loadOverview() {
+    setActive('overview');
+    contentInner.innerHTML = '<div class="article-content">' + overviewHtml + '</div>';
+    history.replaceState({ url: 'overview', title: 'Production Ratios — Factorio Ratio Reference' }, '', '#overview');
+  }
+
+  function loadArticle(url) {
+    showLoading();
+    fetch(url)
+      .then(function(r) { return r.text(); })
+      .then(function(html) {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var articleContent = doc.querySelector('.article-content');
+        var articleHero = doc.querySelector('.article-hero-content');
+
+        if (!articleContent) {
+          contentInner.innerHTML = '<div class="section-loading">Could not load article.</div>';
+          return;
+        }
+
+        
+        var output = '';
+        if (articleHero) {
+          output += '<div class="article-content-hero">' + articleHero.innerHTML + '</div>';
+        }
+        output += '<div class="article-content">' + articleContent.innerHTML + '</div>';
+
+        contentInner.innerHTML = output;
+        setActive(url);
+        history.replaceState({ url: url }, '', url);
+      })
+      .catch(function() {
+        contentInner.innerHTML = '<div class="section-loading">Failed to load article. Please try again.</div>';
+      });
+  }
+
+  
+  items.forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      var url = item.getAttribute('data-url');
+      var target = item.getAttribute('data-target') || 'article';
+      if (target === 'overview') {
+        loadOverview();
+      } else {
+        loadArticle(url);
+      }
+    });
+  });
+
+  
+  window.addEventListener('popstate', function(e) {
+    if (e.state && e.state.url) {
+      if (e.state.url === 'overview') {
+        loadOverview();
+      } else {
+        loadArticle(e.state.url);
+      }
+    }
+  });
+
+  
+  
+  var initialUrl = window.location.hash === '#overview' ? 'overview' : null;
+  if (!initialUrl && items.length > 1) {
+    
+    var first = items[1]; 
+    if (first) {
+      loadArticle(first.getAttribute('data-url'));
+      return;
+    }
+  }
+  loadOverview();
+})();
+</script>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

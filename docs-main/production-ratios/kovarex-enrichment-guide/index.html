@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem.">
+  <title>Kovarex Enrichment 鈥?Uranium Processing Loop | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/production-ratios/kovarex-enrichment-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Kovarex Enrichment 鈥?Uranium Processing Loop">
+  <meta property="og:description" content="Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/production-ratios/kovarex-enrichment-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Kovarex Enrichment 鈥?Uranium Processing Loop</h1><p class="article-desc">Kovarex enrichment guide for Factorio. The uranium processing loop that converts U-238 waste into U-235 fuel. Ratios, centrifuge placement, and the kickstart problem.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 23, 2026
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          3 min read
+        </span>
+        <span class="meta-item">
+          
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          
+          <a href="/production-ratios/">Production Ratios — Factorio Ratio Reference</a>
+          
+          <span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Kovarex Enrichment 鈥?Uranium Processing Loop</span>
+        </nav>
+
+        <p>Kovarex enrichment is the uranium processing upgrade that turns waste into fuel. Without it, <div class="game-slot"><img src="/images/icon/uranium_ore.png" alt="uranium_ore" class="game-img" loading="lazy">
+  <span class="game-name">Uranium ore</span>
+</div>
+ uranium ore yields mostly U-238 鈥?barely enough U-235 to keep a single reactor running.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Kovarex centrifuges convert 40 U-238 + 40 U-235 鈫?41 U-238 + 1 U-235. Net: -40 U-238, +1 U-235 per cycle. Build 3 centrifuges per reactor. Kickstart requires 40 U-235 accumulated first.</div>
+
+<img src="/images/diagrams/kovarex-loop.svg" alt="Kovarex enrichment loop 鈥?uranium ore processing, enrichment centrifuge, and fuel cell production" class="schema-diagram" loading="lazy" width="900">
+
+<h2 id="the-enrichment-loop">The Enrichment Loop</h2>
+<p>Kovarex centrifuges run a different recipe from standard uranium processing:</p>
+<p><strong>Input:</strong> 40 U-238 脳 2 slots + 40 U-235 脳 1 slot<br>
+<strong>Output:</strong> 41 U-238 + 1 U-235<br>
+<strong>Cycle time:</strong> ~60 seconds<br>
+<strong>Net result:</strong> -40 U-238, +1 U-235</p>
+<p>This turns your U-238 stockpile (the waste product) into additional U-235 (the fuel). A factory running Kovarex enrichment produces 10脳 more reactor fuel from the same ore.</p>
+<h2 id="the-kickstart-problem">The Kickstart Problem</h2>
+<p>Kovarex centrifuges need 40 U-235 to start. Standard uranium processing yields U-235 at 0.7% 鈥?roughly 1 per 143 ore processed.</p>
+<p><strong>The math:</strong> To get 40 U-235 from normal processing, you need ~5,700 uranium ore. At 1 ore/sec, that's 95 minutes of pure processing before your first Kovarex centrifuge can run.</p>
+<p><strong>Strategy:</strong> Build standard centrifuges first. Accumulate U-235. Only then add Kovarex centrifuges. Don't build them early 鈥?they'll sit idle.</p>
+<h2 id="the-golden-ratio">The Golden Ratio</h2>
+<p>Once running, Kovarex enrichment changes your factory ratios:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Reactors</th>
+          <th>Kovarex Centrifuges</th>
+          <th>Standard Centrifuges</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>2-3</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>6</td>
+          <td>4-5</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>12</td>
+          <td>8-10</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Why 3:1?</strong> One reactor consumes 1 U-235 every 200 seconds. One Kovarex centrifuge produces ~1 U-235 per 60 seconds. Three centrifuges = 3 U-235 per 60 seconds = 1 per 20 seconds = 10脳 reactor demand. The excess fuels expansion.</p>
+<h2 id="circuit-control-tips">Circuit Control Tips</h2>
+<p>Kovarex centrifuges should only run when you have excess U-238:</p>
+<ul>
+<li>Wire inserters to logistics network</li>
+<li>Enable when U-238 &gt; 500</li>
+<li>Disable when U-238 &lt; 200</li>
+</ul>
+<p>This prevents draining your U-238 buffer below fuel cell production needs.</p>
+<h2 id="what-veterans-learn-the-hard-way">What Veterans Learn the Hard Way</h2>
+<ul>
+<li><strong>Don't rush Kovarex</strong> 鈥?build it after you have 40+ U-235 stockpiled</li>
+<li><strong>Keep U-238 buffer</strong> 鈥?Kovarex drains it fast. 500+ minimum.</li>
+<li><strong>Prioritize fuel cells</strong> 鈥?Kovarex is bonus fuel, not primary. Fuel cells come first.</li>
+<li><strong>Expand centrifuges gradually</strong> 鈥?3 per reactor is plenty until you're running 4+ reactors</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Mistake</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Building Kovarex before 40 U-235</td>
+          <td>Centrifuges idle for hours</td>
+      </tr>
+      <tr>
+          <td>No U-238 buffer</td>
+          <td>Kovarex drains stockpile, fuel cell production stops</td>
+      </tr>
+      <tr>
+          <td>Too many Kovarex centrifuges</td>
+          <td>Wasted resources, idle machines</td>
+      </tr>
+      <tr>
+          <td>Ignoring circuit control</td>
+          <td>U-238 crashes during peak demand</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Kovarex enrichment is the uranium endgame. Accumulate 40 U-235 first, then build 3 centrifuges per reactor. Wire them to your logistics network. Turn U-238 waste into endless reactor fuel.</p>
+<hr>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/base-design/nuclear-power-guide/">Nuclear Power Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/production-ratios/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Production Ratios — Factorio Ratio Reference
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/production-ratios/beacon-module-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">B</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Beacon and Module Layout 鈥?8-Beacon Setup</h4>
+                <p>Beacon and module guide for Factorio. The 8-beacon layout that maximizes productivity and speed. Module combinations, power costs, and the math behind efficient factory design.</p>
+              </div>
+            </a>
+            
+            <a href="/production-ratios/oil-processing-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">O</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Oil Processing — Ratios, Cracking, and Refinery Setup</h4>
+                <p>Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
+              </div>
+            </a>
+            
+            <a href="/production-ratios/smelting-ratios/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Smelting Ratios — How Many Furnaces Per Belt</h4>
+                <p>Exact smelting ratios for iron, copper, steel, and stone. Never waste furnaces or belt capacity again.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

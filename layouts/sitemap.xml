@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range .Data.Pages }}
+  {{- $kind := .Kind }}
+  {{- /* Only include: regular articles (page) and the homepage (home) */ -}}
+  {{- /* Exclude: sections (_index), taxonomy (tags/categories), term (individual tag pages) */ -}}
+  {{- /* Also exclude pages marked sitemap_disable in front matter */ -}}
+  {{- $skip := or .Params.sitemap_disable (not .Permalink) -}}
+  {{- if and (not $skip) (or (eq $kind "page") (eq $kind "home")) -}}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>{{ end }}
+  </url>
+  {{- end -}}
+{{- end -}}
+</urlset>

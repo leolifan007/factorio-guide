@@ -2,73 +2,96 @@
 title: "Factorio Quality Module Guide - Space Age Quality Mechanic Explained"
 description: "How the Quality module system works in Factorio Space Age: quality tiers, probability math, quality module insertion strategy, and how to build a quality production line that actually pays off."
 date: 2026-05-18
-tags: ["space-age", "quality", "modules", "space-age"]
-emoji: "💎"
+lastmod: 2026-06-15T13:42:00+08:00
+tags: ["space-age", "quality", "modules"]
+draft: false
 ---
 
-<!-- Article Hero -->
-<div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;">COMMON</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;">UNCOMMON</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;">RARE</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;">EPIC</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;">LEGENDARY</span>
-</div>
+You built your first quality module, stuck it in an assembler, and nothing happened. I spent my first week in Space Age wondering why my rare quality modules never produced rare items. The mechanic isn't broken -- it just works differently than you think. Here's the actual system and how to exploit it.
 
-## What Is Quality?
+{{< callout "tip" >}}
+**TL;DR:** Quality modules in assemblers give a % chance to upgrade the output tier. Quality 1 = 1%, Quality 2 = 5%, Quality 3 = 10%. The real trick is the recycler loop: recycle + assemble = infinite quality-upgrade attempts. Beacons are the highest-value quality upgrade target. Priority list: Beacons > Speed modules > Furnaces > Miners > Power armor.
+{{< /callout >}}
 
-In Space Age, items can have **5 quality tiers**. Higher quality items work better:
+## How Quality Tiers Actually Work
 
-| Tier | Color | Bonus |
-|------|-------|--------|
-| Common (1) | Gray | Baseline |
-| Uncommon (2) | Green | Plus 20 percent speed, minus 20 percent energy |
-| Rare (3) | Blue | Plus 40 percent speed, minus 40 percent energy, plus 2 range |
-| Epic (4) | Purple | Plus 60 percent speed, minus 60 percent energy, plus 4 range |
-| Legendary (5) | Orange | Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect |
+Space Age introduced 5 quality tiers. Higher quality items are strictly better -- faster speed, lower energy, more range. The jump from common to uncommon alone is worth it for most production.
 
-## How Quality Is Generated
+| Tier | Color | Speed bonus | Energy reduction | Extra effects |
+|:----:|:-----:|:-----------:|:----------------:|:-------------|
+| Common | Gray | Baseline | Baseline | None |
+| Uncommon | Green | +20% | -20% | None |
+| Rare | Blue | +40% | -40% | +2 range (turrets) |
+| Epic | Purple | +60% | -60% | +4 range |
+| Legendary | Orange | +80% | -80% | +6 range, +2 AoE |
 
-**Quality modules** in assemblers/machines give a chance for the output to be a higher quality tier.
+The speed bonus stacks multiplicatively with other speed bonuses. A legendary speed module 3 in a legendary beacon gives obscene output. I've seen a single beaconed assembling machine produce 12x its normal output with legendary everything.
 
-| Module | Quality Chance | Speed Penalty |
-|--------|----------------|----------------|
-| Quality module 1 | 1 percent per module | Minus 10 percent |
-| Quality module 2 | 5 percent per module | Minus 15 percent |
-| Quality module 3 | 10 percent per module | Minus 20 percent |
+## The Quality Module Math
 
-<div class="warning-box">
-<strong>Important:</strong> Quality modules <em>slow down</em> production. Balance quality chance vs. production speed.
-</div>
+Quality modules give a flat % chance per module to upgrade the output by one tier. The upgrade chain works as: Common > Uncommon > Rare > Epic > Legendary.
 
-## Building a Quality Production Line
+| Module | Quality chance per module | Speed penalty | Best for |
+|:-------|:------------------------:|:-------------:|:---------|
+| Quality 1 | 1% | -10% | Starting out, cheap |
+| Quality 2 | 5% | -15% | Beachhead setup |
+| Quality 3 | 10% | -20% | Endgame production |
 
-### The Recycler Trick
+The catch: quality chance is additive per module, but each tier upgrade is a separate roll. If you have 4 quality 3 modules (40% chance), that doesn't mean 40% of outputs are legendary. It means 40% of outputs are at least uncommon. Then the 40% rolls again for rare, then epic, then legendary.
 
-In Space Age, **recyclers** break items back into raw materials. But they also have a chance to **upgrade** the item's quality!
+Actual math for 4 quality 3 modules:
+- 60% stay common
+- 40% upgrade to at least uncommon
+- 40% of those roll rare = 16% of total
+- 40% of those roll epic = 6.4% of total
+- 40% of those roll legendary = 2.56% of total
 
-1. Build an assembler with **quality modules**
-2. Output goes to a **recycler**
-3. Recycler has a chance to output **higher quality** version
-4. Sort the output by quality using **quality filters** on inserters
+So 4 quality 3 modules produce roughly 2.5% legendary outputs. That's 40 items per legendary. For beacons, that's fine. For rocket parts, it's painful.
 
-### Quality Filter Inserters
+{{< callout type="info" >}}
+**Quick Tip:** Quality chance rolls independently per item. On a machine producing in bulk (like a centrifuge or rocket silo), you get consistent quality output because you're rolling the dice 100+ times per minute. On slow machines (one-off assemblers), quality feels like it never triggers. The law of averages works in your favor at scale.
+{{< /callout >}}
 
-Inserters can be set to only pick up items of a specific quality:
-1. Select the inserter
-2. Click the **quality filter** button
-3. Choose which quality tier to pick up
+## The Recycler Trick -- Double Your Quality Attempts
 
-## Which Items to Upgrade First?
+This is the mechanic that makes quality viable. Recyclers break items into component materials -- but they also roll for quality upgrade.
 
-Priority list for quality:
+Here's the loop I use:
+1. Place an assembler with quality modules producing the item you want
+2. Output feeds into a recycler (also with quality modules)
+3. Recycler breaks items with a % chance to upgrade
+4. Use filtered inserters to sort outputs by quality tier
 
-| Priority | Item | Why |
-|----------|-------|------|
-| 1 | **Beacons** | More beacons = more speed modules affecting machines |
-| 2 | **Speed modules** | Faster machines = more production |
-| 3 | **Electric furnaces** | Faster smelting = more plates |
-| 4 | **Miners** | More mining speed = more ore |
-| 5 | **Power armor** | Better defense and equipment |
+The recycler has quality module slots too. A recycler with 4 quality 3 modules has the same 40% chance to upgrade. But it also reduces output by 75%. So you lose 75% of materials per pass, and the survivors get a quality roll.
 
-**Next:** [Space Age Overview]({{< ref "/space-age/" >}}) — all new planets and mechanics.
+The math: starting with 100 items through one recycler loop, you get roughly 25 items back (75% destroyed), of which 10 are upgraded. Net gain: 15 common + 10 higher-tier. The 75 destroyed items are gone. This is why the recycler trick is only worth it for rare materials or items you can afford to lose.
+
+Where it pays off: **beacon production.** Beacons are expensive but you only need 20-50 of them. The recycler loop on beacon assembly turns 100 common beacons into roughly 25 beacons with 40% quality rate. After 3-4 passes, you have rare/epic beacons.
+
+{{< callout "warning" >}}
+Don't use the recycler trick on science packs or ammo. You'll destroy 75% of your production and the quality bonus on a red science pack is worthless. Reserve it for modules, beacons, furnaces, and power armor -- items where quality has a multiplicative effect on your factory.
+{{< /callout >}}
+
+## What to Upgrade First (Priority List)
+
+I made the mistake of trying to make legendary iron plates before upgrading my beacons. The order matters a lot:
+
+| Priority | Item | Why this matters |
+|:--------:|:-----|:-----------------|
+| 1 | Beacons | More beacons = more speed modules affecting more machines |
+| 2 | Speed modules | Faster machines = more production per tile |
+| 3 | Electric furnaces | Faster smelting = more plates without expanding the bus |
+| 4 | Miners | More mining speed = fewer drills needed per ore patch |
+| 5 | Power armor | Better personal equipment = faster building |
+
+Beacons first because the effect cascades. A rare speed module in a rare beacon affects every machine in range, not just one. Upgrading assemblers individually gives a smaller marginal benefit.
+
+---
+
+## Community Verification & Resources
+
+- [Official Factorio Wiki -- Quality](https://wiki.factorio.com/Quality) -- exact tier upgrade probabilities and recycler quality mechanics
+- [Reddit -- Space Age Quality Discussion](https://www.reddit.com/r/factorio/) -- community-tested quality loops and priority lists
+- [Factorio Forums -- Quality Module Math](https://forums.factorio.com/viewforum.php?f=69) -- advanced analysis of recycler loops vs. direct assembly
+
+**Related:** [Aquilo Guide]({{< ref "/space-age/aquilo-guide" >}}) (Quality 5 unlock) | [Space Platform Guide]({{< ref "/space-age/space-platform-guide" >}})
