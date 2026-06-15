@@ -1,0 +1,158 @@
+{{ define "main" }}
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero-section">
+  <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Community Strategy Guide</div>
+    <h1>Factorio Guide</h1>
+    <span class="hero-tagline">Automate Everything. Launch the Rocket.</span>
+    <p class="hero-sub">
+      The definitive Factorio strategy hub. Production ratios, base layouts, train networks,
+      defense blueprints, Space Age expansion walkthroughs — all in one place.
+    </p>
+    <div class="hero-cta">
+      <a href="{{ `getting-started/` | relURL }}" class="btn btn-primary">Start Your Factory</a>
+      <a href="{{ `production-ratios/` | relURL }}" class="btn btn-secondary">Production Ratios</a>
+      <a href="{{ `space-age/` | relURL }}" class="hero-btn-space">&#128640; Explore Space Age</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ HOME CONTENT ═══════ -->
+<div class="home-content">
+
+  <!-- ── Trending / Featured Guides ── -->
+  <div class="section-header">
+    <span class="section-title-badge">
+      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
+      Featured Guides
+    </span>
+    <div class="section-line"></div>
+  </div>
+
+  {{ partial "latest-articles.html" . }}
+
+  <div class="latest-tips-btn">
+    <a href="{{ `space-age/` | relURL }}" class="btn btn-ghost">
+      <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
+      View Latest Tips
+    </a>
+  </div>
+  <!-- ── Browse by Topic ── -->
+  <div class="section-header">
+    <span class="section-title-badge">
+      <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+      Browse by Topic
+    </span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="topic-grid">
+    <a href="{{ `getting-started/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#e8941c,#f5aa2e);"></div>
+      <div class="topic-body">
+        <h3>Getting Started</h3>
+        <p>Beginner guide, first factory, science packs, mall design</p>
+        <span class="topic-count">2 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `science-packs/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#d7b940,#e8cc55);"></div>
+      <div class="topic-body">
+        <h3>Science Packs</h3>
+        <p>Red, green, blue, gray, purple, yellow, white science</p>
+        <span class="topic-count">2 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `production-ratios/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#6abe30,#8ad44a);"></div>
+      <div class="topic-body">
+        <h3>Production Ratios</h3>
+        <p>Furnace math, circuit ratios, beacon layouts, SPM</p>
+        <span class="topic-count">3 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `base-design/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#c9463d,#dd5550);"></div>
+      <div class="topic-body">
+        <h3>Base Design</h3>
+        <p>Main bus, city blocks, nuclear, megabase, UPS</p>
+        <span class="topic-count">1 Article</span>
+      </div>
+    </a>
+
+    <a href="{{ `trains-logistics/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#9d4edd,#b366ff);"></div>
+      <div class="topic-body">
+        <h3>Trains & Logistics</h3>
+        <p>Rail signals, deadlock fix, LTN, logistic bots</p>
+        <span class="topic-count">2 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `defense/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#3778c8,#5599ee);"></div>
+      <div class="topic-body">
+        <h3>Defense</h3>
+        <p>Turrets, walls, pollution, artillery, biters</p>
+        <span class="topic-count">2 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `blueprints/` | relURL }}" class="topic-card">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#e0e0e0,#f5f5f5);"></div>
+      <div class="topic-body">
+        <h3>Blueprints</h3>
+        <p>Blueprint books, community designs, sharing</p>
+        <span class="topic-count">2 Articles</span>
+      </div>
+    </a>
+
+    <a href="{{ `space-age/` | relURL }}" class="topic-card-space-age">
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#9d4edd,#00b8d4);"></div>
+      <div class="topic-body">
+        <h3>&#128640; Space Age Expansion</h3>
+        <p>Gleba, Fulgora, Vulcanus, Aquilo &#8212; quality modules, space platforms, interplanetary logistics &#8212; all new in the expansion.</p>
+        <span class="topic-count">4 Articles</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ── About Card ── -->
+  <div class="about-card">
+    <div class="about-card-icon">
+      <svg viewBox="0 0 64 64" width="64" height="64">
+        <rect x="4" y="4" width="56" height="56" rx="6" fill="#2a2a2a" stroke="#e8941c" stroke-width="2"/>
+        <circle cx="32" cy="32" r="18" fill="none" stroke="#e8941c" stroke-width="2"/>
+        <line x1="32" y1="18" x2="32" y2="32" stroke="#e8941c" stroke-width="3" stroke-linecap="round"/>
+        <line x1="32" y1="32" x2="42" y2="38" stroke="#f5aa2e" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="32" cy="32" r="3" fill="#e8941c"/>
+      </svg>
+    </div>
+    <div class="about-card-body">
+      <h2>About This Guide</h2>
+      <p>
+        <strong>Factorio Guide</strong> is a community-maintained strategy resource covering everything from
+        your first hour in Factorio to megabase-scale production. Content is updated regularly to reflect
+        the latest Factorio versions and Space Age expansion.
+      </p>
+      <p style="color:#888;font-size:0.88rem;">
+        This is an <strong>unofficial</strong> fan guide. Factorio and all related content are
+        trademarks of <strong>Wube Software</strong>.
+      </p>
+      <a href="{{ `getting-started/` | relURL }}" class="btn btn-ghost">Start Reading →</a>
+    </div>
+  </div>
+
+  <!-- ── Disclaimer ── -->
+  <div class="site-disclaimer">
+    <p>Factorio Guide is not affiliated with Wube Software. All game content and trademarks belong to their respective owners.</p>
+  </div>
+
+  </div>
+{{ end }}

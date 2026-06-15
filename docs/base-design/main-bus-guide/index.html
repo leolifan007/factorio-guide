@@ -1,20 +1,379 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks."><title>Factorio Main Bus Guide - Standard Base Layout Explained | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/base-design/main-bus-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Factorio Main Bus Guide - Standard Base Layout Explained"><meta property="og:description" content="How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/base-design/main-bus-guide/"></head><body><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Factorio Main Bus Guide - Standard Base Layout Explained</h1><p class=article-desc>How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 18, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-6 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/base-design/>Base Design — factorio Layout & Architecture</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Factorio Main Bus Guide - Standard Base Layout Explained</span></nav><p>Your base is spaghetti. Belts cross each other in six directions, nothing reaches the right assembler, and you've spent 2 hours chasing iron plates across the map. Every Factorio player builds spaghetti at first. The main bus is the upgrade that fixes it. Here's the exact bus layout I use -- 4 belts of iron, 4 of copper, with space for everything.</p><div class=pro-tip><strong>TL;DR:</strong> Run 4 lanes of iron, 4 of copper, 2 of steel, 2 of green circuits, 1 of plastic, 1 of coal, 1 of stone/brick, 1 of batteries, 2 of red/blue circuits. Leave 4 tiles between each group of 4 belts. Branch off with splitters, never steal from the bus directly. Carry fluids via underground pipes parallel to the bus. This layout scales to rocket launch without rework.</div><h2 id=what-a-main-bus-is>What a Main Bus Is</h2><p>A main bus is a set of parallel belt lanes carrying the most common materials through your factory. Production units branch off the bus on one side (or both), use what they need, and output finished goods. The bus never stops -- it flows from the furnace column at the start to the science pack assembly at the end.</p><p>The alternative is a spaghetti base where you weave belts between assemblers and tear half of it down every time you need a new product. I rebuilt my first factory three times before switching to a bus. The fourth time, I stopped rebuilding and just extended the bus.</p><h2 id=the-bus-width----how-many-lanes>The Bus Width -- How Many Lanes</h2><p>The standard bus uses 4 lanes of iron and 4 of copper because these are the most consumed materials by volume. After hundreds of hours across multiple playthroughs, I've settled on this allocation:</p><table><thead><tr><th style=text-align:left>Material</th><th style=text-align:center>Lanes</th><th style=text-align:left>Why this many</th></tr></thead><tbody><tr><td style=text-align:left>Iron plate</td><td style=text-align:center>4</td><td style=text-align:left>Most-used material in the game</td></tr><tr><td style=text-align:left>Copper plate</td><td style=text-align:center>4</td><td style=text-align:left>Green circuits eat copper faster than anything</td></tr><tr><td style=text-align:left>Steel plate</td><td style=text-align:center>2</td><td style=text-align:left>Used in engines, rails, and furnaces</td></tr><tr><td style=text-align:left>Green circuit</td><td style=text-align:center>2</td><td style=text-align:left>Consumed by everything mid-game</td></tr><tr><td style=text-align:left>Plastic</td><td style=text-align:center>1</td><td style=text-align:left>Red circuits and LDS</td></tr><tr><td style=text-align:left>Coal</td><td style=text-align:center>1</td><td style=text-align:left>Plastic, grenades, power</td></tr><tr><td style=text-align:left>Stone/Brick</td><td style=text-align:center>1</td><td style=text-align:left>Walls, furnaces, rails</td></tr><tr><td style=text-align:left>Batteries</td><td style=text-align:center>1</td><td style=text-align:left>Accumulators, flying robot frames</td></tr><tr><td style=text-align:left>Red circuit</td><td style=text-align:center>1</td><td style=text-align:left>Blue science, modules</td></tr><tr><td style=text-align:left>Blue circuit</td><td style=text-align:center>1</td><td style=text-align:left>Yellow science, rockets</td></tr><tr><td style=text-align:left>Sulfur</td><td style=text-align:center>1 (pipe)</td><td style=text-align:left>Blue science, red circuits</td></tr></tbody></table><p>Total: 18 belt lanes + 1 fluid pipe. That sounds like a lot, but each lane only takes 2 tiles of space.</p><div class=pro-tip><strong>Quick Tip:</strong> Leave at least 4 tiles between every 4 lanes. This gap becomes your walkway and your underground belt crossing zone. I use this space for splitters that tap off the bus. Without the gap, you can't fit the splitters.</div><h2 id=the-layout----start-to-end>The Layout -- Start to End</h2><p>The bus flows in one direction: from raw materials to science packs. Build in this order:</p><ol><li><strong>Furnace column</strong> at the start. 24 stone furnaces per iron lane, 24 per copper lane. Steel column next to iron (needs iron plates).</li><li><strong>Main bus</strong> running straight from the furnace column. Belts organized by usage volume: iron left-most, then copper, then circuits.</li><li><strong>Production branches</strong> on one side of the bus. Each branch pulls via a splitter, uses a few materials, outputs a finished product back to the other side.</li></ol><p>The critical rule I broke my first time: <strong>pull from the bus with splitters, never direct inserters.</strong> If you put an inserter from the bus into an assembler, that lane is now blocked. A splitter leaves the lane intact and only pulls what you need.</p><p>Build production units on one side of the bus only. Leave the other side for expansion. When I needed more green circuit production, I had room to add 10 more assembling machines without touching anything on the bus. If both sides are built up, you can't expand without deconstructing.</p><h2 id=balancers----why-you-need-them>Balancers -- Why You Need Them</h2><p>A bus without balancers will empty on one lane while the other is full. Splitters don't balance lane utilization. A 4-lane iron bus with no balancers runs unevenly -- the first consumer drains lane 1, the next drains lane 2, and by the time you reach science packs, only lane 4 has iron.</p><p>Where to place balancers:</p><table><thead><tr><th style=text-align:left>Position</th><th style=text-align:left>Balancer type</th><th style=text-align:left>Purpose</th></tr></thead><tbody><tr><td style=text-align:left>After furnace column</td><td style=text-align:left>4-to-4 lane balancer</td><td style=text-align:left>Distribute fresh ore evenly</td></tr><tr><td style=text-align:left>After each major consumer</td><td style=text-align:left>4-to-4 lane balancer</td><td style=text-align:left>Redistribute after circuit/steel production</td></tr><tr><td style=text-align:left>Before science pack line</td><td style=text-align:left>4-to-4 lane balancer</td><td style=text-align:left>Ensure science section gets even supply</td></tr><tr><td style=text-align:left>At bus end</td><td style=text-align:left>4-to-4 lane balancer</td><td style=text-align:left>Catch remaining materials for overflow</td></tr></tbody></table><p>The balancer design: four splitters in a 2x2 grid with underground belts crossing. Copy this from a blueprint book once, paste at each balance point. I have 4 balance points on my bus: after furnaces, after green circuits, after steel, before science.</p><h2 id=end-of-bus-management>End-of-Bus Management</h2><p>The bus eventually ends. What do you do with leftover materials on belts that have nothing to consume?</p><p><strong>Option 1 -- Chest collection.</strong> Place a steel chest at the end of each bus lane with a fast inserter. The chest collects overflow. This gives you a free stack of materials whenever you need to build by hand.</p><p><strong>Option 2 -- Circuit-based overflow control.</strong> Connect the chest to a decider combinator. If chest iron exceeds 2,000, enable an inserter that feeds into a requester chest or recycling array. This prevents belt full-block -- when a full belt stalls the furnace column behind it.</p><p>I use option 1 for my main lanes and option 2 for circuits (which block the fastest).</p><div class=callout>The biggest bus mistake I see beginners make: putting science pack production BEFORE the bus end. Science packs are the final product. They should be the last thing on the bus. If you place them in the middle, lanes running past them create wasted throughput. I moved my entire science section from the middle of the bus to the end and production jumped by 30%.</div><h2 id=scaling-past-the-bus>Scaling Past the Bus</h2><p>The main bus works well for a 60-SPM starter base. Beyond that, you'll hit belt throughput limits. The transition to city blocks or train-based megabase starts at the same location: the furnace column gets replaced by off-site smelting delivered by train. The bus stays as your starter base while the train network expands outward.</p><p>When I outgrew my 4-lane bus, I kept it as the mall (building production) and built a separate train-fed smelting yard for science packs. The bus still feeds assembler, belt, and inserter production -- things you need constantly but don't need at megabase scale.</p><hr><h2 id=community-verification--resources>Community Verification & Resources</h2><ul><li><a href=https://wiki.factorio.com/Guide:Main_bus>Official Factorio Wiki -- Main Bus</a> -- official guide with bus layouts, lane counting, and common variants</li><li><a href=https://www.reddit.com/r/factorio/>Reddit -- Bus Design Discussion</a> -- community bus builds, lane allocation debates, and balancer blueprints</li><li><a href=https://factorioprints.com/>Factorio Prints -- Bus Balancers</a> -- pre-built 4-to-4 and 8-to-8 belt balancers</li></ul><p><strong>Related:</strong> <a href=https://factorioguides.com/getting-started/your-first-factory/>Your First Factory</a> | <a href=https://factorioguides.com/base-design/city-block-guide/>City Block Guide</a> | <a href=https://factorioguides.com/production-ratios/smelting-ratios/>Smelting Ratios</a></p><div class=back-to-section><a href=/base-design/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Base Design — factorio Layout & Architecture</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/base-design/city-block-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text></svg></div><div class=related-body><h4>Factorio City Block Design - Megabase Layout Guide</h4><p>Learn Factorio city block design: optimal block sizes, train grid layouts, roundabout intersections, and how to scale to 1000+ SPM megabases.</p></div></a><a href=/base-design/nuclear-power-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">N</text></svg></div><div class=related-body><h4>Nuclear Reactor Ratios & Tileable Design -- The Only Setup You Need</h4><p>Step-by-step Factorio nuclear reactor setup with exact tileable layouts, heat pipe ratios (1:20:40), steam turbine math, Kovarex enrichment loop, and fuel efficiency from 40 MW to multi-GW. Copy-paste ready for your megabase.</p></div></a></div></div></div></div><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks.">
+  <title>Factorio Main Bus Guide - Standard Base Layout Explained | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1320/base-design/main-bus-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Factorio Main Bus Guide - Standard Base Layout Explained">
+  <meta property="og:description" content="How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1320/base-design/main-bus-guide/">
+</head>
+<body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Factorio Main Bus Guide - Standard Base Layout Explained</h1><p class="article-desc">How to build a main bus in Factorio, including bus width, lane allocation, balancers, and the exact layout that carries you through blue science without bottlenecks.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 18, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          6 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/base-design/">Base Design — factorio Layout &amp; Architecture</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">Factorio Main Bus Guide - Standard Base Layout Explained</span>
+        </nav>
+
+        <p>Your base is spaghetti. Belts cross each other in six directions, nothing reaches the right assembler, and you've spent 2 hours chasing iron plates across the map. Every Factorio player builds spaghetti at first. The main bus is the upgrade that fixes it. Here's the exact bus layout I use -- 4 belts of iron, 4 of copper, with space for everything.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> Run 4 lanes of iron, 4 of copper, 2 of steel, 2 of green circuits, 1 of plastic, 1 of coal, 1 of stone/brick, 1 of batteries, 2 of red/blue circuits. Leave 4 tiles between each group of 4 belts. Branch off with splitters, never steal from the bus directly. Carry fluids via underground pipes parallel to the bus. This layout scales to rocket launch without rework.</div>
+
+<h2 id="what-a-main-bus-is">What a Main Bus Is</h2>
+<p>A main bus is a set of parallel belt lanes carrying the most common materials through your factory. Production units branch off the bus on one side (or both), use what they need, and output finished goods. The bus never stops -- it flows from the furnace column at the start to the science pack assembly at the end.</p>
+<p>The alternative is a spaghetti base where you weave belts between assemblers and tear half of it down every time you need a new product. I rebuilt my first factory three times before switching to a bus. The fourth time, I stopped rebuilding and just extended the bus.</p>
+<h2 id="the-bus-width----how-many-lanes">The Bus Width -- How Many Lanes</h2>
+<p>The standard bus uses 4 lanes of iron and 4 of copper because these are the most consumed materials by volume. After hundreds of hours across multiple playthroughs, I've settled on this allocation:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Material</th>
+          <th style="text-align: center">Lanes</th>
+          <th style="text-align: left">Why this many</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Iron plate</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: left">Most-used material in the game</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Copper plate</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: left">Green circuits eat copper faster than anything</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Steel plate</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left">Used in engines, rails, and furnaces</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Green circuit</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left">Consumed by everything mid-game</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Plastic</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Red circuits and LDS</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Coal</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Plastic, grenades, power</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Stone/Brick</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Walls, furnaces, rails</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Batteries</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Accumulators, flying robot frames</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Red circuit</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Blue science, modules</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Blue circuit</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Yellow science, rockets</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Sulfur</td>
+          <td style="text-align: center">1 (pipe)</td>
+          <td style="text-align: left">Blue science, red circuits</td>
+      </tr>
+  </tbody>
+</table>
+<p>Total: 18 belt lanes + 1 fluid pipe. That sounds like a lot, but each lane only takes 2 tiles of space.</p>
+<div class="pro-tip"><strong>Quick Tip:</strong> Leave at least 4 tiles between every 4 lanes. This gap becomes your walkway and your underground belt crossing zone. I use this space for splitters that tap off the bus. Without the gap, you can't fit the splitters.</div>
+
+<h2 id="the-layout----start-to-end">The Layout -- Start to End</h2>
+<p>The bus flows in one direction: from raw materials to science packs. Build in this order:</p>
+<ol>
+<li><strong>Furnace column</strong> at the start. 24 stone furnaces per iron lane, 24 per copper lane. Steel column next to iron (needs iron plates).</li>
+<li><strong>Main bus</strong> running straight from the furnace column. Belts organized by usage volume: iron left-most, then copper, then circuits.</li>
+<li><strong>Production branches</strong> on one side of the bus. Each branch pulls via a splitter, uses a few materials, outputs a finished product back to the other side.</li>
+</ol>
+<p>The critical rule I broke my first time: <strong>pull from the bus with splitters, never direct inserters.</strong> If you put an inserter from the bus into an assembler, that lane is now blocked. A splitter leaves the lane intact and only pulls what you need.</p>
+<p>Build production units on one side of the bus only. Leave the other side for expansion. When I needed more green circuit production, I had room to add 10 more assembling machines without touching anything on the bus. If both sides are built up, you can't expand without deconstructing.</p>
+<h2 id="balancers----why-you-need-them">Balancers -- Why You Need Them</h2>
+<p>A bus without balancers will empty on one lane while the other is full. Splitters don't balance lane utilization. A 4-lane iron bus with no balancers runs unevenly -- the first consumer drains lane 1, the next drains lane 2, and by the time you reach science packs, only lane 4 has iron.</p>
+<p>Where to place balancers:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Position</th>
+          <th style="text-align: left">Balancer type</th>
+          <th style="text-align: left">Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">After furnace column</td>
+          <td style="text-align: left">4-to-4 lane balancer</td>
+          <td style="text-align: left">Distribute fresh ore evenly</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">After each major consumer</td>
+          <td style="text-align: left">4-to-4 lane balancer</td>
+          <td style="text-align: left">Redistribute after circuit/steel production</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Before science pack line</td>
+          <td style="text-align: left">4-to-4 lane balancer</td>
+          <td style="text-align: left">Ensure science section gets even supply</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">At bus end</td>
+          <td style="text-align: left">4-to-4 lane balancer</td>
+          <td style="text-align: left">Catch remaining materials for overflow</td>
+      </tr>
+  </tbody>
+</table>
+<p>The balancer design: four splitters in a 2x2 grid with underground belts crossing. Copy this from a blueprint book once, paste at each balance point. I have 4 balance points on my bus: after furnaces, after green circuits, after steel, before science.</p>
+<h2 id="end-of-bus-management">End-of-Bus Management</h2>
+<p>The bus eventually ends. What do you do with leftover materials on belts that have nothing to consume?</p>
+<p><strong>Option 1 -- Chest collection.</strong> Place a steel chest at the end of each bus lane with a fast inserter. The chest collects overflow. This gives you a free stack of materials whenever you need to build by hand.</p>
+<p><strong>Option 2 -- Circuit-based overflow control.</strong> Connect the chest to a decider combinator. If chest iron exceeds 2,000, enable an inserter that feeds into a requester chest or recycling array. This prevents belt full-block -- when a full belt stalls the furnace column behind it.</p>
+<p>I use option 1 for my main lanes and option 2 for circuits (which block the fastest).</p>
+<div class="callout">The biggest bus mistake I see beginners make: putting science pack production BEFORE the bus end. Science packs are the final product. They should be the last thing on the bus. If you place them in the middle, lanes running past them create wasted throughput. I moved my entire science section from the middle of the bus to the end and production jumped by 30%.</div>
+
+<h2 id="scaling-past-the-bus">Scaling Past the Bus</h2>
+<p>The main bus works well for a 60-SPM starter base. Beyond that, you'll hit belt throughput limits. The transition to city blocks or train-based megabase starts at the same location: the furnace column gets replaced by off-site smelting delivered by train. The bus stays as your starter base while the train network expands outward.</p>
+<p>When I outgrew my 4-lane bus, I kept it as the mall (building production) and built a separate train-fed smelting yard for science packs. The bus still feeds assembler, belt, and inserter production -- things you need constantly but don't need at megabase scale.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Guide:Main_bus">Official Factorio Wiki -- Main Bus</a> -- official guide with bus layouts, lane counting, and common variants</li>
+<li><a href="https://www.reddit.com/r/factorio/">Reddit -- Bus Design Discussion</a> -- community bus builds, lane allocation debates, and balancer blueprints</li>
+<li><a href="https://factorioprints.com/">Factorio Prints -- Bus Balancers</a> -- pre-built 4-to-4 and 8-to-8 belt balancers</li>
+</ul>
+<p><strong>Related:</strong> <a href="http://localhost:1320/getting-started/your-first-factory/">Your First Factory</a> | <a href="http://localhost:1320/base-design/city-block-guide/">City Block Guide</a> | <a href="http://localhost:1320/production-ratios/smelting-ratios/">Smelting Ratios</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/base-design/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Base Design — factorio Layout &amp; Architecture
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/base-design/city-block-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Factorio City Block Design - Megabase Layout Guide</h4>
+                <p>Learn Factorio city block design: optimal block sizes, train grid layouts, roundabout intersections, and how to scale to 1000&#43; SPM megabases.</p>
+              </div>
+            </a>
+            
+            <a href="/base-design/nuclear-power-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">N</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Nuclear Reactor Ratios &amp; Tileable Design -- The Only Setup You Need</h4>
+                <p>Step-by-step Factorio nuclear reactor setup with exact tileable layouts, heat pipe ratios (1:20:40), steam turbine math, Kovarex enrichment loop, and fuel efficiency from 40 MW to multi-GW. Copy-paste ready for your megabase.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+
+        
+        
+
+      </div>
+    </div>
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

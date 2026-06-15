@@ -1,28 +1,386 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics."><title>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/production-ratios/beacon-module-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization"><meta property="og:description" content="Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/production-ratios/beacon-module-guide/"></head><body><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization <span class=version-badge>[2.0]</span></h1><p class=article-desc>Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 23, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-3 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=article-layout><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div><div class=article-center><aside class=floating-toc id=floatingToc><div class=toc-title>Contents</div></aside><div class=article-content id=article-content><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/production-ratios/>Production Ratios — Factorio Ratio Reference</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</span></nav><p>Beacons amplify module effects across multiple buildings. <span class=mat-card><img src=/images/icon/beacon.png alt=beacon class=mat-card-img title=Beacon loading=lazy>
-<span class=mat-name>Beacon</span>
-</span>One beacon with <span class=mat-card><img src=/images/icon/productivity_module_3.png alt=productivity_module_3 class=mat-card-img title=Productivity loading=lazy>
-<span class=mat-name>Productivity</span>
-</span>speed modules can boost 8 nearby assemblers --if you lay them out correctly.</p><div class=pro-tip><strong>TL;DR:</strong> 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.</div><img src=/images/diagrams/8-beacon-layout.svg alt="8-beacon layout showing assembler surrounded by 8 beacons with module distribution" class=schema-diagram loading=lazy width=900><h2 id=how-beacons-work>How Beacons Work</h2><p>Beacons transmit module effects to nearby buildings:</p><ul><li><strong>Range:</strong> 9 tiles (affects buildings in 9脳9 area)</li><li><strong>Distribution:</strong> Effect is split --50% transmission to each building</li><li><strong>Stacking:</strong> Multiple beacons stack additively</li><li><strong>Limit:</strong> Maximum 12 beacons can affect one building</li></ul><p><strong>Key rule:</strong> Beacons don't affect other beacons. Only production buildings (assemblers, furnaces, chemical plants, etc.).</p><h2 id=the-8-beacon-layout>The 8-Beacon Layout</h2><p>The standard endgame layout:</p><ul><li>1 assembler (3脳3) in center</li><li>8 beacons surrounding it (in the 12 possible positions, use 8)</li><li>Beacons filled with <span class=mat-card><img src=/images/icon/productivity_module_3.png alt=productivity_module_3 class=mat-card-img title=Productivity loading=lazy>
-<span class=mat-name>Productivity</span>
-</span>Speed Module 3 (+50% speed each)</li><li>Assembler filled with <span class=mat-card><img src=/images/icon/productivity_module_3.png alt=productivity_module_3 class=mat-card-img title=Productivity loading=lazy>
-<span class=mat-name>Productivity</span>
-</span>Productivity Module 3 (+10% productivity, -40% speed)</li></ul><p><strong>The math:</strong></p><ul><li>8 beacons 脳 +50% speed 脳 50% transmission = +200% speed</li><li>Assembler PM3: -40% speed, +30% productivity</li><li>Net: +160% speed, +30% productivity</li></ul><h2 id=module-combinations>Module Combinations</h2><p>Different goals need different setups:</p><table><thead><tr><th>Goal</th><th>Beacon Modules</th><th>Assembler Modules</th><th>Result</th></tr></thead><tbody><tr><td>Max productivity</td><td>8脳 SM3</td><td>4脳 PM3</td><td>+30% items, +160% speed</td></tr><tr><td>Max speed</td><td>8脳 SM3</td><td>4脳 SM3</td><td>+360% speed, 0% productivity</td></tr><tr><td>Balanced</td><td>8脳 SM3</td><td>2脳 PM3 + 2脳 SM3</td><td>+15% items, +260% speed</td></tr></tbody></table><p><strong>Recommendation:</strong> Use max productivity for expensive recipes (rocket parts, science packs). Use max speed for cheap bulk items (gears, circuits).</p><h2 id=power-cost>Power Cost</h2><p>Beacons and modules draw massive power:</p><ul><li>Beacon: 480 kW base + module drain</li><li>Speed Module 3: +70% power consumption</li><li>Productivity Module 3: +80% power consumption</li></ul><p><strong>8-beacon setup power:</strong></p><ul><li>8 beacons 脳 480 kW = 3.84 MW</li><li>8 SM3s 脳 70% = +560% drain</li><li>Total: ~25 MW per assembler</li></ul><p><strong>The tradeoff:</strong> 25 MW sounds expensive, but +30% productivity means 30% less ore, oil, and processing for the same output. Power is cheap; resources are precious.</p><h2 id=what-veterans-learn-the-hard-way>What Veterans Learn the Hard Way</h2><ul><li><strong>12-beacon is overkill</strong> --8 beacons hits the sweet spot. 12 beacons = marginal gains, massive power cost.</li><li><strong>PM3 first, then beacons</strong> --productivity modules reduce resource cost. Speed beacons fix the speed penalty.</li><li><strong>Not for everything</strong> --8-beacon setups are overkill for cheap items. Use for expensive recipes only.</li><li><strong>Power grid matters</strong> --100 beaconed assemblers = 2.5 GW. Plan your nuclear setup accordingly.</li></ul><h2 id=common-mistakes>Common Mistakes</h2><table><thead><tr><th>Mistake</th><th>Consequence</th></tr></thead><tbody><tr><td>12-beacon layouts</td><td>Diminishing returns, power grid collapse</td></tr><tr><td>SM3 in assemblers</td><td>Wasted productivity potential</td></tr><tr><td>Beaconed smelters</td><td>Furnaces are cheap --beacons are overkill</td></tr><tr><td>Ignoring power costs</td><td>Brownouts when factory scales up</td></tr></tbody></table><h2 id=the-bottom-line>The Bottom Line</h2><p>8-beacon layouts with PM3 assemblers and SM3 beacons are the endgame standard. +30% productivity saves resources. Power cost is acceptable at scale. Use for expensive recipes, skip for cheap bulk.</p><hr><p><strong>Related:</strong> <a href=https://factorioguides.com/production-ratios/>Production Ratios</a> | <a href=https://factorioguides.com/production-ratios/oil-processing-guide/>Oil Processing</a></p><p>I tested 8-beacon vs 12-beacon on my electric furnace column. The 12-beacon setup added 40% more power draw for only 8% more output. 8-beacon is the sweet spot.</p><h2 id=community-verification--resources>Community Verification & Resources</h2><ul><li><a href=https://wiki.factorio.com/Beacon>Official Factorio Wiki -- Beacons</a> -- beacon mechanics, transmission efficiency, and module slot interaction</li><li><a href=https://factoriolab.github.io/>FactorioLab Calculator</a> -- beacon-to-machine ratio calculator for optimal module layouts</li><li><a href=https://www.reddit.com/r/factorio/>Reddit -- Beacon Builds</a> -- community 8-beacon and 12-beacon factory layouts</li></ul><p><strong>Related:</strong> <a href=https://factorioguides.com/production-ratios/smelting-ratios/>Smelting Ratios</a> | <a href=https://factorioguides.com/production-ratios/kovarex-enrichment-guide/>Kovarex Enrichment</a> | <a href=https://factorioguides.com/space-age/quality-module-guide/>Quality Module Guide</a></p><div class=back-to-section><a href=/production-ratios/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Production Ratios — Factorio Ratio Reference</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/production-ratios/oil-processing-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text></svg></div><div class=related-body><h4>Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup</h4><p>Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p></div></a><a href=/production-ratios/kovarex-enrichment-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text></svg></div><div class=related-body><h4>Factorio Kovarex Enrichment Guide - Nuclear Fuel Processing</h4><p>How to set up Kovarex enrichment in Factorio: circuit-controlled centrifuges, 40-40 initial buffer, enrichment loop ratio, and the exact blueprint that produces 100+ U-235 per minute.</p></div></a><a href=/production-ratios/smelting-ratios/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text></svg></div><div class=related-body><h4>Factorio Smelting Ratios - How Many Furnaces Per Belt (Iron/Copper/Steel)</h4><p>Exact smelting ratios for Factorio: how many furnaces per yellow/red/blue belt of iron, copper, steel, and stone. Electric furnace vs steel furnace math - never waste furnaces or belt capacity again.</p></div></a></div></div></div></div><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.">
+  <title>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1320/production-ratios/beacon-module-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization">
+  <meta property="og:description" content="Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1320/production-ratios/beacon-module-guide/">
+</head>
+<body>
+
+
+
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn-space-age">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization <span class="version-badge">[2.0]</span></h1><p class="article-desc">Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 23, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          3 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="article-layout">
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+    
+    <div class="article-center">
+      <aside class="floating-toc" id="floatingToc">
+        <div class="toc-title">Contents</div>
+      </aside>
+      <div class="article-content" id="article-content">
+        
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          
+          <a href="/production-ratios/">Production Ratios — Factorio Ratio Reference</a>
+          
+          <span class="breadcrumb-sep">&rsaquo;</span>
+          <span class="breadcrumb-current">Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</span>
+        </nav>
+
+        <p>Beacons amplify module effects across multiple buildings. <span class="mat-card"><img src="/images/icon/beacon.png" alt="beacon" class="mat-card-img" title="Beacon" loading="lazy">
+  <span class="mat-name">Beacon</span>
+</span>
+ One beacon with <span class="mat-card"><img src="/images/icon/productivity_module_3.png" alt="productivity_module_3" class="mat-card-img" title="Productivity" loading="lazy">
+  <span class="mat-name">Productivity</span>
+</span>
+ speed modules can boost 8 nearby assemblers --if you lay them out correctly.</p>
+<div class="pro-tip"><strong>TL;DR:</strong> 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.</div>
+
+<img src="/images/diagrams/8-beacon-layout.svg" alt="8-beacon layout showing assembler surrounded by 8 beacons with module distribution" class="schema-diagram" loading="lazy" width="900">
+
+<h2 id="how-beacons-work">How Beacons Work</h2>
+<p>Beacons transmit module effects to nearby buildings:</p>
+<ul>
+<li><strong>Range:</strong> 9 tiles (affects buildings in 9脳9 area)</li>
+<li><strong>Distribution:</strong> Effect is split --50% transmission to each building</li>
+<li><strong>Stacking:</strong> Multiple beacons stack additively</li>
+<li><strong>Limit:</strong> Maximum 12 beacons can affect one building</li>
+</ul>
+<p><strong>Key rule:</strong> Beacons don't affect other beacons. Only production buildings (assemblers, furnaces, chemical plants, etc.).</p>
+<h2 id="the-8-beacon-layout">The 8-Beacon Layout</h2>
+<p>The standard endgame layout:</p>
+<ul>
+<li>1 assembler (3脳3) in center</li>
+<li>8 beacons surrounding it (in the 12 possible positions, use 8)</li>
+<li>Beacons filled with <span class="mat-card"><img src="/images/icon/productivity_module_3.png" alt="productivity_module_3" class="mat-card-img" title="Productivity" loading="lazy">
+  <span class="mat-name">Productivity</span>
+</span>
+ Speed Module 3 (+50% speed each)</li>
+<li>Assembler filled with <span class="mat-card"><img src="/images/icon/productivity_module_3.png" alt="productivity_module_3" class="mat-card-img" title="Productivity" loading="lazy">
+  <span class="mat-name">Productivity</span>
+</span>
+ Productivity Module 3 (+10% productivity, -40% speed)</li>
+</ul>
+<p><strong>The math:</strong></p>
+<ul>
+<li>8 beacons 脳 +50% speed 脳 50% transmission = +200% speed</li>
+<li>Assembler PM3: -40% speed, +30% productivity</li>
+<li>Net: +160% speed, +30% productivity</li>
+</ul>
+<h2 id="module-combinations">Module Combinations</h2>
+<p>Different goals need different setups:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Goal</th>
+          <th>Beacon Modules</th>
+          <th>Assembler Modules</th>
+          <th>Result</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Max productivity</td>
+          <td>8脳 SM3</td>
+          <td>4脳 PM3</td>
+          <td>+30% items, +160% speed</td>
+      </tr>
+      <tr>
+          <td>Max speed</td>
+          <td>8脳 SM3</td>
+          <td>4脳 SM3</td>
+          <td>+360% speed, 0% productivity</td>
+      </tr>
+      <tr>
+          <td>Balanced</td>
+          <td>8脳 SM3</td>
+          <td>2脳 PM3 + 2脳 SM3</td>
+          <td>+15% items, +260% speed</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Recommendation:</strong> Use max productivity for expensive recipes (rocket parts, science packs). Use max speed for cheap bulk items (gears, circuits).</p>
+<h2 id="power-cost">Power Cost</h2>
+<p>Beacons and modules draw massive power:</p>
+<ul>
+<li>Beacon: 480 kW base + module drain</li>
+<li>Speed Module 3: +70% power consumption</li>
+<li>Productivity Module 3: +80% power consumption</li>
+</ul>
+<p><strong>8-beacon setup power:</strong></p>
+<ul>
+<li>8 beacons 脳 480 kW = 3.84 MW</li>
+<li>8 SM3s 脳 70% = +560% drain</li>
+<li>Total: ~25 MW per assembler</li>
+</ul>
+<p><strong>The tradeoff:</strong> 25 MW sounds expensive, but +30% productivity means 30% less ore, oil, and processing for the same output. Power is cheap; resources are precious.</p>
+<h2 id="what-veterans-learn-the-hard-way">What Veterans Learn the Hard Way</h2>
+<ul>
+<li><strong>12-beacon is overkill</strong> --8 beacons hits the sweet spot. 12 beacons = marginal gains, massive power cost.</li>
+<li><strong>PM3 first, then beacons</strong> --productivity modules reduce resource cost. Speed beacons fix the speed penalty.</li>
+<li><strong>Not for everything</strong> --8-beacon setups are overkill for cheap items. Use for expensive recipes only.</li>
+<li><strong>Power grid matters</strong> --100 beaconed assemblers = 2.5 GW. Plan your nuclear setup accordingly.</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Mistake</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>12-beacon layouts</td>
+          <td>Diminishing returns, power grid collapse</td>
+      </tr>
+      <tr>
+          <td>SM3 in assemblers</td>
+          <td>Wasted productivity potential</td>
+      </tr>
+      <tr>
+          <td>Beaconed smelters</td>
+          <td>Furnaces are cheap --beacons are overkill</td>
+      </tr>
+      <tr>
+          <td>Ignoring power costs</td>
+          <td>Brownouts when factory scales up</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>8-beacon layouts with PM3 assemblers and SM3 beacons are the endgame standard. +30% productivity saves resources. Power cost is acceptable at scale. Use for expensive recipes, skip for cheap bulk.</p>
+<hr>
+<p><strong>Related:</strong> <a href="http://localhost:1320/production-ratios/">Production Ratios</a> | <a href="http://localhost:1320/production-ratios/oil-processing-guide/">Oil Processing</a></p>
+<p>I tested 8-beacon vs 12-beacon on my electric furnace column. The 12-beacon setup added 40% more power draw for only 8% more output. 8-beacon is the sweet spot.</p>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Beacon">Official Factorio Wiki -- Beacons</a> -- beacon mechanics, transmission efficiency, and module slot interaction</li>
+<li><a href="https://factoriolab.github.io/">FactorioLab Calculator</a> -- beacon-to-machine ratio calculator for optimal module layouts</li>
+<li><a href="https://www.reddit.com/r/factorio/">Reddit -- Beacon Builds</a> -- community 8-beacon and 12-beacon factory layouts</li>
+</ul>
+<p><strong>Related:</strong> <a href="http://localhost:1320/production-ratios/smelting-ratios/">Smelting Ratios</a> | <a href="http://localhost:1320/production-ratios/kovarex-enrichment-guide/">Kovarex Enrichment</a> | <a href="http://localhost:1320/space-age/quality-module-guide/">Quality Module Guide</a></p>
+
+
+        
+        
+        <div class="back-to-section">
+          <a href="/production-ratios/" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 4L6 8l4 4"/>
+            </svg>
+            Back to Production Ratios — Factorio Ratio Reference
+          </a>
+        </div>
+        
+
+        
+        
+        
+        
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/production-ratios/oil-processing-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Factorio Oil Processing Guide - Refinery Ratios and Cracking Setup</h4>
+                <p>Oil processing ratios for Factorio: exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
+              </div>
+            </a>
+            
+            <a href="/production-ratios/kovarex-enrichment-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Factorio Kovarex Enrichment Guide - Nuclear Fuel Processing</h4>
+                <p>How to set up Kovarex enrichment in Factorio: circuit-controlled centrifuges, 40-40 initial buffer, enrichment loop ratio, and the exact blueprint that produces 100&#43; U-235 per minute.</p>
+              </div>
+            </a>
+            
+            <a href="/production-ratios/smelting-ratios/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Factorio Smelting Ratios - How Many Furnaces Per Belt (Iron/Copper/Steel)</h4>
+                <p>Exact smelting ratios for Factorio: how many furnaces per yellow/red/blue belt of iron, copper, steel, and stone. Electric furnace vs steel furnace math - never waste furnaces or belt capacity again.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        
+
+        
+        
+
+      </div>
+    </div>
+
+    
+    
+<div class="adsterra-sidebar">
+  <div class="adsterra-cpm-unit">
+    <script async="async" data-cfasync="false"
+      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+  </div>
+  <div class="adsterra-cpm-unit">
+    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>
