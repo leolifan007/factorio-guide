@@ -1,0 +1,29 @@
+{{- /* Adsterra Content-Bottom Ad – 728×90 Leaderboard + 3rd CPM unit */ -}}
+{{- if and .Site.Params.show_ads .Site.Params.adsterra_bottom_enabled }}
+<div class="adsterra-content-bottom">
+  <div class="adsterra-content-bottom-inner">
+    {{- /* 728×90 iframe banner */ -}}
+    {{- with .Site.Params.adsterra_iframe_key }}
+    <div class="adsterra-iframe-bottom-wrap">
+      <script>
+        var atOptions = {
+          'key' : '{{ . }}',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/{{ . }}/invoke.js"></script>
+    </div>
+    {{- end }}
+
+    {{- /* 3rd CPM unit */ -}}
+    {{- with .Site.Params.adsterra_cpm_js }}
+    <div class="adsterra-cpm-bottom-wrap">
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Test TOC Layout | Factorio Guide</title>
+  <link rel=preconnect href=https://fonts.googleapis.com>
+  <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet>
+  <link rel=stylesheet href=/css/main.css>
+  <style>
+    /* Override hero for test page */
+    .article-hero-full { display:none; }
+    .article-page { padding-top: 80px; }
+  </style>
+</head>
+<body>
+
+<header class=site-header>
+  <a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a>
+  <nav class=nav-links aria-label="Main navigation">
+    <a href=/getting-started/ class=nav-btn>Getting Started</a>
+    <a href=/production-ratios/ class=nav-btn>Production Ratios</a>
+    <a href=/base-design/ class=nav-btn>Base Design</a>
+    <a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
+    <a href=/defense/ class=nav-btn>Defense</a>
+    <a href=/blueprints/ class=nav-btn>Blueprints</a>
+    <a href=/space-age/ class=nav-btn-space-age>&#128640; Space Age</a>
+  </nav>
+</header>
+
+<div class=page-wrap>
+<div class=article-page>
+  <!-- Hero (hidden via CSS above) -->
+
+  <div class=article-layout>
+    <!-- Left Ad Slot -->
+    <div class=article-ad-left>
+      <div class=ad-placeholder>
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class=ad-placeholder-label>Advertisement</span>
+        <span class=ad-placeholder-size>160 × 600</span>
+      </div>
+    </div>
+
+    <!-- Center: TOC + Content (EXACT same structure as production) -->
+    <div class=article-center>
+      <aside class=floating-toc id=floatingToc>
+        <div class=toc-title>Contents</div>
+      </aside>
+      <div class="article-content article-body" id=article-content>
+
+        <!-- Breadcrumb (production exact markup) -->
+        <nav class=breadcrumb>
+          <a href=/>Home</a>
+          <span class=breadcrumb-sep>›</span>
+          <a href=/getting-started/>Factorio Beginner's Guide — Your First 10 Hours</a>
+          <span class=breadcrumb-sep>›</span>
+          <span class=breadcrumb-current>Test TOC Layout Page</span>
+        </nav>
+
+        <!-- Test Content: H2s with IDs for TOC JS to pick up -->
+        <h2 id=step-1-the-first-10-minutes>Step 1: The First 10 Minutes</h2>
+        <p>Punch <strong>iron ore</strong> and <strong>copper ore</strong> by hand. Craft your first <strong>iron plate</strong> and <strong>copper plate</strong> manually.</p>
+        <div class=check-row>
+          <div class=check-item><span class=check-icon></span><div><strong>Priority:</strong> Get 1 <strong>burner mining drill</strong> on iron ore ASAP</div></div>
+          <div class=check-item><span class=check-icon></span><div><strong>Next:</strong> 1 <strong>stone furnace</strong> smelting iron plates</div></div>
+        </div>
+
+        <h2 id=step-2-power-and-automation>Step 2: Power and Automation</h2>
+        <p>Place <strong>boilers</strong> and <strong>steam engines</strong> to generate electricity.</p>
+        <div class=tip-box><strong>Power formula:</strong> 1 boiler + 1 steam engine = 900 kW. A small factory needs 2–3 steam engines early on.</div>
+
+        <h2 id=step-3-your-first-science-packs>Step 3: Your First Science Packs</h2>
+        <p>Research <strong>automation</strong> first. Then build an <strong>assembler</strong> making <strong>electronic circuit</strong> (green circuits).</p>
+        <table>
+          <thead><tr><th>Science Pack</th><th>Key Ingredients</th></tr></thead>
+          <tbody>
+            <tr><td>Red (Automation)</td><td>Iron gear + Iron plate</td></tr>
+            <tr><td>Green (Logistic)</td><td>Electronic circuit + Iron gear</td></tr>
+            <tr><td>Blue (Chemical)</td><td>Engine unit + Electronic circuit + Plastic bar</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id=step-4-scaling-up>Step 4: Scaling Up</h2>
+        <p>Once red and green science are automated:</p>
+        <ol>
+          <li>Build a <strong>main bus</strong> — long belts carrying iron/copper plates</li>
+          <li>Add <strong>steel furnaces</strong> or <strong>electric furnaces</strong></li>
+          <li>Automate <strong>inserters</strong> and <strong>transport belts</strong></li>
+        </ol>
+
+        <h2 id=checklist-before-launch>Checklist Before Launch</h2>
+        <ul>
+          <li>[ ] Red + Green science fully automated</li>
+          <li>[ ] Blue science production started (requires oil)</li>
+          <li>[ ] Steel production running</li>
+          <li>[ ] A few <strong>gun turrets</strong> with ammo near your base</li>
+        </ul>
+
+        <div class=back-to-section>
+          <a href=/getting-started/ class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentcolor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
+            Back to Getting Started
+          </a>
+        </div>
+
+      </div><!-- /article-content -->
+    </div><!-- /article-center -->
+
+    <!-- Right Ad Slot -->
+    <div class=article-ad-right>
+      <div class=ad-placeholder>
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <span class=ad-placeholder-label>Advertisement</span>
+        <span class=ad-placeholder-size>160 × 600</span>
+      </div>
+    </div>
+
+  </div><!-- /article-layout -->
+</div><!-- /article-page -->
+</div><!-- /page-wrap -->
+
+<footer class=site-footer>
+  <div class=footer-links>
+    <a href=/getting-started/>Getting Started</a>
+    <a href=/production-ratios/>Production Ratios</a>
+    <a href=/base-design/>Base Design</a>
+  </div>
+  <p>&copy; 2026 Factorio Guide</p>
+</footer>
+
+<script src=/js/main.js></script>
+</body>
+</html>

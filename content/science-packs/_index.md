@@ -71,7 +71,7 @@ date: "2026-05-21"
 
 ## Complete Production Chain Diagram
 
-![Science Pack Production Chain](/factorio-guide/images/flowcharts/science-pack-chain.svg)
+![Science Pack Production Chain](/images/diagrams/science-pack-chain.svg)
 
 The diagram above shows how all 7 science tiers connect. Click to enlarge. The arrows show recipe flow — each arrow represents a crafting operation.
 

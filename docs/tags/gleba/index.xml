@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gleba on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/gleba/</link>
-    <description>Recent content in Gleba on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:45:00 +0800</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Gleba Survival Guide - How to Survive and Thrive on Gleba</title>
-      <link>https://factorioguides.com/space-age/gleba-survival-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;You landed on Gleba and everything is rotting. Your first batch of bioflux spoiled before you could use it. The pentapods eat your crops faster than they grow. I spent my first 4 hours on Gleba rebuilding the same farm setup until I internalized one rule: design for spoilage, not for preservation. Here&#39;s the approach that actually works.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Put an assembler on every agricultural tower output. Belt bioflux directly from the tower to the assembler -- don&#39;t store it. Ore and nutrients go into a recycler loop that feeds carbon and sulfur production. Use circuit conditions to recycle anything with less than 50% freshness. Build pentapod defense as a triple wall of gun turrets with piercing ammo. Uncommon ammo from quality modules doubles your killing power.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;what-makes-gleba-different&#34;&gt;What Makes Gleba Different&lt;/h2&gt;&#xA;&lt;p&gt;Gleba has no ore patches. Every resource comes from biological processes that decay over time. Your factories aren&#39;t mining -- they&#39;re farming and processing before spoilage destroys everything.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gleba on Factorio Guide</title><link>https://factorioguides.com/tags/gleba/</link><description>Recent content in Gleba on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml"/><item><title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title><link>https://factorioguides.com/space-age/gleba-survival-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid><description>&lt;p>Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.&lt;/div>
+
+&lt;h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck&lt;/h2>
+&lt;p>Every organic item on Gleba (and items derived from them) spoils over time:&lt;/p></description></item></channel></rss>

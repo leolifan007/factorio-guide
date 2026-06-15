@@ -1,33 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Defense on Factorio Guide</title>
-    <link>https://factorioguides.com/tags/defense/</link>
-    <description>Recent content in Defense on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 13:47:00 +0800</lastBuildDate>
-    <atom:link href="https://factorioguides.com/tags/defense/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Factorio Flamethrower Turret Defense - Highest DPS Weapon Guide</title>
-      <link>https://factorioguides.com/defense/flamethrower-defense-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid>
-      <description>&lt;p&gt;Your gun turrets chew through 10 magazines per biter wave and you&#39;re spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place flamethrower turrets behind a wall with dragon&#39;s teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;why-gun-turrets-alone-dont-scale&#34;&gt;Why Gun Turrets Alone Don&#39;t Scale&lt;/h2&gt;&#xA;&lt;p&gt;Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Artillery Guide - Automated Shelling and Outpost Defense</title>
-      <link>https://factorioguides.com/defense/artillery-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/defense/artillery-guide/</guid>
-      <description>&lt;p&gt;I spent 10 hours clearing biter nests by hand before I built my first artillery outpost. Every nest I destroyed triggered expansion parties from 8 different directions. Artillery fixes this -- it clears nests automatically and the range pushback keeps cleared areas clear. Here&#39;s the exact artillery wagon + outpost setup I use.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Two artillery wagons per outpost, surrounded by 6 gun turrets with piercing ammo. Shell range upgrades are the priority research (x3 before purple science). Automated delivery via train: artillery shell production feeds a provider station, each outpost has a requester. Without the ammo train, your outpost runs out of shells in 3 minutes of continuous firing.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-artillery-changes-the-game&#34;&gt;How Artillery Changes the Game&lt;/h2&gt;&#xA;&lt;p&gt;Artillery is the only weapon that clears biter nests from outside the pollution cloud. One shell destroys a nest cluster in a 5-tile radius. The range at max upgrade covers 7 chunks -- more than any other weapon.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Factorio Early Game Defense - How to Survive the First Night</title>
-      <link>https://factorioguides.com/defense/early-game-defense/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://factorioguides.com/defense/early-game-defense/</guid>
-      <description>&lt;p&gt;The biters came at hour 3. My factory had one gun turret and 30 magazines. I rebuilt the wall three times that night. Two hundred hours later, the approach that actually works is simpler than you think: a ring of 6-8 gun turrets with a single belt of ammo. That&#39;s it. Here&#39;s how to build it before the first attack.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place 6-8 gun turrets at each chokepoint. Feed ammo from a single belt. Build flamethrowers after oil. Upgrade to laser when you have surplus power. Don&#39;t wall off your entire base -- wall the chokepoints between lakes and cliffs. This setup carries to blue science without problems.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-first-defense----before-red-science&#34;&gt;The First Defense -- Before Red Science&lt;/h2&gt;&#xA;&lt;p&gt;You don&#39;t need walls for the first hour. The early biters are small biters with low health. Three gun turrets with 20 magazines each cover the area around your pollution cloud&#39;s leading edge.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Defense on Factorio Guide</title><link>https://factorioguides.com/tags/defense/</link><description>Recent content in Defense on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/defense/index.xml" rel="self" type="application/rss+xml"/><item><title>Flamethrower Turret Defense Guide</title><link>https://factorioguides.com/defense/flamethrower-defense-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid><description>&lt;p>Your gun turrets chew through 10 magazines per biter wave and you're spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p>
+&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Place flamethrower turrets behind a wall with dragon's teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div>
+
+&lt;h2 id="why-gun-turrets-alone-dont-scale">Why Gun Turrets Alone Don't Scale&lt;/h2>
+&lt;p>Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p></description></item><item><title>Early Game Defense — Surviving Your First Biter Attacks</title><link>https://factorioguides.com/defense/early-game-defense/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/early-game-defense/</guid><description>&lt;h2 id="when-do-biters-attack">When Do Biters Attack?&lt;/h2>
+&lt;p>Biters attack when:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Pollution&lt;/strong> reaches their nest (they become angry)&lt;/li>
+&lt;li>&lt;strong>You destroy a nest&lt;/strong> (immediate retaliation)&lt;/li>
+&lt;li>&lt;strong>Evolution factor&lt;/strong> is high enough (time + pollution)&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&lt;strong>Peaceful mode:&lt;/strong> Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p>&lt;/blockquote>
+&lt;h2 id="the-minimum-viable-defense">The Minimum Viable Defense&lt;/h2>
+&lt;h3 id="step-1-stone-wall-priority-1">Step 1: Stone Wall (Priority 1)&lt;/h3>
+&lt;p>Place &lt;strong>stone walls&lt;/strong> in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,114 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480">
+  <title>Gleba Bioflux Flow — Factorio Guide</title>
+  <rect x="0" y="0" width="920" height="48" fill="#1f1f1f" rx="8"/>
+  <rect x="0" y="42" width="920" height="6" fill="#1f1f1f"/>
+  <text x="460" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#6abe30">GLEBA PRODUCTION CHAIN — FRUIT TO ORE</text>
+
+  <!-- ===== ROW 1: Raw to Mash ===== -->
+  <rect x="15" y="65" width="890" height="100" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="460" y="85" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">STEP 1: FRUIT → MASH</text>
+
+  <rect x="30" y="100" width="80" height="50" rx="4" fill="#3a2a1a" stroke="#dd8822" stroke-width="1.5"/>
+  <text x="70" y="118" text-anchor="middle" font-size="15" fill="#dd8822">🌽 Yumako</text>
+  <text x="70" y="135" text-anchor="middle" font-size="15" fill="#886633">1x fruit</text>
+
+  <text x="120" y="130" font-size="15" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="135" y="100" width="80" height="50" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="175" y="118" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Bio-</text>
+  <text x="175" y="132" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">chamber</text>
+
+  <text x="225" y="130" font-size="15" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="240" y="100" width="80" height="50" rx="4" fill="#2a3a1a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="280" y="118" text-anchor="middle" font-size="15" fill="#88dd44" font-weight="bold">3x Mash</text>
+  <text x="280" y="135" text-anchor="middle" font-size="15" fill="#88aa88">0.5h spoils</text>
+
+  <!-- Spacer -->
+  <text x="350" y="130" font-size="16" fill="#444" text-anchor="middle">|</text>
+
+  <rect x="365" y="100" width="80" height="50" rx="4" fill="#3a2a1a" stroke="#aa6622" stroke-width="1.5"/>
+  <text x="405" y="118" text-anchor="middle" font-size="15" fill="#aa6622">🌰 Jellynut</text>
+  <text x="405" y="135" text-anchor="middle" font-size="15" fill="#886633">1x fruit</text>
+
+  <text x="455" y="130" font-size="15" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="470" y="100" width="80" height="50" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="510" y="118" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Bio-</text>
+  <text x="510" y="132" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">chamber</text>
+
+  <text x="560" y="130" font-size="15" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="575" y="100" width="80" height="50" rx="4" fill="#2a3a1a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="615" y="118" text-anchor="middle" font-size="15" fill="#88dd44" font-weight="bold">3x Mash</text>
+  <text x="615" y="135" text-anchor="middle" font-size="15" fill="#88aa88">0.5h spoils</text>
+
+  <!-- Down arrow to bioflux -->
+  <line x1="460" y1="165" x2="460" y2="195" stroke="#6abe30" stroke-width="2"/>
+  <polygon points="460,195 455,188 465,188" fill="#6abe30"/>
+  <text x="470" y="180" font-size="15" fill="#6abe30">1:1 mix</text>
+
+  <!-- ===== ROW 2: Bioflux ===== -->
+  <rect x="15" y="195" width="890" height="100" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="460" y="215" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">STEP 2: MASH → BIOFLUX</text>
+
+  <rect x="360" y="230" width="90" height="50" rx="4" fill="#252525" stroke="#6abe30" stroke-width="1.5"/>
+  <text x="405" y="248" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">Bio-</text>
+  <text x="405" y="262" text-anchor="middle" font-size="15" fill="#6abe30" font-weight="bold">chamber</text>
+
+  <text x="460" y="260" font-size="15" fill="#88dd44" text-anchor="middle" font-weight="bold">→</text>
+
+  <rect x="475" y="230" width="90" height="50" rx="4" fill="#1a3a1a" stroke="#88dd44" stroke-width="2"/>
+  <text x="520" y="248" text-anchor="middle" font-size="15" fill="#88dd44" font-weight="bold">Bioflux</text>
+  <text x="520" y="265" text-anchor="middle" font-size="15" fill="#88aa88">30min spoils</text>
+
+  <text x="370" y="285" text-anchor="middle" font-size="15" fill="#888">1x Yumako Mash + 1x Jellynut Mash → 1x Bioflux</text>
+
+  <!-- Down arrow to nutrients -->
+  <line x1="520" y1="295" x2="520" y2="325" stroke="#88dd44" stroke-width="2"/>
+  <polygon points="520,325 515,318 525,318" fill="#88dd44"/>
+  <text x="535" y="312" font-size="15" fill="#88dd44">1 → 10</text>
+
+  <!-- ===== ROW 3: Nutrients → Bacteria → Ore ===== -->
+  <rect x="15" y="325" width="890" height="140" rx="6" fill="#1f1f1f" stroke="#444" stroke-width="1"/>
+  <text x="460" y="345" text-anchor="middle" font-size="15" fill="#888" font-weight="bold">STEP 3: BIOFLUX → NUTRIENTS → BACTERIA → ORE</text>
+
+  <rect x="40" y="360" width="80" height="50" rx="4" fill="#1a3a1a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="80" y="378" text-anchor="middle" font-size="15" fill="#88dd44" font-weight="bold">Bioflux</text>
+  <text x="80" y="395" text-anchor="middle" font-size="15" fill="#88aa88">30min</text>
+
+  <text x="130" y="390" font-size="15" fill="#88dd44" text-anchor="middle">→</text>
+
+  <rect x="145" y="360" width="80" height="50" rx="4" fill="#2a4a2a" stroke="#88dd44" stroke-width="2"/>
+  <text x="185" y="378" text-anchor="middle" font-size="15" fill="#88dd44" font-weight="bold">Nutrients</text>
+  <text x="185" y="395" text-anchor="middle" font-size="15" fill="#aa5555">5min spoils!</text>
+
+  <text x="235" y="390" font-size="15" fill="#6688ee" text-anchor="middle">→</text>
+
+  <rect x="250" y="360" width="80" height="50" rx="4" fill="#1e1e3e" stroke="#6688ee" stroke-width="1.5"/>
+  <text x="290" y="378" text-anchor="middle" font-size="15" fill="#6688ee" font-weight="bold">Bacteria</text>
+  <text x="290" y="395" text-anchor="middle" font-size="15" fill="#aa5555">2min spoils!</text>
+
+  <text x="340" y="390" font-size="15" fill="#888" text-anchor="middle">→</text>
+
+  <rect x="355" y="360" width="80" height="50" rx="4" fill="#252525" stroke="#888" stroke-width="1.5"/>
+  <text x="395" y="378" text-anchor="middle" font-size="15" fill="#ccc" font-weight="bold">[Ore]</text>
+  <text x="395" y="395" text-anchor="middle" font-size="15" fill="#ccc" font-weight="bold">Assembler</text>
+
+  <text x="445" y="390" font-size="15" fill="#888" text-anchor="middle">→</text>
+
+  <rect x="460" y="360" width="70" height="50" rx="4" fill="#3a2a1a" stroke="#aa8844" stroke-width="1.5"/>
+  <text x="495" y="378" text-anchor="middle" font-size="15" fill="#aa8844" font-weight="bold">Iron</text>
+  <text x="495" y="395" text-anchor="middle" font-size="15" fill="#aa8844" font-weight="bold">Ore ✅</text>
+
+  <rect x="560" y="360" width="70" height="50" rx="4" fill="#3a1a1a" stroke="#aa4433" stroke-width="1.5"/>
+  <text x="595" y="378" text-anchor="middle" font-size="15" fill="#aa4433" font-weight="bold">Copper</text>
+  <text x="595" y="395" text-anchor="middle" font-size="15" fill="#aa4433" font-weight="bold">Ore ✅</text>
+
+  <!-- Bottom info -->
+  <rect x="660" y="360" width="230" height="90" rx="6" fill="#252525" stroke="#aa5555" stroke-width="1.5"/>
+  <text x="775" y="378" text-anchor="middle" font-size="15" fill="#aa5555" font-weight="bold">⏰ Spoilage Warning</text>
+  <text x="670" y="398" font-size="15" fill="#999">Bioflux 30min → Nutrients 5min</text>
+  <text x="670" y="414" font-size="15" fill="#999">→ Bacteria 2min → 🔥</text>
+  <text x="670" y="432" font-size="15" fill="#999">Short belts, no chests, burn excess!</text>
+</svg>
