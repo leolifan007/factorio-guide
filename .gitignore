@@ -16,3 +16,25 @@ Thumbs.db
 # Temp
 *.tmp
 _tw_*
+
+# Node
+node_modules/
+package-lock.json
+package.json
+
+# Scripts
+scripts/
+
+# Temp reports and misc
+hugo.exe
+LICENSE
+prod-css-backup.css
+prod-main.css
+session-summary_*.md
+article-comparison-report.md
+
+# Existing workspace artifacts
+../_fix_*.js
+../_check_*.js
+../_report.js
+../_strategy_check.js
