@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trains and Logistics Guide on Factorio Guide</title><link>https://factorioguides.com/trains-logistics/</link><description>Recent content in Trains and Logistics Guide on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/trains-logistics/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Rail Network — Signalling, Junctions, and Train Management</title><link>https://factorioguides.com/trains-logistics/basic-rail-network/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid><description>&lt;p>You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.&lt;/p>
-&lt;div class="pro-tip">&lt;strong>TL;DR:&lt;/strong> Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div>
-
-&lt;img src="https://factorioguides.com/images/diagrams/rail-signaling.svg" alt="Rail signal placement rules — chain signal before intersection, rail signal after" class="schema-diagram" loading="lazy" width="760">
-
-&lt;h2 id="the-mechanics-behind-train-deadlocks">The Mechanics Behind Train Deadlocks&lt;/h2>
-&lt;p>Factorio's rail system uses &lt;strong>blocks&lt;/strong>. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trains and Logistics Guide on Factorio Guide</title>
+    <link>http://localhost:1319/trains-logistics/</link>
+    <description>Recent content in Trains and Logistics Guide on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/trains-logistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Rail Network — Signalling, Junctions, and Train Management</title>
+      <link>http://localhost:1319/trains-logistics/basic-rail-network/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/trains-logistics/basic-rail-network/</guid>
+      <description>&lt;p&gt;You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here&#39;s the one-rule fix that prevents deadlocks entirely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;http://localhost:1319/images/diagrams/rail-signaling.svg&#34; alt=&#34;Rail signal placement rules — chain signal before intersection, rail signal after&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;760&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-train-deadlocks&#34;&gt;The Mechanics Behind Train Deadlocks&lt;/h2&gt;&#xA;&lt;p&gt;Factorio&#39;s rail system uses &lt;strong&gt;blocks&lt;/strong&gt;. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

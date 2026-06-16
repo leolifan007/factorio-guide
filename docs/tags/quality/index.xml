@@ -1,48 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality on Factorio Guide</title><link>https://factorioguides.com/tags/quality/</link><description>Recent content in Quality on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/quality/index.xml" rel="self" type="application/rss+xml"/><item><title>Quality Modules — Space Age New Mechanic Explained</title><link>https://factorioguides.com/space-age/quality-module-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/quality-module-guide/</guid><description>&lt;!-- Article Hero -->
-&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;">COMMON&lt;/span>
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;">UNCOMMON&lt;/span>
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;">RARE&lt;/span>
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;">EPIC&lt;/span>
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;">LEGENDARY&lt;/span>
-&lt;/div>
-&lt;h2 id="what-is-quality">What Is Quality?&lt;/h2>
-&lt;p>In Space Age, items can have &lt;strong>5 quality tiers&lt;/strong>. Higher quality items work better:&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Tier&lt;/th>
- &lt;th>Color&lt;/th>
- &lt;th>Bonus&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Common (1)&lt;/td>
- &lt;td>Gray&lt;/td>
- &lt;td>Baseline&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Uncommon (2)&lt;/td>
- &lt;td>Green&lt;/td>
- &lt;td>Plus 20 percent speed, minus 20 percent energy&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Rare (3)&lt;/td>
- &lt;td>Blue&lt;/td>
- &lt;td>Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Epic (4)&lt;/td>
- &lt;td>Purple&lt;/td>
- &lt;td>Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Legendary (5)&lt;/td>
- &lt;td>Orange&lt;/td>
- &lt;td>Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="how-quality-is-generated">How Quality Is Generated&lt;/h2>
-&lt;p>&lt;strong>Quality modules&lt;/strong> in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality on Factorio Guide</title>
+    <link>http://localhost:1319/tags/quality/</link>
+    <description>Recent content in Quality on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quality Modules — Space Age New Mechanic Explained</title>
+      <link>http://localhost:1319/space-age/quality-module-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/quality-module-guide/</guid>
+      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;&#34;&gt;COMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;&#34;&gt;UNCOMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;&#34;&gt;RARE&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;&#34;&gt;EPIC&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;&#34;&gt;LEGENDARY&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-quality&#34;&gt;What Is Quality?&lt;/h2&gt;&#xA;&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Tier&lt;/th&gt;&#xA;          &lt;th&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;Bonus&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Common (1)&lt;/td&gt;&#xA;          &lt;td&gt;Gray&lt;/td&gt;&#xA;          &lt;td&gt;Baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Uncommon (2)&lt;/td&gt;&#xA;          &lt;td&gt;Green&lt;/td&gt;&#xA;          &lt;td&gt;Plus 20 percent speed, minus 20 percent energy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rare (3)&lt;/td&gt;&#xA;          &lt;td&gt;Blue&lt;/td&gt;&#xA;          &lt;td&gt;Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Epic (4)&lt;/td&gt;&#xA;          &lt;td&gt;Purple&lt;/td&gt;&#xA;          &lt;td&gt;Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Legendary (5)&lt;/td&gt;&#xA;          &lt;td&gt;Orange&lt;/td&gt;&#xA;          &lt;td&gt;Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;how-quality-is-generated&#34;&gt;How Quality Is Generated&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quality modules&lt;/strong&gt; in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

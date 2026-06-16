@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Biters on Factorio Guide</title><link>https://factorioguides.com/tags/biters/</link><description>Recent content in Biters on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/biters/index.xml" rel="self" type="application/rss+xml"/><item><title>Early Game Defense — Surviving Your First Biter Attacks</title><link>https://factorioguides.com/defense/early-game-defense/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/early-game-defense/</guid><description>&lt;h2 id="when-do-biters-attack">When Do Biters Attack?&lt;/h2>
-&lt;p>Biters attack when:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Pollution&lt;/strong> reaches their nest (they become angry)&lt;/li>
-&lt;li>&lt;strong>You destroy a nest&lt;/strong> (immediate retaliation)&lt;/li>
-&lt;li>&lt;strong>Evolution factor&lt;/strong> is high enough (time + pollution)&lt;/li>
-&lt;/ol>
-&lt;blockquote>
-&lt;p>&lt;strong>Peaceful mode:&lt;/strong> Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p>&lt;/blockquote>
-&lt;h2 id="the-minimum-viable-defense">The Minimum Viable Defense&lt;/h2>
-&lt;h3 id="step-1-stone-wall-priority-1">Step 1: Stone Wall (Priority 1)&lt;/h3>
-&lt;p>Place &lt;strong>stone walls&lt;/strong> in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biters on Factorio Guide</title>
+    <link>http://localhost:1319/tags/biters/</link>
+    <description>Recent content in Biters on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/biters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Early Game Defense — Surviving Your First Biter Attacks</title>
+      <link>http://localhost:1319/defense/early-game-defense/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/defense/early-game-defense/</guid>
+      <description>&lt;h2 id=&#34;when-do-biters-attack&#34;&gt;When Do Biters Attack?&lt;/h2&gt;&#xA;&lt;p&gt;Biters attack when:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pollution&lt;/strong&gt; reaches their nest (they become angry)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;You destroy a nest&lt;/strong&gt; (immediate retaliation)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Evolution factor&lt;/strong&gt; is high enough (time + pollution)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Peaceful mode:&lt;/strong&gt; Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-minimum-viable-defense&#34;&gt;The Minimum Viable Defense&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stone-wall-priority-1&#34;&gt;Step 1: Stone Wall (Priority 1)&lt;/h3&gt;&#xA;&lt;p&gt;Place &lt;strong&gt;stone walls&lt;/strong&gt; in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

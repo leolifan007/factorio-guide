@@ -16,6 +16,18 @@
   "blueprints"        (dict "tag" ""          "thumb" "#1a1a1a,#2a2a2a" )
 }}
 
+{{- /* Section → Featured image mapping (6 fixed category images) */}}
+{{- $featImages := dict
+  "getting-started"   "your-first-factory"
+  "science-packs"     "red-science-pack"
+  "production-ratios" "smelting-ratios"
+  "base-design"       "main-bus-design"
+  "trains-logistics"  "basic-rail-network"
+  "defense"           "smelting-ratios"
+  "blueprints"        "main-bus-design"
+  "space-age"         "quality-modules"
+}}
+
 <div class="guide-grid">
 {{- range $page := $latest }}
   {{- $section := $page.Section }}
@@ -29,7 +41,8 @@
     <span class="guide-card-badge">&#128640; Space Age</span>
     {{- end }}
     <div class="card-thumb" style="background:linear-gradient(135deg,{{ $color.thumb }});">
-      {{- $thumb := printf "images/featured/%s.jpg" ($page.File.ContentBaseName | replaceRE "-guide$" "") }}
+      {{- $featKey := index $featImages $section | default "your-first-factory" }}
+      {{- $thumb := printf "images/featured/%s.jpg" $featKey }}
       <img src="{{ $thumb | relURL }}" alt="{{ $page.Title }}" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
     </div>
     <div class="card-body">
