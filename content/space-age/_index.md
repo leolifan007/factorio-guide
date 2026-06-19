@@ -1,12 +1,12 @@
----
+﻿---
 title: "Space Age Expansion Guide"
-description: "Gleba, Fulgora, Vulcanus, Aquilo — new planets, production chains, quality modules, and the rocket silo rework in Factorios Space Age expansion."
+description: "Gleba, Fulgora, Vulcanus, Aquilo 鈥?new planets, production chains, quality modules, and the rocket silo rework in Factorios Space Age expansion."
 date: 2026-05-18
 ---
 
 <!-- Section: Space Age Overview -->
 <div class="section-card cyan">
-<p>Space Age introduces interplanetary logistics, quality-tiered items, and four new challenge planets. Your factory no longer fits on one map — you are building an interplanetary empire.</p>
+<p>Space Age introduces interplanetary logistics, quality-tiered items, and four new challenge planets. Your factory no longer fits on one map 鈥?you are building an interplanetary empire.</p>
 <blockquote><p><strong>Big change:</strong> Space Age adds <em>quality</em> to items. Machines with quality components run faster, consume less energy, and have larger areas of effect.</p></blockquote>
 </div>
 
@@ -35,7 +35,7 @@ Quality modules add a chance for produced items to be higher quality:
 
 ## Interplanetary Logistics
 
-Space Age introduces **rocket logistics** — automated rocket launches between planets carrying cargo.
+Space Age introduces **rocket logistics** 鈥?automated rocket launches between planets carrying cargo.
 
 1. Build **rocket silos** on each planet
 2. Set up **cargo rocket sections** in the assembler
@@ -46,7 +46,15 @@ Space Age introduces **rocket logistics** — automated rocket launches between 
 
 ## Available Guides
 
-- **[Gleba Survival Guide](gleba-survival-guide)** — Spoilage management, pentapod defense, and science production
+### Inner Planets
+- **[Vulcanus Guide](vulcanus-guide)** — Foundry unlock, lava smelting, big drill, and first lander survival
 - **[Fulgora Recycling Guide](fulgora-recycling-guide)** — Scrap processing, sorting, and EM Plant production
+- **[Gleba Survival Guide](gleba-survival-guide)** — Spoilage management, pentapod defense, and science production
+
+### Endgame
+- **[Aquilo Guide](aquilo-guide)** — Heat management, strafer defense, and cryogenic science prep
+- **[Planet Order Guide](planet-order-guide)** — Optimal visit sequence: Vulcanus -> Fulgora -> Gleba -> Aquilo
+
+### Systems
 - **[Space Platform Build Guide](space-platform-guide)** — Thruster fuel math, asteroid processing, and defense
 - **[Quality Modules Guide](quality-module-guide)** — Tier mechanics, probabilities, and production line design
