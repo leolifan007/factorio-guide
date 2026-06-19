@@ -15,7 +15,7 @@ Your gun turrets chew through 10 magazines per biter wave and you're spending mo
 
 ## Why Gun Turrets Alone Don't Scale
 
-Gun turrets deal single-target damage that degrades against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.
+Gun turrets are a solid start—see [Early Game Defense]({{< ref "/defense/early-game-defense" >}})—but they degrade against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.
 
 | Turret Type | Raw DPS | Ammo Cost | AoE | Armor Piercing | Range |
 |:------------|:-------:|:---------:|:---:|:--------------:|:-----:|
@@ -37,10 +37,10 @@ Flamethrower turrets hit for roughly 650 DPS per turret with damage upgrades —
 
 **Ammo supply:**
 
-- Heavy oil is the best flamethrower fuel (highest damage modifier)
+- Heavy oil is the best flamethrower fuel (highest damage modifier). Our [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}}) explains how to balance heavy oil between flamethrower ammo and cracking.
 - 1 chemical plant on heavy oil feeds up to 40 turrets
 - 1 storage tank holds enough for 250+ waves
-- Connect a circuit wire to the tank: when heavy oil drops below 1000, enable the chemical plant. You get automatic ammo production that only runs when needed.
+- Connect a circuit wire to the tank: when heavy oil drops below 1000, enable the chemical plant. This is a simple application of [circuit network control]({{< ref "/blueprints/circuit-network-guide" >}}). You get automatic ammo production that only runs when needed.
 
 {{< callout type="warning" >}}
 **Traps People Keep Falling Into:** Don't run your flamethrower turrets off the same pipe network as your refinery. A deadlocked refinery (heavy oil full → cracking stalled → no petroleum) will starve your defenses just when you need them. Give flamethrower turrets their own pumpjacks and pipe network.

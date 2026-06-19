@@ -7,7 +7,7 @@ draft: false
 emoji: "🔵"
 ---
 
-Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
+After [green science]({{< ref "/getting-started/green-science-guide" >}}), blue science is the first real complexity spike in Factorio. It’s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.
 
 {{< callout "tip" >}}
 **TL;DR:** Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.
@@ -23,7 +23,7 @@ Two of these three require oil products. Red circuits need plastic (petroleum + 
 
 {{< section "Oil Refining — The Hard Part" >}}
 
-Here's the chain from well to blue science:
+Before jumping into oil, make sure your iron and copper supply is solid. Our [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) helps you size your furnace columns for the added demand. Here’s the chain from well to blue science:
 
 | Step | Input | Output | Machine |
 |------|-------|--------|---------|
@@ -77,7 +77,7 @@ Once you research advanced oil processing, your refinery setup changes significa
 | Petroleum output | 40/s | 30/s |
 | Cracking needed | No | Yes |
 
-The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Without cracking, your refineries stall from heavy oil backup.
+The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Setting up [circuit-controlled cracking]({{< ref "/blueprints/circuit-network-guide" >}}) ensures your refineries never stall from output backup.
 
 {{< section "Common Pitfalls" >}}
 

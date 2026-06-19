@@ -59,6 +59,8 @@ Platform weight is the #1 killer of first platforms. Each tile of foundation add
 - Double thrusters for every 100 tons above that
 - The thruster tip: place fuel tanks directly adjacent to thrusters. No pipes needed. Pipe runs between fuel production and thrusters are fine, but the last connection to the thruster should be direct tank-to-thruster.
 
+Using quality thrusters (Rare+) can significantly reduce fuel consumption—our [Quality Module Guide]({{< ref "/space-age/quality-module-guide" >}}) explains how to get them. Here’s a weight budget for a 100-ton platform:
+
 **Weight budget for a 100-ton platform:**
 | Component | Weight (tons) | Count |
 |:----------|:-------------:|:-----:|
@@ -91,9 +93,9 @@ Under 100 tons, 2 thrusters, plenty of room for cargo.
 
 ## Scaling Past the First Platform
 
-**Inner planet routes** (Nauvis → Vulcanus/Fulgora): 100-ton platform, 2 thrusters, 4 turrets. Simple.
+**Inner planet routes** (Nauvis → Vulcanus/[Fulgora]({{< ref "/space-age/fulgora-recycling-guide" >}})): 100-ton platform, 2 thrusters, 4 turrets. Simple.
 
-**Outer planet routes** (to Gleba/Aquilo): Need 300+ tons, 6+ thrusters, 12+ turrets. Build a second, larger platform. Don't try to retrofit the first one — the weight penalty kills speed.
+**Outer planet routes** (to [Gleba]({{< ref "/space-age/gleba-survival-guide" >}})/Aquilo): Need 300+ tons, 6+ thrusters, 12+ turrets. Build a second, larger platform. Don’t try to retrofit the first one — the weight penalty kills speed.
 
 **Rocket transport:** Already launched a platform and forgot something? Pack it in a rocket. Launched platforms are persistent — they stay in orbit of whatever planet they're at. Just launch a resupply rocket.
 

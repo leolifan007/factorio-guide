@@ -23,7 +23,7 @@ The solution is circuit-controlled cracking: convert excess heavy to light, exce
 
 You only need three circuit patterns. Everything else is a variation.
 
-**Pattern 1 — Fluid cracking automation.** This is the one that fixes refinery deadlocks.
+**Pattern 1 — Fluid cracking automation.** This is the one that fixes the refinery deadlocks described in our [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}}).
 
 What you need: red wire, decider combinator, pump per fluid type.
 
@@ -37,7 +37,7 @@ What you need: red wire, decider combinator, pump per fluid type.
 
 A red wire carries signal. A green wire is a separate network. If one wire shorts it doesn't corrupt the other. Convention: red for production, green for train control.
 
-**Pattern 2 — SR latch for power control.** Insert fuel cells only when steam tanks are low.
+**Pattern 2 — SR latch for power control.** Insert fuel cells only when steam tanks are low. This is especially useful for [nuclear power]({{< ref "/base-design/nuclear-power-guide" >}}) plants where fuel conservation matters.
 
 - Wire all steam tanks to a decider combinator
 - Set: steam < 10000 → output S = 1 (set condition)
@@ -72,7 +72,7 @@ Common use: keep exactly 200 green circuits on the belt to the mall. Insert more
 
 Once you've mastered the three patterns, circuit networks scale to:
 
-- **Train station limits** — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed.
+- **Train station limits** — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed. Combine this with proper [rail signaling]({{< ref "/trains-logistics/basic-rail-network" >}}) for a deadlock-free train network.
 - **Solar accumulator ratios** — circuit-controlled power switch that disconnects accumulators from the grid at a set charge level.
 - **Kovarex smart centrifuge** — only output U-235 when you have enough to sustain the reactor block.
 - **Mall demand system** — wire requester chests to constant combinators. Set chest to request exact counts. Bots deliver only what's needed.

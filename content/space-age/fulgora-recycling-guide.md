@@ -38,7 +38,7 @@ Every item type needs a place to go. If blue circuits pile up and have no consum
 **Stage 1 — The scrap processing line.**
 Place recyclers in a row. Each feeds into a red belt running below. This belt carries all output items — it's your "sushi belt".
 
-**Stage 2 — Filter splitters.**
+**Stage 2 — Filter splitters.** Circuit-controlled splitters (covered in our [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}})) can automate the overflow routing for each item type.
 After the recycler row, add one filter splitter per item type. Each splitter filters one material onto a dedicated belt:
 
 1. First splitter: filter Holmium Ore → dedicated belt to processing
@@ -65,7 +65,7 @@ Holmium ore is the reason you're on Fulgora. The processing chain:
 2. Holmium plate → Electromagnetic science (with other ingredients)
 3. Holmium plate → Superconductor (for quality modules)
 
-**The ratio:** 1 scrap recycler produces roughly 0.3 holmium ore per second with average luck. One electromagnetic science assembler needs about 2.5 ore/second. That means ~8 scrap recyclers running constantly for every 1 science assembler.
+**The ratio:** 1 scrap recycler produces roughly 0.3 holmium ore per second with average luck. One electromagnetic science assembler needs about 2.5 ore/second. Quality modules can improve holmium yield from recycling—see our [Quality Module Guide]({{< ref "/space-age/quality-module-guide" >}}). That means ~8 scrap recyclers running constantly for every 1 science assembler.
 
 Scale accordingly: 40 recyclers → 5 science assemblers → 60 SPM of electromagnetic science.
 

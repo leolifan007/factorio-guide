@@ -56,7 +56,7 @@ Each station needs:
 3. Station name: `[Resource] Location Function` (e.g. `[Iron] Smelter Input`)
 
 {{< callout type="info" >}}
-**Quick Tip:** Use train limits (the number in the station UI) instead of disabling stations via circuit network. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).
+**Quick Tip:** Use train limits (the number in the station UI) instead of disabling stations via circuit network. For more advanced control, wire your stations to a [circuit network]({{< ref "/blueprints/circuit-network-guide" >}}) that dynamically adjusts limits based on buffer chest levels. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).
 {{< /callout >}}
 
 ## Where Most Players Mess This Up
@@ -79,7 +79,9 @@ At 500+ SPM, your rail grid needs:
 
 **Train fuel depots** — 1-minute refuel stop in the center of the grid. Every train's schedule starts with: Depot (fuel stop, 5s) → Pickup → Drop-off → Back to Depot.
 
-**Centralized train control** — Use circuit network to broadcast open station slots. A "train manager" constant combinator at each station sends its availability to a central signal, which dynamically reroutes trains.
+**Centralized train control** — Use [circuit network]({{< ref "/blueprints/circuit-network-guide" >}}) to broadcast open station slots. A "train manager" combinator at each station sends availability to a central signal.
+
+For a complete rail-based base layout, see [City Block Design Guide]({{< ref "/base-design/city-block-guide" >}}).
 
 **Key metrics to track:**
 - If trains wait more than 30 seconds at any intersection: upgrade that junction

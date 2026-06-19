@@ -19,9 +19,9 @@ Your first factory is a mess. That's normal. The inserter grabbing from the furn
 
 The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.
 
-The fix is the **main bus**: a set of parallel belts running through the factory. Each production line pulls what it needs from the bus. The bus keeps flowing even if individual production lines stall.
+The fix is the **main bus**—a set of parallel belts running through the factory. Each production line pulls what it needs from the bus. For a full breakdown of lane allocation and expansion strategy, see our [Main Bus Design Guide]({{< ref "/base-design/main-bus-guide" >}}). The bus keeps flowing even if individual production lines stall.
 
-**Step 1 — Smelting column.** Build 24 stone furnaces per ore type (12 each side of a belt). Iron on one belt, copper on another. Steel needs 5 iron per plate — build a dedicated steel column later.
+**Step 1 — Smelting column.** Build 24 stone furnaces per ore type (12 each side of a belt). Iron on one belt, copper on another. See our [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) for furnace-to-belt matching. Steel needs 5 iron per plate — build a dedicated steel column later.
 
 **Step 2 — The bus.** Run 4 lanes of iron, 2 lanes of copper, 1 lane of gears, 1 lane of green circuits down the middle of your factory. Leave room to add more lanes.
 
@@ -81,8 +81,8 @@ Once red and green are automated, the next milestones:
 
 1. **Steel production** — 5 iron plates per steel -> 4 steel furnaces for every 20 iron furnaces
 2. **Oil processing** — plastic + sulfur for blue circuits + military science
-3. **Blue science** — needs engines (steel + pipes + gears) and red circuits (green circuits + plastic)
-4. **Military science** — walls + grenades + piercing ammo. Don't rush this unless biters are pressing
+3. **Blue science** — needs engines (steel + pipes + gears) and red circuits (green circuits + plastic). Our [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}}) covers the refinery setup that produces the plastic and sulfur you’ll need.
+4. **Military science** — walls + grenades + piercing ammo. Don’t rush this unless biters are pressing. If they are, our [Early Game Defense Guide]({{< ref "/defense/early-game-defense" >}}) shows how to secure your perimeter.
 
 Each milestone is a new side-factory pulling from the bus. The main bus design means you can build all of them without tearing down what already works.
 

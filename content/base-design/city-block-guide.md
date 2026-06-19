@@ -133,7 +133,7 @@ Use train limit signals. Each station broadcasts how many trains it can accept.
 - Depot: Trains wait at a depot until a station requests them
 
 **Approach 3: Circuit network controlled**
-Wire each station to a circuit network. Stations request trains based on buffer chest levels. Most efficient but requires circuit network knowledge.
+Wire each station to a circuit network. Stations request trains based on buffer chest levels. Most efficient but requires [circuit network]({{< ref "/blueprints/circuit-network-guide" >}}) knowledge.
 
 {{< section "Space Age Integration" >}}
 

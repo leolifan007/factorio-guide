@@ -36,7 +36,7 @@ The solution is controlled cracking: convert excess heavy to light, excess light
 - 1 heavy cracker consumes 40 heavy → 30 light per cycle (clears all heavy if needed)
 - 7 light crackers consume 105 light → 70 petroleum per cycle
 
-The system can handle any consumption pattern because the cracking ratios match the production ratios.
+The system can handle any consumption pattern because the cracking ratios match the production ratios. For a deeper understanding of the circuit logic behind the pumps, see our [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}}).
 
 **Circuit control (prevents the deadlock):**
 
@@ -75,7 +75,7 @@ For oil processing, keep pipe runs under 30 segments (about 60 tiles). Beyond th
 Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If you crack all of it, you lose access to both:
 
 - **Lubricant:** Needed for electric engines (purple science). Each engine unit uses 1 lubricant.
-- **Flamethrower ammo:** Heavy oil-based ammo deals the highest damage.
+- **Flamethrower ammo:** Heavy oil-based ammo deals the highest damage — see our [Flamethrower Defense Guide]({{< ref "/defense/flamethrower-defense-guide" >}}) for turret setup and pipe isolation tips.
 
 **The optimal approach:**
 - Use the 8:1:7 base ratio
@@ -90,6 +90,8 @@ Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If 
 ## Scaling Up — Refinery Blocks at Megabase Scale
 
 For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly:
+
+Your oil products feed directly into [blue science]({{< ref "/science-packs/blue-science-guide" >}}), which needs plastic and sulfur—both petroleum-based.
 
 **100 SPM base:**
 - 8 refineries

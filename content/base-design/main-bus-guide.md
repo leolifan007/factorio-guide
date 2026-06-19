@@ -51,16 +51,20 @@ Add more lanes (steel, green circuits, plastic) as your factory grows.
 
 > **Mistake 1:** Building the bus too narrow. You can't widen a main bus once it's surrounded by assemblers.
 
-> **Mistake 2:** Not planning for **train unloading**. Trains need to dump into the bus at the start of the line.
+> **Mistake 2:** Not planning for smelting throughput. Use our [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) to calculate exactly how many furnaces you need to keep your bus lanes saturated.
+
+**Mistake 3:** Not planning for **train unloading**. Trains need to dump into the bus at the start of the line.
 
 > **Mistake 3:** Forgetting **power poles**. Run big electric poles along one side of the bus.
+
+If you’re just starting out, [Your First Factory]({{< ref "/getting-started/your-first-factory" >}}) walks through the complete beginner bus setup step by step. Once you’ve outgrown the basic 4-lane design:
 
 ## Is Main Bus Right for You?
 
 | Base Style | Best For | Downside |
 |-----------|----------|----------|
 | Main Bus | Beginners, mid-size bases | Inefficient at megabase scale |
-| City Blocks | Megabases, train-based | Complex setup |
+| [City Blocks]({{< ref "/base-design/city-block-guide" >}}) | Megabases, train-based | Complex setup |
 | Megabase (beaconed) | UPS-optimized builds | Requires deep game knowledge |
 
 > **Bottom line:** Main bus is the best starting design. You can always transition to city blocks or beaconed modules later.

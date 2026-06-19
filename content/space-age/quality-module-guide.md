@@ -59,6 +59,8 @@ Inserters can be set to only pick up items of a specific quality:
 2. Click the **quality filter** button
 3. Choose which quality tier to pick up
 
+Quality modules pair naturally with [Fulgora’s scrap recycling]({{< ref "/space-age/fulgora-recycling-guide" >}})—recyclers can upgrade item quality while breaking scrap down. Here’s what to prioritize:
+
 ## Which Items to Upgrade First?
 
 Priority list for quality:
@@ -66,6 +68,7 @@ Priority list for quality:
 | Priority | Item | Why |
 |----------|-------|------|
 | 1 | **Beacons** | More beacons = more speed modules affecting machines |
+| — | **Space platform thrusters** | Rare thrusters use less fuel—see [Space Platform Guide]({{< ref "/space-age/space-platform-guide" >}}) |
 | 2 | **Speed modules** | Faster machines = more production |
 | 3 | **Electric furnaces** | Faster smelting = more plates |
 | 4 | **Miners** | More mining speed = more ore |

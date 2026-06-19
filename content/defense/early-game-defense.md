@@ -8,7 +8,7 @@ emoji: "🛡️"
 
 ## When Do Biters Attack?
 
-Biters attack when:
+Once your [first factory]({{< ref "/getting-started/your-first-factory" >}}) starts producing, pollution spreads and biters take notice. Biters attack when:
 1. **Pollution** reaches their nest (they become angry)
 2. **You destroy a nest** (immediate retaliation)
 3. **Evolution factor** is high enough (time + pollution)
@@ -53,6 +53,7 @@ Biters attack because of pollution. Reduce pollution = fewer attacks.
 | Efficiency module 1 in miners | Minus 30 percent pollution |
 | Efficiency module 2 in labs | Minus 45 percent pollution |
 | Solar panels | Zero pollution power |
+| Nuclear power | Near-zero pollution, massive output — see [Nuclear Power Guide]({{< ref "/base-design/nuclear-power-guide" >}}) |
 | Burning excess wood | Plus plus pollution (don't do it) |
 
 ## Defense Upgrade Path
@@ -66,7 +67,7 @@ Steel Wall right arrow Gun Turrets (piercing rounds)
     down arrow
 Laser Turrets (electricity powered, no ammo)
     down arrow
-Flame Turrets (area damage, fuel-based)
+[Flame Turrets]({{< ref "/defense/flamethrower-defense-guide" >}}) (area damage, fuel-based)
     down arrow
 Artillery Turrets (long range, explosive shells)
 </pre>

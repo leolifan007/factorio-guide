@@ -7,7 +7,7 @@ draft: false
 emoji: "🧪"
 ---
 
-Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.
+By the time you’ve built your [first factory]({{< ref "/getting-started/your-first-factory" >}}), automation starts feeling natural. Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.
 
 {{< callout "tip" >}}
 **TL;DR:** 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.
@@ -52,7 +52,7 @@ The solution is simple math: gear production is your limiting factor, not belt s
 
 Each inserter needs 1 iron gear. Green science at full tilt (12 packs/sec from 12 assemblers) consumes 2 inserters/sec = 2 gears/sec. Your red science assemblers (assuming 10) need 2 gears/sec too.
 
-That's 4 gears/sec — a full yellow belt of gears. Most builds underestimate this and wonder why the inserter assembler keeps starving even though iron plates are flowing.
+That’s 4 gears/sec—a full yellow belt of gears. Running that many gears means your iron plate supply needs to keep up. Check the [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) to make sure your furnace columns can feed both science and gear production. Most builds underestimate this and wonder why the inserter assembler keeps starving even though iron plates are flowing.
 
 **Fix:** Dedicate one gear assembler to green science that doesn't share with red science. 2 gear assemblers on iron will feed both comfortably.
 
@@ -73,6 +73,8 @@ The footprint stays compact because belt and inserter production is tiny — rou
 - Green circuits: ~20/sec
 
 All fit on a single main bus with room to spare.
+
+Once green science is automated, your next milestone is [Blue Science]({{< ref "/science-packs/blue-science-guide" >}})—it introduces oil processing, sulfur, and plastic production for the full chemical science pack chain.
 
 ---
 

@@ -18,7 +18,7 @@ emoji: "🔶"
 | 5 SPM (sustainable) | 5 assemblers | Needs iron plate belt |
 | 10 SPM | 10 assemblers + 1 gear assembler | Typical early game |
 
-> **Tip:** Red science is cheap. Don't overthink it. 10 assemblers producing red science is more than enough for the entire early game research queue.
+> **Tip:** Red science is cheap. Don’t overthink it. 10 assemblers producing red science is more than enough to push through to [green science]({{< ref "/getting-started/green-science-guide" >}}) and beyond.
 
 ## How to Automate
 
@@ -29,6 +29,8 @@ emoji: "🔶"
 <div class="warning-box">
 <strong>Common mistake:</strong> New players often forget that labs need <em>both</em> science packs AND power. Check that your lab has an inserter feeding it!
 </div>
+
+Your red science setup should sit as a side-factory pulling from the [main bus]({{< ref "/base-design/main-bus-guide" >}}) alongside your furnace columns. Here’s what to research next:
 
 ## Research Priority After Red Science
 

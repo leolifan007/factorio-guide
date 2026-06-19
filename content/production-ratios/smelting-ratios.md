@@ -6,6 +6,8 @@ tags: ["production-ratios", "smelting", "belts"]
 emoji: "🔥"
 ---
 
+Whether you’re building your [first factory]({{< ref "/getting-started/your-first-factory" >}}) or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.
+
 ## The Core Concept
 
 A **transport belt** carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).
@@ -43,7 +45,7 @@ A proper smelting column (simplified description):
 
 Iron ore belt arrow Furnace Furnace Furnace... arrow Plate output belt arrow Chest or next assembler
 
-> **Design principle:** Always leave space to **upgrade** from stone to steel to electric furnaces without rebuilding the entire column.
+> **Design principle:** Always leave space to **upgrade** from stone to steel to electric furnaces without rebuilding the entire column. Your smelting output feeds directly into the [main bus]({{< ref "/base-design/main-bus-guide" >}}), so plan your bus width to match your furnace capacity.
 
 ## Beaconed Smelting (Megabase)
 

@@ -23,7 +23,7 @@ A single 2×2 nuclear block delivers roughly 55 MW per tile loaded. For comparis
 
 ## Building the Fuel Chain First
 
-Before you place a single reactor, set up fuel production. The nuclear chain needs three stages:
+Reactors need a lot of steel and circuits. Use our [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) to plan your steel furnace columns before you scale up. Before you place a single reactor, set up fuel production. The nuclear chain needs three stages:
 
 **Stage 1 — Uranium mining.** One electric mining drill on a uranium patch produces enough ore for a 2×2 reactor. The catch: you need sulfur for sulfuric acid (10 acid per ore). Run a pipe from your oil base.
 
@@ -38,7 +38,7 @@ Before you place a single reactor, set up fuel production. The nuclear chain nee
 One assembler with speed modules running for 5 minutes produces enough cells for hours.
 
 {{< callout type="info" >}}
-**Quick Tip for Min-Maxers:** Don't rush Kovarex. The first 40 U-235 (needed to bootstrap) takes about 6,000 ore. Run centrifuges continuously from the moment you have uranium processing unlocked — stockpile U-235 while your first reactor runs on manual.
+**Quick Tip for Min-Maxers:** Don't rush Kovarex. The first 40 U-235 (needed to bootstrap) takes about 6,000 ore. Run centrifuges continuously from the moment you have uranium processing unlocked—stockpile U-235 while your first reactor runs on manual. Once you have enough, our [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}}) shows how to wire an SR latch that automatically inserts fuel cells only when steam drops below a threshold.
 {{< /callout >}}
 
 ## The Proven Fix — 2×2 Reactor Layout
@@ -61,7 +61,7 @@ Four reactors touching in a square. Each adjacent reactor adds +100% heat output
 - **Fuel cells per hour:** 72
 
 {{< callout type="warning" >}}
-**Don't circuit-control fuel insertion without a plan.** A common trap: insert fuel only when steam < threshold. Works great until a power spike drains the buffer and your entire base browns out. Use at least 50 steam tanks as a buffer before attempting fuel-saving circuits.
+**Don’t circuit-control fuel insertion without a plan.** A common trap: insert fuel only when steam < threshold. Works great until a power spike drains the buffer and your entire base browns out. Use at least 50 steam tanks as a buffer before attempting fuel-saving circuits.
 {{< /callout >}}
 
 ## Understanding Heat Pipe Physics (Where Most Builds Fail)
@@ -99,6 +99,8 @@ Kovarex converts 40 U-235 + 5 U-238 → 41 U-235 (+5 U-238 recipe cost, net +1 U
 **Overproducing fuel cells.** 72 cells per hour is the burn rate. One assembler running for 5 minutes keeps you running for hours. Do not build four assemblers.
 
 **Ignoring the neighbor bonus.** A 2×2 sharing bonuses produces 480 MW. Four standalone reactors with the same fuel produce 160 MW. The difference: touching the reactors.
+
+In a [city block megabase]({{< ref "/base-design/city-block-guide" >}}), power is typically a dedicated block with its own train station for fuel delivery.
 
 ## Scaling Past 1 GW
 

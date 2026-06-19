@@ -1,0 +1,108 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <title>Yellow Science Production Flow - Factorio Guide</title>
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1000" height="620" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="#f1c40f">UTILITY SCIENCE - FLYING ROBOT FRAME PRODUCTION CHAIN</text>
+
+  <!-- ===== Row 1: Basic inputs ===== -->
+  <rect x="30" y="95" width="140" height="50" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="100" y="122" text-anchor="middle" font-size="16" fill="#888">Steel Plate</text>
+  <line x1="170" y1="120" x2="215" y2="120" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="215,115 230,120 215,125" fill="#f1c40f"/>
+
+  <rect x="30" y="165" width="140" height="50" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="100" y="192" text-anchor="middle" font-size="16" fill="#888">Iron Gear Wheel</text>
+  <line x1="170" y1="190" x2="215" y2="190" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="215,185 230,190 215,195" fill="#f1c40f"/>
+
+  <rect x="30" y="235" width="140" height="50" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="100" y="262" text-anchor="middle" font-size="16" fill="#888">Green Circuit</text>
+  <line x1="170" y1="260" x2="215" y2="260" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="215,255 230,260 215,265" fill="#f1c40f"/>
+
+  <rect x="30" y="305" width="140" height="50" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="100" y="332" text-anchor="middle" font-size="16" fill="#888">Battery</text>
+  <line x1="170" y1="330" x2="215" y2="330" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="215,325 230,330 215,335" fill="#f1c40f"/>
+
+  <rect x="30" y="375" width="140" height="50" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="100" y="402" text-anchor="middle" font-size="16" fill="#888">Red Circuit</text>
+  <line x1="170" y1="400" x2="215" y2="400" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="215,395 230,400 215,405" fill="#f1c40f"/>
+
+  <!-- ===== Engine Unit ===== -->
+  <rect x="235" y="155" width="150" height="70" rx="5" fill="#2a2a2a" stroke="#777"/>
+  <text x="310" y="185" text-anchor="middle" font-size="17" fill="#ddd">Engine Unit</text>
+  <text x="310" y="210" text-anchor="middle" font-size="15" fill="#888">Steel + Gear + 2 Pipe</text>
+
+  <line x1="385" y1="190" x2="430" y2="190" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="430,185 445,190 430,195" fill="#f1c40f"/>
+
+  <!-- ===== Electric Engine ===== -->
+  <rect x="235" y="270" width="150" height="70" rx="5" fill="#2a2a2a" stroke="#777"/>
+  <text x="310" y="300" text-anchor="middle" font-size="17" fill="#ddd">Electric Engine</text>
+  <text x="310" y="325" text-anchor="middle" font-size="15" fill="#888">Engine + Red + Lube</text>
+
+  <line x1="385" y1="305" x2="430" y2="305" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="430,300 445,305 430,310" fill="#f1c40f"/>
+
+  <!-- ===== Flying Robot Frame ===== -->
+  <rect x="450" y="155" width="190" height="120" rx="5" fill="#2a2a2a" stroke="#f1c40f" stroke-width="2"/>
+  <text x="545" y="185" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">Flying Robot Frame</text>
+  <text x="545" y="212" text-anchor="middle" font-size="16" fill="#ddd">Engine + Electric Engine</text>
+  <text x="545" y="236" text-anchor="middle" font-size="16" fill="#888">+ Battery + 2 Green + 3 Steel</text>
+  <text x="545" y="258" text-anchor="middle" font-size="14" fill="#666">Assembling Machine 2/3</text>
+
+  <!-- Merged arrows to Flying Robot Frame -->
+  <line x1="445" y1="190" x2="450" y2="195" stroke="#f1c40f" stroke-width="2"/>
+  <line x1="445" y1="305" x2="450" y2="250" stroke="#f1c40f" stroke-width="2"/>
+  <line x1="170" y1="260" x2="455" y2="215" stroke="#f1c40f" stroke-width="1.5"/>
+  <line x1="170" y1="330" x2="455" y2="235" stroke="#f1c40f" stroke-width="1.5"/>
+
+  <!-- ===== Yellow Science Assembly ===== -->
+  <rect x="690" y="130" width="230" height="330" rx="8" fill="#2a2a2a" stroke="#f1c40f" stroke-width="2.5" stroke-dasharray="4,2"/>
+  <text x="805" y="165" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">Utility Science</text>
+  <text x="805" y="192" text-anchor="middle" font-size="17" fill="#f1c40f">Assembling Machine 2/3</text>
+  <text x="805" y="228" text-anchor="middle" font-size="16" fill="#ddd">Input per craft (Space Age):</text>
+  <text x="805" y="255" text-anchor="middle" font-size="16" fill="#888">1 Processing Unit (Blue)</text>
+  <text x="805" y="279" text-anchor="middle" font-size="16" fill="#888">1 Flying Robot Frame</text>
+  <text x="805" y="303" text-anchor="middle" font-size="16" fill="#888">1 Low Density Structure</text>
+
+  <text x="805" y="340" text-anchor="middle" font-size="14" fill="#666">Craft time: 21 sec (29 with AM2)</text>
+  <text x="805" y="370" text-anchor="middle" font-size="14" fill="#555">Output: 3 packs per craft</text>
+  <text x="805" y="400" text-anchor="middle" font-size="14" fill="#555">(2 in 1.0 without Space Age)</text>
+
+  <!-- ===== Additional inputs ===== -->
+  <rect x="450" y="350" width="190" height="90" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="545" y="378" text-anchor="middle" font-size="17" fill="#ddd">Processing Unit (Blue)</text>
+  <text x="545" y="404" text-anchor="middle" font-size="15" fill="#888">Red + Green + Sulfuric Acid</text>
+  <text x="545" y="426" text-anchor="middle" font-size="14" fill="#666">Assembling Machine 2/3</text>
+  <line x1="640" y1="395" x2="690" y2="350" stroke="#f1c40f" stroke-width="2"/>
+  <polygon points="688,347 693,350 688,354" fill="#f1c40f"/>
+
+  <rect x="450" y="460" width="190" height="70" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="545" y="490" text-anchor="middle" font-size="17" fill="#ddd">Low Density Structure</text>
+  <text x="545" y="514" text-anchor="middle" font-size="15" fill="#888">Copper + Steel + Plastic</text>
+  <line x1="640" y1="495" x2="690" y2="390" stroke="#f1c40f" stroke-width="2"/>
+  <polygon points="688,387 693,390 688,394" fill="#f1c40f"/>
+
+  <!-- Arrow to science assembler -->
+  <line x1="640" y1="215" x2="690" y2="255" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="690,251 696,255 689,259" fill="#f1c40f"/>
+
+  <!-- ===== Output to Labs ===== -->
+  <line x1="920" y1="295" x2="980" y2="295" stroke="#f1c40f" stroke-width="2.5"/>
+  <polygon points="980,290 990,295 980,300" fill="#f1c40f"/>
+
+  <rect x="920" y="505" width="60" height="55" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="950" y="532" text-anchor="middle" font-size="16" fill="#999">Labs</text>
+  <text x="950" y="552" text-anchor="middle" font-size="14" fill="#666">All Science</text>
+
+  <line x1="920" y1="460" x2="950" y2="505" stroke="#555" stroke-width="2"/>
+  <polygon points="948,503 953,505 948,509" fill="#555"/>
+
+  <!-- Tips -->
+  <text x="500" y="590" text-anchor="middle" font-size="14" fill="#555">Tip: 1 Flying Robot Frame assembler feeds approximately 2 Yellow Science assemblers with prod modules</text>
+  <text x="500" y="612" text-anchor="middle" font-size="14" fill="#555">Blue circuits are the real bottleneck -- make sure your acid production is scaled up</text>
+</svg>

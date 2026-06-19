@@ -7,7 +7,7 @@ draft: false
 emoji: "🌿"
 ---
 
-Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.
+Before you land on Gleba, your [space platform]({{< ref "/space-age/space-platform-guide" >}}) needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.
 
 {{< callout "tip" >}}
 **TL;DR:** Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.
@@ -50,7 +50,7 @@ Each bioflux → 10 nutrients. 10 nutrients run one bacteria vat for roughly 2 m
 
 **Stage 3 — Burn what you can't use.**
 
-Circuit-controlled splitters are mandatory on Gleba. Set each output splitter to:
+Circuit-controlled splitters (see our [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}}) for the wiring pattern) are mandatory on Gleba. Set each output splitter to:
 
 - Enable if item < threshold (e.g., iron bacteria < 500)
 - If disabled: route to a heating tower for destruction

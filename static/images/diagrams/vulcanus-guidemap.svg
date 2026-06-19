@@ -1,0 +1,71 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <title>Vulcanus Priority Unlock Order - Factorio Space Age Guide</title>
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1000" height="500" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="#e67e22">VULCANUS - UNLOCK PROGRESSION AND RESOURCE FLOW</text>
+
+  <!-- Stage 1: Drop -->
+  <rect x="40" y="90" width="190" height="100" rx="6" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="135" y="115" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">1. LANDING</text>
+  <text x="135" y="140" text-anchor="middle" font-size="15" fill="#ddd">Bring: Iron, Copper, Steel</text>
+  <text x="135" y="162" text-anchor="middle" font-size="14" fill="#888">+ Solar panels, Assemblers</text>
+  <text x="135" y="182" text-anchor="middle" font-size="14" fill="#888">+ Pipes, Pumps, Turrets</text>
+
+  <!-- Arrow -->
+  <line x1="230" y1="140" x2="280" y2="140" stroke="#e67e22" stroke-width="2.5"/>
+  <polygon points="280,135 295,140 280,145" fill="#e67e22"/>
+
+  <!-- Stage 2: Lava Foundry -->
+  <rect x="300" y="90" width="190" height="100" rx="6" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="395" y="115" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">2. FOUNDRY</text>
+  <text x="395" y="140" text-anchor="middle" font-size="15" fill="#ddd">Lava -> Molten Iron/Copper</text>
+  <text x="395" y="162" text-anchor="middle" font-size="14" fill="#888">5x iron per lava cycle</text>
+  <text x="395" y="182" text-anchor="middle" font-size="14" fill="#888">Built-in productivity bonus</text>
+
+  <!-- Arrow -->
+  <line x1="490" y1="140" x2="540" y2="140" stroke="#e67e22" stroke-width="2.5"/>
+  <polygon points="540,135 555,140 540,145" fill="#e67e22"/>
+
+  <!-- Stage 3: Big Drill -->
+  <rect x="560" y="90" width="190" height="100" rx="6" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="655" y="115" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">3. BIG DRILL</text>
+  <text x="655" y="140" text-anchor="middle" font-size="15" fill="#ddd">50% resource drain bonus</text>
+  <text x="655" y="162" text-anchor="middle" font-size="14" fill="#888">Counts as mining drill</text>
+  <text x="655" y="182" text-anchor="middle" font-size="14" fill="#888">Works on ore patches</text>
+
+  <!-- Arrow -->
+  <line x1="750" y1="140" x2="800" y2="140" stroke="#e67e22" stroke-width="2.5"/>
+  <polygon points="800,135 815,140 800,145" fill="#e67e22"/>
+
+  <!-- Stage 4: Cliff Explosives -->
+  <rect x="820" y="90" width="150" height="100" rx="6" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="895" y="115" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">4. CLIFFS</text>
+  <text x="895" y="140" text-anchor="middle" font-size="15" fill="#ddd">Cliff Explosives</text>
+  <text x="895" y="162" text-anchor="middle" font-size="14" fill="#888">Opens building space</text>
+  <text x="895" y="182" text-anchor="middle" font-size="14" fill="#888">Essential for expansion</text>
+
+  <!-- ===== Row 2: Unlock Rewards ===== -->
+  <text x="500" y="240" text-anchor="middle" font-size="16" fill="#555">--- UNLOCKED TECHNOLOGIES & RESOURCES ---</text>
+
+  <!-- Resource Map -->
+  <rect x="40" y="265" width="280" height="90" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="180" y="292" text-anchor="middle" font-size="16" fill="#ddd">Unique Resources on Vulcanus</text>
+  <text x="180" y="316" text-anchor="middle" font-size="14" fill="#888">Lava (infinite) -> Molten Iron/Copper</text>
+  <text x="180" y="340" text-anchor="middle" font-size="14" fill="#888">Sulfuric Acid (infinite) + Tungsten Ore</text>
+
+  <rect x="360" y="265" width="280" height="90" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="500" y="292" text-anchor="middle" font-size="16" fill="#ddd">Key Unlocks for Nauvis</text>
+  <text x="500" y="316" text-anchor="middle" font-size="14" fill="#888">Foundry: Molten iron/copper, LDS crafted from fluid</text>
+  <text x="500" y="340" text-anchor="middle" font-size="14" fill="#888">Big Drill: Extends ore patch lifetime by 50%</text>
+
+  <rect x="680" y="265" width="280" height="90" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="820" y="292" text-anchor="middle" font-size="16" fill="#ddd">Metallurgic Science</text>
+  <text x="820" y="316" text-anchor="middle" font-size="14" fill="#888">New science pack from Vulcanus</text>
+  <text x="820" y="340" text-anchor="middle" font-size="14" fill="#888">Brings new tech tree on return</text>
+
+  <!-- Tips -->
+  <text x="500" y="400" text-anchor="middle" font-size="14" fill="#555">Tip: Bring at least 500 iron plates and 200 copper plates. Foundry needs initial metal to bootstrap.</text>
+  <text x="500" y="425" text-anchor="middle" font-size="14" fill="#555">Lava is infinite -- once your foundry is running, you never need iron ore patches again.</text>
+  <text x="500" y="450" text-anchor="middle" font-size="14" fill="#555">Demolishers guard resource patches. Kill small ones early to expand your build area.</text>
+</svg>
