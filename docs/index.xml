@@ -1,222 +1,385 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Factorio Guide — Automate Everything on Factorio Guide</title>
-    <link>http://localhost:1319/</link>
-    <description>Recent content in Factorio Guide — Automate Everything on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title>
-      <link>http://localhost:1319/space-age/aquilo-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/aquilo-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;When to Go to Aquilo&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title>
-      <link>http://localhost:1319/space-age/planet-order-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/planet-order-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry -- it doubles your iron and steel production instantly. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Construction Robot Network for Beginners - How to Set Up Logistic Bots in Factorio 2.0</title>
-      <link>http://localhost:1319/trains-logistics/construction-robot-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/trains-logistics/construction-robot-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Construction robots at a glance:&lt;/strong&gt; Build 1 roboport, 10 construction robots, and 1 storage chest filled with belts, inserters, and assemblers. Place a blueprint inside the roboport&#39;s orange coverage zone. Robots build it automatically. That is the entire setup. Everything else is optimization.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are Construction Robots?&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Construction robots are flying automated builders. They take items from storage chests in the logistics network and place them according to blueprints or ghost entities. They also repair damaged buildings using repair packs stored in the network.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</title>
-      <link>http://localhost:1319/production-ratios/kovarex-enrichment-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/production-ratios/kovarex-enrichment-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Kovarex at a glance:&lt;/strong&gt; Each centrifuge needs 40 U-235 and 5 U-238 to start, then produces 41 U-235 and 2 U-238 per 60-second cycle -- a net gain of 1 U-235 per cycle. Three centrifuges running in parallel produce roughly 3 U-235 per minute, which is enough to fuel 4-8 nuclear reactors continuously.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;The Kovarex Enrichment Process&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;40x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/uranium_235.png&#34; alt=&#34;uranium_235&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;5x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/uranium_238.png&#34; alt=&#34;uranium_238&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 238&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;41x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/uranium_235.png&#34; alt=&#34;uranium_235&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Kovarex enrichment is the key to sustainable nuclear power in Factorio. The standard uranium processing recipe (from ore) only gives you 0.7% U-235 output -- not enough to fuel a nuclear reactor consistently. Kovarex trades U-238 (which you have too much of) for U-235 (which you never have enough of).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Military Science Pack Setup - Gray Science Ratios for Factorio 2.0</title>
-      <link>http://localhost:1319/science-packs/military-science-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/military-science-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Military science at a glance:&lt;/strong&gt; Each science assembler needs 1 piercing round + 1 grenade + 1 stone wall every 10 seconds. One assembler of each ingredient feeds roughly 8-10 science assemblers. Military science is the cheapest and simplest science pack -- a single Assembling Machine 1 making grenades can support your whole early-game military research.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/piercing_rounds.png&#34; alt=&#34;piercing_rounds&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Piercing rounds&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/grenade.png&#34; alt=&#34;grenade&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Grenade&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/stone_wall.png&#34; alt=&#34;stone_wall&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Stone wall&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;2x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/military_science.png&#34; alt=&#34;military_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Military science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Military Science (Gray) is optional in Factorio 2.0 -- you can reach Space Age without researching any military technologies. But if biters are near your pollution cloud, military science unlocks the turret upgrades and damage research that keep your factory safe.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Production Science Pack Ratios - Purple Science Setup for Space Age</title>
-      <link>http://localhost:1319/science-packs/production-science-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/production-science-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Purple science at a glance:&lt;/strong&gt; 5 assemblers need 9 steel furnaces, 2 engine assemblers, 2 electric engine assemblers, and 1 lubricant chemical plant. Total: about 15 machines running off a standard main bus. The key bottleneck is always electric engines -- most builds underestimate how many engine assemblers they need.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/electric_engine.png&#34; alt=&#34;electric_engine&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Electric engine&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/productivity_module_1.png&#34; alt=&#34;productivity_module_1&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Productivity module 1&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/rail.png&#34; alt=&#34;rail&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Rail&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;3x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/production_science.png&#34; alt=&#34;production_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Production science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;The Production Science Pack (Purple) is the mid-game gate in Factorio Space Age. Each craft takes 10 seconds and produces 3 packs (up from 2 in Factorio 1.0). The three ingredients force you to scale up steel production, start lubricant-based manufacturing, and build your first module factory.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Space Science Pack from Rocket Launch - Ratios and Setup for Factorio Space Age</title>
-      <link>http://localhost:1319/science-packs/space-science-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/space-science-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Space science at a glance:&lt;/strong&gt; Each rocket launch with a satellite produces 1000 space science packs in Space Age. One rocket silo running continuously at full speed produces roughly 1 rocket per 42 seconds, or about 85 space science packs per second. The bottleneck is never the silo -- it is producing 100 rocket parts worth of materials (red circuits, blue circuits, low density structures, and rocket fuel) fast enough.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;100x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/rocket_part.png&#34; alt=&#34;rocket_part&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Rocket part&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/satellite.png&#34; alt=&#34;satellite&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Satellite&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1000x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/space_science.png&#34; alt=&#34;space_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Space science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Space Science is unique among all science packs: you do not feed ingredients into an assembler. Instead, you build a rocket silo, fill it with 100 rocket parts, add a satellite, and launch. The satellite reaches your space platform and converts into 1000 space science packs per launch.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Train Chain Signal Intersection Guide - Factorio 2.0 Rail Signaling for Beginners</title>
-      <link>http://localhost:1319/trains-logistics/train-signal-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/trains-logistics/train-signal-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Train signaling in one rule:&lt;/strong&gt; Place a chain signal &lt;strong&gt;before&lt;/strong&gt; every intersection entry. Place a rail signal &lt;strong&gt;after&lt;/strong&gt; every intersection exit. Never place a rail signal inside an intersection. This rule applies to every intersection type -- T-junctions, cross intersections, roundabouts, and merge lanes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Rail Signals vs Chain Signals&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;There are only two types of train signals in Factorio. The difference is simple:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Signal Type&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;What It Checks&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Use Case&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rail Signal&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Green/Red&lt;/td&gt;&#xA;          &lt;td&gt;Checks only the track block ahead&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Straight track segments, exits&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Chain Signal&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Yellow/Red&lt;/td&gt;&#xA;          &lt;td&gt;Checks the signal ahead of it&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Intersection entries, merges&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;A &lt;strong&gt;rail signal&lt;/strong&gt; turns green when the block ahead is empty. A &lt;strong&gt;chain signal&lt;/strong&gt; copies the state of the next signal -- if the next signal is red, the chain signal is also red. This chain reaction prevents trains from stopping inside intersections.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Utility Science Pack Setup - Yellow Science Ratios for Space Age</title>
-      <link>http://localhost:1319/science-packs/utility-science-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/utility-science-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Yellow science at a glance:&lt;/strong&gt; 5 assemblers need 10 steel furnaces, 1 flying robot frame assembler, 1 blue circuit assembler, and 1 low density structure assembler. The output is 3 packs per craft (Space Age). Blue circuits (processing units) are the bottleneck -- one blue circuit assembler needs 20 green circuits and 2 red circuits per second at full tilt.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/processing_unit.png&#34; alt=&#34;processing_unit&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Processing unit&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/flying_robot_frame.png&#34; alt=&#34;flying_robot_frame&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Flying robot frame&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/low_density_structure.png&#34; alt=&#34;low_density_structure&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Low density structure&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;3x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/utility_science.png&#34; alt=&#34;utility_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Utility science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Utility Science (Yellow) is the most complex pre-Space science pack. While &lt;a href=&#34;http://localhost:1319/science-packs/blue-science-guide/&#34;&gt;blue science&lt;/a&gt; introduces oil and &lt;a href=&#34;http://localhost:1319/science-packs/production-science-guide/&#34;&gt;purple science&lt;/a&gt; tests your steel throughput, yellow science demands production depth: you need blue circuits (which bring sulfuric acid into the mix), flying robot frames (which chain through electric engines), and low density structures (plastic + copper + steel).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title>
-      <link>http://localhost:1319/space-age/vulcanus-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/vulcanus-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. Everything else is secondary.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Circuit Network Beginner Guide</title>
-      <link>http://localhost:1319/blueprints/circuit-network-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/blueprints/circuit-network-guide/</guid>
-      <description>&lt;p&gt;Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up — and nobody noticed for three hours. The fix isn&#39;t more storage tanks. It&#39;s a single red wire, a decider combinator, and 30 seconds of configuration.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Connect a storage tank to a pump with red wire. Decider combinator: petroleum &amp;gt; 20000 → output P = 1. Connect to pump. Done — automated cracking solves 90% of your fluid problems.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-fluids-stall-without-circuits&#34;&gt;The Root Cause — Why Fluids Stall Without Circuits&lt;/h2&gt;&#xA;&lt;p&gt;Refineries produce heavy oil, light oil, and petroleum simultaneously. If any of the three outputs fills up, the refinery stops all production. No petroleum means no plastic. No plastic means no red circuits. No red circuits means your entire factory crawls to a halt.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>City Block Design Guide — Modular Megabase Layout</title>
-      <link>http://localhost:1319/base-design/city-block-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/base-design/city-block-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are City Blocks?&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;A &lt;strong&gt;city block&lt;/strong&gt; is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1319/contact/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/contact/</guid>
-      <description>&lt;h2 id=&#34;contact-us&#34;&gt;Contact Us&lt;/h2&gt;&#xA;&lt;p&gt;Have a suggestion, found an error, or want to contribute a guide? We&#39;d love to hear from you.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;For guide corrections and suggestions:&lt;/strong&gt;&#xA;Open an issue or pull request on our &lt;a href=&#34;https://github.com/factorioguides/factorio-guides&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;For general inquiries:&lt;/strong&gt;&#xA;Email us at contact@factorioguides.com&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;For content contributions:&lt;/strong&gt;&#xA;We welcome community-contributed guides. If you&#39;d like to write a guide, please email us with your topic proposal and a brief outline.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;We aim to respond to all inquiries within 3-5 business days.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Flamethrower Turret Defense Guide</title>
-      <link>http://localhost:1319/defense/flamethrower-defense-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/defense/flamethrower-defense-guide/</guid>
-      <description>&lt;p&gt;Your gun turrets chew through 10 magazines per biter wave and you&#39;re spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place flamethrower turrets behind a wall with dragon&#39;s teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;why-gun-turrets-alone-dont-scale&#34;&gt;Why Gun Turrets Alone Don&#39;t Scale&lt;/h2&gt;&#xA;&lt;p&gt;Gun turrets are a solid start—see &lt;a href=&#34;http://localhost:1319/defense/early-game-defense/&#34;&gt;Early Game Defense&lt;/a&gt;—but they degrade against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title>
-      <link>http://localhost:1319/space-age/fulgora-recycling-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/fulgora-recycling-guide/</guid>
-      <description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can&#39;t predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title>
-      <link>http://localhost:1319/space-age/gleba-survival-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;Before you land on Gleba, your &lt;a href=&#34;http://localhost:1319/space-age/space-platform-guide/&#34;&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Green Science Guide — Logistics Science Pack Setup</title>
-      <link>http://localhost:1319/getting-started/green-science-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/getting-started/green-science-guide/</guid>
-      <description>&lt;p&gt;By the time you’ve built your &lt;a href=&#34;http://localhost:1319/getting-started/your-first-factory/&#34;&gt;first factory&lt;/a&gt;, automation starts feeling natural. Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-green-science-feels-like-a-wall&#34;&gt;The Root Cause — Why Green Science Feels Like a Wall&lt;/h2&gt;&#xA;&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nuclear Power — Complete Setup Guide</title>
-      <link>http://localhost:1319/base-design/nuclear-power-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/base-design/nuclear-power-guide/</guid>
-      <description>&lt;p&gt;Your coal power graph is in the red. You expanded three new outposts and the steam engines are barely keeping up. Before you paste 10,000 solar panels — nuclear: 480 MW fits in the space of 8 solar panels, one uranium patch lasts hundreds of hours, and the UPS hit is negligible.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 2×2 reactor = 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps, and one centrifuge running Kovarex. Build it once, never think about power again.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-coal-eventually-caps-out&#34;&gt;The Root Cause — Why Coal Eventually Caps Out&lt;/h2&gt;&#xA;&lt;p&gt;At 40+ steam engines you&#39;re spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Oil Processing — Ratios, Cracking, and Refinery Setup</title>
-      <link>http://localhost:1319/production-ratios/oil-processing-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/production-ratios/oil-processing-guide/</guid>
-      <description>&lt;p&gt;Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn&#39;t more refineries. It&#39;s three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn&#39;t prioritize outputs. It stalls everything.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1319/privacy/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/privacy/</guid>
-      <description>&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; May 21, 2026&lt;/p&gt;&#xA;&lt;h3 id=&#34;information-we-collect&#34;&gt;Information We Collect&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; We use Google Analytics to understand how visitors use our site. Google Analytics collects anonymized data such as pages visited, time spent, and approximate geographic region. No personally identifiable information is collected.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cookies:&lt;/strong&gt; Our site uses essential cookies for site functionality. Google Analytics may set performance cookies. You can disable cookies in your browser settings.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-we-use-your-data&#34;&gt;How We Use Your Data&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Improve site content and navigation&lt;/li&gt;&#xA;&lt;li&gt;Understand which guides are most helpful to readers&lt;/li&gt;&#xA;&lt;li&gt;Monitor site performance and uptime&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;third-party-services&#34;&gt;Third-Party Services&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Analytics:&lt;/strong&gt; Anonymized usage data (opt-out available via &lt;a href=&#34;https://tools.google.com/dlpage/gaoptout&#34;&gt;Google&#39;s opt-out page&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Fonts:&lt;/strong&gt; Font loading (standard web font request, no tracking)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cloudflare:&lt;/strong&gt; CDN and security (standard web traffic data)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;data-retention&#34;&gt;Data Retention&lt;/h3&gt;&#xA;&lt;p&gt;Analytics data is retained for 26 months. We do not store any personal data server-side.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Space Platform Design Guide</title>
-      <link>http://localhost:1319/space-age/space-platform-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/space-platform-guide/</guid>
-      <description>&lt;p&gt;The space platform you just launched is drifting toward Gleba without enough fuel to brake. The thrusters are starved, the crushers aren&#39;t running, and the asteroids have punched a hole through your ammo belt. Here&#39;s the build order that prevents that from happening: build the hub → fuel plant → ammo production → thrusters → go.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build your platform in this order: hub → crushers/chemical plants → ammo assemblers → thrusters → go. Keep platform weight under 100 tons for first trips. One thruster per 50 tons minimum thrust-to-weight ratio.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-space-travel&#34;&gt;The Mechanics Behind Space Travel&lt;/h2&gt;&#xA;&lt;p&gt;Space platforms are ships that fly between planets. They have five essential systems:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Your First Factory — Factorio Beginner Guide</title>
-      <link>http://localhost:1319/getting-started/your-first-factory/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/getting-started/your-first-factory/</guid>
-      <description>&lt;p&gt;Your first factory is a mess. That&#39;s normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that&#39;s feeding the red science — but the belt looped back and now everything&#39;s on the same belt and nothing reaches the lab. Here&#39;s a cleaner starting setup.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don&#39;t belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;http://localhost:1319/images/diagrams/main-bus-layout.svg&#34; alt=&#34;Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;760&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-first-factories-stall&#34;&gt;The Root Cause — Why First Factories Stall&lt;/h2&gt;&#xA;&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Basic Rail Network — Signalling, Junctions, and Train Management</title>
-      <link>http://localhost:1319/trains-logistics/basic-rail-network/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/trains-logistics/basic-rail-network/</guid>
-      <description>&lt;p&gt;You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here&#39;s the one-rule fix that prevents deadlocks entirely.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;http://localhost:1319/images/diagrams/rail-signaling.svg&#34; alt=&#34;Rail signal placement rules — chain signal before intersection, rail signal after&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;760&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-train-deadlocks&#34;&gt;The Mechanics Behind Train Deadlocks&lt;/h2&gt;&#xA;&lt;p&gt;Factorio&#39;s rail system uses &lt;strong&gt;blocks&lt;/strong&gt;. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Chemical Science Pack — Blue Science Guide</title>
-      <link>http://localhost:1319/science-packs/blue-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/blue-science-guide/</guid>
-      <description>&lt;p&gt;After &lt;a href=&#34;http://localhost:1319/getting-started/green-science-guide/&#34;&gt;green science&lt;/a&gt;, blue science is the first real complexity spike in Factorio. It’s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I&#39;ve seen countless factory tours stall right here because the oil setup wasn&#39;t thought through.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Early Game Defense — Surviving Your First Biter Attacks</title>
-      <link>http://localhost:1319/defense/early-game-defense/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/defense/early-game-defense/</guid>
-      <description>&lt;h2 id=&#34;when-do-biters-attack&#34;&gt;When Do Biters Attack?&lt;/h2&gt;&#xA;&lt;p&gt;Once your &lt;a href=&#34;http://localhost:1319/getting-started/your-first-factory/&#34;&gt;first factory&lt;/a&gt; starts producing, pollution spreads and biters take notice. Biters attack when:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pollution&lt;/strong&gt; reaches their nest (they become angry)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;You destroy a nest&lt;/strong&gt; (immediate retaliation)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Evolution factor&lt;/strong&gt; is high enough (time + pollution)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Peaceful mode:&lt;/strong&gt; Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-minimum-viable-defense&#34;&gt;The Minimum Viable Defense&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stone-wall-priority-1&#34;&gt;Step 1: Stone Wall (Priority 1)&lt;/h3&gt;&#xA;&lt;p&gt;Place &lt;strong&gt;stone walls&lt;/strong&gt; in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Use Blueprints — Complete Guide</title>
-      <link>http://localhost:1319/blueprints/how-to-use-blueprints/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/blueprints/how-to-use-blueprints/</guid>
-      <description>&lt;h2 id=&#34;what-are-blueprints&#34;&gt;What Are Blueprints?&lt;/h2&gt;&#xA;&lt;p&gt;Blueprints let you &lt;strong&gt;copy&lt;/strong&gt; a factory design, &lt;strong&gt;save&lt;/strong&gt; it for later, and &lt;strong&gt;paste&lt;/strong&gt; it anywhere. They are essential for scaling your base.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basic-blueprint-workflow&#34;&gt;Basic Blueprint Workflow&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-copy-a-design&#34;&gt;1. Copy a Design&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;G&lt;/strong&gt; (blueprint tool)&lt;/li&gt;&#xA;&lt;li&gt;Drag a rectangle around the area you want to copy&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your cursor — place it in your &lt;strong&gt;inventory&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-save-to-a-blueprint-book&#34;&gt;2. Save to a Blueprint Book&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the blueprint&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; right arrow choose a &lt;strong&gt;Blueprint Book&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Give it a &lt;strong&gt;descriptive name&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Naming convention:&lt;/strong&gt; Use format &lt;code&gt;[Category] Description&lt;/code&gt; — e.g., &lt;code&gt;[Smelting] Iron 12x Furnace&lt;/code&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;3-import-a-blueprint-string&#34;&gt;3. Import a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Copy a blueprint string (from the web or a friend)&lt;/li&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;Ctrl+V&lt;/strong&gt; while the blueprint tool (G) is selected&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your inventory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;4-export-a-blueprint-string&#34;&gt;4. Export a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select a blueprint in your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;export&lt;/strong&gt; button (top-right)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; to copy the string&lt;/li&gt;&#xA;&lt;li&gt;Share it!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;blueprint-books-organization&#34;&gt;Blueprint Books Organization&lt;/h2&gt;&#xA;&lt;p&gt;A well-organized blueprint book saves hours of searching:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Main Bus Design — The Classic Factorio Base Layout</title>
-      <link>http://localhost:1319/base-design/main-bus-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/base-design/main-bus-guide/</guid>
-      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;&#34;&gt;MAIN BUS LAYOUT&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-a-main-bus&#34;&gt;What Is a Main Bus?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;main bus&lt;/strong&gt; is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong&gt;pull&lt;/strong&gt; from the bus and &lt;strong&gt;push&lt;/strong&gt; finished products back onto it.&lt;/p&gt;&#xA;&lt;p&gt;Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recommended-bus-width&#34;&gt;Recommended Bus Width&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Material&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Basic Belt)&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Fast/Express)&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Iron plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Copper plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Steel plates&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Green circuits&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Plastic bars&lt;/td&gt;&#xA;          &lt;td&gt;1-2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coal&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Stone&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Pro tip:&lt;/strong&gt; Build your bus with &lt;strong&gt;space between lanes&lt;/strong&gt;. You need room for underground belts to cross lanes and for inserters to pull items off the bus.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;how-to-build-it&#34;&gt;How to Build It&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-clear-a-large-area&#34;&gt;Step 1: Clear a Large Area&lt;/h3&gt;&#xA;&lt;p&gt;You need at least &lt;strong&gt;200 tiles wide&lt;/strong&gt; and &lt;strong&gt;unlimited depth&lt;/strong&gt;. The bus grows as you research more technologies.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quality Modules — Space Age New Mechanic Explained</title>
-      <link>http://localhost:1319/space-age/quality-module-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/quality-module-guide/</guid>
-      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;&#34;&gt;COMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;&#34;&gt;UNCOMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;&#34;&gt;RARE&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;&#34;&gt;EPIC&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;&#34;&gt;LEGENDARY&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-quality&#34;&gt;What Is Quality?&lt;/h2&gt;&#xA;&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Tier&lt;/th&gt;&#xA;          &lt;th&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;Bonus&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Common (1)&lt;/td&gt;&#xA;          &lt;td&gt;Gray&lt;/td&gt;&#xA;          &lt;td&gt;Baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Uncommon (2)&lt;/td&gt;&#xA;          &lt;td&gt;Green&lt;/td&gt;&#xA;          &lt;td&gt;Plus 20 percent speed, minus 20 percent energy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rare (3)&lt;/td&gt;&#xA;          &lt;td&gt;Blue&lt;/td&gt;&#xA;          &lt;td&gt;Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Epic (4)&lt;/td&gt;&#xA;          &lt;td&gt;Purple&lt;/td&gt;&#xA;          &lt;td&gt;Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Legendary (5)&lt;/td&gt;&#xA;          &lt;td&gt;Orange&lt;/td&gt;&#xA;          &lt;td&gt;Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;how-quality-is-generated&#34;&gt;How Quality Is Generated&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quality modules&lt;/strong&gt; in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Red Science Pack — Automation Science Guide</title>
-      <link>http://localhost:1319/science-packs/red-science-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/science-packs/red-science-guide/</guid>
-      <description>&lt;h2 id=&#34;recipe&#34;&gt;Recipe&lt;/h2&gt;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/iron_gear.png&#34; alt=&#34;iron_gear&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Iron gear&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/iron_plate.png&#34; alt=&#34;iron_plate&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Iron plate&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/automation_science.png&#34; alt=&#34;automation_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Automation science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;assembler-math&#34;&gt;Assembler Math&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Production Goal&lt;/th&gt;&#xA;          &lt;th&gt;Assemblers Needed&lt;/th&gt;&#xA;          &lt;th&gt;Notes&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1 SP (science pack) per second&lt;/td&gt;&#xA;          &lt;td&gt;1 assembler&lt;/td&gt;&#xA;          &lt;td&gt;Slow, hand-fed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;5 SPM (sustainable)&lt;/td&gt;&#xA;          &lt;td&gt;5 assemblers&lt;/td&gt;&#xA;          &lt;td&gt;Needs iron plate belt&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10 SPM&lt;/td&gt;&#xA;          &lt;td&gt;10 assemblers + 1 gear assembler&lt;/td&gt;&#xA;          &lt;td&gt;Typical early game&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Red science is cheap. Don’t overthink it. 10 assemblers producing red science is more than enough to push through to &lt;a href=&#34;http://localhost:1319/getting-started/green-science-guide/&#34;&gt;green science&lt;/a&gt; and beyond.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;how-to-automate&#34;&gt;How to Automate&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Belt &lt;strong&gt;iron plates&lt;/strong&gt; into the assembler&lt;/li&gt;&#xA;&lt;li&gt;Belt &lt;strong&gt;iron gears&lt;/strong&gt; into the assembler (or hand-craft a few stacks)&lt;/li&gt;&#xA;&lt;li&gt;Use an &lt;strong&gt;inserter&lt;/strong&gt; to pull completed science packs into a &lt;strong&gt;chest&lt;/strong&gt; or directly into &lt;strong&gt;lab&lt;/strong&gt; input&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;warning-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Common mistake:&lt;/strong&gt; New players often forget that labs need &lt;em&gt;both&lt;/em&gt; science packs AND power. Check that your lab has an inserter feeding it!&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Your red science setup should sit as a side-factory pulling from the &lt;a href=&#34;http://localhost:1319/base-design/main-bus-guide/&#34;&gt;main bus&lt;/a&gt; alongside your furnace columns. Here’s what to research next:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smelting Ratios — How Many Furnaces Per Belt</title>
-      <link>http://localhost:1319/production-ratios/smelting-ratios/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/production-ratios/smelting-ratios/</guid>
-      <description>&lt;p&gt;Whether you’re building your &lt;a href=&#34;http://localhost:1319/getting-started/your-first-factory/&#34;&gt;first factory&lt;/a&gt; or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-core-concept&#34;&gt;The Core Concept&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.&#xA;An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iron-and-copper-smelting&#34;&gt;Iron and Copper Smelting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Belt Type&lt;/th&gt;&#xA;          &lt;th&gt;Plates/sec&lt;/th&gt;&#xA;          &lt;th&gt;Stone Furnaces&lt;/th&gt;&#xA;          &lt;th&gt;Electric Furnaces&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (half)&lt;/td&gt;&#xA;          &lt;td&gt;3.75&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (full)&lt;/td&gt;&#xA;          &lt;td&gt;7.5&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fast belt&lt;/td&gt;&#xA;          &lt;td&gt;15&lt;/td&gt;&#xA;          &lt;td&gt;48&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Express belt&lt;/td&gt;&#xA;          &lt;td&gt;22.5&lt;/td&gt;&#xA;          &lt;td&gt;72&lt;/td&gt;&#xA;          &lt;td&gt;36&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;steel-smelting&#34;&gt;Steel Smelting&lt;/h2&gt;&#xA;&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Factorio Guide — Automate Everything on Factorio Guide</title><link>https://factorioguides.com/</link><description>Recent content in Factorio Guide — Automate Everything on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title><link>https://factorioguides.com/space-age/aquilo-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/aquilo-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;When to Go to Aquilo&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:&lt;/p&gt;</description></item><item><title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title><link>https://factorioguides.com/space-age/planet-order-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/planet-order-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry -- it doubles your iron and steel production instantly. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description></item><item><title>Construction Robot Network for Beginners - How to Set Up Logistic Bots in Factorio 2.0</title><link>https://factorioguides.com/trains-logistics/construction-robot-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/construction-robot-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Construction robots at a glance:&lt;/strong&gt; Build 1 roboport, 10 construction robots, and 1 storage chest filled with belts, inserters, and assemblers. Place a blueprint inside the roboport's orange coverage zone. Robots build it automatically. That is the entire setup. Everything else is optimization.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;What Are Construction Robots?&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Construction robots are flying automated builders. They take items from storage chests in the logistics network and place them according to blueprints or ghost entities. They also repair damaged buildings using repair packs stored in the network.&lt;/p&gt;</description></item><item><title>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</title><link>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Kovarex at a glance:&lt;/strong&gt; Each centrifuge needs 40 U-235 and 5 U-238 to start, then produces 41 U-235 and 2 U-238 per 60-second cycle -- a net gain of 1 U-235 per cycle. Three centrifuges running in parallel produce roughly 3 U-235 per minute, which is enough to fuel 4-8 nuclear reactors continuously.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;The Kovarex Enrichment Process&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;40x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;5x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_238.png" alt="uranium_238" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 238&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;41x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Kovarex enrichment is the key to sustainable nuclear power in Factorio. The standard uranium processing recipe (from ore) only gives you 0.7% U-235 output -- not enough to fuel a nuclear reactor consistently. Kovarex trades U-238 (which you have too much of) for U-235 (which you never have enough of).&lt;/p&gt;</description></item><item><title>Military Science Pack Setup - Gray Science Ratios for Factorio 2.0</title><link>https://factorioguides.com/science-packs/military-science-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/military-science-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Military science at a glance:&lt;/strong&gt; Each science assembler needs 1 piercing round + 1 grenade + 1 stone wall every 10 seconds. One assembler of each ingredient feeds roughly 8-10 science assemblers. Military science is the cheapest and simplest science pack -- a single Assembling Machine 1 making grenades can support your whole early-game military research.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/piercing_rounds.png" alt="piercing_rounds" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Piercing rounds&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/grenade.png" alt="grenade" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Grenade&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/stone_wall.png" alt="stone_wall" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Stone wall&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;2x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/military_science.png" alt="military_science" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Military science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Military Science (Gray) is optional in Factorio 2.0 -- you can reach Space Age without researching any military technologies. But if biters are near your pollution cloud, military science unlocks the turret upgrades and damage research that keep your factory safe.&lt;/p&gt;</description></item><item><title>Production Science Pack Ratios - Purple Science Setup for Space Age</title><link>https://factorioguides.com/science-packs/production-science-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/production-science-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Purple science at a glance:&lt;/strong&gt; 5 assemblers need 9 steel furnaces, 2 engine assemblers, 2 electric engine assemblers, and 1 lubricant chemical plant. Total: about 15 machines running off a standard main bus. The key bottleneck is always electric engines -- most builds underestimate how many engine assemblers they need.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/electric_engine.png" alt="electric_engine" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Electric engine&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/productivity_module_1.png" alt="productivity_module_1" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Productivity module 1&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/rail.png" alt="rail" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Rail&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;3x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/production_science.png" alt="production_science" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Production science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The Production Science Pack (Purple) is the mid-game gate in Factorio Space Age. Each craft takes 10 seconds and produces 3 packs (up from 2 in Factorio 1.0). The three ingredients force you to scale up steel production, start lubricant-based manufacturing, and build your first module factory.&lt;/p&gt;</description></item><item><title>Space Science Pack from Rocket Launch - Ratios and Setup for Factorio Space Age</title><link>https://factorioguides.com/science-packs/space-science-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/space-science-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Space science at a glance:&lt;/strong&gt; Each rocket launch with a satellite produces 1000 space science packs in Space Age. One rocket silo running continuously at full speed produces roughly 1 rocket per 42 seconds, or about 85 space science packs per second. The bottleneck is never the silo -- it is producing 100 rocket parts worth of materials (red circuits, blue circuits, low density structures, and rocket fuel) fast enough.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;100x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/rocket_part.png" alt="rocket_part" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Rocket part&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/satellite.png" alt="satellite" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Satellite&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;1000x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/space_science.png" alt="space_science" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Space science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Space Science is unique among all science packs: you do not feed ingredients into an assembler. Instead, you build a rocket silo, fill it with 100 rocket parts, add a satellite, and launch. The satellite reaches your space platform and converts into 1000 space science packs per launch.&lt;/p&gt;</description></item><item><title>Train Chain Signal Intersection Guide - Factorio 2.0 Rail Signaling for Beginners</title><link>https://factorioguides.com/trains-logistics/train-signal-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/train-signal-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Train signaling in one rule:&lt;/strong&gt; Place a chain signal &lt;strong&gt;before&lt;/strong&gt; every intersection entry. Place a rail signal &lt;strong&gt;after&lt;/strong&gt; every intersection exit. Never place a rail signal inside an intersection. This rule applies to every intersection type -- T-junctions, cross intersections, roundabouts, and merge lanes.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Rail Signals vs Chain Signals&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;There are only two types of train signals in Factorio. The difference is simple:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Signal Type&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;Color&lt;/th&gt;
+ &lt;th&gt;What It Checks&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;Use Case&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Rail Signal&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;Green/Red&lt;/td&gt;
+ &lt;td&gt;Checks only the track block ahead&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;Straight track segments, exits&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Chain Signal&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;Yellow/Red&lt;/td&gt;
+ &lt;td&gt;Checks the signal ahead of it&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;Intersection entries, merges&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A &lt;strong&gt;rail signal&lt;/strong&gt; turns green when the block ahead is empty. A &lt;strong&gt;chain signal&lt;/strong&gt; copies the state of the next signal -- if the next signal is red, the chain signal is also red. This chain reaction prevents trains from stopping inside intersections.&lt;/p&gt;</description></item><item><title>Utility Science Pack Setup - Yellow Science Ratios for Space Age</title><link>https://factorioguides.com/science-packs/utility-science-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/utility-science-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Yellow science at a glance:&lt;/strong&gt; 5 assemblers need 10 steel furnaces, 1 flying robot frame assembler, 1 blue circuit assembler, and 1 low density structure assembler. The output is 3 packs per craft (Space Age). Blue circuits (processing units) are the bottleneck -- one blue circuit assembler needs 20 green circuits and 2 red circuits per second at full tilt.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/processing_unit.png" alt="processing_unit" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Processing unit&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/flying_robot_frame.png" alt="flying_robot_frame" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Flying robot frame&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/low_density_structure.png" alt="low_density_structure" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Low density structure&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;3x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/utility_science.png" alt="utility_science" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Utility science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Utility Science (Yellow) is the most complex pre-Space science pack. While &lt;a href="https://factorioguides.com/science-packs/blue-science-guide/"&gt;blue science&lt;/a&gt; introduces oil and &lt;a href="https://factorioguides.com/science-packs/production-science-guide/"&gt;purple science&lt;/a&gt; tests your steel throughput, yellow science demands production depth: you need blue circuits (which bring sulfuric acid into the mix), flying robot frames (which chain through electric engines), and low density structures (plastic + copper + steel).&lt;/p&gt;</description></item><item><title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title><link>https://factorioguides.com/space-age/vulcanus-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/vulcanus-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. Everything else is secondary.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description></item><item><title>Circuit Network Beginner Guide</title><link>https://factorioguides.com/blueprints/circuit-network-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/blueprints/circuit-network-guide/</guid><description>&lt;p&gt;Your refineries are stuck on heavy oil again. The belts backed up last night and your entire base stalled because petroleum backed up — and nobody noticed for three hours. The fix isn't more storage tanks. It's a single red wire, a decider combinator, and 30 seconds of configuration.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Connect a storage tank to a pump with red wire. Decider combinator: petroleum &amp;gt; 20000 → output P = 1. Connect to pump. Done — automated cracking solves 90% of your fluid problems.&lt;/div&gt;
+
+&lt;h2 id="the-root-cause--why-fluids-stall-without-circuits"&gt;The Root Cause — Why Fluids Stall Without Circuits&lt;/h2&gt;
+&lt;p&gt;Refineries produce heavy oil, light oil, and petroleum simultaneously. If any of the three outputs fills up, the refinery stops all production. No petroleum means no plastic. No plastic means no red circuits. No red circuits means your entire factory crawls to a halt.&lt;/p&gt;</description></item><item><title>City Block Design Guide — Modular Megabase Layout</title><link>https://factorioguides.com/base-design/city-block-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/city-block-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;What Are City Blocks?&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;strong&gt;city block&lt;/strong&gt; is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://factorioguides.com/contact/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/contact/</guid><description>&lt;h2 id="contact-us"&gt;Contact Us&lt;/h2&gt;
+&lt;p&gt;Have a suggestion, found an error, or want to contribute a guide? We'd love to hear from you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For guide corrections and suggestions:&lt;/strong&gt;
+Open an issue or pull request on our &lt;a href="https://github.com/factorioguides/factorio-guides"&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For general inquiries:&lt;/strong&gt;
+Email us at contact@factorioguides.com&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For content contributions:&lt;/strong&gt;
+We welcome community-contributed guides. If you'd like to write a guide, please email us with your topic proposal and a brief outline.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;We aim to respond to all inquiries within 3-5 business days.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Flamethrower Turret Defense Guide</title><link>https://factorioguides.com/defense/flamethrower-defense-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/flamethrower-defense-guide/</guid><description>&lt;p&gt;Your gun turrets chew through 10 magazines per biter wave and you're spending more time crafting ammo than building your factory. Flamethrower turrets solve that: highest raw DPS in the game, area damage that stacks, ignores biter armor entirely, and one pumpjack feeds 30+ turrets indefinitely.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Place flamethrower turrets behind a wall with dragon's teeth. One pumpjack + one chemical plant on heavy oil feeds 30+ turrets. Gun turrets handle the cleanup on anything that leaks through.&lt;/div&gt;
+
+&lt;h2 id="why-gun-turrets-alone-dont-scale"&gt;Why Gun Turrets Alone Don't Scale&lt;/h2&gt;
+&lt;p&gt;Gun turrets are a solid start—see &lt;a href="https://factorioguides.com/defense/early-game-defense/"&gt;Early Game Defense&lt;/a&gt;—but they degrade against biter armor upgrades. Behemoth biters in particular have enough armor that green ammo barely scratches them. The ammo belt alone can consume an entire iron patch.&lt;/p&gt;</description></item><item><title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title><link>https://factorioguides.com/space-age/fulgora-recycling-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/fulgora-recycling-guide/</guid><description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can't predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;
+
+&lt;h2 id="the-mechanics-behind-this-bottleneck"&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;
+&lt;p&gt;Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p&gt;</description></item><item><title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title><link>https://factorioguides.com/space-age/gleba-survival-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid><description>&lt;p&gt;Before you land on Gleba, your &lt;a href="https://factorioguides.com/space-age/space-platform-guide/"&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.&lt;/p&gt;</description></item><item><title>Green Science Guide — Logistics Science Pack Setup</title><link>https://factorioguides.com/getting-started/green-science-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/green-science-guide/</guid><description>&lt;p&gt;By the time you’ve built your &lt;a href="https://factorioguides.com/getting-started/your-first-factory/"&gt;first factory&lt;/a&gt;, automation starts feeling natural. Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;
+
+&lt;h2 id="the-root-cause--why-green-science-feels-like-a-wall"&gt;The Root Cause — Why Green Science Feels Like a Wall&lt;/h2&gt;
+&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description></item><item><title>Nuclear Power — Complete Setup Guide</title><link>https://factorioguides.com/base-design/nuclear-power-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/nuclear-power-guide/</guid><description>&lt;p&gt;Your coal power graph is in the red. You expanded three new outposts and the steam engines are barely keeping up. Before you paste 10,000 solar panels — nuclear: 480 MW fits in the space of 8 solar panels, one uranium patch lasts hundreds of hours, and the UPS hit is negligible.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 2×2 reactor = 480 MW. You need 48 heat exchangers, 84 steam turbines, 4 offshore pumps, and one centrifuge running Kovarex. Build it once, never think about power again.&lt;/div&gt;
+
+&lt;h2 id="the-root-cause--why-coal-eventually-caps-out"&gt;The Root Cause — Why Coal Eventually Caps Out&lt;/h2&gt;
+&lt;p&gt;At 40+ steam engines you're spending more time laying belts than building your factory. Coal patches deplete. Belt throughput maxes out. Solar works but the space requirement becomes absurd — 480 MW needs roughly 8,000 panels plus 6,700 accumulators.&lt;/p&gt;</description></item><item><title>Oil Processing — Ratios, Cracking, and Refinery Setup</title><link>https://factorioguides.com/production-ratios/oil-processing-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid><description>&lt;p&gt;Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div&gt;
+
+&lt;h2 id="the-mechanics-behind-this-bottleneck"&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;
+&lt;p&gt;Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.&lt;/p&gt;</description></item><item><title>Privacy Policy</title><link>https://factorioguides.com/privacy/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/privacy/</guid><description>&lt;h2 id="privacy-policy"&gt;Privacy Policy&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; May 21, 2026&lt;/p&gt;
+&lt;h3 id="information-we-collect"&gt;Information We Collect&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; We use Google Analytics to understand how visitors use our site. Google Analytics collects anonymized data such as pages visited, time spent, and approximate geographic region. No personally identifiable information is collected.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cookies:&lt;/strong&gt; Our site uses essential cookies for site functionality. Google Analytics may set performance cookies. You can disable cookies in your browser settings.&lt;/p&gt;
+&lt;h3 id="how-we-use-your-data"&gt;How We Use Your Data&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve site content and navigation&lt;/li&gt;
+&lt;li&gt;Understand which guides are most helpful to readers&lt;/li&gt;
+&lt;li&gt;Monitor site performance and uptime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="third-party-services"&gt;Third-Party Services&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Google Analytics:&lt;/strong&gt; Anonymized usage data (opt-out available via &lt;a href="https://tools.google.com/dlpage/gaoptout"&gt;Google's opt-out page&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google Fonts:&lt;/strong&gt; Font loading (standard web font request, no tracking)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloudflare:&lt;/strong&gt; CDN and security (standard web traffic data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="data-retention"&gt;Data Retention&lt;/h3&gt;
+&lt;p&gt;Analytics data is retained for 26 months. We do not store any personal data server-side.&lt;/p&gt;</description></item><item><title>Space Platform Design Guide</title><link>https://factorioguides.com/space-age/space-platform-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/space-platform-guide/</guid><description>&lt;p&gt;The space platform you just launched is drifting toward Gleba without enough fuel to brake. The thrusters are starved, the crushers aren't running, and the asteroids have punched a hole through your ammo belt. Here's the build order that prevents that from happening: build the hub → fuel plant → ammo production → thrusters → go.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build your platform in this order: hub → crushers/chemical plants → ammo assemblers → thrusters → go. Keep platform weight under 100 tons for first trips. One thruster per 50 tons minimum thrust-to-weight ratio.&lt;/div&gt;
+
+&lt;h2 id="the-mechanics-behind-space-travel"&gt;The Mechanics Behind Space Travel&lt;/h2&gt;
+&lt;p&gt;Space platforms are ships that fly between planets. They have five essential systems:&lt;/p&gt;</description></item><item><title>Your First Factory — Factorio Beginner Guide</title><link>https://factorioguides.com/getting-started/your-first-factory/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/your-first-factory/</guid><description>&lt;p&gt;Your first factory is a mess. That's normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that's feeding the red science — but the belt looped back and now everything's on the same belt and nothing reaches the lab. Here's a cleaner starting setup.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;
+
+&lt;img src="https://factorioguides.com/images/diagrams/main-bus-layout.svg" alt="Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines" class="schema-diagram" loading="lazy" width="760"&gt;
+
+&lt;h2 id="the-root-cause--why-first-factories-stall"&gt;The Root Cause — Why First Factories Stall&lt;/h2&gt;
+&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description></item><item><title>Basic Rail Network — Signalling, Junctions, and Train Management</title><link>https://factorioguides.com/trains-logistics/basic-rail-network/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/trains-logistics/basic-rail-network/</guid><description>&lt;p&gt;You placed your first train stop, sent a locomotive to pick up iron ore, and now two trains are facing each other on the same track with nowhere to go. The chain signal is red. The rail signal is also red. Every intersection in your rail network is locked up. Here's the one-rule fix that prevents deadlocks entirely.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Chain signal BEFORE every intersection. Rail signal AFTER every intersection. That rule prevents 95% of train deadlocks. For a 2-lane network: right-hand drive, one chain signal at each entrance, one rail signal at each exit.&lt;/div&gt;
+
+&lt;img src="https://factorioguides.com/images/diagrams/rail-signaling.svg" alt="Rail signal placement rules — chain signal before intersection, rail signal after" class="schema-diagram" loading="lazy" width="760"&gt;
+
+&lt;h2 id="the-mechanics-behind-train-deadlocks"&gt;The Mechanics Behind Train Deadlocks&lt;/h2&gt;
+&lt;p&gt;Factorio's rail system uses &lt;strong&gt;blocks&lt;/strong&gt;. A block is a section of track bounded by signals. A train will not enter an occupied block. If blocks are too large or signals are placed wrong, trains stop inside intersections — blocking all other traffic.&lt;/p&gt;</description></item><item><title>Chemical Science Pack — Blue Science Guide</title><link>https://factorioguides.com/science-packs/blue-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/blue-science-guide/</guid><description>&lt;p&gt;After &lt;a href="https://factorioguides.com/getting-started/green-science-guide/"&gt;green science&lt;/a&gt;, blue science is the first real complexity spike in Factorio. It’s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Each chemical science pack needs three components:&lt;/p&gt;</description></item><item><title>Early Game Defense — Surviving Your First Biter Attacks</title><link>https://factorioguides.com/defense/early-game-defense/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/early-game-defense/</guid><description>&lt;h2 id="when-do-biters-attack"&gt;When Do Biters Attack?&lt;/h2&gt;
+&lt;p&gt;Once your &lt;a href="https://factorioguides.com/getting-started/your-first-factory/"&gt;first factory&lt;/a&gt; starts producing, pollution spreads and biters take notice. Biters attack when:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Pollution&lt;/strong&gt; reaches their nest (they become angry)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You destroy a nest&lt;/strong&gt; (immediate retaliation)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evolution factor&lt;/strong&gt; is high enough (time + pollution)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Peaceful mode:&lt;/strong&gt; Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="the-minimum-viable-defense"&gt;The Minimum Viable Defense&lt;/h2&gt;
+&lt;h3 id="step-1-stone-wall-priority-1"&gt;Step 1: Stone Wall (Priority 1)&lt;/h3&gt;
+&lt;p&gt;Place &lt;strong&gt;stone walls&lt;/strong&gt; in a rough circle around your base. 1 tile thick is enough for the first few hours.&lt;/p&gt;</description></item><item><title>How to Use Blueprints — Complete Guide</title><link>https://factorioguides.com/blueprints/how-to-use-blueprints/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/blueprints/how-to-use-blueprints/</guid><description>&lt;h2 id="what-are-blueprints"&gt;What Are Blueprints?&lt;/h2&gt;
+&lt;p&gt;Blueprints let you &lt;strong&gt;copy&lt;/strong&gt; a factory design, &lt;strong&gt;save&lt;/strong&gt; it for later, and &lt;strong&gt;paste&lt;/strong&gt; it anywhere. They are essential for scaling your base.&lt;/p&gt;
+&lt;h2 id="basic-blueprint-workflow"&gt;Basic Blueprint Workflow&lt;/h2&gt;
+&lt;h3 id="1-copy-a-design"&gt;1. Copy a Design&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;strong&gt;G&lt;/strong&gt; (blueprint tool)&lt;/li&gt;
+&lt;li&gt;Drag a rectangle around the area you want to copy&lt;/li&gt;
+&lt;li&gt;The blueprint appears in your cursor — place it in your &lt;strong&gt;inventory&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-save-to-a-blueprint-book"&gt;2. Save to a Blueprint Book&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your inventory&lt;/li&gt;
+&lt;li&gt;Click the blueprint&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; right arrow choose a &lt;strong&gt;Blueprint Book&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Give it a &lt;strong&gt;descriptive name&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="tip-box"&gt;
+&lt;strong&gt;Naming convention:&lt;/strong&gt; Use format &lt;code&gt;[Category] Description&lt;/code&gt; — e.g., &lt;code&gt;[Smelting] Iron 12x Furnace&lt;/code&gt;
+&lt;/div&gt;
+&lt;h3 id="3-import-a-blueprint-string"&gt;3. Import a Blueprint String&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy a blueprint string (from the web or a friend)&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Ctrl+V&lt;/strong&gt; while the blueprint tool (G) is selected&lt;/li&gt;
+&lt;li&gt;The blueprint appears in your inventory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="4-export-a-blueprint-string"&gt;4. Export a Blueprint String&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select a blueprint in your inventory&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;export&lt;/strong&gt; button (top-right)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; to copy the string&lt;/li&gt;
+&lt;li&gt;Share it!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="blueprint-books-organization"&gt;Blueprint Books Organization&lt;/h2&gt;
+&lt;p&gt;A well-organized blueprint book saves hours of searching:&lt;/p&gt;</description></item><item><title>Main Bus Design — The Classic Factorio Base Layout</title><link>https://factorioguides.com/base-design/main-bus-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/base-design/main-bus-guide/</guid><description>&lt;!-- Article Hero --&gt;
+&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;"&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;"&gt;MAIN BUS LAYOUT&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="what-is-a-main-bus"&gt;What Is a Main Bus?&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;main bus&lt;/strong&gt; is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong&gt;pull&lt;/strong&gt; from the bus and &lt;strong&gt;push&lt;/strong&gt; finished products back onto it.&lt;/p&gt;
+&lt;p&gt;Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p&gt;
+&lt;h2 id="recommended-bus-width"&gt;Recommended Bus Width&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Material&lt;/th&gt;
+ &lt;th&gt;Lanes (Basic Belt)&lt;/th&gt;
+ &lt;th&gt;Lanes (Fast/Express)&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Iron plates&lt;/td&gt;
+ &lt;td&gt;4-6&lt;/td&gt;
+ &lt;td&gt;2-3&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Copper plates&lt;/td&gt;
+ &lt;td&gt;4-6&lt;/td&gt;
+ &lt;td&gt;2-3&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Steel plates&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Green circuits&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Plastic bars&lt;/td&gt;
+ &lt;td&gt;1-2&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Coal&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Stone&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="tip-box"&gt;
+&lt;strong&gt;Pro tip:&lt;/strong&gt; Build your bus with &lt;strong&gt;space between lanes&lt;/strong&gt;. You need room for underground belts to cross lanes and for inserters to pull items off the bus.
+&lt;/div&gt;
+&lt;h2 id="how-to-build-it"&gt;How to Build It&lt;/h2&gt;
+&lt;h3 id="step-1-clear-a-large-area"&gt;Step 1: Clear a Large Area&lt;/h3&gt;
+&lt;p&gt;You need at least &lt;strong&gt;200 tiles wide&lt;/strong&gt; and &lt;strong&gt;unlimited depth&lt;/strong&gt;. The bus grows as you research more technologies.&lt;/p&gt;</description></item><item><title>Quality Modules — Space Age New Mechanic Explained</title><link>https://factorioguides.com/space-age/quality-module-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/quality-module-guide/</guid><description>&lt;!-- Article Hero --&gt;
+&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;"&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;"&gt;COMMON&lt;/span&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;"&gt;UNCOMMON&lt;/span&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;"&gt;RARE&lt;/span&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;"&gt;EPIC&lt;/span&gt;
+&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;"&gt;LEGENDARY&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="what-is-quality"&gt;What Is Quality?&lt;/h2&gt;
+&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Tier&lt;/th&gt;
+ &lt;th&gt;Color&lt;/th&gt;
+ &lt;th&gt;Bonus&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Common (1)&lt;/td&gt;
+ &lt;td&gt;Gray&lt;/td&gt;
+ &lt;td&gt;Baseline&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Uncommon (2)&lt;/td&gt;
+ &lt;td&gt;Green&lt;/td&gt;
+ &lt;td&gt;Plus 20 percent speed, minus 20 percent energy&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Rare (3)&lt;/td&gt;
+ &lt;td&gt;Blue&lt;/td&gt;
+ &lt;td&gt;Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Epic (4)&lt;/td&gt;
+ &lt;td&gt;Purple&lt;/td&gt;
+ &lt;td&gt;Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Legendary (5)&lt;/td&gt;
+ &lt;td&gt;Orange&lt;/td&gt;
+ &lt;td&gt;Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="how-quality-is-generated"&gt;How Quality Is Generated&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Quality modules&lt;/strong&gt; in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p&gt;</description></item><item><title>Red Science Pack — Automation Science Guide</title><link>https://factorioguides.com/science-packs/red-science-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/science-packs/red-science-guide/</guid><description>&lt;h2 id="recipe"&gt;Recipe&lt;/h2&gt;
+&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/iron_gear.png" alt="iron_gear" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Iron gear&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/iron_plate.png" alt="iron_plate" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Iron plate&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;1x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/automation_science.png" alt="automation_science" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Automation science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id="assembler-math"&gt;Assembler Math&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Production Goal&lt;/th&gt;
+ &lt;th&gt;Assemblers Needed&lt;/th&gt;
+ &lt;th&gt;Notes&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1 SP (science pack) per second&lt;/td&gt;
+ &lt;td&gt;1 assembler&lt;/td&gt;
+ &lt;td&gt;Slow, hand-fed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5 SPM (sustainable)&lt;/td&gt;
+ &lt;td&gt;5 assemblers&lt;/td&gt;
+ &lt;td&gt;Needs iron plate belt&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;10 SPM&lt;/td&gt;
+ &lt;td&gt;10 assemblers + 1 gear assembler&lt;/td&gt;
+ &lt;td&gt;Typical early game&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Red science is cheap. Don’t overthink it. 10 assemblers producing red science is more than enough to push through to &lt;a href="https://factorioguides.com/getting-started/green-science-guide/"&gt;green science&lt;/a&gt; and beyond.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="how-to-automate"&gt;How to Automate&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Belt &lt;strong&gt;iron plates&lt;/strong&gt; into the assembler&lt;/li&gt;
+&lt;li&gt;Belt &lt;strong&gt;iron gears&lt;/strong&gt; into the assembler (or hand-craft a few stacks)&lt;/li&gt;
+&lt;li&gt;Use an &lt;strong&gt;inserter&lt;/strong&gt; to pull completed science packs into a &lt;strong&gt;chest&lt;/strong&gt; or directly into &lt;strong&gt;lab&lt;/strong&gt; input&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="warning-box"&gt;
+&lt;strong&gt;Common mistake:&lt;/strong&gt; New players often forget that labs need &lt;em&gt;both&lt;/em&gt; science packs AND power. Check that your lab has an inserter feeding it!
+&lt;/div&gt;
+&lt;p&gt;Your red science setup should sit as a side-factory pulling from the &lt;a href="https://factorioguides.com/base-design/main-bus-guide/"&gt;main bus&lt;/a&gt; alongside your furnace columns. Here’s what to research next:&lt;/p&gt;</description></item><item><title>Smelting Ratios — How Many Furnaces Per Belt</title><link>https://factorioguides.com/production-ratios/smelting-ratios/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid><description>&lt;p&gt;Whether you’re building your &lt;a href="https://factorioguides.com/getting-started/your-first-factory/"&gt;first factory&lt;/a&gt; or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.&lt;/p&gt;
+&lt;h2 id="the-core-concept"&gt;The Core Concept&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.
+An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="iron-and-copper-smelting"&gt;Iron and Copper Smelting&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Belt Type&lt;/th&gt;
+ &lt;th&gt;Plates/sec&lt;/th&gt;
+ &lt;th&gt;Stone Furnaces&lt;/th&gt;
+ &lt;th&gt;Electric Furnaces&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Basic belt (half)&lt;/td&gt;
+ &lt;td&gt;3.75&lt;/td&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Basic belt (full)&lt;/td&gt;
+ &lt;td&gt;7.5&lt;/td&gt;
+ &lt;td&gt;24&lt;/td&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Fast belt&lt;/td&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;48&lt;/td&gt;
+ &lt;td&gt;24&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Express belt&lt;/td&gt;
+ &lt;td&gt;22.5&lt;/td&gt;
+ &lt;td&gt;72&lt;/td&gt;
+ &lt;td&gt;36&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="tip-box"&gt;
+&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.
+&lt;/div&gt;
+&lt;h2 id="steel-smelting"&gt;Steel Smelting&lt;/h2&gt;
+&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description></item></channel></rss>

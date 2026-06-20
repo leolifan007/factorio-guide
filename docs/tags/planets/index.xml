@@ -1,33 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Planets on Factorio Guide</title>
-    <link>http://localhost:1319/tags/planets/</link>
-    <description>Recent content in Planets on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/planets/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title>
-      <link>http://localhost:1319/space-age/aquilo-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/aquilo-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;When to Go to Aquilo&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title>
-      <link>http://localhost:1319/space-age/planet-order-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/planet-order-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry -- it doubles your iron and steel production instantly. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title>
-      <link>http://localhost:1319/space-age/vulcanus-guide/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/vulcanus-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. Everything else is secondary.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Planets on Factorio Guide</title><link>https://factorioguides.com/tags/planets/</link><description>Recent content in Planets on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/planets/index.xml" rel="self" type="application/rss+xml"/><item><title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title><link>https://factorioguides.com/space-age/aquilo-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/aquilo-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;When to Go to Aquilo&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:&lt;/p&gt;</description></item><item><title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title><link>https://factorioguides.com/space-age/planet-order-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/planet-order-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry -- it doubles your iron and steel production instantly. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description></item><item><title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title><link>https://factorioguides.com/space-age/vulcanus-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/vulcanus-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. Everything else is secondary.&lt;/div&gt;
+
+&lt;div class="section-head"&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;
+
+&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description></item></channel></rss>
