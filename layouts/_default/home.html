@@ -1,11 +1,9 @@
 {{ define "main" }}
 
-<!-- Homepage-only styles — isolated from article pages -->
+<!-- Homepage-only styles -->
 <link rel="stylesheet" href="{{ `css/home.css` | relURL }}">
 
-<!-- ════════════════════════
-     HERO
-     ════════════════════════ -->
+<!-- ════════════ HERO ════════════ -->
 <section class="hero-section">
   <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}')"></div>
   <div class="hero-overlay"></div>
@@ -20,68 +18,59 @@
     <div class="hero-cta">
       <a href="{{ `getting-started/` | relURL }}" class="btn btn-primary">Start Your Factory</a>
       <a href="{{ `production-ratios/` | relURL }}" class="btn btn-secondary">Production Ratios</a>
-      <a href="{{ `space-age/` | relURL }}" class="hero-btn-space">&#128640; Explore Space Age</a>
+      <a href="{{ `space-age/` | relURL }}" class="hero-btn-space">&#9881; Explore Space Age</a>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════
-     SPACE AGE SHOWCASE
-     Magazine layout: 1 featured + 6 grid cards = 7 articles, 0 gaps
-     ════════════════════════ -->
+{{- /* Collect SA articles */}}
+{{- $saPages := where .Site.RegularPages "Section" "space-age" }}
+{{- $saPages = where $saPages "Params.hidden" "ne" true }}
+{{- $saPages = where $saPages "File.LogicalName" "ne" "_index.md" }}
+{{- $saPages = sort $saPages "Date" "desc" }}
+
+{{- /* Helper: map tags to icon ID and label */}}
+{{- $planetInfo := dict
+  "aquilo"         (dict "id" "aq" "emoji" "❄️" "label" "Aquilo")
+  "fulgora"       (dict "id" "fu" "emoji" "⚡" "label" "Fulgora")
+  "gleba"         (dict "id" "gl" "emoji" "🌿" "label" "Gleba")
+  "vulcanus"      (dict "id" "vu" "emoji" "🌋" "label" "Vulcanus")
+  "planets"       (dict "id" "pl" "emoji" "🌌" "label" "Planets")
+  "space-platform" (dict "id" "sp" "emoji" "🚀" "label" "Platform")
+  "quality"       (dict "id" "ql" "emoji" "⭐" "label" "Quality")
+  "modules"       (dict "id" "ql" "emoji" "⭐" "label" "Quality")
+  "strategy"      (dict "id" "pl" "emoji" "🌌" "label" "Strategy")
+}}
+
+<!-- ════════════ SPACE AGE SHOWCASE ════════════ -->
 <section class="sa-showcase">
   <div class="sa-inner">
     <div class="sa-header">
       <span class="sa-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         Factorio Space Age
       </span>
       <h2 class="sa-title">Interplanetary Factory</h2>
       <p class="sa-sub">New planets, quality modules, space platforms — master the expansion with our curated guides.</p>
     </div>
 
-    {{- $saPages := where .Site.RegularPages "Section" "space-age" }}
-    {{- $saPages = where $saPages "Params.hidden" "ne" true }}
-    {{- $saPages = where $saPages "File.LogicalName" "ne" "_index.md" }}
-    {{- $saPages = sort $saPages "Date" "desc" }}
-
     {{/* Featured card: latest article */}}
     {{- $featured := index $saPages 0 }}
     {{- $rest := after 1 $saPages }}
     {{- $featuredDays := div (sub now.Unix $featured.Date.Unix) 86400 }}
+    {{- $fpInfo := partial "get-planet-info" (dict "tags" ($featured.Params.tags | default slice) "map" $planetInfo "title" $featured.Title) }}
 
     <a href="{{ $featured.RelPermalink }}" class="sa-featured">
       <div class="sa-featured-inner">
         <div class="sa-featured-icon">
-          <svg viewBox="0 0 80 80" fill="none">
-            <circle cx="40" cy="40" r="34" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-            <circle cx="40" cy="40" r="12" fill="currentColor" opacity="0.3"/>
-            <line x1="40" y1="6" x2="40" y2="20" stroke="currentColor" stroke-width="2" opacity="0.25"/>
-            <line x1="40" y1="60" x2="40" y2="74" stroke="currentColor" stroke-width="2" opacity="0.25"/>
-            <line x1="6" y1="40" x2="20" y2="40" stroke="currentColor" stroke-width="2" opacity="0.25"/>
-            <line x1="60" y1="40" x2="74" y2="40" stroke="currentColor" stroke-width="2" opacity="0.25"/>
-            <circle cx="40" cy="40" r="4" fill="#b388ff" opacity="0.6"/>
-          </svg>
+          {{ partial "sa-icons" (dict "id" $fpInfo.id "size" 80) }}
         </div>
         <div class="sa-featured-body">
           {{- if lt $featuredDays 14 }}<span class="sa-featured-new">NEW</span>{{ end }}
           <h3>{{ $featured.Title }}</h3>
           <p>{{ $featured.Description | default ($featured.Summary | plainify | truncate 150) }}</p>
           <div class="sa-featured-footer">
-            <span class="sa-featured-tag">
-              {{- $tags := $featured.Params.tags }}
-              {{- if $tags }}
-                {{- if in $tags "gleba" }}🌿 Gleba
-                {{- else if in $tags "fulgora" }}⚡ Fulgora
-                {{- else if in $tags "vulcanus" }}🌋 Vulcanus
-                {{- else if in $tags "aquilo" }}❄️ Aquilo
-                {{- else if in $tags "space-platform" }}🚀 Platform
-                {{- else if in $tags "quality" }}⭐ Quality
-                {{- else if in $tags "planets" }}🌌 Planets
-                {{- else }}{{ (index $tags 0) | humanize }}
-                {{- end }}
-              {{- end }}
-            </span>
+            <span class="sa-featured-tag">{{ $fpInfo.emoji }} {{ $fpInfo.label }}</span>
             <span class="sa-featured-read">Read Featured Guide →</span>
           </div>
         </div>
@@ -92,18 +81,11 @@
     <div class="sa-grid">
       {{- range $rest }}
       {{- $daysOld := div (sub now.Unix .Date.Unix) 86400 }}
+      {{- $pInfo := partial "get-planet-info" (dict "tags" (.Params.tags | default slice) "map" $planetInfo "title" .Title) }}
       <a href="{{ .RelPermalink }}" class="sa-card">
-        <div class="sa-card-glow"></div>
         {{- if lt $daysOld 14 }}<span class="sa-card-new">NEW</span>{{ end }}
         <div class="sa-card-icon">
-          <svg viewBox="0 0 48 48" fill="none">
-            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-            <circle cx="24" cy="24" r="6" fill="currentColor" opacity="0.35"/>
-            <line x1="24" y1="4" x2="24" y2="12" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-            <line x1="24" y1="36" x2="24" y2="44" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-            <line x1="4" y1="24" x2="12" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-            <line x1="36" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-          </svg>
+          {{ partial "sa-icons" (dict "id" $pInfo.id "size" 32) }}
         </div>
         <div class="sa-card-body">
           <h3>{{ .Title }}</h3>
@@ -111,20 +93,7 @@
         </div>
         <div class="sa-card-footer">
           <span class="sa-read">Read Guide →</span>
-          <span class="sa-planet">
-            {{- $tags := .Params.tags }}
-            {{- if $tags }}
-              {{- if in $tags "gleba" }}🌿 Gleba
-              {{- else if in $tags "fulgora" }}⚡ Fulgora
-              {{- else if in $tags "vulcanus" }}🌋 Vulcanus
-              {{- else if in $tags "aquilo" }}❄️ Aquilo
-              {{- else if in $tags "space-platform" }}🚀 Platform
-              {{- else if in $tags "quality" }}⭐ Quality
-              {{- else if in $tags "planets" }}🌌 Planets
-              {{- else }}{{ (index $tags 0) | humanize }}
-              {{- end }}
-            {{- end }}
-          </span>
+          <span class="sa-planet">{{ $pInfo.emoji }} {{ $pInfo.label }}</span>
         </div>
       </a>
       {{- end }}
@@ -139,9 +108,7 @@
   </div>
 </section>
 
-<!-- ════════════════════════
-     HOME CONTENT — Featured + Topics
-     ════════════════════════ -->
+<!-- ════════════ HOME CONTENT ════════════ -->
 <div class="home-content">
 
   <div class="section-header">

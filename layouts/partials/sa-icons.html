@@ -1,0 +1,96 @@
+{{- /* sa-icons.html — Distinct SVGs per planet/article type */}}
+{{- $id := .id | default "sp" }}
+{{- $s := .size | default 32 }}
+
+{{- /* Aquilo — ice crystal hexagon */}}
+{{- if eq $id "aq" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <polygon points="32,6 52,18 52,46 32,58 12,46 12,18" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+    <polygon points="32,14 46,22 46,42 32,50 18,42 18,22" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+    <line x1="32" y1="14" x2="32" y2="50" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <line x1="18" y1="32" x2="46" y2="32" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.2"/>
+    <circle cx="32" cy="32" r="3" fill="currentColor" opacity="0.35"/>
+  </svg>
+{{- end }}
+
+{{- /* Fulgora — lightning bolt */}}
+{{- if eq $id "fu" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <path d="M38 4L18 34h12l-4 26 24-32H38z" stroke="currentColor" stroke-width="1.5" opacity="0.3" fill="currentColor" fill-opacity="0.1"/>
+    <path d="M34 10L22 30h10l-3 18 16-22H34z" fill="currentColor" opacity="0.25"/>
+    <circle cx="50" cy="8" r="1.5" fill="currentColor" opacity="0.3"/>
+    <circle cx="14" cy="56" r="1.5" fill="currentColor" opacity="0.3"/>
+  </svg>
+{{- end }}
+
+{{- /* Gleba — leaf / fungus sprout */}}
+{{- if eq $id "gl" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <ellipse cx="32" cy="28" rx="18" ry="14" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+    <path d="M32 14C22 14 14 20 14 28c0 8 8 14 18 14s18-6 18-14c0-8-8-14-18-14z" fill="currentColor" fill-opacity="0.08"/>
+    <line x1="32" y1="14" x2="32" y2="52" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+    <path d="M32 52c-6 0-10-4-10-8" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <path d="M32 52c6 0 10-4 10-8" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <circle cx="24" cy="26" r="2" fill="currentColor" opacity="0.15"/>
+    <circle cx="38" cy="30" r="1.5" fill="currentColor" opacity="0.15"/>
+    <circle cx="30" cy="20" r="1.5" fill="currentColor" opacity="0.15"/>
+  </svg>
+{{- end }}
+
+{{- /* Vulcanus — volcano / mountain */}}
+{{- if eq $id "vu" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <polygon points="32,4 52,56 12,56" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+    <polygon points="32,12 46,52 18,52" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+    <path d="M28 56c8 0 24-2 24-2" stroke="currentColor" stroke-width="1.5" opacity="0.15"/>
+    <line x1="28" y1="48" x2="28" y2="56" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+    <line x1="32" y1="46" x2="32" y2="52" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+    <circle cx="32" cy="40" r="6" fill="currentColor" opacity="0.1"/>
+    <circle cx="32" cy="40" r="2" fill="currentColor" opacity="0.3"/>
+  </svg>
+{{- end }}
+
+{{- /* Planets / Strategy — orbit rings */}}
+{{- if eq $id "pl" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <ellipse cx="32" cy="32" rx="24" ry="10" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <ellipse cx="32" cy="32" rx="16" ry="6" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+    <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.2"/>
+    <circle cx="32" cy="32" r="2.5" fill="currentColor" opacity="0.35"/>
+    <circle cx="48" cy="20" r="3" fill="currentColor" opacity="0.1"/>
+    <circle cx="16" cy="44" r="2.5" fill="currentColor" opacity="0.1"/>
+  </svg>
+{{- end }}
+
+{{- /* Space Platform — rocket */}}
+{{- if eq $id "sp" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <path d="M32 4L22 30h20L32 4z" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+    <polygon points="32,28 22,46 42,46" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+    <line x1="32" y1="46" x2="32" y2="56" stroke="currentColor" stroke-width="2" opacity="0.25"/>
+    <line x1="26" y1="56" x2="38" y2="56" stroke="currentColor" stroke-width="2" opacity="0.25"/>
+    <line x1="30" y1="56" x2="30" y2="60" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <line x1="34" y1="56" x2="34" y2="60" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+    <circle cx="32" cy="16" r="2" fill="currentColor" opacity="0.3"/>
+  </svg>
+{{- end }}
+
+{{- /* Quality — diamond / star */}}
+{{- if eq $id "ql" }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <polygon points="32,2 48,20 40,30 32,62 24,30 16,20" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+    <polygon points="32,10 40,20 36,28 32,48 28,28 24,20" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="32" cy="22" r="3" fill="currentColor" opacity="0.2"/>
+    <circle cx="32" cy="22" r="1" fill="currentColor" opacity="0.4"/>
+  </svg>
+{{- end }}
+
+{{- /* Fallback — gear */}}
+{{- if not (or (eq $id "aq") (eq $id "fu") (eq $id "gl") (eq $id "vu") (eq $id "pl") (eq $id "sp") (eq $id "ql")) }}
+  <svg viewBox="0 0 64 64" width="{{ $s }}" height="{{ $s }}" fill="none">
+    <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+    <circle cx="32" cy="32" r="2" fill="currentColor" opacity="0.35"/>
+  </svg>
+{{- end }}
