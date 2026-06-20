@@ -1,7 +1,10 @@
 {{ define "main" }}
 
+<!-- Homepage-only styles — isolated from article pages -->
+<link rel="stylesheet" href="{{ `css/home.css` | relURL }}">
+
 <!-- ════════════════════════════════════════
-     HERO — Industrial / Factorio橙
+     HERO
      ════════════════════════════════════════ -->
 <section class="hero-section">
   <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}')"></div>
@@ -23,10 +26,10 @@
 </section>
 
 <!-- ════════════════════════════════════════
-     SPACE AGE SHOWCASE — 全幅宇宙紫青
+     SPACE AGE SHOWCASE
      ════════════════════════════════════════ -->
 <section class="sa-showcase">
-  <div class="sa-showcase-inner">
+  <div class="sa-inner">
     <div class="sa-header">
       <span class="sa-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -36,7 +39,7 @@
       <p class="sa-sub">New planets, quality modules, space platforms — master the expansion with our curated guides.</p>
     </div>
 
-    <div class="sa-grid">
+    <div class="sa-grid sa-grid-7">
       {{- $saPages := where .Site.RegularPages "Section" "space-age" }}
       {{- $saPages = where $saPages "Params.hidden" "ne" true }}
       {{- $saPages = where $saPages "File.LogicalName" "ne" "_index.md" }}
@@ -93,11 +96,10 @@
 </section>
 
 <!-- ════════════════════════════════════════
-     HOME CONTENT — Featured + Topics (次级入口)
+     HOME CONTENT — Featured + Topics
      ════════════════════════════════════════ -->
 <div class="home-content">
 
-  <!-- ── Featured Guides ── -->
   <div class="section-header">
     <span class="section-title-badge">
       <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
@@ -110,14 +112,6 @@
     {{ partial "latest-articles.html" . }}
   </div>
 
-  <div class="latest-tips-btn">
-    <a href="{{ `space-age/` | relURL }}" class="btn btn-ghost">
-      <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
-      View All Guides
-    </a>
-  </div>
-
-  <!-- ── Browse by Topic ── -->
   <div class="section-header" style="margin-top:2.5rem;">
     <span class="section-title-badge">
       <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
@@ -135,7 +129,6 @@
         <span class="topic-count">2 Articles</span>
       </div>
     </a>
-
     <a href="{{ `science-packs/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#d7b940,#e8cc55);"></div>
       <div class="topic-body">
@@ -144,7 +137,6 @@
         <span class="topic-count">6 Articles</span>
       </div>
     </a>
-
     <a href="{{ `production-ratios/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#6abe30,#8ad44a);"></div>
       <div class="topic-body">
@@ -153,7 +145,6 @@
         <span class="topic-count">3 Articles</span>
       </div>
     </a>
-
     <a href="{{ `base-design/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#c9463d,#dd5550);"></div>
       <div class="topic-body">
@@ -162,16 +153,14 @@
         <span class="topic-count">3 Articles</span>
       </div>
     </a>
-
     <a href="{{ `trains-logistics/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#9d4edd,#b366ff);"></div>
       <div class="topic-body">
-        <h3>Trains & Logistics</h3>
+        <h3>Trains &amp; Logistics</h3>
         <p>Rail signals, deadlock fix, LTN, logistic bots</p>
         <span class="topic-count">3 Articles</span>
       </div>
     </a>
-
     <a href="{{ `defense/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#3778c8,#5599ee);"></div>
       <div class="topic-body">
@@ -180,7 +169,6 @@
         <span class="topic-count">2 Articles</span>
       </div>
     </a>
-
     <a href="{{ `blueprints/` | relURL }}" class="topic-card">
       <div class="topic-card-top" style="background:linear-gradient(90deg,#888,#bbb);"></div>
       <div class="topic-body">
@@ -191,7 +179,6 @@
     </a>
   </div>
 
-  <!-- ── About Card ── -->
   <div class="about-card">
     <div class="about-card-icon">
       <svg viewBox="0 0 64 64" width="64" height="64">
@@ -217,7 +204,6 @@
     </div>
   </div>
 
-  <!-- ── Disclaimer ── -->
   <div class="site-disclaimer">
     <p>Factorio Guide is not affiliated with Wube Software. All game content and trademarks belong to their respective owners.</p>
   </div>
