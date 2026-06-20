@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vulcanus First Landing Guide - What to Do First in Factorio Space Age"
 date: 2026-06-20
 tags: ["space-age", "planets"]
@@ -31,7 +31,7 @@ Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive 
 **Do not bring:** Mining drills (you unlock big drills fast), steam engines (no water), nuclear reactors (overkill for first visit), or trains (you will build from scratch).
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "First Steps on Vulcanus" >}}
 
@@ -50,7 +50,7 @@ Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive 
 
 **Step 5: Big drill research.** The big drill mines with +50% resource drain bonus. Once unlocked, place it on any ore patch on Vulcanus (tungsten, stone, coal).
 
-{{< /section >}}
+
 
 {{< section "Killing Your First Demolisher" >}}
 
@@ -66,7 +66,7 @@ Small demolishers guard resource patches and block expansion. They are killable 
 
 A flame turret behind the gun turrets adds significant damage-over-time. If you unlocked [flamethrower turrets]({{< ref "/defense/flamethrower-defense-guide" >}}), bring one.
 
-{{< /section >}}
+
 
 {{< section "Unlock Priority on Vulcanus" >}}
 
@@ -80,7 +80,7 @@ A flame turret behind the gun turrets adds significant damage-over-time. If you 
 
 Once you have these unlocked, ship the foundry and big drill blueprints back to [Nauvis via your space platform]({{< ref "/space-age/space-platform-guide" >}}). The foundry alone doubles your steel production on Nauvis because it casts steel directly from molten iron without the intermediate iron plate step.
 
-{{< /section >}}
+
 
 {{< section "Scaling Your Vulcanus Operation" >}}
 
@@ -95,7 +95,7 @@ Vulcanus is the most productive planet visit you can make. The foundry and big d
 
 Before leaving, set up enough [defense]({{< ref "/defense/early-game-defense" >}}) on Vulcanus to keep your mining outpost running. A single line of gun turrets with a belt of piercing ammo can hold small demolishers indefinitely.
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -103,7 +103,7 @@ Before leaving, set up enough [defense]({{< ref "/defense/early-game-defense" >}
 - **Too much walking:** Vulcanus terrain has cliffs everywhere. Do not build a sprawling base. Keep everything compact near your lava lake until you have cliff explosives.
 - **Underestimating demolishers:** A group of small demolishers can destroy an unguarded base in seconds. Always maintain turret coverage. A gap in your perimeter is an invitation.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
@@ -111,10 +111,11 @@ Vulcanus is the easiest and most rewarding planet to visit first in Space Age. T
 
 **Next planet to consider:** Once Vulcanus science is flowing and you have foundries on Nauvis, head to [Fulgora]({{< ref "/space-age/fulgora-recycling-guide" >}}) for quality modules and electromagnetic science.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Vulcanus](https://wiki.factorio.com/Vulcanus) -- Planet surface conditions and resources
 - [Factorio Wiki: Foundry](https://wiki.factorio.com/Foundry) -- Foundry recipes and fluid casting ratios
 - [Factorio Wiki: Big mining drill](https://wiki.factorio.com/Big_mining_drill) -- Resource drain mechanics
+

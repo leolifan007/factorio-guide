@@ -94,7 +94,7 @@
             <line x1="7" y1="4" x2="7" y2="7"/>
             <line x1="7" y1="7" x2="10" y2="9"/>
           </svg>
-          4 min read
+          5 min read
         </span>
         <span class="meta-item">
           <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -148,8 +148,8 @@
 
 <h2 id="the-root-cause--why-first-factories-stall">The Root Cause — Why First Factories Stall</h2>
 <p>The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.</p>
-<p>The fix is the <strong>main bus</strong>: a set of parallel belts running through the factory. Each production line pulls what it needs from the bus. The bus keeps flowing even if individual production lines stall.</p>
-<p><strong>Step 1 — Smelting column.</strong> Build 24 stone furnaces per ore type (12 each side of a belt). Iron on one belt, copper on another. Steel needs 5 iron per plate — build a dedicated steel column later.</p>
+<p>The fix is the <strong>main bus</strong>—a set of parallel belts running through the factory. Each production line pulls what it needs from the bus. For a full breakdown of lane allocation and expansion strategy, see our <a href="http://localhost:1319/base-design/main-bus-guide/">Main Bus Design Guide</a>. The bus keeps flowing even if individual production lines stall.</p>
+<p><strong>Step 1 — Smelting column.</strong> Build 24 stone furnaces per ore type (12 each side of a belt). Iron on one belt, copper on another. See our <a href="http://localhost:1319/production-ratios/smelting-ratios/">Smelting Ratios Guide</a> for furnace-to-belt matching. Steel needs 5 iron per plate — build a dedicated steel column later.</p>
 <p><strong>Step 2 — The bus.</strong> Run 4 lanes of iron, 2 lanes of copper, 1 lane of gears, 1 lane of green circuits down the middle of your factory. Leave room to add more lanes.</p>
 <table>
   <thead>
@@ -253,8 +253,8 @@
 <ol>
 <li><strong>Steel production</strong> — 5 iron plates per steel -&gt; 4 steel furnaces for every 20 iron furnaces</li>
 <li><strong>Oil processing</strong> — plastic + sulfur for blue circuits + military science</li>
-<li><strong>Blue science</strong> — needs engines (steel + pipes + gears) and red circuits (green circuits + plastic)</li>
-<li><strong>Military science</strong> — walls + grenades + piercing ammo. Don't rush this unless biters are pressing</li>
+<li><strong>Blue science</strong> — needs engines (steel + pipes + gears) and red circuits (green circuits + plastic). Our <a href="http://localhost:1319/production-ratios/oil-processing-guide/">Oil Processing Guide</a> covers the refinery setup that produces the plastic and sulfur you’ll need.</li>
+<li><strong>Military science</strong> — walls + grenades + piercing ammo. Don’t rush this unless biters are pressing. If they are, our <a href="http://localhost:1319/defense/early-game-defense/">Early Game Defense Guide</a> shows how to secure your perimeter.</li>
 </ol>
 <p>Each milestone is a new side-factory pulling from the bus. The main bus design means you can build all of them without tearing down what already works.</p>
 <hr>

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Space Science Pack from Rocket Launch - Ratios and Setup for Factorio Space Age"
 date: 2026-06-20
 tags: ["science-packs", "space-age"]
@@ -26,7 +26,7 @@ Space Science is unique among all science packs: you do not feed ingredients int
 
 Each launch also consumes: 1 rocket silo, ~42 seconds of crafting time, and enough belt throughput to keep the silo fed.
 
-{{< /section >}}
+
 
 {{< section "Rocket Part Production Chain" >}}
 
@@ -43,7 +43,7 @@ Each rocket part needs 4 ingredients, all of which require significant mid-game 
 **Rocket silo speed:** The rocket silo has 4 module slots. Fill them with productivity modules immediately. Each level of productivity reduces the effective cost per part. At prod module 3 (4x +10%), you get 4 free rocket parts for every 10 crafted. This is the single best productivity investment in the entire factory because it directly multiplies science output.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Rocket Silo Setup for 100 SPM" >}}
 
@@ -62,7 +62,7 @@ Each rocket part needs 4 ingredients, all of which require significant mid-game 
 **The real space science bottleneck** is not the silo -- it is the material throughput. Each rocket launch consumes 100 blue circuits. At a moderate 100 SPM target, you need 50 blue circuits per minute just for the rocket silo -- on top of what [blue science]({{< ref "/science-packs/blue-science-guide" >}}) and other recipes consume. Plan your blue circuit production to handle double what you think you need.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Production Flow" >}}
 
@@ -76,7 +76,7 @@ The space science loop has three stages:
 
 If you have already built a [space platform]({{< ref "/space-age/space-platform-guide" >}}), making science return is automatic -- the platform hub sends science packs down with every rocket launch. You just need enough cargo capacity.
 
-{{< /section >}}
+
 
 {{< section "Scaling with Multiple Silos" >}}
 
@@ -91,7 +91,7 @@ At 500+ SPM, a single silo cannot keep up due to the craft time. The rocket silo
 
 For high-throughput science bases, a [city block design]({{< ref "/base-design/city-block-guide" >}}) with a dedicated rocket block works well. Each silo becomes its own train stop: circuits in, science out by belt to labs.
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -99,16 +99,17 @@ For high-throughput science bases, a [city block design]({{< ref "/base-design/c
 - **Forgetting the satellite:** A rocket launched without a satellite produces 0 space science. Build a dedicated satellite assembler next to the silo and use an inserter to load it into the rocket before launch.
 - **Under-building solid fuel:** Rocket fuel production is often overlooked. At 50 rocket parts per minute, you need 500 solid fuel per minute. That is 1,000 light oil per minute -- a significant output from your refinery block. Check the [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}}) for the solid fuel yield ratios from advanced refining.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
 Space science is an exercise in production scaling. One rocket silo feeds a 100 SPM base with ease. Two silos handle 200 SPM. Beyond that, the challenge shifts from science production to raw material throughput -- expanded steel foundries, copper smelters, and circuit plants. Start with a single silo, productivity modules, and a satellite assembler. Then scale the belt-fed inputs until you hit the silo's 42-second cycle limit.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Space science pack](https://wiki.factorio.com/Space_science_pack) -- Science pack recipe and mechanics
 - [Factorio Wiki: Rocket silo](https://wiki.factorio.com/Rocket_silo) -- Silo speed, module effects, and throughput data
 - [Factorio FFF-419](https://factorio.com/blog/post/fff-419) -- Official Space Age science pack changes
+

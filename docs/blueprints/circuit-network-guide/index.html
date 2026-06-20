@@ -149,7 +149,7 @@
 <p>The solution is circuit-controlled cracking: convert excess heavy to light, excess light to petroleum. Three pumps, three decider combinators, zero deadlocks.</p>
 <h2 id="how-to-solve-it-properly--three-patterns-that-handle-everything">How to Solve It Properly — Three Patterns That Handle Everything</h2>
 <p>You only need three circuit patterns. Everything else is a variation.</p>
-<p><strong>Pattern 1 — Fluid cracking automation.</strong> This is the one that fixes refinery deadlocks.</p>
+<p><strong>Pattern 1 — Fluid cracking automation.</strong> This is the one that fixes the refinery deadlocks described in our <a href="http://localhost:1319/production-ratios/oil-processing-guide/">Oil Processing Guide</a>.</p>
 <p>What you need: red wire, decider combinator, pump per fluid type.</p>
 <img src="/images/diagrams/circuit-wires.svg" alt="Red wire and green wire circuit network — red for production control, green for train/logistics" class="schema-diagram" loading="lazy" width="760">
 
@@ -161,7 +161,7 @@
 <li>Skip petroleum → solid fuel. Petroleum backs up? Crack less. This handles itself.</li>
 </ol>
 <p>A red wire carries signal. A green wire is a separate network. If one wire shorts it doesn't corrupt the other. Convention: red for production, green for train control.</p>
-<p><strong>Pattern 2 — SR latch for power control.</strong> Insert fuel cells only when steam tanks are low.</p>
+<p><strong>Pattern 2 — SR latch for power control.</strong> Insert fuel cells only when steam tanks are low. This is especially useful for <a href="http://localhost:1319/base-design/nuclear-power-guide/">nuclear power</a> plants where fuel conservation matters.</p>
 <ul>
 <li>Wire all steam tanks to a decider combinator</li>
 <li>Set: steam &lt; 10000 → output S = 1 (set condition)</li>
@@ -187,7 +187,7 @@
 <h2 id="pushing-it-further--circuit-networks-at-megabase-scale">Pushing It Further — Circuit Networks at Megabase Scale</h2>
 <p>Once you've mastered the three patterns, circuit networks scale to:</p>
 <ul>
-<li><strong>Train station limits</strong> — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed.</li>
+<li><strong>Train station limits</strong> — wire all chests at a station, compute total storage, broadcast station capacity. Trains only go where they're needed. Combine this with proper <a href="http://localhost:1319/trains-logistics/basic-rail-network/">rail signaling</a> for a deadlock-free train network.</li>
 <li><strong>Solar accumulator ratios</strong> — circuit-controlled power switch that disconnects accumulators from the grid at a set charge level.</li>
 <li><strong>Kovarex smart centrifuge</strong> — only output U-235 when you have enough to sustain the reactor block.</li>
 <li><strong>Mall demand system</strong> — wire requester chests to constant combinators. Set chest to request exact counts. Bots deliver only what's needed.</li>

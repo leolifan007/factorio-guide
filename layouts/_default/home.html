@@ -1,6 +1,8 @@
-﻿{{ define "main" }}
+{{ define "main" }}
 
-<!-- 鈺愨晲鈺愨晲鈺愨晲鈺?HERO 鈺愨晲鈺愨晲鈺愨晲鈺?-->
+<!-- ════════════════════════════════════════
+     HERO — Industrial / Factorio橙
+     ════════════════════════════════════════ -->
 <section class="hero-section">
   <div class="hero-bg" style="background-image:url('{{ `images/hero-bg.jpg` | relURL }}')"></div>
   <div class="hero-overlay"></div>
@@ -10,7 +12,7 @@
     <span class="hero-tagline">Automate Everything. Launch the Rocket.</span>
     <p class="hero-sub">
       The definitive Factorio strategy hub. Production ratios, base layouts, train networks,
-      defense blueprints, Space Age expansion walkthroughs - all in one place.
+      defense blueprints, Space Age expansion walkthroughs — all in one place.
     </p>
     <div class="hero-cta">
       <a href="{{ `getting-started/` | relURL }}" class="btn btn-primary">Start Your Factory</a>
@@ -20,10 +22,82 @@
   </div>
 </section>
 
-<!-- 鈺愨晲鈺愨晲鈺愨晲鈺?HOME CONTENT 鈺愨晲鈺愨晲鈺愨晲鈺?-->
+<!-- ════════════════════════════════════════
+     SPACE AGE SHOWCASE — 全幅宇宙紫青
+     ════════════════════════════════════════ -->
+<section class="sa-showcase">
+  <div class="sa-showcase-inner">
+    <div class="sa-header">
+      <span class="sa-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Factorio Space Age
+      </span>
+      <h2 class="sa-title">Interplanetary Factory</h2>
+      <p class="sa-sub">New planets, quality modules, space platforms — master the expansion with our curated guides.</p>
+    </div>
+
+    <div class="sa-grid">
+      {{- $saPages := where .Site.RegularPages "Section" "space-age" }}
+      {{- $saPages = where $saPages "Params.hidden" "ne" true }}
+      {{- $saPages = where $saPages "File.LogicalName" "ne" "_index.md" }}
+      {{- $saPages = sort $saPages "Date" "desc" }}
+      {{- range $saPages }}
+      {{- $daysOld := div (sub now.Unix .Date.Unix) 86400 }}
+      <a href="{{ .RelPermalink }}" class="sa-card">
+        <div class="sa-card-glow"></div>
+        {{- if lt $daysOld 14 }}
+        <span class="sa-card-new">NEW</span>
+        {{- end }}
+        <div class="sa-card-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48" fill="none">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.4"/>
+            <line x1="32" y1="4" x2="32" y2="14" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <line x1="32" y1="50" x2="32" y2="60" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <line x1="4" y1="32" x2="14" y2="32" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <line x1="50" y1="32" x2="60" y2="32" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="sa-card-body">
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Description | default (.Summary | plainify | truncate 100) }}</p>
+        </div>
+        <div class="sa-card-footer">
+          <span class="sa-read">Read Guide →</span>
+          <span class="sa-planet">
+            {{- $tags := .Params.tags }}
+            {{- if $tags }}
+              {{- if in $tags "gleba" }}🌿 Gleba
+              {{- else if in $tags "fulgora" }}⚡ Fulgora
+              {{- else if in $tags "vulcanus" }}🌋 Vulcanus
+              {{- else if in $tags "aquilo" }}❄️ Aquilo
+              {{- else if in $tags "space-platform" }}🚀 Platform
+              {{- else if in $tags "quality" }}⭐ Quality
+              {{- else if in $tags "planets" }}🌌 Planets
+              {{- else }}{{ (index $tags 0) | humanize }}
+              {{- end }}
+            {{- end }}
+          </span>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+
+    <div class="sa-cta">
+      <a href="{{ `space-age/` | relURL }}" class="sa-cta-btn">
+        Explore All Space Age Guides
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     HOME CONTENT — Featured + Topics (次级入口)
+     ════════════════════════════════════════ -->
 <div class="home-content">
 
-  <!-- 鈹€鈹€ Trending / Featured Guides 鈹€鈹€ -->
+  <!-- ── Featured Guides ── -->
   <div class="section-header">
     <span class="section-title-badge">
       <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
@@ -35,16 +109,16 @@
   <div class="guide-grid">
     {{ partial "latest-articles.html" . }}
   </div>
-  </div>
 
   <div class="latest-tips-btn">
     <a href="{{ `space-age/` | relURL }}" class="btn btn-ghost">
       <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
-      View Latest Tips
+      View All Guides
     </a>
   </div>
-  <!-- 鈹€鈹€ Browse by Topic 鈹€鈹€ -->
-  <div class="section-header">
+
+  <!-- ── Browse by Topic ── -->
+  <div class="section-header" style="margin-top:2.5rem;">
     <span class="section-title-badge">
       <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
       Browse by Topic
@@ -108,25 +182,16 @@
     </a>
 
     <a href="{{ `blueprints/` | relURL }}" class="topic-card">
-      <div class="topic-card-top" style="background:linear-gradient(90deg,#e0e0e0,#f5f5f5);"></div>
+      <div class="topic-card-top" style="background:linear-gradient(90deg,#888,#bbb);"></div>
       <div class="topic-body">
         <h3>Blueprints</h3>
         <p>Blueprint books, community designs, sharing</p>
         <span class="topic-count">2 Articles</span>
       </div>
     </a>
+  </div>
 
-    <a href="{{ `space-age/` | relURL }}" class="topic-card-space-age">
-      <div class="topic-card-top" style="background:linear-gradient(90deg,#9d4edd,#00b8d4);"></div>
-      <div class="topic-body">
-        <h3>&#128640; Space Age Expansion</h3>
-        <p>Gleba, Fulgora, Vulcanus, Aquilo &#8212; quality modules, space platforms, interplanetary logistics &#8212; all new in the expansion.</p>
-        <span class="topic-count">7 Articles</span>
-      </div>
-    </a>
-      </div>
-
-  <!-- 鈹€鈹€ About Card 鈹€鈹€ -->
+  <!-- ── About Card ── -->
   <div class="about-card">
     <div class="about-card-icon">
       <svg viewBox="0 0 64 64" width="64" height="64">
@@ -148,16 +213,14 @@
         This is an <strong>unofficial</strong> fan guide. Factorio and all related content are
         trademarks of <strong>Wube Software</strong>.
       </p>
-      <a href="{{ `getting-started/` | relURL }}" class="btn btn-ghost">Start Reading 鈫?/a>
+      <a href="{{ `getting-started/` | relURL }}" class="btn btn-ghost">Start Reading →</a>
     </div>
   </div>
 
-  <!-- 鈹€鈹€ Disclaimer 鈹€鈹€ -->
+  <!-- ── Disclaimer ── -->
   <div class="site-disclaimer">
     <p>Factorio Guide is not affiliated with Wube Software. All game content and trademarks belong to their respective owners.</p>
   </div>
 
-  </div>
 </div>
 {{ end }}
-

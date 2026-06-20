@@ -1,0 +1,69 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="1000" height="540">
+  <title>Train Chain Signal Intersection Guide - Factorio</title>
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1000" height="540" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="#e74c3c">TRAIN SIGNAL RULES - CHAIN SIGNAL BEFORE INTERSECTION, RAIL SIGNAL AFTER</text>
+
+  <!-- ===== Top Row: Correct ===== -->
+  <text x="250" y="100" text-anchor="middle" font-size="16" fill="#2ecc71" font-weight="bold">CORRECT: Chain before, Rail after</text>
+
+  <!-- Horizontal track -->
+  <rect x="30" y="125" width="440" height="12" rx="2" fill="#444"/>
+  <rect x="30" y="137" width="440" height="12" rx="2" fill="#444"/>
+  <!-- Vertical track -->
+  <rect x="230" y="115" width="12" height="85" rx="2" fill="#444"/>
+  <rect x="242" y="115" width="12" height="85" rx="2" fill="#444"/>
+
+  <!-- Chain signal (entry) -->
+  <rect x="195" y="120" width="20" height="35" rx="3" fill="#e74c3c"/>
+  <text x="205" y="143" text-anchor="middle" font-size="10" fill="#fff">C</text>
+
+  <rect x="195" y="140" width="20" height="16" rx="3" fill="#555"/>
+  <text x="205" y="153" text-anchor="middle" font-size="8" fill="#888">entry</text>
+
+  <!-- Rail signal (exit) -->
+  <rect x="280" y="165" width="20" height="35" rx="3" fill="#2ecc71"/>
+  <text x="290" y="188" text-anchor="middle" font-size="10" fill="#fff">R</text>
+  <rect x="280" y="148" width="20" height="16" rx="3" fill="#555"/>
+  <text x="290" y="161" text-anchor="middle" font-size="8" fill="#888">exit</text>
+
+  <!-- ===== Bottom Row: Wrong ===== -->
+  <text x="750" y="100" text-anchor="middle" font-size="16" fill="#e74c3c" font-weight="bold">WRONG: Rail signal inside intersection</text>
+
+  <rect x="550" y="125" width="400" height="12" rx="2" fill="#444"/>
+  <rect x="550" y="137" width="400" height="12" rx="2" fill="#444"/>
+  <rect x="730" y="115" width="12" height="85" rx="2" fill="#444"/>
+  <rect x="742" y="115" width="12" height="85" rx="2" fill="#444"/>
+
+  <!-- Rail signal inside intersection (wrong) -->
+  <rect x="730" y="118" width="20" height="30" rx="3" fill="#e74c3c"/>
+  <text x="740" y="138" text-anchor="middle" font-size="10" fill="#fff">R</text>
+  <text x="740" y="110" text-anchor="middle" font-size="9" fill="#e74c3c">DEADLOCK!</text>
+
+  <!-- Cross sign -->
+  <text x="740" y="155" text-anchor="middle" font-size="16" fill="#e74c3c">X</text>
+
+  <!-- ===== Middle section: Rules table ===== -->
+  <text x="500" y="245" text-anchor="middle" font-size="16" fill="#555">--- SIGNAL PLACEMENT RULES ---</text>
+
+  <rect x="40" y="265" width="440" height="130" rx="6" fill="#1a2a1a" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="260" y="292" text-anchor="middle" font-size="16" fill="#2ecc71" font-weight="bold">CHAIN SIGNAL (Yellow/Red)</text>
+  <text x="260" y="318" text-anchor="middle" font-size="14" fill="#ddd">Place BEFORE every intersection entrance</text>
+  <text x="260" y="342" text-anchor="middle" font-size="14" fill="#888">Reads the NEXT signal ahead</text>
+  <text x="260" y="366" text-anchor="middle" font-size="14" fill="#888">Train stops here if intersection is occupied</text>
+  <text x="260" y="390" text-anchor="middle" font-size="14" fill="#888">Purpose: Prevents trains from blocking intersections</text>
+
+  <rect x="520" y="265" width="440" height="130" rx="6" fill="#1a1a2a" stroke="#3778c8" stroke-width="1.5"/>
+  <text x="740" y="292" text-anchor="middle" font-size="16" fill="#3778c8" font-weight="bold">RAIL SIGNAL (Green/Red)</text>
+  <text x="740" y="318" text-anchor="middle" font-size="14" fill="#ddd">Place AFTER every intersection exit</text>
+  <text x="740" y="342" text-anchor="middle" font-size="14" fill="#888">Reads the track segment ahead only</text>
+  <text x="740" y="366" text-anchor="middle" font-size="14" fill="#888">Train stops here if next block is occupied</text>
+  <text x="740" y="390" text-anchor="middle" font-size="14" fill="#888">Purpose: Divides track into blocks</text>
+
+  <!-- Summary -->
+  <text x="500" y="445" text-anchor="middle" font-size="15" fill="#f1c40f" font-weight="bold">GOLDEN RULE: Chain in -> Rail out. Never place a Rail signal inside an intersection.</text>
+  <text x="500" y="475" text-anchor="middle" font-size="14" fill="#555">For T-junctions, roundabouts, and crossings: always chain signal on every entry, rail signal on every exit.</text>
+  <text x="500" y="500" text-anchor="middle" font-size="14" fill="#555">In a chain of intersections (like a train yard): use chain signals throughout until the final exit.</text>
+  <text x="500" y="525" text-anchor="middle" font-size="14" fill="#555">Tip: Hold a signal in your hand to see the colored track blocks - red means occupied, blue means free.</text>
+</svg>

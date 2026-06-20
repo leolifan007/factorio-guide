@@ -1,4 +1,4 @@
----
+﻿---
 title: "Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age"
 date: 2026-06-20
 tags: ["space-age", "planets"]
@@ -25,7 +25,7 @@ Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and
 | All planet sciences | Tier 1 completed | Aquilo tech requires previous planet research |
 | Turret upgrades | Damage 6+ | Strafers are fast and hit hard |
 
-{{< /section >}}
+
 
 {{< section "What to Bring to Aquilo" >}}
 
@@ -49,7 +49,7 @@ Aquilo has zero local resources except frozen ammonia (and even that is limited)
 **Aquilo has no:** iron ore, copper ore, coal, stone, oil, or water (only frozen ammonia lakes). Your entire factory must be fed by cargo rockets from other planets. Every belt, assembler, and ammunition shipment must be planned before you land.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Build Order on Aquilo" >}}
 
@@ -77,7 +77,7 @@ Strafers are flying biters that ignore walls and attack from range. Rocket turre
 **Phase 4: Science production**
 The Aquilo-specific science pack (cryogenic science or similar) requires cryogenic plant processing. Research the heat-related upgrades first, then science production.
 
-{{< /section >}}
+
 
 {{< section "Strafers and How to Handle Them" >}}
 
@@ -93,7 +93,7 @@ Strafers spawn from nests on the ice. They path directly toward your heat source
 
 If you have [flamethrower defense]({{< ref "/defense/flamethrower-defense-guide" >}}) experience from Nauvis, note that strafers take reduced fire damage. Stick to kinetic (rocket turrets) and laser.
 
-{{< /section >}}
+
 
 {{< section "Shipping Logistics" >}}
 
@@ -107,7 +107,7 @@ If you have [flamethrower defense]({{< ref "/defense/flamethrower-defense-guide"
 
 Use cargo rockets rather than space platform drop pods for bulk supply. The Aquilo orbit route is dangerous for space platforms without heavy defense.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
@@ -115,10 +115,11 @@ Aquilo is the survival exam of Factorio Space Age. It forces you to manage heat 
 
 **Planet order review:** Vulcanus first (foundry), then Fulgora (quality), then Gleba (bioflux), then return to Nauvis to scale up, and finally Aquilo. See the [planet order guide]({{< ref "/space-age/planet-order-guide" >}}) for the full progression path.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Aquilo](https://wiki.factorio.com/Aquilo) -- Planet surface data and hazards
 - [Factorio Wiki: Heating tower](https://wiki.factorio.com/Heating_tower) -- Heat mechanics and fuel ratios
 - [Factorio Wiki: Strafer](https://wiki.factorio.com/Strafer) -- Enemy stats and engagement ranges
+

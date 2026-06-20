@@ -6,8 +6,22 @@
     <description>Recent content in Trains and Logistics Guide on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1319/trains-logistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Construction Robot Network for Beginners - How to Set Up Logistic Bots in Factorio 2.0</title>
+      <link>http://localhost:1319/trains-logistics/construction-robot-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/trains-logistics/construction-robot-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Construction robots at a glance:&lt;/strong&gt; Build 1 roboport, 10 construction robots, and 1 storage chest filled with belts, inserters, and assemblers. Place a blueprint inside the roboport&#39;s orange coverage zone. Robots build it automatically. That is the entire setup. Everything else is optimization.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are Construction Robots?&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Construction robots are flying automated builders. They take items from storage chests in the logistics network and place them according to blueprints or ghost entities. They also repair damaged buildings using repair packs stored in the network.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Train Chain Signal Intersection Guide - Factorio 2.0 Rail Signaling for Beginners</title>
+      <link>http://localhost:1319/trains-logistics/train-signal-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/trains-logistics/train-signal-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Train signaling in one rule:&lt;/strong&gt; Place a chain signal &lt;strong&gt;before&lt;/strong&gt; every intersection entry. Place a rail signal &lt;strong&gt;after&lt;/strong&gt; every intersection exit. Never place a rail signal inside an intersection. This rule applies to every intersection type -- T-junctions, cross intersections, roundabouts, and merge lanes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Rail Signals vs Chain Signals&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;There are only two types of train signals in Factorio. The difference is simple:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Signal Type&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;What It Checks&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Use Case&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rail Signal&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Green/Red&lt;/td&gt;&#xA;          &lt;td&gt;Checks only the track block ahead&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Straight track segments, exits&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Chain Signal&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Yellow/Red&lt;/td&gt;&#xA;          &lt;td&gt;Checks the signal ahead of it&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Intersection entries, merges&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;A &lt;strong&gt;rail signal&lt;/strong&gt; turns green when the block ahead is empty. A &lt;strong&gt;chain signal&lt;/strong&gt; copies the state of the next signal -- if the next signal is red, the chain signal is also red. This chain reaction prevents trains from stopping inside intersections.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Basic Rail Network — Signalling, Junctions, and Train Management</title>
       <link>http://localhost:1319/trains-logistics/basic-rail-network/</link>

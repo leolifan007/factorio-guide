@@ -1,8 +1,8 @@
 {{- /* latest-articles.html — Dynamic Homepage Article Cards */ -}}
-{{- $pages := where .Site.RegularPages "Section" "not in" (slice "categories" "tags" "contact" "privacy") }}
+{{- $pages := where .Site.RegularPages "Section" "not in" (slice "categories" "tags" "contact" "privacy" "space-age") }}
 {{- $pages = where $pages "Params.hidden" "ne" true }}
 {{- $pages = sort $pages "Date" "desc" }}
-{{- $latest := first 12 $pages }}
+{{- $latest := first 6 $pages }}
 
 {{- /* Section → color mapping */}}
 {{- $colors := dict

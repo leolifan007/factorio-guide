@@ -6,8 +6,36 @@
     <description>Recent content in Space-Age on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1319/tags/space-age/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title>
+      <link>http://localhost:1319/space-age/aquilo-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/aquilo-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;When to Go to Aquilo&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title>
+      <link>http://localhost:1319/space-age/planet-order-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/planet-order-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry -- it doubles your iron and steel production instantly. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Space Science Pack from Rocket Launch - Ratios and Setup for Factorio Space Age</title>
+      <link>http://localhost:1319/science-packs/space-science-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/science-packs/space-science-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Space science at a glance:&lt;/strong&gt; Each rocket launch with a satellite produces 1000 space science packs in Space Age. One rocket silo running continuously at full speed produces roughly 1 rocket per 42 seconds, or about 85 space science packs per second. The bottleneck is never the silo -- it is producing 100 rocket parts worth of materials (red circuits, blue circuits, low density structures, and rocket fuel) fast enough.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Recipe and Requirements&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;100x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/rocket_part.png&#34; alt=&#34;rocket_part&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Rocket part&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/satellite.png&#34; alt=&#34;satellite&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Satellite&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;1000x&lt;/span&gt;&lt;img src=&#34;http://localhost:1319/images/icon/space_science.png&#34; alt=&#34;space_science&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Space science&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Space Science is unique among all science packs: you do not feed ingredients into an assembler. Instead, you build a rocket silo, fill it with 100 rocket parts, add a satellite, and launch. The satellite reaches your space platform and converts into 1000 space science packs per launch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title>
+      <link>http://localhost:1319/space-age/vulcanus-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/vulcanus-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. Everything else is secondary.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title>
       <link>http://localhost:1319/space-age/fulgora-recycling-guide/</link>
@@ -20,7 +48,7 @@
       <link>http://localhost:1319/space-age/gleba-survival-guide/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1319/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Every organic item on Gleba (and items derived from them) spoils over time:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Before you land on Gleba, your &lt;a href=&#34;http://localhost:1319/space-age/space-platform-guide/&#34;&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Space Platform Design Guide</title>

@@ -6,14 +6,21 @@
     <description>Recent content in Base-Design on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1319/tags/base-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Construction Robot Network for Beginners - How to Set Up Logistic Bots in Factorio 2.0</title>
+      <link>http://localhost:1319/trains-logistics/construction-robot-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/trains-logistics/construction-robot-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Construction robots at a glance:&lt;/strong&gt; Build 1 roboport, 10 construction robots, and 1 storage chest filled with belts, inserters, and assemblers. Place a blueprint inside the roboport&#39;s orange coverage zone. Robots build it automatically. That is the entire setup. Everything else is optimization.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are Construction Robots?&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Construction robots are flying automated builders. They take items from storage chests in the logistics network and place them according to blueprints or ghost entities. They also repair damaged buildings using repair packs stored in the network.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>City Block Design Guide — Modular Megabase Layout</title>
       <link>http://localhost:1319/base-design/city-block-guide/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1319/base-design/city-block-guide/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are City Blocks?&lt;/h2&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;A &lt;strong&gt;city block&lt;/strong&gt; is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Are City Blocks?&lt;/h2&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;A &lt;strong&gt;city block&lt;/strong&gt; is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nuclear Power — Complete Setup Guide</title>

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Production Science Pack Ratios - Purple Science Setup for Space Age"
 date: 2026-06-20
 tags: ["science-packs", "production-ratios"]
@@ -23,7 +23,7 @@ The Production Science Pack (Purple) is the mid-game gate in Factorio Space Age.
 
 If you are coming from [blue science]({{< ref "/science-packs/blue-science-guide" >}}), purple science is a different kind of challenge. Blue science tests your oil refining. Purple tests your raw resource scaling -- specifically steel throughput and circuit production.
 
-{{< /section >}}
+
 
 {{< section "Optimal Ratios for 5 SPM" >}}
 
@@ -45,7 +45,7 @@ If you are coming from [blue science]({{< ref "/science-packs/blue-science-guide
 **Common ratio trap:** One engine unit assembler needs 1 steel/sec. Two engine assemblers need 2 steel/sec. Two rail assemblers need 5.4 steel/sec. Plus steel for the productivity module production chain. Your steel column should be at least twice what you think it needs. Check our [Smelting Ratios Guide]({{< ref "/production-ratios/smelting-ratios" >}}) for exact furnace counts.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Lubricant Production" >}}
 
@@ -61,7 +61,7 @@ Purple science is the first point where you need lubricant. If you already have 
 
 If you are using basic oil processing, a single refinery on crude oil produces 30 heavy oil per cycle. That feeds about 1.5 chemical plants making lubricant -- barely enough. Switch to [advanced oil processing]({{< ref "/production-ratios/oil-processing-guide" >}}) as soon as your blue science is stable. Advanced processing doubles heavy oil output per cycle.
 
-{{< /section >}}
+
 
 {{< section "Layout -- Compact Purple Science Cell" >}}
 
@@ -78,7 +78,7 @@ The optimal layout for purple science follows a straight line:
 **Material routing:** Purple science is the first point where the [main bus]({{< ref "/base-design/main-bus-guide" >}}) becomes tight. You need steel, iron, copper, stone, plastic, and green circuits all flowing. Plan for 4 lanes of steel if you intend to scale past 15 SPM.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Scaling Beyond 5 SPM" >}}
 
@@ -95,7 +95,7 @@ When you decide to push purple science higher, these are the bottlenecks to watc
 
 A dedicated electric engine sub-factory becomes necessary around 30 SPM. You can use [circuit network control]({{< ref "/blueprints/circuit-network-guide" >}}) to balance lubricant between electric engine production and battery manufacturing for your other science packs.
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -103,7 +103,7 @@ A dedicated electric engine sub-factory becomes necessary around 30 SPM. You can
 - **Neglecting module production:** Productivity module 1 requires 5 red circuits and 5 green circuits per unit. At 5 SPM, each minute you burn 50 red and 50 green circuits just on modules. That is comparable to the circuit consumption of blue science. Building a dedicated module assembler early saves you from circuit starvation later.
 - **Not planning rail output:** One rail assembler at a full belt of steel produces 2 rails per second. That is enough for 5 SPM, but if you are also building rail networks for your factory expansion, the purple science demands will eat into your construction supply. Build a separate rail assembler just for science.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
@@ -111,9 +111,10 @@ Purple science is where Factorio starts demanding real resource throughput. You 
 
 **Next step:** After purple science, the logical next milestone is setting up a space platform for [space science]({{< ref "/space-age/space-platform-guide" >}}). Or you can tackle utility science (yellow) to unlock logistic robots and upgrade your factory logistics.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Production science pack](https://wiki.factorio.com/Production_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to purple science output from 2 to 3 per craft
+

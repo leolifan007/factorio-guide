@@ -1,4 +1,4 @@
----
+﻿---
 title: "Train Chain Signal Intersection Guide - Factorio 2.0 Rail Signaling for Beginners"
 date: 2026-06-20
 tags: ["trains-logistics", "rail-signals"]
@@ -24,7 +24,7 @@ A **rail signal** turns green when the block ahead is empty. A **chain signal** 
 **Common deadlock scenario:** A train enters an intersection, stops because the exit block is occupied, and blocks all other traffic through the intersection. This happens when you use a rail signal at the entrance instead of a chain signal. Chain signals prevent this by only letting a train enter when the entire path through the intersection is clear.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "The Golden Rule Applied" >}}
 
@@ -40,7 +40,7 @@ For any intersection:
 
 **Why a rail signal inside the intersection causes deadlocks:** A train passes through the intersection and stops at the rail signal, blocking the crossing. This is the most common cause of train deadlocks in Factorio and the reason experienced players always use chain signals at intersection entries.
 
-{{< /section >}}
+
 
 {{< section "Intersection Types" >}}
 
@@ -61,7 +61,7 @@ For any intersection:
 
 For existing rail layouts, if you already have a [basic rail network]({{< ref "/trains-logistics/basic-rail-network" >}}) set up, review each intersection. You probably have at least one rail signal inside an intersection that will cause a deadlock when traffic gets heavy.
 
-{{< /section >}}
+
 
 {{< section "Chain Intersection Chains (Train Yards)" >}}
 
@@ -77,7 +77,7 @@ This garantee that a single train does not block multiple intersections. If spac
 **Train length spacing:** The safest distance between consecutive rail signals is at least one full train length. If you have shorter gaps between intersections, treat the whole area as a single block and use chain signals exclusively until the final exit.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -86,7 +86,7 @@ This garantee that a single train does not block multiple intersections. If spac
 - **Forgeting to use signals in logistics stations:** A station with multiple loading/unloading bays needs chain signals on the bay entries. Without them, trains queue up inside the station and block the main line. See [How to Use Blueprints]({{< ref "/blueprints/how-to-use-blueprints" >}}) for station layout examples.
 - **Too few blocks on long tracks:** A 500-tile straight track with one signal at each end means the entire track is one block. A single train on it blocks all other trains from using that track. Add signals every 1-2 train lengths to create more blocks.
 
-{{< /section >}}
+
 
 {{< section "Quick Reference" >}}
 
@@ -99,15 +99,16 @@ This garantee that a single train does not block multiple intersections. If spac
 | Unloading station with multiple bays | Chain | Rail |
 | Two-way single track | Chain (both sides) | Chain (both sides) |
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
 Train signaling is the most common source of frustration in Factorio logistics, and it has one solution: chain signals before intersections, rail signals after. Build your intersections with this rule, and your rail network will never deadlock. The signal count for even complex intersections is always the same: N chain signals (entries) + N rail signals (exits).
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Railway signals](https://wiki.factorio.com/Railway/Signals) -- Official signal mechanics documentation
 - [Factorio FFF: Space Age train improvements](https://factorio.com/blog/post/fff-422) -- Train changes in 2.0 (train groups, interrupt conditions)
+

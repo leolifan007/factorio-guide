@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best Planet Order in Space Age - Which Planet to Visit First and Why"
 date: 2026-06-20
 tags: ["space-age", "planets", "strategy"]
@@ -22,7 +22,7 @@ Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gle
 
 The optimal order maximizes the amount of multiplicative growth per planet visit. Visiting Vulcanus first gives you the technology that makes every other planet cheaper and faster.
 
-{{< /section >}}
+
 
 {{< section "Phase 1: Nauvis Prep (Before Any Planet)" >}}
 
@@ -39,7 +39,7 @@ Before building your first space platform, you need a well-functioning Nauvis ba
 
 Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus with only red and green science running, then struggling to build anything because you lack blue science upgrades (logistics, construction bots, advanced oil).
 
-{{< /section >}}
+
 
 {{< section "Phase 2: Vulcanus First (Lava Smelting)" >}}
 
@@ -54,7 +54,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 **What to do there:** Build a lava pumping station, set up a foundry, research metallurgic science, and ship the foundry blueprint back to Nauvis. Full details in the [Vulcanus guide]({{< ref "/space-age/vulcanus-guide" >}}).
 
-{{< /section >}}
+
 
 {{< section "Phase 3: Fulgora Second (Quality and EM Plant)" >}}
 
@@ -68,7 +68,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 **What to do there:** Set up scrap processing, build the EM plant, and start the quality module chain. The scrap output is random, so use circuit network sorting. Full guide at [Fulgora recycling]({{< ref "/space-age/fulgora-recycling-guide" >}}).
 
-{{< /section >}}
+
 
 {{< section "Phase 4: Gleba Third (Bioflux)" >}}
 
@@ -82,7 +82,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 **What to do there:** The spoilage mechanic is the main challenge. Build produce-to-consumer chains that are as short as possible. Ship bioflux back to Nauvis for egg-based production chains. Full guide at [Gleba survival]({{< ref "/space-age/gleba-survival-guide" >}}).
 
-{{< /section >}}
+
 
 {{< section "Phase 5: Return to Nauvis (Scale Up)" >}}
 
@@ -95,7 +95,7 @@ After visiting all three inner planets, return to Nauvis and integrate everythin
 
 This is the most efficient point to build your endgame base. You have all the tools but do not yet need Aquilo's complexity. Many players spend 10-20 hours here building rail networks, city blocks, and megabase infrastructure.
 
-{{< /section >}}
+
 
 {{< section "Phase 6: Aquilo Last (Fusion)" >}}
 
@@ -108,7 +108,7 @@ Aquilo requires massive import logistics (no local resources except frozen ammon
 
 Full Aquilo prep checklist in the [Aquilo guide]({{< ref "/space-age/aquilo-guide" >}}).
 
-{{< /section >}}
+
 
 {{< section "Can You Skip Visits?" >}}
 
@@ -121,10 +121,11 @@ Full Aquilo prep checklist in the [Aquilo guide]({{< ref "/space-age/aquilo-guid
 
 You cannot win Space Age without establishing science production on all four inner planets. The order above minimizes the friction of each visit by ensuring you always have the upgrade from the previous planet.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Planet order](https://wiki.factorio.com/Planetary_science) -- Planet-by-planet science requirements
 - [Reddit: Best planet order discussion (Space Age)](https://www.reddit.com/r/factorio/comments/1gb28mp/what_is_the_best_planet_to_first_go_to/) -- Player experiences and alternative orders
 - [Factorio FFF: Space Age planet design](https://factorio.com/blog/post/fff-419) -- Developer reasoning behind planet difficulty
+

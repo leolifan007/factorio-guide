@@ -6,13 +6,76 @@
     <description>Recent content in Tags on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1319/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Base-Design</title>
       <link>http://localhost:1319/tags/base-design/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1319/tags/base-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Defense</title>
+      <link>http://localhost:1319/tags/defense/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/defense/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nuclear-Power</title>
+      <link>http://localhost:1319/tags/nuclear-power/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/nuclear-power/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planets</title>
+      <link>http://localhost:1319/tags/planets/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/planets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Production-Ratios</title>
+      <link>http://localhost:1319/tags/production-ratios/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/production-ratios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rail-Signals</title>
+      <link>http://localhost:1319/tags/rail-signals/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/rail-signals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Science-Packs</title>
+      <link>http://localhost:1319/tags/science-packs/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/science-packs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Space-Age</title>
+      <link>http://localhost:1319/tags/space-age/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/space-age/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>http://localhost:1319/tags/strategy/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trains-Logistics</title>
+      <link>http://localhost:1319/tags/trains-logistics/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/tags/trains-logistics/</guid>
       <description></description>
     </item>
     <item>
@@ -44,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Defense</title>
-      <link>http://localhost:1319/tags/defense/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/tags/defense/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fulgora</title>
       <link>http://localhost:1319/tags/fulgora/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
@@ -72,38 +128,10 @@
       <description></description>
     </item>
     <item>
-      <title>Production-Ratios</title>
-      <link>http://localhost:1319/tags/production-ratios/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/tags/production-ratios/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Science-Packs</title>
-      <link>http://localhost:1319/tags/science-packs/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/tags/science-packs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Space-Age</title>
-      <link>http://localhost:1319/tags/space-age/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/tags/space-age/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Space-Platform</title>
       <link>http://localhost:1319/tags/space-platform/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1319/tags/space-platform/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trains-Logistics</title>
-      <link>http://localhost:1319/tags/trains-logistics/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/tags/trains-logistics/</guid>
       <description></description>
     </item>
     <item>
