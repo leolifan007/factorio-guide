@@ -1,0 +1,33 @@
+{{- /* get-planet-info.html — Map article to icon id + label */}}
+{{- /* Priority: title keywords (precise) > tags (broad) */}}
+{{- $title := .title | default "" }}
+{{- $tags := .tags | default slice }}
+{{- $map := .map }}
+
+{{- /* Check title for precise planet detection */}}
+{{- $keywordMap := dict
+  "aquilo"   (dict "id" "aq" "emoji" "❄️" "label" "Aquilo")
+  "fulgora" (dict "id" "fu" "emoji" "⚡" "label" "Fulgora")
+  "gleba"   (dict "id" "gl" "emoji" "🌿" "label" "Gleba")
+  "vulcanus" (dict "id" "vu" "emoji" "🌋" "label" "Vulcanus")
+  "planet order" (dict "id" "pl" "emoji" "🌌" "label" "Planets")
+  "space platform" (dict "id" "sp" "emoji" "🚀" "label" "Platform")
+  "quality"  (dict "id" "ql" "emoji" "⭐" "label" "Quality")
+}}
+
+{{- $result := dict "id" "sp" "emoji" "🚀" "label" "Space" }}
+{{- $titleLower := $title | lower }}
+
+{{- range $keyword, $info := $keywordMap }}
+  {{- if in $titleLower $keyword }}{{ $result = $info }}{{ end }}
+{{- end }}
+
+{{- /* Fallback: check tags (only if title didn't match) */}}
+{{- if eq $result (dict "id" "sp" "emoji" "🚀" "label" "Space") }}
+  {{- range $tags }}
+    {{- $info := index $map . }}
+    {{- if $info }}{{ $result = $info }}{{ end }}
+  {{- end }}
+{{- end }}
+
+{{- return $result }}

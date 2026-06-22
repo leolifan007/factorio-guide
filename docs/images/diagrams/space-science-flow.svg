@@ -1,0 +1,76 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <title>Space Science Production Flow - Factorio Guide</title>
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1000" height="520" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="#e74c3c">SPACE SCIENCE - ROCKET SILO TO SATELLITE LOOP</text>
+
+  <!-- ===== Nauvis Ground Side ===== -->
+  <rect x="30" y="85" width="240" height="370" rx="8" fill="#1a2a1a" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="150" y="112" text-anchor="middle" font-size="16" fill="#2ecc71" font-weight="bold">NAUVIS (GROUND)</text>
+
+  <!-- Rocket Ingredients -->
+  <rect x="50" y="130" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="150" y="155" text-anchor="middle" font-size="16" fill="#888">Rocket Part Ingredients</text>
+  <text x="150" y="175" text-anchor="middle" font-size="14" fill="#666">Red + Blue + LDS + Fuel</text>
+
+  <!-- Rocket Silo -->
+  <rect x="50" y="200" width="200" height="80" rx="5" fill="#2a2a2a" stroke="#e74c3c" stroke-width="2"/>
+  <text x="150" y="232" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">Rocket Silo</text>
+  <text x="150" y="258" text-anchor="middle" font-size="14" fill="#888">100 Rocket Parts per Launch</text>
+  <text x="150" y="275" text-anchor="middle" font-size="14" fill="#666">Craft time: ~42sec per rocket</text>
+
+  <!-- Satellite -->
+  <rect x="50" y="295" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="150" y="320" text-anchor="middle" font-size="16" fill="#888">Satellite</text>
+  <text x="150" y="340" text-anchor="middle" font-size="14" fill="#666">Blue + LDS + Rocket Fuel + Radars</text>
+
+  <!-- Arrow: Rocket Launch -->
+  <line x1="250" y1="250" x2="310" y2="130" stroke="#e74c3c" stroke-width="3"/>
+  <polygon points="310,126 318,130 310,136" fill="#e74c3c"/>
+  <text x="280" y="200" text-anchor="middle" font-size="14" fill="#e74c3c" font-weight="bold">ROCKET LAUNCH</text>
+
+  <!-- ===== Space Side ===== -->
+  <rect x="730" y="85" width="240" height="370" rx="8" fill="#1a1a2a" stroke="#3778c8" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="850" y="112" text-anchor="middle" font-size="16" fill="#3778c8" font-weight="bold">SPACE PLATFORM</text>
+
+  <!-- Space Science production -->
+  <rect x="750" y="200" width="200" height="80" rx="5" fill="#2a2a2a" stroke="#e74c3c" stroke-width="2"/>
+  <text x="850" y="232" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">Space Science Pack</text>
+  <text x="850" y="258" text-anchor="middle" font-size="15" fill="#e74c3c">1000 per Satellite Launch</text>
+  <text x="850" y="278" text-anchor="middle" font-size="14" fill="#666">In Space Age</text>
+
+  <!-- Satellite arrives -->
+  <rect x="750" y="295" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#3778c8"/>
+  <text x="850" y="320" text-anchor="middle" font-size="16" fill="#888">Satellite Received</text>
+  <text x="850" y="340" text-anchor="middle" font-size="14" fill="#666">Auto-collected by platform hub</text>
+
+  <line x1="730" y1="250" x2="750" y2="250" stroke="#e74c3c" stroke-width="3"/>
+  <polygon points="750,245 760,250 750,255" fill="#e74c3c"/>
+
+  <line x1="850" y1="295" x2="850" y2="280" stroke="#3778c8" stroke-width="2"/>
+  <polygon points="847,280 850,274 853,280" fill="#3778c8"/>
+
+  <!-- ===== Return to Nauvis ===== -->
+  <line x1="850" y1="410" x2="850" y2="450" stroke="#2ecc71" stroke-width="2.5"/>
+  <line x1="850" y1="450" x2="150" y2="450" stroke="#2ecc71" stroke-width="2.5"/>
+  <line x1="150" y1="450" x2="150" y2="400" stroke="#2ecc71" stroke-width="2.5"/>
+  <polygon points="147,400 150,394 153,400" fill="#2ecc71"/>
+
+  <text x="500" y="442" text-anchor="middle" font-size="14" fill="#2ecc71">Science packs returned via platform cargo landing</text>
+
+  <!-- Labs on ground -->
+  <rect x="95" y="400" width="110" height="55" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="150" y="427" text-anchor="middle" font-size="16" fill="#999">Labs</text>
+  <text x="150" y="447" text-anchor="middle" font-size="14" fill="#666">All 7 Science Pack Types</text>
+
+  <line x1="250" y1="390" x2="150" y2="400" stroke="#555" stroke-width="2"/>
+  <polygon points="152,398 150,403 155,401" fill="#555"/>
+
+  <!-- Production chain line -->
+  <rect x="750" y="130" width="200" height="55" rx="5" fill="#2a2a2a" stroke="#555"/>
+  <text x="850" y="155" text-anchor="middle" font-size="16" fill="#888">Asteroid Processing</text>
+  <text x="850" y="175" text-anchor="middle" font-size="14" fill="#666">Ammo + Thruster Fuel</text>
+  <line x1="850" y1="185" x2="850" y2="200" stroke="#555" stroke-width="2"/>
+  <polygon points="847,200 850,206 853,200" fill="#555"/>
+</svg>

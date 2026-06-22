@@ -1,0 +1,98 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <title>Space Age Planet Order - Factorio Guide</title>
+  <defs>
+    <filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#555"/></marker>
+  </defs>
+  <rect width="1000" height="520" fill="#1f1f1f" rx="6"/>
+  <line x1="0" y1="65" x2="1000" y2="65" stroke="#333"/>
+  <text x="500" y="38" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="900" fill="#fff">FACTORIO SPACE AGE - OPTIMAL PLANET ORDER</text>
+
+  <!-- Timeline bar -->
+  <line x1="80" y1="110" x2="940" y2="110" stroke="#555" stroke-width="3"/>
+  <!-- Dots on timeline -->
+  <circle cx="120" cy="110" r="6" fill="#e67e22"/>
+  <circle cx="310" cy="110" r="6" fill="#2ecc71"/>
+  <circle cx="530" cy="110" r="6" fill="#9b59b6"/>
+  <circle cx="750" cy="110" r="6" fill="#3498db"/>
+  <circle cx="910" cy="110" r="6" fill="#e74c3c"/>
+
+  <!-- Nauvis start -->
+  <rect x="70" y="130" width="130" height="85" rx="8" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="135" y="158" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">NAUVIS</text>
+  <text x="135" y="180" text-anchor="middle" font-size="13" fill="#ddd">Prep phase</text>
+  <text x="135" y="200" text-anchor="middle" font-size="12" fill="#888">Red, Green, Blue Science</text>
+
+  <!-- Arrow -->
+  <text x="205" y="108" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Vulcanus -->
+  <rect x="250" y="130" width="130" height="85" rx="8" fill="#2a2a2a" stroke="#e67e22" stroke-width="2"/>
+  <text x="315" y="158" text-anchor="middle" font-size="16" fill="#e67e22" font-weight="bold">1 VULCANUS</text>
+  <text x="315" y="180" text-anchor="middle" font-size="13" fill="#ddd">Foundry &amp; Big Drill</text>
+  <text x="315" y="200" text-anchor="middle" font-size="12" fill="#888">Lava smelting priority</text>
+
+  <!-- Arrow -->
+  <text x="385" y="108" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Fulgora -->
+  <rect x="465" y="130" width="130" height="85" rx="8" fill="#2a2a2a" stroke="#2ecc71" stroke-width="2"/>
+  <text x="530" y="158" text-anchor="middle" font-size="16" fill="#2ecc71" font-weight="bold">2 FULGORA</text>
+  <text x="530" y="180" text-anchor="middle" font-size="13" fill="#ddd">EM Plant &amp; Quality</text>
+  <text x="530" y="200" text-anchor="middle" font-size="12" fill="#888">Scrap recycling loop</text>
+
+  <!-- Arrow -->
+  <text x="600" y="108" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Gleba -->
+  <rect x="685" y="130" width="130" height="85" rx="8" fill="#2a2a2a" stroke="#9b59b6" stroke-width="2"/>
+  <text x="750" y="158" text-anchor="middle" font-size="16" fill="#9b59b6" font-weight="bold">3 GLEBA</text>
+  <text x="750" y="180" text-anchor="middle" font-size="13" fill="#ddd">Bioflux &amp; Nutrients</text>
+  <text x="750" y="200" text-anchor="middle" font-size="12" fill="#888">Agricultural science</text>
+
+  <!-- Arrow -->
+  <text x="820" y="108" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Return to Nauvis -->
+  <rect x="870" y="130" width="100" height="85" rx="8" fill="#2a2a2a" stroke="#ecf0f1" stroke-width="2"/>
+  <text x="920" y="158" text-anchor="middle" font-size="14" fill="#ecf0f1" font-weight="bold">4 NAUVIS</text>
+  <text x="920" y="180" text-anchor="middle" font-size="12" fill="#ddd">Scale Up</text>
+  <text x="920" y="200" text-anchor="middle" font-size="11" fill="#888">all sciences</text>
+
+  <!-- ===== Lower section: Extended Path ===== -->
+  <line x1="200" y1="275" x2="920" y2="275" stroke="#555" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Phase 5: Aquilo -->
+  <rect x="200" y="295" width="160" height="85" rx="8" fill="#2a2a2a" stroke="#3498db" stroke-width="2"/>
+  <text x="280" y="322" text-anchor="middle" font-size="16" fill="#3498db" font-weight="bold">5 AQUILO</text>
+  <text x="280" y="346" text-anchor="middle" font-size="13" fill="#ddd">Cryogenic research</text>
+  <text x="280" y="366" text-anchor="middle" font-size="12" fill="#888">All 6 planet sciences</text>
+
+  <text x="365" y="338" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Phase 6: Shattered Planet -->
+  <rect x="420" y="295" width="180" height="85" rx="8" fill="#2a2a2a" stroke="#e74c3c" stroke-width="2"/>
+  <text x="510" y="322" text-anchor="middle" font-size="16" fill="#e74c3c" font-weight="bold">6 SHATTERED</text>
+  <text x="510" y="346" text-anchor="middle" font-size="13" fill="#ddd">Endgame destination</text>
+  <text x="510" y="366" text-anchor="middle" font-size="12" fill="#888">The final challenge</text>
+
+  <text x="605" y="338" text-anchor="middle" font-size="22" fill="#555">-&gt;</text>
+
+  <!-- Victory -->
+  <rect x="660" y="295" width="230" height="85" rx="8" fill="#2a2a2a" stroke="#e74c3c" stroke-width="3"/>
+  <text x="775" y="322" text-anchor="middle" font-size="18" fill="#e74c3c" font-weight="bold">VICTORY</text>
+  <text x="775" y="346" text-anchor="middle" font-size="14" fill="#ddd">Space Age Completion</text>
+  <text x="775" y="366" text-anchor="middle" font-size="12" fill="#888">All sciences infinite</text>
+
+  <!-- Decision box -->
+  <rect x="50" y="295" width="130" height="85" rx="8" fill="#2a2a2a" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="115" y="322" text-anchor="middle" font-size="13" fill="#f39c12" font-weight="bold">OPTIONAL:</text>
+  <text x="115" y="345" text-anchor="middle" font-size="12" fill="#ddd">Skip Aquilo</text>
+  <text x="115" y="365" text-anchor="middle" font-size="12" fill="#888">if no biter</text>
+  <text x="115" y="380" text-anchor="middle" font-size="12" fill="#888">pressure</text>
+
+  <!-- Legend -->
+  <text x="500" y="450" text-anchor="middle" font-size="14" fill="#555">Order is optimized for maximum factory productivity growth &amp; lowest friction per planet</text>
+  <text x="500" y="475" text-anchor="middle" font-size="14" fill="#555">Vulcanus first because foundry tech unlocks molten metal -- doubling your Nauvis output instantly</text>
+  <text x="500" y="498" text-anchor="middle" font-size="14" fill="#555">Each planet offers a permanent factory upgrade. The order above minimizes return trips to fix production gaps.</text>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Molten-Metal on Factorio Guide</title>
+    <link>http://localhost:1319/tags/molten-metal/</link>
+    <description>Recent content in Molten-Metal on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/molten-metal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vulcanus Lava Processing -- Molten Iron and Copper Without Miners</title>
+      <link>http://localhost:1319/space-age/vulcanus-lava-processing/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/vulcanus-lava-processing/</guid>
+      <description>&lt;p&gt;Vulcanus turns the traditional mining pipeline upside down: instead of mining ore and smelting plates, you pump &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/lava.png&#34; alt=&#34;lava&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Lava&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; from the ground and cast it directly into finished products using &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/foundry.png&#34; alt=&#34;foundry&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Foundry&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;s. One lava pipe can replace 200+ miners and 50+ furnaces. The catch is &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/calcite.png&#34; alt=&#34;calcite&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Calcite&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; -- you need it as a catalyst, and it only comes from asteroid chunks or Vulcanus&#39;s own calcite vents.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 1 &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/offshore_pump.png&#34; alt=&#34;offshore_pump&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Offshore&lt;/span&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xD;&#xA; on lava = ~2000 molten iron/sec. One &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/foundry.png&#34; alt=&#34;foundry&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Foundry&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; with 4x productivity modules turns molten iron into steel plates at 1.5x the rate of 10 electric furnaces. The calcite cost is minimal: 1 calcite per 100 molten metal. Ship calcite back to Nauvis to replace your entire furnace stack.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;lava-pumping-and-calcite-consumption&#34;&gt;Lava Pumping and Calcite Consumption&lt;/h2&gt;&#xA;&lt;p&gt;Vulcanus has infinite lava. Each &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/offshore_pump.png&#34; alt=&#34;offshore_pump&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Offshore&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; on a lava lake outputs 500 fluid/sec. This converts to:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

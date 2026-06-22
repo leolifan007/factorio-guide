@@ -1,0 +1,487 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" width="760" height="600" style="background:#1a1a2e;border-radius:8px;font-family:'Segoe UI',sans-serif">
+  <title>Space Platform Ship Layout Templates</title>
+
+  <defs>
+    <!-- Direction arrow marker -->
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#e8941c"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="760" height="42" fill="#16213e" rx="8"/>
+  <rect x="0" y="36" width="760" height="6" fill="#16213e"/>
+  <text x="380" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#e8941c">SPACE PLATFORM SHIP LAYOUT TEMPLATES</text>
+
+  <!-- Legend -->
+  <rect x="20" y="50" width="720" height="20" rx="3" fill="#2a2a4a"/>
+  <!-- Tile types -->
+  <rect x="30" y="54" width="10" height="10" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="44" y="62" font-size="9" fill="#aaa">Collector</text>
+  <rect x="110" y="54" width="10" height="10" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="124" y="62" font-size="9" fill="#aaa">Turret</text>
+  <rect x="175" y="54" width="10" height="10" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="189" y="62" font-size="9" fill="#aaa">Crusher</text>
+  <rect x="240" y="54" width="10" height="10" rx="1" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="254" y="62" font-size="9" fill="#aaa">Chem Plant</text>
+  <rect x="330" y="54" width="10" height="10" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="344" y="62" font-size="9" fill="#aaa">Fuel Tank</text>
+  <rect x="410" y="54" width="10" height="10" rx="1" fill="#5a4a3a" stroke="#cc8833" stroke-width="1"/>
+  <text x="424" y="62" font-size="9" fill="#aaa">Thruster</text>
+  <rect x="490" y="54" width="10" height="10" rx="1" fill="#5a3a3a" stroke="#cc3333" stroke-width="1.5"/>
+  <text x="504" y="62" font-size="9" fill="#aaa">Hub</text>
+  <rect x="545" y="54" width="10" height="10" rx="1" fill="#3a4a3a" stroke="#888" stroke-width="0.5"/>
+  <text x="559" y="62" font-size="9" fill="#aaa">Platform</text>
+
+  <!-- Direction of travel -->
+  <line x1="700" y1="59" x2="730" y2="59" stroke="#e8941c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="700" y="67" font-size="8" fill="#e8941c">Direction of travel</text>
+
+  <!-- ================================================================== -->
+  <!-- SHIP 1: SPINE DESIGN (left column) -->
+  <!-- ================================================================== -->
+  <text x="20" y="92" font-size="13" fill="#e8941c" font-weight="bold">LAYOUT 1: SPINE DESIGN (Inner Planets ~200 tons)</text>
+
+  <rect x="20" y="98" width="228" height="230" rx="6" fill="#1e1e32" stroke="#444" stroke-width="1"/>
+
+  <!-- Ship label -->
+  <text x="50" y="120" font-size="9" fill="#6699cc">Width: 7 tiles</text>
+  <text x="130" y="120" font-size="9" fill="#6699cc">Weight: ~200t</text>
+
+  <!-- Row 1: Collectors + Hub (front) -->
+  <rect x="28" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="32" y="139" font-size="6" fill="#6699cc">C</text>
+  <rect x="46" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="50" y="139" font-size="6" fill="#6699cc">C</text>
+  <rect x="64" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="68" y="139" font-size="6" fill="#6699cc">C</text>
+  <rect x="82" y="128" width="20" height="16" rx="2" fill="#5a3a3a" stroke="#cc3333" stroke-width="1.5"/>
+  <text x="92" y="139" text-anchor="middle" font-size="6" fill="#cc3333" font-weight="bold">HUB</text>
+  <rect x="104" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="108" y="139" font-size="6" fill="#6699cc">C</text>
+  <rect x="122" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="126" y="139" font-size="6" fill="#6699cc">C</text>
+  <rect x="140" y="128" width="16" height="16" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="144" y="139" font-size="6" fill="#6699cc">C</text>
+
+  <!-- Flow direction arrow -->
+  <text x="180" y="126" font-size="7" fill="#e8941c">→</text>
+  <text x="180" y="136" font-size="6" fill="#888">Belts</text>
+
+  <!-- Row 2: Turrets -->
+  <rect x="28" y="148" width="16" height="16" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="32" y="159" font-size="6" fill="#cc6633">T</text>
+  <rect x="46" y="148" width="16" height="16" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="50" y="159" font-size="6" fill="#cc6633">T</text>
+
+  <!-- Ammo belt -->
+  <rect x="64" y="148" width="56" height="16" rx="2" fill="#3a3a4a" stroke="#888" stroke-width="0.5"/>
+  <text x="92" y="159" text-anchor="middle" font-size="6" fill="#aaa">Ammo belt</text>
+
+  <rect x="122" y="148" width="16" height="16" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="126" y="159" font-size="6" fill="#cc6633">T</text>
+  <rect x="140" y="148" width="16" height="16" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="144" y="159" font-size="6" fill="#cc6633">T</text>
+
+  <!-- Row 3: Crushers -->
+  <rect x="46" y="168" width="16" height="16" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="50" y="179" font-size="6" fill="#9933cc">CR</text>
+  <rect x="64" y="168" width="16" height="16" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="68" y="179" font-size="6" fill="#9933cc">CR</text>
+  <rect x="82" y="168" width="16" height="16" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="86" y="179" font-size="6" fill="#9933cc">CR</text>
+  <rect x="100" y="168" width="16" height="16" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="104" y="179" font-size="6" fill="#9933cc">CR</text>
+
+  <!-- Row 4: Chemical Plants -->
+  <rect x="64" y="188" width="16" height="16" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="68" y="199" font-size="6" fill="#33cc66">CP</text>
+  <rect x="82" y="188" width="16" height="16" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="86" y="199" font-size="6" fill="#33cc66">CP</text>
+
+  <!-- Pipes -->
+  <line x1="72" y1="184" x2="72" y2="188" stroke="#888" stroke-width="1"/>
+  <line x1="90" y1="184" x2="90" y2="188" stroke="#888" stroke-width="1"/>
+
+  <!-- Row 5: Fuel Tanks -->
+  <rect x="64" y="208" width="16" height="16" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="68" y="219" font-size="5" fill="#aaa">FT</text>
+  <rect x="82" y="208" width="16" height="16" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="86" y="219" font-size="5" fill="#aaa">FT</text>
+
+  <!-- Row 6: Thrusters -->
+  <rect x="46" y="228" width="20" height="20" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="56" y="242" text-anchor="middle" font-size="7" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="96" y="228" width="20" height="20" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="106" y="242" text-anchor="middle" font-size="7" fill="#cc8833" font-weight="bold">TH</text>
+
+  <!-- Fuel pipes -->
+  <line x1="72" y1="224" x2="56" y2="228" stroke="#e8941c" stroke-width="1"/>
+  <line x1="90" y1="224" x2="106" y2="228" stroke="#e8941c" stroke-width="1"/>
+
+  <!-- Empty platform tiles -->
+  <rect x="28" y="158" width="16" height="18" rx="1" fill="#2a2a3a" stroke="#555" stroke-width="0.5"/>
+  <rect x="28" y="178" width="16" height="18" rx="1" fill="#2a2a3a" stroke="#555" stroke-width="0.5"/>
+  <rect x="140" y="168" width="16" height="18" rx="1" fill="#2a2a3a" stroke="#555" stroke-width="0.5"/>
+  <rect x="140" y="188" width="16" height="18" rx="1" fill="#2a2a3a" stroke="#555" stroke-width="0.5"/>
+
+  <!-- Specs box -->
+  <rect x="20" y="262" width="228" height="60" rx="4" fill="#2a2a4a" stroke="#444" stroke-width="1"/>
+  <text x="28" y="278" font-size="9" fill="#e8941c" font-weight="bold">Specs:</text>
+  <text x="28" y="291" font-size="8" fill="#ccc">4 turrets · 4 crushers · 2 chem plants · 2 thrusters</text>
+  <text x="28" y="304" font-size="8" fill="#ccc">3x ammo belt · 3 fuel tanks · 1 ammo assembler</text>
+  <text x="28" y="317" font-size="8" fill="#ccc">Best for: Nauvis ↔ Fulgora/Vulcanus (short routes)</text>
+
+  <!-- ================================================================== -->
+  <!-- SHIP 2: WIDE DESIGN (center column) -->
+  <!-- ================================================================== -->
+  <text x="265" y="92" font-size="13" fill="#e8941c" font-weight="bold">LAYOUT 2: WIDE DESIGN (Gleba ~500 tons)</text>
+
+  <rect x="265" y="98" width="228" height="230" rx="6" fill="#1e1e32" stroke="#444" stroke-width="1"/>
+
+  <text x="295" y="120" font-size="9" fill="#6699cc">Width: 13 tiles</text>
+  <text x="380" y="120" font-size="9" fill="#6699cc">Weight: ~500t</text>
+
+  <!-- Row 1: Collectors + Hub -->
+  <rect x="273" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="276" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="289" y="128" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="292" y="138" font-size="5" fill="#cc6633">T</text>
+  <rect x="305" y="128" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="308" y="138" font-size="5" fill="#cc6633">T</text>
+  <rect x="321" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="324" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="337" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="340" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="353" y="128" width="18" height="14" rx="2" fill="#5a3a3a" stroke="#cc3333" stroke-width="1.5"/>
+  <text x="362" y="138" text-anchor="middle" font-size="5" fill="#cc3333" font-weight="bold">HUB</text>
+  <rect x="373" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="376" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="389" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="392" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="405" y="128" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="408" y="138" font-size="5" fill="#cc6633">T</text>
+  <rect x="421" y="128" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="424" y="138" font-size="5" fill="#cc6633">T</text>
+  <rect x="437" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="440" y="138" font-size="5" fill="#6699cc">C</text>
+  <rect x="453" y="128" width="14" height="14" rx="2" fill="#2a3a5a" stroke="#6699cc" stroke-width="1"/>
+  <text x="456" y="138" font-size="5" fill="#6699cc">C</text>
+
+  <!-- Row 2: more turrets -->
+  <rect x="273" y="146" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="276" y="156" font-size="5" fill="#cc6633">T</text>
+  <rect x="289" y="146" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="292" y="156" font-size="5" fill="#cc6633">T</text>
+
+  <rect x="405" y="146" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="408" y="156" font-size="5" fill="#cc6633">T</text>
+  <rect x="421" y="146" width="14" height="14" rx="2" fill="#5a3a2a" stroke="#cc6633" stroke-width="1"/>
+  <text x="424" y="156" font-size="5" fill="#cc6633">T</text>
+
+  <!-- Ammo belts -->
+  <rect x="305" y="146" width="82" height="14" rx="2" fill="#3a3a4a" stroke="#888" stroke-width="0.5"/>
+  <text x="346" y="156" text-anchor="middle" font-size="5" fill="#aaa">Left ammo belt</text>
+  <rect x="373" y="172" width="82" height="14" rx="2" fill="#3a3a4a" stroke="#888" stroke-width="0.5"/>
+  <text x="414" y="182" text-anchor="middle" font-size="5" fill="#aaa">Right ammo belt</text>
+
+  <!-- Crushers row -->
+  <rect x="273" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="276" y="174" font-size="5" fill="#9933cc">CR</text>
+  <rect x="289" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="292" y="174" font-size="5" fill="#9933cc">CR</text>
+  <rect x="305" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="308" y="174" font-size="5" fill="#9933cc">CR</text>
+  <rect x="321" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="324" y="174" font-size="5" fill="#9933cc">CR</text>
+
+  <rect x="421" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="424" y="174" font-size="5" fill="#9933cc">CR</text>
+  <rect x="437" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="440" y="174" font-size="5" fill="#9933cc">CR</text>
+  <rect x="453" y="164" width="14" height="14" rx="2" fill="#4a3a5a" stroke="#9933cc" stroke-width="1"/>
+  <text x="456" y="174" font-size="5" fill="#9933cc">CR</text>
+
+  <!-- Chemical plants -->
+  <rect x="289" y="182" width="14" height="14" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="292" y="192" font-size="5" fill="#33cc66">CP</text>
+  <rect x="305" y="182" width="14" height="14" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="308" y="192" font-size="5" fill="#33cc66">CP</text>
+  <rect x="421" y="182" width="14" height="14" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="424" y="192" font-size="5" fill="#33cc66">CP</text>
+  <rect x="437" y="182" width="14" height="14" rx="2" fill="#3a5a3a" stroke="#33cc66" stroke-width="1"/>
+  <text x="440" y="192" font-size="5" fill="#33cc66">CP</text>
+
+  <!-- Fuel tanks -->
+  <rect x="289" y="200" width="14" height="14" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="292" y="210" font-size="5" fill="#aaa">FT</text>
+  <rect x="305" y="200" width="14" height="14" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="308" y="210" font-size="5" fill="#aaa">FT</text>
+  <rect x="321" y="200" width="14" height="14" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="324" y="210" font-size="5" fill="#aaa">FT</text>
+  <rect x="421" y="200" width="14" height="14" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="424" y="210" font-size="5" fill="#aaa">FT</text>
+  <rect x="437" y="200" width="14" height="14" rx="2" fill="#4a4a5a" stroke="#888" stroke-width="1"/>
+  <text x="440" y="210" font-size="5" fill="#aaa">FT</text>
+
+  <!-- Thrusters -->
+  <rect x="282" y="218" width="18" height="18" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="291" y="231" text-anchor="middle" font-size="6" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="306" y="218" width="18" height="18" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="315" y="231" text-anchor="middle" font-size="6" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="414" y="218" width="18" height="18" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="423" y="231" text-anchor="middle" font-size="6" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="438" y="218" width="18" height="18" rx="3" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.5"/>
+  <text x="447" y="231" text-anchor="middle" font-size="6" fill="#cc8833" font-weight="bold">TH</text>
+
+  <!-- Specs box -->
+  <rect x="265" y="262" width="228" height="60" rx="4" fill="#2a2a4a" stroke="#444" stroke-width="1"/>
+  <text x="273" y="278" font-size="9" fill="#e8941c" font-weight="bold">Specs:</text>
+  <text x="273" y="291" font-size="8" fill="#ccc">8 turrets · 10 crushers · 4 chem plants · 4 thrusters</text>
+  <text x="273" y="304" font-size="8" fill="#ccc">Dual ammo lines · 6 fuel tanks · Rocket turrets</text>
+  <text x="273" y="317" font-size="8" fill="#ccc">Best for: Nauvis ↔ Gleba (medium route, dense ast.)</text>
+
+  <!-- ================================================================== -->
+  <!-- SHIP 3: COMPACT FORTRESS (right column) -->
+  <!-- ================================================================== -->
+  <text x="510" y="92" font-size="13" fill="#e8941c" font-weight="bold">LAYOUT 3: COMPACT FORTRESS (Aquilo ~1000t)</text>
+
+  <rect x="510" y="98" width="228" height="230" rx="6" fill="#1e1e32" stroke="#444" stroke-width="1"/>
+
+  <text x="540" y="120" font-size="9" fill="#6699cc">Width: 15 tiles</text>
+  <text x="635" y="120" font-size="9" fill="#6699cc">Weight: ~1000t</text>
+
+  <!-- Row 1: Dense front line -->
+  <rect x="518" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="520" y="136" font-size="4" fill="#6699cc">C</text>
+  <rect x="532" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="534" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="546" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="548" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="560" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="562" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="574" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="576" y="136" font-size="4" fill="#6699cc">C</text>
+  <rect x="588" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="590" y="136" font-size="4" fill="#6699cc">C</text>
+  <rect x="602" y="128" width="16" height="12" rx="1" fill="#5a3a3a" stroke="#cc3333" stroke-width="1.2"/>
+  <text x="610" y="136" text-anchor="middle" font-size="4" fill="#cc3333" font-weight="bold">HUB</text>
+  <rect x="620" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="622" y="136" font-size="4" fill="#6699cc">C</text>
+  <rect x="634" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="636" y="136" font-size="4" fill="#6699cc">C</text>
+  <rect x="648" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="650" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="662" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="664" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="676" y="128" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="678" y="136" font-size="4" fill="#cc6633">T</text>
+  <rect x="690" y="128" width="12" height="12" rx="1" fill="#2a3a5a" stroke="#6699cc" stroke-width="0.8"/>
+  <text x="692" y="136" font-size="4" fill="#6699cc">C</text>
+
+  <!-- Row 2: Turrets + pass-through -->
+  <rect x="518" y="144" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="520" y="152" font-size="4" fill="#cc6633">T</text>
+  <rect x="546" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="548" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="560" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="562" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="574" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="576" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="602" y="144" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="604" y="152" font-size="4" fill="#cc6633">T</text>
+  <rect x="616" y="144" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="618" y="152" font-size="4" fill="#cc6633">T</text>
+  <rect x="648" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="650" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="662" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="664" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="676" y="144" width="12" height="12" rx="1" fill="#3a3a4a" stroke="#888" stroke-width="0.3"/>
+  <text x="678" y="152" font-size="4" fill="#888">⋯</text>
+  <rect x="690" y="144" width="12" height="12" rx="1" fill="#5a3a2a" stroke="#cc6633" stroke-width="0.8"/>
+  <text x="692" y="152" font-size="4" fill="#cc6633">T</text>
+
+  <!-- Rocket turrets -->
+  <rect x="518" y="160" width="12" height="12" rx="2" fill="#3a2a4a" stroke="#cc55ff" stroke-width="0.8"/>
+  <text x="520" y="168" font-size="4" fill="#cc55ff">RT</text>
+  <rect x="690" y="160" width="12" height="12" rx="2" fill="#3a2a4a" stroke="#cc55ff" stroke-width="0.8"/>
+  <text x="692" y="168" font-size="4" fill="#cc55ff">RT</text>
+
+  <!-- Crushers -->
+  <rect x="546" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="548" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="560" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="562" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="574" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="576" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="588" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="590" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="648" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="650" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="662" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="664" y="168" font-size="4" fill="#9933cc">CR</text>
+  <rect x="676" y="160" width="12" height="12" rx="1" fill="#4a3a5a" stroke="#9933cc" stroke-width="0.8"/>
+  <text x="678" y="168" font-size="4" fill="#9933cc">CR</text>
+
+  <!-- Chem plants -->
+  <rect x="546" y="176" width="12" height="12" rx="1" fill="#3a5a3a" stroke="#33cc66" stroke-width="0.8"/>
+  <text x="548" y="184" font-size="4" fill="#33cc66">CP</text>
+  <rect x="560" y="176" width="12" height="12" rx="1" fill="#3a5a3a" stroke="#33cc66" stroke-width="0.8"/>
+  <text x="562" y="184" font-size="4" fill="#33cc66">CP</text>
+  <rect x="648" y="176" width="12" height="12" rx="1" fill="#3a5a3a" stroke="#33cc66" stroke-width="0.8"/>
+  <text x="650" y="184" font-size="4" fill="#33cc66">CP</text>
+  <rect x="662" y="176" width="12" height="12" rx="1" fill="#3a5a3a" stroke="#33cc66" stroke-width="0.8"/>
+  <text x="664" y="184" font-size="4" fill="#33cc66">CP</text>
+
+  <!-- Fuel tanks -->
+  <rect x="546" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="548" y="200" font-size="4" fill="#aaa">FT</text>
+  <rect x="560" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="562" y="200" font-size="4" fill="#aaa">FT</text>
+  <rect x="574" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="576" y="200" font-size="4" fill="#aaa">FT</text>
+  <rect x="648" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="650" y="200" font-size="4" fill="#aaa">FT</text>
+  <rect x="662" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="664" y="200" font-size="4" fill="#aaa">FT</text>
+  <rect x="676" y="192" width="12" height="12" rx="1" fill="#4a4a5a" stroke="#888" stroke-width="0.8"/>
+  <text x="678" y="200" font-size="4" fill="#aaa">FT</text>
+
+  <!-- Thrusters -->
+  <rect x="532" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="540" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="552" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="560" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="572" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="580" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="640" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="648" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="660" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="668" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+  <rect x="680" y="208" width="16" height="16" rx="2" fill="#5a4a3a" stroke="#cc8833" stroke-width="1.2"/>
+  <text x="688" y="220" text-anchor="middle" font-size="5" fill="#cc8833" font-weight="bold">TH</text>
+
+  <!-- Specs box -->
+  <rect x="510" y="262" width="228" height="60" rx="4" fill="#2a2a4a" stroke="#444" stroke-width="1"/>
+  <text x="518" y="278" font-size="9" fill="#e8941c" font-weight="bold">Specs:</text>
+  <text x="518" y="291" font-size="8" fill="#ccc">10 turrets + 2 rocket + railgun · 8 crushers</text>
+  <text x="518" y="304" font-size="8" fill="#ccc">4 chem plants · 6 thrusters · 2+ ammo assemblers</text>
+  <text x="518" y="317" font-size="8" fill="#ccc">Best for: Nauvis ↔ Aquilo (long route, extreme density)</text>
+
+  <!-- ================================================================== -->
+  <!-- BOTTOM COMPARISON TABLE -->
+  <!-- ================================================================== -->
+  <text x="20" y="360" font-size="13" fill="#e8941c" font-weight="bold">ROUTE COMPARISON — MATCH SHIP TO DESTINATION</text>
+
+  <rect x="20" y="368" width="720" height="120" rx="4" fill="#1e1e32" stroke="#444" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="22" y="370" width="140" height="22" fill="#2a2a4a"/>
+  <text x="92" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Route</text>
+  <rect x="164" y="370" width="100" height="22" fill="#2a2a4a"/>
+  <text x="214" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Ship Type</text>
+  <rect x="266" y="370" width="90" height="22" fill="#2a2a4a"/>
+  <text x="311" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Thrusters</text>
+  <rect x="358" y="370" width="90" height="22" fill="#2a2a4a"/>
+  <text x="403" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Turrets</text>
+  <rect x="450" y="370" width="100" height="22" fill="#2a2a4a"/>
+  <text x="500" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Ammo/Trip</text>
+  <rect x="552" y="370" width="186" height="22" fill="#2a2a4a"/>
+  <text x="645" y="385" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Notes</text>
+
+  <!-- Row 1 -->
+  <rect x="22" y="394" width="140" height="22" fill="#1a1a2e"/>
+  <text x="92" y="409" text-anchor="middle" font-size="9" fill="#ccc">Nauvis ↔ Inner</text>
+  <rect x="164" y="394" width="100" height="22" fill="#1a1a2e"/>
+  <text x="214" y="409" text-anchor="middle" font-size="9" fill="#6699cc">Spine (200t)</text>
+  <rect x="266" y="394" width="90" height="22" fill="#1a1a2e"/>
+  <text x="311" y="409" text-anchor="middle" font-size="9" fill="#ccc">2</text>
+  <rect x="358" y="394" width="90" height="22" fill="#1a1a2e"/>
+  <text x="403" y="409" text-anchor="middle" font-size="9" fill="#ccc">4</text>
+  <rect x="450" y="394" width="100" height="22" fill="#1a1a2e"/>
+  <text x="500" y="409" text-anchor="middle" font-size="9" fill="#ccc">400-800</text>
+  <rect x="552" y="394" width="186" height="22" fill="#1a1a2e"/>
+  <text x="645" y="409" text-anchor="middle" font-size="9" fill="#888">Low asteroid density</text>
+
+  <!-- Row 2 -->
+  <rect x="22" y="418" width="140" height="22" fill="#22223a"/>
+  <text x="92" y="433" text-anchor="middle" font-size="9" fill="#ccc">Nauvis ↔ Gleba</text>
+  <rect x="164" y="418" width="100" height="22" fill="#22223a"/>
+  <text x="214" y="433" text-anchor="middle" font-size="9" fill="#33cc66">Wide (500t)</text>
+  <rect x="266" y="418" width="90" height="22" fill="#22223a"/>
+  <text x="311" y="433" text-anchor="middle" font-size="9" fill="#ccc">4</text>
+  <rect x="358" y="418" width="90" height="22" fill="#22223a"/>
+  <text x="403" y="433" text-anchor="middle" font-size="9" fill="#ccc">8-10</text>
+  <rect x="450" y="418" width="100" height="22" fill="#22223a"/>
+  <text x="500" y="433" text-anchor="middle" font-size="9" fill="#ccc">~2,000</text>
+  <rect x="552" y="418" width="186" height="22" fill="#22223a"/>
+  <text x="645" y="433" text-anchor="middle" font-size="9" fill="#888">Dense carbonic ast.</text>
+
+  <!-- Row 3 -->
+  <rect x="22" y="442" width="140" height="22" fill="#1a1a2e"/>
+  <text x="92" y="457" text-anchor="middle" font-size="9" fill="#ccc">Nauvis ↔ Aquilo</text>
+  <rect x="164" y="442" width="100" height="22" fill="#1a1a2e"/>
+  <text x="214" y="457" text-anchor="middle" font-size="9" fill="#cc8833">Fortress (1000t)</text>
+  <rect x="266" y="442" width="90" height="22" fill="#1a1a2e"/>
+  <text x="311" y="457" text-anchor="middle" font-size="9" fill="#ccc">6</text>
+  <rect x="358" y="442" width="90" height="22" fill="#1a1a2e"/>
+  <text x="403" y="457" text-anchor="middle" font-size="9" fill="#ccc">10-14</text>
+  <rect x="450" y="442" width="100" height="22" fill="#1a1a2e"/>
+  <text x="500" y="457" text-anchor="middle" font-size="9" fill="#ccc">~6,000+</text>
+  <rect x="552" y="442" width="186" height="22" fill="#1a1a2e"/>
+  <text x="645" y="457" text-anchor="middle" font-size="9" fill="#888">Massive density, railgun</text>
+
+  <!-- ================================================================== -->
+  <!-- FUEL COMPARISON (bottom) -->
+  <!-- ================================================================== -->
+  <text x="20" y="498" font-size="13" fill="#e8941c" font-weight="bold">FUEL REQUIREMENTS BY ROUTE</text>
+
+  <rect x="20" y="506" width="720" height="80" rx="4" fill="#1e1e32" stroke="#444" stroke-width="1"/>
+
+  <rect x="22" y="508" width="140" height="22" fill="#2a2a4a"/>
+  <text x="92" y="523" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Route</text>
+  <rect x="164" y="508" width="140" height="22" fill="#2a2a4a"/>
+  <text x="234" y="523" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Fuel per Thruster</text>
+  <rect x="306" y="508" width="140" height="22" fill="#2a2a4a"/>
+  <text x="376" y="523" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Total (4 thruster)</text>
+  <rect x="448" y="508" width="120" height="22" fill="#2a2a4a"/>
+  <text x="508" y="523" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Tanks Needed</text>
+  <rect x="570" y="508" width="168" height="22" fill="#2a2a4a"/>
+  <text x="654" y="523" text-anchor="middle" font-size="10" fill="#e8941c" font-weight="bold">Weight Budget</text>
+
+  <rect x="22" y="532" width="140" height="22" fill="#1a1a2e"/>
+  <text x="92" y="547" text-anchor="middle" font-size="9" fill="#ccc">Inner planet</text>
+  <rect x="164" y="532" width="140" height="22" fill="#1a1a2e"/>
+  <text x="234" y="547" text-anchor="middle" font-size="9" fill="#ccc">1,000-1,200</text>
+  <rect x="306" y="532" width="140" height="22" fill="#1a1a2e"/>
+  <text x="376" y="547" text-anchor="middle" font-size="9" fill="#ccc">4,000-4,800</text>
+  <rect x="448" y="532" width="120" height="22" fill="#1a1a2e"/>
+  <text x="508" y="547" text-anchor="middle" font-size="9" fill="#ccc">2-3</text>
+  <rect x="570" y="532" width="168" height="22" fill="#1a1a2e"/>
+  <text x="654" y="547" text-anchor="middle" font-size="9" fill="#ccc">~200 tons</text>
+
+  <rect x="22" y="556" width="140" height="22" fill="#22223a"/>
+  <text x="92" y="571" text-anchor="middle" font-size="9" fill="#ccc">Gleba</text>
+  <rect x="164" y="556" width="140" height="22" fill="#22223a"/>
+  <text x="234" y="571" text-anchor="middle" font-size="9" fill="#ccc">3,000</text>
+  <rect x="306" y="556" width="140" height="22" fill="#22223a"/>
+  <text x="376" y="571" text-anchor="middle" font-size="9" fill="#ccc">12,000</text>
+  <rect x="448" y="556" width="120" height="22" fill="#22223a"/>
+  <text x="508" y="571" text-anchor="middle" font-size="9" fill="#ccc">4-5</text>
+  <rect x="570" y="556" width="168" height="22" fill="#22223a"/>
+  <text x="654" y="571" text-anchor="middle" font-size="9" fill="#ccc">~500 tons</text>
+
+  <rect x="22" y="580" width="140" height="22" fill="#1a1a2e"/>
+  <text x="92" y="595" text-anchor="middle" font-size="9" fill="#ccc">Aquilo</text>
+  <rect x="164" y="580" width="140" height="22" fill="#1a1a2e"/>
+  <text x="234" y="595" text-anchor="middle" font-size="9" fill="#ccc">6,000+</text>
+  <rect x="306" y="580" width="140" height="22" fill="#1a1a2e"/>
+  <text x="376" y="595" text-anchor="middle" font-size="9" fill="#ccc">24,000+</text>
+  <rect x="448" y="580" width="120" height="22" fill="#1a1a2e"/>
+  <text x="508" y="595" text-anchor="middle" font-size="9" fill="#ccc">6-8</text>
+  <rect x="570" y="580" width="168" height="22" fill="#1a1a2e"/>
+  <text x="654" y="595" text-anchor="middle" font-size="9" fill="#ccc">~1,000 tons</text>
+</svg>

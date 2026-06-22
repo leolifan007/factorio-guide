@@ -1,4 +1,4 @@
----
+﻿---
 title: "Utility Science Pack Setup - Yellow Science Ratios for Space Age"
 date: 2026-06-20
 tags: ["science-packs", "production-ratios"]
@@ -23,7 +23,7 @@ Utility Science (Yellow) is the most complex pre-Space science pack. While [blue
 
 Each craft in Space Age produces 3 utility science packs (up from 2 in 1.0). The craft time is 21 seconds base, or about 29 seconds in an Assembling Machine 2.
 
-{{< /section >}}
+
 
 {{< section "Optimal Ratios for 5 SPM" >}}
 
@@ -45,7 +45,7 @@ Each craft in Space Age produces 3 utility science packs (up from 2 in 1.0). The
 **The blue circuit tax:** Each blue circuit needs 20 green circuits and 2 red circuits. At 5 SPM, your circuit factory must produce roughly 33 green circuits and 3.3 red circuits per second just for yellow science -- plus blue science, purple science, and whatever else you are building. Build at least 4 green circuit assemblers and route them before anything else.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Low Density Structure Production" >}}
 
@@ -59,7 +59,7 @@ Low density structures (LDS) are straightforward but material-heavy. Each unit n
 
 Your furnace columns need to handle this. Check [smelting ratios]({{< ref "/production-ratios/smelting-ratios" >}}) to calculate steel furnace upgrades. At 30 SPM you should be switching to electric furnaces and beaconed setups.
 
-{{< /section >}}
+
 
 {{< section "Production Flow" >}}
 
@@ -75,7 +75,7 @@ All three branches converge at the yellow science assemblers. The flying robot f
 
 If your oil processing is still on basic refining, now is the time to switch. Plastic for LDS and red circuits, plus sulfur for sulfuric acid -- both come from petroleum. Our [Oil Processing Guide]({{< ref "/production-ratios/oil-processing-guide" >}}) covers the advanced refining ratios that keep all three outputs balanced.
 
-{{< /section >}}
+
 
 {{< section "Scaling Beyond 5 SPM" >}}
 
@@ -90,7 +90,7 @@ At 30+ SPM, the main bus becomes the primary bottleneck. You need dedicated circ
 
 **Module tip:** Productivity modules in blue circuit assemblers are the highest-ROI investment in the yellow science chain. Each prod module saves 10% of the massive green circuit input. Speed modules in flying robot frame assemblers also help since the craft time is long.
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -98,15 +98,16 @@ At 30+ SPM, the main bus becomes the primary bottleneck. You need dedicated circ
 - **Sulfuric acid delivery:** Pipes have throughput limits. If you pipe sulfuric acid across half your base, the flow rate drops below what blue circuit assemblers need. Either build acid production close to the circuit area or use barrels with bots.
 - **Neglecting batter:** Battery production needs sulfuric acid too. A single battery chemical plant running off the same acid line can starve the blue circuit assembler. Build a separate acid plant or split the output with pumps.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
 Utility science is the throughput exam in Factorio. It forces you to build a proper circuit factory with dedicated green circuit production, scale up steel and copper simultaneously, and integrate sulfuric acid into your base logistics. Start with 5 SPM using the ratios above. Scale by doubling entire production blocks rather than adding single machines -- the ratios are designed to scale linearly.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Utility science pack](https://wiki.factorio.com/Utility_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to yellow science output per craft
+

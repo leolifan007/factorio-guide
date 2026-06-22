@@ -1,4 +1,4 @@
----
+﻿---
 title: "Military Science Pack Setup - Gray Science Ratios for Factorio 2.0"
 date: 2026-06-20
 tags: ["science-packs", "defense"]
@@ -23,7 +23,7 @@ Military Science (Gray) is optional in Factorio 2.0 -- you can reach Space Age w
 
 Output is 2 packs per craft (same in 1.0 and Space Age). Craft time is 10 seconds in an Assembling Machine 2.
 
-{{< /section >}}
+
 
 {{< section "Optimal Ratios for 10 SPM" >}}
 
@@ -41,7 +41,7 @@ Military science ratios are unusually easy because each ingredient assembler pro
 **Why military science is cheap:** Each science pack needs half a piercing round per second, half a grenade, and half a wall. The ingredient production rates are much higher than the consumption rate. You do not need to scale military science the way you scale [blue science]({{< ref "/science-packs/blue-science-guide" >}}) or [purple science]({{< ref "/science-packs/production-science-guide" >}}).
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Production Flow" >}}
 
@@ -55,7 +55,7 @@ The production chain splits into three parallel branches:
 
 If you need ammunition for your actual turrets, build a separate piercing round line. Do not share the science ammo line with your defense ammo -- the science line only works if the belt is full and uninterrupted.
 
-{{< /section >}}
+
 
 {{< section "Layout -- Minimalist Military Science" >}}
 
@@ -70,7 +70,7 @@ Military science needs almost no specialized infrastructure. Typical mid-game ap
 
 Add your military science labs inline with your other sciences. Since [all science packs]({{< ref "/base-design/main-bus-guide" >}}) share labs, just add a fourth belt feeding gray science alongside red, green, and blue.
 
-{{< /section >}}
+
 
 {{< section "When to Build Military Science" >}}
 
@@ -86,7 +86,7 @@ Add your military science labs inline with your other sciences. Since [all scien
 **Defense priority order:** Before building military science, make sure you have at least basic [early game defense]({{< ref "/defense/early-game-defense" >}}) set up -- a few gun turrets around your pollution generators. Military science unlocks damage upgrades that make those turrets 2-3x more effective, but only if you have turrets to apply them to.
 {{< /callout >}}
 
-{{< /section >}}
+
 
 {{< section "Common Mistakes" >}}
 
@@ -94,15 +94,16 @@ Add your military science labs inline with your other sciences. Since [all scien
 - **Ammo belt sharing:** If you pull piercing rounds from the same belt that feeds your turrets, a biter attack empties the belt and starves your science. Build a dedicated ammunition assembler for science.
 - **Forgetting stone:** Stone is easy to overlook once your base grows past the starting patch. Military science needs stone bricks for walls. Add a stone furnace to your smelting line or route a dedicated stone belt.
 
-{{< /section >}}
+
 
 {{< section "Bottom Line" >}}
 
 Military science is the lowest-maintenance science pack in Factorio. One assembler per ingredient supports 8-10 science assemblers, which is more than you will need for most of the game. Skip it if biters are not a problem. Build a small setup when they are. Do not overthink the ratios -- they favor you.
 
-{{< /section >}}
+
 
 {{< section "Community Verification" >}}
 
 - [Factorio Wiki: Military science pack](https://wiki.factorio.com/Military_science_pack) -- Recipe reference and crafting data
 - [Official Factorio blog: FFF-419](https://factorio.com/blog/post/fff-419) -- Science pack changes in Space Age
+

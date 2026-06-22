@@ -1,19 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tutorial on Factorio Guide</title>
-    <link>http://localhost:1319/tags/tutorial/</link>
-    <description>Recent content in Tutorial on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Use Blueprints — Complete Guide</title>
-      <link>http://localhost:1319/blueprints/how-to-use-blueprints/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/blueprints/how-to-use-blueprints/</guid>
-      <description>&lt;h2 id=&#34;what-are-blueprints&#34;&gt;What Are Blueprints?&lt;/h2&gt;&#xA;&lt;p&gt;Blueprints let you &lt;strong&gt;copy&lt;/strong&gt; a factory design, &lt;strong&gt;save&lt;/strong&gt; it for later, and &lt;strong&gt;paste&lt;/strong&gt; it anywhere. They are essential for scaling your base.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basic-blueprint-workflow&#34;&gt;Basic Blueprint Workflow&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-copy-a-design&#34;&gt;1. Copy a Design&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;G&lt;/strong&gt; (blueprint tool)&lt;/li&gt;&#xA;&lt;li&gt;Drag a rectangle around the area you want to copy&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your cursor — place it in your &lt;strong&gt;inventory&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-save-to-a-blueprint-book&#34;&gt;2. Save to a Blueprint Book&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the blueprint&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; right arrow choose a &lt;strong&gt;Blueprint Book&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Give it a &lt;strong&gt;descriptive name&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Naming convention:&lt;/strong&gt; Use format &lt;code&gt;[Category] Description&lt;/code&gt; — e.g., &lt;code&gt;[Smelting] Iron 12x Furnace&lt;/code&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;3-import-a-blueprint-string&#34;&gt;3. Import a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Copy a blueprint string (from the web or a friend)&lt;/li&gt;&#xA;&lt;li&gt;Press &lt;strong&gt;Ctrl+V&lt;/strong&gt; while the blueprint tool (G) is selected&lt;/li&gt;&#xA;&lt;li&gt;The blueprint appears in your inventory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;4-export-a-blueprint-string&#34;&gt;4. Export a Blueprint String&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select a blueprint in your inventory&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;export&lt;/strong&gt; button (top-right)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; to copy the string&lt;/li&gt;&#xA;&lt;li&gt;Share it!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;blueprint-books-organization&#34;&gt;Blueprint Books Organization&lt;/h2&gt;&#xA;&lt;p&gt;A well-organized blueprint book saves hours of searching:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Factorio Guide</title><link>https://factorioguides.com/tags/tutorial/</link><description>Recent content in Tutorial on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Use Blueprints — Complete Guide</title><link>https://factorioguides.com/blueprints/how-to-use-blueprints/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/blueprints/how-to-use-blueprints/</guid><description>&lt;h2 id="what-are-blueprints"&gt;What Are Blueprints?&lt;/h2&gt;
+&lt;p&gt;Blueprints let you &lt;strong&gt;copy&lt;/strong&gt; a factory design, &lt;strong&gt;save&lt;/strong&gt; it for later, and &lt;strong&gt;paste&lt;/strong&gt; it anywhere. They are essential for scaling your base.&lt;/p&gt;
+&lt;h2 id="basic-blueprint-workflow"&gt;Basic Blueprint Workflow&lt;/h2&gt;
+&lt;h3 id="1-copy-a-design"&gt;1. Copy a Design&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;strong&gt;G&lt;/strong&gt; (blueprint tool)&lt;/li&gt;
+&lt;li&gt;Drag a rectangle around the area you want to copy&lt;/li&gt;
+&lt;li&gt;The blueprint appears in your cursor — place it in your &lt;strong&gt;inventory&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-save-to-a-blueprint-book"&gt;2. Save to a Blueprint Book&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your inventory&lt;/li&gt;
+&lt;li&gt;Click the blueprint&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; right arrow choose a &lt;strong&gt;Blueprint Book&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Give it a &lt;strong&gt;descriptive name&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="tip-box"&gt;
+&lt;strong&gt;Naming convention:&lt;/strong&gt; Use format &lt;code&gt;[Category] Description&lt;/code&gt; — e.g., &lt;code&gt;[Smelting] Iron 12x Furnace&lt;/code&gt;
+&lt;/div&gt;
+&lt;h3 id="3-import-a-blueprint-string"&gt;3. Import a Blueprint String&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy a blueprint string (from the web or a friend)&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Ctrl+V&lt;/strong&gt; while the blueprint tool (G) is selected&lt;/li&gt;
+&lt;li&gt;The blueprint appears in your inventory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="4-export-a-blueprint-string"&gt;4. Export a Blueprint String&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select a blueprint in your inventory&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;export&lt;/strong&gt; button (top-right)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; to copy the string&lt;/li&gt;
+&lt;li&gt;Share it!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="blueprint-books-organization"&gt;Blueprint Books Organization&lt;/h2&gt;
+&lt;p&gt;A well-organized blueprint book saves hours of searching:&lt;/p&gt;</description></item></channel></rss>

@@ -5,23 +5,23 @@
   <line x1="0" y1="60" x2="820" y2="60" stroke="#333"/>
   <text x="497" y="38" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="14" font-weight="900" fill="#44ff88">NUCLEAR POWER — 2×2 REACTOR LAYOUT</text>
   <!-- Reactors -->
-  <rect x="100" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126"/>
+  <rect x="100" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
   <text x="170" y="116" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor A</text>
   <text x="170" y="132" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  <rect x="263" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126"/>
+  <rect x="263" y="90" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
   <text x="334" y="116" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor B</text>
   <text x="334" y="132" text-anchor="middle" font-size="13" fill="#888">160°C</text>
   <!-- Neighbor bonus indicator -->
-  <rect x="228" y="96" width="42" height="55" rx="3" fill="#44ff88" fill-opacity="0.15" stroke="#44ff88" stroke-width="42" stroke-dasharray="3"/>
+  <rect x="228" y="96" width="42" height="55" rx="3" fill="#44ff88" fill-opacity="0.15" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="3"/>
   <text x="252" y="124" text-anchor="middle" font-size="13" fill="#44ff88">+100%</text>
-  <rect x="100" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126"/>
+  <rect x="100" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
   <text x="170" y="191" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor C</text>
   <text x="170" y="207" text-anchor="middle" font-size="13" fill="#888">160°C</text>
-  <rect x="263" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="126"/>
+  <rect x="263" y="165" width="126" height="69" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
   <text x="334" y="191" text-anchor="middle" font-size="13" fill="#44ff88" font-weight="700">Reactor D</text>
   <text x="334" y="207" text-anchor="middle" font-size="13" fill="#888">160°C</text>
   <!-- Center bonus -->
-  <rect x="228" y="170" width="42" height="57" rx="3" fill="#44ff88" fill-opacity="0.25" stroke="#44ff88" stroke-width="42" stroke-dasharray="3"/>
+  <rect x="228" y="170" width="42" height="57" rx="3" fill="#44ff88" fill-opacity="0.25" stroke="#44ff88" stroke-width="1.5" stroke-dasharray="3"/>
   <text x="252" y="199" text-anchor="middle" font-size="13" fill="#44ff88">×3</text>
   <!-- Bonus labels -->
   <text x="170" y="158" text-anchor="middle" font-size="13" fill="#44ff88" opacity="0.7">+100%</text>
@@ -61,7 +61,7 @@
   <rect x="743" y="85" width="42" height="126" rx="3" fill="#2277cc" fill-opacity="0.2" stroke="#44aaff"/>
   <text x="766" y="145" text-anchor="middle" font-size="13" fill="#44aaff">H₂O</text>
   <!-- Summary -->
-  <rect x="170" y="260" width="399" height="63" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="399"/>
+  <rect x="170" y="260" width="399" height="63" rx="4" fill="#0a1a2a" stroke="#44ff88" stroke-width="1.5"/>
   <text x="392" y="280" text-anchor="middle" font-size="13" fill="#44ff88">2×2 Reactor: 480 MW total</text>
   <text x="392" y="298" text-anchor="middle" font-size="13" fill="#888">Fuel: 72 cells/hr | 4 Offshore Pumps | 6.67 MW per cell</text>
   <!-- Fuel cycle mini-flow -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioflux on Factorio Guide</title>
+    <link>http://localhost:1319/tags/bioflux/</link>
+    <description>Recent content in Bioflux on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/bioflux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gleba Bioflux Production -- Fruit Ratio, Nutrients Loop, and Spoilage Control</title>
+      <link>http://localhost:1319/space-age/gleba-bioflux-production/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/gleba-bioflux-production/</guid>
+      <description>&lt;p&gt;Gleba&#39;s bioflux production is the core loop that powers all advanced production on the planet. The challenge is not throughput -- it is timing. Fruits spoil in minutes. Nutrients spoil in seconds. Your entire factory must run on a timer, not on buffers. Get the ratio wrong and your &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/bioflux.png&#34; alt=&#34;bioflux&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Bioflux&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; line stalls, your &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/nutrients.png&#34; alt=&#34;nutrients&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Nutrients&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; rot, and your &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/biter_egg.png&#34; alt=&#34;biter_egg&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Biter egg&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; incubators starve.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The bioflux loop is a closed cycle: fruits → mash/jelly → nutrients → bioflux → more nutrients. The critical ratio is 2 &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/yumako.png&#34; alt=&#34;yumako&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Yumako&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

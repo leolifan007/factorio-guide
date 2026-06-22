@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recycling on Factorio Guide</title>
+    <link>http://localhost:1319/tags/recycling/</link>
+    <description>Recent content in Recycling on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/recycling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fulgora Scrap Overflow -- How to Void Excess Items and Keep Production Running</title>
+      <link>http://localhost:1319/space-age/fulgora-scrap-overflow/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/fulgora-scrap-overflow/</guid>
+      <description>&lt;p&gt;Fulgora is the only planet where your factory generates items faster than you can use them. Each &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/recycler.png&#34; alt=&#34;recycler&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Recycler&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; produces 8 different output types from a single scrap input. When one item backs up (stone, concrete, ice), it clogs the belt and stalls your entire &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/holmium_ore.png&#34; alt=&#34;holmium_ore&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Holmium ore&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; supply. The fix is a priority-based sorting system with controlled overflow destruction -- not bigger buffers.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Every Fulgora base needs a circuit-controlled &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/splitter.png&#34; alt=&#34;splitter&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Splitter&lt;/span&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xD;&#xA; that routes overflow items into recyclers for destruction. Priority order: holmium ore &gt; processing units &gt; iron gear wheels &gt; copper plates &gt; everything else. Items that can&#39;t be consumed within 2 belts of sorting get voided. Adding recyclers for overflow management actually increases your holmium output.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-the-overflow&#34;&gt;The Mechanics Behind the Overflow&lt;/h2&gt;&#xA;&lt;p&gt;Each scrap recycled outputs 8 item types with very different quantities:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

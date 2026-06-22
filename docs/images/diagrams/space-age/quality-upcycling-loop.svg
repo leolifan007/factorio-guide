@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" width="760" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="100%" stop-color="#3ddc84"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3778c8"/>
+      <stop offset="100%" stop-color="#4a88d8"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9b59b6"/>
+      <stop offset="100%" stop-color="#a969c6"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#f0882e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8899aa"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2ecc71"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3778c8"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9b59b6"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
+    </marker>
+    <marker id="arrowGreenSmall" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2ecc71"/>
+    </marker>
+    <marker id="arrowBlueSmall" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3778c8"/>
+    </marker>
+    <marker id="arrowPurpleSmall" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#9b59b6"/>
+    </marker>
+    <marker id="arrowOrangeSmall" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e67e22"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="500" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Grid dots -->
+  <g fill="#2a2a4e" opacity="0.3">
+    <circle cx="20" cy="20" r="1"/><circle cx="60" cy="20" r="1"/><circle cx="100" cy="20" r="1"/>
+    <circle cx="140" cy="20" r="1"/><circle cx="180" cy="20" r="1"/><circle cx="220" cy="20" r="1"/>
+    <circle cx="260" cy="20" r="1"/><circle cx="300" cy="20" r="1"/><circle cx="340" cy="20" r="1"/>
+    <circle cx="380" cy="20" r="1"/><circle cx="420" cy="20" r="1"/><circle cx="460" cy="20" r="1"/>
+    <circle cx="500" cy="20" r="1"/><circle cx="540" cy="20" r="1"/><circle cx="580" cy="20" r="1"/>
+    <circle cx="620" cy="20" r="1"/><circle cx="660" cy="20" r="1"/><circle cx="700" cy="20" r="1"/>
+    <circle cx="740" cy="20" r="1"/>
+  </g>
+
+  <!-- Title -->
+  <text x="380" y="32" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" filter="url(#glow)">Quality Upcycling Loop — Common → Legendary</text>
+
+  <!-- ============ INPUT: Common Items (top-left) ============ -->
+  <rect x="40" y="60" width="130" height="50" rx="8" fill="#2a2a3a" stroke="#666" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="105" y="78" text-anchor="middle" fill="#999" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold">INPUT: Common Items</text>
+  <text x="105" y="95" text-anchor="middle" fill="#888" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Gears / Circuits / LDS</text>
+
+  <!-- Arrow: Input → Assembler -->
+  <line x1="170" y1="85" x2="230" y2="85" stroke="#8899aa" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- ============ ASSEMBLER (center-left) ============ -->
+  <rect x="235" y="55" width="150" height="110" rx="10" fill="#1a2a1a" stroke="#5a9a5a" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="310" y="78" text-anchor="middle" fill="#5a9a5a" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold">🏭 ASSEMBLER</text>
+  <line x1="250" y1="85" x2="370" y2="85" stroke="#3a5a3a" stroke-width="1"/>
+  <text x="310" y="102" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Quality Modules Equipped</text>
+  <text x="310" y="118" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Crafting → Quality Roll</text>
+  <text x="310" y="148" text-anchor="middle" fill="#aaa" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-style="italic">Output: Mixed quality items</text>
+
+  <!-- Quality module indicator in assembler -->
+  <rect x="260" y="126" width="14" height="14" rx="3" fill="#9b59b6" opacity="0.6"/>
+  <text x="267" y="137" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Q</text>
+  <rect x="278" y="126" width="14" height="14" rx="3" fill="#3778c8" opacity="0.6"/>
+  <text x="285" y="137" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Q</text>
+  <rect x="296" y="126" width="14" height="14" rx="3" fill="#e67e22" opacity="0.6"/>
+  <text x="303" y="137" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Q</text>
+  <rect x="314" y="126" width="14" height="14" rx="3" fill="#2ecc71" opacity="0.6"/>
+  <text x="321" y="137" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Q</text>
+
+  <!-- Assembler → Output Belt -->
+  <line x1="385" y1="85" x2="430" y2="85" stroke="#8899aa" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- ============ QUALITY FILTER (center belt area) ============ -->
+  <!-- Belt representation -->
+  <rect x="435" y="73" width="220" height="24" rx="6" fill="#1a1a1e" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="445" y1="80" x2="645" y2="80" stroke="#4a4a4a" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="445" y1="88" x2="645" y2="88" stroke="#4a4a4a" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Quality arrows going up from belt -->
+  <!-- Uncommon -->
+  <line x1="455" y1="73" x2="455" y2="45" stroke="#2ecc71" stroke-width="2" marker-end="url(#arrowGreenSmall)"/>
+  <rect x="443" y="30" width="24" height="14" rx="3" fill="#0a2a1a" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="455" y="40" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="7" font-weight="bold">U</text>
+
+  <!-- Rare -->
+  <line x1="495" y1="73" x2="495" y2="45" stroke="#3778c8" stroke-width="2" marker-end="url(#arrowBlueSmall)"/>
+  <rect x="483" y="30" width="24" height="14" rx="3" fill="#0a0a2a" stroke="#3778c8" stroke-width="1.5"/>
+  <text x="495" y="40" text-anchor="middle" fill="#3778c8" font-family="'Segoe UI', Arial, sans-serif" font-size="7" font-weight="bold">R</text>
+
+  <!-- Epic -->
+  <line x1="535" y1="73" x2="535" y2="45" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowPurpleSmall)"/>
+  <rect x="523" y="30" width="24" height="14" rx="3" fill="#1a0a2a" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="535" y="40" text-anchor="middle" fill="#9b59b6" font-family="'Segoe UI', Arial, sans-serif" font-size="7" font-weight="bold">E</text>
+
+  <!-- Legendary -->
+  <line x1="575" y1="73" x2="575" y2="45" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowOrangeSmall)"/>
+  <rect x="563" y="30" width="24" height="14" rx="3" fill="#2a1a0a" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="575" y="40" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="7" font-weight="bold">L</text>
+
+  <!-- Labels above quality filter boxes -->
+  <text x="455" y="26" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="6">Uncommon</text>
+  <text x="495" y="26" text-anchor="middle" fill="#3778c8" font-family="'Segoe UI', Arial, sans-serif" font-size="6">Rare</text>
+  <text x="535" y="26" text-anchor="middle" fill="#9b59b6" font-family="'Segoe UI', Arial, sans-serif" font-size="6">Epic</text>
+  <text x="575" y="26" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="6">Legendary</text>
+
+  <!-- Belt → Recycler -->
+  <line x1="655" y1="85" x2="690" y2="85" stroke="#8899aa" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- ============ RECYCLER (right) ============ -->
+  <rect x="695" y="55" width="50" height="110" rx="10" fill="#2a1a1a" stroke="#e74c3c" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="720" y="80" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold">♻</text>
+  <text x="720" y="100" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold">RECY-</text>
+  <text x="720" y="115" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold">CLER</text>
+  <text x="720" y="135" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="7">Q</text>
+  <text x="720" y="148" text-anchor="middle" fill="#aaa" font-family="'Segoe UI', Arial, sans-serif" font-size="6">Mods</text>
+  <text x="720" y="158" text-anchor="middle" fill="#aaa" font-family="'Segoe UI', Arial, sans-serif" font-size="6">25% keep</text>
+
+  <!-- Recycler output downward -->
+  <line x1="720" y1="165" x2="720" y2="210" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- ============ RECYCLER OUTPUT (bottom) ============ -->
+  <rect x="655" y="215" width="130" height="45" rx="8" fill="#2a1a1a" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="720" y="233" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold">RECYCLED OUTPUT</text>
+  <text x="720" y="250" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="9">25% of input + quality roll</text>
+
+  <!-- 75% loss arrow going down -->
+  <line x1="720" y1="260" x2="720" y2="285" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <rect x="655" y="290" width="130" height="30" rx="6" fill="#1a0a0a" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="720" y="310" text-anchor="middle" fill="#e74c3c" font-family="'Segoe UI', Arial, sans-serif" font-size="9">75% Lost (destroyed)</text>
+
+  <!-- ============ FEEDBACK LOOP: Recycled items back to Assembler ============ -->
+  <path d="M 655 235 H 130 V 85 H 230" fill="none" stroke="#8899aa" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowGray)"/>
+  <text x="310" y="228" text-anchor="middle" fill="#8899aa" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-style="italic">Recovered common items re-enter assembler</text>
+
+  <!-- ============ LEGENDARY EXTRACTION BOX (top-right) ============ -->
+  <rect x="480" y="100" width="160" height="55" rx="8" fill="#1a0a0a" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <text x="560" y="120" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold">⭐ LEGENDARY OUTPUT</text>
+  <line x1="490" y1="128" x2="630" y2="128" stroke="#3a2a1a" stroke-width="1"/>
+  <text x="560" y="145" text-anchor="middle" fill="#ddd" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Extract → Equipment / Modules</text>
+
+  <!-- Arrow from legendary filter to output -->
+  <line x1="587" y1="44" x2="587" y2="95" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowOrangeSmall)"/>
+
+  <!-- ============ QUALITY PROBABILITY TABLE (bottom) ============ -->
+  <rect x="40" y="340" width="680" height="145" rx="8" fill="#12122a" stroke="#3a3a5a" stroke-width="1" opacity="0.95"/>
+  <text x="380" y="362" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold">Quality Probability Matrix (with 4 legendary quality modules III)</text>
+  <line x1="55" y1="372" x2="705" y2="372" stroke="#2a2a4a" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="55" y="380" width="100" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="105" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Input Tier</text>
+  <rect x="160" y="380" width="80" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="200" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Common</text>
+  <rect x="245" y="380" width="80" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="285" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Uncommon</text>
+  <rect x="330" y="380" width="80" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="370" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Rare</text>
+  <rect x="415" y="380" width="80" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="455" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Epic</text>
+  <rect x="500" y="380" width="80" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="540" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Legendary</text>
+  <rect x="585" y="380" width="135" height="20" rx="4" fill="#2a2a4a"/>
+  <text x="652" y="394" text-anchor="middle" fill="#ccc" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold">Avg Crafts to Next</text>
+
+  <!-- Common input row -->
+  <text x="105" y="415" text-anchor="middle" fill="#999" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Common</text>
+  <text x="200" y="415" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="9">90.0%</text>
+  <text x="285" y="415" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="9">9.5%</text>
+  <text x="370" y="415" text-anchor="middle" fill="#3778c8" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.45%</text>
+  <text x="455" y="415" text-anchor="middle" fill="#9b59b6" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.045%</text>
+  <text x="540" y="415" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.005%</text>
+  <text x="652" y="415" text-anchor="middle" fill="#ddd" font-family="'Segoe UI', Arial, sans-serif" font-size="9">~20,000</text>
+  <line x1="55" y1="422" x2="705" y2="422" stroke="#2a2a3a" stroke-width="0.5"/>
+
+  <!-- Uncommon input row -->
+  <text x="105" y="438" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Uncommon</text>
+  <text x="200" y="438" text-anchor="middle" fill="#999" font-family="'Segoe UI', Arial, sans-serif" font-size="9">—</text>
+  <text x="285" y="438" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="9">90.0%</text>
+  <text x="370" y="438" text-anchor="middle" fill="#3778c8" font-family="'Segoe UI', Arial, sans-serif" font-size="9">9.5%</text>
+  <text x="455" y="438" text-anchor="middle" fill="#9b59b6" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.45%</text>
+  <text x="540" y="438" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.045%</text>
+  <text x="652" y="438" text-anchor="middle" fill="#ddd" font-family="'Segoe UI', Arial, sans-serif" font-size="9">~2,200</text>
+  <line x1="55" y1="445" x2="705" y2="445" stroke="#2a2a3a" stroke-width="0.5"/>
+
+  <!-- Rare input row -->
+  <text x="105" y="460" text-anchor="middle" fill="#3778c8" font-family="'Segoe UI', Arial, sans-serif" font-size="9">Rare</text>
+  <text x="200" y="460" text-anchor="middle" fill="#999" font-family="'Segoe UI', Arial, sans-serif" font-size="9">—</text>
+  <text x="285" y="460" text-anchor="middle" fill="#999" font-family="'Segoe UI', Arial, sans-serif" font-size="9">—</text>
+  <text x="370" y="460" text-anchor="middle" fill="#2ecc71" font-family="'Segoe UI', Arial, sans-serif" font-size="9">90.0%</text>
+  <text x="455" y="460" text-anchor="middle" fill="#9b59b6" font-family="'Segoe UI', Arial, sans-serif" font-size="9">9.5%</text>
+  <text x="540" y="460" text-anchor="middle" fill="#e67e22" font-family="'Segoe UI', Arial, sans-serif" font-size="9">0.45%</text>
+  <text x="652" y="460" text-anchor="middle" fill="#ddd" font-family="'Segoe UI', Arial, sans-serif" font-size="9">~220</text>
+
+  <!-- Bottom note -->
+  <text x="380" y="478" text-anchor="middle" fill="#5a5a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="7">Percentages: with 4 legendary quality module III (≈10% quality chance per module, 4 modules = ~10% effective per craft excluding recycler)</text>
+</svg>

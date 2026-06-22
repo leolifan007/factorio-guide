@@ -8,7 +8,7 @@
     var toc = document.getElementById('floatingToc');
     if (!toc) return;
 
-    var headings = document.querySelectorAll('.article-body h2, .article-body h3');
+    var headings = document.querySelectorAll('.article-content h2, .article-content h3');
     if (headings.length === 0) {
       toc.style.display = 'none';
       return;
@@ -38,7 +38,7 @@
 
   // Highlight active TOC item on scroll
   function highlightTOC() {
-    var headings = document.querySelectorAll('.article-body h2, .article-body h3');
+    var headings = document.querySelectorAll('.article-content h2, .article-content h3');
     if (headings.length === 0) return;
 
     var tocLinks = document.querySelectorAll('#floatingToc a');

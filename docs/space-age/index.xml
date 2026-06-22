@@ -1,40 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Space Age Expansion Guide on Factorio Guide</title>
-    <link>http://localhost:1319/space-age/</link>
-    <description>Recent content in Space Age Expansion Guide on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/space-age/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title>
-      <link>http://localhost:1319/space-age/fulgora-recycling-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/fulgora-recycling-guide/</guid>
-      <description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can&#39;t predict what comes out — but you have to plan for everything that does. If even one item type has no output path, the entire system stops.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Fulgora replaces mining with scrap recycling. One scrap recycler produces a random selection from this pool:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title>
-      <link>http://localhost:1319/space-age/gleba-survival-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Every organic item on Gleba (and items derived from them) spoils over time:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Space Platform Design Guide</title>
-      <link>http://localhost:1319/space-age/space-platform-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/space-platform-guide/</guid>
-      <description>&lt;p&gt;The space platform you just launched is drifting toward Gleba without enough fuel to brake. The thrusters are starved, the crushers aren&#39;t running, and the asteroids have punched a hole through your ammo belt. Here&#39;s the build order that prevents that from happening: build the hub → fuel plant → ammo production → thrusters → go.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build your platform in this order: hub → crushers/chemical plants → ammo assemblers → thrusters → go. Keep platform weight under 100 tons for first trips. One thruster per 50 tons minimum thrust-to-weight ratio.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-space-travel&#34;&gt;The Mechanics Behind Space Travel&lt;/h2&gt;&#xA;&lt;p&gt;Space platforms are ships that fly between planets. They have five essential systems:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quality Modules — Space Age New Mechanic Explained</title>
-      <link>http://localhost:1319/space-age/quality-module-guide/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/quality-module-guide/</guid>
-      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;&#34;&gt;COMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;&#34;&gt;UNCOMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;&#34;&gt;RARE&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;&#34;&gt;EPIC&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;&#34;&gt;LEGENDARY&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-quality&#34;&gt;What Is Quality?&lt;/h2&gt;&#xA;&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Tier&lt;/th&gt;&#xA;          &lt;th&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;Bonus&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Common (1)&lt;/td&gt;&#xA;          &lt;td&gt;Gray&lt;/td&gt;&#xA;          &lt;td&gt;Baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Uncommon (2)&lt;/td&gt;&#xA;          &lt;td&gt;Green&lt;/td&gt;&#xA;          &lt;td&gt;Plus 20 percent speed, minus 20 percent energy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rare (3)&lt;/td&gt;&#xA;          &lt;td&gt;Blue&lt;/td&gt;&#xA;          &lt;td&gt;Plus 40 percent speed, minus 40 percent energy, plus 2 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Epic (4)&lt;/td&gt;&#xA;          &lt;td&gt;Purple&lt;/td&gt;&#xA;          &lt;td&gt;Plus 60 percent speed, minus 60 percent energy, plus 4 range&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Legendary (5)&lt;/td&gt;&#xA;          &lt;td&gt;Orange&lt;/td&gt;&#xA;          &lt;td&gt;Plus 80 percent speed, minus 80 percent energy, plus 6 range, plus 2 area of effect&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;how-quality-is-generated&#34;&gt;How Quality Is Generated&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quality modules&lt;/strong&gt; in assemblers/machines give a chance for the output to be a higher quality tier.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Space Age Expansion Guide on Factorio Guide</title><link>https://factorioguides.com/space-age/</link><description>Recent content in Space Age Expansion Guide on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/space-age/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://factorioguides.com/space-age/sa_content_plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/sa_content_plan/</guid><description>&lt;h1 id="sa-内容选题规划serper-api-验证版"&gt;SA 内容选题规划（serper API 验证版）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;验证工具: serper API (Google 全球搜索)
+红线: SVG ✓ 表格 ✓ 图标 ✓ 内链 ✓
+禁止: 3词以下泛词、未经验证的选题、国内搜索引擎&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="一现状评估"&gt;一、现状评估&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;现有文章&lt;/th&gt;
+ &lt;th&gt;字数&lt;/th&gt;
+ &lt;th&gt;表格&lt;/th&gt;
+ &lt;th&gt;SVG图&lt;/th&gt;
+ &lt;th&gt;材料图标&lt;/th&gt;
+ &lt;th&gt;内链&lt;/th&gt;
+ &lt;th&gt;状态&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;vulcanus-guide&lt;/td&gt;
+ &lt;td&gt;85w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;fulgora-recycling-guide&lt;/td&gt;
+ &lt;td&gt;131w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;gleba-survival-guide&lt;/td&gt;
+ &lt;td&gt;146w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;aquilo-guide&lt;/td&gt;
+ &lt;td&gt;141w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;planet-order-guide&lt;/td&gt;
+ &lt;td&gt;108w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;可保留骨架&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;quality-module-guide&lt;/td&gt;
+ &lt;td&gt;41w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;space-platform-guide&lt;/td&gt;
+ &lt;td&gt;110w&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;极薄，需重写&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;结论：7 篇全部未过 QA 红线，需要深度重写 + 补新。&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

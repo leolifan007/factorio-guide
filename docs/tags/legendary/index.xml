@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legendary on Factorio Guide</title>
+    <link>http://localhost:1319/tags/legendary/</link>
+    <description>Recent content in Legendary on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/legendary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quality Module Upcycling Loop -- From Uncommon to Legendary Without Waste</title>
+      <link>http://localhost:1319/space-age/quality-module-upcycling/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/quality-module-upcycling/</guid>
+      <description>&lt;p&gt;Quality upcycling is the most rewarding endgame system in Space Age, and the most misunderstood. The core loop is simple: craft items with &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/quality_module.png&#34; alt=&#34;quality_module&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Quality&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;s, recycle failures back into raw materials, repeat with higher quality. But the math, the module choices, and the equipment priority order make the difference between a slow trickle and a legendary factory.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The base loop is: craft T1 item with 4x quality modules → recycle non-legendary outputs with 4x quality modules → repeat for T2/T3/T4 iterations. Each cycle gives roughly 1 legendary out of every 10,000 input normal items. This sounds terrible, but at scale (8+ &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/recycler.png&#34; alt=&#34;recycler&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Recycler&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

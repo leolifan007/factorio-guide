@@ -1,26 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Factorio Beginner&#39;s Guide — Your First 10 Hours on Factorio Guide</title>
-    <link>http://localhost:1319/getting-started/</link>
-    <description>Recent content in Factorio Beginner&#39;s Guide — Your First 10 Hours on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Green Science Guide — Logistics Science Pack Setup</title>
-      <link>http://localhost:1319/getting-started/green-science-guide/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/getting-started/green-science-guide/</guid>
-      <description>&lt;p&gt;Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-green-science-feels-like-a-wall&#34;&gt;The Root Cause — Why Green Science Feels Like a Wall&lt;/h2&gt;&#xA;&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Your First Factory — Factorio Beginner Guide</title>
-      <link>http://localhost:1319/getting-started/your-first-factory/</link>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/getting-started/your-first-factory/</guid>
-      <description>&lt;p&gt;Your first factory is a mess. That&#39;s normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that&#39;s feeding the red science — but the belt looped back and now everything&#39;s on the same belt and nothing reaches the lab. Here&#39;s a cleaner starting setup.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don&#39;t belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;http://localhost:1319/images/diagrams/main-bus-layout.svg&#34; alt=&#34;Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;760&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-root-cause--why-first-factories-stall&#34;&gt;The Root Cause — Why First Factories Stall&lt;/h2&gt;&#xA;&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Factorio Beginner's Guide — Your First 10 Hours on Factorio Guide</title><link>https://factorioguides.com/getting-started/</link><description>Recent content in Factorio Beginner's Guide — Your First 10 Hours on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Green Science Guide — Logistics Science Pack Setup</title><link>https://factorioguides.com/getting-started/green-science-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/green-science-guide/</guid><description>&lt;p&gt;By the time you’ve built your &lt;a href="https://factorioguides.com/getting-started/your-first-factory/"&gt;first factory&lt;/a&gt;, automation starts feeling natural. Red science was easy: two ingredients, one assembler. Green science is where the actual factory building begins — you need sub-factories for inserters and belts feeding into the science assembler line. Mess up the belt ratio here and you will be hand-crafting belts for the next hour.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 6 belt assemblers + 1 inserter assembler feed 12 green science assemblers. Build a belt/inserter sub-factory that feeds the science line from the side, not through the main bus.&lt;/div&gt;
+
+&lt;h2 id="the-root-cause--why-green-science-feels-like-a-wall"&gt;The Root Cause — Why Green Science Feels Like a Wall&lt;/h2&gt;
+&lt;p&gt;Green science is the first recipe that requires items requiring other factories. Inserter needs: iron gear + green circuit + iron plate. Transport belt needs: iron plate. Each inserter has an iron gear in it — and those gears compete directly with red science for your gear supply.&lt;/p&gt;</description></item><item><title>Your First Factory — Factorio Beginner Guide</title><link>https://factorioguides.com/getting-started/your-first-factory/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/getting-started/your-first-factory/</guid><description>&lt;p&gt;Your first factory is a mess. That's normal. The inserter grabbing from the furnace is putting iron plates into the gear assembler that's feeding the red science — but the belt looped back and now everything's on the same belt and nothing reaches the lab. Here's a cleaner starting setup.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a furnace column feeding a main bus. 4 lanes iron, 2 lanes copper. Science off the bus as a side-factory. Don't belt-engineer on the main bus — build science on dedicated lines that pull from the bus and output packs on a separate belt.&lt;/div&gt;
+
+&lt;img src="https://factorioguides.com/images/diagrams/main-bus-layout.svg" alt="Main bus layout showing furnace column, belt balancer, bus lanes, and off-bus production lines" class="schema-diagram" loading="lazy" width="760"&gt;
+
+&lt;h2 id="the-root-cause--why-first-factories-stall"&gt;The Root Cause — Why First Factories Stall&lt;/h2&gt;
+&lt;p&gt;The mistake is building everything in-line. Smelters → belt → assemblers → belt → labs, all in one long chain. One assembler runs out of input and the entire line stops.&lt;/p&gt;</description></item></channel></rss>
