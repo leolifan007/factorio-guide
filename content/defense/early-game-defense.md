@@ -53,7 +53,7 @@ Biters attack because of pollution. Reduce pollution = fewer attacks.
 | Efficiency module 1 in miners | Minus 30 percent pollution |
 | Efficiency module 2 in labs | Minus 45 percent pollution |
 | Solar panels | Zero pollution power |
-| Nuclear power | Near-zero pollution, massive output — see [Nuclear Power Guide]({{< ref "/base-design/nuclear-power-guide" >}}) |
+| Nuclear power | Near-zero pollution, massive output — see [Nuclear Power Guide](/base-design/nuclear-power-guide/) |
 | Burning excess wood | Plus plus pollution (don't do it) |
 
 ## Defense Upgrade Path

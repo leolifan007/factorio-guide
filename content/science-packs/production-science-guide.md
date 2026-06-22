@@ -117,3 +117,5 @@ Purple science is where Factorio starts demanding real resource throughput. You 
 
 - [Factorio Wiki: Production science pack](https://wiki.factorio.com/Production_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to purple science output from 2 to 3 per craft
+
+{{< /section >}}

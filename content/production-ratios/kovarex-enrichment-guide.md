@@ -117,3 +117,5 @@ Kovarex enrichment solves the U-235 scarcity problem with a simple investment: o
 - [Factorio Wiki: Kovarex enrichment process](https://wiki.factorio.com/Kovarex_enrichment_process) -- Official recipe and mechanics
 - [Factorio Cheat Sheet: Kovarex](https://factoriocheatsheet.com/) -- Ratio diagrams and quick reference
 - [Reddit: Kovarex circuit designs](https://www.reddit.com/r/factorio/comments/b2s1p5/compact_circuitcontrolled_kovarex_designs/) -- Community designs and comparisons
+
+{{< /section >}}

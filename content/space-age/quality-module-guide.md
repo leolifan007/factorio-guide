@@ -68,7 +68,7 @@ Priority list for quality:
 | Priority | Item | Why |
 |----------|-------|------|
 | 1 | **Beacons** | More beacons = more speed modules affecting machines |
-| — | **Space platform thrusters** | Rare thrusters use less fuel—see [Space Platform Guide]({{< ref "/space-age/space-platform-guide" >}}) |
+| — | **Space platform thrusters** | Rare thrusters use less fuel—see [Space Platform Guide](/space-age/space-platform-guide/) |
 | 2 | **Speed modules** | Faster machines = more production |
 | 3 | **Electric furnaces** | Faster smelting = more plates |
 | 4 | **Miners** | More mining speed = more ore |

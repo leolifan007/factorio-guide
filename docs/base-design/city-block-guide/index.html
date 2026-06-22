@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="City block guide for Factorio. Block sizes, train grid design, intersection types, resource distribution, UPS impact, and Space Age building integration for scalable megabases.">
   <title>City Block Design Guide — Modular Megabase Layout | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1319/base-design/city-block-guide/">
+  <link rel="canonical" href="https://factorioguides.com/base-design/city-block-guide/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
   <meta property="og:title" content="City Block Design Guide — Modular Megabase Layout">
   <meta property="og:description" content="City block guide for Factorio. Block sizes, train grid design, intersection types, resource distribution, UPS impact, and Space Age building integration for scalable megabases.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1319/base-design/city-block-guide/">
+  <meta property="og:url" content="https://factorioguides.com/base-design/city-block-guide/">
 </head>
 <body>
 
@@ -144,12 +144,10 @@
         <div class="pro-tip"><strong>TL;DR:</strong> Build city blocks as 64×64 tile squares with a roundabout intersection at each corner. Each block handles one production task (smelting, circuits, science). Trains enter via chain signals, exit via rail signals. Four blocks can handle a 500 SPM megabase.</div>
 
 <div class="section-head"><h2>What Are City Blocks?</h2></div>
-
 <p>A <strong>city block</strong> is a uniform square of factory space, typically 64×64 or 100×100 tiles, surrounded by rail tracks. Each block handles exactly one production chain — iron smelting, green circuits, red science, etc. Raw materials come in by train, finished products go out by train.</p>
 <p>This modular approach lets you scale your factory by copying blocks. Running low on green circuits? Stamp down another circuit block. Need more science? Add a science block. The rail network connects everything.</p>
 <p>The key difference from a main bus is that city blocks use <strong>trains as the backbone</strong>, not belts. This makes them ideal for megabases (500+ SPM) where belt throughput becomes a bottleneck.</p>
 <div class="section-head"><h2>Block Sizes — Which One to Use</h2></div>
-
 <table>
   <thead>
       <tr>
@@ -190,7 +188,6 @@
 <div class="callout">Don't mix production chains inside one block. Each block should do exactly one thing. A block that tries to smelt iron and make gears will either run out of space or create logistics chaos.</div>
 
 <div class="section-head"><h2>Rail Grid Design</h2></div>
-
 <p>City blocks form a rail grid. Every block is surrounded by tracks, typically in a 2-lane or 4-lane configuration.</p>
 <p><strong>2-lane grid (simplest):</strong></p>
 <ul>
@@ -243,7 +240,6 @@
 <div class="pro-tip">Place chain signals BEFORE every intersection entrance. Place rail signals AFTER every intersection exit. This single rule prevents 90% of train deadlocks in a city block grid.</div>
 
 <div class="section-head"><h2>What Goes Inside a Block</h2></div>
-
 <p>Each block should fit one production chain. Here are typical block layouts for a 64×64 grid:</p>
 <p><strong>Iron Smelting Block:</strong></p>
 <ul>
@@ -266,7 +262,6 @@
 <li>Output: direct to lab array</li>
 </ul>
 <div class="section-head"><h2>Train Station Design per Block</h2></div>
-
 <p>Every block needs a train station that fits within the block boundaries. For a 64×64 block:</p>
 <p><strong>Station layout (from block edge inward):</strong></p>
 <ol>
@@ -287,7 +282,6 @@
 <img src="/images/diagrams/city-block-sizes.svg" alt="City block station and layout dimensions for different block sizes" class="schema-diagram" loading="lazy" width="760">
 
 <div class="section-head"><h2>Power Distribution</h2></div>
-
 <p>Run a dedicated power line along the rail grid. Each block taps power from the nearest rail-side power pole.</p>
 <p><strong>For a 64×64 grid:</strong></p>
 <ul>
@@ -297,7 +291,6 @@
 </ul>
 <p><strong>UPS note:</strong> Large power grids cause minor UPS impact. Use substations instead of power poles where possible — fewer entities to track.</p>
 <div class="section-head"><h2>Resources Distribution — Balancing the Grid</h2></div>
-
 <p>The challenge with city blocks is resource distribution. You can't just send iron to every block that needs it — you need a system.</p>
 <p><strong>Approach 1: Dedicated train pairs (simplest)</strong>
 Each block has a dedicated train that shuttles between a supply block and a demand block. Simple to set up, but doesn't scale.</p>
@@ -309,22 +302,19 @@ Use train limit signals. Each station broadcasts how many trains it can accept.<
 <li>Depot: Trains wait at a depot until a station requests them</li>
 </ul>
 <p><strong>Approach 3: Circuit network controlled</strong>
-Wire each station to a circuit network. Stations request trains based on buffer chest levels. Most efficient but requires circuit network knowledge.</p>
+Wire each station to a circuit network. Stations request trains based on buffer chest levels. Most efficient but requires <a href="https://factorioguides.com/blueprints/circuit-network-guide/">circuit network</a> knowledge.</p>
 <div class="section-head"><h2>Space Age Integration</h2></div>
-
 <p>City blocks work well with Space Age expansion, but with adjustments:</p>
 <p><strong>Quality module blocks:</strong> Dedicate blocks to specific quality tiers. A &quot;Rare Green Circuit&quot; block takes quality inputs and outputs rare circuits. Don't mix common and rare production in the same block.</p>
 <p><strong>Planet-specific blocks:</strong> Fulgora blocks need lightning rod coverage. Gleba blocks need spoilage removal belts. Design these as block variants from the start.</p>
 <p><strong>Platform supply blocks:</strong> Dedicate 1-2 blocks near the rocket silo for space platform materials (thruster fuel components, ammo, repair packs).</p>
 <div class="section-head"><h2>Common Mistakes</h2></div>
-
 <p><strong>Blocks too small.</strong> A 32×32 block can't fit a proper train station and production line. Minimum viable size is 48×48.</p>
 <p><strong>Too many station names.</strong> Every station needs a unique, descriptive name. &quot;Iron Input A&quot; and &quot;Iron Input B&quot; for different blocks is fine. &quot;Iron A&quot; and &quot;Iron B&quot; is confusing.</p>
 <p><strong>No balancer at station output.</strong> Six chests unloading into a single belt needs a balancer. Without one, one chest empties faster than the others and the train waits for the slowest chest.</p>
 <p><strong>Wrong signal placement.</strong> Rail signals inside the block instead of at the block boundary. Trains then block the intersection while they wait inside the block.</p>
 <p><strong>Building blocks too close.</strong> Leave at least 2 tiles of clearance between blocks for signals, power poles, and future expansion.</p>
 <div class="section-head"><h2>Bottom Line</h2></div>
-
 <p>City blocks are the foundation of every Factorio megabase. Start with 64×64 blocks, 2-lane rail grid, and roundabout intersections. Build one block at a time, and don't scale up until each block is working independently.</p>
 <p><strong>Numbers to remember:</strong></p>
 <ul>
@@ -334,7 +324,7 @@ Wire each station to a circuit network. Stations request trains based on buffer 
 <li>Roundabout intersections for grids under 15 trains</li>
 <li>Station naming: <code>[Product] Function</code> (e.g. <code>[Iron] Smelting Output</code>)</li>
 </ul>
-<p><strong>Related:</strong> <a href="http://localhost:1319/base-design/main-bus-guide/">Main Bus Guide</a> — transition from bus to blocks, <a href="http://localhost:1319/trains-logistics/basic-rail-network/">Basic Rail Network</a> — signals for your block grid.</p>
+<p><strong>Related:</strong> <a href="https://factorioguides.com/base-design/main-bus-guide/">Main Bus Guide</a> — transition from bus to blocks, <a href="https://factorioguides.com/trains-logistics/basic-rail-network/">Basic Rail Network</a> — signals for your block grid.</p>
 
 
         

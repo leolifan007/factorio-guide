@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Complete Factorio nuclear power guide: reactor layout, heat pipe physics, steam turbine ratios, Kovarex enrichment, and fuel efficiency from 40 MW to multi-GW.">
   <title>Nuclear Power — Complete Setup Guide | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1319/base-design/nuclear-power-guide/">
+  <link rel="canonical" href="https://factorioguides.com/base-design/nuclear-power-guide/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
   <meta property="og:title" content="Nuclear Power — Complete Setup Guide">
   <meta property="og:description" content="Complete Factorio nuclear power guide: reactor layout, heat pipe physics, steam turbine ratios, Kovarex enrichment, and fuel efficiency from 40 MW to multi-GW.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1319/base-design/nuclear-power-guide/">
+  <meta property="og:url" content="https://factorioguides.com/base-design/nuclear-power-guide/">
 </head>
 <body>
 
@@ -150,7 +150,7 @@
 
 <p>A single 2×2 nuclear block delivers roughly 55 MW per tile loaded. For comparison, the same tile footprint with solar would net you 0.6 MW on a good day.</p>
 <h2 id="building-the-fuel-chain-first">Building the Fuel Chain First</h2>
-<p>Before you place a single reactor, set up fuel production. The nuclear chain needs three stages:</p>
+<p>Reactors need a lot of steel and circuits. Use our <a href="https://factorioguides.com/production-ratios/smelting-ratios/">Smelting Ratios Guide</a> to plan your steel furnace columns before you scale up. Before you place a single reactor, set up fuel production. The nuclear chain needs three stages:</p>
 <p><strong>Stage 1 — Uranium mining.</strong> One electric mining drill on a uranium patch produces enough ore for a 2×2 reactor. The catch: you need sulfur for sulfuric acid (10 acid per ore). Run a pipe from your oil base.</p>
 <p><strong>Stage 2 — Centrifuge processing.</strong> Each centrifuge runs a 12-second cycle. 10 uranium ore in → 99.3% U-238 + 0.7% U-235. Without modules you'll net roughly 1 U-235 per 140 cycles. Start at least 5 centrifuges.</p>
 <p><strong>Stage 3 — Fuel cell assembly.</strong></p>
@@ -161,7 +161,7 @@
 <li>A 2×2 burns ~72 cells/hour</li>
 </ul>
 <p>One assembler with speed modules running for 5 minutes produces enough cells for hours.</p>
-<div class="pro-tip"><strong>Quick Tip for Min-Maxers:</strong> Don't rush Kovarex. The first 40 U-235 (needed to bootstrap) takes about 6,000 ore. Run centrifuges continuously from the moment you have uranium processing unlocked — stockpile U-235 while your first reactor runs on manual.</div>
+<div class="pro-tip"><strong>Quick Tip for Min-Maxers:</strong> Don't rush Kovarex. The first 40 U-235 (needed to bootstrap) takes about 6,000 ore. Run centrifuges continuously from the moment you have uranium processing unlocked—stockpile U-235 while your first reactor runs on manual. Once you have enough, our <a href="https://factorioguides.com/blueprints/circuit-network-guide/">Circuit Network Guide</a> shows how to wire an SR latch that automatically inserts fuel cells only when steam drops below a threshold.</div>
 
 <h2 id="the-proven-fix--22-reactor-layout">The Proven Fix — 2×2 Reactor Layout</h2>
 <p>Four reactors touching in a square. Each adjacent reactor adds +100% heat output (neighbor bonus). This is the standard for a reason.</p>
@@ -181,7 +181,7 @@
 <li><strong>Offshore pumps:</strong> 4 (one per 12 heat exchangers)</li>
 <li><strong>Fuel cells per hour:</strong> 72</li>
 </ul>
-<div class="pro-tip"><strong>Don't circuit-control fuel insertion without a plan.</strong> A common trap: insert fuel only when steam &lt; threshold. Works great until a power spike drains the buffer and your entire base browns out. Use at least 50 steam tanks as a buffer before attempting fuel-saving circuits.</div>
+<div class="pro-tip"><strong>Don’t circuit-control fuel insertion without a plan.</strong> A common trap: insert fuel only when steam &lt; threshold. Works great until a power spike drains the buffer and your entire base browns out. Use at least 50 steam tanks as a buffer before attempting fuel-saving circuits.</div>
 
 <h2 id="understanding-heat-pipe-physics-where-most-builds-fail">Understanding Heat Pipe Physics (Where Most Builds Fail)</h2>
 <p>Heat travels through pipes like a fluid with two hard limits:</p>
@@ -211,6 +211,7 @@
 <p><strong>Heat pipe too long.</strong> Past ~16 tiles, heat transfer drops off a cliff. You can extend it with more parallel pipes, but after 25 tiles you need a separate reactor row.</p>
 <p><strong>Overproducing fuel cells.</strong> 72 cells per hour is the burn rate. One assembler running for 5 minutes keeps you running for hours. Do not build four assemblers.</p>
 <p><strong>Ignoring the neighbor bonus.</strong> A 2×2 sharing bonuses produces 480 MW. Four standalone reactors with the same fuel produce 160 MW. The difference: touching the reactors.</p>
+<p>In a <a href="https://factorioguides.com/base-design/city-block-guide/">city block megabase</a>, power is typically a dedicated block with its own train station for fuel delivery.</p>
 <h2 id="scaling-past-1-gw">Scaling Past 1 GW</h2>
 <p>For megabase power, use tileable 2×N rows:</p>
 <table>

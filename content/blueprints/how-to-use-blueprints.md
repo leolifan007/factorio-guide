@@ -48,7 +48,7 @@ A well-organized blueprint book saves hours of searching:
 | Defense | Walls, turrets, artillery outposts |
 | Trains | Stations, unloading/loading setups |
 | Modules | Beaconed builds, speed/prod setups |
-| Circuit networks | Combinator builds, smart train stations — see [Circuit Network Guide]({{< ref "/blueprints/circuit-network-guide" >}}) |
+| Circuit networks | Combinator builds, smart train stations — see [Circuit Network Guide](/blueprints/circuit-network-guide/) |
 | Mall | Inserters, belts, chests (self-replicating factory) |
 
 ## Upgrade Planner

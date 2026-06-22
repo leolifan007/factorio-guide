@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
   <title>Oil Processing — Ratios, Cracking, and Refinery Setup | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1319/production-ratios/oil-processing-guide/">
+  <link rel="canonical" href="https://factorioguides.com/production-ratios/oil-processing-guide/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
   <meta property="og:title" content="Oil Processing — Ratios, Cracking, and Refinery Setup">
   <meta property="og:description" content="Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1319/production-ratios/oil-processing-guide/">
+  <meta property="og:url" content="https://factorioguides.com/production-ratios/oil-processing-guide/">
 </head>
 <body>
 
@@ -183,7 +183,7 @@
 <li>1 heavy cracker consumes 40 heavy → 30 light per cycle (clears all heavy if needed)</li>
 <li>7 light crackers consume 105 light → 70 petroleum per cycle</li>
 </ul>
-<p>The system can handle any consumption pattern because the cracking ratios match the production ratios.</p>
+<p>The system can handle any consumption pattern because the cracking ratios match the production ratios. For a deeper understanding of the circuit logic behind the pumps, see our <a href="https://factorioguides.com/blueprints/circuit-network-guide/">Circuit Network Guide</a>.</p>
 <p><strong>Circuit control (prevents the deadlock):</strong></p>
 <img src="/images/diagrams/circuit-control.svg" alt="Circuit-controlled cracking — red wire from storage tanks to decider combinators controlling pumps" class="schema-diagram" loading="lazy" width="760">
 
@@ -236,7 +236,7 @@
 <p>Heavy oil is the most valuable fraction for flamethrower ammo and lubricant. If you crack all of it, you lose access to both:</p>
 <ul>
 <li><strong>Lubricant:</strong> Needed for electric engines (purple science). Each engine unit uses 1 lubricant.</li>
-<li><strong>Flamethrower ammo:</strong> Heavy oil-based ammo deals the highest damage.</li>
+<li><strong>Flamethrower ammo:</strong> Heavy oil-based ammo deals the highest damage — see our <a href="https://factorioguides.com/defense/flamethrower-defense-guide/">Flamethrower Defense Guide</a> for turret setup and pipe isolation tips.</li>
 </ul>
 <p><strong>The optimal approach:</strong></p>
 <ul>
@@ -249,6 +249,7 @@
 
 <h2 id="scaling-up--refinery-blocks-at-megabase-scale">Scaling Up — Refinery Blocks at Megabase Scale</h2>
 <p>For 1,000+ SPM, you'll need multiple refinery blocks. The design scales linearly:</p>
+<p>Your oil products feed directly into <a href="https://factorioguides.com/science-packs/blue-science-guide/">blue science</a>, which needs plastic and sulfur—both petroleum-based.</p>
 <p><strong>100 SPM base:</strong></p>
 <ul>
 <li>8 refineries</li>
@@ -294,6 +295,19 @@
         <div class="related-articles">
           <h3>Related Articles</h3>
           <div class="related-grid">
+            
+            <a href="/production-ratios/kovarex-enrichment-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">K</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</h4>
+                <p><div class="pro-tip"><strong>Kovarex at a glance:</strong> Each centrifuge needs 40 U-235 and 5 …</div></p>
+              </div>
+            </a>
             
             <a href="/production-ratios/smelting-ratios/" class="related-card">
               <div class="related-icon">

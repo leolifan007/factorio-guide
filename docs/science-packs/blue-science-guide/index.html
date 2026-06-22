@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Complete blue science guide for Factorio: oil processing, recipe ratios, sulfur production, and plastic automation for chemical science packs.">
   <title>Chemical Science Pack — Blue Science Guide | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1319/science-packs/blue-science-guide/">
+  <link rel="canonical" href="https://factorioguides.com/science-packs/blue-science-guide/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
   <meta property="og:title" content="Chemical Science Pack — Blue Science Guide">
   <meta property="og:description" content="Complete blue science guide for Factorio: oil processing, recipe ratios, sulfur production, and plastic automation for chemical science packs.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1319/science-packs/blue-science-guide/">
+  <meta property="og:url" content="https://factorioguides.com/science-packs/blue-science-guide/">
 </head>
 <body>
 
@@ -141,17 +141,15 @@
           <span class="breadcrumb-current">Chemical Science Pack — Blue Science Guide</span>
         </nav>
 
-        <p>Blue science is the first real complexity spike in Factorio. It's not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.</p>
+        <p>After <a href="https://factorioguides.com/getting-started/green-science-guide/">green science</a>, blue science is the first real complexity spike in Factorio. It’s not just about adding a new ingredient — it introduces fluids, cracking, and multi-step production chains. I've seen countless factory tours stall right here because the oil setup wasn't thought through.</p>
 <div class="pro-tip"><strong>TL;DR:</strong> Blue science needs oil processing for plastic and sulfur. Build 2 refineries, 1 sulfur plant, 2 plastic plants, and 5 science assemblers. The bottleneck is almost always petroleum throughput.</div>
 
 <div class="section-head"><h2>Recipe and Requirements</h2></div>
-
 <p>Each chemical science pack needs three components:</p>
 <div class="game-row"><div class="game-slot"><span class="game-qty">1x</span><img src="/images/icon/engine.png" alt="engine" class="game-img" loading="lazy"><span class="game-name">Engine</span></div><span class="game-plus">+</span><div class="game-slot"><span class="game-qty">1x</span><img src="/images/icon/circuit_red.png" alt="circuit_red" class="game-img" loading="lazy"><span class="game-name">Circuit red</span></div><span class="game-plus">+</span><div class="game-slot"><span class="game-qty">1x</span><img src="/images/icon/sulfur.png" alt="sulfur" class="game-img" loading="lazy"><span class="game-name">Sulfur</span></div><span class="game-plus">&rarr;</span><div class="game-slot result"><span class="game-qty">1x</span><img src="/images/icon/chemical_science.png" alt="chemical_science" class="game-img" loading="lazy"><span class="game-name">Chemical science</span></div></div>
 <p>Two of these three require oil products. Red circuits need plastic (petroleum + coal). Sulfur needs petroleum gas and water. That means you can't automate blue science until you have a working oil refinery setup.</p>
 <div class="section-head"><h2>Oil Refining — The Hard Part</h2></div>
-
-<p>Here's the chain from well to blue science:</p>
+<p>Before jumping into oil, make sure your iron and copper supply is solid. Our <a href="https://factorioguides.com/production-ratios/smelting-ratios/">Smelting Ratios Guide</a> helps you size your furnace columns for the added demand. Here’s the chain from well to blue science:</p>
 <table>
   <thead>
       <tr>
@@ -210,7 +208,6 @@
 <img src="/images/diagrams/blue-science-flow.svg" alt="Blue science production chain from oil wells through refineries to chemical science packs" class="schema-diagram" loading="lazy" width="760">
 
 <div class="section-head"><h2>Optimal Ratios for 5 SPM</h2></div>
-
 <p>Here's the ratio that works for a stable 5 blue science per minute setup:</p>
 <table>
   <thead>
@@ -261,13 +258,11 @@
 <div class="callout">The most common mistake is not enough refineries. With basic processing, one refinery outputs 40 petroleum gas per second. Plastic uses 20/s, sulfur uses 30/s. One refinery can't keep up with both. Build two refineries early.</div>
 
 <div class="section-head"><h2>Layout — Compact Blue Science Cell</h2></div>
-
 <p>A compact blue science array fits in roughly 15×30 tiles. Here's the layout pattern:</p>
 <img src="/images/diagrams/bluescience-cell.svg" alt="Compact blue science cell with engine and sulfur sub-factories feeding 5 science assemblers" class="schema-diagram" loading="lazy" width="760">
 
 <p>The engine assemblers sit next to the bus, pulling steel, iron, gears, and pipes. The sulfur plant takes petroleum from the pipe and outputs to a belt. Red circuits come from an existing production line.</p>
 <div class="section-head"><h2>Transitioning to Advanced Oil Processing</h2></div>
-
 <p>Once you research advanced oil processing, your refinery setup changes significantly:</p>
 <table>
   <thead>
@@ -305,14 +300,12 @@
       </tr>
   </tbody>
 </table>
-<p>The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Without cracking, your refineries stall from heavy oil backup.</p>
+<p>The catch with advanced processing: it produces more heavy and light oil but less petroleum. You need cracking (heavy→light→petroleum) to balance the outputs. Setting up <a href="https://factorioguides.com/blueprints/circuit-network-guide/">circuit-controlled cracking</a> ensures your refineries never stall from output backup.</p>
 <div class="section-head"><h2>Common Pitfalls</h2></div>
-
 <p><strong>Heavy oil backup.</strong> Advanced refining without cracking. The refineries fill up with heavy oil, stop producing, and suddenly your entire base runs out of plastic. Solution: crack heavy oil to light, and light to petroleum. Use a circuit condition to only crack when heavy &gt; 1k.</p>
 <p><strong>Running out of water.</strong> Sulfur and advanced refining both consume water. A single offshore pump feeds about 10 chemical plants. If your sulfur production stalls, check water first.</p>
 <p><strong>Petroleum vs. plastic balance.</strong> One plastic bar needs 20 petroleum gas. At 5 SPM, you need roughly 10 plastic per minute. That's one chemical plant running full time. If red circuit production backs up, plastic is the bottleneck — not copper.</p>
 <div class="section-head"><h2>Scaling Blue Science</h2></div>
-
 <p>To go from 5 SPM to 30 SPM:</p>
 <ul>
 <li>Add more refineries (6-8 with advanced + cracking)</li>
@@ -322,7 +315,6 @@
 </ul>
 <p>The refinery setup scales linearly. With advanced processing and cracking, 8 refineries plus 1 heavy→light and 7 light→petroleum crackers provide perfect balance for large-scale production.</p>
 <div class="section-head"><h2>Bottom Line</h2></div>
-
 <p>Blue science is the first multi-fluid production chain in Factorio. The key takeaway: petroleum is always the constraint. Build more refineries than you think you need, set up cracking before your tanks fill with heavy oil, and keep water flowing.</p>
 <p><strong>Numbers to remember:</strong></p>
 <ul>
@@ -330,8 +322,8 @@
 <li>1 engine assembler per 2.5 science assemblers</li>
 <li>Petroleum demand = plastic (20/s) + sulfur (30/s) per chemical plant</li>
 </ul>
-<p><strong>Previous:</strong> <a href="http://localhost:1319/getting-started/green-science-guide/">Green Science Guide</a>
-<strong>Next:</strong> <a href="http://localhost:1319/production-ratios/oil-processing-guide/">Oil Processing Guide</a></p>
+<p><strong>Previous:</strong> <a href="https://factorioguides.com/getting-started/green-science-guide/">Green Science Guide</a>
+<strong>Next:</strong> <a href="https://factorioguides.com/production-ratios/oil-processing-guide/">Oil Processing Guide</a></p>
 
 
         
@@ -354,6 +346,58 @@
         <div class="related-articles">
           <h3>Related Articles</h3>
           <div class="related-grid">
+            
+            <a href="/science-packs/military-science-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">M</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Military Science Pack Setup - Gray Science Ratios for Factorio 2.0</h4>
+                <p><div class="pro-tip"><strong>Military science at a glance:</strong> Each science assembler needs 1 …</div></p>
+              </div>
+            </a>
+            
+            <a href="/science-packs/production-science-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">P</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Production Science Pack Ratios - Purple Science Setup for Space Age</h4>
+                <p><div class="pro-tip"><strong>Purple science at a glance:</strong> 5 assemblers need 9 steel …</div></p>
+              </div>
+            </a>
+            
+            <a href="/science-packs/space-science-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">S</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Space Science Pack from Rocket Launch - Ratios and Setup for Factorio Space Age</h4>
+                <p><div class="pro-tip"><strong>Space science at a glance:</strong> Each rocket launch with a …</div></p>
+              </div>
+            </a>
+            
+            <a href="/science-packs/utility-science-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">U</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Utility Science Pack Setup - Yellow Science Ratios for Space Age</h4>
+                <p><div class="pro-tip"><strong>Yellow science at a glance:</strong> 5 assemblers need 10 steel …</div></p>
+              </div>
+            </a>
             
             <a href="/science-packs/red-science-guide/" class="related-card">
               <div class="related-icon">

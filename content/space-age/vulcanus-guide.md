@@ -118,3 +118,5 @@ Vulcanus is the easiest and most rewarding planet to visit first in Space Age. T
 - [Factorio Wiki: Vulcanus](https://wiki.factorio.com/Vulcanus) -- Planet surface conditions and resources
 - [Factorio Wiki: Foundry](https://wiki.factorio.com/Foundry) -- Foundry recipes and fluid casting ratios
 - [Factorio Wiki: Big mining drill](https://wiki.factorio.com/Big_mining_drill) -- Resource drain mechanics
+
+{{< /section >}}

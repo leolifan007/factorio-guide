@@ -112,3 +112,5 @@ Space science is an exercise in production scaling. One rocket silo feeds a 100 
 - [Factorio Wiki: Space science pack](https://wiki.factorio.com/Space_science_pack) -- Science pack recipe and mechanics
 - [Factorio Wiki: Rocket silo](https://wiki.factorio.com/Rocket_silo) -- Silo speed, module effects, and throughput data
 - [Factorio FFF-419](https://factorio.com/blog/post/fff-419) -- Official Space Age science pack changes
+
+{{< /section >}}

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.">
   <title>Basic Rail Network — Signalling, Junctions, and Train Management | Factorio Guide</title>
 
   
-  <link rel="canonical" href="http://localhost:1319/trains-logistics/basic-rail-network/">
+  <link rel="canonical" href="https://factorioguides.com/trains-logistics/basic-rail-network/">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
   <meta property="og:title" content="Basic Rail Network — Signalling, Junctions, and Train Management">
   <meta property="og:description" content="Factorio train network guide. Rail signals vs chain signals, 2-lane and 4-lane rail grids, intersection design, train limits, and deadlock prevention for beginner to megabase.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:1319/trains-logistics/basic-rail-network/">
+  <meta property="og:url" content="https://factorioguides.com/trains-logistics/basic-rail-network/">
 </head>
 <body>
 
@@ -198,7 +198,7 @@
 <li>A chain signal before the first turn into the station (prevents trains blocking the main line while waiting)</li>
 <li>Station name: <code>[Resource] Location Function</code> (e.g. <code>[Iron] Smelter Input</code>)</li>
 </ol>
-<div class="pro-tip"><strong>Quick Tip:</strong> Use train limits (the number in the station UI) instead of disabling stations via circuit network. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).</div>
+<div class="pro-tip"><strong>Quick Tip:</strong> Use train limits (the number in the station UI) instead of disabling stations via circuit network. For more advanced control, wire your stations to a <a href="https://factorioguides.com/blueprints/circuit-network-guide/">circuit network</a> that dynamically adjusts limits based on buffer chest levels. Set limit to 1 or 2. Trains will only go to stations that have a free slot. This prevents trains pathing to a full station, which is the second most common cause of deadlocks (after bad signals).</div>
 
 <h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
 <p><strong>Rail signal inside the intersection.</strong> A train stops on the rail signal, which is inside the intersection, blocking all crossing paths. Fix: chain signals at entrances ensure trains don't enter unless they can clear the entire intersection.</p>
@@ -210,7 +210,8 @@
 <p><strong>4-lane tracks</strong> — 2 lanes per direction. Dedicated passing lane for faster trains.</p>
 <p><strong>Buffered intersections</strong> — Intersections with waiting bays for turning traffic. Prevents a turning train from blocking the straight-through lane.</p>
 <p><strong>Train fuel depots</strong> — 1-minute refuel stop in the center of the grid. Every train's schedule starts with: Depot (fuel stop, 5s) → Pickup → Drop-off → Back to Depot.</p>
-<p><strong>Centralized train control</strong> — Use circuit network to broadcast open station slots. A &quot;train manager&quot; constant combinator at each station sends its availability to a central signal, which dynamically reroutes trains.</p>
+<p><strong>Centralized train control</strong> — Use <a href="https://factorioguides.com/blueprints/circuit-network-guide/">circuit network</a> to broadcast open station slots. A &quot;train manager&quot; combinator at each station sends availability to a central signal.</p>
+<p>For a complete rail-based base layout, see <a href="https://factorioguides.com/base-design/city-block-guide/">City Block Design Guide</a>.</p>
 <p><strong>Key metrics to track:</strong></p>
 <ul>
 <li>If trains wait more than 30 seconds at any intersection: upgrade that junction</li>
@@ -243,6 +244,39 @@
         
         
         
+        
+        <div class="related-articles">
+          <h3>Related Articles</h3>
+          <div class="related-grid">
+            
+            <a href="/trains-logistics/construction-robot-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">C</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Construction Robot Network for Beginners - How to Set Up Logistic Bots in Factorio 2.0</h4>
+                <p><div class="pro-tip"><strong>Construction robots at a glance:</strong> Build 1 roboport, 10 …</div></p>
+              </div>
+            </a>
+            
+            <a href="/trains-logistics/train-signal-guide/" class="related-card">
+              <div class="related-icon">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">T</text>
+                </svg>
+              </div>
+              <div class="related-body">
+                <h4>Train Chain Signal Intersection Guide - Factorio 2.0 Rail Signaling for Beginners</h4>
+                <p><div class="pro-tip"><strong>Train signaling in one rule:</strong> Place a chain signal <strong>before …</strong></div></p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
         
         
 

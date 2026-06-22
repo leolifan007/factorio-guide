@@ -110,3 +110,5 @@ Utility science is the throughput exam in Factorio. It forces you to build a pro
 
 - [Factorio Wiki: Utility science pack](https://wiki.factorio.com/Utility_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to yellow science output per craft
+
+{{< /section >}}

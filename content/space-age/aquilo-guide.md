@@ -122,3 +122,5 @@ Aquilo is the survival exam of Factorio Space Age. It forces you to manage heat 
 - [Factorio Wiki: Aquilo](https://wiki.factorio.com/Aquilo) -- Planet surface data and hazards
 - [Factorio Wiki: Heating tower](https://wiki.factorio.com/Heating_tower) -- Heat mechanics and fuel ratios
 - [Factorio Wiki: Strafer](https://wiki.factorio.com/Strafer) -- Enemy stats and engagement ranges
+
+{{< /section >}}

@@ -106,3 +106,5 @@ Military science is the lowest-maintenance science pack in Factorio. One assembl
 
 - [Factorio Wiki: Military science pack](https://wiki.factorio.com/Military_science_pack) -- Recipe reference and crafting data
 - [Official Factorio blog: FFF-419](https://factorio.com/blog/post/fff-419) -- Science pack changes in Space Age
+
+{{< /section >}}

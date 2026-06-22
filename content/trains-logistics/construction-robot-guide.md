@@ -127,3 +127,5 @@ Construction robots automate the most tedious part of Factorio: hand-placing ite
 - [Factorio Wiki: Construction robot](https://wiki.factorio.com/Construction_robot) -- Robot stats, speed, and behavior
 - [Factorio Wiki: Roboport](https://wiki.factorio.com/Roboport) -- Charging mechanics and network ranges
 - [Factorio Wiki: Logistic chests](https://wiki.factorio.com/Logistic_chest) -- All chest types and their behavior
+
+{{< /section >}}

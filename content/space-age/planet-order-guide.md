@@ -31,11 +31,11 @@ Before building your first space platform, you need a well-functioning Nauvis ba
 | Milestone | Target | Checklist |
 |-----------|--------|:---------:|
 | Science production | 15-30 SPM | All 4 Nauvis sciences running (red, green, blue, gray, purple, yellow) |
-| Main bus | 4 belts iron, 4 belts copper | Check our [main bus guide]({{< ref "/base-design/main-bus-guide" >}}) for proper lane management |
+| Main bus | 4 belts iron, 4 belts copper | Check our [main bus guide](/base-design/main-bus-guide/) for proper lane management |
 | Defense | Turret perimeter | Gun turrets and walls covering pollution cloud |
-| Smelting | 48+ furnaces | Iron and copper covered by [smelting ratios]({{< ref "/production-ratios/smelting-ratios" >}}) |
+| Smelting | 48+ furnaces | Iron and copper covered by [smelting ratios](/production-ratios/smelting-ratios/) |
 | Oil processing | Advanced refining | Switch from basic to advanced; balanced outputs |
-| Space platform | First platform in orbit | Check the [space platform guide]({{< ref "/space-age/space-platform-guide" >}}) for early design |
+| Space platform | First platform in orbit | Check the [space platform guide](/space-age/space-platform-guide/) for early design |
 
 Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus with only red and green science running, then struggling to build anything because you lack blue science upgrades (logistics, construction bots, advanced oil).
 
@@ -128,3 +128,5 @@ You cannot win Space Age without establishing science production on all four inn
 - [Factorio Wiki: Planet order](https://wiki.factorio.com/Planetary_science) -- Planet-by-planet science requirements
 - [Reddit: Best planet order discussion (Space Age)](https://www.reddit.com/r/factorio/comments/1gb28mp/what_is_the_best_planet_to_first_go_to/) -- Player experiences and alternative orders
 - [Factorio FFF: Space Age planet design](https://factorio.com/blog/post/fff-419) -- Developer reasoning behind planet difficulty
+
+{{< /section >}}

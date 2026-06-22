@@ -16,6 +16,9 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ `css/main.css` | relURL }}">
+  {{- if .IsHome }}
+  <link rel="stylesheet" href="{{ `css/homepage.css` | relURL }}">
+  {{- end }}
 
   {{- with .Site.Params.google_analytics }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>

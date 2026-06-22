@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layout on Factorio Guide</title>
-    <link>http://localhost:1319/tags/layout/</link>
+    <link>https://factorioguides.com/tags/layout/</link>
     <description>Recent content in Layout on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/layout/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://factorioguides.com/tags/layout/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Main Bus Design — The Classic Factorio Base Layout</title>
-      <link>http://localhost:1319/base-design/main-bus-guide/</link>
+      <link>https://factorioguides.com/base-design/main-bus-guide/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/base-design/main-bus-guide/</guid>
+      <guid>https://factorioguides.com/base-design/main-bus-guide/</guid>
       <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a2a1a,#0a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.8rem;font-weight:900;color:#6abe30;&#34;&gt;MAIN BUS LAYOUT&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-a-main-bus&#34;&gt;What Is a Main Bus?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;main bus&lt;/strong&gt; is a set of parallel belts (the &amp;quot;bus&amp;quot;) carrying raw materials through your base. Assembly blocks &lt;strong&gt;pull&lt;/strong&gt; from the bus and &lt;strong&gt;push&lt;/strong&gt; finished products back onto it.&lt;/p&gt;&#xA;&lt;p&gt;Think of it like a highway: resources flow down the middle, factories are off-ramps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recommended-bus-width&#34;&gt;Recommended Bus Width&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Material&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Basic Belt)&lt;/th&gt;&#xA;          &lt;th&gt;Lanes (Fast/Express)&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Iron plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Copper plates&lt;/td&gt;&#xA;          &lt;td&gt;4-6&lt;/td&gt;&#xA;          &lt;td&gt;2-3&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Steel plates&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Green circuits&lt;/td&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Plastic bars&lt;/td&gt;&#xA;          &lt;td&gt;1-2&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coal&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Stone&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Pro tip:&lt;/strong&gt; Build your bus with &lt;strong&gt;space between lanes&lt;/strong&gt;. You need room for underground belts to cross lanes and for inserters to pull items off the bus.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;how-to-build-it&#34;&gt;How to Build It&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-clear-a-large-area&#34;&gt;Step 1: Clear a Large Area&lt;/h3&gt;&#xA;&lt;p&gt;You need at least &lt;strong&gt;200 tiles wide&lt;/strong&gt; and &lt;strong&gt;unlimited depth&lt;/strong&gt;. The bus grows as you research more technologies.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gleba on Factorio Guide</title>
-    <link>http://localhost:1319/tags/gleba/</link>
+    <link>https://factorioguides.com/tags/gleba/</link>
     <description>Recent content in Gleba on Factorio Guide</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title>
-      <link>http://localhost:1319/space-age/gleba-survival-guide/</link>
+      <link>https://factorioguides.com/space-age/gleba-survival-guide/</link>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/space-age/gleba-survival-guide/</guid>
-      <description>&lt;p&gt;Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Every organic item on Gleba (and items derived from them) spoils over time:&lt;/p&gt;</description>
+      <guid>https://factorioguides.com/space-age/gleba-survival-guide/</guid>
+      <description>&lt;p&gt;Before you land on Gleba, your &lt;a href=&#34;https://factorioguides.com/space-age/space-platform-guide/&#34;&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

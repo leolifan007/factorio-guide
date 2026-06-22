@@ -111,3 +111,5 @@ Train signaling is the most common source of frustration in Factorio logistics, 
 
 - [Factorio Wiki: Railway signals](https://wiki.factorio.com/Railway/Signals) -- Official signal mechanics documentation
 - [Factorio FFF: Space Age train improvements](https://factorio.com/blog/post/fff-422) -- Train changes in 2.0 (train groups, interrupt conditions)
+
+{{< /section >}}
