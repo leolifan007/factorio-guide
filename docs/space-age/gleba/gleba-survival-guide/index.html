@@ -1,32 +1,468 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base."><title>Gleba Survival Guide — Spoilage, Nutrients, and Science | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/space-age/gleba/gleba-survival-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Gleba Survival Guide — Spoilage, Nutrients, and Science"><meta property="og:description" content="Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/space-age/gleba/gleba-survival-guide/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Gleba Survival Guide — Spoilage, Nutrients, and Science</h1><p class=article-desc>Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 21, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-5 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=section-layout><nav class=section-nav id=sectionNav><div class=section-nav-title>Gleba</div><div class=section-nav-list><a href=/space-age/gleba/ class=section-nav-item><span class=section-nav-icon style="font-style:italic;font-family:serif;font-size:.85rem;background:0 0">i</span>
-<span class=section-nav-name>About this section</span>
-</a><a href=/space-age/gleba/pentapod-defense/ class=section-nav-item><span class=section-nav-name>Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</span>
-</a><a href=/space-age/gleba/bioflux-production/ class=section-nav-item><span class=section-nav-name>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</span>
-</a><a href=/space-age/gleba/gleba-survival-guide/ class="section-nav-item is-active"><span class=section-nav-name>Gleba Survival Guide — Spoilage, Nutrients, and Science</span></a></div></nav><main class=section-content id=sectionContent><div class=section-content-inner id=sectionContentInner><div class=article-content><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/space-age/gleba/>Gleba</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Gleba Survival Guide — Spoilage, Nutrients, and Science</span></nav><p>Before you land on Gleba, your <a href=https://factorioguides.com/space-age/platform/space-platform-guide/>space platform</a> needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for why Gleba comes third in the planet order. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.</p><p><div class=pro-tip><strong>TL;DR:</strong> Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.</div>## Quick Reference 鈥?Gleba</p><table><thead><tr><th style=text-align:left>Threat</th><th style=text-align:left>Source</th><th style=text-align:left>Countermeasure</th><th style=text-align:left>Building</th></tr></thead><tbody><tr><td style=text-align:left>Spoilage</td><td style=text-align:left>All organic items</td><td style=text-align:left>Timer flushing</td><td style=text-align:left><span class=game-slot><img src=/images/icon/decider-combinator.png alt=decider-combinator class=game-img loading=lazy>
-<span class=game-name>Decider</span>
-</span>Circuit</td></tr><tr><td style=text-align:left>Pentapods</td><td style=text-align:left>Spore clouds</td><td style=text-align:left>Turret perimeter</td><td style=text-align:left><span class=game-slot><img src=/images/icon/gun-turret.png alt=gun-turret class=game-img loading=lazy>
-<span class=game-name>Gun turret</span>
-</span>Turret</td></tr><tr><td style=text-align:left>Starvation</td><td style=text-align:left>Stalled farms</td><td style=text-align:left>Backup energy</td><td style=text-align:left><span class=game-slot><img src=/images/icon/heating-tower.png alt=heating-tower class=game-img loading=lazy>
-<span class=game-name>Heating</span>
-</span>Tower</td></tr><tr><td style=text-align:left>Belt jam</td><td style=text-align:left>Excess fruit</td><td style=text-align:left>Priority splitter</td><td style=text-align:left><span class=game-slot><img src=/images/icon/splitter.png alt=splitter class=game-img loading=lazy>
-<span class=game-name>Splitter</span>
-</span>Splitter</td></tr></tbody></table><table><thead><tr><th style=text-align:left>Source</th><th style=text-align:left>Input</th><th style=text-align:center>Nutrient Output</th><th style=text-align:center>Spoilage</th></tr></thead><tbody><tr><td style=text-align:left>Bioflux</td><td style=text-align:left>1 bioflux</td><td style=text-align:center>50 nutrients</td><td style=text-align:center>2 min</td></tr><tr><td style=text-align:left>Yumako mash</td><td style=text-align:left>50 mash</td><td style=text-align:center>10 nutrients</td><td style=text-align:center>5 min</td></tr><tr><td style=text-align:left>Jelly</td><td style=text-align:left>50 jelly</td><td style=text-align:center>10 nutrients</td><td style=text-align:center>5 min</td></tr><tr><td style=text-align:left>Spoilage</td><td style=text-align:left>200 spoilage</td><td style=text-align:center>10 nutrients</td><td style=text-align:center>1 min</td></tr></tbody></table><h2 id=the-mechanics-behind-this-bottleneck>The Mechanics Behind This Bottleneck</h2><p>Every organic item on Gleba (and items derived from them) spoils over time:</p><table><thead><tr><th style=text-align:left>Item</th><th style=text-align:center>Spoilage timer</th><th style=text-align:left>What it spoils into</th></tr></thead><tbody><tr><td style=text-align:left>Yumako fruit</td><td style=text-align:center>1 hour</td><td style=text-align:left>Spoilage</td></tr><tr><td style=text-align:left>Jellynut</td><td style=text-align:center>1 hour</td><td style=text-align:left>Spoilage</td></tr><tr><td style=text-align:left>Bioflux</td><td style=text-align:center>30 min</td><td style=text-align:left>Spoilage</td></tr><tr><td style=text-align:left>Nutrients</td><td style=text-align:center>5 min</td><td style=text-align:left>Spoilage</td></tr><tr><td style=text-align:left>Bacteria</td><td style=text-align:center>2 min</td><td style=text-align:left>Spoilage (no, you can't stop this)</td></tr><tr><td style=text-align:left>Science packs</td><td style=text-align:center>1 hour</td><td style=text-align:left>Spoilage</td></tr></tbody></table><p>The key insight: <strong>nutrients</strong> are the bottleneck. Nutrients spoil in 5 minutes. Every assembler that needs nutrients must be within belt distance of the nutrient source. If nutrients travel more than ~20 tiles on a yellow belt before reaching an assembler, they expire en route.</p><h2 id=the-proven-fix--short-belts-circuit-control-burn-everything>The Proven Fix — Short Belts, Circuit Control, Burn Everything</h2><p><strong>Stage 1 — Nutrient production, local to every consumer.</strong></p><p>Don't build a central nutrient factory and belt it everywhere. Each production cluster needs its own nutrient source:</p><ul><li><strong>Near fruit processing:</strong> nutrients from bioflux (lasts 30 min, more stable)</li><li><strong>Near bacteria vats:</strong> nutrients directly from spoilage (1 nutrient per spoilage, fast but short lifespan)</li><li><strong>Near science:</strong> nutrients fed directly from a local bioflux producer</li></ul><p>Distance rule: <strong>keep any belt carrying nutrients under 15 tiles.</strong> After that, use a separate nutrient maker.</p><img src=/images/diagrams/gleba-nutrient-grid.svg alt="Gleba nutrient production zones — local bioflux-to-nutrient assemblies within 15 tiles of each consumer cluster" class=schema-diagram loading=lazy width=760><p><strong>Stage 2 — Bioflux the backbone.</strong></p><p>Bioflux (from yumako + jellynut mash) has a 30-minute timer — your most stable intermediate. Build bioflux production in bulk and let it supplement nutrients locally.</p><p>Each bioflux → 10 nutrients. 10 nutrients run one bacteria vat for roughly 2 minutes. Keep a bioflux chest buffer near each consumer cluster and convert on-demand.</p><p><strong>Stage 3 — Burn what you can't use.</strong></p><p>Circuit-controlled splitters (see our <a href=https://factorioguides.com/blueprints/circuit-network-guide/>Circuit Network Guide</a> for the wiring pattern) are mandatory on Gleba. Set each output splitter to:</p><ul><li>Enable if item &lt; threshold (e.g., iron bacteria &lt; 500)</li><li>If disabled: route to a heating tower for destruction</li></ul><p>Without this, any production line that backs up (say you have enough iron) will let bacteria spoil on the belt, filling everything with spoilage.</p><div class=pro-tip><strong>Quick Tip:</strong> Spoilage is useful. It feeds nutrient production (1 spoilage → 1 nutrient in a biochamber). It feeds heating towers for power. It makes fertilizer for more fruit production. The only "bad" spoilage is spoilage sitting on a belt blocking production. If it can't be used: heating tower.</div><img src=/images/diagrams/gleba-bioflux-flow.svg alt="Gleba production chain from fruit to ore — three stages: fruit to mash, mash to bioflux, bioflux to nutrients to bacteria to ore" class=schema-diagram loading=lazy width=760><h2 id=the-production-chain--what-goes-where>The Production Chain — What Goes Where</h2><p><strong>Yumako → Yumako mash → Bioflux:</strong></p><ul><li>1 yumako → 3 mash (in biochamber)</li><li>1 mash + 1 jellynut mash → 1 bioflux</li><li>Bioflux preserved: 30 minutes</li></ul><p><strong>Bioflux → Nutrients:</strong></p><ul><li>1 bioflux → 10 nutrients (in biochamber)</li><li>Nutrients preserved: 5 minutes</li><li>Feed this to bacteria vats directly — minimal belt travel</li></ul><p><strong>Bacteria → Ore:</strong></p><ul><li>Nutrients + bioflux + water → iron/copper bacteria</li><li>Bacteria spoil: 2 minutes</li><li>Bacteria in assembler → iron/copper ore</li><li>Ore does NOT spoil (thank goodness)</li></ul><p><strong>Fruit → Seeds → More fruit:</strong></p><ul><li>Processing fruit has a 50% chance of returning seeds</li><li>Seeds let you plant more trees</li><li>Without seeds, your fruit inputs eventually run out</li><li>Burn excess yumako/jellynut that would rot to avoid stalling</li></ul><div class=pro-tip><strong>Traps People Keep Falling Into:</strong> Don't belt fruit directly to your base. Process fruit into mash inside the farm area. Raw fruit spoils in 1 hour and fills belt space. Mash spoils in 30 minutes — still not great, but you can at least process it into bioflux (30 min) which is workable.</div><h2 id=power--heating-towers-and-spoilage>Power — Heating Towers and Spoilage</h2><p>Gleba's power comes from burning things. Heating towers burn any fuel at 250% efficiency. Spoilage burns. Seeds burn. Excess fruit burns.</p><p><strong>Power targets:</strong></p><ul><li>Early base: 5 heating towers, fed by excess spoilage</li><li>Mid base: 10 towers, supplemented by rocket fuel from jellynut processing</li><li>Late base: 20 towers, grid-tied across the base</li></ul><p><strong>The fuel priority chain:</strong></p><ol><li>First priority: active production (nutrients, bioflux to assemblers)</li><li>Second priority: spoilage → heating towers</li><li>Third priority: excess seeds → heating towers</li><li>Last resort: dedicated yumako/jellynut planting for fuel</li></ol><p>Note: Heating towers produce 250% of the heat value vs. normal burners. A heating tower with rocket fuel produces ~40 MW. Run the math before building large solar fields — Gleba's swamp/marsh reduces solar to ~20% of Nauvis output.</p><h2 id=where-most-players-mess-this-up>Where Most Players Mess This Up</h2><p><strong>Everything on one belt.</strong> A single belt carrying fruit, nutrients, and bioflux to different consumers creates a spoilage logjam the moment any consumer stalls. Separate belts per product type.</p><p><strong>No spoilage overflow.</strong> The heating tower needs a circuit condition: if spoilage on the return belt > 100, burn to prevent belt clog. Without this, spoilage silently accumulates and eventually jams your nutrient production.</p><p><strong>One-direction waste.</strong> In a designed system, every belt eventually terminates at a heating tower or a recycler. No belt dead-ends on Gleba. If a belt has no consumer, objects on it rot and block everything.</p><hr><h2 id=community-verification--resources>Community Verification & Resources</h2><ul><li><a href=https://wiki.factorio.com/Gleba>Official Wiki — Gleba</a> — spoilage timers, nutrient production rates, and biochamber mechanics</li><li><a href="https://forums.factorio.com/viewforum.php?f=69">Factorio Forums — Space Age Discussion</a> — community feedback on optimal Gleba routes and common pitfalls</li><li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547">Steam Guide — Gleba First Hour</a> — tested starting guide for the Gleba landing</li><li><a href=https://alt-f4.blog/>Alt-F4 Blog — Gleba Deep Dive</a> — engineering analysis of spoilage mechanics and belt throughput</li></ul><div class=back-to-section><a href=/space-age/gleba/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Gleba</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/space-age/gleba/bioflux-production/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text></svg></div><div class=related-body><h4>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</h4><p>Gleba bioflux production guide for Factorio Space Age. Yumako/jellynut processing ratios, nutrient loops, spoilage timing, and full bioflux automation.</p></div></a><a href=/space-age/gleba/pentapod-defense/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text></svg></div><div class=related-body><h4>Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</h4><p>Gleba pentapod defense guide for Factorio Space Age. Spore management, turret layouts, wall design, and the defense strategy that keeps your Gleba base safe.</p></div></a></div></div></div></div></main><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.">
+  <title>Gleba Survival Guide — Spoilage, Nutrients, and Science | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/space-age/gleba/gleba-survival-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Gleba Survival Guide — Spoilage, Nutrients, and Science">
+  <meta property="og:description" content="Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/space-age/gleba/gleba-survival-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Gleba Survival Guide — Spoilage, Nutrients, and Science</h1><p class="article-desc">Gleba guide for Factorio Space Age. Spoilage mechanics, nutrient production, bioflux loop, and the belt setup that prevents spoilage from stalling your base.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 21, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          5 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="section-layout">
+
+    
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Gleba</div>
+      <div class="section-nav-list">
+        <a href="/space-age/gleba/" class="section-nav-item">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        
+        <a href="/space-age/gleba/pentapod-defense/" class="section-nav-item">
+          <span class="section-nav-name">Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</span>
+          
+        </a>
+        
+        <a href="/space-age/gleba/bioflux-production/" class="section-nav-item">
+          <span class="section-nav-name">Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</span>
+          
+        </a>
+        
+        <a href="/space-age/gleba/gleba-survival-guide/" class="section-nav-item is-active">
+          <span class="section-nav-name">Gleba Survival Guide — Spoilage, Nutrients, and Science</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+    
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+          <nav class="breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            
+            <a href="/space-age/gleba/">Gleba</a>
+            
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Gleba Survival Guide — Spoilage, Nutrients, and Science</span>
+          </nav>
+
+          <p>Before you land on Gleba, your <a href="https://factorioguides.com/space-age/platform/space-platform-guide/">space platform</a> needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for why Gleba comes third in the planet order. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.</p>
+<p><div class="pro-tip"><strong>TL;DR:</strong> Every organic item on Gleba has a spoilage timer. Short belts (under 20 tiles), no buffer chests, circuit-controlled splitters that burn excess items before they rot. Bioflux → nutrients → bacteria → ore → science. Any backup kills your entire production chain.</div>
+## Quick Reference 鈥?Gleba</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Threat</th>
+          <th style="text-align: left">Source</th>
+          <th style="text-align: left">Countermeasure</th>
+          <th style="text-align: left">Building</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Spoilage</td>
+          <td style="text-align: left">All organic items</td>
+          <td style="text-align: left">Timer flushing</td>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/decider-combinator.png" alt="decider-combinator" class="game-img" loading="lazy">
+  <span class="game-name">Decider</span>
+</span>
+ Circuit</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pentapods</td>
+          <td style="text-align: left">Spore clouds</td>
+          <td style="text-align: left">Turret perimeter</td>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/gun-turret.png" alt="gun-turret" class="game-img" loading="lazy">
+  <span class="game-name">Gun turret</span>
+</span>
+ Turret</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Starvation</td>
+          <td style="text-align: left">Stalled farms</td>
+          <td style="text-align: left">Backup energy</td>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/heating-tower.png" alt="heating-tower" class="game-img" loading="lazy">
+  <span class="game-name">Heating</span>
+</span>
+ Tower</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Belt jam</td>
+          <td style="text-align: left">Excess fruit</td>
+          <td style="text-align: left">Priority splitter</td>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/splitter.png" alt="splitter" class="game-img" loading="lazy">
+  <span class="game-name">Splitter</span>
+</span>
+ Splitter</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Source</th>
+          <th style="text-align: left">Input</th>
+          <th style="text-align: center">Nutrient Output</th>
+          <th style="text-align: center">Spoilage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Bioflux</td>
+          <td style="text-align: left">1 bioflux</td>
+          <td style="text-align: center">50 nutrients</td>
+          <td style="text-align: center">2 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Yumako mash</td>
+          <td style="text-align: left">50 mash</td>
+          <td style="text-align: center">10 nutrients</td>
+          <td style="text-align: center">5 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jelly</td>
+          <td style="text-align: left">50 jelly</td>
+          <td style="text-align: center">10 nutrients</td>
+          <td style="text-align: center">5 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Spoilage</td>
+          <td style="text-align: left">200 spoilage</td>
+          <td style="text-align: center">10 nutrients</td>
+          <td style="text-align: center">1 min</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-mechanics-behind-this-bottleneck">The Mechanics Behind This Bottleneck</h2>
+<p>Every organic item on Gleba (and items derived from them) spoils over time:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: center">Spoilage timer</th>
+          <th style="text-align: left">What it spoils into</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Yumako fruit</td>
+          <td style="text-align: center">1 hour</td>
+          <td style="text-align: left">Spoilage</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jellynut</td>
+          <td style="text-align: center">1 hour</td>
+          <td style="text-align: left">Spoilage</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Bioflux</td>
+          <td style="text-align: center">30 min</td>
+          <td style="text-align: left">Spoilage</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Nutrients</td>
+          <td style="text-align: center">5 min</td>
+          <td style="text-align: left">Spoilage</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Bacteria</td>
+          <td style="text-align: center">2 min</td>
+          <td style="text-align: left">Spoilage (no, you can't stop this)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Science packs</td>
+          <td style="text-align: center">1 hour</td>
+          <td style="text-align: left">Spoilage</td>
+      </tr>
+  </tbody>
+</table>
+<p>The key insight: <strong>nutrients</strong> are the bottleneck. Nutrients spoil in 5 minutes. Every assembler that needs nutrients must be within belt distance of the nutrient source. If nutrients travel more than ~20 tiles on a yellow belt before reaching an assembler, they expire en route.</p>
+<h2 id="the-proven-fix--short-belts-circuit-control-burn-everything">The Proven Fix — Short Belts, Circuit Control, Burn Everything</h2>
+<p><strong>Stage 1 — Nutrient production, local to every consumer.</strong></p>
+<p>Don't build a central nutrient factory and belt it everywhere. Each production cluster needs its own nutrient source:</p>
+<ul>
+<li><strong>Near fruit processing:</strong> nutrients from bioflux (lasts 30 min, more stable)</li>
+<li><strong>Near bacteria vats:</strong> nutrients directly from spoilage (1 nutrient per spoilage, fast but short lifespan)</li>
+<li><strong>Near science:</strong> nutrients fed directly from a local bioflux producer</li>
+</ul>
+<p>Distance rule: <strong>keep any belt carrying nutrients under 15 tiles.</strong> After that, use a separate nutrient maker.</p>
+<img src="/images/diagrams/gleba-nutrient-grid.svg" alt="Gleba nutrient production zones — local bioflux-to-nutrient assemblies within 15 tiles of each consumer cluster" class="schema-diagram" loading="lazy" width="760">
+
+<p><strong>Stage 2 — Bioflux the backbone.</strong></p>
+<p>Bioflux (from yumako + jellynut mash) has a 30-minute timer — your most stable intermediate. Build bioflux production in bulk and let it supplement nutrients locally.</p>
+<p>Each bioflux → 10 nutrients. 10 nutrients run one bacteria vat for roughly 2 minutes. Keep a bioflux chest buffer near each consumer cluster and convert on-demand.</p>
+<p><strong>Stage 3 — Burn what you can't use.</strong></p>
+<p>Circuit-controlled splitters (see our <a href="https://factorioguides.com/blueprints/circuit-network-guide/">Circuit Network Guide</a> for the wiring pattern) are mandatory on Gleba. Set each output splitter to:</p>
+<ul>
+<li>Enable if item &lt; threshold (e.g., iron bacteria &lt; 500)</li>
+<li>If disabled: route to a heating tower for destruction</li>
+</ul>
+<p>Without this, any production line that backs up (say you have enough iron) will let bacteria spoil on the belt, filling everything with spoilage.</p>
+<div class="pro-tip"><strong>Quick Tip:</strong> Spoilage is useful. It feeds nutrient production (1 spoilage → 1 nutrient in a biochamber). It feeds heating towers for power. It makes fertilizer for more fruit production. The only &quot;bad&quot; spoilage is spoilage sitting on a belt blocking production. If it can't be used: heating tower.</div>
+
+<img src="/images/diagrams/gleba-bioflux-flow.svg" alt="Gleba production chain from fruit to ore — three stages: fruit to mash, mash to bioflux, bioflux to nutrients to bacteria to ore" class="schema-diagram" loading="lazy" width="760">
+
+<h2 id="the-production-chain--what-goes-where">The Production Chain — What Goes Where</h2>
+<p><strong>Yumako → Yumako mash → Bioflux:</strong></p>
+<ul>
+<li>1 yumako → 3 mash (in biochamber)</li>
+<li>1 mash + 1 jellynut mash → 1 bioflux</li>
+<li>Bioflux preserved: 30 minutes</li>
+</ul>
+<p><strong>Bioflux → Nutrients:</strong></p>
+<ul>
+<li>1 bioflux → 10 nutrients (in biochamber)</li>
+<li>Nutrients preserved: 5 minutes</li>
+<li>Feed this to bacteria vats directly — minimal belt travel</li>
+</ul>
+<p><strong>Bacteria → Ore:</strong></p>
+<ul>
+<li>Nutrients + bioflux + water → iron/copper bacteria</li>
+<li>Bacteria spoil: 2 minutes</li>
+<li>Bacteria in assembler → iron/copper ore</li>
+<li>Ore does NOT spoil (thank goodness)</li>
+</ul>
+<p><strong>Fruit → Seeds → More fruit:</strong></p>
+<ul>
+<li>Processing fruit has a 50% chance of returning seeds</li>
+<li>Seeds let you plant more trees</li>
+<li>Without seeds, your fruit inputs eventually run out</li>
+<li>Burn excess yumako/jellynut that would rot to avoid stalling</li>
+</ul>
+<div class="pro-tip"><strong>Traps People Keep Falling Into:</strong> Don't belt fruit directly to your base. Process fruit into mash inside the farm area. Raw fruit spoils in 1 hour and fills belt space. Mash spoils in 30 minutes — still not great, but you can at least process it into bioflux (30 min) which is workable.</div>
+
+<h2 id="power--heating-towers-and-spoilage">Power — Heating Towers and Spoilage</h2>
+<p>Gleba's power comes from burning things. Heating towers burn any fuel at 250% efficiency. Spoilage burns. Seeds burn. Excess fruit burns.</p>
+<p><strong>Power targets:</strong></p>
+<ul>
+<li>Early base: 5 heating towers, fed by excess spoilage</li>
+<li>Mid base: 10 towers, supplemented by rocket fuel from jellynut processing</li>
+<li>Late base: 20 towers, grid-tied across the base</li>
+</ul>
+<p><strong>The fuel priority chain:</strong></p>
+<ol>
+<li>First priority: active production (nutrients, bioflux to assemblers)</li>
+<li>Second priority: spoilage → heating towers</li>
+<li>Third priority: excess seeds → heating towers</li>
+<li>Last resort: dedicated yumako/jellynut planting for fuel</li>
+</ol>
+<p>Note: Heating towers produce 250% of the heat value vs. normal burners. A heating tower with rocket fuel produces ~40 MW. Run the math before building large solar fields — Gleba's swamp/marsh reduces solar to ~20% of Nauvis output.</p>
+<h2 id="where-most-players-mess-this-up">Where Most Players Mess This Up</h2>
+<p><strong>Everything on one belt.</strong> A single belt carrying fruit, nutrients, and bioflux to different consumers creates a spoilage logjam the moment any consumer stalls. Separate belts per product type.</p>
+<p><strong>No spoilage overflow.</strong> The heating tower needs a circuit condition: if spoilage on the return belt &gt; 100, burn to prevent belt clog. Without this, spoilage silently accumulates and eventually jams your nutrient production.</p>
+<p><strong>One-direction waste.</strong> In a designed system, every belt eventually terminates at a heating tower or a recycler. No belt dead-ends on Gleba. If a belt has no consumer, objects on it rot and block everything.</p>
+<hr>
+<h2 id="community-verification--resources">Community Verification &amp; Resources</h2>
+<ul>
+<li><a href="https://wiki.factorio.com/Gleba">Official Wiki — Gleba</a> — spoilage timers, nutrient production rates, and biochamber mechanics</li>
+<li><a href="https://forums.factorio.com/viewforum.php?f=69">Factorio Forums — Space Age Discussion</a> — community feedback on optimal Gleba routes and common pitfalls</li>
+<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3278846547">Steam Guide — Gleba First Hour</a> — tested starting guide for the Gleba landing</li>
+<li><a href="https://alt-f4.blog/">Alt-F4 Blog — Gleba Deep Dive</a> — engineering analysis of spoilage mechanics and belt throughput</li>
+</ul>
+
+
+          
+          <div class="back-to-section">
+            <a href="/space-age/gleba/" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to Gleba
+            </a>
+          </div>
+          
+
+          
+          
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              
+              <a href="/space-age/gleba/bioflux-production/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</h4>
+                  <p>Gleba bioflux production guide for Factorio Space Age. Yumako/jellynut processing ratios, nutrient loops, spoilage timing, and full bioflux automation.</p>
+                </div>
+              </a>
+              
+              <a href="/space-age/gleba/pentapod-defense/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">G</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</h4>
+                  <p>Gleba pentapod defense guide for Factorio Space Age. Spore management, turret layouts, wall design, and the defense strategy that keeps your Gleba base safe.</p>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+          
+
+          
+
+        </div>
+      </div>
+    </main>
+
+    
+    
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
+  </div>
+    <div class="adsterra-cpm-unit">
+      <script async="async" data-cfasync="false"
+        src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+      <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+    </div>
+    <div class="adsterra-cpm-unit">
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

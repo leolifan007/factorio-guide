@@ -1,50 +1,521 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis."><title>Vulcanus Lava Processing — Molten Iron and Copper Without Miners | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/space-age/vulcanus/lava-processing/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Vulcanus Lava Processing — Molten Iron and Copper Without Miners"><meta property="og:description" content="Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/space-age/vulcanus/lava-processing/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</h1><p class=article-desc>Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: Jun 20, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-8 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=section-layout><nav class=section-nav id=sectionNav><div class=section-nav-title>Vulcanus</div><div class=section-nav-list><a href=/space-age/vulcanus/ class=section-nav-item><span class=section-nav-icon style="font-style:italic;font-family:serif;font-size:.85rem;background:0 0">i</span>
-<span class=section-nav-name>About this section</span>
-</a><a href=/space-age/vulcanus/lava-processing/ class="section-nav-item is-active"><span class=section-nav-name>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</span></a></div></nav><main class=section-content id=sectionContent><div class=section-content-inner id=sectionContentInner><div class=article-content><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/space-age/vulcanus/>Vulcanus</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</span></nav><div class=article-hero-img style=background:linear-gradient(135deg,#1a0a2e,#3d1f0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem><span style=font-size:3rem>🌋</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.5rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#e8941c;color:#1a0a2e">LAVA PROCESSING</span></div><p>Vulcanus is defined by one thing: <strong>lava</strong>. The planet is covered in oceans of molten rock, and unlike Nauvis ore patches — which deplete over time — lava is an <strong>infinite resource</strong>. Master lava processing and you unlock an unlimited supply of iron, copper, steel, and low-density structures without ever placing a miner. If you haven't landed yet, https://factorioguides.com/space-age/guide/vulcanus-guide/ covers the first steps on Vulcanus.</p><p>This guide covers everything you need to know: how lava pumps work, the foundry recipes that convert lava into molten metal, calcite logistics, casting products, and how to ship the results back to Nauvis.</p><div class=pro-tip><strong>Before you start:</strong> This guide assumes you've already landed on Vulcanus and unlocked the foundry. If you're still planning your first trip, check the https://factorioguides.com/space-age/guide/vulcanus-guide/ for landing prep and base setup.</div><h2 id=how-lava-pumping-works>How Lava Pumping Works</h2><p>Lava is extracted using the <strong>lava pump</strong>, a building that functions similarly to an offshore pump but pulls from lava instead of water. Crucially, lava pumps can only be placed on the <strong>lava shoreline</strong> — you cannot build them out in the lava ocean itself.</p><h3 id=key-lava-pump-properties>Key Lava Pump Properties</h3><ul><li><strong>Throughput per pump:</strong> 1,000 lava/s through a single pipe segment</li><li><strong>Pipe throughput limits:</strong> Standard pipes carry up to 1,200 fluid/s over short distances, so one pipe can carry the output of one lava pump with headroom</li><li><strong>Infinite source:</strong> Lava patches never deplete. You will never need to relocate your pump setup</li><li><strong>Temperature:</strong> Lava enters at 50°C — this matters because the foundry requires lava at any temperature above 0°C</li><li><strong>Placement:</strong> Look for the dark red/black shoreline tiles. If you see bubbling, you've found a valid spot</li></ul><div class=pro-tip>Place your lava pumps close to your foundry array. Long pipe runs are possible but not recommended — Vulcanus has aggressive biters that will target exposed pipe segments. Keep everything within your walled perimeter.</div><h3 id=lava-pump-layout>Lava Pump Layout</h3><p>A typical early-game setup uses 2-4 lava pumps feeding a buffer tank, then distributing to foundries through underground pipes. The underground pipe connection saves surface space and protects the line from biter damage.</p><p>As your factory grows, scale to 8-12 pumps. Each pump handles 1,000 lava/s, and each foundry consumes <strong>500 lava/s</strong> when producing molten iron or copper. One pump feeds exactly two foundries running at full tilt.</p><h2 id=the-foundry-converting-lava-to-metal>The Foundry: Converting Lava to Metal</h2><p>The <strong>foundry</strong> is the centerpiece of Vulcanus production. It accepts lava and calcite as inputs, outputs molten iron or copper, and can also cast finished products directly from molten metal.</p><h3 id=molten-iron-production>Molten Iron Production</h3><p><span class=game-slot><span class=game-qty>1</span><img src=/images/icon/calcite.png alt=calcite class=game-img loading=lazy>
-<span class=game-name>Calcite</span>
-</span>+ <span class=game-slot><span class=game-qty>500</span><img src=/images/icon/lava.png alt=lava class=game-img loading=lazy>
-<span class=game-name>Lava</span>
-</span>→ <span class=game-slot><span class=game-qty>15</span><img src=/images/icon/molten-iron.png alt=molten-iron class=game-img loading=lazy>
-<span class=game-name>Molten iron</span>
-</span>per second per foundry</p><ul><li><strong>Crafting time:</strong> 2 seconds per recipe cycle</li><li><strong>Calcite per foundry:</strong> 0.5/s</li><li><strong>Lava per foundry:</strong> 500/s</li></ul><h3 id=molten-copper-production>Molten Copper Production</h3><p><span class=game-slot><span class=game-qty>1</span><img src=/images/icon/calcite.png alt=calcite class=game-img loading=lazy>
-<span class=game-name>Calcite</span>
-</span>+ <span class=game-slot><span class=game-qty>500</span><img src=/images/icon/lava.png alt=lava class=game-img loading=lazy>
-<span class=game-name>Lava</span>
-</span>→ <span class=game-slot><span class=game-qty>15</span><img src=/images/icon/molten-copper.png alt=molten-copper class=game-img loading=lazy>
-<span class=game-name>Molten</span>
-</span>per second per foundry</p><ul><li>Calcite and lava consumption rates are identical to molten iron</li><li>Both recipes run side by side — dedicate foundries to each metal</li></ul><h3 id=production-rate-comparison>Production Rate Comparison</h3><table><thead><tr><th>Recipe</th><th>Lava / s</th><th>Calcite / s</th><th>Output / s</th><th>Foundries per Pump</th></tr></thead><tbody><tr><td>Molten Iron</td><td>500</td><td>0.5</td><td>15 molten iron</td><td>2 per pump</td></tr><tr><td>Molten Copper</td><td>500</td><td>0.5</td><td>15 molten copper</td><td>2 per pump</td></tr><tr><td>Molten Iron + Copper</td><td>500 each</td><td>0.5 each</td><td>15 + 15</td><td>1 + 1 per 2 pumps</td></tr></tbody></table><p>A balanced early setup: <strong>4 lava pumps fueling 8 foundries</strong> (4 iron, 4 copper). This produces 60 molten iron/s and 60 molten copper/s — enough to sustain significant Nauvis exports.</p><div class=pro-tip><strong>Temperature note:</strong> Unlike water in boilers, lava temperature is irrelevant for the foundry. The conversion is purely material-based — 500 lava + 1 calcite = 15 molten metal, regardless of lava temperature.</div><h2 id=calcite-the-critical-catalyst>Calcite: The Critical Catalyst</h2><p>Calcite is the <strong>limiting ingredient</strong> in lava processing. You need it for every molten metal recipe, and it doesn't come from lava itself.</p><h3 id=calcite-supply-sources>Calcite Supply Sources</h3><p><strong>1. Space Platform Mining (Recommended)</strong>
-Build a space platform in orbit around Vulcanus that collects <strong>calcite from asteroid chunks</strong>. A small platform with 4-6 asteroid collectors and a crusher running metallic asteroid processing produces more than enough calcite for a medium-scale lava processing plant. This is the cleanest solution — it requires no ground logistics.</p><p><strong>2. Vulcanus Surface Mining (Alternative)</strong>
-Calcite patches exist on the Vulcanus surface, usually in smaller quantities than iron or copper ore. You can mine them with regular electric mining drills, but the patches are sparse and deplete faster than you'd like. Use this only as a backup or bootstrap.</p><p><strong>3. Nauvis Space Shipping (Fallback)</strong>
-If your space platform network is struggling, you can ship calcite from Nauvis. This is wildly inefficient — don't do it unless you're desperate.</p><h3 id=calcite-consumption>Calcite Consumption</h3><p>Each foundry consumes <strong>0.5 calcite/s</strong> running molten metal recipes. For 8 foundries (4 iron + 4 copper):</p><ul><li>Total calcite consumption: <strong>4 calcite/s</strong></li><li>Space platform with 6 collectors: Produces roughly 2-5 calcite/s depending on asteroid density</li><li>You'll need multiple platforms or asteroid reprocessing for larger setups</li></ul><div class=pro-tip>When designing your calcite supply, <strong>over-build your space platform</strong>. Calcite is consumed constantly — running out means your entire lava processing plant grinds to a halt. Add buffer chests with 10k+ calcite storage.</div><h2 id=casting-recipes-skip-the-assembly-line>Casting Recipes: Skip the Assembly Line</h2><p>The real power of the foundry isn't just molten metal — it's <strong>direct casting</strong>. Instead of pouring molten iron into plates and then crafting gears, you can cast finished products directly from the molten metal. This eliminates entire assembly steps.</p><h3 id=iron-casting>Iron Casting</h3><table><thead><tr><th>Recipe</th><th>Molten Iron Input</th><th>Output</th><th>Output / s</th></tr></thead><tbody><tr><td>Iron Gear Wheel</td><td>40</td><td>2 gears</td><td>~3.3/s</td></tr><tr><td>Iron Pipe</td><td>20</td><td>2 pipes</td><td>~6.6/s</td></tr><tr><td>Iron Stick</td><td>10</td><td>4 sticks</td><td>~13.3/s</td></tr><tr><td>Iron Plate</td><td>10</td><td>1 plate</td><td>~8/s</td></tr></tbody></table><h3 id=copper-casting>Copper Casting</h3><table><thead><tr><th>Recipe</th><th>Molten Copper Input</th><th>Output</th><th>Output / s</th></tr></thead><tbody><tr><td>Copper Wire</td><td>10</td><td>2 wire</td><td>~10/s</td></tr><tr><td>Copper Plate</td><td>10</td><td>1 plate</td><td>~8/s</td></tr></tbody></table><h3 id=steel-and-lds>Steel and LDS</h3><p>Two of the most impactful casting recipes:</p><p><strong>Steel from Molten Iron</strong>
-<span class=game-slot><span class=game-qty>30</span><img src=/images/icon/molten-iron.png alt=molten-iron class=game-img loading=lazy>
-<span class=game-name>Molten iron</span>
-</span>→ <span class=game-slot><span class=game-qty>1</span><img src=/images/icon/steel-plate.png alt=steel-plate class=game-img loading=lazy>
-<span class=game-name>Steel plate</span></span></p><p>This recipe bypasses the iron plate → steel plate chain entirely. Each foundry produces steel at roughly 6/s — compare this to Nauvis where you need 5 furnaces + a steel furnace to get 1/s steel. Vulcanus steel is <strong>6x faster per building</strong>.</p><p><strong>Low Density Structure (LDS)</strong>
-<span class=game-slot><span class=game-qty>50</span><img src=/images/icon/molten-iron.png alt=molten-iron class=game-img loading=lazy>
-<span class=game-name>Molten iron</span>
-</span>+ <span class=game-slot><span class=game-qty>50</span><img src=/images/icon/molten-copper.png alt=molten-copper class=game-img loading=lazy>
-<span class=game-name>Molten</span>
-</span>+ <span class=game-slot><span class=game-qty>5</span><img src=/images/icon/plastic.png alt=plastic class=game-img loading=lazy>
-<span class=game-name>Plastic</span>
-</span>→ <span class=game-slot><span class=game-qty>2</span><img src=/images/icon/low-density-structure.png alt=low-density-structure class=game-img loading=lazy>
-<span class=game-name>Low density</span></span></p><p>This is the direct casting recipe that changes the rocket game. Instead of crafting copper wire → copper cable → advanced circuits → processing units → LDS, you go straight from molten metal to LDS. The plastic requirement means you still need some petrochemical production, but the metal supply chain is radically simplified.</p><img src=/images/diagrams/space-age/lava-processing-flow.svg alt="Molten iron and copper production from lava to casting" class=schema-diagram loading=lazy width=760><h3 id=casting-throughput-comparison>Casting Throughput Comparison</h3><table><thead><tr><th>Cast Product</th><th>Foundry Speed (per foundry)</th><th>Assembler Speed (EM plant)</th><th>Ratio</th></tr></thead><tbody><tr><td>Iron Gear Wheel</td><td>3.3/s</td><td>1/s</td><td><strong>3.3×</strong></td></tr><tr><td>Copper Wire</td><td>10/s</td><td>2/s</td><td><strong>5×</strong></td></tr><tr><td>Steel Plate</td><td>6/s</td><td>1/s</td><td><strong>6×</strong></td></tr><tr><td>LDS</td><td>1.6/s</td><td>0.5/s</td><td><strong>3.2×</strong></td></tr></tbody></table><div class=pro-tip>The foundry has <strong>built-in productivity bonuses</strong> over standard assemblers. Each casting recipe produces ~50% more output per unit of input material compared to crafting from plates. This compounds with module bonuses.</div><h2 id=bringing-lava-products-to-nauvis>Bringing Lava Products to Nauvis</h2><p>The entire point of Vulcanus lava processing is that you can replace Nauvis mining operations with Vulcanus imports. Here's how to make that work:</p><h3 id=what-to-ship>What to Ship</h3><p><strong>Ship as cargo, not fluid.</strong> Molten metal cannot be barreled in Space Age — you cannot send pipes of molten iron via rocket. Instead, cast the molten metal into finished products and ship those.</p><p><strong>Priority export list:</strong></p><ol><li><strong>Steel plates</strong> — Highest ROI per rocket slot. Vulcanus produces steel 6× faster than Nauvis</li><li><strong>Iron gear wheels</strong> — Dense, fast to produce, used in massive quantities on Nauvis</li><li><strong>Low Density Structures</strong> — Essential for rockets, and Vulcanus produces them directly from lava</li><li><strong>Copper wire</strong> — If your Nauvis base has wire bottlenecks</li></ol><h3 id=export-ratios>Export Ratios</h3><p>A well-tuned Vulcanus export base running 8 foundries (4 iron, 4 copper):</p><table><thead><tr><th>Export Product</th><th>Production Rate</th><th>Rocket Cargo Capacity</th><th>Rockets per Minute</th></tr></thead><tbody><tr><td>Steel Plate</td><td>24/s</td><td>50 stacks</td><td>0.48</td></tr><tr><td>Iron Gear Wheel</td><td>13.2/s</td><td>200 stacks</td><td>0.066</td></tr><tr><td>LDS</td><td>6.4/s</td><td>100 stacks</td><td>0.064</td></tr></tbody></table><div class=pro-tip>Use the <strong>landing pad with requester chests</strong> on Nauvis to auto-unload rocket deliveries. Set up a circuit condition: "if steel &lt; 1000 in storage → launch rocket". This automates your interplanetary supply chain.</div><p>For a complete guide to setting up reliable interplanetary logistics, see https://factorioguides.com/space-age/platform/cross-planet-logistics/.</p><h2 id=advanced-scaling-up>Advanced: Scaling Up</h2><p>For megabase-scale lava processing:</p><p><strong>Pump arrays:</strong> Build rows of 8-16 lava pumps feeding a main lava bus. Each underground pipe segment carries 1,200 fluid/s, so parallel pipes are necessary at scale.</p><p><strong>Foundry blocks:</strong> Group foundries in blocks of 8 (4 iron, 4 copper) with dedicated calcite import lines. Each block consumes 4 calcite/s and produces 60 iron + 60 copper molten metal per second.</p><p><strong>Asteroid processing:</strong> Scale your space platforms to match. A platform with 12 collectors and advanced metallic asteroid processing can supply 10+ calcite/s — enough for 20 foundries.</p><p><strong>Direct casting to train:</strong> Route molten metal directly from foundries to casting arrays. Don't buffer molten metal in tanks if you can avoid it — cast it directly into products and store those instead. Products stack. Fluids don't.</p><div class=pro-tip>For space platform design patterns that handle high-throughput calcite collection, see https://factorioguides.com/space-age/platform/space-platform-guide/.</div><h2 id=summary>Summary</h2><p>Vulcanus lava processing is the most important production chain in Space Age. It replaces Nauvis mining with an infinite, calcite-catalyzed process that produces molten metal at high rates and casts finished products with massive productivity bonuses.</p><p><strong>Key takeaways:</strong></p><ul><li>Lava pumps are infinite — place them on the shoreline, protect them from biters</li><li>Each foundry consumes 500 lava + 0.5 calcite/s → 15 molten metal/s</li><li>Calcite comes from space platforms (recommended) or surface mining (fallback)</li><li>Direct casting recipes are 3-6× faster than traditional assembly</li><li>Export steel, gears, and LDS to Nauvis by rocket</li></ul><p>Don't mine Nauvis ore patches. Pump lava instead. Your future self — the one who never has to set up another iron mine — will thank you.</p><div class=back-to-section><a href=/space-age/vulcanus/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Vulcanus</a></div></div></div></main><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis.">
+  <title>Vulcanus Lava Processing — Molten Iron and Copper Without Miners | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/space-age/vulcanus/lava-processing/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Vulcanus Lava Processing — Molten Iron and Copper Without Miners">
+  <meta property="og:description" content="Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/space-age/vulcanus/lava-processing/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</h1><p class="article-desc">Vulcanus lava processing guide for Factorio Space Age. Molten iron/copper production, foundry casting, calcite logistics, and bringing lava products back to Nauvis.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: Jun 20, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          8 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="section-layout">
+
+    
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Vulcanus</div>
+      <div class="section-nav-list">
+        <a href="/space-age/vulcanus/" class="section-nav-item">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        
+        <a href="/space-age/vulcanus/lava-processing/" class="section-nav-item is-active">
+          <span class="section-nav-name">Vulcanus Lava Processing — Molten Iron and Copper Without Miners</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+    
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+          <nav class="breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            
+            <a href="/space-age/vulcanus/">Vulcanus</a>
+            
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Vulcanus Lava Processing — Molten Iron and Copper Without Miners</span>
+          </nav>
+
+          <!-- Article Hero -->
+<div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a2e,#3d1f0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+<span style="font-size:3rem;">🌋</span>
+<span style="font-family:Orbitron,sans-serif;font-size:1.5rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e8941c;color:#1a0a2e;">LAVA PROCESSING</span>
+</div>
+<p>Vulcanus is defined by one thing: <strong>lava</strong>. The planet is covered in oceans of molten rock, and unlike Nauvis ore patches — which deplete over time — lava is an <strong>infinite resource</strong>. Master lava processing and you unlock an unlimited supply of iron, copper, steel, and low-density structures without ever placing a miner. If you haven't landed yet, https://factorioguides.com/space-age/guide/vulcanus-guide/ covers the first steps on Vulcanus.</p>
+<p>This guide covers everything you need to know: how lava pumps work, the foundry recipes that convert lava into molten metal, calcite logistics, casting products, and how to ship the results back to Nauvis.</p>
+<div class="pro-tip"><strong>Before you start:</strong> This guide assumes you've already landed on Vulcanus and unlocked the foundry. If you're still planning your first trip, check the https://factorioguides.com/space-age/guide/vulcanus-guide/ for landing prep and base setup.</div>
+
+<h2 id="how-lava-pumping-works">How Lava Pumping Works</h2>
+<p>Lava is extracted using the <strong>lava pump</strong>, a building that functions similarly to an offshore pump but pulls from lava instead of water. Crucially, lava pumps can only be placed on the <strong>lava shoreline</strong> — you cannot build them out in the lava ocean itself.</p>
+<h3 id="key-lava-pump-properties">Key Lava Pump Properties</h3>
+<ul>
+<li><strong>Throughput per pump:</strong> 1,000 lava/s through a single pipe segment</li>
+<li><strong>Pipe throughput limits:</strong> Standard pipes carry up to 1,200 fluid/s over short distances, so one pipe can carry the output of one lava pump with headroom</li>
+<li><strong>Infinite source:</strong> Lava patches never deplete. You will never need to relocate your pump setup</li>
+<li><strong>Temperature:</strong> Lava enters at 50°C — this matters because the foundry requires lava at any temperature above 0°C</li>
+<li><strong>Placement:</strong> Look for the dark red/black shoreline tiles. If you see bubbling, you've found a valid spot</li>
+</ul>
+<div class="pro-tip">Place your lava pumps close to your foundry array. Long pipe runs are possible but not recommended — Vulcanus has aggressive biters that will target exposed pipe segments. Keep everything within your walled perimeter.</div>
+
+<h3 id="lava-pump-layout">Lava Pump Layout</h3>
+<p>A typical early-game setup uses 2-4 lava pumps feeding a buffer tank, then distributing to foundries through underground pipes. The underground pipe connection saves surface space and protects the line from biter damage.</p>
+<p>As your factory grows, scale to 8-12 pumps. Each pump handles 1,000 lava/s, and each foundry consumes <strong>500 lava/s</strong> when producing molten iron or copper. One pump feeds exactly two foundries running at full tilt.</p>
+<h2 id="the-foundry-converting-lava-to-metal">The Foundry: Converting Lava to Metal</h2>
+<p>The <strong>foundry</strong> is the centerpiece of Vulcanus production. It accepts lava and calcite as inputs, outputs molten iron or copper, and can also cast finished products directly from molten metal.</p>
+<h3 id="molten-iron-production">Molten Iron Production</h3>
+<p><span class="game-slot"><span class="game-qty">1</span><img src="/images/icon/calcite.png" alt="calcite" class="game-img" loading="lazy">
+  <span class="game-name">Calcite</span>
+</span>
+ + <span class="game-slot"><span class="game-qty">500</span><img src="/images/icon/lava.png" alt="lava" class="game-img" loading="lazy">
+  <span class="game-name">Lava</span>
+</span>
+ → <span class="game-slot"><span class="game-qty">15</span><img src="/images/icon/molten-iron.png" alt="molten-iron" class="game-img" loading="lazy">
+  <span class="game-name">Molten iron</span>
+</span>
+ per second per foundry</p>
+<ul>
+<li><strong>Crafting time:</strong> 2 seconds per recipe cycle</li>
+<li><strong>Calcite per foundry:</strong> 0.5/s</li>
+<li><strong>Lava per foundry:</strong> 500/s</li>
+</ul>
+<h3 id="molten-copper-production">Molten Copper Production</h3>
+<p><span class="game-slot"><span class="game-qty">1</span><img src="/images/icon/calcite.png" alt="calcite" class="game-img" loading="lazy">
+  <span class="game-name">Calcite</span>
+</span>
+ + <span class="game-slot"><span class="game-qty">500</span><img src="/images/icon/lava.png" alt="lava" class="game-img" loading="lazy">
+  <span class="game-name">Lava</span>
+</span>
+ → <span class="game-slot"><span class="game-qty">15</span><img src="/images/icon/molten-copper.png" alt="molten-copper" class="game-img" loading="lazy">
+  <span class="game-name">Molten</span>
+</span>
+ per second per foundry</p>
+<ul>
+<li>Calcite and lava consumption rates are identical to molten iron</li>
+<li>Both recipes run side by side — dedicate foundries to each metal</li>
+</ul>
+<h3 id="production-rate-comparison">Production Rate Comparison</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Recipe</th>
+          <th>Lava / s</th>
+          <th>Calcite / s</th>
+          <th>Output / s</th>
+          <th>Foundries per Pump</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Molten Iron</td>
+          <td>500</td>
+          <td>0.5</td>
+          <td>15 molten iron</td>
+          <td>2 per pump</td>
+      </tr>
+      <tr>
+          <td>Molten Copper</td>
+          <td>500</td>
+          <td>0.5</td>
+          <td>15 molten copper</td>
+          <td>2 per pump</td>
+      </tr>
+      <tr>
+          <td>Molten Iron + Copper</td>
+          <td>500 each</td>
+          <td>0.5 each</td>
+          <td>15 + 15</td>
+          <td>1 + 1 per 2 pumps</td>
+      </tr>
+  </tbody>
+</table>
+<p>A balanced early setup: <strong>4 lava pumps fueling 8 foundries</strong> (4 iron, 4 copper). This produces 60 molten iron/s and 60 molten copper/s — enough to sustain significant Nauvis exports.</p>
+<div class="pro-tip"><strong>Temperature note:</strong> Unlike water in boilers, lava temperature is irrelevant for the foundry. The conversion is purely material-based — 500 lava + 1 calcite = 15 molten metal, regardless of lava temperature.</div>
+
+<h2 id="calcite-the-critical-catalyst">Calcite: The Critical Catalyst</h2>
+<p>Calcite is the <strong>limiting ingredient</strong> in lava processing. You need it for every molten metal recipe, and it doesn't come from lava itself.</p>
+<h3 id="calcite-supply-sources">Calcite Supply Sources</h3>
+<p><strong>1. Space Platform Mining (Recommended)</strong>
+Build a space platform in orbit around Vulcanus that collects <strong>calcite from asteroid chunks</strong>. A small platform with 4-6 asteroid collectors and a crusher running metallic asteroid processing produces more than enough calcite for a medium-scale lava processing plant. This is the cleanest solution — it requires no ground logistics.</p>
+<p><strong>2. Vulcanus Surface Mining (Alternative)</strong>
+Calcite patches exist on the Vulcanus surface, usually in smaller quantities than iron or copper ore. You can mine them with regular electric mining drills, but the patches are sparse and deplete faster than you'd like. Use this only as a backup or bootstrap.</p>
+<p><strong>3. Nauvis Space Shipping (Fallback)</strong>
+If your space platform network is struggling, you can ship calcite from Nauvis. This is wildly inefficient — don't do it unless you're desperate.</p>
+<h3 id="calcite-consumption">Calcite Consumption</h3>
+<p>Each foundry consumes <strong>0.5 calcite/s</strong> running molten metal recipes. For 8 foundries (4 iron + 4 copper):</p>
+<ul>
+<li>Total calcite consumption: <strong>4 calcite/s</strong></li>
+<li>Space platform with 6 collectors: Produces roughly 2-5 calcite/s depending on asteroid density</li>
+<li>You'll need multiple platforms or asteroid reprocessing for larger setups</li>
+</ul>
+<div class="pro-tip">When designing your calcite supply, <strong>over-build your space platform</strong>. Calcite is consumed constantly — running out means your entire lava processing plant grinds to a halt. Add buffer chests with 10k+ calcite storage.</div>
+
+<h2 id="casting-recipes-skip-the-assembly-line">Casting Recipes: Skip the Assembly Line</h2>
+<p>The real power of the foundry isn't just molten metal — it's <strong>direct casting</strong>. Instead of pouring molten iron into plates and then crafting gears, you can cast finished products directly from the molten metal. This eliminates entire assembly steps.</p>
+<h3 id="iron-casting">Iron Casting</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Recipe</th>
+          <th>Molten Iron Input</th>
+          <th>Output</th>
+          <th>Output / s</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron Gear Wheel</td>
+          <td>40</td>
+          <td>2 gears</td>
+          <td>~3.3/s</td>
+      </tr>
+      <tr>
+          <td>Iron Pipe</td>
+          <td>20</td>
+          <td>2 pipes</td>
+          <td>~6.6/s</td>
+      </tr>
+      <tr>
+          <td>Iron Stick</td>
+          <td>10</td>
+          <td>4 sticks</td>
+          <td>~13.3/s</td>
+      </tr>
+      <tr>
+          <td>Iron Plate</td>
+          <td>10</td>
+          <td>1 plate</td>
+          <td>~8/s</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="copper-casting">Copper Casting</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Recipe</th>
+          <th>Molten Copper Input</th>
+          <th>Output</th>
+          <th>Output / s</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Copper Wire</td>
+          <td>10</td>
+          <td>2 wire</td>
+          <td>~10/s</td>
+      </tr>
+      <tr>
+          <td>Copper Plate</td>
+          <td>10</td>
+          <td>1 plate</td>
+          <td>~8/s</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="steel-and-lds">Steel and LDS</h3>
+<p>Two of the most impactful casting recipes:</p>
+<p><strong>Steel from Molten Iron</strong>
+<span class="game-slot"><span class="game-qty">30</span><img src="/images/icon/molten-iron.png" alt="molten-iron" class="game-img" loading="lazy">
+  <span class="game-name">Molten iron</span>
+</span>
+ → <span class="game-slot"><span class="game-qty">1</span><img src="/images/icon/steel-plate.png" alt="steel-plate" class="game-img" loading="lazy">
+  <span class="game-name">Steel plate</span>
+</span>
+</p>
+<p>This recipe bypasses the iron plate → steel plate chain entirely. Each foundry produces steel at roughly 6/s — compare this to Nauvis where you need 5 furnaces + a steel furnace to get 1/s steel. Vulcanus steel is <strong>6x faster per building</strong>.</p>
+<p><strong>Low Density Structure (LDS)</strong>
+<span class="game-slot"><span class="game-qty">50</span><img src="/images/icon/molten-iron.png" alt="molten-iron" class="game-img" loading="lazy">
+  <span class="game-name">Molten iron</span>
+</span>
+ + <span class="game-slot"><span class="game-qty">50</span><img src="/images/icon/molten-copper.png" alt="molten-copper" class="game-img" loading="lazy">
+  <span class="game-name">Molten</span>
+</span>
+ + <span class="game-slot"><span class="game-qty">5</span><img src="/images/icon/plastic.png" alt="plastic" class="game-img" loading="lazy">
+  <span class="game-name">Plastic</span>
+</span>
+ → <span class="game-slot"><span class="game-qty">2</span><img src="/images/icon/low-density-structure.png" alt="low-density-structure" class="game-img" loading="lazy">
+  <span class="game-name">Low density</span>
+</span>
+</p>
+<p>This is the direct casting recipe that changes the rocket game. Instead of crafting copper wire → copper cable → advanced circuits → processing units → LDS, you go straight from molten metal to LDS. The plastic requirement means you still need some petrochemical production, but the metal supply chain is radically simplified.</p>
+<img src="/images/diagrams/space-age/lava-processing-flow.svg" alt="Molten iron and copper production from lava to casting" class="schema-diagram" loading="lazy" width="760">
+
+<h3 id="casting-throughput-comparison">Casting Throughput Comparison</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Cast Product</th>
+          <th>Foundry Speed (per foundry)</th>
+          <th>Assembler Speed (EM plant)</th>
+          <th>Ratio</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Iron Gear Wheel</td>
+          <td>3.3/s</td>
+          <td>1/s</td>
+          <td><strong>3.3×</strong></td>
+      </tr>
+      <tr>
+          <td>Copper Wire</td>
+          <td>10/s</td>
+          <td>2/s</td>
+          <td><strong>5×</strong></td>
+      </tr>
+      <tr>
+          <td>Steel Plate</td>
+          <td>6/s</td>
+          <td>1/s</td>
+          <td><strong>6×</strong></td>
+      </tr>
+      <tr>
+          <td>LDS</td>
+          <td>1.6/s</td>
+          <td>0.5/s</td>
+          <td><strong>3.2×</strong></td>
+      </tr>
+  </tbody>
+</table>
+<div class="pro-tip">The foundry has <strong>built-in productivity bonuses</strong> over standard assemblers. Each casting recipe produces ~50% more output per unit of input material compared to crafting from plates. This compounds with module bonuses.</div>
+
+<h2 id="bringing-lava-products-to-nauvis">Bringing Lava Products to Nauvis</h2>
+<p>The entire point of Vulcanus lava processing is that you can replace Nauvis mining operations with Vulcanus imports. Here's how to make that work:</p>
+<h3 id="what-to-ship">What to Ship</h3>
+<p><strong>Ship as cargo, not fluid.</strong> Molten metal cannot be barreled in Space Age — you cannot send pipes of molten iron via rocket. Instead, cast the molten metal into finished products and ship those.</p>
+<p><strong>Priority export list:</strong></p>
+<ol>
+<li><strong>Steel plates</strong> — Highest ROI per rocket slot. Vulcanus produces steel 6× faster than Nauvis</li>
+<li><strong>Iron gear wheels</strong> — Dense, fast to produce, used in massive quantities on Nauvis</li>
+<li><strong>Low Density Structures</strong> — Essential for rockets, and Vulcanus produces them directly from lava</li>
+<li><strong>Copper wire</strong> — If your Nauvis base has wire bottlenecks</li>
+</ol>
+<h3 id="export-ratios">Export Ratios</h3>
+<p>A well-tuned Vulcanus export base running 8 foundries (4 iron, 4 copper):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Export Product</th>
+          <th>Production Rate</th>
+          <th>Rocket Cargo Capacity</th>
+          <th>Rockets per Minute</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Steel Plate</td>
+          <td>24/s</td>
+          <td>50 stacks</td>
+          <td>0.48</td>
+      </tr>
+      <tr>
+          <td>Iron Gear Wheel</td>
+          <td>13.2/s</td>
+          <td>200 stacks</td>
+          <td>0.066</td>
+      </tr>
+      <tr>
+          <td>LDS</td>
+          <td>6.4/s</td>
+          <td>100 stacks</td>
+          <td>0.064</td>
+      </tr>
+  </tbody>
+</table>
+<div class="pro-tip">Use the <strong>landing pad with requester chests</strong> on Nauvis to auto-unload rocket deliveries. Set up a circuit condition: &quot;if steel &lt; 1000 in storage → launch rocket&quot;. This automates your interplanetary supply chain.</div>
+
+<p>For a complete guide to setting up reliable interplanetary logistics, see https://factorioguides.com/space-age/platform/cross-planet-logistics/.</p>
+<h2 id="advanced-scaling-up">Advanced: Scaling Up</h2>
+<p>For megabase-scale lava processing:</p>
+<p><strong>Pump arrays:</strong> Build rows of 8-16 lava pumps feeding a main lava bus. Each underground pipe segment carries 1,200 fluid/s, so parallel pipes are necessary at scale.</p>
+<p><strong>Foundry blocks:</strong> Group foundries in blocks of 8 (4 iron, 4 copper) with dedicated calcite import lines. Each block consumes 4 calcite/s and produces 60 iron + 60 copper molten metal per second.</p>
+<p><strong>Asteroid processing:</strong> Scale your space platforms to match. A platform with 12 collectors and advanced metallic asteroid processing can supply 10+ calcite/s — enough for 20 foundries.</p>
+<p><strong>Direct casting to train:</strong> Route molten metal directly from foundries to casting arrays. Don't buffer molten metal in tanks if you can avoid it — cast it directly into products and store those instead. Products stack. Fluids don't.</p>
+<div class="pro-tip">For space platform design patterns that handle high-throughput calcite collection, see https://factorioguides.com/space-age/platform/space-platform-guide/.</div>
+
+<h2 id="summary">Summary</h2>
+<p>Vulcanus lava processing is the most important production chain in Space Age. It replaces Nauvis mining with an infinite, calcite-catalyzed process that produces molten metal at high rates and casts finished products with massive productivity bonuses.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li>Lava pumps are infinite — place them on the shoreline, protect them from biters</li>
+<li>Each foundry consumes 500 lava + 0.5 calcite/s → 15 molten metal/s</li>
+<li>Calcite comes from space platforms (recommended) or surface mining (fallback)</li>
+<li>Direct casting recipes are 3-6× faster than traditional assembly</li>
+<li>Export steel, gears, and LDS to Nauvis by rocket</li>
+</ul>
+<p>Don't mine Nauvis ore patches. Pump lava instead. Your future self — the one who never has to set up another iron mine — will thank you.</p>
+
+
+          
+          <div class="back-to-section">
+            <a href="/space-age/vulcanus/" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to Vulcanus
+            </a>
+          </div>
+          
+
+          
+          
+
+          
+
+        </div>
+      </div>
+    </main>
+
+    
+    
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
+  </div>
+    <div class="adsterra-cpm-unit">
+      <script async="async" data-cfasync="false"
+        src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+      <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+    </div>
+    <div class="adsterra-cpm-unit">
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,68 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Production Ratios — Factorio Ratio Reference on Factorio Guide</title><link>https://factorioguides.com/production-ratios/</link><description>Recent content in Production Ratios — Factorio Ratio Reference on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/production-ratios/index.xml" rel="self" type="application/rss+xml"/><item><title>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</title><link>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;Kovarex at a glance:&lt;/strong&gt; Each centrifuge needs 40 U-235 and 5 U-238 to start, then produces 41 U-235 and 2 U-238 per 60-second cycle -- a net gain of 1 U-235 per cycle. Three centrifuges running in parallel produce roughly 3 U-235 per minute, which is enough to fuel 4-8 nuclear reactors continuously.&lt;/div&gt;
-
-&lt;div class="section-head"&gt;&lt;h2&gt;The Kovarex Enrichment Process&lt;/h2&gt;&lt;/div&gt;
-
-&lt;div class="game-row"&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;40x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;+&lt;/span&gt;&lt;div class="game-slot"&gt;&lt;span class="game-qty"&gt;5x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_238.png" alt="uranium_238" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 238&lt;/span&gt;&lt;/div&gt;&lt;span class="game-plus"&gt;&amp;rarr;&lt;/span&gt;&lt;div class="game-slot result"&gt;&lt;span class="game-qty"&gt;41x&lt;/span&gt;&lt;img src="https://factorioguides.com/images/icon/uranium_235.png" alt="uranium_235" class="game-img" loading="lazy"&gt;&lt;span class="game-name"&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Kovarex enrichment is the key to sustainable nuclear power in Factorio. The standard uranium processing recipe (from ore) only gives you 0.7% U-235 output -- not enough to fuel a nuclear reactor consistently. Kovarex trades U-238 (which you have too much of) for U-235 (which you never have enough of).&lt;/p&gt;</description></item><item><title>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</title><link>https://factorioguides.com/production-ratios/beacon-module-guide/</link><pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate><guid>https://factorioguides.com/production-ratios/beacon-module-guide/</guid><description>&lt;p&gt;Beacons amplify module effects across multiple buildings. &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/beacon.png" alt="beacon" class="game-img" loading="lazy"&gt;
- &lt;span class="game-name"&gt;Beacon&lt;/span&gt;
-&lt;/span&gt;
- One beacon with &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/productivity_module_3.png" alt="productivity_module_3" class="game-img" loading="lazy"&gt;
- &lt;span class="game-name"&gt;Productivity&lt;/span&gt;
-&lt;/span&gt;
- speed modules can boost 8 nearby assemblers —if you lay them out correctly.&lt;/p&gt;
-&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.&lt;/div&gt;
-
-&lt;img src="https://factorioguides.com/images/diagrams/8-beacon-layout.svg" alt="8-beacon layout showing assembler surrounded by 8 beacons with module distribution" class="schema-diagram" loading="lazy" width="900"&gt;
-
-&lt;h2 id="how-beacons-work"&gt;How Beacons Work&lt;/h2&gt;
-&lt;p&gt;Beacons transmit module effects to nearby buildings:&lt;/p&gt;</description></item><item><title>Oil Processing — Ratios, Cracking, and Refinery Setup</title><link>https://factorioguides.com/production-ratios/oil-processing-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid><description>&lt;p&gt;Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn't more refineries. It's three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p&gt;
-&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div&gt;
-
-&lt;h2 id="the-mechanics-behind-this-bottleneck"&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;
-&lt;p&gt;Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn't prioritize outputs. It stalls everything.&lt;/p&gt;</description></item><item><title>Smelting Ratios — How Many Furnaces Per Belt</title><link>https://factorioguides.com/production-ratios/smelting-ratios/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid><description>&lt;p&gt;Whether you’re building your &lt;a href="https://factorioguides.com/getting-started/your-first-factory/"&gt;first factory&lt;/a&gt; or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.&lt;/p&gt;
-&lt;h2 id="the-core-concept"&gt;The Core Concept&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;
-&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.
-An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="iron-and-copper-smelting"&gt;Iron and Copper Smelting&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Belt Type&lt;/th&gt;
- &lt;th&gt;Plates/sec&lt;/th&gt;
- &lt;th&gt;Stone Furnaces&lt;/th&gt;
- &lt;th&gt;Electric Furnaces&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;Basic belt (half)&lt;/td&gt;
- &lt;td&gt;3.75&lt;/td&gt;
- &lt;td&gt;12&lt;/td&gt;
- &lt;td&gt;6&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Basic belt (full)&lt;/td&gt;
- &lt;td&gt;7.5&lt;/td&gt;
- &lt;td&gt;24&lt;/td&gt;
- &lt;td&gt;12&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Fast belt&lt;/td&gt;
- &lt;td&gt;15&lt;/td&gt;
- &lt;td&gt;48&lt;/td&gt;
- &lt;td&gt;24&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Express belt&lt;/td&gt;
- &lt;td&gt;22.5&lt;/td&gt;
- &lt;td&gt;72&lt;/td&gt;
- &lt;td&gt;36&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class="tip-box"&gt;
-&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.
-&lt;/div&gt;
-&lt;h2 id="steel-smelting"&gt;Steel Smelting&lt;/h2&gt;
-&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Production Ratios — Factorio Ratio Reference on Factorio Guide</title>
+    <link>https://factorioguides.com/production-ratios/</link>
+    <description>Recent content in Production Ratios — Factorio Ratio Reference on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/production-ratios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</title>
+      <link>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/kovarex-enrichment-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Kovarex at a glance:&lt;/strong&gt; Each centrifuge needs 40 U-235 and 5 U-238 to start, then produces 41 U-235 and 2 U-238 per 60-second cycle -- a net gain of 1 U-235 per cycle. Three centrifuges running in parallel produce roughly 3 U-235 per minute, which is enough to fuel 4-8 nuclear reactors continuously.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;The Kovarex Enrichment Process&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;game-row&#34;&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;40x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/uranium_235.png&#34; alt=&#34;uranium_235&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;+&lt;/span&gt;&lt;div class=&#34;game-slot&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;5x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/uranium_238.png&#34; alt=&#34;uranium_238&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 238&lt;/span&gt;&lt;/div&gt;&lt;span class=&#34;game-plus&#34;&gt;&amp;rarr;&lt;/span&gt;&lt;div class=&#34;game-slot result&#34;&gt;&lt;span class=&#34;game-qty&#34;&gt;41x&lt;/span&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/uranium_235.png&#34; alt=&#34;uranium_235&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&lt;span class=&#34;game-name&#34;&gt;Uranium 235&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;Kovarex enrichment is the key to sustainable nuclear power in Factorio. The standard uranium processing recipe (from ore) only gives you 0.7% U-235 output -- not enough to fuel a nuclear reactor consistently. Kovarex trades U-238 (which you have too much of) for U-235 (which you never have enough of).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</title>
+      <link>https://factorioguides.com/production-ratios/beacon-module-guide/</link>
+      <pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate>
+      <guid>https://factorioguides.com/production-ratios/beacon-module-guide/</guid>
+      <description>&lt;p&gt;Beacons amplify module effects across multiple buildings. &lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/beacon.png&#34; alt=&#34;beacon&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Beacon&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; One beacon with &lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/productivity_module_3.png&#34; alt=&#34;productivity_module_3&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Productivity&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; speed modules can boost 8 nearby assemblers —if you lay them out correctly.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 8-beacon layout surrounds one assembler with 8 beacons. Fill beacons with speed modules, assemblers with productivity modules. Result: +30% productivity at +10% speed. The endgame standard for expensive recipes.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;img src=&#34;https://factorioguides.com/images/diagrams/8-beacon-layout.svg&#34; alt=&#34;8-beacon layout showing assembler surrounded by 8 beacons with module distribution&#34; class=&#34;schema-diagram&#34; loading=&#34;lazy&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;how-beacons-work&#34;&gt;How Beacons Work&lt;/h2&gt;&#xA;&lt;p&gt;Beacons transmit module effects to nearby buildings:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oil Processing — Ratios, Cracking, and Refinery Setup</title>
+      <link>https://factorioguides.com/production-ratios/oil-processing-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/oil-processing-guide/</guid>
+      <description>&lt;p&gt;Your refineries are flashing yellow again. Heavy oil backed up → no light oil → no petroleum → no plastic → no red circuits → no blue science → completely dead base. The fix isn&#39;t more refineries. It&#39;s three pumps, three circuit wires, and the 8:1:7 ratio that keeps everything flowing.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; For every 8 refineries, build 1 heavy→light cracker, 7 light→petroleum crackers. Wire each storage tank to a pump with a decider: output &amp;gt; 20000 → crack. This setup never deadlocks.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;h2 id=&#34;the-mechanics-behind-this-bottleneck&#34;&gt;The Mechanics Behind This Bottleneck&lt;/h2&gt;&#xA;&lt;p&gt;Refineries produce three outputs simultaneously. If heavy oil fills up, the refinery stops — stopping light oil and petroleum production too. The game doesn&#39;t prioritize outputs. It stalls everything.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smelting Ratios — How Many Furnaces Per Belt</title>
+      <link>https://factorioguides.com/production-ratios/smelting-ratios/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid>
+      <description>&lt;p&gt;Whether you’re building your &lt;a href=&#34;https://factorioguides.com/getting-started/your-first-factory/&#34;&gt;first factory&lt;/a&gt; or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-core-concept&#34;&gt;The Core Concept&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;transport belt&lt;/strong&gt; carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;stone furnace&lt;/strong&gt; smelts 1 plate per 3.2 seconds = &lt;strong&gt;0.3125 plates/second&lt;/strong&gt;.&#xA;An &lt;strong&gt;electric furnace&lt;/strong&gt; smelts 1 plate per 1.6 seconds = &lt;strong&gt;0.625 plates/second&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iron-and-copper-smelting&#34;&gt;Iron and Copper Smelting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Belt Type&lt;/th&gt;&#xA;          &lt;th&gt;Plates/sec&lt;/th&gt;&#xA;          &lt;th&gt;Stone Furnaces&lt;/th&gt;&#xA;          &lt;th&gt;Electric Furnaces&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (half)&lt;/td&gt;&#xA;          &lt;td&gt;3.75&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Basic belt (full)&lt;/td&gt;&#xA;          &lt;td&gt;7.5&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;          &lt;td&gt;12&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fast belt&lt;/td&gt;&#xA;          &lt;td&gt;15&lt;/td&gt;&#xA;          &lt;td&gt;48&lt;/td&gt;&#xA;          &lt;td&gt;24&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Express belt&lt;/td&gt;&#xA;          &lt;td&gt;22.5&lt;/td&gt;&#xA;          &lt;td&gt;72&lt;/td&gt;&#xA;          &lt;td&gt;36&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;tip-box&#34;&gt;&#xD;&#xA;&lt;strong&gt;Rule of thumb:&lt;/strong&gt; 1 full basic belt of iron ore needs exactly &lt;strong&gt;24 stone furnaces&lt;/strong&gt; (or 12 electric furnaces) to consume it entirely.&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;steel-smelting&#34;&gt;Steel Smelting&lt;/h2&gt;&#xA;&lt;p&gt;Steel needs &lt;strong&gt;5 iron plates&lt;/strong&gt; and takes &lt;strong&gt;17.5 seconds&lt;/strong&gt; in a stone furnace.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

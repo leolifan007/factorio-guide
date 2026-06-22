@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fulgora on Factorio Guide</title><link>https://factorioguides.com/tags/fulgora/</link><description>Recent content in Fulgora on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/fulgora/index.xml" rel="self" type="application/rss+xml"/><item><title>Fulgora Scrap Overflow — How to Void Excess Items and Keep Production Running</title><link>https://factorioguides.com/space-age/fulgora/scrap-overflow/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/fulgora/scrap-overflow/</guid><description>&lt;p&gt;You set up scrap recycling on Fulgora and your belts are already jammed. Not with one item — with twelve. Blue circuits pile up next to concrete next to gears next to holmium ore. The recyclers stop because the output belt has nowhere to put more gears. And since the recyclers stopped, you're not getting holmium anymore. The entire base is deadlocked because one belt segment filled with iron gears. See https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/ for the Fulgora landing setup before diving into overflow control.&lt;/p&gt;</description></item><item><title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title><link>https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/</guid><description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can't predict what comes out — but you have to plan for everything that does. Start with https://factorioguides.com/space-age/fulgora/scrap-overflow/ for dedicated overflow management. If even one item type has no output path, the entire system stops.&lt;/p&gt;
-&lt;p&gt;&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;
-## Quick Reference 鈥?Fulgora Scrap&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fulgora on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/fulgora/</link>
+    <description>Recent content in Fulgora on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/fulgora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fulgora Scrap Overflow — How to Void Excess Items and Keep Production Running</title>
+      <link>https://factorioguides.com/space-age/fulgora/scrap-overflow/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/fulgora/scrap-overflow/</guid>
+      <description>&lt;p&gt;You set up scrap recycling on Fulgora and your belts are already jammed. Not with one item — with twelve. Blue circuits pile up next to concrete next to gears next to holmium ore. The recyclers stop because the output belt has nowhere to put more gears. And since the recyclers stopped, you&#39;re not getting holmium anymore. The entire base is deadlocked because one belt segment filled with iron gears. See https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/ for the Fulgora landing setup before diving into overflow control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fulgora Recycling Guide — Sorting Scrap, Holmium, and Power</title>
+      <link>https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/</guid>
+      <description>&lt;p&gt;You landed on Fulgora, set up a recycler feeding scrap, and within 10 minutes your belts are completely jammed with 12 different items. Random outputs from scrap recycling mean you can&#39;t predict what comes out — but you have to plan for everything that does. Start with https://factorioguides.com/space-age/fulgora/scrap-overflow/ for dedicated overflow management. If even one item type has no output path, the entire system stops.&lt;/p&gt;&#xA;&lt;p&gt;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Each recycled scrap item needs a dedicated output path — either to a storage chest, an assembler that uses it, or a recycler that voids it. A sushi belt + filter splitter system handles the sorting. Holmium ore goes to processing, everything else gets used or destroyed.&lt;/div&gt;&#xD;&#xA;## Quick Reference 鈥?Fulgora Scrap&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

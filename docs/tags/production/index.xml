@@ -1,6 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Production on Factorio Guide</title><link>https://factorioguides.com/tags/production/</link><description>Recent content in Production on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/production/index.xml" rel="self" type="application/rss+xml"/><item><title>Fulgora Scrap Overflow — How to Void Excess Items and Keep Production Running</title><link>https://factorioguides.com/space-age/fulgora/scrap-overflow/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/fulgora/scrap-overflow/</guid><description>&lt;p&gt;You set up scrap recycling on Fulgora and your belts are already jammed. Not with one item — with twelve. Blue circuits pile up next to concrete next to gears next to holmium ore. The recyclers stop because the output belt has nowhere to put more gears. And since the recyclers stopped, you're not getting holmium anymore. The entire base is deadlocked because one belt segment filled with iron gears. See https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/ for the Fulgora landing setup before diving into overflow control.&lt;/p&gt;</description></item><item><title>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</title><link>https://factorioguides.com/space-age/gleba/bioflux-production/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba/bioflux-production/</guid><description>&lt;p&gt;Bioflux is the single most important intermediate on Gleba. It feeds nutrients, which feed bacteria, which produce your iron and copper ore. Without steady bioflux, your Gleba base starves. The challenge: yumako and jellynut have a 1-hour spoilage timer, nutrients spoil in 5 minutes, and any backup in the chain defaults everything to spoilage. Here's the ratio and loop design that keeps bioflux flowing. For a complete Gleba walkthrough, see https://factorioguides.com/space-age/gleba/gleba-survival-guide/.&lt;/p&gt;</description></item><item><title>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</title><link>https://factorioguides.com/space-age/vulcanus/lava-processing/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/vulcanus/lava-processing/</guid><description>&lt;!-- Article Hero --&gt;
-&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a2e,#3d1f0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;"&gt;
-&lt;span style="font-size:3rem;"&gt;🌋&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.5rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e8941c;color:#1a0a2e;"&gt;LAVA PROCESSING&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Vulcanus is defined by one thing: &lt;strong&gt;lava&lt;/strong&gt;. The planet is covered in oceans of molten rock, and unlike Nauvis ore patches — which deplete over time — lava is an &lt;strong&gt;infinite resource&lt;/strong&gt;. Master lava processing and you unlock an unlimited supply of iron, copper, steel, and low-density structures without ever placing a miner. If you haven't landed yet, https://factorioguides.com/space-age/guide/vulcanus-guide/ covers the first steps on Vulcanus.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Production on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/production/</link>
+    <description>Recent content in Production on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/production/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fulgora Scrap Overflow — How to Void Excess Items and Keep Production Running</title>
+      <link>https://factorioguides.com/space-age/fulgora/scrap-overflow/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/fulgora/scrap-overflow/</guid>
+      <description>&lt;p&gt;You set up scrap recycling on Fulgora and your belts are already jammed. Not with one item — with twelve. Blue circuits pile up next to concrete next to gears next to holmium ore. The recyclers stop because the output belt has nowhere to put more gears. And since the recyclers stopped, you&#39;re not getting holmium anymore. The entire base is deadlocked because one belt segment filled with iron gears. See https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/ for the Fulgora landing setup before diving into overflow control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</title>
+      <link>https://factorioguides.com/space-age/gleba/bioflux-production/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/gleba/bioflux-production/</guid>
+      <description>&lt;p&gt;Bioflux is the single most important intermediate on Gleba. It feeds nutrients, which feed bacteria, which produce your iron and copper ore. Without steady bioflux, your Gleba base starves. The challenge: yumako and jellynut have a 1-hour spoilage timer, nutrients spoil in 5 minutes, and any backup in the chain defaults everything to spoilage. Here&#39;s the ratio and loop design that keeps bioflux flowing. For a complete Gleba walkthrough, see https://factorioguides.com/space-age/gleba/gleba-survival-guide/.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vulcanus Lava Processing — Molten Iron and Copper Without Miners</title>
+      <link>https://factorioguides.com/space-age/vulcanus/lava-processing/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/vulcanus/lava-processing/</guid>
+      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a2e,#3d1f0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-size:3rem;&#34;&gt;🌋&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.5rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e8941c;color:#1a0a2e;&#34;&gt;LAVA PROCESSING&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Vulcanus is defined by one thing: &lt;strong&gt;lava&lt;/strong&gt;. The planet is covered in oceans of molten rock, and unlike Nauvis ore patches — which deplete over time — lava is an &lt;strong&gt;infinite resource&lt;/strong&gt;. Master lava processing and you unlock an unlimited supply of iron, copper, steel, and low-density structures without ever placing a miner. If you haven&#39;t landed yet, https://factorioguides.com/space-age/guide/vulcanus-guide/ covers the first steps on Vulcanus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

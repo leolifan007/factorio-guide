@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aquilo on Factorio Guide</title><link>https://factorioguides.com/space-age/aquilo/</link><description>Recent content in Aquilo on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/space-age/aquilo/index.xml" rel="self" type="application/rss+xml"/><item><title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title><link>https://factorioguides.com/space-age/aquilo/aquilo-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/aquilo/aquilo-guide/</guid><description>&lt;p&gt;&lt;div class="pro-tip"&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for when to visit, and https://factorioguides.com/space-age/platform/space-platform-guide/ for the ship design that can reach the ice planet.&lt;/div&gt;
-## Quick Reference 鈥?Aquilo&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aquilo on Factorio Guide</title>
+    <link>https://factorioguides.com/space-age/aquilo/</link>
+    <description>Recent content in Aquilo on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/space-age/aquilo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title>
+      <link>https://factorioguides.com/space-age/aquilo/aquilo-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/aquilo/aquilo-guide/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for when to visit, and https://factorioguides.com/space-age/platform/space-platform-guide/ for the ship design that can reach the ice planet.&lt;/div&gt;&#xD;&#xA;## Quick Reference 鈥?Aquilo&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

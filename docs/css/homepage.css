@@ -547,10 +547,6 @@
   flex-wrap: wrap;
 }
 
-/* ── Featured Guides replacement ── */
-.home-content .guide-grid {
-  display: none;
-}
 
 /* ════════════════════════════════════════
    RESPONSIVE

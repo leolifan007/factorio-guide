@@ -1,2 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gleba on Factorio Guide</title><link>https://factorioguides.com/tags/gleba/</link><description>Recent content in Gleba on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml"/><item><title>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</title><link>https://factorioguides.com/space-age/gleba/bioflux-production/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba/bioflux-production/</guid><description>&lt;p&gt;Bioflux is the single most important intermediate on Gleba. It feeds nutrients, which feed bacteria, which produce your iron and copper ore. Without steady bioflux, your Gleba base starves. The challenge: yumako and jellynut have a 1-hour spoilage timer, nutrients spoil in 5 minutes, and any backup in the chain defaults everything to spoilage. Here's the ratio and loop design that keeps bioflux flowing. For a complete Gleba walkthrough, see https://factorioguides.com/space-age/gleba/gleba-survival-guide/.&lt;/p&gt;</description></item><item><title>Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</title><link>https://factorioguides.com/space-age/gleba/pentapod-defense/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba/pentapod-defense/</guid><description>&lt;p&gt;Gleba's enemies are different. Unlike Nauvis biters that live in nests and expand slowly, pentapods spawn directly from the terrain when they detect your spore cloud. If your Gleba defense fails, it's because you attracted too many pentapods with too much processing — not because your walls were weak.&lt;/p&gt;
-&lt;p&gt;This guide covers the full pentapod defense strategy: spore management, turret selection, wall design, and the defense-in-depth layout that keeps your Gleba base running indefinitely. Pair this with https://factorioguides.com/space-age/gleba/bioflux-production/ to understand the root cause of spore generation.&lt;/p&gt;</description></item><item><title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title><link>https://factorioguides.com/space-age/gleba/gleba-survival-guide/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/gleba/gleba-survival-guide/</guid><description>&lt;p&gt;Before you land on Gleba, your &lt;a href="https://factorioguides.com/space-age/platform/space-platform-guide/"&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for why Gleba comes third in the planet order. The fix isn't better production — it's controlled destruction. If something isn't moving, destroy it.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gleba on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/gleba/</link>
+    <description>Recent content in Gleba on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/gleba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gleba Bioflux Production — Fruit Ratio, Nutrients Loop, and Spoilage Control</title>
+      <link>https://factorioguides.com/space-age/gleba/bioflux-production/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/gleba/bioflux-production/</guid>
+      <description>&lt;p&gt;Bioflux is the single most important intermediate on Gleba. It feeds nutrients, which feed bacteria, which produce your iron and copper ore. Without steady bioflux, your Gleba base starves. The challenge: yumako and jellynut have a 1-hour spoilage timer, nutrients spoil in 5 minutes, and any backup in the chain defaults everything to spoilage. Here&#39;s the ratio and loop design that keeps bioflux flowing. For a complete Gleba walkthrough, see https://factorioguides.com/space-age/gleba/gleba-survival-guide/.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gleba Pentapod Defense — Turret Placement and Spore Management Strategy</title>
+      <link>https://factorioguides.com/space-age/gleba/pentapod-defense/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/gleba/pentapod-defense/</guid>
+      <description>&lt;p&gt;Gleba&#39;s enemies are different. Unlike Nauvis biters that live in nests and expand slowly, pentapods spawn directly from the terrain when they detect your spore cloud. If your Gleba defense fails, it&#39;s because you attracted too many pentapods with too much processing — not because your walls were weak.&lt;/p&gt;&#xA;&lt;p&gt;This guide covers the full pentapod defense strategy: spore management, turret selection, wall design, and the defense-in-depth layout that keeps your Gleba base running indefinitely. Pair this with https://factorioguides.com/space-age/gleba/bioflux-production/ to understand the root cause of spore generation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gleba Survival Guide — Spoilage, Nutrients, and Science</title>
+      <link>https://factorioguides.com/space-age/gleba/gleba-survival-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/gleba/gleba-survival-guide/</guid>
+      <description>&lt;p&gt;Before you land on Gleba, your &lt;a href=&#34;https://factorioguides.com/space-age/platform/space-platform-guide/&#34;&gt;space platform&lt;/a&gt; needs enough thrust and ammo for the outer planet trip—it’s a longer journey than Fulgora or Vulcanus. Gleba is the only planet where your factory actively works against you. Belt buffers that help on Nauvis rot here. Chests filled with spare parts turn into chests of spoilage. Assemblers that back up kill their own inputs. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for why Gleba comes third in the planet order. The fix isn&#39;t better production — it&#39;s controlled destruction. If something isn&#39;t moving, destroy it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

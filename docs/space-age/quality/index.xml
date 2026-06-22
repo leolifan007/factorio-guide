@@ -1,66 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality Modules on Factorio Guide</title><link>https://factorioguides.com/space-age/quality/</link><description>Recent content in Quality Modules on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/space-age/quality/index.xml" rel="self" type="application/rss+xml"/><item><title>Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</title><link>https://factorioguides.com/space-age/quality/upcycling-loop/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/quality/upcycling-loop/</guid><description>&lt;!-- Article Hero --&gt;
-&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a2e,#2a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;"&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;"&gt;COMMON&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;"&gt;UNCOMMON&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;"&gt;RARE&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;"&gt;EPIC&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;"&gt;LEGENDARY&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;In Space Age, quality modules let you craft items at higher tiers — uncommon, rare, epic, and legendary. But the odds of rolling a legendary item from common ingredients are &lt;strong&gt;vanishingly small&lt;/strong&gt;. The solution? &lt;strong&gt;Upcycling loops&lt;/strong&gt;: a closed-loop system where an assembler and recycler work together to repeatedly process items until they emerge at the desired quality tier. Start with https://factorioguides.com/space-age/quality/quality-module-guide/ for the fundamentals of quality probability.&lt;/p&gt;</description></item><item><title>Quality Modules — Space Age New Mechanic Explained</title><link>https://factorioguides.com/space-age/quality/quality-module-guide/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/quality/quality-module-guide/</guid><description>&lt;!-- Article Hero --&gt;
-&lt;div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;"&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;"&gt;COMMON&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;"&gt;UNCOMMON&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;"&gt;RARE&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;"&gt;EPIC&lt;/span&gt;
-&lt;span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;"&gt;LEGENDARY&lt;/span&gt;
-&lt;/div&gt;
-&lt;h2 id="what-is-quality"&gt;What Is Quality?&lt;/h2&gt;
-&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better — &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/quality-module.png" alt="quality-module" class="game-img" loading="lazy"&gt;
- &lt;span class="game-name"&gt;Quality&lt;/span&gt;
-&lt;/span&gt;
- quality modules are the gateway to this whole system. For the upcycling loop design, see https://factorioguides.com/space-age/quality/upcycling-loop/.&lt;/p&gt;
-&lt;p&gt;| Tier | Color | Bonus | Effective Effect |&lt;/p&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Tier&lt;/th&gt;
- &lt;th&gt;Color&lt;/th&gt;
- &lt;th&gt;Bonus&lt;/th&gt;
- &lt;th style="text-align: center"&gt;Effective Effect&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;Common (1)&lt;/td&gt;
- &lt;td&gt;Gray&lt;/td&gt;
- &lt;td&gt;Baseline&lt;/td&gt;
- &lt;td style="text-align: center"&gt;1x&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Uncommon (2)&lt;/td&gt;
- &lt;td&gt;Green&lt;/td&gt;
- &lt;td&gt;+20% speed, −20% energy&lt;/td&gt;
- &lt;td style="text-align: center"&gt;1.2x faster, 0.8x power&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Rare (3)&lt;/td&gt;
- &lt;td&gt;Blue&lt;/td&gt;
- &lt;td&gt;+40% speed, −40% energy, +2 range&lt;/td&gt;
- &lt;td style="text-align: center"&gt;1.4x faster, 0.6x power&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Epic (4)&lt;/td&gt;
- &lt;td&gt;Purple&lt;/td&gt;
- &lt;td&gt;+60% speed, −60% energy, +4 range&lt;/td&gt;
- &lt;td style="text-align: center"&gt;1.6x faster, 0.4x power&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Legendary (5)&lt;/td&gt;
- &lt;td&gt;Orange&lt;/td&gt;
- &lt;td&gt;+80% speed, −80% energy, +6 range, +2 AoE&lt;/td&gt;
- &lt;td style="text-align: center"&gt;1.8x faster, 0.2x power&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="what-each-tier-unlocks"&gt;What Each Tier Unlocks&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Uncommon (Green)&lt;/strong&gt; — Your entry point into quality. A single quality module 1 in an assembler gives a 1% chance. At this tier you start accumulating quality gears, circuits, and other intermediates. Use them to build your first uncommon assemblers and miners — the speed boost is noticeable.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality Modules on Factorio Guide</title>
+    <link>https://factorioguides.com/space-age/quality/</link>
+    <description>Recent content in Quality Modules on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/space-age/quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</title>
+      <link>https://factorioguides.com/space-age/quality/upcycling-loop/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/quality/upcycling-loop/</guid>
+      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a2e,#2a1a0a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;&#34;&gt;COMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;&#34;&gt;UNCOMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;&#34;&gt;RARE&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;&#34;&gt;EPIC&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;&#34;&gt;LEGENDARY&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;In Space Age, quality modules let you craft items at higher tiers — uncommon, rare, epic, and legendary. But the odds of rolling a legendary item from common ingredients are &lt;strong&gt;vanishingly small&lt;/strong&gt;. The solution? &lt;strong&gt;Upcycling loops&lt;/strong&gt;: a closed-loop system where an assembler and recycler work together to repeatedly process items until they emerge at the desired quality tier. Start with https://factorioguides.com/space-age/quality/quality-module-guide/ for the fundamentals of quality probability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quality Modules — Space Age New Mechanic Explained</title>
+      <link>https://factorioguides.com/space-age/quality/quality-module-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/quality/quality-module-guide/</guid>
+      <description>&lt;!-- Article Hero --&gt;&#xD;&#xA;&lt;div class=&#34;article-hero-img&#34; style=&#34;background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;&#34;&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;&#34;&gt;COMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;&#34;&gt;UNCOMMON&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;&#34;&gt;RARE&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;&#34;&gt;EPIC&lt;/span&gt;&#xD;&#xA;&lt;span style=&#34;font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;&#34;&gt;LEGENDARY&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-quality&#34;&gt;What Is Quality?&lt;/h2&gt;&#xA;&lt;p&gt;In Space Age, items can have &lt;strong&gt;5 quality tiers&lt;/strong&gt;. Higher quality items work better — &lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;https://factorioguides.com/images/icon/quality-module.png&#34; alt=&#34;quality-module&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Quality&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; quality modules are the gateway to this whole system. For the upcycling loop design, see https://factorioguides.com/space-age/quality/upcycling-loop/.&lt;/p&gt;&#xA;&lt;p&gt;| Tier | Color | Bonus | Effective Effect |&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Tier&lt;/th&gt;&#xA;          &lt;th&gt;Color&lt;/th&gt;&#xA;          &lt;th&gt;Bonus&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Effective Effect&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Common (1)&lt;/td&gt;&#xA;          &lt;td&gt;Gray&lt;/td&gt;&#xA;          &lt;td&gt;Baseline&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;1x&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Uncommon (2)&lt;/td&gt;&#xA;          &lt;td&gt;Green&lt;/td&gt;&#xA;          &lt;td&gt;+20% speed, −20% energy&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;1.2x faster, 0.8x power&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rare (3)&lt;/td&gt;&#xA;          &lt;td&gt;Blue&lt;/td&gt;&#xA;          &lt;td&gt;+40% speed, −40% energy, +2 range&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;1.4x faster, 0.6x power&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Epic (4)&lt;/td&gt;&#xA;          &lt;td&gt;Purple&lt;/td&gt;&#xA;          &lt;td&gt;+60% speed, −60% energy, +4 range&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;1.6x faster, 0.4x power&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Legendary (5)&lt;/td&gt;&#xA;          &lt;td&gt;Orange&lt;/td&gt;&#xA;          &lt;td&gt;+80% speed, −80% energy, +6 range, +2 AoE&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;1.8x faster, 0.2x power&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;what-each-tier-unlocks&#34;&gt;What Each Tier Unlocks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Uncommon (Green)&lt;/strong&gt; — Your entry point into quality. A single quality module 1 in an assembler gives a 1% chance. At this tier you start accumulating quality gears, circuits, and other intermediates. Use them to build your first uncommon assemblers and miners — the speed boost is noticeable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

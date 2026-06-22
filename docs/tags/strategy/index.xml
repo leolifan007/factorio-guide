@@ -1,7 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strategy on Factorio Guide</title><link>https://factorioguides.com/tags/strategy/</link><description>Recent content in Strategy on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/strategy/index.xml" rel="self" type="application/rss+xml"/><item><title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title><link>https://factorioguides.com/space-age/guide/planet-order-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/guide/planet-order-guide/</guid><description>&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry — it doubles your iron and steel production instantly. See https://factorioguides.com/space-age/guide/vulcanus-guide/ for the full landing prep. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;
-
-&lt;div class="section-head"&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;
-
-&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description></item><item><title>Cross-Planet Logistics — What to Ship Between Planets and Cargo Rocket Automation</title><link>https://factorioguides.com/space-age/platform/cross-planet-logistics/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/platform/cross-planet-logistics/</guid><description>&lt;p&gt;The Factorio Space Age endgame is a five-planet interplanetary empire. Each planet produces unique resources that the others need, and the cargo rocket is your supply line. See https://factorioguides.com/space-age/guide/planet-order-guide/ for which planet to visit when, and https://factorioguides.com/space-age/platform/space-platform-guide/ for platform fundamentals. Get the logistics wrong and your Gleba science packs rot waiting for a ride, or your Aquilo platform starves because you forgot calcite.&lt;/p&gt;
-&lt;p&gt;This guide covers what to ship, where to ship it, and how to automate the whole operation with cargo rocket circuits and space platform buffers.&lt;/p&gt;</description></item><item><title>Space Platform Ship Design for All Planets — Asteroid Defense and Fuel Ratios</title><link>https://factorioguides.com/space-age/platform/ship-design/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/platform/ship-design/</guid><description>&lt;p&gt;Your first space platform coasts on Nauvis orbit — slow, bulky, barely armed. It made the trip to Fulgora but almost didn't brake in time. The next planet is farther. The asteroids are bigger. The fuel runs out faster. You need a ship design that works for every route: from the calm Nauvis hub to the asteroid hell of the Aquilo run.&lt;/p&gt;
-&lt;p&gt;Here are three proven ship layouts, matched to planet routes, fuel ratios, and defense requirements. Start with https://factorioguides.com/space-age/platform/space-platform-guide/ for platform fundamentals.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy on Factorio Guide</title>
+    <link>https://factorioguides.com/tags/strategy/</link>
+    <description>Recent content in Strategy on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://factorioguides.com/tags/strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title>
+      <link>https://factorioguides.com/space-age/guide/planet-order-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/guide/planet-order-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry — it doubles your iron and steel production instantly. See https://factorioguides.com/space-age/guide/vulcanus-guide/ for the full landing prep. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cross-Planet Logistics — What to Ship Between Planets and Cargo Rocket Automation</title>
+      <link>https://factorioguides.com/space-age/platform/cross-planet-logistics/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/platform/cross-planet-logistics/</guid>
+      <description>&lt;p&gt;The Factorio Space Age endgame is a five-planet interplanetary empire. Each planet produces unique resources that the others need, and the cargo rocket is your supply line. See https://factorioguides.com/space-age/guide/planet-order-guide/ for which planet to visit when, and https://factorioguides.com/space-age/platform/space-platform-guide/ for platform fundamentals. Get the logistics wrong and your Gleba science packs rot waiting for a ride, or your Aquilo platform starves because you forgot calcite.&lt;/p&gt;&#xA;&lt;p&gt;This guide covers what to ship, where to ship it, and how to automate the whole operation with cargo rocket circuits and space platform buffers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Space Platform Ship Design for All Planets — Asteroid Defense and Fuel Ratios</title>
+      <link>https://factorioguides.com/space-age/platform/ship-design/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://factorioguides.com/space-age/platform/ship-design/</guid>
+      <description>&lt;p&gt;Your first space platform coasts on Nauvis orbit — slow, bulky, barely armed. It made the trip to Fulgora but almost didn&#39;t brake in time. The next planet is farther. The asteroids are bigger. The fuel runs out faster. You need a ship design that works for every route: from the calm Nauvis hub to the asteroid hell of the Aquilo run.&lt;/p&gt;&#xA;&lt;p&gt;Here are three proven ship layouts, matched to planet routes, fuel ratios, and defense requirements. Start with https://factorioguides.com/space-age/platform/space-platform-guide/ for platform fundamentals.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

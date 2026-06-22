@@ -1,39 +1,589 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line."><title>Quality Modules — Space Age New Mechanic Explained | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/space-age/quality/quality-module-guide/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Quality Modules — Space Age New Mechanic Explained"><meta property="og:description" content="How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/space-age/quality/quality-module-guide/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Quality Modules — Space Age New Mechanic Explained</h1><p class=article-desc>How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 18, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-6 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=section-layout><nav class=section-nav id=sectionNav><div class=section-nav-title>Quality Modules</div><div class=section-nav-list><a href=/space-age/quality/ class=section-nav-item><span class=section-nav-icon style="font-style:italic;font-family:serif;font-size:.85rem;background:0 0">i</span>
-<span class=section-nav-name>About this section</span>
-</a><a href=/space-age/quality/upcycling-loop/ class=section-nav-item><span class=section-nav-name>Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</span>
-</a><a href=/space-age/quality/quality-module-guide/ class="section-nav-item is-active"><span class=section-nav-name>Quality Modules — Space Age New Mechanic Explained</span></a></div></nav><main class=section-content id=sectionContent><div class=section-content-inner id=sectionContentInner><div class=article-content><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/space-age/quality/>Quality Modules</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Quality Modules — Space Age New Mechanic Explained</span></nav><div class=article-hero-img style=background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem><span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#666;color:#fff">COMMON</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#2ecc71;color:#fff">UNCOMMON</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#3778c8;color:#fff">RARE</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#9b59b6;color:#fff">EPIC</span>
-<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:.3rem .6rem;border-radius:4px;background:#e67e22;color:#fff">LEGENDARY</span></div><h2 id=what-is-quality>What Is Quality?</h2><p>In Space Age, items can have <strong>5 quality tiers</strong>. Higher quality items work better — <span class=game-slot><img src=/images/icon/quality-module.png alt=quality-module class=game-img loading=lazy>
-<span class=game-name>Quality</span>
-</span>quality modules are the gateway to this whole system. For the upcycling loop design, see https://factorioguides.com/space-age/quality/upcycling-loop/.</p><p>| Tier | Color | Bonus | Effective Effect |</p><table><thead><tr><th>Tier</th><th>Color</th><th>Bonus</th><th style=text-align:center>Effective Effect</th></tr></thead><tbody><tr><td>Common (1)</td><td>Gray</td><td>Baseline</td><td style=text-align:center>1x</td></tr><tr><td>Uncommon (2)</td><td>Green</td><td>+20% speed, −20% energy</td><td style=text-align:center>1.2x faster, 0.8x power</td></tr><tr><td>Rare (3)</td><td>Blue</td><td>+40% speed, −40% energy, +2 range</td><td style=text-align:center>1.4x faster, 0.6x power</td></tr><tr><td>Epic (4)</td><td>Purple</td><td>+60% speed, −60% energy, +4 range</td><td style=text-align:center>1.6x faster, 0.4x power</td></tr><tr><td>Legendary (5)</td><td>Orange</td><td>+80% speed, −80% energy, +6 range, +2 AoE</td><td style=text-align:center>1.8x faster, 0.2x power</td></tr></tbody></table><h3 id=what-each-tier-unlocks>What Each Tier Unlocks</h3><p><strong>Uncommon (Green)</strong> — Your entry point into quality. A single quality module 1 in an assembler gives a 1% chance. At this tier you start accumulating quality gears, circuits, and other intermediates. Use them to build your first uncommon assemblers and miners — the speed boost is noticeable.</p><p><strong>Rare (Blue)</strong> — The practical tier. Rare <span class=game-slot><img src=/images/icon/speed-module.png alt=speed-module class=game-img loading=lazy>
-<span class=game-name>Speed module</span>
-</span>speed modules in beacons have a major impact. Rare assemblers with rare modules produce significantly more per machine. This is the tier most mid-game factories should target: it's achievable without dedicated upcycling loops.</p><p><strong>Epic (Purple)</strong> — The commitment tier. Reaching epic consistently requires a dedicated upcycling loop with quality module 3s and recyclers. Epic <span class=game-slot><img src=/images/icon/assembler.png alt=assembler class=game-img loading=lazy>
-<span class=game-name>Assembler</span>
-</span>assemblers with epic modules are the backbone of endgame science production.</p><p><strong>Legendary (Orange)</strong> — The ultimate tier. Legendary items are 1.8x faster and consume 80% less energy. A legendary beacon with legendary speed module 3s affects nearby machines 3.2x more than a common one. The upcycling loop required to reach legendary is complex but deeply rewarding.</p><h2 id=how-quality-is-generated>How Quality Is Generated</h2><p><strong>Quality modules</strong> in assemblers/machines give a chance for the output to be a higher quality tier.</p><table><thead><tr><th>Module</th><th style=text-align:center>Quality Chance</th><th style=text-align:center>Speed Penalty</th><th style=text-align:center>Max Chance (4 slots)</th></tr></thead><tbody><tr><td>Quality module 1</td><td style=text-align:center>1% per module</td><td style=text-align:center>−10%</td><td style=text-align:center>4%</td></tr><tr><td>Quality module 2</td><td style=text-align:center>5% per module</td><td style=text-align:center>−15%</td><td style=text-align:center>20%</td></tr><tr><td>Quality module 3</td><td style=text-align:center>10% per module</td><td style=text-align:center>−20%</td><td style=text-align:center>40%</td></tr></tbody></table><div class=warning-box><strong>Important:</strong> Quality modules <em>slow down</em> production. The speed penalty applies per module, so 4 quality module 3s in an assembler reduce speed by 80%. Always balance quality chance against production speed.</div><h3 id=cumulative-quality-probability-table>Cumulative Quality Probability Table</h3><p>When multiple quality modules are stacked, the quality chance compounds. Here's the effective probability per craft for reaching <strong>each tier</strong>:</p><table><thead><tr><th style=text-align:left>Configuration</th><th style=text-align:center>Uncommon</th><th style=text-align:center>Rare</th><th style=text-align:center>Epic</th><th style=text-align:center>Legendary</th></tr></thead><tbody><tr><td style=text-align:left>1× QM1</td><td style=text-align:center>1%</td><td style=text-align:center>0.01%</td><td style=text-align:center>—</td><td style=text-align:center>—</td></tr><tr><td style=text-align:left>2× QM1</td><td style=text-align:center>2%</td><td style=text-align:center>0.02%</td><td style=text-align:center>—</td><td style=text-align:center>—</td></tr><tr><td style=text-align:left>4× QM1</td><td style=text-align:center>4%</td><td style=text-align:center>0.04%</td><td style=text-align:center>—</td><td style=text-align:center>—</td></tr><tr><td style=text-align:left>1× QM2</td><td style=text-align:center>5%</td><td style=text-align:center>0.25%</td><td style=text-align:center>0.01%</td><td style=text-align:center>—</td></tr><tr><td style=text-align:left>2× QM2</td><td style=text-align:center>10%</td><td style=text-align:center>1%</td><td style=text-align:center>0.05%</td><td style=text-align:center>—</td></tr><tr><td style=text-align:left>4× QM2</td><td style=text-align:center>20%</td><td style=text-align:center>4%</td><td style=text-align:center>0.4%</td><td style=text-align:center>0.02%</td></tr><tr><td style=text-align:left>1× QM3</td><td style=text-align:center>10%</td><td style=text-align:center>1%</td><td style=text-align:center>0.1%</td><td style=text-align:center>0.01%</td></tr><tr><td style=text-align:left>2× QM3</td><td style=text-align:center>20%</td><td style=text-align:center>4%</td><td style=text-align:center>0.8%</td><td style=text-align:center>0.08%</td></tr><tr><td style=text-align:left>4× QM3</td><td style=text-align:center>40%</td><td style=text-align:center>16%</td><td style=text-align:center>6.4%</td><td style=text-align:center>1.28%</td></tr></tbody></table><p>As you can see, a single quality module 3 has a 1% chance per craft to produce a rare item. Four of them push that to 16%. And the chance to produce a legendary from scratch is only 1.28% — that's why the upcycling loop is essential.</p><img src=/images/diagrams/space-age/quality-upcycling-loop.svg alt="Quality module tier progression from common to legendary via the recycler upcycling loop" class=schema-diagram loading=lazy width=760><h2 id=building-a-quality-production-line>Building a Quality Production Line</h2><h3 id=the-recycler-trick>The Recycler Trick</h3><p>In Space Age, <strong>recyclers</strong> break items back into raw materials. But they also have a chance to <strong>upgrade</strong> the item's quality!</p><ol><li>Build an assembler with <strong>quality modules</strong></li><li>Output goes to a <strong>recycler</strong></li><li>Recycler has a chance to output <strong>higher quality</strong> version</li><li>Sort the output by quality using <strong>quality filters</strong> on inserters</li></ol><h3 id=quality-filter-inserters>Quality Filter Inserters</h3><p>Inserters can be set to only pick up items of a specific quality:</p><ol><li>Select the inserter</li><li>Click the <strong>quality filter</strong> button</li><li>Choose which quality tier to pick up</li></ol><p>Quality modules pair naturally with <a href=https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/>Fulgora’s scrap recycling</a>—recyclers can upgrade item quality while breaking scrap down. Here’s what to prioritize:</p><h2 id=which-items-to-upgrade-first>Which Items to Upgrade First?</h2><p>Priority list for quality:</p><table><thead><tr><th>Priority</th><th>Item</th><th>Why</th></tr></thead><tbody><tr><td>1</td><td><strong>Beacons</strong></td><td>More beacons = more speed modules affecting machines</td></tr><tr><td>—</td><td><strong>Space platform thrusters</strong></td><td>Rare thrusters use less fuel—see <a href=https://factorioguides.com/space-age/platform/space-platform-guide/>Space Platform Guide</a></td></tr><tr><td>2</td><td><strong>Speed modules</strong></td><td>Faster machines = more production</td></tr><tr><td>3</td><td><strong>Electric furnaces</strong></td><td>Faster smelting = more plates</td></tr><tr><td>4</td><td><strong>Miners</strong></td><td>More mining speed = more ore</td></tr><tr><td>5</td><td><strong>Power armor</strong></td><td>Better defense and equipment</td></tr></tbody></table><h2 id=the-quality-upcycling-loop>The Quality Upcycling Loop</h2><p>To reach <span class=game-slot><img src=/images/icon/quality-module.png alt=quality-module class=game-img loading=lazy>
-<span class=game-name>Quality</span>
-</span>epic and legendary tiers consistently, you need a <strong>quality upcycling loop</strong>:</p><ol><li><strong>Feed</strong> common items into an assembler with quality modules</li><li><strong>Recycle</strong> the output using a <span class=game-slot><img src=/images/icon/recycler.png alt=recycler class=game-img loading=lazy>
-<span class=game-name>Recycler</span>
-</span>recycler also equipped with quality modules</li><li><strong>Filter</strong> higher-quality items into separate chests (use quality-filtered inserters)</li><li><strong>Loop</strong> common-quality outputs back into the assembler</li></ol><p>The recycler has a 25% chance per recipe to <em>not</em> return the item — it simply deletes it. But when it does return materials, each material has its own independent quality upgrade chance based on the recycler's quality modules. This creates a cascading probability:</p><h3 id=probability-cascade-4-qm3-in-both-assembler-and-recycler>Probability Cascade (4× QM3 in Both Assembler and Recycler)</h3><table><thead><tr><th style=text-align:left>Step</th><th style=text-align:center>Common → Uncommon</th><th style=text-align:center>Common → Rare</th><th style=text-align:center>Common → Epic</th><th style=text-align:center>Common → Legendary</th></tr></thead><tbody><tr><td style=text-align:left>Assembler output</td><td style=text-align:center>40% uncommon</td><td style=text-align:center>16% rare</td><td style=text-align:center>6.4% epic</td><td style=text-align:center>1.28% legendary</td></tr><tr><td style=text-align:left>Recycler (of common)</td><td style=text-align:center>10% uncommon</td><td style=text-align:center>4% rare</td><td style=text-align:center>1.6% epic</td><td style=text-align:center>0.32% legendary</td></tr><tr><td style=text-align:left>Combined per cycle</td><td style=text-align:center>~50% → uncommon</td><td style=text-align:center>~20% → rare</td><td style=text-align:center>~8% → epic</td><td style=text-align:center>~1.6% → legendary</td></tr></tbody></table><p>This means roughly 1 in 60 items turned through the loop will emerge as legendary. Scale up to get there faster.</p><h2 id=quality-on-space-platforms>Quality on Space Platforms</h2><p>Quality modules work <strong>only in machines</strong>, not in space platform crushers or furnaces. However, you can use quality <span class=game-slot><img src=/images/icon/assembler.png alt=assembler class=game-img loading=lazy>
-<span class=game-name>Assembler</span>
-</span>assemblers on platforms to craft quality ammo, fuel, and building materials. A common strategy:</p><ol><li>Build a small quality loop on Nauvis to produce rare/epic platform parts</li><li>Launch those quality parts to orbit</li><li>Use quality thrusters and engines on your platform for fuel efficiency</li></ol><p>Rare+ thrusters consume significantly less fuel per trip, making deep-space travel to Aquilo and beyond much more feasible.</p><h2 id=when-to-start-quality>When to Start Quality</h2><table><thead><tr><th style=text-align:left>Game Phase</th><th style=text-align:center>Quality Goal</th><th style=text-align:left>Method</th></tr></thead><tbody><tr><td style=text-align:left>Early Nauvis (pre-rocket)</td><td style=text-align:center>Ignore for now</td><td style=text-align:left>Focus on throughput, not quality</td></tr><tr><td style=text-align:left>First planet visited</td><td style=text-align:center>Start with QM1s on key intermediates</td><td style=text-align:left>Stick 1-2 QM1s in gear/circuit production</td></tr><tr><td style=text-align:left>Fulgora established</td><td style=text-align:center>Build first dedicated quality loop</td><td style=text-align:left>Scrap recycling naturally gives quality items</td></tr><tr><td style=text-align:left>Post-inner planets</td><td style=text-align:center>Scale to QM3 upcycling</td><td style=text-align:left>Dedicated loop with full quality infrastructure</td></tr><tr><td style=text-align:left>Megabase (100+ SPM)</td><td style=text-align:center>Target legendary everything</td><td style=text-align:left>Multiple parallel loops with circuit control</td></tr></tbody></table><p>The golden rule: <strong>don't optimize quality before you have quantities.</strong> Get your base running at 30-60 SPM on all sciences before investing heavily in quality upcycling.</p><h3 id=tips-and-pitfalls>Tips and Pitfalls</h3><ul><li><strong>Use circuit conditions</strong> on inserters to prevent mixed-quality chests</li><li><strong>Quality-filtered logistics requests</strong> in requester chests let you specify legendary items for your mall</li><li><strong>Speed beacons counteract</strong> the speed penalty from quality modules — place beacons around quality assemblers</li><li><strong>Don't quality-loop everything</strong> — focus on items with high crafting cost and high impact (modules, beacons, furnaces)</li><li><strong>Recyclers lose 75% of items</strong>, so choose looped items carefully</li></ul><p><strong>Next:</strong> <a href=https://factorioguides.com/space-age/>Space Age Overview</a> — all new planets and mechanics.</p><div class=back-to-section><a href=/space-age/quality/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Quality Modules</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/space-age/quality/upcycling-loop/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Q</text></svg></div><div class=related-body><h4>Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</h4><p>Quality module upcycling loop design for Factorio Space Age. Recycling strategies, quality probability tables, optimal module tiers, and legendary equipment production.</p></div></a></div></div></div></div></main><div class=adsterra-sidebar><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.">
+  <title>Quality Modules — Space Age New Mechanic Explained | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="https://factorioguides.com/space-age/quality/quality-module-guide/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Quality Modules — Space Age New Mechanic Explained">
+  <meta property="og:description" content="How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://factorioguides.com/space-age/quality/quality-module-guide/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Quality Modules — Space Age New Mechanic Explained</h1><p class="article-desc">How the Quality module system works in Factorio Space Age. Tiers, probabilities, and how to build a quality production line.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 18, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          6 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="section-layout">
+
+    
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Quality Modules</div>
+      <div class="section-nav-list">
+        <a href="/space-age/quality/" class="section-nav-item">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        
+        <a href="/space-age/quality/upcycling-loop/" class="section-nav-item">
+          <span class="section-nav-name">Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</span>
+          
+        </a>
+        
+        <a href="/space-age/quality/quality-module-guide/" class="section-nav-item is-active">
+          <span class="section-nav-name">Quality Modules — Space Age New Mechanic Explained</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+    
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+          <nav class="breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            
+            <a href="/space-age/quality/">Quality Modules</a>
+            
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Quality Modules — Space Age New Mechanic Explained</span>
+          </nav>
+
+          <!-- Article Hero -->
+<div class="article-hero-img" style="background:linear-gradient(135deg,#1a0a3a,#0a1a3a);height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#666;color:#fff;">COMMON</span>
+<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#2ecc71;color:#fff;">UNCOMMON</span>
+<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#3778c8;color:#fff;">RARE</span>
+<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#9b59b6;color:#fff;">EPIC</span>
+<span style="font-family:Orbitron,sans-serif;font-size:1.2rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:4px;background:#e67e22;color:#fff;">LEGENDARY</span>
+</div>
+<h2 id="what-is-quality">What Is Quality?</h2>
+<p>In Space Age, items can have <strong>5 quality tiers</strong>. Higher quality items work better — <span class="game-slot"><img src="/images/icon/quality-module.png" alt="quality-module" class="game-img" loading="lazy">
+  <span class="game-name">Quality</span>
+</span>
+ quality modules are the gateway to this whole system. For the upcycling loop design, see https://factorioguides.com/space-age/quality/upcycling-loop/.</p>
+<p>| Tier | Color | Bonus | Effective Effect |</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tier</th>
+          <th>Color</th>
+          <th>Bonus</th>
+          <th style="text-align: center">Effective Effect</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Common (1)</td>
+          <td>Gray</td>
+          <td>Baseline</td>
+          <td style="text-align: center">1x</td>
+      </tr>
+      <tr>
+          <td>Uncommon (2)</td>
+          <td>Green</td>
+          <td>+20% speed, −20% energy</td>
+          <td style="text-align: center">1.2x faster, 0.8x power</td>
+      </tr>
+      <tr>
+          <td>Rare (3)</td>
+          <td>Blue</td>
+          <td>+40% speed, −40% energy, +2 range</td>
+          <td style="text-align: center">1.4x faster, 0.6x power</td>
+      </tr>
+      <tr>
+          <td>Epic (4)</td>
+          <td>Purple</td>
+          <td>+60% speed, −60% energy, +4 range</td>
+          <td style="text-align: center">1.6x faster, 0.4x power</td>
+      </tr>
+      <tr>
+          <td>Legendary (5)</td>
+          <td>Orange</td>
+          <td>+80% speed, −80% energy, +6 range, +2 AoE</td>
+          <td style="text-align: center">1.8x faster, 0.2x power</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="what-each-tier-unlocks">What Each Tier Unlocks</h3>
+<p><strong>Uncommon (Green)</strong> — Your entry point into quality. A single quality module 1 in an assembler gives a 1% chance. At this tier you start accumulating quality gears, circuits, and other intermediates. Use them to build your first uncommon assemblers and miners — the speed boost is noticeable.</p>
+<p><strong>Rare (Blue)</strong> — The practical tier. Rare <span class="game-slot"><img src="/images/icon/speed-module.png" alt="speed-module" class="game-img" loading="lazy">
+  <span class="game-name">Speed module</span>
+</span>
+ speed modules in beacons have a major impact. Rare assemblers with rare modules produce significantly more per machine. This is the tier most mid-game factories should target: it's achievable without dedicated upcycling loops.</p>
+<p><strong>Epic (Purple)</strong> — The commitment tier. Reaching epic consistently requires a dedicated upcycling loop with quality module 3s and recyclers. Epic <span class="game-slot"><img src="/images/icon/assembler.png" alt="assembler" class="game-img" loading="lazy">
+  <span class="game-name">Assembler</span>
+</span>
+ assemblers with epic modules are the backbone of endgame science production.</p>
+<p><strong>Legendary (Orange)</strong> — The ultimate tier. Legendary items are 1.8x faster and consume 80% less energy. A legendary beacon with legendary speed module 3s affects nearby machines 3.2x more than a common one. The upcycling loop required to reach legendary is complex but deeply rewarding.</p>
+<h2 id="how-quality-is-generated">How Quality Is Generated</h2>
+<p><strong>Quality modules</strong> in assemblers/machines give a chance for the output to be a higher quality tier.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Module</th>
+          <th style="text-align: center">Quality Chance</th>
+          <th style="text-align: center">Speed Penalty</th>
+          <th style="text-align: center">Max Chance (4 slots)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Quality module 1</td>
+          <td style="text-align: center">1% per module</td>
+          <td style="text-align: center">−10%</td>
+          <td style="text-align: center">4%</td>
+      </tr>
+      <tr>
+          <td>Quality module 2</td>
+          <td style="text-align: center">5% per module</td>
+          <td style="text-align: center">−15%</td>
+          <td style="text-align: center">20%</td>
+      </tr>
+      <tr>
+          <td>Quality module 3</td>
+          <td style="text-align: center">10% per module</td>
+          <td style="text-align: center">−20%</td>
+          <td style="text-align: center">40%</td>
+      </tr>
+  </tbody>
+</table>
+<div class="warning-box">
+<strong>Important:</strong> Quality modules <em>slow down</em> production. The speed penalty applies per module, so 4 quality module 3s in an assembler reduce speed by 80%. Always balance quality chance against production speed.
+</div>
+<h3 id="cumulative-quality-probability-table">Cumulative Quality Probability Table</h3>
+<p>When multiple quality modules are stacked, the quality chance compounds. Here's the effective probability per craft for reaching <strong>each tier</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Configuration</th>
+          <th style="text-align: center">Uncommon</th>
+          <th style="text-align: center">Rare</th>
+          <th style="text-align: center">Epic</th>
+          <th style="text-align: center">Legendary</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1× QM1</td>
+          <td style="text-align: center">1%</td>
+          <td style="text-align: center">0.01%</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2× QM1</td>
+          <td style="text-align: center">2%</td>
+          <td style="text-align: center">0.02%</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4× QM1</td>
+          <td style="text-align: center">4%</td>
+          <td style="text-align: center">0.04%</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1× QM2</td>
+          <td style="text-align: center">5%</td>
+          <td style="text-align: center">0.25%</td>
+          <td style="text-align: center">0.01%</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2× QM2</td>
+          <td style="text-align: center">10%</td>
+          <td style="text-align: center">1%</td>
+          <td style="text-align: center">0.05%</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4× QM2</td>
+          <td style="text-align: center">20%</td>
+          <td style="text-align: center">4%</td>
+          <td style="text-align: center">0.4%</td>
+          <td style="text-align: center">0.02%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1× QM3</td>
+          <td style="text-align: center">10%</td>
+          <td style="text-align: center">1%</td>
+          <td style="text-align: center">0.1%</td>
+          <td style="text-align: center">0.01%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2× QM3</td>
+          <td style="text-align: center">20%</td>
+          <td style="text-align: center">4%</td>
+          <td style="text-align: center">0.8%</td>
+          <td style="text-align: center">0.08%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4× QM3</td>
+          <td style="text-align: center">40%</td>
+          <td style="text-align: center">16%</td>
+          <td style="text-align: center">6.4%</td>
+          <td style="text-align: center">1.28%</td>
+      </tr>
+  </tbody>
+</table>
+<p>As you can see, a single quality module 3 has a 1% chance per craft to produce a rare item. Four of them push that to 16%. And the chance to produce a legendary from scratch is only 1.28% — that's why the upcycling loop is essential.</p>
+<img src="/images/diagrams/space-age/quality-upcycling-loop.svg" alt="Quality module tier progression from common to legendary via the recycler upcycling loop" class="schema-diagram" loading="lazy" width="760">
+
+<h2 id="building-a-quality-production-line">Building a Quality Production Line</h2>
+<h3 id="the-recycler-trick">The Recycler Trick</h3>
+<p>In Space Age, <strong>recyclers</strong> break items back into raw materials. But they also have a chance to <strong>upgrade</strong> the item's quality!</p>
+<ol>
+<li>Build an assembler with <strong>quality modules</strong></li>
+<li>Output goes to a <strong>recycler</strong></li>
+<li>Recycler has a chance to output <strong>higher quality</strong> version</li>
+<li>Sort the output by quality using <strong>quality filters</strong> on inserters</li>
+</ol>
+<h3 id="quality-filter-inserters">Quality Filter Inserters</h3>
+<p>Inserters can be set to only pick up items of a specific quality:</p>
+<ol>
+<li>Select the inserter</li>
+<li>Click the <strong>quality filter</strong> button</li>
+<li>Choose which quality tier to pick up</li>
+</ol>
+<p>Quality modules pair naturally with <a href="https://factorioguides.com/space-age/fulgora/fulgora-recycling-guide/">Fulgora’s scrap recycling</a>—recyclers can upgrade item quality while breaking scrap down. Here’s what to prioritize:</p>
+<h2 id="which-items-to-upgrade-first">Which Items to Upgrade First?</h2>
+<p>Priority list for quality:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Priority</th>
+          <th>Item</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><strong>Beacons</strong></td>
+          <td>More beacons = more speed modules affecting machines</td>
+      </tr>
+      <tr>
+          <td>—</td>
+          <td><strong>Space platform thrusters</strong></td>
+          <td>Rare thrusters use less fuel—see <a href="https://factorioguides.com/space-age/platform/space-platform-guide/">Space Platform Guide</a></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><strong>Speed modules</strong></td>
+          <td>Faster machines = more production</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><strong>Electric furnaces</strong></td>
+          <td>Faster smelting = more plates</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><strong>Miners</strong></td>
+          <td>More mining speed = more ore</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td><strong>Power armor</strong></td>
+          <td>Better defense and equipment</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-quality-upcycling-loop">The Quality Upcycling Loop</h2>
+<p>To reach <span class="game-slot"><img src="/images/icon/quality-module.png" alt="quality-module" class="game-img" loading="lazy">
+  <span class="game-name">Quality</span>
+</span>
+ epic and legendary tiers consistently, you need a <strong>quality upcycling loop</strong>:</p>
+<ol>
+<li><strong>Feed</strong> common items into an assembler with quality modules</li>
+<li><strong>Recycle</strong> the output using a <span class="game-slot"><img src="/images/icon/recycler.png" alt="recycler" class="game-img" loading="lazy">
+  <span class="game-name">Recycler</span>
+</span>
+ recycler also equipped with quality modules</li>
+<li><strong>Filter</strong> higher-quality items into separate chests (use quality-filtered inserters)</li>
+<li><strong>Loop</strong> common-quality outputs back into the assembler</li>
+</ol>
+<p>The recycler has a 25% chance per recipe to <em>not</em> return the item — it simply deletes it. But when it does return materials, each material has its own independent quality upgrade chance based on the recycler's quality modules. This creates a cascading probability:</p>
+<h3 id="probability-cascade-4-qm3-in-both-assembler-and-recycler">Probability Cascade (4× QM3 in Both Assembler and Recycler)</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Step</th>
+          <th style="text-align: center">Common → Uncommon</th>
+          <th style="text-align: center">Common → Rare</th>
+          <th style="text-align: center">Common → Epic</th>
+          <th style="text-align: center">Common → Legendary</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Assembler output</td>
+          <td style="text-align: center">40% uncommon</td>
+          <td style="text-align: center">16% rare</td>
+          <td style="text-align: center">6.4% epic</td>
+          <td style="text-align: center">1.28% legendary</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Recycler (of common)</td>
+          <td style="text-align: center">10% uncommon</td>
+          <td style="text-align: center">4% rare</td>
+          <td style="text-align: center">1.6% epic</td>
+          <td style="text-align: center">0.32% legendary</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Combined per cycle</td>
+          <td style="text-align: center">~50% → uncommon</td>
+          <td style="text-align: center">~20% → rare</td>
+          <td style="text-align: center">~8% → epic</td>
+          <td style="text-align: center">~1.6% → legendary</td>
+      </tr>
+  </tbody>
+</table>
+<p>This means roughly 1 in 60 items turned through the loop will emerge as legendary. Scale up to get there faster.</p>
+<h2 id="quality-on-space-platforms">Quality on Space Platforms</h2>
+<p>Quality modules work <strong>only in machines</strong>, not in space platform crushers or furnaces. However, you can use quality <span class="game-slot"><img src="/images/icon/assembler.png" alt="assembler" class="game-img" loading="lazy">
+  <span class="game-name">Assembler</span>
+</span>
+ assemblers on platforms to craft quality ammo, fuel, and building materials. A common strategy:</p>
+<ol>
+<li>Build a small quality loop on Nauvis to produce rare/epic platform parts</li>
+<li>Launch those quality parts to orbit</li>
+<li>Use quality thrusters and engines on your platform for fuel efficiency</li>
+</ol>
+<p>Rare+ thrusters consume significantly less fuel per trip, making deep-space travel to Aquilo and beyond much more feasible.</p>
+<h2 id="when-to-start-quality">When to Start Quality</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Game Phase</th>
+          <th style="text-align: center">Quality Goal</th>
+          <th style="text-align: left">Method</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Early Nauvis (pre-rocket)</td>
+          <td style="text-align: center">Ignore for now</td>
+          <td style="text-align: left">Focus on throughput, not quality</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">First planet visited</td>
+          <td style="text-align: center">Start with QM1s on key intermediates</td>
+          <td style="text-align: left">Stick 1-2 QM1s in gear/circuit production</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fulgora established</td>
+          <td style="text-align: center">Build first dedicated quality loop</td>
+          <td style="text-align: left">Scrap recycling naturally gives quality items</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Post-inner planets</td>
+          <td style="text-align: center">Scale to QM3 upcycling</td>
+          <td style="text-align: left">Dedicated loop with full quality infrastructure</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Megabase (100+ SPM)</td>
+          <td style="text-align: center">Target legendary everything</td>
+          <td style="text-align: left">Multiple parallel loops with circuit control</td>
+      </tr>
+  </tbody>
+</table>
+<p>The golden rule: <strong>don't optimize quality before you have quantities.</strong> Get your base running at 30-60 SPM on all sciences before investing heavily in quality upcycling.</p>
+<h3 id="tips-and-pitfalls">Tips and Pitfalls</h3>
+<ul>
+<li><strong>Use circuit conditions</strong> on inserters to prevent mixed-quality chests</li>
+<li><strong>Quality-filtered logistics requests</strong> in requester chests let you specify legendary items for your mall</li>
+<li><strong>Speed beacons counteract</strong> the speed penalty from quality modules — place beacons around quality assemblers</li>
+<li><strong>Don't quality-loop everything</strong> — focus on items with high crafting cost and high impact (modules, beacons, furnaces)</li>
+<li><strong>Recyclers lose 75% of items</strong>, so choose looped items carefully</li>
+</ul>
+<p><strong>Next:</strong> <a href="https://factorioguides.com/space-age/">Space Age Overview</a> — all new planets and mechanics.</p>
+
+
+          
+          <div class="back-to-section">
+            <a href="/space-age/quality/" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to Quality Modules
+            </a>
+          </div>
+          
+
+          
+          
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              
+              <a href="/space-age/quality/upcycling-loop/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">Q</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Quality Module Upcycling Loop — From Uncommon to Legendary Without Waste</h4>
+                  <p>Quality module upcycling loop design for Factorio Space Age. Recycling strategies, quality probability tables, optimal module tiers, and legendary equipment production.</p>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+          
+
+          
+
+        </div>
+      </div>
+    </main>
+
+    
+    
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
+  </div>
+    <div class="adsterra-cpm-unit">
+      <script async="async" data-cfasync="false"
+        src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+      <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+    </div>
+    <div class="adsterra-cpm-unit">
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>
