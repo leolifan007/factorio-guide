@@ -1,4 +1,4 @@
-/* ========================================
+﻿/* ========================================
    Factorio Guide �?Factorio UI Style v5
    Redesigned: 2026-05-18
    Theme: Industrial / Game UI / Ad-ready
@@ -814,9 +814,6 @@ blockquote::before {
   font-size: 0.96rem;
   line-height: 1.8;
 }
-.section-content .article-content .breadcrumb {
-  display: none;
-}
 .section-content .article-content .related-articles {
   margin-top: 2rem;
 }
@@ -1006,7 +1003,7 @@ About/CTA Section ── */
 .ad-placeholder-size { font-size: 0.7rem; color: var(--text-dim); }
 
 /* ── Adsterra Partial Styles ── */
-.adsterra-sidebar { display: flex; flex-direction: column; gap: 0.75rem; width: 100%; }
+.adsterra-sidebar { width: var(--ad-w); flex-shrink: 0; display: flex; flex-direction: column; gap: 0.75rem; }
 .adsterra-iframe-wrap {
   overflow: hidden;
   border-radius: var(--radius);
@@ -1605,51 +1602,44 @@ About/CTA Section ── */
 }
 .game-slot {
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   vertical-align: middle;
-  gap: 0.35rem;
-  padding: 0.5rem 0.65rem;
+  gap: 0.05rem;
+  padding: 0.25rem 0.3rem 0.15rem;
   background: var(--bg-surface);
-  border: 1px solid var(--border-dk);
-  border-radius: var(--radius);
-  min-width: 80px;
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius-sm, 4px);
+  width: 80px;
+  text-align: center;
 }
 .game-slot.result {
-  border-color: var(--f-orange);
   background: var(--f-orange-faint);
+  border: 1px solid var(--f-orange);
 }
 .game-qty {
   font-size: 0.75rem;
-  color: var(--text-dim);
-  font-weight: 600;
+  color: var(--text-secondary);
+  font-weight: 700;
+  line-height: 1;
+  min-height: 0.75rem;
 }
 .game-img {
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
+  display: block;
 }
 .game-name {
-  font-size: 0.78rem;
-  color: var(--text-muted);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
   text-align: center;
   line-height: 1.2;
-  max-width: 90px;
+  max-width: 72px;
   word-break: break-word;
 }
 
-/* Inline material icons in paragraphs (shortcode {{< material >}}) */
-.game-slot-inline {
-  display: inline;
-  white-space: nowrap;
-}
-.game-icon-inline {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin: 0 2px;
-  object-fit: contain;
-}
+
 
 .game-plus {
   font-size: 1.1rem;

@@ -47,14 +47,14 @@ Space Age introduces **rocket logistics** 鈥?automated rocket launches between 
 ## Available Guides
 
 ### Inner Planets
-- **[Vulcanus Guide](vulcanus-guide)** — Foundry unlock, lava smelting, big drill, and first lander survival
-- **[Fulgora Recycling Guide](fulgora-recycling-guide)** — Scrap processing, sorting, and EM Plant production
-- **[Gleba Survival Guide](gleba-survival-guide)** — Spoilage management, pentapod defense, and science production
+- **[Vulcanus Guide](guide/vulcanus-guide)** — Foundry unlock, lava smelting, big drill, and first lander survival
+- **[Fulgora Recycling Guide](fulgora/fulgora-recycling-guide)** — Scrap processing, sorting, and EM Plant production
+- **[Gleba Survival Guide](gleba/gleba-survival-guide)** — Spoilage management, pentapod defense, and science production
 
 ### Endgame
-- **[Aquilo Guide](aquilo-guide)** — Heat management, strafer defense, and cryogenic science prep
-- **[Planet Order Guide](planet-order-guide)** — Optimal visit sequence: Vulcanus -> Fulgora -> Gleba -> Aquilo
+- **[Aquilo Guide](aquilo/aquilo-guide)** — Heat management, strafer defense, and cryogenic science prep
+- **[Planet Order Guide](guide/planet-order-guide)** — Optimal visit sequence: Vulcanus -> Fulgora -> Gleba -> Aquilo
 
 ### Systems
-- **[Space Platform Build Guide](space-platform-guide)** — Thruster fuel math, asteroid processing, and defense
-- **[Quality Modules Guide](quality-module-guide)** — Tier mechanics, probabilities, and production line design
+- **[Space Platform Build Guide](platform/space-platform-guide)** — Thruster fuel math, asteroid processing, and defense
+- **[Quality Modules Guide](quality/quality-module-guide)** — Tier mechanics, probabilities, and production line design

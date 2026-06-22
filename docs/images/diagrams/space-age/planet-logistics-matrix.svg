@@ -1,0 +1,194 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" height="760" style="background:#1a1a2e;border-radius:8px;font-family:sans-serif">
+  <title>Planet Import/Export Logistics Matrix — Factorio Space Age Guide</title>
+
+  <!-- Header -->
+  <rect x="0" y="0" height="48" fill="#1f1f2e" rx="8"/>
+  <rect x="0" y="42" height="6" fill="#1a1a2e"/>
+  <text x="380" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#e8941c">PLANET EXPORT/IMPORT LOGISTICS MATRIX</text>
+
+  <!-- Column headers (Destination →) -->
+  <text x="155" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#8899bb">SHIP TO →</text>
+  <text x="155" y="98" text-anchor="middle" font-size="11" fill="#667788">(Destination)</text>
+
+  <text x="155" y="142" text-anchor="middle" font-size="13" font-weight="700" fill="#88bb88">Nauvis</text>
+  <text x="155" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#ee7733">Vulcanus</text>
+  <text x="155" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#bb88ee">Fulgora</text>
+  <text x="155" y="460" text-anchor="middle" font-size="13" font-weight="700" fill="#88dd44">Gleba</text>
+  <text x="155" y="566" text-anchor="middle" font-size="13" font-weight="700" fill="#66bbdd">Aquilo</text>
+
+  <!-- Source ↔ arrow icon -->
+  <polygon points="170,78 180,88 170,98" fill="#667788"/>
+  <polygon points="170,140 180,150 170,160" fill="#667788"/>
+  <polygon points="170,246 180,256 170,266" fill="#667788"/>
+  <polygon points="170,352 180,362 170,372" fill="#667788"/>
+  <polygon points="170,458 180,468 170,478" fill="#667788"/>
+  <polygon points="170,564 180,574 170,584" fill="#667788"/>
+
+  <!-- Row labels (Source ↑) -->
+  <text x="60" y="120" transform="rotate(-90,60,120)" font-size="12" font-weight="700" fill="#8899bb">↑ SHIP FROM (Source)</text>
+
+  <circle cx="45" cy="155" r="16" fill="#1a3a1a" stroke="#88bb88" stroke-width="1.5"/>
+  <text x="45" y="160" text-anchor="middle" font-size="11" fill="#88bb88">🪐</text>
+
+  <circle cx="45" cy="261" r="16" fill="#2a1a0a" stroke="#ee7733" stroke-width="1.5"/>
+  <text x="45" y="266" text-anchor="middle" font-size="11" fill="#ee7733">🌋</text>
+
+  <circle cx="45" cy="367" r="16" fill="#1a0a2e" stroke="#bb88ee" stroke-width="1.5"/>
+  <text x="45" y="372" text-anchor="middle" font-size="11" fill="#bb88ee">⚡</text>
+
+  <circle cx="45" cy="473" r="16" fill="#0a2e0a" stroke="#88dd44" stroke-width="1.5"/>
+  <text x="45" y="478" text-anchor="middle" font-size="11" fill="#88dd44">🌿</text>
+
+  <circle cx="45" cy="579" r="16" fill="#0a1a2e" stroke="#66bbdd" stroke-width="1.5"/>
+  <text x="45" y="584" text-anchor="middle" font-size="11" fill="#66bbdd">❄️</text>
+
+  <!-- ===== CELLS ===== -->
+
+  <!-- === Row 1: Nauvis → Planet === -->
+
+  <!-- Nauvis → Vulcanus -->
+  <rect x="240" y="100" width="220" height="56" rx="6" fill="#1e1e2e" stroke="#ee7733" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="460" y1="100" x2="460" y2="156" stroke="#ee7733" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="265" y="122" font-size="11" fill="#ee7733">Uranium fuel cells</text>
+  <text x="265" y="140" font-size="11" fill="#aa8855">Quality module 3</text>
+  <polygon points="240,108 235,113 240,118" fill="#ee7733" opacity="0.5"/>
+
+  <!-- Nauvis → Fulgora -->
+  <rect x="240" y="206" width="220" height="56" rx="6" fill="#1e1e2e" stroke="#bb88ee" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="460" y1="206" x2="460" y2="262" stroke="#bb88ee" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="265" y="228" font-size="11" fill="#bb88ee">Rocket fuel</text>
+  <text x="265" y="246" font-size="11" fill="#aa8855">Building materials</text>
+  <polygon points="240,214 235,219 240,224" fill="#bb88ee" opacity="0.5"/>
+
+  <!-- Nauvis → Gleba -->
+  <rect x="240" y="312" width="220" height="56" rx="6" fill="#1e1e2e" stroke="#88dd44" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="460" y1="312" x2="460" y2="368" stroke="#88dd44" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="265" y="334" font-size="11" fill="#88dd44">Artillery shells</text>
+  <text x="265" y="352" font-size="11" fill="#aa8855">Uranium ammo</text>
+  <polygon points="240,320 235,325 240,330" fill="#88dd44" opacity="0.5"/>
+
+  <!-- Nauvis → Aquilo -->
+  <rect x="240" y="418" width="220" height="56" rx="6" fill="#1e2e3e" stroke="#66bbdd" stroke-width="1.5"/>
+  <line x1="460" y1="418" x2="460" y2="474" stroke="#66bbdd" stroke-width="1"/>
+  <text x="265" y="440" font-size="11" fill="#66bbdd" font-weight="bold">Iron / copper / steel</text>
+  <text x="265" y="458" font-size="11" fill="#66bbdd">Circuits, fuel, ammo</text>
+  <polygon points="240,426 235,431 240,436" fill="#66bbdd"/>
+
+  <!-- === Row 2: Vulcanus → Planet === -->
+
+  <!-- Vulcanus → Nauvis -->
+  <rect x="240" y="524" width="220" height="56" rx="6" fill="#1e1e2e" stroke="#88bb88" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="460" y1="524" x2="460" y2="580" stroke="#88bb88" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="265" y="546" font-size="11" fill="#88bb88">Calcite, foundry</text>
+  <text x="265" y="564" font-size="11" fill="#aa8855">Big miner, tungsten</text>
+  <polygon points="240,532 235,537 240,542" fill="#88bb88" opacity="0.5"/>
+
+  <!-- Vulcanus → Fulgora -->
+  <rect x="240" y="630" width="220" height="56" rx="6" fill="#1e1e2e" stroke="#bb88ee" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="460" y1="630" x2="460" y2="686" stroke="#bb88ee" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="265" y="652" font-size="11" fill="#bb88ee">Calcite, rocket parts</text>
+  <text x="265" y="670" font-size="11" fill="#aa8855">Tungsten</text>
+  <polygon points="240,638 235,643 240,648" fill="#bb88ee" opacity="0.5"/>
+
+  <!-- === Right-side cells (columns for each destination row) === -->
+
+  <!-- Column divider -->
+  <line x1="468" y1="100" x2="468" y2="696" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- === Column: Ship FROM each planet === -->
+
+  <!-- To Nauvis (row 1 header) -->
+  <text x="530" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#e8941c">↑ To Nauvis</text>
+
+  <!-- From Vulcanus → to Nauvis (shown above already) -->
+  <!-- Let me reorg: Right side = summary per destination -->
+
+  <!-- Nauvis imports column -->
+  <rect x="478" y="100" width="260" height="140" rx="6" fill="#1a1f1a" stroke="#88bb88" stroke-width="1" stroke-opacity="0.4"/>
+
+  <text x="490" y="122" font-size="12" font-weight="700" fill="#88bb88">Nauvis imports (science hub)</text>
+
+  <circle cx="492" cy="138" r="6" fill="#ee7733"/>
+  <text x="502" y="142" font-size="11" fill="#ccc">Calcite, foundry, big miner</text>
+
+  <circle cx="492" cy="156" r="6" fill="#bb88ee"/>
+  <text x="502" y="160" font-size="11" fill="#ccc">EM science, EM plants</text>
+
+  <circle cx="492" cy="174" r="6" fill="#88dd44"/>
+  <text x="502" y="178" font-size="11" fill="#ccc">Agri science, bioflux</text>
+
+  <circle cx="492" cy="192" r="6" fill="#66bbdd"/>
+  <text x="502" y="196" font-size="11" fill="#ccc">Cryogenic science, fusion</text>
+
+  <circle cx="492" cy="210" r="6" fill="#aa8855"/>
+  <text x="502" y="214" font-size="11" fill="#ccc">Rocket fuel (from Gleba)</text>
+
+  <circle cx="492" cy="228" r="6" fill="#888"/>
+  <text x="502" y="232" font-size="11" fill="#ccc">Rocket parts (from Vulcanus)</text>
+
+  <!-- Vulcanus imports column -->
+  <rect x="478" y="250" width="260" height="78" rx="6" fill="#1e1a16" stroke="#ee7733" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="490" y="272" font-size="12" font-weight="700" fill="#ee7733">Vulcanus imports</text>
+  <circle cx="492" cy="290" r="6" fill="#aa8855"/>
+  <text x="502" y="294" font-size="11" fill="#ccc">Bioflux, quality modules</text>
+  <circle cx="492" cy="310" r="6" fill="#888"/>
+  <text x="502" y="314" font-size="11" fill="#ccc">Uranium fuel cells</text>
+
+  <!-- Fulgora imports column -->
+  <rect x="478" y="338" width="260" height="100" rx="6" fill="#1a1620" stroke="#bb88ee" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="490" y="360" font-size="12" font-weight="700" fill="#bb88ee">Fulgora imports</text>
+  <circle cx="492" cy="378" r="6" fill="#ee7733"/>
+  <text x="502" y="382" font-size="11" fill="#ccc">Calcite, tungsten</text>
+  <circle cx="492" cy="396" r="6" fill="#88dd44"/>
+  <text x="502" y="400" font-size="11" fill="#ccc">Bioflux, rocket fuel</text>
+  <circle cx="492" cy="414" r="6" fill="#aa8855"/>
+  <text x="502" y="418" font-size="11" fill="#ccc">Building materials</text>
+
+  <!-- Gleba imports column -->
+  <rect x="478" y="448" width="260" height="78" rx="6" fill="#162014" stroke="#88dd44" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="490" y="470" font-size="12" font-weight="700" fill="#88dd44">Gleba imports</text>
+  <circle cx="492" cy="488" r="6" fill="#ee7733"/>
+  <text x="502" y="492" font-size="11" fill="#ccc">Calcite, artillery shells</text>
+  <circle cx="492" cy="508" r="6" fill="#aa8855"/>
+  <text x="502" y="512" font-size="11" fill="#ccc">Rocket fuel, uranium ammo</text>
+
+  <!-- Aquilo imports column -->
+  <rect x="478" y="536" width="260" height="156" rx="6" fill="#0e1a24" stroke="#66bbdd" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="490" y="558" font-size="12" font-weight="700" fill="#66bbdd">Aquilo imports (everything)</text>
+  <circle cx="492" cy="576" r="6" fill="#888"/>
+  <text x="502" y="580" font-size="11" fill="#66bbdd">Iron / copper / steel / stone</text>
+  <circle cx="492" cy="594" r="6" fill="#888"/>
+  <text x="502" y="598" font-size="11" fill="#66bbdd">Calcite, circuits, modules</text>
+  <circle cx="492" cy="612" r="6" fill="#888"/>
+  <text x="502" y="616" font-size="11" fill="#66bbdd">Rocket fuel, nuclear fuel</text>
+  <circle cx="492" cy="630" r="6" fill="#888"/>
+  <text x="502" y="634" font-size="11" fill="#66bbdd">Ammo (red + rockets)</text>
+  <circle cx="492" cy="648" r="6" fill="#888"/>
+  <text x="502" y="652" font-size="11" fill="#66bbdd">Bioflux, heating tower fuel</text>
+  <circle cx="492" cy="666" r="6" fill="#888"/>
+  <text x="502" y="670" font-size="11" fill="#66bbdd">Everything else!</text>
+
+  <!-- ===== Bottom Legend ===== -->
+  <rect x="10" y="700" width="730" height="48" rx="6" fill="#1f1f2e" stroke="#333" stroke-width="1"/>
+
+  <rect x="20" y="710" width="12" height="12" rx="2" fill="#88bb88" opacity="0.5"/>
+  <text x="36" y="720" font-size="10" fill="#8899bb">Nauvis</text>
+
+  <rect x="100" y="710" width="12" height="12" rx="2" fill="#ee7733" opacity="0.5"/>
+  <text x="116" y="720" font-size="10" fill="#8899bb">Vulcanus</text>
+
+  <rect x="185" y="710" width="12" height="12" rx="2" fill="#bb88ee" opacity="0.5"/>
+  <text x="201" y="720" font-size="10" fill="#8899bb">Fulgora</text>
+
+  <rect x="270" y="710" width="12" height="12" rx="2" fill="#88dd44" opacity="0.5"/>
+  <text x="286" y="720" font-size="10" fill="#8899bb">Gleba</text>
+
+  <rect x="345" y="710" width="12" height="12" rx="2" fill="#66bbdd" opacity="0.5"/>
+  <text x="361" y="720" font-size="10" fill="#8899bb">Aquilo</text>
+
+  <line x1="430" y1="715" x2="460" y2="715" stroke="#888" stroke-width="1.5"/>
+  <polygon points="460,711 470,715 460,719" fill="#888"/>
+  <text x="476" y="720" font-size="10" fill="#8899bb">Ship flow</text>
+
+  <text x="580" y="720" font-size="10" fill="#667788">Colors: Each row = source planet</text>
+</svg>

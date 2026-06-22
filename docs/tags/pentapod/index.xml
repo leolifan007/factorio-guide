@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pentapod on Factorio Guide</title>
+    <link>http://localhost:1319/tags/pentapod/</link>
+    <description>Recent content in Pentapod on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/pentapod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gleba Pentapod Defense -- Turret Placement and Spore Management Strategy</title>
+      <link>http://localhost:1319/space-age/gleba-pentapod-defense/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/gleba-pentapod-defense/</guid>
+      <description>&lt;p&gt;Gleba&#39;s defense is fundamentally different from Nauvis biters. &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/pentapod_egg.png&#34; alt=&#34;pentapod_egg&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Pentapod egg&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;s do not expand like biter nests -- they are spawned by stompers that patrol the swamp. The trigger is your &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/bioflux.png&#34; alt=&#34;bioflux&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Bioflux&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; production: every fruit tree and processor generates &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/spoilage.png&#34; alt=&#34;spoilage&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Spoilage&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; spores. More spores = more stompers. The winning strategy is not walls and turrets -- it is controlling the spore cloud.&lt;/p&gt;&#xA;&lt;div class=&#34;pro-tip&#34;&gt;&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Pentapod attack waves scale with spore cloud size, not evolution factor. Keep your fruit farms small and scattered. Build a spore containment perimeter: 4 &lt;div class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/gun_turret.png&#34; alt=&#34;gun_turret&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Gun turret&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

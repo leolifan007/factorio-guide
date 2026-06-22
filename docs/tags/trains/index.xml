@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trains on Factorio Guide</title><link>https://factorioguides.com/tags/trains/</link><description>Recent content in Trains on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/trains/index.xml" rel="self" type="application/rss+xml"/><item><title>LTN Mod Guide - Logistic Train Network Setup for Factorio</title><link>https://factorioguides.com/blueprints/ltn-mod-guide/</link><pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate><guid>https://factorioguides.com/blueprints/ltn-mod-guide/</guid><description>&lt;p&gt;LTN (Logistic Train Network) turns trains into logistic bots. &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/rail.png" alt="rail" class="game-img" loading="lazy"&gt;
+ &lt;span class="game-name"&gt;Rail&lt;/span&gt;
+&lt;/span&gt;
+ Trains automatically travel from providers to requesters based on supply and demand —no schedules needed.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build a depot for idle trains. Place provider stops where items are produced. Place requester stops where items are needed. LTN assigns trains automatically. Wire every stop to chests.&lt;/div&gt;
+
+&lt;img src="https://factorioguides.com/images/diagrams/ltn-3stop.svg" alt="LTN 3-stop system —depot, provider stop, and requester stop with train flow" class="schema-diagram" loading="lazy" width="900"&gt;
+
+&lt;h2 id="the-3-stop-system"&gt;The 3-Stop System&lt;/h2&gt;
+&lt;p&gt;LTN requires three stop types:&lt;/p&gt;</description></item></channel></rss>

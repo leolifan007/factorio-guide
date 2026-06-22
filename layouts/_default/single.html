@@ -37,74 +37,84 @@
     </div>
   </div>
 
-  <!-- ── Main Layout: [ad] [content+toc] [ad] ── -->
-  <div class="article-layout">
+  <!-- ── Main Layout: [nav] [content] [ad] ── -->
+  {{ $currentPage := . }}
+  <div class="section-layout">
 
-    <!-- Left Ad Slot -->
-    {{ partial "ad-sidebar.html" . }}
-
-    <!-- Center: TOC + Content -->
-    <div class="article-center">
-      <aside class="floating-toc" id="floatingToc">
-        <div class="toc-title">Contents</div>
-      </aside>
-      <div class="article-content" id="article-content">
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb">
-          <a href="{{ `/` | relURL }}">Home</a>
-          <span class="breadcrumb-sep">&rsaquo;</span>
-          {{ with .Parent }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ end }}
-          <span class="breadcrumb-sep">&rsaquo;</span>
-          <span class="breadcrumb-current">{{ .Title }}</span>
-        </nav>
-
-        {{ .Content | safeHTML }}
-
-        <!-- Back to Section -->
-        {{ with .Parent }}
-        <div class="back-to-section">
-          <a href="{{ .RelPermalink }}" class="btn btn-ghost">
-            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M10 4L6 8l4 4"/>
-            </svg>
-            Back to {{ .Title }}
-          </a>
-        </div>
+    <!-- Left: Section Article Navigation -->
+    {{ with .Parent }}
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">{{ .Title }}</div>
+      <div class="section-nav-list">
+        <a href="{{ .RelPermalink }}" class="section-nav-item{{ if not $currentPage.Parent }} is-active{{ end }}">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        {{ range .Pages.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}" class="section-nav-item{{ if eq .RelPermalink $currentPage.RelPermalink }} is-active{{ end }}">
+          <span class="section-nav-name">{{ .Title }}</span>
+          {{ if lt $.Page.Title .Title }}{{ end }}
+        </a>
         {{ end }}
-
-        <!-- Related Articles -->
-        {{ $currentPage := . }}
-        {{ with .Parent }}
-        {{ $siblings := where .Pages ".RelPermalink" "ne" $currentPage.RelPermalink }}
-        {{ if $siblings }}
-        <div class="related-articles">
-          <h3>Related Articles</h3>
-          <div class="related-grid">
-            {{ range first 6 $siblings }}
-            <a href="{{ .RelPermalink }}" class="related-card">
-              <div class="related-icon">
-                <svg viewBox="0 0 32 32" width="32" height="32">
-                  <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
-                  <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">{{ substr .Title 0 1 }}</text>
-                </svg>
-              </div>
-              <div class="related-body">
-                <h4>{{ .Title }}</h4>
-                <p>{{ .Description | default (truncate 60 .Summary) }}</p>
-              </div>
-            </a>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
-        {{ end }}
-
-        <!-- Adsterra Content-Bottom Ad -->
-        {{ partial "ad-content-bottom.html" . }}
       </div>
-    </div>
+    </nav>
+    {{ end }}
+
+    <!-- Center: Article Content -->
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          {{ partial "ad-header.html" . }}
+          <nav class="breadcrumb">
+            <a href="{{ `/` | relURL }}">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            {{ with .Parent }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">{{ .Title }}</span>
+          </nav>
+
+          {{ .Content | safeHTML }}
+
+          {{ with .Parent }}
+          <div class="back-to-section">
+            <a href="{{ .RelPermalink }}" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to {{ .Title }}
+            </a>
+          </div>
+          {{ end }}
+
+          {{ $siblings := where .Parent.Pages ".RelPermalink" "ne" $currentPage.RelPermalink }}
+          {{ if $siblings }}
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              {{ range first 6 $siblings }}
+              <a href="{{ .RelPermalink }}" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">{{ substr .Title 0 1 }}</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>{{ .Title }}</h4>
+                  <p>{{ .Description | default (truncate 60 .Summary) }}</p>
+                </div>
+              </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ partial "ad-content-bottom.html" . }}
+        </div>
+      </div>
+    </main>
 
     <!-- Right Ad Slot -->
     {{ partial "ad-sidebar.html" . }}

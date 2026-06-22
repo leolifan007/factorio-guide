@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Artillery on Factorio Guide</title><link>https://factorioguides.com/tags/artillery/</link><description>Recent content in Artillery on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 23 May 2026 19:09:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/artillery/index.xml" rel="self" type="application/rss+xml"/><item><title>Factorio Artillery Guide - Range, Shells and Outpost Setup</title><link>https://factorioguides.com/defense/artillery-guide/</link><pubDate>Wed, 27 May 2026 16:52:00 +0800</pubDate><guid>https://factorioguides.com/defense/artillery-guide/</guid><description>&lt;p&gt;Artillery is the endgame solution to biter bases. &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/gun_turret.png" alt="gun_turret" class="game-img" loading="lazy"&gt;
+ &lt;span class="game-name"&gt;Gun turret&lt;/span&gt;
+&lt;/span&gt;
+ Gun turrets and &lt;span class="game-slot"&gt;&lt;img src="https://factorioguides.com/images/icon/laser_turret.png" alt="laser_turret" class="game-img" loading="lazy"&gt;
+ &lt;span class="game-name"&gt;Laser turret&lt;/span&gt;
+&lt;/span&gt;
+ laser turrets defend your walls. Artillery deletes the threat before it reaches you.&lt;/p&gt;
+&lt;div class="pro-tip"&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Build artillery turrets at outposts, connect them to your rail network, and supply shells via trains. Research range to extend coverage. One shell destroys most biter bases in 2-3 shots.&lt;/div&gt;
+
+&lt;img src="https://factorioguides.com/images/diagrams/artillery-outpost.svg" alt="Artillery outpost logistics chain —main base shell production, train delivery, and targeting range" class="schema-diagram" loading="lazy" width="900"&gt;
+
+&lt;h2 id="how-artillery-works"&gt;How Artillery Works&lt;/h2&gt;
+&lt;p&gt;The artillery turret fires explosive shells at biter bases within range. Each shell deals massive area damage, destroying nests, worms, and biters in the blast radius.&lt;/p&gt;</description></item></channel></rss>

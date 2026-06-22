@@ -109,7 +109,7 @@ A dedicated electric engine sub-factory becomes necessary around 30 SPM. You can
 
 Purple science is where Factorio starts demanding real resource throughput. You need steel at scale, lubricant from your oil setup, and a small circuit factory running alongside everything else. Start at 5 SPM with 9 steel furnaces and 2 electric engine assemblers. Scale up in chunks rather than trying to build a 45 SPM setup from scratch -- the mid-game is about iteration, not perfection.
 
-**Next step:** After purple science, the logical next milestone is setting up a space platform for [space science]({{< ref "/space-age/space-platform-guide" >}}). Or you can tackle utility science (yellow) to unlock logistic robots and upgrade your factory logistics.
+**Next step:** After purple science, the logical next milestone is setting up a space platform for [space science]({{< ref "/space-age/platform/space-platform-guide" >}}). Or you can tackle utility science (yellow) to unlock logistic robots and upgrade your factory logistics.
 
 
 

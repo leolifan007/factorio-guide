@@ -74,7 +74,7 @@ The space science loop has three stages:
 2. **Launch:** Rocket launches automatically when the silo is full and a satellite is loaded. The satellite reaches your platform orbit.
 3. **Space science generation:** The platform hub converts the satellite into 1000 space science packs. These can be returned to Nauvis via your platform's cargo landing system.
 
-If you have already built a [space platform]({{< ref "/space-age/space-platform-guide" >}}), making science return is automatic -- the platform hub sends science packs down with every rocket launch. You just need enough cargo capacity.
+If you have already built a [space platform]({{< ref "/space-age/platform/space-platform-guide" >}}), making science return is automatic -- the platform hub sends science packs down with every rocket launch. You just need enough cargo capacity.
 
 
 

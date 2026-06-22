@@ -94,7 +94,7 @@ For a more advanced design with [circuit network]({{< ref "/blueprints/circuit-n
 
 Productivity modules are the only module type that does NOT benefit the Kovarex recipe. The recipe is flagged as non-productivity by design. Speed modules are the clear winner.
 
-Both speed and [quality modules]({{< ref "/space-age/quality-module-guide" >}}) work but quality modules in a Kovarex centrifuge produce quality U-235, which cannot be used in fuel cell assemblers (they accept only normal quality items). Speed modules are safer.
+Both speed and [quality modules]({{< ref "/space-age/quality/quality-module-guide" >}}) work but quality modules in a Kovarex centrifuge produce quality U-235, which cannot be used in fuel cell assemblers (they accept only normal quality items). Speed modules are safer.
 
 
 
