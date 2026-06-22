@@ -9,7 +9,7 @@ draft: false
 **Military science at a glance:** Each science assembler needs 1 piercing round + 1 grenade + 1 stone wall every 10 seconds. One assembler of each ingredient feeds roughly 8-10 science assemblers. Military science is the cheapest and simplest science pack -- a single Assembling Machine 1 making grenades can support your whole early-game military research.
 {{< /callout >}}
 
-{{< section "Recipe and Requirements" >}}
+{{< section "Recipe and Requirements" />}}
 
 {{< recipe name1="piercing_rounds" qty1="1x" name2="grenade" qty2="1x" name3="stone_wall" qty3="1x" result="military_science" rqty="2x" >}}
 
@@ -25,7 +25,7 @@ Output is 2 packs per craft (same in 1.0 and Space Age). Craft time is 10 second
 
 
 
-{{< section "Optimal Ratios for 10 SPM" >}}
+{{< section "Optimal Ratios for 10 SPM" />}}
 
 Military science ratios are unusually easy because each ingredient assembler produces far more than a single science assembler consumes. Build one of each and see how much output you actually need.
 
@@ -43,7 +43,7 @@ Military science ratios are unusually easy because each ingredient assembler pro
 
 
 
-{{< section "Production Flow" >}}
+{{< section "Production Flow" />}}
 
 {{< diagram "diagrams/military-science-flow.svg" "Military science production chain from copper/steel/iron/stone through piercing rounds, grenades, and walls to gray science packs" "760" >}}
 
@@ -57,7 +57,7 @@ If you need ammunition for your actual turrets, build a separate piercing round 
 
 
 
-{{< section "Layout -- Minimalist Military Science" >}}
+{{< section "Layout -- Minimalist Military Science" />}}
 
 Military science needs almost no specialized infrastructure. Typical mid-game approach:
 
@@ -72,7 +72,7 @@ Add your military science labs inline with your other sciences. Since [all scien
 
 
 
-{{< section "When to Build Military Science" >}}
+{{< section "When to Build Military Science" />}}
 
 | Scenario | Build Military Science? | Reason |
 |----------|:----------------------:|--------|
@@ -88,7 +88,7 @@ Add your military science labs inline with your other sciences. Since [all scien
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Overbuilding:** Military science ingredients are extremely fast to produce. Building 4 assembling machines for grenades does not make your science faster -- one machine is enough for 15+ SPM. The bottleneck is how many science assemblers you build, not the ingredient supply.
 - **Ammo belt sharing:** If you pull piercing rounds from the same belt that feeds your turrets, a biter attack empties the belt and starves your science. Build a dedicated ammunition assembler for science.
@@ -96,13 +96,13 @@ Add your military science labs inline with your other sciences. Since [all scien
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Military science is the lowest-maintenance science pack in Factorio. One assembler per ingredient supports 8-10 science assemblers, which is more than you will need for most of the game. Skip it if biters are not a problem. Build a small setup when they are. Do not overthink the ratios -- they favor you.
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Military science pack](https://wiki.factorio.com/Military_science_pack) -- Recipe reference and crafting data
 - [Official Factorio blog: FFF-419](https://factorio.com/blog/post/fff-419) -- Science pack changes in Space Age

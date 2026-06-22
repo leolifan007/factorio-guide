@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vulcanus First Landing Guide - What to Do First in Factorio Space Age"
 description: "Vulcanus first landing guide for Factorio Space Age. What to do first, priority build order, foundry setup, and how to establish a foothold on the volcanic planet."
 date: 2026-06-20
@@ -26,7 +26,7 @@ aliases:
 | Iron gears | Casting | 100 molten iron | 20 gears | Direct craft |
 | Copper wire | Casting | 100 molten copper | 40 wire | Direct craft |
 
-{{< section "What to Pack Before You Go" >}}
+{{< section "What to Pack Before You Go" />}}
 
 Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:
 
@@ -50,7 +50,7 @@ Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive 
 
 
 
-{{< section "First Steps on Vulcanus" >}}
+{{< section "First Steps on Vulcanus" />}}
 
 {{< diagram "diagrams/vulcanus-guidemap.svg" "Vulcanus unlock progression from landing through foundry and big drill to cliff explosives" "760" >}}
 
@@ -69,7 +69,7 @@ Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive 
 
 
 
-{{< section "Killing Your First Demolisher" >}}
+{{< section "Killing Your First Demolisher" />}}
 
 Small demolishers guard resource patches and block expansion. They are killable with turret spam:
 
@@ -85,7 +85,7 @@ A flame turret behind the gun turrets adds significant damage-over-time. If you 
 
 
 
-{{< section "Unlock Priority on Vulcanus" >}}
+{{< section "Unlock Priority on Vulcanus" />}}
 
 | Priority | Technology | Unlocks | Impact |
 |:--------:|-----------|---------|--------|
@@ -99,7 +99,7 @@ Once you have these unlocked, ship the foundry and big drill blueprints back to 
 
 
 
-{{< section "Scaling Your Vulcanus Operation" >}}
+{{< section "Scaling Your Vulcanus Operation" />}}
 
 | Stage | Objective | Build Size | Time Estimate |
 |-------|-----------|:----------:|:-------------:|
@@ -114,7 +114,7 @@ Before leaving, set up enough [defense]({{< ref "/defense/early-game-defense" >}
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Foundry before drills:** Do not spend time setting up tungsten drills before the foundry. Foundry gives you iron and copper from lava -- which is infinite. Ore drills become secondary on Vulcanus.
 - **Too much walking:** Vulcanus terrain has cliffs everywhere. Do not build a sprawling base. Keep everything compact near your lava lake until you have cliff explosives.
@@ -122,7 +122,7 @@ Before leaving, set up enough [defense]({{< ref "/defense/early-game-defense" >}
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Vulcanus is the easiest and most rewarding planet to visit first in Space Age. The foundry alone is worth the trip -- it permanently upgrades your factory's production capacity. Land with enough materials for a solar-powered turret perimeter, find a lava lake, and rush the foundry tech. Everything else can wait.
 
@@ -130,7 +130,7 @@ Vulcanus is the easiest and most rewarding planet to visit first in Space Age. T
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Vulcanus](https://wiki.factorio.com/Vulcanus) -- Planet surface conditions and resources
 - [Factorio Wiki: Foundry](https://wiki.factorio.com/Foundry) -- Foundry recipes and fluid casting ratios

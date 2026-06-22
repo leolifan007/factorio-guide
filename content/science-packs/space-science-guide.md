@@ -9,7 +9,7 @@ draft: false
 **Space science at a glance:** Each rocket launch with a satellite produces 1000 space science packs in Space Age. One rocket silo running continuously at full speed produces roughly 1 rocket per 42 seconds, or about 85 space science packs per second. The bottleneck is never the silo -- it is producing 100 rocket parts worth of materials (red circuits, blue circuits, low density structures, and rocket fuel) fast enough.
 {{< /callout >}}
 
-{{< section "Recipe and Requirements" >}}
+{{< section "Recipe and Requirements" />}}
 
 {{< recipe name1="rocket_part" qty1="100x" name2="satellite" qty2="1x" result="space_science" rqty="1000x" >}}
 
@@ -28,7 +28,7 @@ Each launch also consumes: 1 rocket silo, ~42 seconds of crafting time, and enou
 
 
 
-{{< section "Rocket Part Production Chain" >}}
+{{< section "Rocket Part Production Chain" />}}
 
 Each rocket part needs 4 ingredients, all of which require significant mid-game production scale:
 
@@ -45,7 +45,7 @@ Each rocket part needs 4 ingredients, all of which require significant mid-game 
 
 
 
-{{< section "Rocket Silo Setup for 100 SPM" >}}
+{{< section "Rocket Silo Setup for 100 SPM" />}}
 
 100 space science per minute is achievable with a single rocket silo and moderate production backing:
 
@@ -64,7 +64,7 @@ Each rocket part needs 4 ingredients, all of which require significant mid-game 
 
 
 
-{{< section "Production Flow" >}}
+{{< section "Production Flow" />}}
 
 {{< diagram "diagrams/space-science-flow.svg" "Space science production chain from rocket silo on Nauvis through satellite launch to space platform and back to labs" "760" >}}
 
@@ -78,7 +78,7 @@ If you have already built a [space platform]({{< ref "/space-age/platform/space-
 
 
 
-{{< section "Scaling with Multiple Silos" >}}
+{{< section "Scaling with Multiple Silos" />}}
 
 | SPM Target | Rocket Silos | Launches/min | Rocket Parts/min | Key Constraint |
 |:----------:|:----------:|:------------:|:----------------:|---------------|
@@ -93,7 +93,7 @@ For high-throughput science bases, a [city block design]({{< ref "/base-design/c
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **No productivity modules in the silo:** The rocket silo is the only building in the game where productivity modules do not slow down output (because the bottleneck is assembling rocket parts, not the final product). Always fill all 4 slots with productivity module 3s.
 - **Forgetting the satellite:** A rocket launched without a satellite produces 0 space science. Build a dedicated satellite assembler next to the silo and use an inserter to load it into the rocket before launch.
@@ -101,13 +101,13 @@ For high-throughput science bases, a [city block design]({{< ref "/base-design/c
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Space science is an exercise in production scaling. One rocket silo feeds a 100 SPM base with ease. Two silos handle 200 SPM. Beyond that, the challenge shifts from science production to raw material throughput -- expanded steel foundries, copper smelters, and circuit plants. Start with a single silo, productivity modules, and a satellite assembler. Then scale the belt-fed inputs until you hit the silo's 42-second cycle limit.
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Space science pack](https://wiki.factorio.com/Space_science_pack) -- Science pack recipe and mechanics
 - [Factorio Wiki: Rocket silo](https://wiki.factorio.com/Rocket_silo) -- Silo speed, module effects, and throughput data

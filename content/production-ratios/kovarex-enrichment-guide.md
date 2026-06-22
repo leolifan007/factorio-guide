@@ -9,7 +9,7 @@ draft: false
 **Kovarex at a glance:** Each centrifuge needs 40 U-235 and 5 U-238 to start, then produces 41 U-235 and 2 U-238 per 60-second cycle -- a net gain of 1 U-235 per cycle. Three centrifuges running in parallel produce roughly 3 U-235 per minute, which is enough to fuel 4-8 nuclear reactors continuously.
 {{< /callout >}}
 
-{{< section "The Kovarex Enrichment Process" >}}
+{{< section "The Kovarex Enrichment Process" />}}
 
 {{< recipe name1="uranium_235" qty1="40x" name2="uranium_238" qty2="5x" result="uranium_235" rqty="41x" >}}
 
@@ -26,7 +26,7 @@ Kovarex enrichment is the key to sustainable nuclear power in Factorio. The stan
 
 
 
-{{< section "Bootstrapping the First Centrifuge" >}}
+{{< section "Bootstrapping the First Centrifuge" />}}
 
 Before you can start Kovarex, you need 40 U-235. At 0.7% yield from ore processing, that requires processing roughly 5,714 uranium ore. Here is how to get there:
 
@@ -42,7 +42,7 @@ Before you can start Kovarex, you need 40 U-235. At 0.7% yield from ore processi
 
 
 
-{{< section "Circuit-Controlled Inserter Setup" >}}
+{{< section "Circuit-Controlled Inserter Setup" />}}
 
 Without circuit control, a Kovarex centrifuge keeps running until it runs out of U-238. With circuit control, you can ensure steady U-235 extraction and U-238 recycling.
 
@@ -68,7 +68,7 @@ For a more advanced design with [circuit network]({{< ref "/blueprints/circuit-n
 
 
 
-{{< section "Optimal Centrifuge Count" >}}
+{{< section "Optimal Centrifuge Count" />}}
 
 | Goal | Centrifuges | U-235/min | Fuel Cells/min | Reactors Supported |
 |:----:|:----------:|:---------:|:--------------:|:------------------:|
@@ -83,7 +83,7 @@ For a more advanced design with [circuit network]({{< ref "/blueprints/circuit-n
 
 
 
-{{< section "Module Choice for Kovarex" >}}
+{{< section "Module Choice for Kovarex" />}}
 
 | Module | Effect | Recommendation |
 |--------|--------|:-------------:|
@@ -98,7 +98,7 @@ Both speed and [quality modules]({{< ref "/space-age/quality/quality-module-guid
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Starting too early:** Do not rush Kovarex. Two standard ore-processing centrifuges can accumulate enough U-235 for a bootstrap while your base is still on steam power. Start Kovarex only when you need consistent nuclear fuel.
 - **Forgetting the U-238 loop:** Without recycling U-238 output back into the centrifuge input, your Kovarex setup will stall after a few cycles. Always loop the 2 U-238 output back into the input chest.
@@ -106,13 +106,13 @@ Both speed and [quality modules]({{< ref "/space-age/quality/quality-module-guid
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Kovarex enrichment solves the U-235 scarcity problem with a simple investment: one centrifuge, a circuit wire, and a stockpile of U-238 from ore processing. Start with 3 centrifuges for a steady supply. Use circuit control if you want automated priority management. Speed modules are the only modules worth using.
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Kovarex enrichment process](https://wiki.factorio.com/Kovarex_enrichment_process) -- Official recipe and mechanics
 - [Factorio Cheat Sheet: Kovarex](https://factoriocheatsheet.com/) -- Ratio diagrams and quick reference

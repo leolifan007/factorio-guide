@@ -9,7 +9,7 @@ draft: false
 **Construction robots at a glance:** Build 1 roboport, 10 construction robots, and 1 storage chest filled with belts, inserters, and assemblers. Place a blueprint inside the roboport's orange coverage zone. Robots build it automatically. That is the entire setup. Everything else is optimization.
 {{< /callout >}}
 
-{{< section "What Are Construction Robots?" >}}
+{{< section "What Are Construction Robots?" />}}
 
 Construction robots are flying automated builders. They take items from storage chests in the logistics network and place them according to blueprints or ghost entities. They also repair damaged buildings using repair packs stored in the network.
 
@@ -25,7 +25,7 @@ Construction robots do NOT move items between chests. That is the job of logisti
 
 
 
-{{< section "Prerequisites" >}}
+{{< section "Prerequisites" />}}
 
 Before your first robot can fly, research these technologies from the Robotics branch:
 
@@ -40,7 +40,7 @@ If you are still on early science packs, finish [blue science]({{< ref "/science
 
 
 
-{{< section "Step-by-Step Setup" >}}
+{{< section "Step-by-Step Setup" />}}
 
 {{< diagram "diagrams/construction-bot-setup.svg" "Construction robot network setup showing robot types, required infrastructure, logistic chest types, setup steps, and common mistakes" "760" >}}
 
@@ -64,7 +64,7 @@ Place a blueprint (or ghost-place a building using Shift+mouse click) within the
 
 
 
-{{< section "Scaling the Network" >}}
+{{< section "Scaling the Network" />}}
 
 | Stage | Roboports | Robots | Coverage | What You Can Do |
 |:-----:|:---------:|:-----:|:--------:|----------------|
@@ -78,7 +78,7 @@ Place a blueprint (or ghost-place a building using Shift+mouse click) within the
 
 
 
-{{< section "Logistic Chest Types" >}}
+{{< section "Logistic Chest Types" />}}
 
 | Chest | Color | Behavior | Use Case |
 |-------|:-----:|:--------:|----------|
@@ -92,7 +92,7 @@ Place a blueprint (or ghost-place a building using Shift+mouse click) within the
 
 
 
-{{< section "Construction vs Logistic Robots" >}}
+{{< section "Construction vs Logistic Robots" />}}
 
 | Aspect | Construction Robot | Logistic Robot |
 |--------|:------------------:|:--------------:|
@@ -107,7 +107,7 @@ Most players start with construction robots for blueprint building, then add log
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Red chests without filters:** An active provider chest near an assembler pushes items into the network constantly. If the assembler fills the chest, robots carry those items to storage chests, then back to the assembler -- an infinite loop. Use passive provider chests (purple) for normal storage.
 - **No storage chests:** When you deconstruct a building, robots pick up the items and try to store them. Without a storage chest, items stay in the robot's cargo indefinitely, reducing your effective robot count.
@@ -116,13 +116,13 @@ Most players start with construction robots for blueprint building, then add log
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Construction robots automate the most tedious part of Factorio: hand-placing items from blueprints. One roboport and ten robots is enough to test the system. Scale to 100 robots once you trust the network. Blueprint entire factory sections without ever placing a single belt by hand -- that is the power of a well-set-up construction robot network.
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Construction robot](https://wiki.factorio.com/Construction_robot) -- Robot stats, speed, and behavior
 - [Factorio Wiki: Roboport](https://wiki.factorio.com/Roboport) -- Charging mechanics and network ranges

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age"
 description: "Aquilo landing preparation for Factorio Space Age. What to bring, heating mechanics, cryogenic science, and how to survive on Factorio coldest planet. "
 date: 2026-06-20
@@ -25,7 +25,7 @@ aliases:
 | Nuclear reactor | 15 | 40 | 55 tiles |
 | Heat exchanger chain | 20 | 50 | 80 tiles |
 
-{{< section "When to Go to Aquilo" >}}
+{{< section "When to Go to Aquilo" />}}
 
 Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and Nauvis upgrades). Do not attempt Aquilo until you have:
 
@@ -43,7 +43,7 @@ Aquilo is the fifth planet you should visit (after Vulcanus, Fulgora, Gleba, and
 
 
 
-{{< section "What to Bring to Aquilo" >}}
+{{< section "What to Bring to Aquilo" />}}
 
 {{< diagram "diagrams/aquilo-checklist.svg" "Aquilo survival essentials showing what to bring, threats to face, and build order for the frozen planet" "760" >}}
 
@@ -67,7 +67,7 @@ Aquilo has zero local resources except frozen ammonia (and even that is limited)
 
 
 
-{{< section "Build Order on Aquilo" >}}
+{{< section "Build Order on Aquilo" />}}
 
 **Phase 1: Heat grid (immediate)**
 Land and build a heating tower immediately. Connect it to heat pipes that radiate through your base. Without heat, buildings work at reduced speed. In sub-zero conditions, unheated assemblers stop entirely within 60 seconds.
@@ -95,7 +95,7 @@ The Aquilo-specific science pack (cryogenic science or similar) requires cryogen
 
 
 
-{{< section "Strafers and How to Handle Them" >}}
+{{< section "Strafers and How to Handle Them" />}}
 
 | Threat | HP | Damage | Counter | Priority |
 |--------|:--:|:------:|---------|:--------:|
@@ -111,7 +111,7 @@ If you have [flamethrower defense]({{< ref "/defense/flamethrower-defense-guide"
 
 
 
-{{< section "Shipping Logistics" >}}
+{{< section "Shipping Logistics" />}}
 
 | Resource | Shipped From | Frequency | Amount per Shipment |
 |----------|-------------|:----------:|:------------------:|
@@ -125,7 +125,7 @@ Use cargo rockets rather than space platform drop pods for bulk supply. The Aqui
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Aquilo is the survival exam of Factorio Space Age. It forces you to manage heat distribution, import every resource, and defend against a fast new enemy type. The payoff is the cryogenic science tree, which unlocks fusion power and the final victory condition. If you can survive Aquilo's first 2 hours, you can beat Space Age.
 
@@ -133,7 +133,7 @@ Aquilo is the survival exam of Factorio Space Age. It forces you to manage heat 
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Aquilo](https://wiki.factorio.com/Aquilo) -- Planet surface data and hazards
 - [Factorio Wiki: Heating tower](https://wiki.factorio.com/Heating_tower) -- Heat mechanics and fuel ratios

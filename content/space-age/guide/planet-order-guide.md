@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best Planet Order in Space Age - Which Planet to Visit First and Why"
 description: "Best planet order in Factorio Space Age — which planet to visit first and why. Vulcanus vs Fulgora vs Gleba route comparison for maximum efficiency."
 date: 2026-06-20
@@ -12,7 +12,7 @@ aliases:
 **TL;DR: Vulcanus -> Fulgora -> Gleba -> Nauvis (scale up) -> Aquilo.** Visit Vulcanus first for the foundry — it doubles your iron and steel production instantly. See {{< ref "/space-age/guide/vulcanus-guide" >}} for the full landing prep. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.
 {{< /callout >}}
 
-{{< section "Why Order Matters" >}}
+{{< section "Why Order Matters" />}}
 
 Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.
 
@@ -27,7 +27,7 @@ The optimal order maximizes the amount of multiplicative growth per planet visit
 
 
 
-{{< section "Phase 1: Nauvis Prep (Before Any Planet)" >}}
+{{< section "Phase 1: Nauvis Prep (Before Any Planet)" />}}
 
 Before building your first space platform, you need a well-functioning Nauvis base:
 
@@ -44,7 +44,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 
 
-{{< section "Phase 2: Vulcanus First (Lava Smelting)" >}}
+{{< section "Phase 2: Vulcanus First (Lava Smelting)" />}}
 
 **Why first:** The foundry is the single most impactful unlock in Space Age. It replaces all Nauvis smelting with direct-from-lava production.
 
@@ -59,7 +59,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 
 
-{{< section "Phase 3: Fulgora Second (Quality and EM Plant)" >}}
+{{< section "Phase 3: Fulgora Second (Quality and EM Plant)" />}}
 
 **Why second:** The electromagnetic plant gives +50% circuit production speed, and quality module technology lets you upgrade every building in your factory.
 
@@ -73,7 +73,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 
 
-{{< section "Phase 4: Gleba Third (Bioflux)" >}}
+{{< section "Phase 4: Gleba Third (Bioflux)" />}}
 
 **Why third:** Gleba introduces the most complex production chain (biology/spoilage), but the bioflux unlocks agricultural science and infinite resource generation.
 
@@ -87,7 +87,7 @@ Do not rush to leave Nauvis. The most common mistake is launching to Vulcanus wi
 
 
 
-{{< section "Phase 5: Return to Nauvis (Scale Up)" >}}
+{{< section "Phase 5: Return to Nauvis (Scale Up)" />}}
 
 After visiting all three inner planets, return to Nauvis and integrate everything:
 
@@ -100,7 +100,7 @@ This is the most efficient point to build your endgame base. You have all the to
 
 
 
-{{< section "Phase 6: Aquilo Last (Fusion)" >}}
+{{< section "Phase 6: Aquilo Last (Fusion)" />}}
 
 Aquilo requires massive import logistics (no local resources except frozen ammonia), a heat pipe network, and rocket/laser defense against strafers. Visit only when:
 
@@ -113,7 +113,7 @@ Full Aquilo prep checklist in the [Aquilo guide]({{< ref "/space-age/aquilo/aqui
 
 
 
-{{< section "Can You Skip Visits?" >}}
+{{< section "Can You Skip Visits?" />}}
 
 | Planet | Can Skip? | Consequence |
 |--------|:---------:|-------------|
@@ -126,7 +126,7 @@ You cannot win Space Age without establishing science production on all four inn
 
 
 
-{{< section "Route Comparison Overview" >}}
+{{< section "Route Comparison Overview" />}}
 
 Here's a quick comparison of the five main planets in Space Age:
 
@@ -154,7 +154,7 @@ Here's a quick comparison of the five main planets in Space Age:
 
 The standard Vulcanus → Fulgora → Gleba route is recommended for 90% of players. The foundry's impact is so transformative that it makes everything else cheaper — even your time investment on other planets.
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Planet order](https://wiki.factorio.com/Planetary_science) -- Planet-by-planet science requirements
 - [Reddit: Best planet order discussion (Space Age)](https://www.reddit.com/r/factorio/comments/1gb28mp/what_is_the_best_planet_to_first_go_to/) -- Player experiences and alternative orders

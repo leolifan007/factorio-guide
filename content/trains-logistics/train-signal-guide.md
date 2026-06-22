@@ -9,7 +9,7 @@ draft: false
 **Train signaling in one rule:** Place a chain signal **before** every intersection entry. Place a rail signal **after** every intersection exit. Never place a rail signal inside an intersection. This rule applies to every intersection type -- T-junctions, cross intersections, roundabouts, and merge lanes.
 {{< /callout >}}
 
-{{< section "Rail Signals vs Chain Signals" >}}
+{{< section "Rail Signals vs Chain Signals" />}}
 
 There are only two types of train signals in Factorio. The difference is simple:
 
@@ -26,7 +26,7 @@ A **rail signal** turns green when the block ahead is empty. A **chain signal** 
 
 
 
-{{< section "The Golden Rule Applied" >}}
+{{< section "The Golden Rule Applied" />}}
 
 {{< diagram "diagrams/train-signal-rules.svg" "Train signal placement rules showing correct chain-before-rail-signal pattern and the wrong rail-signal-inside-intersection deadlock scenario" "760" >}}
 
@@ -42,7 +42,7 @@ For any intersection:
 
 
 
-{{< section "Intersection Types" >}}
+{{< section "Intersection Types" />}}
 
 **T-Junction (3-way):**
 - Chain signal on each of the 3 entries
@@ -63,7 +63,7 @@ For existing rail layouts, if you already have a [basic rail network]({{< ref "/
 
 
 
-{{< section "Chain Intersection Chains (Train Yards)" >}}
+{{< section "Chain Intersection Chains (Train Yards)" />}}
 
 For tight clusters of intersections (like a train unloading station with multiple parallel tracks feeding a single output):
 
@@ -79,7 +79,7 @@ This garantee that a single train does not block multiple intersections. If spac
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Rail signal inside a roundabout:** The most common error. A rail signal inside a roundabout lets a train stop on the roundabout, blocking all other traffic. Use chain signals between each roundabout exit instead.
 - **Missing signals on one side:** Two-way tracks need signals on BOTH sides. A rail signal on only one side of a two-way track lets trains pass in only one direction.
@@ -88,7 +88,7 @@ This garantee that a single train does not block multiple intersections. If spac
 
 
 
-{{< section "Quick Reference" >}}
+{{< section "Quick Reference" />}}
 
 | Scenario | Entry Signal | Exit Signal |
 |----------|:-----------:|:-----------:|
@@ -101,13 +101,13 @@ This garantee that a single train does not block multiple intersections. If spac
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Train signaling is the most common source of frustration in Factorio logistics, and it has one solution: chain signals before intersections, rail signals after. Build your intersections with this rule, and your rail network will never deadlock. The signal count for even complex intersections is always the same: N chain signals (entries) + N rail signals (exits).
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Railway signals](https://wiki.factorio.com/Railway/Signals) -- Official signal mechanics documentation
 - [Factorio FFF: Space Age train improvements](https://factorio.com/blog/post/fff-422) -- Train changes in 2.0 (train groups, interrupt conditions)

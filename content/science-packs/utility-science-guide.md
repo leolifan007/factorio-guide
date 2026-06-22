@@ -9,7 +9,7 @@ draft: false
 **Yellow science at a glance:** 5 assemblers need 10 steel furnaces, 1 flying robot frame assembler, 1 blue circuit assembler, and 1 low density structure assembler. The output is 3 packs per craft (Space Age). Blue circuits (processing units) are the bottleneck -- one blue circuit assembler needs 20 green circuits and 2 red circuits per second at full tilt.
 {{< /callout >}}
 
-{{< section "Recipe and Requirements" >}}
+{{< section "Recipe and Requirements" />}}
 
 {{< recipe name1="processing_unit" qty1="1x" name2="flying_robot_frame" qty2="1x" name3="low_density_structure" qty3="1x" result="utility_science" rqty="3x" >}}
 
@@ -25,7 +25,7 @@ Each craft in Space Age produces 3 utility science packs (up from 2 in 1.0). The
 
 
 
-{{< section "Optimal Ratios for 5 SPM" >}}
+{{< section "Optimal Ratios for 5 SPM" />}}
 
 | Component | Machines | Input | Notes |
 |-----------|:--------:|-------|-------|
@@ -47,7 +47,7 @@ Each craft in Space Age produces 3 utility science packs (up from 2 in 1.0). The
 
 
 
-{{< section "Low Density Structure Production" >}}
+{{< section "Low Density Structure Production" />}}
 
 Low density structures (LDS) are straightforward but material-heavy. Each unit needs 10 copper plates, 2 steel plates, and 5 plastic bars. At 5 SPM you need roughly 17 copper plates per second just for LDS.
 
@@ -61,7 +61,7 @@ Your furnace columns need to handle this. Check [smelting ratios]({{< ref "/prod
 
 
 
-{{< section "Production Flow" >}}
+{{< section "Production Flow" />}}
 
 {{< diagram "diagrams/yellow-science-flow.svg" "Utility science production chain from basic materials through flying robot frames to yellow science packs" "760" >}}
 
@@ -77,7 +77,7 @@ If your oil processing is still on basic refining, now is the time to switch. Pl
 
 
 
-{{< section "Scaling Beyond 5 SPM" >}}
+{{< section "Scaling Beyond 5 SPM" />}}
 
 | SPM Target | Yellow Assemblers | Blue Circuit AMs | Flying Robot AMs | Key Constraint |
 |:----------:|:----------------:|:----------------:|:----------------:|---------------|
@@ -92,7 +92,7 @@ At 30+ SPM, the main bus becomes the primary bottleneck. You need dedicated circ
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Not enough green circuits:** A blue circuit assembler running at full speed consumes 20 green circuits per second. That is one full yellow belt. Most players build two green circuit assemblers thinking it is enough, then wonder why all their science packs are starved.
 - **Sulfuric acid delivery:** Pipes have throughput limits. If you pipe sulfuric acid across half your base, the flow rate drops below what blue circuit assemblers need. Either build acid production close to the circuit area or use barrels with bots.
@@ -100,13 +100,13 @@ At 30+ SPM, the main bus becomes the primary bottleneck. You need dedicated circ
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Utility science is the throughput exam in Factorio. It forces you to build a proper circuit factory with dedicated green circuit production, scale up steel and copper simultaneously, and integrate sulfuric acid into your base logistics. Start with 5 SPM using the ratios above. Scale by doubling entire production blocks rather than adding single machines -- the ratios are designed to scale linearly.
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Utility science pack](https://wiki.factorio.com/Utility_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to yellow science output per craft

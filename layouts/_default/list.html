@@ -52,10 +52,12 @@
       </div>
     </nav>
 
-    <!-- Center: Content Area -->
+    <!-- Center: Content Area (pre-rendered overview) -->
     <main class="section-content" id="sectionContent">
       <div class="section-content-inner" id="sectionContentInner">
-        <div class="section-loading">Select an article from the navigation</div>
+        <div class="article-content" id="sectionOverview">
+          {{ .Content | safeHTML }}
+        </div>
       </div>
     </main>
 
@@ -75,6 +77,13 @@
   </div>
 </div>
 
+<style>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
 <!-- Section Nav JavaScript -->
 <script>
 (function() {
@@ -85,7 +94,7 @@
   if (!nav || !contentInner) return;
 
   const items = nav.querySelectorAll('.section-nav-item');
-  const overviewHtml = `{{ (.Content | safeHTML) | replaceRE "`" "&#96;" }}`;
+  const overviewEl = document.getElementById('sectionOverview');
 
   function setActive(url) {
     items.forEach(function(it) { it.classList.remove('is-active'); });
@@ -94,12 +103,16 @@
   }
 
   function showLoading() {
-    contentInner.innerHTML = '<div class="section-loading"><div class="spinner"></div>Loading...</div>';
+    contentInner.innerHTML = '<div class="section-loading" style="padding:3rem 0;text-align:center;color:#666;font-family:&#39;Rajdhani&#39;,sans-serif;"><div style="width:24px;height:24px;border:2px solid #333;border-top-color:#e8941c;border-radius:50%;animation:spin .6s linear infinite;margin:0 auto 0.5rem;"></div>Loading...</div>';
   }
 
   function loadOverview() {
     setActive('overview');
-    contentInner.innerHTML = '<div class="article-content">' + overviewHtml + '</div>';
+    // Show the pre-rendered overview (clone to avoid removing original)
+    contentInner.innerHTML = '';
+    var clone = overviewEl.cloneNode(true);
+    clone.id = '';
+    contentInner.appendChild(clone);
     history.replaceState({ url: 'overview', title: '{{ .Title }}' }, '', '#overview');
   }
 
@@ -130,7 +143,7 @@
         history.replaceState({ url: url }, '', url);
       })
       .catch(function() {
-        contentInner.innerHTML = '<div class="section-loading">Failed to load article. Please try again.</div>';
+        contentInner.innerHTML = '<div class="section-loading" style="padding:2rem;text-align:center;color:#666;font-family:&#39;Rajdhani&#39;,sans-serif;">Failed to load article. Please try again.</div>';
       });
   }
 
@@ -159,18 +172,34 @@
     }
   });
 
-  // Auto-load on page load
-  // Check URL hash or default to overview
-  var initialUrl = window.location.hash === '#overview' ? 'overview' : null;
-  if (!initialUrl && items.length > 1) {
-    // Load the first article (latest)
-    var first = items[1]; // items[0] is "About this section"
-    if (first) {
-      loadArticle(first.getAttribute('data-url'));
-      return;
+  // Handle URL hash on page load
+  if (window.location.hash === '#overview') {
+    loadOverview();
+  } else if (items.length > 1) {
+    // Check if URL matches a nav item
+    var currentPath = window.location.pathname;
+    var found = false;
+    for (var i = 1; i < items.length; i++) {
+      var url = items[i].getAttribute('data-url');
+      if (url && currentPath.indexOf(url) >= 0) {
+        loadArticle(url);
+        found = true;
+        break;
+      }
+    }
+    if (!found && window.location.hash) {
+      // Check if hash matches a sub-page path
+      var hashPath = window.location.hash.replace('#', '');
+      for (var i = 1; i < items.length; i++) {
+        var url = items[i].getAttribute('data-url');
+        if (url && url.indexOf(hashPath) >= 0) {
+          loadArticle(url);
+          found = true;
+          break;
+        }
+      }
     }
   }
-  loadOverview();
 })();
 </script>
 {{ end }}

@@ -1,20 +1,29 @@
-{{- /* Adsterra Sidebar Ad – 300×250 × 2 stacked in 160px-wide sticky sidebar */ -}}
+{{- /* Sidebar Ad – consistent placeholder across all pages */ -}}
 {{- if .Site.Params.show_ads }}
-<div class="adsterra-sidebar">
-  {{- /* effectivecpmnetwork invoke.js – first unit */ -}}
-  {{- with .Site.Params.adsterra_cpm_invoke }}
-  <div class="adsterra-cpm-unit">
-    <script async="async" data-cfasync="false"
-      src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
-    <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
   </div>
-  {{- end }}
-
-  {{- /* effectivecpmnetwork .js – second unit */ -}}
-  {{- with .Site.Params.adsterra_cpm_js }}
-  <div class="adsterra-cpm-unit">
-    <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
-  </div>
+  {{- /* Adsterra scripts — only in production builds, not on localhost */ -}}
+  {{- if not hugo.IsServer }}
+    {{- with .Site.Params.adsterra_cpm_invoke }}
+    <div class="adsterra-cpm-unit">
+      <script async="async" data-cfasync="false"
+        src="https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js"></script>
+      <div id="container-04e2732f2ca38aec2b69155cb083a610"></div>
+    </div>
+    {{- end }}
+    {{- with .Site.Params.adsterra_cpm_js }}
+    <div class="adsterra-cpm-unit">
+      <script src="https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js"></script>
+    </div>
+    {{- end }}
   {{- end }}
 </div>
 {{- end }}

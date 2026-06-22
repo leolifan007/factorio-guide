@@ -9,7 +9,7 @@ draft: false
 **Purple science at a glance:** 5 assemblers need 9 steel furnaces, 2 engine assemblers, 2 electric engine assemblers, and 1 lubricant chemical plant. Total: about 15 machines running off a standard main bus. The key bottleneck is always electric engines -- most builds underestimate how many engine assemblers they need.
 {{< /callout >}}
 
-{{< section "Recipe and Requirements" >}}
+{{< section "Recipe and Requirements" />}}
 
 {{< recipe name1="electric_engine" qty1="1x" name2="productivity_module_1" qty2="1x" name3="rail" qty3="1x" result="production_science" rqty="3x" >}}
 
@@ -25,7 +25,7 @@ If you are coming from [blue science]({{< ref "/science-packs/blue-science-guide
 
 
 
-{{< section "Optimal Ratios for 5 SPM" >}}
+{{< section "Optimal Ratios for 5 SPM" />}}
 
 5 SPM is a comfortable mid-game target when first setting up purple science. It unlocks the main Space Age tech tree without forcing a megabase.
 
@@ -47,7 +47,7 @@ If you are coming from [blue science]({{< ref "/science-packs/blue-science-guide
 
 
 
-{{< section "Lubricant Production" >}}
+{{< section "Lubricant Production" />}}
 
 Purple science is the first point where you need lubricant. If you already have oil processing set up for blue science, adding lubricant is simple:
 
@@ -63,7 +63,7 @@ If you are using basic oil processing, a single refinery on crude oil produces 3
 
 
 
-{{< section "Layout -- Compact Purple Science Cell" >}}
+{{< section "Layout -- Compact Purple Science Cell" />}}
 
 {{< diagram "diagrams/purple-science-flow.svg" "Production science chain from steel and circuits through electric engines to purple science packs" "760" >}}
 
@@ -80,7 +80,7 @@ The optimal layout for purple science follows a straight line:
 
 
 
-{{< section "Scaling Beyond 5 SPM" >}}
+{{< section "Scaling Beyond 5 SPM" />}}
 
 When you decide to push purple science higher, these are the bottlenecks to watch for:
 
@@ -97,7 +97,7 @@ A dedicated electric engine sub-factory becomes necessary around 30 SPM. You can
 
 
 
-{{< section "Common Mistakes" >}}
+{{< section "Common Mistakes" />}}
 
 - **Underestimating steel:** Purple science consumes steel for rails, engine units, and productivity module component chains. A single yellow belt of steel (15/s) supports about 10 SPM of purple science only. Share with other sciences and you will run out quickly.
 - **Neglecting module production:** Productivity module 1 requires 5 red circuits and 5 green circuits per unit. At 5 SPM, each minute you burn 50 red and 50 green circuits just on modules. That is comparable to the circuit consumption of blue science. Building a dedicated module assembler early saves you from circuit starvation later.
@@ -105,7 +105,7 @@ A dedicated electric engine sub-factory becomes necessary around 30 SPM. You can
 
 
 
-{{< section "Bottom Line" >}}
+{{< section "Bottom Line" />}}
 
 Purple science is where Factorio starts demanding real resource throughput. You need steel at scale, lubricant from your oil setup, and a small circuit factory running alongside everything else. Start at 5 SPM with 9 steel furnaces and 2 electric engine assemblers. Scale up in chunks rather than trying to build a 45 SPM setup from scratch -- the mid-game is about iteration, not perfection.
 
@@ -113,7 +113,7 @@ Purple science is where Factorio starts demanding real resource throughput. You 
 
 
 
-{{< section "Community Verification" >}}
+{{< section "Community Verification" />}}
 
 - [Factorio Wiki: Production science pack](https://wiki.factorio.com/Production_science_pack) -- Recipe reference and crafting times
 - [Factorio FFF-419: Space Age science changes](https://factorio.com/blog/post/fff-419) -- Official changes to purple science output from 2 to 3 per craft
