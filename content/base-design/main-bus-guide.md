@@ -64,7 +64,7 @@ If you’re just starting out, [Your First Factory]({{< ref "/getting-started/yo
 | Base Style | Best For | Downside |
 |-----------|----------|----------|
 | Main Bus | Beginners, mid-size bases | Inefficient at megabase scale |
-| [City Blocks]({{< ref "/base-design/city-block-guide" >}}) | Megabases, train-based | Complex setup |
+| [City Blocks](/base-design/city-block-guide/) | Megabases, train-based | Complex setup |
 | Megabase (beaconed) | UPS-optimized builds | Requires deep game knowledge |
 
 > **Bottom line:** Main bus is the best starting design. You can always transition to city blocks or beaconed modules later.

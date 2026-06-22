@@ -1,0 +1,130 @@
+{{- /* space-age-showcase.html — Homepage Space Age Featured Section */ -}}
+{{- $saPages := where .Site.RegularPages "Section" "space-age" }}
+{{- $saPages = sort $saPages "Date" "desc" }}
+
+{{- /* Get exactly 3 feature card articles — prioritize ones with good thumbnails */ -}}
+{{- $featureSlugs := slice "vulcanus-guide" "fulgora-recycling-guide" "gleba-survival-guide" }}
+{{- $featurePages := slice }}
+{{- range $slug := $featureSlugs }}
+  {{- range $saPages }}
+    {{- if in .RelPermalink $slug }}
+      {{- $featurePages = $featurePages | append . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- /* Fallback: if some slugs not found, use first 3 */ -}}
+{{- if lt (len $featurePages) 3 }}
+  {{- $featurePages = first 3 $saPages }}
+{{- end }}
+
+{{- /* Remaining Space Age articles for the lower grid */ -}}
+{{- $remaining := slice }}
+{{- range $saPages }}
+  {{- $isFeatured := false }}
+  {{- range $featurePages }}
+    {{- if eq .RelPermalink $.RelPermalink }}{{ $isFeatured = true }}{{ end }}
+  {{- end }}
+  {{- if not $isFeatured }}
+    {{- $remaining = $remaining | append . }}
+  {{- end }}
+{{- end }}
+
+<!-- Planet emoji map -->
+{{- $planetEmoji := dict
+  "vulcanus" "🌋" "fulgora" "⚡" "gleba" "🧫"
+  "aquilo" "❄️" "space-platform" "🚀" "quality" "💎"
+  "planet-order" "🗺️"
+}}
+
+{{- $planetDesc := dict
+  "vulcanus" "Lava smelting, tungsten, and the foundry"
+  "fulgora" "Scrap recycling, holmium, and lightning power"
+  "gleba" "Spoilage management and biological production"
+  "aquilo" "Heat management and cryogenic science"
+  "space-platform" "Asteroid processing and thruster fuel"
+  "quality" "Tier mechanics and legendary crafting"
+  "planet-order" "Optimal visit sequence and routing"
+}}
+
+<div class="space-age-showcase">
+
+  <!-- Header -->
+  <div class="space-age-showcase-header">
+    <div class="space-age-showcase-title">
+      <svg class="showcase-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" stroke="url(#sa-grad)" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M16 2l3 8h8l-7 5 3 9-7-5-7 5 3-9-7-5h8l3-8z" fill="url(#sa-grad)" opacity="0.7"/>
+        <defs>
+          <linearGradient id="sa-grad" x1="0" y1="0" x2="32" y2="32">
+            <stop offset="0%" stop-color="#9d4edd"/>
+            <stop offset="100%" stop-color="#00b8d4"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div>
+        <h2>Space Age Expansion</h2>
+        <span class="space-age-showcase-subtitle">{{ len $saPages }} guides covering all new planets &amp; mechanics</span>
+      </div>
+    </div>
+    <a href="{{ `space-age/` | relURL }}" class="space-age-view-all">
+      View All Guides
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- 3 Featured Cards -->
+  <div class="space-age-featured-grid">
+    {{- range $i, $p := $featurePages }}
+    {{- $slug := $p.File.ContentBaseName }}
+    {{- $emoji := "🚀" }}
+    {{- range $k, $v := $planetEmoji }}{{ if in $slug $k }}{{ $emoji = $v }}{{ end }}{{ end }}
+    {{- $desc := "Factorio Space Age guide" }}
+    {{- range $k, $v := $planetDesc }}{{ if in $slug $k }}{{ $desc = $v }}{{ end }}{{ end }}
+    <a href="{{ $p.RelPermalink }}" class="sa-feature-card" style="animation-delay:{{ mul $i 0.1 }}s;">
+      <div class="sa-feature-card-glow"></div>
+      <div class="sa-feature-thumb">
+        {{- $thumbKey := $slug | default "vulcanus-guide" }}
+        <img src="{{ printf `images/featured/%s.jpg` $thumbKey | relURL }}" alt="{{ $p.Title }}" loading="lazy" onerror="this.style.display='none'">
+        <div class="sa-feature-thumb-overlay"></div>
+        <span class="sa-feature-badge">
+          <svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 1v10M1 6h10"/></svg>
+          Featured
+        </span>
+      </div>
+      <div class="sa-feature-body">
+        <span class="sa-feature-planet-icon">{{ $emoji }}</span>
+        <h3>{{ $p.Title }}</h3>
+        <p>{{ $desc }}</p>
+        <div class="sa-feature-meta">
+          <span class="sa-feature-tag">Space Age</span>
+          <span class="sa-feature-read">Read Guide →</span>
+        </div>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+
+  <!-- Remaining Space Age articles (compact grid) -->
+  {{- if gt (len $remaining) 0 }}
+  <div class="space-age-topics">
+    <div class="space-age-topic-grid">
+      {{- range $p := $remaining }}
+      {{- $slug := $p.File.ContentBaseName }}
+      {{- $emoji := "🚀" }}
+      {{- range $k, $v := $planetEmoji }}{{ if in $slug $k }}{{ $emoji = $v }}{{ end }}{{ end }}
+      <a href="{{ $p.RelPermalink }}" class="sa-topic-card">
+        <span class="sa-topic-icon">{{ $emoji }}</span>
+        <div class="sa-topic-info">
+          <h4>{{ $p.Title }}</h4>
+          <span>{{ $p.Description | default ($p.Summary | plainify | truncate 80) }}</span>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+</div>

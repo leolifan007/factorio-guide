@@ -1,0 +1,595 @@
+/* ========================================
+   HOMEPAGE REDESIGN v2 — "Mission Control"
+   Space Age Showcase + Compact Topic Grid
+   ======================================== */
+
+/* ── Section Divider with Status Light ── */
+.home-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 2rem;
+  position: relative;
+}
+.home-divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--steel-border), transparent);
+}
+.home-divider-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.home-divider-label .divider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--f-orange);
+  box-shadow: 0 0 8px var(--f-orange-glow);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ════════════════════════════════════════
+   SPACE AGE SHOWCASE
+   ════════════════════════════════════════ */
+
+.space-age-showcase {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.space-age-showcase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(157, 78, 221, 0.3);
+}
+
+.space-age-showcase-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.space-age-showcase-title .showcase-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.space-age-showcase-title h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(135deg, #c084fc, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.space-age-showcase-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.space-age-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--f-cyan) !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(0, 184, 212, 0.3);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+.space-age-view-all:hover {
+  border-color: var(--f-cyan);
+  background: rgba(0, 184, 212, 0.08);
+  box-shadow: 0 0 12px rgba(0, 184, 212, 0.2);
+}
+
+.space-age-view-all svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s;
+}
+.space-age-view-all:hover svg {
+  transform: translateX(3px);
+}
+
+/* ── Space Age Feature Cards (3 large cards above the grid) ── */
+.space-age-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sa-feature-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(30, 20, 50, 0.95), rgba(10, 20, 30, 0.95));
+  border: 1px solid rgba(157, 78, 221, 0.25);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(157, 78, 221, 0.1);
+}
+
+.sa-feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #9d4edd, #00b8d4, #9d4edd);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+}
+
+.sa-feature-card:hover {
+  border-color: rgba(157, 78, 221, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(157, 78, 221, 0.25), 0 0 0 1px rgba(157, 78, 221, 0.2);
+}
+
+.sa-feature-card-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 0%, rgba(157, 78, 221, 0.06), transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.sa-feature-card:hover .sa-feature-card-glow {
+  opacity: 1;
+}
+
+.sa-feature-thumb {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sa-feature-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.4s;
+}
+.sa-feature-card:hover .sa-feature-thumb img {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.sa-feature-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10, 5, 20, 0.9) 100%);
+}
+
+.sa-feature-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 2px 8px;
+  background: linear-gradient(90deg, rgba(157, 78, 221, 0.7), rgba(0, 184, 212, 0.5));
+  border-radius: 3px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sa-feature-body {
+  padding: 1rem 1.1rem 0.9rem;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-feature-planet-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(157, 78, 221, 0.15);
+  border: 1px solid rgba(157, 78, 221, 0.3);
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.sa-feature-body h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #eee;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+  transition: color 0.2s;
+}
+.sa-feature-card:hover .sa-feature-body h3 {
+  color: var(--f-cyan);
+}
+
+.sa-feature-body p {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.sa-feature-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(157, 78, 221, 0.12);
+}
+
+.sa-feature-tag {
+  font-size: 0.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #22d3ee;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sa-feature-read {
+  font-size: 0.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.sa-feature-card:hover .sa-feature-read {
+  color: var(--f-cyan);
+}
+
+/* ── Space Age Topic Cards (secondary row) ── */
+.space-age-topics {
+  margin-top: 1rem;
+}
+
+.space-age-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.sa-topic-card {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  background: rgba(20, 15, 35, 0.6);
+  border: 1px solid rgba(157, 78, 221, 0.15);
+  border-radius: 5px;
+  transition: all 0.2s;
+  text-decoration: none !important;
+}
+
+.sa-topic-card:hover {
+  border-color: rgba(157, 78, 221, 0.4);
+  background: rgba(20, 15, 35, 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sa-topic-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.sa-topic-info h4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-hd);
+  margin: 0;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.sa-topic-card:hover .sa-topic-info h4 {
+  color: var(--f-cyan);
+}
+
+.sa-topic-info span {
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* ════════════════════════════════════════
+   GUIDES BY TOPIC (Secondary)
+   ════════════════════════════════════════ */
+
+.guides-by-topic {
+  margin-bottom: 2.5rem;
+}
+
+.guides-by-topic-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-dk);
+}
+
+.guides-by-topic-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.guides-by-topic-header .header-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--steel-border), transparent);
+}
+
+.topic-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.topic-compact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--steel-border);
+  border-radius: var(--radius);
+  transition: all 0.2s;
+  text-decoration: none !important;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-compact-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  transition: width 0.2s;
+}
+
+.topic-compact-card:hover {
+  border-color: var(--f-orange);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.topic-compact-card:hover::before {
+  width: 4px;
+}
+
+.topic-compact-card .tc-color-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  transition: width 0.2s;
+}
+.topic-compact-card:hover .tc-color-bar {
+  width: 4px;
+}
+
+.tc-body {
+  flex: 1;
+  min-width: 0;
+  padding-left: 0.3rem;
+}
+
+.tc-body h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-hd);
+  margin: 0 0 0.15rem;
+  letter-spacing: 0.06em;
+  transition: color 0.2s;
+}
+.topic-compact-card:hover .tc-body h3 {
+  color: var(--f-orange-lt);
+}
+
+.tc-body p {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tc-count {
+  flex-shrink: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* ── Hero Refinements ── */
+.hero-section {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 2px solid rgba(232, 148, 28, 0.3);
+  background: var(--bg-void);
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(0deg, var(--bg-body), transparent);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 3.5rem 2rem 3rem;
+  max-width: 720px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 40px rgba(232, 148, 28, 0.3);
+}
+
+.hero-tagline {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--f-orange-lt);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 20px var(--f-orange-glow);
+}
+
+/* ── Latest tips / secondary CTA ── */
+.home-secondary-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ── Featured Guides replacement ── */
+.home-content .guide-grid {
+  display: none;
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════ */
+
+@media (max-width: 1100px) {
+  .space-age-featured-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .space-age-topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topic-compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .space-age-featured-grid {
+    grid-template-columns: 1fr;
+  }
+  .space-age-topic-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topic-compact-grid {
+    grid-template-columns: 1fr;
+  }
+  .space-age-showcase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .space-age-topic-grid {
+    grid-template-columns: 1fr;
+  }
+}

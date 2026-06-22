@@ -1,2 +1,9 @@
 {{- $title := .Get 0 -}}
+{{- if .Inner -}}
+<div class="section-block">
 <div class="section-head"><h2>{{ $title }}</h2></div>
+{{ .Inner }}
+</div>
+{{- else -}}
+<div class="section-head"><h2>{{ $title }}</h2></div>
+{{- end -}}
