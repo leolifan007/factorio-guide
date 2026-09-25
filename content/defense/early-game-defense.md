@@ -1,75 +1,124 @@
 ---
-title: "Early Game Defense — Surviving Your First Biter Attacks"
-description: "How to defend your factory in the first few hours of Factorio. Walls, gun turrets, and ammo management."
+title: "Early Game Defense - Surviving Your First Biter Attacks"
+description: "How to defend your Factorio factory in the first hours. The wall-turret-ammo pattern, why gun turrets beat lasers early, pollution control that reduces attacks, and the exact upgrade path. Includes the ammo mistake that loses bases."
 date: 2026-05-18
+lastmod: 2026-09-26T17:15:00+08:00
 tags: ["defense", "beginner", "biters"]
-emoji: "🛡️"
+draft: false
 ---
 
-## When Do Biters Attack?
+{{< callout "tip" >}}
+**Short answer:** build a **1-tile stone wall ring**, then place **gun turrets every 5-8 tiles**, each fed from a **steel chest with piercing rounds**. The mistake that loses bases is not the wall - it is **ammo starvation**. A turret with no ammo is decoration. Set up a dedicated ammo line *before* your first attack wave, and put efficiency modules in your miners to cut pollution by 30%.
+{{< /callout >}}
 
-Once your [first factory]({{< ref "/getting-started/your-first-factory" >}}) starts producing, pollution spreads and biters take notice. Biters attack when:
-1. **Pollution** reaches their nest (they become angry)
-2. **You destroy a nest** (immediate retaliation)
-3. **Evolution factor** is high enough (time + pollution)
+{{< section "When Biters Actually Attack" />}}
 
-> **Peaceful mode:** Even without biters attacking, you still need to clear nests to expand. Walls help protect your builders.
+Biters do not attack on a timer. Three things trigger them:
 
-## The Minimum Viable Defense
+| Trigger | What Happens |
+|:--------|:-------------|
+| Pollution reaches a nest | Biters become aggressive, send a group |
+| You destroy a nest | Immediate retaliation from neighbours |
+| Evolution factor rises | Bigger waves, more frequent |
 
-### Step 1: Stone Wall (Priority 1)
+Pollution is the one you control. Every machine you build adds to it, and the cloud spreads until it touches a nest.
 
-Place **stone walls** in a rough circle around your base. 1 tile thick is enough for the first few hours.
+{{< diagram "diagrams/space-age/early-defense-layers.svg" "Early game defense layers showing stone wall, gun turrets at spacing, ammo belt, and pollution cloud" "760" >}}
 
-<div class="check-row">
-<div class="check-item"><span class="check-icon"></span><div><strong>Cheap:</strong> Stone walls cost only stone bricks</div></div>
-<div class="check-item"><span class="check-icon"></span><div><strong>Effective:</strong> Biters cannot destroy stone walls quickly</div></div>
-</div>
+{{< section "Step 1: The Wall (Priority 1)" />}}
 
-### Step 2: Gun Turrets (Priority 2)
+A rough circle of **stone walls** around your base. One tile thick is enough for the first several hours.
 
-Place **gun turrets** every 5-8 tiles along the wall. They need **ammo** (firearm magazines or piercing rounds).
+| Property | Value |
+|:---------|:------|
+| Cost | Stone bricks only - cheap |
+| Effectiveness | Biters cannot chew through quickly |
+| Thickness | 1 tile early, 2 tiles once waves grow |
+| Shape | Circle or rectangle, no need for perfection |
 
-| Turret Type | Ammo | DPS | Notes |
-|-------------|------|-----|-------|
-| Gun turret | Firearm magazine | Low | Early game only |
-| Gun turret | Piercing rounds | Medium | Upgrade ASAP |
-| Laser turret | Electricity | High | Mid-game power hungry |
+Do not spend hours designing a perfect wall. A sloppy ring beats no ring by a huge margin.
 
-### Step 3: Ammo Management
+{{< section "Step 2: Gun Turrets (Priority 2)" />}}
 
-Use **steel chests** next to each turret, fed by **inserters** from a central ammo belt.
+Place **gun turrets every 5-8 tiles** along the wall. Closer means more overlap, which helps against groups.
 
-<div class="warning-box">
-<strong>Critical:</strong> If your turrets run out of ammo, they are just decoration. Set up a <em>dedicated ammo production line</em> early!
-</div>
+| Turret | Ammo | DPS | When |
+|:-------|:-----|:----|:-----|
+| {{<material "gun-turret">}} Gun turret | Firearm magazine | Low | First hours |
+| {{<material "gun-turret">}} Gun turret | Piercing rounds | Medium | **Upgrade ASAP** |
+| {{<material "laser-turret">}} Laser turret | Electricity | High | Mid game, power hungry |
+| {{<material "flamethrower-turret">}} Flame turret | Crude oil | Very high | vs large groups |
 
-## Pollution Management (Defense by Reducing Aggression)
+**Gun turrets beat laser turrets early** because they need no power infrastructure. A brownout at the wrong moment turns your laser wall off.
 
-Biters attack because of pollution. Reduce pollution = fewer attacks.
+{{< section "Step 3: Ammo Management (Where Bases Die)" />}}
+
+Feed each turret from a **steel chest** with a nearby **inserter**.
+
+{{< diagram "diagrams/space-age/early-defense-ammo.svg" "Ammo belt feeding turrets through chests and inserters, with the dedicated production line that keeps it running" "760" >}}
+
+| Ammo Delivery | Reliability |
+|:--------------|:------------|
+| Dedicated ammo belt + chests | **Best** - set and forget |
+| Inserters from a passing belt | Fragile - breaks if belt jams |
+| Hand-feeding turrets | Fails within 20 minutes |
+| One shared chest for many turrets | Insufficient - runs dry in a wave |
+
+{{< callout "warning" >}}
+**Critical:** if your turrets run out of ammo they are just decoration. Build a **dedicated ammo production line** early - assemblers making firearm magazines from an iron plate belt, feeding a belt that runs the whole perimeter. Do this before the first big wave, not after.
+{{< /callout >}}
+
+{{< section "Pollution Control (Defense by Not Being Attacked)" />}}
+
+Fewer attacks start with less pollution. This is cheaper than more turrets.
 
 | Method | Effect |
-|--------|--------|
-| Efficiency module 1 in miners | Minus 30 percent pollution |
-| Efficiency module 2 in labs | Minus 45 percent pollution |
-| Solar panels | Zero pollution power |
-| Nuclear power | Near-zero pollution, massive output — see [Nuclear Power Guide](/base-design/nuclear-power-guide/) |
-| Burning excess wood | Plus plus pollution (don't do it) |
+|:-------|:-------|
+| Efficiency module 1 in miners | **-30% pollution** |
+| Efficiency module 2 in labs | -45% pollution |
+| {{<material "solar-panel">}} Solar panels | Zero-pollution power |
+| Nuclear power | Near-zero pollution, huge output - see the [nuclear power guide]({{< ref "/base-design/nuclear-power-guide" >}}) |
+| Burning excess wood | **More** pollution - do not |
 
-## Defense Upgrade Path
+Efficiency modules in your mining outposts are the single highest-value defense investment early. Miners are your biggest pollution source.
 
-The upgrade order as your factory grows:
+{{< section "The Upgrade Path" />}}
 
-<pre>
-Stone Wall right arrow Gun Turrets (firearm mags)
-    down arrow
-Steel Wall right arrow Gun Turrets (piercing rounds)
-    down arrow
-Laser Turrets (electricity powered, no ammo)
-    down arrow
-[Flame Turrets]({{< ref "/defense/flamethrower-defense-guide" >}}) (area damage, fuel-based)
-    down arrow
-Artillery Turrets (long range, explosive shells)
-</pre>
+As your factory grows, defenses evolve in this order:
 
-**Next:** [Defense Guide Overview]({{< ref "/defense/" >}}) — all defense layers explained.
+| Stage | Wall | Turrets | Ammo |
+|:------|:-----|:--------|:-----|
+| First hours | Stone | Gun | Firearm magazine |
+| Early base | Stone | Gun | **Piercing rounds** |
+| Mid game | Stone/Steel | Gun + Laser | Mixed |
+| Late | Steel | Laser + Flame | Electricity + oil |
+| Expansion | Steel | + Artillery | Shells |
+
+{{< diagram "diagrams/space-age/early-defense-upgrade-path.svg" "Defense upgrade path from stone walls and gun turrets through lasers, flame turrets, and artillery" "760" >}}
+
+Move to **piercing rounds** as soon as you can craft them. It roughly doubles your damage for the same turret count, which is cheaper than building twice as many turrets.
+
+{{< section "Common Early Defense Mistakes" />}}
+
+| Mistake | Consequence |
+|:--------|:------------|
+| Turrets with no ammo supply | Wall falls on the first wave |
+| Wall with gaps at corners | Biters path straight through |
+| Lasers before you have stable power | Wall goes down in a brownout |
+| Ignoring pollution | Waves grow faster than your defense |
+| Building too big too early | Perimeter you cannot afford to staff |
+
+**Do not over-expand early.** A small, well-defended base beats a sprawling one with a thin wall you cannot supply.
+
+{{< section "Related Guides" />}}
+
+- {{< ref "/defense/flamethrower-defense-guide" >}} - the next defense tier
+- {{< ref "/defense/artillery-guide" >}} - clearing nests before they attack
+- {{< ref "/getting-started/your-first-factory" >}} - the base this defense protects
+
+{{< section "Community Verification and Resources" />}}
+
+- [Factorio Wiki: Enemies](https://wiki.factorio.com/Enemies) - pollution, evolution, and attack mechanics
+- [Factorio Wiki: Turret](https://wiki.factorio.com/Turret) - damage and ammo data
+
+*Last updated: 2026-09-26 | Verified against Factorio 2.0.*
