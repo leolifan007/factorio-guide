@@ -1,0 +1,38 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" width="700" height="330" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Smelting Column Layout - Upgrade-Ready Design - Factorio Guide</title>
+  <text x="350" y="28" fill="#e8941c" font-size="16" text-anchor="middle" font-weight="bold">Smelting Column: Leave Room to Upgrade</text>
+
+  <rect x="40" y="52" width="620" height="26" rx="3" fill="#3a2a12" stroke="#d7b940" stroke-width="1.5"/>
+  <text x="52" y="70" fill="#d7b940" font-size="10">ORE INPUT BELT  -&gt;</text>
+
+  <g fill="#252525" stroke="#6abe30" stroke-width="1.5">
+    <rect x="70" y="96" width="46" height="40" rx="3"/>
+    <rect x="130" y="96" width="46" height="40" rx="3"/>
+    <rect x="190" y="96" width="46" height="40" rx="3"/>
+    <rect x="250" y="96" width="46" height="40" rx="3"/>
+    <rect x="310" y="96" width="46" height="40" rx="3"/>
+    <rect x="370" y="96" width="46" height="40" rx="3"/>
+  </g>
+  <text x="215" y="122" fill="#888" font-size="9" text-anchor="middle">furnace row</text>
+
+  <rect x="40" y="154" width="620" height="26" rx="3" fill="#2a2412" stroke="#ce8b2e" stroke-width="1.5"/>
+  <text x="52" y="172" fill="#ce8b2e" font-size="10">PLATE OUTPUT BELT  -&gt;</text>
+
+  <text x="350" y="205" fill="#8fd4f0" font-size="11" text-anchor="middle">:: leave a 3-tile gap between columns for future beacons ::</text>
+
+  <g fill="#252525" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="3,2">
+    <rect x="452" y="96" width="46" height="40" rx="3"/>
+    <rect x="512" y="96" width="46" height="40" rx="3"/>
+    <rect x="572" y="96" width="46" height="40" rx="3"/>
+  </g>
+  <text x="535" y="122" fill="#4a90d9" font-size="9" text-anchor="middle">next column</text>
+  <path d="M420,116 L448,116" stroke="#8fd4f0" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="434" y="90" fill="#8fd4f0" font-size="8" text-anchor="middle">gap</text>
+
+  <rect x="50" y="226" width="600" height="86" rx="4" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+  <text x="70" y="248" fill="#e8941c" font-size="11">Design rules</text>
+  <text x="70" y="268" fill="#888" font-size="10">1. Ore belt down the back, furnaces pull from one side</text>
+  <text x="70" y="285" fill="#888" font-size="10">2. 3-tile gap between columns = beacon room later</text>
+  <text x="70" y="302" fill="#888" font-size="10">3. Underground belts at column ends prevent crossings</text>
+  <rect x="50" y="226" width="6" height="86" rx="3" fill="#6abe30"/>
+</svg>

@@ -1,58 +1,120 @@
 ---
-title: "Smelting Ratios — How Many Furnaces Per Belt"
-description: "Exact smelting ratios for iron, copper, steel, and stone. Never waste furnaces or belt capacity again."
+title: "Smelting Ratios - How Many Furnaces Per Belt"
+description: "Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding."
 date: 2026-05-18
+lastmod: 2026-09-26T15:47:00+08:00
 tags: ["production-ratios", "smelting", "belts"]
-emoji: "🔥"
+draft: false
 ---
 
-Whether you’re building your [first factory]({{< ref "/getting-started/your-first-factory" >}}) or an advanced megabase, smelting ratios determine how many furnaces you need per belt. Here’s the math.
+{{< callout "tip" >}}
+**Short answer:** one full basic belt of ore needs **24 stone furnaces** or **12 electric furnaces** to consume it completely. Fast belt doubles that to 48/24, express belt triples it to 72/36. For steel, the number everyone gets wrong: steel takes **17.5 seconds and 5 iron plates**, so you need roughly **5x more furnace time** than copper - plan a dedicated steel line, never a side output.
+{{< /callout >}}
 
-## The Core Concept
+{{< section "The Three Numbers You Need" />}}
 
-A **transport belt** carries 7.5 items/second (15 items/second for fast belt, 22.5 for express belt).
+Everything in smelting comes down to three rates. Learn these and every ratio below is derivable.
 
-A **stone furnace** smelts 1 plate per 3.2 seconds = **0.3125 plates/second**.
-An **electric furnace** smelts 1 plate per 1.6 seconds = **0.625 plates/second**.
+| Item | Rate | Notes |
+|:-----|:-----|:------|
+| Basic belt | 7.5 items/sec | 15 items/sec per lane |
+| Fast belt | 15 items/sec | Double |
+| Express belt | 22.5 items/sec | Triple |
+| {{<material "stone-furnace">}} Stone furnace | 0.3125 plates/sec | 1 plate per 3.2s |
+| {{<material "electric-furnace">}} Electric furnace | 0.625 plates/sec | 1 plate per 1.6s |
+| {{<material "steel-furnace">}} Steel furnace | 0.625 plates/sec | Same as electric, no module slots |
 
-## Iron and Copper Smelting
+An electric furnace is **exactly twice** a stone furnace. That single fact generates the whole table below.
 
-| Belt Type | Plates/sec | Stone Furnaces | Electric Furnaces |
-|-----------|-------------|-----------------|-------------------|
-| Basic belt (half) | 3.75 | 12 | 6 |
-| Basic belt (full) | 7.5 | 24 | 12 |
-| Fast belt | 15 | 48 | 24 |
-| Express belt | 22.5 | 72 | 36 |
+{{< section "Iron and Copper: Furnaces Per Belt" />}}
 
-<div class="tip-box">
-<strong>Rule of thumb:</strong> 1 full basic belt of iron ore needs exactly <strong>24 stone furnaces</strong> (or 12 electric furnaces) to consume it entirely.
-</div>
+{{< diagram "diagrams/space-age/smelting-ratio.svg" "Factorio smelting ratio chart showing stone and electric furnace counts needed per belt for iron and copper" "760" >}}
 
-## Steel Smelting
+Iron and copper share identical smelting times, so one table covers both.
 
-Steel needs **5 iron plates** and takes **17.5 seconds** in a stone furnace.
+| Belt Type | Items/sec | Stone Furnaces | Steel Furnaces | Electric Furnaces |
+|:----------|:---------:|:--------------:|:--------------:|:-----------------:|
+| Basic (half) | 3.75 | 12 | 6 | 6 |
+| Basic (full) | 7.5 | **24** | **12** | **12** |
+| Fast belt | 15 | 48 | 24 | 24 |
+| Express belt | 22.5 | 72 | 36 | 36 |
 
-| Setup | Steel plates/sec | Furnaces needed |
-|-------|------------------|-----------------|
-| Basic | 0.28 | 1 furnace = 1 steel at a time |
-| Optimized | 1.0 | 6 electric furnaces + beacon setup |
+**The rule of thumb:** one full basic belt of iron ore fits exactly **24 stone furnaces**, or **12 electric furnaces**. Fast belt doubles it, express triples it.
 
-> **Pro tip:** Steel is slow. Don't try to make large amounts of steel with stone furnaces. Electric furnaces or **steel furnaces** are highly recommended.
+| Belt | Stone | Electric | Space Needed |
+|:-----|:-----:|:--------:|:------------:|
+| Basic | 24 | 12 | Compact column |
+| Fast | 48 | 24 | Split into two columns |
+| Express | 72 | 36 | Three columns + balancers |
 
-## Visual Layout
+{{< section "Steel: The Ratio Everyone Gets Wrong" />}}
 
-A proper smelting column (simplified description):
+Steel is where most bases break down. The recipe takes **5 iron plates** and **17.5 seconds** in a stone furnace.
 
-Iron ore belt arrow Furnace Furnace Furnace... arrow Plate output belt arrow Chest or next assembler
+| Setup | Steel/sec per Furnace | Furnaces for Full Belt |
+|:------|:---------------------:|:----------------------:|
+| Stone furnace | 0.057 | 131 for a basic belt |
+| Steel furnace | 0.114 | 65 for a basic belt |
+| Electric furnace | 0.114 | 65 for a basic belt |
+| Beaconed electric | ~0.5 | 15 for a basic belt |
 
-> **Design principle:** Always leave space to **upgrade** from stone to steel to electric furnaces without rebuilding the entire column. Your smelting output feeds directly into the [main bus]({{< ref "/base-design/main-bus-guide" >}}), so plan your bus width to match your furnace capacity.
+**Never try to make bulk steel with stone furnaces.** You would need over 130 of them to fill a single belt, which is more than most bases build in total.
 
-## Beaconed Smelting (Megabase)
+| Mistake | Consequence |
+|:--------|:------------|
+| Steel on a shared iron line | Starves everything downstream |
+| Too few steel furnaces | Steel trickles, blocking progression |
+| No dedicated steel line | Constant rebuilding |
 
-With **speed module 3** in furnaces plus **speed beacons**:
+Give steel its own furnace column fed from an iron plate belt, separate from your main iron smelting.
 
-| Setup | Plates/sec per furnace | Furnaces for 1 belt |
-|-------|------------------------|----------------------|
-| Beaconed electric | ~2.5 | 3 furnaces per half-belt |
+{{< section "Layout That Upgrades Without Rebuilding" />}}
 
-**Next:** [Production Ratio Reference]({{< ref "/production-ratios/" >}}) — all ratios in one table.
+The single best design decision in Factorio smelting is leaving room to upgrade.
+
+{{< diagram "diagrams/space-age/smelting-column-layout.svg" "Smelting column layout showing ore input, furnace row, and plate output with space for beacon upgrades" "760" >}}
+
+| Design Element | Why It Matters |
+|:---------------|:---------------|
+| Ore belt down the back | Furnaces pull from one side, output the other |
+| Plate belt down the front | Direct feed to bus or train |
+| 3-tile gap between columns | Room for beacons later |
+| Underground belts at column ends | Prevents belt crossings |
+
+**Leave a 3-tile gap between furnace columns from day one.** Retrofitting beacons into a cramped layout means tearing the whole thing down.
+
+{{< section "Furnace Type Comparison" />}}
+
+| Furnace | Speed | Fuel | Modules | When to Use |
+|:--------|:-----:|:-----|:-------:|:------------|
+| {{<material "stone-furnace">}} Stone | 0.3125/sec | Any | No | First hour only |
+| {{<material "steel-furnace">}} Steel | 0.625/sec | Any | No | Before electric, good upgrade |
+| {{<material "electric-furnace">}} Electric | 0.625/sec | Electric | **Yes** | Main line once you have power |
+| Beaconed electric | ~2.5/sec | Electric | Yes | Megabase |
+
+Stone furnaces are fine for your first hour. Switch to steel furnaces as soon as you can craft them - it **doubles throughput for free** with the same footprint.
+
+{{< section "Beaconed Smelting (Megabase)" />}}
+
+With speed module 3 in furnaces plus speed beacons:
+
+| Setup | Plates/sec per Furnace | Furnaces Per Half Belt |
+|:------|:----------------------:|:----------------------:|
+| Unbeaconed electric | 0.625 | 12 |
+| 8-beacon electric | ~2.5 | 3 |
+| 12-beacon electric | ~3.0 | 2.5 |
+
+Beaconed smelting cuts your furnace count by roughly 75%, which is why megabases use it. See the [beacon and module guide]({{< ref "/production-ratios/beacon-module-guide" >}}) for the layout.
+
+{{< section "Related Guides" />}}
+
+- {{< ref "/base-design/main-bus-guide" >}} - matching bus width to furnace output
+- {{< ref "/production-ratios/beacon-module-guide" >}} - beacon layouts for megabase smelting
+- {{< ref "/science-packs/red-science-guide" >}} - how many furnaces feed red science
+
+{{< section "Community Verification and Resources" />}}
+
+- [Factorio Wiki: Furnace](https://wiki.factorio.com/Furnace) - official crafting speeds and fuel values
+- [Factorio Cheat Sheet](https://factoriocheatsheet.com/) - community-verified ratio tables
+
+*Last updated: 2026-09-26 | Verified against Factorio 2.0.*
