@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Platform on Factorio Guide</title><link>https://factorioguides.com/tags/platform/</link><description>Recent content in Platform on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 26 Sep 2026 19:35:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/platform/index.xml" rel="self" type="application/rss+xml"/><item><title>Factorio Space Platform Too Slow - Why It Crawls and How to Fix It</title><link>https://factorioguides.com/space-age/platform/too-slow/</link><pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/platform/too-slow/</guid><description>&lt;div class="pro-tip">&lt;strong>Short answer: width, not weight, is what caps your top speed.&lt;/strong> A platform keeps accelerating only until drag catches up with thrust, and drag scales with how wide the hull is. Total mass - meaning the foundation tiles you paved - decides how long that climb takes and nothing else. So delete unused foundation for free acceleration, and narrow the hull if the top speed itself is the problem. Also check that both &lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/thruster_fuel.png" alt="thruster_fuel" class="game-img" loading="lazy">
+&lt;span class="game-name">Thruster&lt;/span>
+&lt;/span>
+thruster fuel and &lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/thruster_oxidizer.png" alt="thruster_oxidizer" class="game-img" loading="lazy">
+&lt;span class="game-name">Thruster&lt;/span>
+&lt;/span>
+thruster oxidizer are actually reaching the thrusters, because a platform missing oxidizer does not run slow, it does not move at all.&lt;/div>
+
+&lt;p>If your ship takes ten minutes to reach Gleba while someone else's does it in two, the difference is almost never the number of &lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/thruster.png" alt="thruster" class="game-img" loading="lazy">
+ &lt;span class="game-name">Thruster&lt;/span>
+&lt;/span>
+ thrusters. It is the shape of the hull, and specifically how much of it you paved.&lt;/p></description></item></channel></rss>

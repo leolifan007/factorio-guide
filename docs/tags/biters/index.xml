@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Biters on Factorio Guide</title>
-    <link>http://localhost:1319/tags/biters/</link>
-    <description>Recent content in Biters on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 17:15:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/biters/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Early Game Defense - Surviving Your First Biter Attacks</title>
-      <link>http://localhost:1319/defense/early-game-defense/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/defense/early-game-defense/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; build a &lt;strong&gt;1-tile stone wall ring&lt;/strong&gt;, then place &lt;strong&gt;gun turrets every 5-8 tiles&lt;/strong&gt;, each fed from a &lt;strong&gt;steel chest with piercing rounds&lt;/strong&gt;. The mistake that loses bases is not the wall - it is &lt;strong&gt;ammo starvation&lt;/strong&gt;. A turret with no ammo is decoration. Set up a dedicated ammo line &lt;em&gt;before&lt;/em&gt; your first attack wave, and put efficiency modules in your miners to cut pollution by 30%.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;When Biters Actually Attack&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Biters do not attack on a timer. Three things trigger them:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Biters on Factorio Guide</title><link>https://factorioguides.com/tags/biters/</link><description>Recent content in Biters on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 26 Sep 2026 17:15:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/biters/index.xml" rel="self" type="application/rss+xml"/><item><title>Early Game Defense - Surviving Your First Biter Attacks</title><link>https://factorioguides.com/defense/early-game-defense/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/defense/early-game-defense/</guid><description>&lt;div class="pro-tip">&lt;strong>Short answer:&lt;/strong> build a &lt;strong>1-tile stone wall ring&lt;/strong>, then place &lt;strong>gun turrets every 5-8 tiles&lt;/strong>, each fed from a &lt;strong>steel chest with piercing rounds&lt;/strong>. The mistake that loses bases is not the wall - it is &lt;strong>ammo starvation&lt;/strong>. A turret with no ammo is decoration. Set up a dedicated ammo line &lt;em>before&lt;/em> your first attack wave, and put efficiency modules in your miners to cut pollution by 30%.&lt;/div>
+
+&lt;div class="section-head">&lt;h2>When Biters Actually Attack&lt;/h2>&lt;/div>
+&lt;p>Biters do not attack on a timer. Three things trigger them:&lt;/p></description></item></channel></rss>

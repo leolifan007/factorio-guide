@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Smelting on Factorio Guide</title>
-    <link>http://localhost:1319/tags/smelting/</link>
-    <description>Recent content in Smelting on Factorio Guide</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 15:47:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1319/tags/smelting/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Smelting Ratios - How Many Furnaces Per Belt</title>
-      <link>http://localhost:1319/production-ratios/smelting-ratios/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1319/production-ratios/smelting-ratios/</guid>
-      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; one full basic belt of ore needs &lt;strong&gt;24 stone furnaces&lt;/strong&gt; or &lt;strong&gt;12 electric furnaces&lt;/strong&gt; to consume it completely. Fast belt doubles that to 48/24, express belt triples it to 72/36. For steel, the number everyone gets wrong: steel takes &lt;strong&gt;17.5 seconds and 5 iron plates&lt;/strong&gt;, so you need roughly &lt;strong&gt;5x more furnace time&lt;/strong&gt; than copper - plan a dedicated steel line, never a side output.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;The Three Numbers You Need&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Everything in smelting comes down to three rates. Learn these and every ratio below is derivable.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Smelting on Factorio Guide</title><link>https://factorioguides.com/tags/smelting/</link><description>Recent content in Smelting on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 26 Sep 2026 15:47:00 +0800</lastBuildDate><atom:link href="https://factorioguides.com/tags/smelting/index.xml" rel="self" type="application/rss+xml"/><item><title>Smelting Ratios - How Many Furnaces Per Belt</title><link>https://factorioguides.com/production-ratios/smelting-ratios/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/production-ratios/smelting-ratios/</guid><description>&lt;div class="pro-tip">&lt;strong>Short answer:&lt;/strong> one full basic belt of ore needs &lt;strong>24 stone furnaces&lt;/strong> or &lt;strong>12 electric furnaces&lt;/strong> to consume it completely. Fast belt doubles that to 48/24, express belt triples it to 72/36. For steel, the number everyone gets wrong: steel takes &lt;strong>17.5 seconds and 5 iron plates&lt;/strong>, so you need roughly &lt;strong>5x more furnace time&lt;/strong> than copper - plan a dedicated steel line, never a side output.&lt;/div>
+
+&lt;div class="section-head">&lt;h2>The Three Numbers You Need&lt;/h2>&lt;/div>
+&lt;p>Everything in smelting comes down to three rates. Learn these and every ratio below is derivable.&lt;/p></description></item></channel></rss>
