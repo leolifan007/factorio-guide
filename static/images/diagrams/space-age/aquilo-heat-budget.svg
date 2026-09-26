@@ -1,0 +1,63 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Aquilo Heat Budget - Where Your Heating Tower Capacity Goes - Factorio Guide</title>
+  <text x="320" y="26" fill="#8fd4f0" font-size="16" text-anchor="middle" font-weight="bold">Aquilo Heat Budget: One Heating Tower Does Not Cover Much</text>
+
+  <rect x="30" y="46" width="180" height="70" rx="4" fill="#252525" stroke="#e8941c" stroke-width="2"/>
+  <text x="120" y="70" fill="#ccc" font-size="12" text-anchor="middle">Heating Tower</text>
+  <text x="120" y="88" fill="#e8941c" font-size="10" text-anchor="middle">source &gt; 30 C</text>
+  <text x="120" y="104" fill="#888" font-size="9" text-anchor="middle">fuel: solid fuel from crude oil</text>
+
+  <line x1="210" y1="81" x2="256" y2="81" stroke="#888" stroke-width="2"/>
+
+  <rect x="258" y="46" width="180" height="70" rx="4" fill="#252525" stroke="#8fd4f0" stroke-width="2"/>
+  <text x="348" y="70" fill="#ccc" font-size="12" text-anchor="middle">Heat Pipe Trunk</text>
+  <text x="348" y="88" fill="#8fd4f0" font-size="10" text-anchor="middle">no ambient loss</text>
+  <text x="348" y="104" fill="#888" font-size="9" text-anchor="middle">only consumers drain it</text>
+
+  <line x1="438" y1="81" x2="484" y2="81" stroke="#888" stroke-width="2"/>
+
+  <rect x="486" y="46" width="128" height="70" rx="4" fill="#252525" stroke="#c9463d" stroke-width="2"/>
+  <text x="550" y="70" fill="#ccc" font-size="12" text-anchor="middle">Consumers</text>
+  <text x="550" y="88" fill="#c9463d" font-size="10" text-anchor="middle">each drains kW</text>
+  <text x="550" y="104" fill="#888" font-size="9" text-anchor="middle">below 30 C = frozen</text>
+
+  <text x="320" y="146" fill="#ccc" font-size="12" text-anchor="middle" font-weight="bold">Heat demand per entity (kW)</text>
+
+  <rect x="40" y="158" width="560" height="180" rx="4" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+
+  <rect x="56" y="172" width="256" height="18" fill="none"/>
+  <text x="56" y="185" fill="#ccc" font-size="10">Beacon</text>
+  <rect x="180" y="174" width="120" height="14" fill="#c9463d"/>
+  <text x="308" y="185" fill="#c9463d" font-size="10">400 kW</text>
+
+  <text x="56" y="203" fill="#ccc" font-size="10">Turbo underground belt</text>
+  <rect x="180" y="192" width="60" height="14" fill="#d7b940"/>
+  <text x="248" y="203" fill="#d7b940" font-size="10">200 kW</text>
+
+  <text x="56" y="221" fill="#ccc" font-size="10">Oil refinery</text>
+  <rect x="180" y="210" width="60" height="14" fill="#d7b940"/>
+  <text x="248" y="221" fill="#d7b940" font-size="10">200 kW</text>
+
+  <text x="56" y="239" fill="#ccc" font-size="10">Pipe to ground</text>
+  <rect x="180" y="228" width="45" height="14" fill="#e8941c"/>
+  <text x="233" y="239" fill="#e8941c" font-size="10">150 kW</text>
+
+  <text x="56" y="257" fill="#ccc" font-size="10">Assembling machine / chemical plant / recycler</text>
+  <rect x="334" y="246" width="30" height="14" fill="#6abe30"/>
+  <text x="372" y="257" fill="#6abe30" font-size="10">100 kW</text>
+
+  <text x="56" y="275" fill="#ccc" font-size="10">Splitter</text>
+  <rect x="180" y="264" width="12" height="14" fill="#6abe30"/>
+  <text x="200" y="275" fill="#6abe30" font-size="10">40 kW</text>
+
+  <text x="56" y="293" fill="#ccc" font-size="10">Inserter / pump</text>
+  <rect x="180" y="282" width="9" height="14" fill="#4a90d9"/>
+  <text x="197" y="293" fill="#4a90d9" font-size="10">30 kW</text>
+
+  <text x="56" y="311" fill="#ccc" font-size="10">Transport belt</text>
+  <rect x="180" y="300" width="3" height="14" fill="#4a90d9"/>
+  <text x="191" y="311" fill="#4a90d9" font-size="10">10 kW</text>
+
+  <text x="56" y="329" fill="#ccc" font-size="10">Pipe / wall / chest / electric pole</text>
+  <text x="312" y="329" fill="#888" font-size="10">immune to freezing</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Space Platform Speed Troubleshooting Flow - Factorio Guide</title>
+  <text x="320" y="26" fill="#4a90d9" font-size="16" text-anchor="middle" font-weight="bold">Ship Too Slow: Walk The Chain In This Order</text>
+
+  <rect x="30" y="48" width="170" height="56" rx="4" fill="#252525" stroke="#c9463d" stroke-width="2"/>
+  <text x="115" y="72" fill="#ccc" font-size="11" text-anchor="middle">Thrusters have fuel?</text>
+  <text x="115" y="90" fill="#c9463d" font-size="10" text-anchor="middle">no = no acceleration</text>
+
+  <line x1="200" y1="76" x2="236" y2="76" stroke="#888" stroke-width="2"/>
+  <polygon points="236,76 228,71 228,81" fill="#888"/>
+
+  <rect x="238" y="48" width="170" height="56" rx="4" fill="#252525" stroke="#d7b940" stroke-width="2"/>
+  <text x="323" y="72" fill="#ccc" font-size="11" text-anchor="middle">Oxidizer too?</text>
+  <text x="323" y="90" fill="#d7b940" font-size="10" text-anchor="middle">fuel alone does nothing</text>
+
+  <line x1="408" y1="76" x2="444" y2="76" stroke="#888" stroke-width="2"/>
+  <polygon points="444,76 436,71 436,81" fill="#888"/>
+
+  <rect x="446" y="48" width="164" height="56" rx="4" fill="#252525" stroke="#e8941c" stroke-width="2"/>
+  <text x="528" y="72" fill="#ccc" font-size="11" text-anchor="middle">Count foundation tiles</text>
+  <text x="528" y="90" fill="#e8941c" font-size="10" text-anchor="middle">this is the real weight</text>
+
+  <text x="320" y="132" fill="#888" font-size="10" text-anchor="middle">if all three are fine, the problem is thrust count versus platform size</text>
+
+  <rect x="30" y="150" width="580" height="60" rx="4" fill="#231a10" stroke="#e8941c" stroke-width="1"/>
+  <text x="50" y="172" fill="#e8941c" font-size="11" font-weight="bold">Rule of thumb</text>
+  <text x="50" y="190" fill="#999" font-size="10">Ratio that matters is thrusters / foundation tiles. Doubling your deck and keeping the same thrusters halves your speed.</text>
+  <text x="50" y="204" fill="#999" font-size="10">Before adding thrusters, delete unused foundation. It is free speed.</text>
+
+  <text x="320" y="238" fill="#ccc" font-size="12" text-anchor="middle" font-weight="bold">The trade-off you cannot avoid</text>
+
+  <rect x="40" y="252" width="260" height="70" rx="4" fill="#1a1a1a" stroke="#6abe30" stroke-width="1"/>
+  <text x="170" y="272" fill="#6abe30" font-size="11" text-anchor="middle" font-weight="bold">MORE THRUST</text>
+  <text x="170" y="290" fill="#ccc" font-size="10" text-anchor="middle">faster trips</text>
+  <text x="170" y="308" fill="#c9463d" font-size="10" text-anchor="middle">asteroids spawn faster and hit harder</text>
+
+  <rect x="340" y="252" width="260" height="70" rx="4" fill="#1a1a1a" stroke="#4a90d9" stroke-width="1"/>
+  <text x="470" y="272" fill="#4a90d9" font-size="11" text-anchor="middle" font-weight="bold">LESS DECK</text>
+  <text x="470" y="290" fill="#ccc" font-size="10" text-anchor="middle">same speed on fewer thrusters</text>
+  <text x="470" y="308" fill="#6abe30" font-size="10" text-anchor="middle">lower fuel bill, fewer asteroid encounters</text>
+</svg>

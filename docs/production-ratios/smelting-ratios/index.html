@@ -1,39 +1,577 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding."><title>Smelting Ratios - How Many Furnaces Per Belt | Factorio Guide</title><link rel=canonical href=https://factorioguides.com/production-ratios/smelting-ratios/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-06QHTM40LG")</script><meta property="og:title" content="Smelting Ratios - How Many Furnaces Per Belt"><meta property="og:description" content="Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding."><meta property="og:type" content="article"><meta property="og:url" content="https://factorioguides.com/production-ratios/smelting-ratios/"></head><body><header class=site-header><a href=/ class=site-logo><span class=logo-icon>&#9881;</span> Factorio Guide</a><nav class=nav-links aria-label="Main navigation"><a href=/getting-started/ class=nav-btn>Getting Started</a>
-<a href=/production-ratios/ class=nav-btn>Production Ratios</a>
-<a href=/base-design/ class=nav-btn>Base Design</a>
-<a href=/trains-logistics/ class=nav-btn>Trains & Logistics</a>
-<a href=/defense/ class=nav-btn>Defense</a>
-<a href=/blueprints/ class=nav-btn>Blueprints</a>
-<a href=/space-age/ class=nav-btn>&#128640; Space Age</a></nav></header><div class=page-wrap><div class=article-page><div class=article-hero-full><div class=article-hero-bg style=background-image:url(/images/hero-bg.jpg)></div><div class=article-hero-fade></div><div class=article-hero-content><h1>Smelting Ratios - How Many Furnaces Per Belt</h1><p class=article-desc>Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding.</p><div class=article-meta><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="10" rx="1"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="5" y1="1" x2="5" y2="4"/><line x1="9" y1="1" x2="9" y2="4"/></svg>
-Updated: May 18, 2026
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="6"/><line x1="7" y1="4" x2="7" y2="7"/><line x1="7" y1="7" x2="10" y2="9"/></svg>
-4 min read
-</span><span class=meta-item><svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8.0l-4-4A2 2 0 011 8a2 2 0 01.3-.7z"/><circle cx="4" cy="4" r="1" fill="currentColor"/></svg></span></div></div></div><div class=section-layout><nav class=section-nav id=sectionNav><div class=section-nav-title>Production Ratios — Factorio Ratio Reference</div><div class=section-nav-list><a href=/production-ratios/ class=section-nav-item><span class=section-nav-icon style="font-style:italic;font-family:serif;font-size:.85rem;background:0 0">i</span>
-<span class=section-nav-name>About this section</span>
-</a><a href=/production-ratios/kovarex-enrichment-guide/ class=section-nav-item><span class=section-nav-name>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</span>
-</a><a href=/production-ratios/beacon-module-guide/ class=section-nav-item><span class=section-nav-name>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</span>
-</a><a href=/production-ratios/oil-processing-guide/ class=section-nav-item><span class=section-nav-name>Oil Processing — Ratios, Cracking, and Refinery Setup</span>
-</a><a href=/production-ratios/smelting-ratios/ class="section-nav-item is-active"><span class=section-nav-name>Smelting Ratios - How Many Furnaces Per Belt</span></a></div></nav><main class=section-content id=sectionContent><div class=section-content-inner id=sectionContentInner><div class=article-content><div class=adsterra-header><div class=adsterra-header-inner><script>var atOptions={key:"9213e2c1db53a2eec6ab8a2f81e72c72",format:"iframe",height:90,width:728,params:{}}</script><script src=https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js></script></div></div><nav class=breadcrumb><a href=/>Home</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<a href=/production-ratios/>Production Ratios — Factorio Ratio Reference</a>
-<span class=breadcrumb-sep>&#8250;</span>
-<span class=breadcrumb-current>Smelting Ratios - How Many Furnaces Per Belt</span></nav><div class=pro-tip><strong>Short answer:</strong> one full basic belt of ore needs <strong>24 stone furnaces</strong> or <strong>12 electric furnaces</strong> to consume it completely. Fast belt doubles that to 48/24, express belt triples it to 72/36. For steel, the number everyone gets wrong: steel takes <strong>17.5 seconds and 5 iron plates</strong>, so you need roughly <strong>5x more furnace time</strong> than copper - plan a dedicated steel line, never a side output.</div><div class=section-head><h2>The Three Numbers You Need</h2></div><p>Everything in smelting comes down to three rates. Learn these and every ratio below is derivable.</p><table><thead><tr><th style=text-align:left>Item</th><th style=text-align:left>Rate</th><th style=text-align:left>Notes</th></tr></thead><tbody><tr><td style=text-align:left>Basic belt</td><td style=text-align:left>7.5 items/sec</td><td style=text-align:left>15 items/sec per lane</td></tr><tr><td style=text-align:left>Fast belt</td><td style=text-align:left>15 items/sec</td><td style=text-align:left>Double</td></tr><tr><td style=text-align:left>Express belt</td><td style=text-align:left>22.5 items/sec</td><td style=text-align:left>Triple</td></tr><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/stone-furnace.png alt=stone-furnace class=game-img loading=lazy>
-<span class=game-name>Stone</span>
-</span>Stone furnace</td><td style=text-align:left>0.3125 plates/sec</td><td style=text-align:left>1 plate per 3.2s</td></tr><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/electric-furnace.png alt=electric-furnace class=game-img loading=lazy>
-<span class=game-name>Electric</span>
-</span>Electric furnace</td><td style=text-align:left>0.625 plates/sec</td><td style=text-align:left>1 plate per 1.6s</td></tr><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/steel-furnace.png alt=steel-furnace class=game-img loading=lazy>
-<span class=game-name>Steel</span>
-</span>Steel furnace</td><td style=text-align:left>0.625 plates/sec</td><td style=text-align:left>Same as electric, no module slots</td></tr></tbody></table><p>An electric furnace is <strong>exactly twice</strong> a stone furnace. That single fact generates the whole table below.</p><div class=section-head><h2>Iron and Copper: Furnaces Per Belt</h2></div><img src=/images/diagrams/space-age/smelting-ratio.svg alt="Factorio smelting ratio chart showing stone and electric furnace counts needed per belt for iron and copper" class=schema-diagram loading=lazy width=760><p>Iron and copper share identical smelting times, so one table covers both.</p><table><thead><tr><th style=text-align:left>Belt Type</th><th style=text-align:center>Items/sec</th><th style=text-align:center>Stone Furnaces</th><th style=text-align:center>Steel Furnaces</th><th style=text-align:center>Electric Furnaces</th></tr></thead><tbody><tr><td style=text-align:left>Basic (half)</td><td style=text-align:center>3.75</td><td style=text-align:center>12</td><td style=text-align:center>6</td><td style=text-align:center>6</td></tr><tr><td style=text-align:left>Basic (full)</td><td style=text-align:center>7.5</td><td style=text-align:center><strong>24</strong></td><td style=text-align:center><strong>12</strong></td><td style=text-align:center><strong>12</strong></td></tr><tr><td style=text-align:left>Fast belt</td><td style=text-align:center>15</td><td style=text-align:center>48</td><td style=text-align:center>24</td><td style=text-align:center>24</td></tr><tr><td style=text-align:left>Express belt</td><td style=text-align:center>22.5</td><td style=text-align:center>72</td><td style=text-align:center>36</td><td style=text-align:center>36</td></tr></tbody></table><p><strong>The rule of thumb:</strong> one full basic belt of iron ore fits exactly <strong>24 stone furnaces</strong>, or <strong>12 electric furnaces</strong>. Fast belt doubles it, express triples it.</p><table><thead><tr><th style=text-align:left>Belt</th><th style=text-align:center>Stone</th><th style=text-align:center>Electric</th><th style=text-align:center>Space Needed</th></tr></thead><tbody><tr><td style=text-align:left>Basic</td><td style=text-align:center>24</td><td style=text-align:center>12</td><td style=text-align:center>Compact column</td></tr><tr><td style=text-align:left>Fast</td><td style=text-align:center>48</td><td style=text-align:center>24</td><td style=text-align:center>Split into two columns</td></tr><tr><td style=text-align:left>Express</td><td style=text-align:center>72</td><td style=text-align:center>36</td><td style=text-align:center>Three columns + balancers</td></tr></tbody></table><div class=section-head><h2>Steel: The Ratio Everyone Gets Wrong</h2></div><p>Steel is where most bases break down. The recipe takes <strong>5 iron plates</strong> and <strong>17.5 seconds</strong> in a stone furnace.</p><table><thead><tr><th style=text-align:left>Setup</th><th style=text-align:center>Steel/sec per Furnace</th><th style=text-align:center>Furnaces for Full Belt</th></tr></thead><tbody><tr><td style=text-align:left>Stone furnace</td><td style=text-align:center>0.057</td><td style=text-align:center>131 for a basic belt</td></tr><tr><td style=text-align:left>Steel furnace</td><td style=text-align:center>0.114</td><td style=text-align:center>65 for a basic belt</td></tr><tr><td style=text-align:left>Electric furnace</td><td style=text-align:center>0.114</td><td style=text-align:center>65 for a basic belt</td></tr><tr><td style=text-align:left>Beaconed electric</td><td style=text-align:center>~0.5</td><td style=text-align:center>15 for a basic belt</td></tr></tbody></table><p><strong>Never try to make bulk steel with stone furnaces.</strong> You would need over 130 of them to fill a single belt, which is more than most bases build in total.</p><table><thead><tr><th style=text-align:left>Mistake</th><th style=text-align:left>Consequence</th></tr></thead><tbody><tr><td style=text-align:left>Steel on a shared iron line</td><td style=text-align:left>Starves everything downstream</td></tr><tr><td style=text-align:left>Too few steel furnaces</td><td style=text-align:left>Steel trickles, blocking progression</td></tr><tr><td style=text-align:left>No dedicated steel line</td><td style=text-align:left>Constant rebuilding</td></tr></tbody></table><p>Give steel its own furnace column fed from an iron plate belt, separate from your main iron smelting.</p><div class=section-head><h2>Layout That Upgrades Without Rebuilding</h2></div><p>The single best design decision in Factorio smelting is leaving room to upgrade.</p><img src=/images/diagrams/space-age/smelting-column-layout.svg alt="Smelting column layout showing ore input, furnace row, and plate output with space for beacon upgrades" class=schema-diagram loading=lazy width=760><table><thead><tr><th style=text-align:left>Design Element</th><th style=text-align:left>Why It Matters</th></tr></thead><tbody><tr><td style=text-align:left>Ore belt down the back</td><td style=text-align:left>Furnaces pull from one side, output the other</td></tr><tr><td style=text-align:left>Plate belt down the front</td><td style=text-align:left>Direct feed to bus or train</td></tr><tr><td style=text-align:left>3-tile gap between columns</td><td style=text-align:left>Room for beacons later</td></tr><tr><td style=text-align:left>Underground belts at column ends</td><td style=text-align:left>Prevents belt crossings</td></tr></tbody></table><p><strong>Leave a 3-tile gap between furnace columns from day one.</strong> Retrofitting beacons into a cramped layout means tearing the whole thing down.</p><div class=section-head><h2>Furnace Type Comparison</h2></div><table><thead><tr><th style=text-align:left>Furnace</th><th style=text-align:center>Speed</th><th style=text-align:left>Fuel</th><th style=text-align:center>Modules</th><th style=text-align:left>When to Use</th></tr></thead><tbody><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/stone-furnace.png alt=stone-furnace class=game-img loading=lazy>
-<span class=game-name>Stone</span>
-</span>Stone</td><td style=text-align:center>0.3125/sec</td><td style=text-align:left>Any</td><td style=text-align:center>No</td><td style=text-align:left>First hour only</td></tr><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/steel-furnace.png alt=steel-furnace class=game-img loading=lazy>
-<span class=game-name>Steel</span>
-</span>Steel</td><td style=text-align:center>0.625/sec</td><td style=text-align:left>Any</td><td style=text-align:center>No</td><td style=text-align:left>Before electric, good upgrade</td></tr><tr><td style=text-align:left><span class=game-slot><img src=/images/icon/electric-furnace.png alt=electric-furnace class=game-img loading=lazy>
-<span class=game-name>Electric</span>
-</span>Electric</td><td style=text-align:center>0.625/sec</td><td style=text-align:left>Electric</td><td style=text-align:center><strong>Yes</strong></td><td style=text-align:left>Main line once you have power</td></tr><tr><td style=text-align:left>Beaconed electric</td><td style=text-align:center>~2.5/sec</td><td style=text-align:left>Electric</td><td style=text-align:center>Yes</td><td style=text-align:left>Megabase</td></tr></tbody></table><p>Stone furnaces are fine for your first hour. Switch to steel furnaces as soon as you can craft them - it <strong>doubles throughput for free</strong> with the same footprint.</p><div class=section-head><h2>Beaconed Smelting (Megabase)</h2></div><p>With speed module 3 in furnaces plus speed beacons:</p><table><thead><tr><th style=text-align:left>Setup</th><th style=text-align:center>Plates/sec per Furnace</th><th style=text-align:center>Furnaces Per Half Belt</th></tr></thead><tbody><tr><td style=text-align:left>Unbeaconed electric</td><td style=text-align:center>0.625</td><td style=text-align:center>12</td></tr><tr><td style=text-align:left>8-beacon electric</td><td style=text-align:center>~2.5</td><td style=text-align:center>3</td></tr><tr><td style=text-align:left>12-beacon electric</td><td style=text-align:center>~3.0</td><td style=text-align:center>2.5</td></tr></tbody></table><p>Beaconed smelting cuts your furnace count by roughly 75%, which is why megabases use it. See the <a href=https://factorioguides.com/production-ratios/beacon-module-guide/>beacon and module guide</a> for the layout.</p><div class=section-head><h2>Related Guides</h2></div><ul><li>https://factorioguides.com/base-design/main-bus-guide/ - matching bus width to furnace output</li><li>https://factorioguides.com/production-ratios/beacon-module-guide/ - beacon layouts for megabase smelting</li><li>https://factorioguides.com/science-packs/red-science-guide/ - how many furnaces feed red science</li></ul><div class=section-head><h2>Community Verification and Resources</h2></div><ul><li><a href=https://wiki.factorio.com/Furnace>Factorio Wiki: Furnace</a> - official crafting speeds and fuel values</li><li><a href=https://factoriocheatsheet.com/>Factorio Cheat Sheet</a> - community-verified ratio tables</li></ul><p><em>Last updated: 2026-09-26 | Verified against Factorio 2.0.</em></p><div class=back-to-section><a href=/production-ratios/ class="btn btn-ghost"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4 6 8l4 4"/></svg>
-Back to Production Ratios — Factorio Ratio Reference</a></div><div class=related-articles><h3>Related Articles</h3><div class=related-grid><a href=/production-ratios/kovarex-enrichment-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">K</text></svg></div><div class=related-body><h4>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</h4><p><div class=pro-tip><strong>Kovarex at a glance:</strong> Each centrifuge needs 40 U-235 and 5 …</div></p></div></a><a href=/production-ratios/beacon-module-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text></svg></div><div class=related-body><h4>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</h4><p>Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.</p></div></a><a href=/production-ratios/oil-processing-guide/ class=related-card><div class=related-icon><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/><text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">O</text></svg></div><div class=related-body><h4>Oil Processing — Ratios, Cracking, and Refinery Setup</h4><p>Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p></div></a></div></div></div></div></main><div class=article-ad-right><div class=ad-placeholder><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-<span class=ad-placeholder-label>Advertisement</span>
-<span class=ad-placeholder-size>160 × 600</span></div><div class=adsterra-cpm-unit><script async data-cfasync=false src=https://pl29637239.effectivecpmnetwork.com/04e2732f2ca38aec2b69155cb083a610/invoke.js></script><div id=container-04e2732f2ca38aec2b69155cb083a610></div></div><div class=adsterra-cpm-unit><script src=https://pl29637240.effectivecpmnetwork.com/14/89/65/148965524e74cbcd5c361c35b6682da7.js></script></div></div></div></div></div><footer class=site-footer><div class=footer-links><a href=/getting-started/>Getting Started</a>
-<a href=/production-ratios/>Production Ratios</a>
-<a href=/base-design/>Base Design</a>
-<a href=/trains-logistics/>Trains & Logistics</a>
-<a href=/defense/>Defense</a></div><p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p><p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p></footer><script src=/js/main.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding.">
+  <title>Smelting Ratios - How Many Furnaces Per Belt | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1319/production-ratios/smelting-ratios/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Smelting Ratios - How Many Furnaces Per Belt">
+  <meta property="og:description" content="Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1319/production-ratios/smelting-ratios/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Smelting Ratios - How Many Furnaces Per Belt</h1><p class="article-desc">Exact Factorio smelting ratios for iron, copper, and steel. How many stone and electric furnaces fill one belt, the steel ratio almost everyone gets wrong, and a layout that upgrades without rebuilding.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: May 18, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          4 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="section-layout">
+
+    
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Production Ratios — Factorio Ratio Reference</div>
+      <div class="section-nav-list">
+        <a href="/production-ratios/" class="section-nav-item">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        
+        <a href="/production-ratios/kovarex-enrichment-guide/" class="section-nav-item">
+          <span class="section-nav-name">Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</span>
+          
+        </a>
+        
+        <a href="/production-ratios/beacon-module-guide/" class="section-nav-item">
+          <span class="section-nav-name">Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</span>
+          
+        </a>
+        
+        <a href="/production-ratios/oil-processing-guide/" class="section-nav-item">
+          <span class="section-nav-name">Oil Processing — Ratios, Cracking, and Refinery Setup</span>
+          
+        </a>
+        
+        <a href="/production-ratios/smelting-ratios/" class="section-nav-item is-active">
+          <span class="section-nav-name">Smelting Ratios - How Many Furnaces Per Belt</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+    
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+          <nav class="breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            
+            <a href="/production-ratios/">Production Ratios — Factorio Ratio Reference</a>
+            
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Smelting Ratios - How Many Furnaces Per Belt</span>
+          </nav>
+
+          <div class="pro-tip"><strong>Short answer:</strong> one full basic belt of ore needs <strong>24 stone furnaces</strong> or <strong>12 electric furnaces</strong> to consume it completely. Fast belt doubles that to 48/24, express belt triples it to 72/36. For steel, the number everyone gets wrong: steel takes <strong>17.5 seconds and 5 iron plates</strong>, so you need roughly <strong>5x more furnace time</strong> than copper - plan a dedicated steel line, never a side output.</div>
+
+<div class="section-head"><h2>The Three Numbers You Need</h2></div>
+<p>Everything in smelting comes down to three rates. Learn these and every ratio below is derivable.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Rate</th>
+          <th style="text-align: left">Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Basic belt</td>
+          <td style="text-align: left">7.5 items/sec</td>
+          <td style="text-align: left">15 items/sec per lane</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fast belt</td>
+          <td style="text-align: left">15 items/sec</td>
+          <td style="text-align: left">Double</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Express belt</td>
+          <td style="text-align: left">22.5 items/sec</td>
+          <td style="text-align: left">Triple</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/stone-furnace.png" alt="stone-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Stone</span>
+</span>
+ Stone furnace</td>
+          <td style="text-align: left">0.3125 plates/sec</td>
+          <td style="text-align: left">1 plate per 3.2s</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/electric-furnace.png" alt="electric-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Electric</span>
+</span>
+ Electric furnace</td>
+          <td style="text-align: left">0.625 plates/sec</td>
+          <td style="text-align: left">1 plate per 1.6s</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/steel-furnace.png" alt="steel-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Steel</span>
+</span>
+ Steel furnace</td>
+          <td style="text-align: left">0.625 plates/sec</td>
+          <td style="text-align: left">Same as electric, no module slots</td>
+      </tr>
+  </tbody>
+</table>
+<p>An electric furnace is <strong>exactly twice</strong> a stone furnace. That single fact generates the whole table below.</p>
+<div class="section-head"><h2>Iron and Copper: Furnaces Per Belt</h2></div>
+<img src="/images/diagrams/space-age/smelting-ratio.svg" alt="Factorio smelting ratio chart showing stone and electric furnace counts needed per belt for iron and copper" class="schema-diagram" loading="lazy" width="760">
+
+<p>Iron and copper share identical smelting times, so one table covers both.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Belt Type</th>
+          <th style="text-align: center">Items/sec</th>
+          <th style="text-align: center">Stone Furnaces</th>
+          <th style="text-align: center">Steel Furnaces</th>
+          <th style="text-align: center">Electric Furnaces</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Basic (half)</td>
+          <td style="text-align: center">3.75</td>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Basic (full)</td>
+          <td style="text-align: center">7.5</td>
+          <td style="text-align: center"><strong>24</strong></td>
+          <td style="text-align: center"><strong>12</strong></td>
+          <td style="text-align: center"><strong>12</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fast belt</td>
+          <td style="text-align: center">15</td>
+          <td style="text-align: center">48</td>
+          <td style="text-align: center">24</td>
+          <td style="text-align: center">24</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Express belt</td>
+          <td style="text-align: center">22.5</td>
+          <td style="text-align: center">72</td>
+          <td style="text-align: center">36</td>
+          <td style="text-align: center">36</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>The rule of thumb:</strong> one full basic belt of iron ore fits exactly <strong>24 stone furnaces</strong>, or <strong>12 electric furnaces</strong>. Fast belt doubles it, express triples it.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Belt</th>
+          <th style="text-align: center">Stone</th>
+          <th style="text-align: center">Electric</th>
+          <th style="text-align: center">Space Needed</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Basic</td>
+          <td style="text-align: center">24</td>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">Compact column</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fast</td>
+          <td style="text-align: center">48</td>
+          <td style="text-align: center">24</td>
+          <td style="text-align: center">Split into two columns</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Express</td>
+          <td style="text-align: center">72</td>
+          <td style="text-align: center">36</td>
+          <td style="text-align: center">Three columns + balancers</td>
+      </tr>
+  </tbody>
+</table>
+<div class="section-head"><h2>Steel: The Ratio Everyone Gets Wrong</h2></div>
+<p>Steel is where most bases break down. The recipe takes <strong>5 iron plates</strong> and <strong>17.5 seconds</strong> in a stone furnace.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Setup</th>
+          <th style="text-align: center">Steel/sec per Furnace</th>
+          <th style="text-align: center">Furnaces for Full Belt</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Stone furnace</td>
+          <td style="text-align: center">0.057</td>
+          <td style="text-align: center">131 for a basic belt</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Steel furnace</td>
+          <td style="text-align: center">0.114</td>
+          <td style="text-align: center">65 for a basic belt</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Electric furnace</td>
+          <td style="text-align: center">0.114</td>
+          <td style="text-align: center">65 for a basic belt</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Beaconed electric</td>
+          <td style="text-align: center">~0.5</td>
+          <td style="text-align: center">15 for a basic belt</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Never try to make bulk steel with stone furnaces.</strong> You would need over 130 of them to fill a single belt, which is more than most bases build in total.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Mistake</th>
+          <th style="text-align: left">Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Steel on a shared iron line</td>
+          <td style="text-align: left">Starves everything downstream</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Too few steel furnaces</td>
+          <td style="text-align: left">Steel trickles, blocking progression</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">No dedicated steel line</td>
+          <td style="text-align: left">Constant rebuilding</td>
+      </tr>
+  </tbody>
+</table>
+<p>Give steel its own furnace column fed from an iron plate belt, separate from your main iron smelting.</p>
+<div class="section-head"><h2>Layout That Upgrades Without Rebuilding</h2></div>
+<p>The single best design decision in Factorio smelting is leaving room to upgrade.</p>
+<img src="/images/diagrams/space-age/smelting-column-layout.svg" alt="Smelting column layout showing ore input, furnace row, and plate output with space for beacon upgrades" class="schema-diagram" loading="lazy" width="760">
+
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Design Element</th>
+          <th style="text-align: left">Why It Matters</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ore belt down the back</td>
+          <td style="text-align: left">Furnaces pull from one side, output the other</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Plate belt down the front</td>
+          <td style="text-align: left">Direct feed to bus or train</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3-tile gap between columns</td>
+          <td style="text-align: left">Room for beacons later</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Underground belts at column ends</td>
+          <td style="text-align: left">Prevents belt crossings</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Leave a 3-tile gap between furnace columns from day one.</strong> Retrofitting beacons into a cramped layout means tearing the whole thing down.</p>
+<div class="section-head"><h2>Furnace Type Comparison</h2></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Furnace</th>
+          <th style="text-align: center">Speed</th>
+          <th style="text-align: left">Fuel</th>
+          <th style="text-align: center">Modules</th>
+          <th style="text-align: left">When to Use</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/stone-furnace.png" alt="stone-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Stone</span>
+</span>
+ Stone</td>
+          <td style="text-align: center">0.3125/sec</td>
+          <td style="text-align: left">Any</td>
+          <td style="text-align: center">No</td>
+          <td style="text-align: left">First hour only</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/steel-furnace.png" alt="steel-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Steel</span>
+</span>
+ Steel</td>
+          <td style="text-align: center">0.625/sec</td>
+          <td style="text-align: left">Any</td>
+          <td style="text-align: center">No</td>
+          <td style="text-align: left">Before electric, good upgrade</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/electric-furnace.png" alt="electric-furnace" class="game-img" loading="lazy">
+  <span class="game-name">Electric</span>
+</span>
+ Electric</td>
+          <td style="text-align: center">0.625/sec</td>
+          <td style="text-align: left">Electric</td>
+          <td style="text-align: center"><strong>Yes</strong></td>
+          <td style="text-align: left">Main line once you have power</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Beaconed electric</td>
+          <td style="text-align: center">~2.5/sec</td>
+          <td style="text-align: left">Electric</td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: left">Megabase</td>
+      </tr>
+  </tbody>
+</table>
+<p>Stone furnaces are fine for your first hour. Switch to steel furnaces as soon as you can craft them - it <strong>doubles throughput for free</strong> with the same footprint.</p>
+<div class="section-head"><h2>Beaconed Smelting (Megabase)</h2></div>
+<p>With speed module 3 in furnaces plus speed beacons:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Setup</th>
+          <th style="text-align: center">Plates/sec per Furnace</th>
+          <th style="text-align: center">Furnaces Per Half Belt</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Unbeaconed electric</td>
+          <td style="text-align: center">0.625</td>
+          <td style="text-align: center">12</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">8-beacon electric</td>
+          <td style="text-align: center">~2.5</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">12-beacon electric</td>
+          <td style="text-align: center">~3.0</td>
+          <td style="text-align: center">2.5</td>
+      </tr>
+  </tbody>
+</table>
+<p>Beaconed smelting cuts your furnace count by roughly 75%, which is why megabases use it. See the <a href="http://localhost:1319/production-ratios/beacon-module-guide/">beacon and module guide</a> for the layout.</p>
+<div class="section-head"><h2>Related Guides</h2></div>
+<ul>
+<li>http://localhost:1319/base-design/main-bus-guide/ - matching bus width to furnace output</li>
+<li>http://localhost:1319/production-ratios/beacon-module-guide/ - beacon layouts for megabase smelting</li>
+<li>http://localhost:1319/science-packs/red-science-guide/ - how many furnaces feed red science</li>
+</ul>
+<div class="section-head"><h2>Community Verification and Resources</h2></div>
+<ul>
+<li><a href="https://wiki.factorio.com/Furnace">Factorio Wiki: Furnace</a> - official crafting speeds and fuel values</li>
+<li><a href="https://factoriocheatsheet.com/">Factorio Cheat Sheet</a> - community-verified ratio tables</li>
+</ul>
+<p><em>Last updated: 2026-09-26 | Verified against Factorio 2.0.</em></p>
+
+
+          
+          <div class="back-to-section">
+            <a href="/production-ratios/" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to Production Ratios — Factorio Ratio Reference
+            </a>
+          </div>
+          
+
+          
+          
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              
+              <a href="/production-ratios/kovarex-enrichment-guide/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">K</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Kovarex Enrichment Setup with Circuit Control - U-235 Production Guide for Factorio 2.0</h4>
+                  <p><div class="pro-tip"><strong>Kovarex at a glance:</strong> Each centrifuge needs 40 U-235 and 5 …</div></p>
+                </div>
+              </a>
+              
+              <a href="/production-ratios/beacon-module-guide/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Factorio Beacon and Module Guide - 8-Beacon Layout and Optimization</h4>
+                  <p>Beacon and module guide for Factorio: the 8-beacon layout that maximizes productivity, speed module vs productivity module tradeoffs, power cost analysis, and beacon range mechanics.</p>
+                </div>
+              </a>
+              
+              <a href="/production-ratios/oil-processing-guide/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">O</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Oil Processing — Ratios, Cracking, and Refinery Setup</h4>
+                  <p>Oil processing ratios for Factorio. Exact refinery-to-cracking ratios, pipe throughput limits, circuit-controlled cracking, and the 8:1:7 setup that never deadlocks.</p>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+          
+
+          
+
+        </div>
+      </div>
+    </main>
+
+    
+    
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

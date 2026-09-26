@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your Aquilo heat pipe looks connected but your machines keep freezing. The adjacency rule, the real heat drain table (per entity kW), how many heating towers you actually need, and how to bootstrap power without dying cold.">
+  <title>Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes | Factorio Guide</title>
+
+  
+  <link rel="canonical" href="http://localhost:1319/space-age/aquilo/heat-pipe-not-working/">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06QHTM40LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06QHTM40LG');
+  </script>
+  
+
+  
+  <meta property="og:title" content="Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes">
+  <meta property="og:description" content="Your Aquilo heat pipe looks connected but your machines keep freezing. The adjacency rule, the real heat drain table (per entity kW), how many heating towers you actually need, and how to bootstrap power without dying cold.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1319/space-age/aquilo/heat-pipe-not-working/">
+</head>
+<body>
+
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span class="logo-icon">&#9881;</span> Factorio Guide
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="/getting-started/" class="nav-btn">Getting Started</a>
+    <a href="/production-ratios/" class="nav-btn">Production Ratios</a>
+    <a href="/base-design/" class="nav-btn">Base Design</a>
+    <a href="/trains-logistics/" class="nav-btn">Trains &amp; Logistics</a>
+    <a href="/defense/" class="nav-btn">Defense</a>
+    <a href="/blueprints/" class="nav-btn">Blueprints</a>
+    <a href="/space-age/" class="nav-btn">&#128640; Space Age</a>
+  </nav>
+</header>
+
+
+<div class="page-wrap">
+  
+<div class="article-page">
+
+  
+  <div class="article-hero-full">
+    <div class="article-hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+    <div class="article-hero-fade"></div>
+    <div class="article-hero-content">
+      <h1>Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes</h1><p class="article-desc">Your Aquilo heat pipe looks connected but your machines keep freezing. The adjacency rule, the real heat drain table (per entity kW), how many heating towers you actually need, and how to bootstrap power without dying cold.</p>
+      <div class="article-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="12" height="10" rx="1"/>
+            <line x1="1" y1="7" x2="13" y2="7"/>
+            <line x1="5" y1="1" x2="5" y2="4"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+          </svg>
+          Updated: Sep 26, 2026
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="6"/>
+            <line x1="7" y1="4" x2="7" y2="7"/>
+            <line x1="7" y1="7" x2="10" y2="9"/>
+          </svg>
+          6 min read
+        </span>
+        <span class="meta-item">
+          <svg viewBox="0 0 14 14" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1h5l6 6-5.5 5.5a2 2 0 01-.7.3 2 2 0 01-.8 0l-4-4a2 2 0 010-.8 2 2 0 01.3-.7z"/>
+            <circle cx="4" cy="4" r="1" fill="currentColor"/>
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="section-layout">
+
+    
+    
+    <nav class="section-nav" id="sectionNav">
+      <div class="section-nav-title">Aquilo</div>
+      <div class="section-nav-list">
+        <a href="/space-age/aquilo/" class="section-nav-item">
+          <span class="section-nav-icon" style="font-style:italic;font-family:serif;font-size:0.85rem;background:transparent">i</span>
+          <span class="section-nav-name">About this section</span>
+        </a>
+        
+        <a href="/space-age/aquilo/what-to-bring/" class="section-nav-item">
+          <span class="section-nav-name">Factorio Aquilo What to Bring - Landing Checklist Before You Launch</span>
+          
+        </a>
+        
+        <a href="/space-age/aquilo/heat-pipe-not-working/" class="section-nav-item is-active">
+          <span class="section-nav-name">Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes</span>
+          
+        </a>
+        
+        <a href="/space-age/aquilo/excess-ice/" class="section-nav-item">
+          <span class="section-nav-name">Factorio Aquilo Excess Ice - What to Do With It (And What NOT to Do)</span>
+          
+        </a>
+        
+        <a href="/space-age/aquilo/aquilo-guide/" class="section-nav-item">
+          <span class="section-nav-name">Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</span>
+          
+        </a>
+        
+      </div>
+    </nav>
+    
+
+    
+    <main class="section-content" id="sectionContent">
+      <div class="section-content-inner" id="sectionContentInner">
+        <div class="article-content">
+          
+<div class="adsterra-header">
+  <div class="adsterra-header-inner">
+    <script>
+      var atOptions = {
+        'key' : '9213e2c1db53a2eec6ab8a2f81e72c72',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/9213e2c1db53a2eec6ab8a2f81e72c72/invoke.js"></script>
+  </div>
+</div>
+
+          <nav class="breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            
+            <a href="/space-age/aquilo/">Aquilo</a>
+            
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes</span>
+          </nav>
+
+          <div class="pro-tip"><strong>Short answer: a building only stays warm if it physically touches a heated tile.</strong> Heat does not radiate outward, it does not travel along normal fluid pipes, and it does not care how close buildings are. Three checks fix 90% of broken Aquilo heat networks: (1) every machine orthogonally or diagonally adjacent to a heat pipe, (2) the source sitting above 30 degrees C, and (3) total consumer drain below what your heating towers can supply. Warm note: <span class="game-slot"><img src="/images/icon/heating-tower.png" alt="heating-tower" class="game-img" loading="lazy">
+<span class="game-name">Heating</span>
+</span>
+heating towers burn solid fuel, and Aquilo has <span class="game-slot"><img src="/images/icon/crude_oil.png" alt="crude_oil" class="game-img" loading="lazy">
+<span class="game-name">Crude oil</span>
+</span>
+crude oil, so the fix is usually local once you break the cold start.</div>
+
+<p>If your chemical plants are blinking frozen on Aquilo, it is not a power problem. Aquilo electricity runs fine while your factory is a block of ice. <strong>Heating and electricity are two separate networks</strong>, and almost every &quot;heat pipe not working&quot; complaint is actually a geometry mistake.</p>
+<div class="section-head"><h2>Cause 1: The Machine Is Not Touching The Heat Pipe</h2></div>
+<p>This is the one that gets everyone. <strong>Adjacency means orthogonally or diagonally adjacent - one tile.</strong> Not two tiles, not &quot;in the same row&quot;, not &quot;within beacon range&quot;.</p>
+<img src="/images/diagrams/space-age/aquilo-heat-adjacency.svg" alt="Aquilo heat pipe adjacency rule showing which machines stay warm and which freeze" class="schema-diagram" loading="lazy" width="760">
+
+<p>Common versions of this mistake:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">What you built</th>
+          <th style="text-align: left">Why it freezes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Heat pipe running parallel, one empty tile of gap</td>
+          <td style="text-align: left">Heat does not radiate through the floor</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Heat pipe under underground belts only</td>
+          <td style="text-align: left">The belt entrance and exit are not heated tiles</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Row of machines with heat pipe on one end</td>
+          <td style="text-align: left">Only the machine touching the pipe survives</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Beaconed layout copied from Nauvis</td>
+          <td style="text-align: left">Beacons are the <span class="game-slot"><img src="/images/icon/beacon.png" alt="beacon" class="game-img" loading="lazy">
+  <span class="game-name">Beacon</span>
+</span>
+ single largest heat drain at 400 kW</td>
+      </tr>
+  </tbody>
+</table>
+<p>The fix is boring: <strong>run the heat pipe directly alongside the machine row</strong>, so every machine shares a border with a heated tile. Do not leave spacing for future expansion the way you would on Nauvis.</p>
+<div class="section-head"><h2>Cause 2: Demand Exceeds What One Heating Tower Can Supply</h2></div>
+<p>Heat pipes never leak heat into the environment. They only lose it to entities that need to stay warm. So if your network goes cold, <strong>something on that network is eating more kW than you are generating.</strong></p>
+<img src="/images/diagrams/space-age/aquilo-heat-budget.svg" alt="Aquilo heat budget per entity in kilowatts with heating tower, heat pipes and consumers" class="schema-diagram" loading="lazy" width="760">
+
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Entity</th>
+          <th style="text-align: left">Heat drain</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/beacon.png" alt="beacon" class="game-img" loading="lazy">
+  <span class="game-name">Beacon</span>
+</span>
+ Beacon</td>
+          <td style="text-align: left">400 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/oil_refinery.png" alt="oil_refinery" class="game-img" loading="lazy">
+  <span class="game-name">Oil refinery</span>
+</span>
+ Oil refinery</td>
+          <td style="text-align: left">200 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Turbo underground belt</td>
+          <td style="text-align: left">200 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/chemical-plant.png" alt="chemical-plant" class="game-img" loading="lazy">
+  <span class="game-name">Chemical</span>
+</span>
+ Chemical plant, <span class="game-slot"><img src="/images/icon/assembling-machine-3.png" alt="assembling-machine-3" class="game-img" loading="lazy">
+  <span class="game-name">Assembling</span>
+</span>
+ assembling machine, <span class="game-slot"><img src="/images/icon/recycler.png" alt="recycler" class="game-img" loading="lazy">
+  <span class="game-name">Recycler</span>
+</span>
+ recycler, <span class="game-slot"><img src="/images/icon/cryogenic_plant.png" alt="cryogenic_plant" class="game-img" loading="lazy">
+  <span class="game-name">Cryogenic</span>
+</span>
+ cryogenic plant</td>
+          <td style="text-align: left">100 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Storage tank, selector combinator</td>
+          <td style="text-align: left">100 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pipe to ground</td>
+          <td style="text-align: left">150 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fast / express underground belt</td>
+          <td style="text-align: left">100 / 150 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Splitter</td>
+          <td style="text-align: left">40 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span class="game-slot"><img src="/images/icon/inserter.png" alt="inserter" class="game-img" loading="lazy">
+  <span class="game-name">Inserter</span>
+</span>
+ Inserter, pump, <span class="game-slot"><img src="/images/icon/gun_turret.png" alt="gun_turret" class="game-img" loading="lazy">
+  <span class="game-name">Gun turret</span>
+</span>
+ turret</td>
+          <td style="text-align: left">30 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Transport belt</td>
+          <td style="text-align: left">10 kW</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Normal <span class="game-slot"><img src="/images/icon/pipe.png" alt="pipe" class="game-img" loading="lazy">
+  <span class="game-name">Pipe</span>
+</span>
+ pipe</td>
+          <td style="text-align: left">1 kW</td>
+      </tr>
+  </tbody>
+</table>
+<p>Read that list again, because two entries explain most failures. <strong>Underground belts cost five to twenty times what the surface belt costs</strong>, so a belt-heavy bus that crosses itself underground will out-drain your heat supply without looking any bigger. Same for pipe to ground at 150 kW against 1 kW for a surface pipe.</p>
+<p><strong>Practical rule:</strong> one <span class="game-slot"><img src="/images/icon/heating-tower.png" alt="heating-tower" class="game-img" loading="lazy">
+  <span class="game-name">Heating</span>
+</span>
+ heating tower covers a compact production block, not a base. If you have more than roughly 20 machines plus their belts and undergrounds on one network, split it into separate heated zones with their own tower. If you are planning the wider layout, http://localhost:1319/space-age/aquilo/aquilo-guide/ covers how much space to reserve per zone before you commit.</p>
+<div class="section-head"><h2>Cause 3: The Heating Tower Has Nothing To Burn</h2></div>
+<p>Cold start problem: your refinery needs heat before it can make solid fuel, and it needs solid fuel before it can make heat.</p>
+<p>Break the loop with imported fuel. Bring <span class="game-slot"><img src="/images/icon/solid_fuel.png" alt="solid_fuel" class="game-img" loading="lazy">
+  <span class="game-name">Solid fuel</span>
+</span>
+ solid fuel or <span class="game-slot"><img src="/images/icon/rocket-fuel.png" alt="rocket-fuel" class="game-img" loading="lazy">
+  <span class="game-name">Rocket fuel</span>
+</span>
+ rocket fuel with your landing cargo, use it to run the first tower, then switch to locally refined fuel from the <span class="game-slot"><img src="/images/icon/crude_oil.png" alt="crude_oil" class="game-img" loading="lazy">
+  <span class="game-name">Crude oil</span>
+</span>
+ crude oil pumpjacks once the chain is warm. Aquilo genuinely has oil, so this is a one-time bootstrap rather than a permanent import dependency. The exact fuel count to pack is listed in http://localhost:1319/space-age/aquilo/what-to-bring/, and getting that number wrong is why so many first landings freeze before minute ten.</p>
+<p>Worth knowing if the tower is missing from your build menu entirely: <strong>heating towers are unlocked on Gleba, not on Nauvis.</strong> If you jumped straight to Aquilo, http://localhost:1319/space-age/gleba/gleba-survival-guide/ covers the Gleba chain that hands you both the tower and the heat exchanger you need here.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Stage</th>
+          <th style="text-align: left">Fuel source</th>
+          <th style="text-align: left">Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Landing</td>
+          <td style="text-align: left">Imported solid / rocket fuel</td>
+          <td style="text-align: left">Enough for the first 20 minutes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Bootstrap</td>
+          <td style="text-align: left">Local crude oil to solid fuel</td>
+          <td style="text-align: left">Refinery itself needs heat</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Stable</td>
+          <td style="text-align: left">Solid fuel loop with buffer chest</td>
+          <td style="text-align: left">Chests are freeze-immune</td>
+      </tr>
+  </tbody>
+</table>
+<p>Note the useful exception: <strong>chests do not freeze.</strong> Chests, electric poles, <span class="game-slot"><img src="/images/icon/solar-panel.png" alt="solar-panel" class="game-img" loading="lazy">
+  <span class="game-name">Solar panel</span>
+</span>
+ solar panels, <span class="game-slot"><img src="/images/icon/accumulator.png" alt="accumulator" class="game-img" loading="lazy">
+  <span class="game-name">Accumulator</span>
+</span>
+ accumulators, lamps, <span class="game-slot"><img src="/images/icon/wall.png" alt="wall" class="game-img" loading="lazy">
+  <span class="game-name">Wall</span>
+</span>
+ walls, <span class="game-slot"><img src="/images/icon/tesla_turret.png" alt="tesla_turret" class="game-img" loading="lazy">
+  <span class="game-name">Tesla turret</span>
+</span>
+ tesla turrets and rails are all immune. That means you can safely buffer solid fuel in an unheated area right next to the tower.</p>
+<div class="section-head"><h2>Cause 4: You Confused Fluid Pipes With Heat Pipes</h2></div>
+<p>Regular <span class="game-slot"><img src="/images/icon/pipe.png" alt="pipe" class="game-img" loading="lazy">
+  <span class="game-name">Pipe</span>
+</span>
+ pipes move fluids. Heat pipes move heat. They are different entities and they do not substitute for each other. A belt of machines wired together with normal pipes will freeze even if those pipes sit directly on top of a working heating tower.</p>
+<p>Also worth knowing: <strong>heat does not pass through machines.</strong> Heat pipes chain to each other, and every machine touching the chain gets warm, but a machine never relays heat to its neighbour. Put one heat pipe tile between two machines in a row and only those two survive.</p>
+<div class="section-head"><h2>Cause 5: Robot Power, Not Heat</h2></div>
+<p>This one is not heat at all, it just looks identical. On Aquilo the ratio of gravity to atmospheric pressure is five times higher than elsewhere, so construction and logistic robots consume proportionally more energy. Players blame freezing when the actual fault is that bots cannot finish the build before the network browns out.</p>
+<p>The symptom difference: <strong>frozen machines are already built and idle; starved bots leave half-finished ghosts.</strong> If you see ghosts that never complete, add power, not heat.</p>
+<div class="section-head"><h2>The 60-Second Diagnostic</h2></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Symptom</th>
+          <th style="text-align: left">Most likely cause</th>
+          <th style="text-align: left">First fix</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">One machine frozen, neighbours fine</td>
+          <td style="text-align: left">Not touching the heated tile</td>
+          <td style="text-align: left">Move it one tile toward the pipe</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Whole row freezes a few minutes after start-up</td>
+          <td style="text-align: left">Demand above supply</td>
+          <td style="text-align: left">Add a second heating tower, split the zone</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Everything freezes during expansion</td>
+          <td style="text-align: left">New block never got its own tower</td>
+          <td style="text-align: left">Zone heating, do not daisy-chain</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Freezes when you add undergrounds</td>
+          <td style="text-align: left">150 to 200 kW per underground</td>
+          <td style="text-align: left">Replace with surface belts inside heated area</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Nothing works right after landing</td>
+          <td style="text-align: left">No fuel in the first tower</td>
+          <td style="text-align: left">Refine local crude oil or import solid fuel</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ghosts never finish building</td>
+          <td style="text-align: left">Bot power drain, not heat</td>
+          <td style="text-align: left">Add generation, not heating</td>
+      </tr>
+  </tbody>
+</table>
+<div class="section-head"><h2>What NOT To Do</h2></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Bad idea</th>
+          <th style="text-align: left">Why it fails</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Waiting for electricity to warm things</td>
+          <td style="text-align: left">Power and heat are separate networks</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Building one giant heated base</td>
+          <td style="text-align: left">Total drain quietly exceeds one tower</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Scaling with underground belts</td>
+          <td style="text-align: left">Cheapest-looking option, worst heat cost</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Assuming wiki Nauvis layouts transfer</td>
+          <td style="text-align: left">Every tile here needs a heat budget</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ignoring the freezing icon</td>
+          <td style="text-align: left">It tells you the exact problem for free</td>
+      </tr>
+  </tbody>
+</table>
+<p>Once the network holds temperature, Aquilo flips to the opposite problem: ice. Ammonia separation and electrolysis hand you far more ice than your base consumes, and a full ice buffer stalls production just as hard as a frozen machine does. http://localhost:1319/space-age/aquilo/excess-ice/ covers the voiding setups that stop it backing up into the block you just finished heating.</p>
+<div class="section-head"><h2>Community Verification and Resources</h2></div>
+<ul>
+<li><a href="https://wiki.factorio.com/Aquilo">Factorio Wiki: Aquilo</a> - freezing mechanics and the official per-entity heat drain table</li>
+<li><a href="https://wiki.factorio.com/Heat_pipe">Factorio Wiki: Heat pipe</a> - heat throughput limits and connection rules</li>
+<li><a href="https://www.reddit.com/r/factorio/">Reddit r/factorio</a> - player-reported cold-start routes and zone layouts</li>
+</ul>
+<p><em>Last updated: 2026-09-26 | Verified against Factorio 2.0 / Space Age.</em></p>
+
+
+          
+          <div class="back-to-section">
+            <a href="/space-age/aquilo/" class="btn btn-ghost">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 4L6 8l4 4"/>
+              </svg>
+              Back to Aquilo
+            </a>
+          </div>
+          
+
+          
+          
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              
+              <a href="/space-age/aquilo/what-to-bring/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Factorio Aquilo What to Bring - Landing Checklist Before You Launch</h4>
+                  <p>Aquilo landing checklist for Factorio Space Age - exactly what to pack, how much of each item, and the three things players forget that strand them. Ship your cargo rocket with the right manifest the first time.</p>
+                </div>
+              </a>
+              
+              <a href="/space-age/aquilo/excess-ice/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">F</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Factorio Aquilo Excess Ice - What to Do With It (And What NOT to Do)</h4>
+                  <p>Aquilo excess ice in Factorio Space Age - why you keep drowning in ice, how to void it safely, and the recycler setup that stops it blocking your base. Includes what NOT to do with your ice supply.</p>
+                </div>
+              </a>
+              
+              <a href="/space-age/aquilo/aquilo-guide/" class="related-card">
+                <div class="related-icon">
+                  <svg viewBox="0 0 32 32" width="32" height="32">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="#2a2a2a" stroke="#e8941c" stroke-width="1.5"/>
+                    <text x="16" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8941c">A</text>
+                  </svg>
+                </div>
+                <div class="related-body">
+                  <h4>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</h4>
+                  <p>Aquilo landing preparation for Factorio Space Age. What to bring, heating mechanics, cryogenic science, and how to survive on Factorio coldest planet. </p>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+          
+
+          
+
+        </div>
+      </div>
+    </main>
+
+    
+    
+<div class="article-ad-right">
+  <div class="ad-placeholder">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#555" stroke-width="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="3"/>
+      <line x1="12" y1="8" x2="12" y2="16"/>
+      <line x1="8" y1="12" x2="16" y2="12"/>
+    </svg>
+    <span class="ad-placeholder-label">Advertisement</span>
+    <span class="ad-placeholder-size">160 × 600</span>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/getting-started/">Getting Started</a>
+    <a href="/production-ratios/">Production Ratios</a>
+    <a href="/base-design/">Base Design</a>
+    <a href="/trains-logistics/">Trains &amp; Logistics</a>
+    <a href="/defense/">Defense</a>
+    
+  </div>
+  <p><strong>Factorio Guide</strong> — Unofficial community strategy guides.</p>
+  <p>&copy; 2026 Factorio Guide — Factorio is a trademark of Wube Software.</p>
+</footer>
+
+
+<script src="/js/main.js"></script>
+</body>
+</html>

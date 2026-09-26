@@ -1,103 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Planets on Factorio Guide</title><link>https://factorioguides.com/tags/planets/</link><description>Recent content in Planets on Factorio Guide</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://factorioguides.com/tags/planets/index.xml" rel="self" type="application/rss+xml"/><item><title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title><link>https://factorioguides.com/space-age/aquilo/aquilo-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/aquilo/aquilo-guide/</guid><description>&lt;p>&lt;div class="pro-tip">&lt;strong>Aquilo survival at a glance:&lt;/strong> Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets. Check https://factorioguides.com/space-age/guide/planet-order-guide/ for when to visit, and https://factorioguides.com/space-age/platform/space-platform-guide/ for the ship design that can reach the ice planet.&lt;/div>
-## Quick Reference 鈥?Aquilo&lt;/p></description></item><item><title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title><link>https://factorioguides.com/space-age/guide/planet-order-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/guide/planet-order-guide/</guid><description>&lt;div class="pro-tip">&lt;strong>TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong> Visit Vulcanus first for the foundry — it doubles your iron and steel production instantly. See https://factorioguides.com/space-age/guide/vulcanus-guide/ for the full landing prep. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div>
-
-&lt;div class="section-head">&lt;h2>Why Order Matters&lt;/h2>&lt;/div>
-&lt;p>Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p></description></item><item><title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title><link>https://factorioguides.com/space-age/guide/vulcanus-guide/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://factorioguides.com/space-age/guide/vulcanus-guide/</guid><description>&lt;p>&lt;div class="pro-tip">&lt;strong>Vulcanus priority order:&lt;/strong> Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. See https://factorioguides.com/space-age/vulcanus/lava-processing/ for the full molten metal production guide. Everything else is secondary.&lt;/div>
-## Quick Reference — Vulcanus&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Priority&lt;/th>
- &lt;th style="text-align: left">Task&lt;/th>
- &lt;th style="text-align: left">Key Building&lt;/th>
- &lt;th style="text-align: left">Key Item&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;td style="text-align: left">Land and build solar&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/solar-panel.png" alt="solar-panel" class="game-img" loading="lazy">
- &lt;span class="game-name">Solar panel&lt;/span>
-&lt;/span>
- Solar panel&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/steel-plate.png" alt="steel-plate" class="game-img" loading="lazy">
- &lt;span class="game-name">Steel plate&lt;/span>
-&lt;/span>
- Steel&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">2&lt;/td>
- &lt;td style="text-align: left">Mine tungsten&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/big-mining-drill.png" alt="big-mining-drill" class="game-img" loading="lazy">
- &lt;span class="game-name">Big mining&lt;/span>
-&lt;/span>
- Big drill&lt;/td>
- &lt;td style="text-align: left">Tungsten carbide&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">3&lt;/td>
- &lt;td style="text-align: left">Build foundry&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/foundry.png" alt="foundry" class="game-img" loading="lazy">
- &lt;span class="game-name">Foundry&lt;/span>
-&lt;/span>
- Foundry&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/calcite.png" alt="calcite" class="game-img" loading="lazy">
- &lt;span class="game-name">Calcite&lt;/span>
-&lt;/span>
- Calcite&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">4&lt;/td>
- &lt;td style="text-align: left">Lava pumping&lt;/td>
- &lt;td style="text-align: left">&lt;span class="game-slot">&lt;img src="https://factorioguides.com/images/icon/offshore-pump.png" alt="offshore-pump" class="game-img" loading="lazy">
- &lt;span class="game-name">Offshore&lt;/span>
-&lt;/span>
- Pump&lt;/td>
- &lt;td style="text-align: left">Molten iron/copper&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Resource&lt;/th>
- &lt;th style="text-align: left">Recipe&lt;/th>
- &lt;th style="text-align: left">Input&lt;/th>
- &lt;th style="text-align: left">Output&lt;/th>
- &lt;th style="text-align: center">Foundry Bonus&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Molten iron&lt;/td>
- &lt;td style="text-align: left">Smelting&lt;/td>
- &lt;td style="text-align: left">Lava + Calcite&lt;/td>
- &lt;td style="text-align: left">500 fluid&lt;/td>
- &lt;td style="text-align: center">+50% prod&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Molten copper&lt;/td>
- &lt;td style="text-align: left">Smelting&lt;/td>
- &lt;td style="text-align: left">Lava + Calcite&lt;/td>
- &lt;td style="text-align: left">500 fluid&lt;/td>
- &lt;td style="text-align: center">+50% prod&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Iron gears&lt;/td>
- &lt;td style="text-align: left">Casting&lt;/td>
- &lt;td style="text-align: left">100 molten iron&lt;/td>
- &lt;td style="text-align: left">20 gears&lt;/td>
- &lt;td style="text-align: center">Direct craft&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Copper wire&lt;/td>
- &lt;td style="text-align: left">Casting&lt;/td>
- &lt;td style="text-align: left">100 molten copper&lt;/td>
- &lt;td style="text-align: left">40 wire&lt;/td>
- &lt;td style="text-align: center">Direct craft&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;div class="section-head">&lt;h2>What to Pack Before You Go&lt;/h2>&lt;/div>
-&lt;p>Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planets on Factorio Guide</title>
+    <link>http://localhost:1319/tags/planets/</link>
+    <description>Recent content in Planets on Factorio Guide</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Sep 2026 09:41:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1319/tags/planets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Factorio Aquilo What to Bring - Landing Checklist Before You Launch</title>
+      <link>http://localhost:1319/space-age/aquilo/what-to-bring/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/aquilo/what-to-bring/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; pack for cold, not for production. Aquilo has almost no local resources, so your rocket is your supply line. The absolute minimum is &lt;strong&gt;4-6 heating towers, 2000+ rocket fuel, 10-15 rocket turrets with 1000 rounds, and 200+ ice platforms&lt;/strong&gt;. The three things players forget: &lt;strong&gt;heat pipes&lt;/strong&gt; (you cannot build the grid without them), &lt;strong&gt;concrete or ice platform for every single tile&lt;/strong&gt; (nothing builds on snow), and &lt;strong&gt;spare heating towers&lt;/strong&gt; (one failure cascades into a total freeze). Read the full manifest table below before you launch.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What Actually Makes Aquilo Hard&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Aquilo is not hard because of enemies. It is hard because of two rules:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factorio Gleba Spoilage Backup - How to Clear It Without Restarting</title>
+      <link>http://localhost:1319/space-age/gleba/spoilage-backup/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/gleba/spoilage-backup/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer: your Gleba base is jammed because spoilage has nowhere to go and it is blocking the belt that feeds your nutrient production.&lt;/strong&gt; Clear it by inserting spoilage into a &lt;strong&gt;heating tower&lt;/strong&gt; or &lt;strong&gt;recycler&lt;/strong&gt; - never by manually deleting belts. Then stop it recurring by making spoilage a &lt;strong&gt;filtered, dedicated output lane&lt;/strong&gt; rather than a byproduct mixed into your main bus. The trap: players cut nutrient production to &amp;quot;stop the spoilage,&amp;quot; which kills the farms, which makes everything spoil faster. Keep nutrients flowing.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Gleba Backs Up (And Why It Snowballs)&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Every organic item on Gleba spoils on a timer. Spoilage itself does not spoil, so it &lt;strong&gt;accumulates forever&lt;/strong&gt; unless something consumes or destroys it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factorio Aquilo Excess Ice - What to Do With It (And What NOT to Do)</title>
+      <link>http://localhost:1319/space-age/aquilo/excess-ice/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/aquilo/excess-ice/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer: your ice is backing up because lithium brine processing produces ice as a byproduct and nothing consumes it fast enough.&lt;/strong&gt; The fix is one of three things: (1) feed ice into a recycler with quality modules to void it, (2) turn it into water for your chemical plants instead of importing water, or (3) burn it in a heating tower. &lt;strong&gt;Do NOT&lt;/strong&gt; just add more storage - you will fill the map. The recycler loop is what most players miss: one recycler eating ice keeps an entire lithium line clear.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Aquilo Drowns You in Ice&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Aquilo is the only planet where ice is a &lt;strong&gt;byproduct you cannot stop producing&lt;/strong&gt;. Every lithium brine separation cycle outputs ice whether you want it or not.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factorio Aquilo Heat Pipe Not Working - 5 Causes and Fixes</title>
+      <link>http://localhost:1319/space-age/aquilo/heat-pipe-not-working/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/aquilo/heat-pipe-not-working/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer: a building only stays warm if it physically touches a heated tile.&lt;/strong&gt; Heat does not radiate outward, it does not travel along normal fluid pipes, and it does not care how close buildings are. Three checks fix 90% of broken Aquilo heat networks: (1) every machine orthogonally or diagonally adjacent to a heat pipe, (2) the source sitting above 30 degrees C, and (3) total consumer drain below what your heating towers can supply. Warm note: &lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/heating-tower.png&#34; alt=&#34;heating-tower&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Heating&lt;/span&gt;&#xA;&lt;/span&gt;&#xA;heating towers burn solid fuel, and Aquilo has &lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/crude_oil.png&#34; alt=&#34;crude_oil&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;span class=&#34;game-name&#34;&gt;Crude oil&lt;/span&gt;&#xA;&lt;/span&gt;&#xA;crude oil, so the fix is usually local once you break the cold start.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;If your chemical plants are blinking frozen on Aquilo, it is not a power problem. Aquilo electricity runs fine while your factory is a block of ice. &lt;strong&gt;Heating and electricity are two separate networks&lt;/strong&gt;, and almost every &amp;quot;heat pipe not working&amp;quot; complaint is actually a geometry mistake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factorio Gleba What to Bring - First Landing Checklist</title>
+      <link>http://localhost:1319/space-age/gleba/what-to-bring/</link>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/gleba/what-to-bring/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Short answer: bring landfill, iron and copper plates, lubricant/plastic, and guns.&lt;/strong&gt; Gleba has &lt;strong&gt;no crude oil&lt;/strong&gt;, its metals come from &lt;strong&gt;bacteria cultivation&lt;/strong&gt; (not mining drills), and most of its surface is marsh you cannot build on. Everything else - fruit, seeds, stone, water, coal - you make on-planet. Do &lt;strong&gt;not&lt;/strong&gt; bring food stockpiles: every biological item carries a spoilage timer that starts the moment it is crafted.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;p&gt;Gleba is the planet that punishes players who land unprepared, because almost nothing works the way it does on Nauvis. There are no drillable ore patches. There is no crude oil. Half the map is standing water. And every item you produce is quietly rotting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Aquilo Landing Preparation - What to Bring and How to Survive in Factorio Space Age</title>
+      <link>http://localhost:1319/space-age/aquilo/aquilo-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/aquilo/aquilo-guide/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Aquilo survival at a glance:&lt;/strong&gt; Bring heating towers, rocket fuel, ice platforms, rocket turrets, and energy weapons. Land only after you have unlocked all previous planet sciences. Build a heat pipe grid first, then power, then defense, then science. Aquilo has no local resources except frozen ammonia -- everything else must be imported from other planets. Check http://localhost:1319/space-age/guide/planet-order-guide/ for when to visit, and http://localhost:1319/space-age/platform/space-platform-guide/ for the ship design that can reach the ice planet.&lt;/div&gt;&#xD;&#xA;## Quick Reference 鈥?Aquilo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Best Planet Order in Space Age - Which Planet to Visit First and Why</title>
+      <link>http://localhost:1319/space-age/guide/planet-order-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/guide/planet-order-guide/</guid>
+      <description>&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;TL;DR: Vulcanus -&amp;gt; Fulgora -&amp;gt; Gleba -&amp;gt; Nauvis (scale up) -&amp;gt; Aquilo.&lt;/strong&gt; Visit Vulcanus first for the foundry — it doubles your iron and steel production instantly. See http://localhost:1319/space-age/guide/vulcanus-guide/ for the full landing prep. Fulgora second for the electromagnetic plant and quality module loop. Gleba third for bioflux and agricultural science. Save Aquilo for last when your other planets are producing consistently.&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;Why Order Matters&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Factorio Space Age has four inner planets you must visit (Vulcanus, Fulgora, Gleba) plus the final planet (Aquilo). Each planet unlocks a permanent factory upgrade that changes how you produce things on all planets. The order you visit determines how quickly your base scales up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vulcanus First Landing Guide - What to Do First in Factorio Space Age</title>
+      <link>http://localhost:1319/space-age/guide/vulcanus-guide/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1319/space-age/guide/vulcanus-guide/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;pro-tip&#34;&gt;&lt;strong&gt;Vulcanus priority order:&lt;/strong&gt; Land -&amp;gt; Build a temporary base with solar panels and gun turrets -&amp;gt; Find lava -&amp;gt; Build foundry -&amp;gt; Unlock big drill -&amp;gt; Kill a small demolisher -&amp;gt; Build cliff explosives. Your entire Vulcanus strategy should revolve around unlocking the foundry as fast as possible. See http://localhost:1319/space-age/vulcanus/lava-processing/ for the full molten metal production guide. Everything else is secondary.&lt;/div&gt;&#xD;&#xA;## Quick Reference — Vulcanus&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Priority&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Task&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Key Building&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Key Item&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Land and build solar&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/solar-panel.png&#34; alt=&#34;solar-panel&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Solar panel&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Solar panel&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/steel-plate.png&#34; alt=&#34;steel-plate&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Steel plate&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Steel&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Mine tungsten&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/big-mining-drill.png&#34; alt=&#34;big-mining-drill&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Big mining&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Big drill&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Tungsten carbide&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Build foundry&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/foundry.png&#34; alt=&#34;foundry&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Foundry&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Foundry&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/calcite.png&#34; alt=&#34;calcite&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Calcite&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Calcite&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Lava pumping&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;span class=&#34;game-slot&#34;&gt;&lt;img src=&#34;http://localhost:1319/images/icon/offshore-pump.png&#34; alt=&#34;offshore-pump&#34; class=&#34;game-img&#34; loading=&#34;lazy&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;game-name&#34;&gt;Offshore&lt;/span&gt;&#xD;&#xA;&lt;/span&gt;&#xD;&#xA; Pump&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Molten iron/copper&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Resource&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Recipe&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Input&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Output&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Foundry Bonus&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Molten iron&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Smelting&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Lava + Calcite&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;500 fluid&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;+50% prod&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Molten copper&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Smelting&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Lava + Calcite&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;500 fluid&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;+50% prod&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Iron gears&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Casting&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;100 molten iron&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;20 gears&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Direct craft&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Copper wire&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Casting&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;100 molten copper&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;40 wire&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Direct craft&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;section-head&#34;&gt;&lt;h2&gt;What to Pack Before You Go&lt;/h2&gt;&lt;/div&gt;&#xA;&lt;p&gt;Vulcanus has no trees, no water (except lava and sulfuric acid), and aggressive demolishers roaming the plains. Pack everything you need for the first 2-3 hours:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

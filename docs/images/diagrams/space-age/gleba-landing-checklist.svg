@@ -1,0 +1,58 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" style="background:#111;font-family:system-ui,sans-serif;">
+  <title>Gleba First Landing Checklist - Cargo Rocket Loadout - Factorio Guide</title>
+  <text x="320" y="26" fill="#6abe30" font-size="16" text-anchor="middle" font-weight="bold">Gleba Landing Loadout - What Goes In The Rocket</text>
+
+  <rect x="24" y="44" width="290" height="230" rx="5" fill="#1a1a1a" stroke="#6abe30" stroke-width="2"/>
+  <text x="169" y="66" fill="#6abe30" font-size="13" text-anchor="middle" font-weight="bold">BRING (not obtainable on Gleba)</text>
+
+  <text x="40" y="90" fill="#ccc" font-size="11">Landfill x2000</text>
+  <text x="250" y="90" fill="#888" font-size="10">marsh is unbuildable</text>
+  <text x="40" y="110" fill="#ccc" font-size="11">Iron plates x4000</text>
+  <text x="250" y="110" fill="#888" font-size="10">pre-bacteria bootstrap</text>
+  <text x="40" y="130" fill="#ccc" font-size="11">Copper plates x2000</text>
+  <text x="250" y="130" fill="#888" font-size="10">same reason</text>
+  <text x="40" y="150" fill="#ccc" font-size="11">Barrels of lubricant x50</text>
+  <text x="250" y="150" fill="#888" font-size="10">no crude oil on Gleba</text>
+  <text x="40" y="170" fill="#ccc" font-size="11">Plastic bars x500</text>
+  <text x="250" y="170" fill="#888" font-size="10">before bioplastic line</text>
+  <text x="40" y="190" fill="#ccc" font-size="11">Gun turrets x20 + ammo</text>
+  <text x="250" y="190" fill="#888" font-size="10">pentapod raids</text>
+  <text x="40" y="210" fill="#ccc" font-size="11">Electric poles / substations</text>
+  <text x="250" y="210" fill="#888" font-size="10">boring but fatal to forget</text>
+  <text x="40" y="230" fill="#ccc" font-size="11">Belts + inserters + assemblers</text>
+  <text x="250" y="230" fill="#888" font-size="10">standard build kit</text>
+  <text x="40" y="250" fill="#ccc" font-size="11">Rocket turret parts (optional)</text>
+  <text x="250" y="250" fill="#888" font-size="10">unlocked via Gleba science</text>
+
+  <rect x="326" y="44" width="290" height="230" rx="5" fill="#1a1a1a" stroke="#c9463d" stroke-width="2"/>
+  <text x="471" y="66" fill="#c9463d" font-size="13" text-anchor="middle" font-weight="bold">DO NOT BRING (already on Gleba / will rot)</text>
+
+  <text x="342" y="90" fill="#ccc" font-size="11">Yumako or jellynut fruit</text>
+  <text x="546" y="90" fill="#888" font-size="10">spoils in minutes</text>
+  <text x="342" y="110" fill="#ccc" font-size="11">Seeds</text>
+  <text x="546" y="110" fill="#888" font-size="10">harvested locally</text>
+  <text x="342" y="130" fill="#ccc" font-size="11">Stone</text>
+  <text x="546" y="130" fill="#888" font-size="10">mineable in highlands</text>
+  <text x="342" y="150" fill="#ccc" font-size="11">Coal</text>
+  <text x="546" y="150" fill="#888" font-size="10">via coal synthesis</text>
+  <text x="342" y="170" fill="#ccc" font-size="11">Water barrels</text>
+  <text x="546" y="170" fill="#888" font-size="10">offshore pump works</text>
+  <text x="342" y="190" fill="#ccc" font-size="11">Huge stockpiles of anything</text>
+  <text x="546" y="190" fill="#888" font-size="10">spoilage timer starts at craft</text>
+  <text x="342" y="210" fill="#ccc" font-size="11">Crude oil barrels</text>
+  <text x="546" y="210" fill="#888" font-size="10">use bio recipes instead</text>
+  <text x="342" y="230" fill="#ccc" font-size="11">Solar panels</text>
+  <text x="546" y="230" fill="#888" font-size="10">only 50% output here</text>
+  <text x="342" y="250" fill="#ccc" font-size="11">Biochambers</text>
+  <text x="546" y="250" fill="#888" font-size="10">crafted on-planet only</text>
+
+  <rect x="24" y="288" width="592" height="54" rx="4" fill="#231a10" stroke="#e8941c" stroke-width="1"/>
+  <text x="40" y="308" fill="#e8941c" font-size="11" font-weight="bold">Land site rule: pick the edge of a green (Yumako) and red (Jellystem) biome,</text>
+  <text x="40" y="325" fill="#e8941c" font-size="11" font-weight="bold">with nearby highlands for stone. Pentapod nests only spawn on shallow water.</text>
+  <text x="40" y="337" fill="#999" font-size="10">Highlands and midlands are naturally safe - build there, landfill the marsh approach.</text>
+
+  <rect x="24" y="352" width="592" height="62" rx="4" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+  <text x="40" y="372" fill="#8fd4f0" font-size="11" font-weight="bold">Power plan on arrival:</text>
+  <text x="40" y="389" fill="#999" font-size="10">1. Heating tower burns wooden/biological scrap  2. Heat exchanger - steam turbine pair</text>
+  <text x="40" y="404" fill="#999" font-size="10">3. Switch to rocket fuel from jelly once processing runs. Solar is a 50% backup, not a primary.</text>
+</svg>
